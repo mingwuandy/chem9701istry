@@ -1,0 +1,4010 @@
+{
+  "ch01": {
+    "name": "Atomic Structure",
+    "num": "1~2",
+    "words": [
+      {
+        "word": "proton",
+        "zh": "质子",
+        "def": "Positively charged subatomic particle in the nucleus",
+        "phonetic": "/ˈprəʊtɒn/"
+      },
+      {
+        "word": "neutron",
+        "zh": "中子",
+        "def": "Neutral subatomic particle in the nucleus",
+        "phonetic": "/ˈnjuːtrɒn/"
+      },
+      {
+        "word": "electron",
+        "zh": "电子",
+        "def": "Negatively charged subatomic particle orbiting the nucleus",
+        "phonetic": "/ɪˈlektrɒn/"
+      },
+      {
+        "word": "nucleus",
+        "zh": "原子核",
+        "def": "Central core of an atom containing protons and neutrons",
+        "phonetic": "/ˈnjuːkliəs/"
+      },
+      {
+        "word": "isotope",
+        "zh": "同位素",
+        "def": "Atoms of the same element with different numbers of neutrons",
+        "phonetic": "/ˈaɪsətəʊp/"
+      },
+      {
+        "word": "atomic number",
+        "zh": "原子序数",
+        "def": "Number of protons in the nucleus of an atom",
+        "phonetic": "/əˈtɒmɪk ˈnʌmbə/"
+      },
+      {
+        "word": "mass number",
+        "zh": "质量数",
+        "def": "Total number of protons and neutrons in the nucleus",
+        "phonetic": "/mæs ˈnʌmbə/"
+      },
+      {
+        "word": "relative atomic mass",
+        "zh": "相对原子质量",
+        "def": "Weighted mean mass of an atom relative to 1/12 mass of carbon-12",
+        "phonetic": "/ˈrelətɪv əˈtɒmɪk mæs/"
+      },
+      {
+        "word": "mass spectrometer",
+        "zh": "质谱仪",
+        "def": "Instrument used to measure the relative masses of isotopes",
+        "phonetic": "/mæs spɛkˈtrɒmɪtə/"
+      },
+      {
+        "word": "ionisation energy",
+        "zh": "电离能",
+        "def": "Energy required to remove one mole of electrons from one mole of gaseous atoms",
+        "phonetic": "/ˌaɪənaɪˈzeɪʃən ˈɛnədʒi/"
+      },
+      {
+        "word": "first ionisation energy",
+        "zh": "第一电离能",
+        "def": "Energy to remove the first electron from a mole of gaseous atoms",
+        "phonetic": "/fɜːst ˌaɪənaɪˈzeɪʃən ˈɛnədʒi/"
+      },
+      {
+        "word": "successive ionisation energies",
+        "zh": "逐级电离能",
+        "def": "Energies required to remove electrons one by one from a gaseous ion",
+        "phonetic": "/səkˈsɛsɪv ˌaɪənaɪˈzeɪʃən ˈɛnədʒiz/"
+      },
+      {
+        "word": "atomic orbital",
+        "zh": "原子轨道",
+        "def": "Region of space where there is a high probability of finding an electron",
+        "phonetic": "/əˈtɒmɪk ˈɔːbɪtl/"
+      },
+      {
+        "word": "subshell",
+        "zh": "亚层",
+        "def": "Division of an electron shell (s, p, d, f)",
+        "phonetic": "/ˈsʌbʃɛl/"
+      },
+      {
+        "word": "electron configuration",
+        "zh": "电子排布",
+        "def": "Arrangement of electrons in orbitals around the nucleus",
+        "phonetic": "/ɪˈlektrɒn kənˌfɪɡjʊˈreɪʃən/"
+      },
+      {
+        "word": "energy level",
+        "zh": "能级",
+        "def": "Fixed energy value that an electron in an atom can have",
+        "phonetic": "/ˈɛnədʒi ˈlɛvəl/"
+      },
+      {
+        "word": "emission spectrum",
+        "zh": "发射光谱",
+        "def": "Pattern of lines produced when excited electrons fall to lower energy levels",
+        "phonetic": "/ɪˈmɪʃən ˈspɛktrəm/"
+      },
+      {
+        "word": "ground state",
+        "zh": "基态",
+        "def": "Lowest energy state of an atom or electron",
+        "phonetic": "/ɡraʊnd steɪt/"
+      },
+      {
+        "word": "excited state",
+        "zh": "激发态",
+        "def": "Higher energy state of an atom when an electron has absorbed energy",
+        "phonetic": "/ɪkˈsaɪtɪd steɪt/"
+      },
+      {
+        "word": "s orbital",
+        "zh": "s轨道",
+        "def": "Spherical orbital that can hold up to 2 electrons",
+        "phonetic": "/ɛs ˈɔːbɪtl/"
+      },
+      {
+        "word": "p orbital",
+        "zh": "p轨道",
+        "def": "Dumbbell-shaped orbital that can hold up to 2 electrons",
+        "phonetic": "/piː ˈɔːbɪtl/"
+      },
+      {
+        "word": "d orbital",
+        "zh": "d轨道",
+        "def": "More complex orbital holding up to 2 electrons (5 per subshell)",
+        "phonetic": "/diː ˈɔːbɪtl/"
+      },
+      {
+        "word": "Aufbau principle",
+        "zh": "构建原理",
+        "def": "Electrons fill the lowest available energy orbitals first",
+        "phonetic": "/ˈaʊfbaʊ ˈprɪnsəpl/"
+      },
+      {
+        "word": "Pauli exclusion principle",
+        "zh": "泡利不相容原理",
+        "def": "No two electrons in the same atom can have identical quantum numbers",
+        "phonetic": "/ˈpaʊli ɪksˈkluːʒən ˈprɪnsəpl/"
+      },
+      {
+        "word": "Hund's rule",
+        "zh": "洪特规则",
+        "def": "Electrons occupy separate orbitals of equal energy before pairing",
+        "phonetic": "/hʌndz ruːl/"
+      },
+      {
+        "word": "electron affinity",
+        "zh": "电子亲和能",
+        "def": "Energy change when a gaseous atom gains an electron",
+        "phonetic": "/ɪˈlɛktrɒn əˈfɪnɪti/"
+      },
+      {
+        "word": "photon",
+        "zh": "光子",
+        "def": "Quantum of electromagnetic radiation",
+        "phonetic": "/ˈfəʊtɒn/"
+      },
+      {
+        "word": "frequency",
+        "zh": "频率",
+        "def": "Number of wave oscillations per second",
+        "phonetic": "/ˈfriːkwənsi/"
+      },
+      {
+        "word": "wavelength",
+        "zh": "波长",
+        "def": "Distance between successive crests of a wave",
+        "phonetic": "/ˈweɪvlɛŋθ/"
+      },
+      {
+        "word": "convergence limit",
+        "zh": "收敛极限",
+        "def": "Point where lines in a spectrum become too close to distinguish, indicating ionisation",
+        "phonetic": "/kənˈvɜːdʒəns ˈlɪmɪt/"
+      },
+      {
+        "word": "Subatomic particles",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Ionic compound",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Peroxide effect",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Reagent",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Distinguish",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Conversion",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Inert electrode",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Pressure",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Temperature",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch03": {
+    "name": "Atoms, Molecules & Stoichiometry",
+    "num": "3",
+    "words": [
+      {
+        "word": "relative molecular mass",
+        "zh": "相对分子质量",
+        "def": "Sum of the relative atomic masses of all atoms in a molecule",
+        "phonetic": "/ˈrelətɪv məˈlɛkjʊlə mæs/"
+      },
+      {
+        "word": "mole",
+        "zh": "摩尔",
+        "def": "Amount of substance containing 6.02×10²³ particles",
+        "phonetic": "/məʊl/"
+      },
+      {
+        "word": "Avogadro constant",
+        "zh": "阿伏加德罗常数",
+        "def": "Number of particles in one mole: 6.02×10²³ mol⁻¹",
+        "phonetic": "/ˌævəˈɡɑːdrəʊ ˈkɒnstənt/"
+      },
+      {
+        "word": "molar mass",
+        "zh": "摩尔质量",
+        "def": "Mass of one mole of a substance in g mol⁻¹",
+        "phonetic": "/ˈməʊlə mæs/"
+      },
+      {
+        "word": "empirical formula",
+        "zh": "最简式/实验式",
+        "def": "Simplest whole-number ratio of atoms in a compound",
+        "phonetic": "/ɛmˈpɪrɪkəl ˈfɔːmjʊlə/"
+      },
+      {
+        "word": "molecular formula",
+        "zh": "分子式",
+        "def": "Actual number of each type of atom in a molecule",
+        "phonetic": "/məˈlɛkjʊlə ˈfɔːmjʊlə/"
+      },
+      {
+        "word": "stoichiometry",
+        "zh": "化学计量",
+        "def": "Quantitative relationship between reactants and products",
+        "phonetic": "/ˌstɔɪkiˈɒmɪtri/"
+      },
+      {
+        "word": "limiting reagent",
+        "zh": "限量试剂",
+        "def": "Reactant that is completely used up first, limiting the amount of product",
+        "phonetic": "/ˈlɪmɪtɪŋ ˈriːeɪdʒənt/"
+      },
+      {
+        "word": "excess reagent",
+        "zh": "过量试剂",
+        "def": "Reactant present in greater quantity than required by stoichiometry",
+        "phonetic": "/ˈɛksɛs ˈriːeɪdʒənt/"
+      },
+      {
+        "word": "percentage yield",
+        "zh": "产率",
+        "def": "Ratio of actual yield to theoretical yield, expressed as percentage",
+        "phonetic": "/pəˈsɛntɪdʒ jiːld/"
+      },
+      {
+        "word": "molar volume",
+        "zh": "摩尔体积",
+        "def": "Volume occupied by one mole of gas (24 dm³ at RTP)",
+        "phonetic": "/ˈməʊlə ˈvɒljuːm/"
+      },
+      {
+        "word": "concentration",
+        "zh": "浓度",
+        "def": "Amount of solute dissolved per unit volume of solution (mol dm⁻³)",
+        "phonetic": "/ˌkɒnsənˈtreɪʃən/"
+      },
+      {
+        "word": "reacting masses",
+        "zh": "反应质量",
+        "def": "Masses of reactants and products calculated from a balanced equation",
+        "phonetic": "/riˈæktɪŋ mæsɪz/"
+      },
+      {
+        "word": "ideal gas",
+        "zh": "理想气体",
+        "def": "Hypothetical gas that obeys pV = nRT under all conditions",
+        "phonetic": "/aɪˈdiːəl ɡæs/"
+      },
+      {
+        "word": "pV = nRT",
+        "zh": "理想气体方程",
+        "def": "Ideal gas equation relating pressure, volume, moles and temperature",
+        "phonetic": "/piːviː ɛn ɑː tiː/"
+      },
+      {
+        "word": "relative formula mass",
+        "zh": "相对式量",
+        "def": "Sum of relative atomic masses in a formula unit",
+        "phonetic": "/ˈrelətɪv ˈfɔːmjʊlə mæs/"
+      },
+      {
+        "word": "atom economy",
+        "zh": "原子经济性",
+        "def": "Percentage of reactant atoms that end up in the desired product",
+        "phonetic": "/ˈætəm ɪˈkɒnəmi/"
+      },
+      {
+        "word": "titration",
+        "zh": "滴定",
+        "def": "Technique to determine concentration by reacting with a standard solution",
+        "phonetic": "/taɪˈtreɪʃən/"
+      },
+      {
+        "word": "standard solution",
+        "zh": "标准溶液",
+        "def": "Solution of accurately known concentration",
+        "phonetic": "/ˈstændəd səˈluːʃən/"
+      },
+      {
+        "word": "volumetric analysis",
+        "zh": "体积分析",
+        "def": "Analytical technique based on volume measurements of solutions",
+        "phonetic": "/ˌvɒljʊˈmɛtrɪk əˈnæləsɪs/"
+      },
+      {
+        "word": "solute",
+        "zh": "溶质",
+        "def": "Substance dissolved in a solvent to form a solution",
+        "phonetic": "/ˈsɒljuːt/"
+      },
+      {
+        "word": "precipitate",
+        "zh": "沉淀",
+        "def": "Insoluble solid formed during a reaction in solution",
+        "phonetic": "/prɪˈsɪpɪteɪt/"
+      },
+      {
+        "word": "anhydrous",
+        "zh": "无水的",
+        "def": "Containing no water of crystallisation",
+        "phonetic": "/ænˈhaɪdrəs/"
+      },
+      {
+        "word": "hydrated",
+        "zh": "含水的",
+        "def": "Containing water of crystallisation",
+        "phonetic": "/ˈhaɪdreɪtɪd/"
+      },
+      {
+        "word": "water of crystallisation",
+        "zh": "结晶水",
+        "def": "Water molecules incorporated into the crystal structure of a salt",
+        "phonetic": "/ˈwɔːtər ɒv ˌkrɪstaɪlaɪˈzeɪʃən/"
+      },
+      {
+        "word": "Neutralize",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch04": {
+    "name": "Chemical Bonding",
+    "num": "4",
+    "words": [
+      {
+        "word": "ionic bond",
+        "zh": "离子键",
+        "def": "Electrostatic attraction between oppositely charged ions",
+        "phonetic": "/aɪˈɒnɪk bɒnd/"
+      },
+      {
+        "word": "covalent bond",
+        "zh": "共价键",
+        "def": "Bond formed by sharing a pair of electrons between two atoms",
+        "phonetic": "/kəʊˈveɪlənt bɒnd/"
+      },
+      {
+        "word": "dative bond",
+        "zh": "配位键",
+        "def": "Covalent bond where both electrons come from one atom (also: coordinate bond)",
+        "phonetic": "/ˈdeɪtɪv bɒnd/"
+      },
+      {
+        "word": "metallic bond",
+        "zh": "金属键",
+        "def": "Attraction between positive metal ions and a sea of delocalised electrons",
+        "phonetic": "/mɪˈtælɪk bɒnd/"
+      },
+      {
+        "word": "electronegativity",
+        "zh": "电负性",
+        "def": "Ability of an atom to attract bonding electrons towards itself",
+        "phonetic": "/ɪˌlɛktrəʊnɛɡəˈtɪvɪti/"
+      },
+      {
+        "word": "polar bond",
+        "zh": "极性键",
+        "def": "Covalent bond with unequal sharing of electrons due to electronegativity difference",
+        "phonetic": "/ˈpəʊlə bɒnd/"
+      },
+      {
+        "word": "bond polarity",
+        "zh": "键的极性",
+        "def": "Uneven distribution of electron density along a bond",
+        "phonetic": "/bɒnd pəʊˈlærɪti/"
+      },
+      {
+        "word": "permanent dipole",
+        "zh": "固有偶极",
+        "def": "Persistent separation of charge in a polar molecule",
+        "phonetic": "/ˈpɜːmənənt ˈdaɪpəʊl/"
+      },
+      {
+        "word": "instantaneous dipole",
+        "zh": "瞬时偶极",
+        "def": "Temporary dipole caused by momentary uneven electron distribution",
+        "phonetic": "/ˌɪnstənˈteɪniəs ˈdaɪpəʊl/"
+      },
+      {
+        "word": "induced dipole",
+        "zh": "诱导偶极",
+        "def": "Dipole created in a molecule by a nearby charge or dipole",
+        "phonetic": "/ɪnˈdjuːst ˈdaɪpəʊl/"
+      },
+      {
+        "word": "van der Waals forces",
+        "zh": "范德华力",
+        "def": "Weak intermolecular attractions including London dispersion forces",
+        "phonetic": "/væn də vɑːlz ˈfɔːsɪz/"
+      },
+      {
+        "word": "London dispersion forces",
+        "zh": "伦敦色散力",
+        "def": "Intermolecular forces between induced instantaneous dipoles",
+        "phonetic": "/ˈlʌndən dɪsˈpɜːʒən ˈfɔːsɪz/"
+      },
+      {
+        "word": "hydrogen bond",
+        "zh": "氢键",
+        "def": "Strong intermolecular attraction between δ+ H and lone pair on N, O or F",
+        "phonetic": "/ˈhaɪdrədʒən bɒnd/"
+      },
+      {
+        "word": "VSEPR theory",
+        "zh": "价层电子对互斥理论",
+        "def": "Model predicting molecular shape from repulsion of electron pairs",
+        "phonetic": "/ˈviːsɛpər ˈθɪəri/"
+      },
+      {
+        "word": "lone pair",
+        "zh": "孤对电子",
+        "def": "Pair of non-bonding electrons on an atom",
+        "phonetic": "/ləʊn peə/"
+      },
+      {
+        "word": "bond angle",
+        "zh": "键角",
+        "def": "Angle between two adjacent bonds in a molecule",
+        "phonetic": "/bɒnd ˈæŋɡəl/"
+      },
+      {
+        "word": "tetrahedral",
+        "zh": "四面体形",
+        "def": "Molecular shape with four bonds at 109.5°",
+        "phonetic": "/ˌtɛtrəˈhiːdrəl/"
+      },
+      {
+        "word": "trigonal planar",
+        "zh": "平面三角形",
+        "def": "Molecular shape with three bonds at 120° in the same plane",
+        "phonetic": "/ˈtrɪɡənəl ˈpleɪnə/"
+      },
+      {
+        "word": "linear",
+        "zh": "直线形",
+        "def": "Molecular shape with a bond angle of 180°",
+        "phonetic": "/ˈlɪniə/"
+      },
+      {
+        "word": "bent/V-shaped",
+        "zh": "V形",
+        "def": "Molecular shape with two bonding pairs and two lone pairs",
+        "phonetic": "/bɛnt viː-ʃeɪpt/"
+      },
+      {
+        "word": "pyramidal",
+        "zh": "三角锥形",
+        "def": "Molecular shape with three bonding pairs and one lone pair",
+        "phonetic": "/pɪˈræmɪdəl/"
+      },
+      {
+        "word": "sigma bond",
+        "zh": "σ键",
+        "def": "Bond formed by head-on overlap of orbitals along the internuclear axis",
+        "phonetic": "/ˈsɪɡmə bɒnd/"
+      },
+      {
+        "word": "pi bond",
+        "zh": "π键",
+        "def": "Bond formed by sideways overlap of p orbitals above and below the axis",
+        "phonetic": "/paɪ bɒnd/"
+      },
+      {
+        "word": "delocalisation",
+        "zh": "离域",
+        "def": "Spreading of electrons over more than two atoms in a structure",
+        "phonetic": "/diːˌləʊkəlaɪˈzeɪʃən/"
+      },
+      {
+        "word": "resonance structure",
+        "zh": "共振结构",
+        "def": "One of two or more Lewis structures representing the same molecule",
+        "phonetic": "/ˈrɛzənəns ˈstrʌktʃə/"
+      },
+      {
+        "word": "bond length",
+        "zh": "键长",
+        "def": "Distance between the nuclei of two bonded atoms",
+        "phonetic": "/bɒnd lɛŋθ/"
+      },
+      {
+        "word": "bond energy",
+        "zh": "键能",
+        "def": "Energy required to break one mole of bonds in gaseous molecules",
+        "phonetic": "/bɒnd ˈɛnədʒi/"
+      },
+      {
+        "word": "intermolecular forces",
+        "zh": "分子间作用力",
+        "def": "Forces of attraction or repulsion between molecules",
+        "phonetic": "/ˌɪntəməˈlɛkjʊlə ˈfɔːsɪz/"
+      },
+      {
+        "word": "intramolecular forces",
+        "zh": "分子内作用力",
+        "def": "Forces within a molecule (e.g. covalent bonds)",
+        "phonetic": "/ˌɪntrəməˈlɛkjʊlə ˈfɔːsɪz/"
+      },
+      {
+        "word": "dipole-dipole interaction",
+        "zh": "偶极-偶极相互作用",
+        "def": "Attractive force between permanent dipoles of adjacent molecules",
+        "phonetic": "/ˈdaɪpəʊl ˈdaɪpəʊl ˌɪntərˈækʃən/"
+      },
+      {
+        "word": "Dipole moment",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Molecular lattice",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch05": {
+    "name": "States of Matter",
+    "num": "5",
+    "words": [
+      {
+        "word": "ideal gas",
+        "zh": "理想气体",
+        "def": "Gas that obeys pV = nRT perfectly; molecules have no volume and no intermolecular forces",
+        "phonetic": "/aɪˈdiːəl ɡæs/"
+      },
+      {
+        "word": "real gas",
+        "zh": "真实气体",
+        "def": "Gas that deviates from ideal behaviour due to molecular volume and intermolecular forces",
+        "phonetic": "/riːəl ɡæs/"
+      },
+      {
+        "word": "kinetic theory",
+        "zh": "分子运动论",
+        "def": "Model explaining gas behaviour in terms of random motion of particles",
+        "phonetic": "/kɪˈnɛtɪk ˈθɪəri/"
+      },
+      {
+        "word": "Boyle's law",
+        "zh": "波义耳定律",
+        "def": "At constant temperature, pressure is inversely proportional to volume",
+        "phonetic": "/bɔɪlz lɔː/"
+      },
+      {
+        "word": "Charles's law",
+        "zh": "查尔斯定律",
+        "def": "At constant pressure, volume is proportional to absolute temperature",
+        "phonetic": "/tʃɑːzlz lɔː/"
+      },
+      {
+        "word": "ionic lattice",
+        "zh": "离子晶格",
+        "def": "Regular 3D arrangement of alternating positive and negative ions",
+        "phonetic": "/aɪˈɒnɪk ˈlætɪs/"
+      },
+      {
+        "word": "giant covalent structure",
+        "zh": "原子晶体",
+        "def": "Network solid held together by a continuous system of covalent bonds",
+        "phonetic": "/ˈdʒaɪənt kəʊˈveɪlənt ˈstrʌktʃə/"
+      },
+      {
+        "word": "metallic lattice",
+        "zh": "金属晶格",
+        "def": "Regular arrangement of positive metal ions in a sea of delocalised electrons",
+        "phonetic": "/mɪˈtælɪk ˈlætɪs/"
+      },
+      {
+        "word": "simple molecular structure",
+        "zh": "分子晶体",
+        "def": "Molecules held together by weak intermolecular forces in a lattice",
+        "phonetic": "/ˈsɪmpəl məˈlɛkjʊlə ˈstrʌktʃə/"
+      },
+      {
+        "word": "diamond",
+        "zh": "金刚石",
+        "def": "Allotrope of carbon with a giant covalent tetrahedral structure; very hard",
+        "phonetic": "/ˈdaɪəmənd/"
+      },
+      {
+        "word": "graphite",
+        "zh": "石墨",
+        "def": "Allotrope of carbon with layers of hexagonal rings; conducts electricity",
+        "phonetic": "/ˈɡræfaɪt/"
+      },
+      {
+        "word": "allotrope",
+        "zh": "同素异形体",
+        "def": "Different structural forms of the same element",
+        "phonetic": "/ˈælətrəʊp/"
+      },
+      {
+        "word": "fullerene",
+        "zh": "富勒烯",
+        "def": "Spherical allotrope of carbon (e.g. C₆₀)",
+        "phonetic": "/ˈfʊləriːn/"
+      },
+      {
+        "word": "coordination number",
+        "zh": "配位数",
+        "def": "Number of nearest neighbours surrounding an ion or atom in a lattice",
+        "phonetic": "/kəʊˌɔːdɪˈneɪʃən ˈnʌmbə/"
+      },
+      {
+        "word": "unit cell",
+        "zh": "晶胞",
+        "def": "Smallest repeating unit of a crystal lattice",
+        "phonetic": "/ˈjuːnɪt sɛl/"
+      },
+      {
+        "word": "face-centred cubic",
+        "zh": "面心立方",
+        "def": "Crystal packing where atoms occupy corners and face centres of cube",
+        "phonetic": "/feɪs ˈsɛntəd ˈkjuːbɪk/"
+      },
+      {
+        "word": "body-centred cubic",
+        "zh": "体心立方",
+        "def": "Crystal packing where atom is at centre of a cube with 8 corner atoms",
+        "phonetic": "/ˈbɒdi ˈsɛntəd ˈkjuːbɪk/"
+      },
+      {
+        "word": "NaCl structure",
+        "zh": "NaCl结构",
+        "def": "Ionic lattice where each ion is surrounded by 6 oppositely charged ions",
+        "phonetic": "/ɛn eɪ siːl ˈstrʌktʃə/"
+      },
+      {
+        "word": "CsCl structure",
+        "zh": "CsCl结构",
+        "def": "Ionic lattice where each ion is surrounded by 8 oppositely charged ions",
+        "phonetic": "/siː ɛs siːl ˈstrʌktʃə/"
+      },
+      {
+        "word": "sublimation",
+        "zh": "升华",
+        "def": "Direct change of state from solid to gas without passing through liquid",
+        "phonetic": "/ˌsʌblɪˈmeɪʃən/"
+      },
+      {
+        "word": "melting point",
+        "zh": "熔点",
+        "def": "Temperature at which solid and liquid are in equilibrium",
+        "phonetic": "/ˈmɛltɪŋ pɔɪnt/"
+      },
+      {
+        "word": "boiling point",
+        "zh": "沸点",
+        "def": "Temperature at which liquid and gas are in equilibrium at standard pressure",
+        "phonetic": "/ˈbɔɪlɪŋ pɔɪnt/"
+      },
+      {
+        "word": "vapour pressure",
+        "zh": "蒸气压",
+        "def": "Pressure exerted by vapour in equilibrium with its liquid",
+        "phonetic": "/ˈveɪpə ˈprɛʃə/"
+      },
+      {
+        "word": "viscosity",
+        "zh": "粘度",
+        "def": "Resistance to flow in a liquid",
+        "phonetic": "/vɪsˈkɒsɪti/"
+      },
+      {
+        "word": "surface tension",
+        "zh": "表面张力",
+        "def": "Tendency of a liquid surface to minimize its area",
+        "phonetic": "/ˈsɜːfɪs ˈtɛnʃən/"
+      }
+    ]
+  },
+  "ch06": {
+    "name": "Chemical Energetics",
+    "num": "6",
+    "words": [
+      {
+        "word": "enthalpy change",
+        "zh": "焓变",
+        "def": "Heat energy change at constant pressure (ΔH)",
+        "phonetic": "/ˈɛnθəlpi ʧeɪndʒ/"
+      },
+      {
+        "word": "exothermic",
+        "zh": "放热的",
+        "def": "Reaction that releases heat energy (ΔH negative)",
+        "phonetic": "/ˌɛksəʊˈθɜːmɪk/"
+      },
+      {
+        "word": "endothermic",
+        "zh": "吸热的",
+        "def": "Reaction that absorbs heat energy (ΔH positive)",
+        "phonetic": "/ˌɛndəʊˈθɜːmɪk/"
+      },
+      {
+        "word": "standard conditions",
+        "zh": "标准条件",
+        "def": "298 K, 100 kPa, solutions at 1 mol dm⁻³",
+        "phonetic": "/ˈstændəd kənˈdɪʃənz/"
+      },
+      {
+        "word": "standard enthalpy of combustion",
+        "zh": "标准燃烧焓",
+        "def": "Enthalpy change when one mole of substance burns completely in oxygen under standard conditions",
+        "phonetic": "/ˈstændəd ˈɛnθəlpi ɒv kəmˈbʌstʃən/"
+      },
+      {
+        "word": "standard enthalpy of formation",
+        "zh": "标准生成焓",
+        "def": "Enthalpy change when one mole of compound is formed from its elements under standard conditions",
+        "phonetic": "/ˈstændəd ˈɛnθəlpi ɒv fɔːˈmeɪʃən/"
+      },
+      {
+        "word": "Hess's law",
+        "zh": "赫斯定律",
+        "def": "Enthalpy change of a reaction is independent of the route taken",
+        "phonetic": "/hɛsɪz lɔː/"
+      },
+      {
+        "word": "energy cycle",
+        "zh": "能量循环",
+        "def": "Diagram showing alternative routes between reactants and products",
+        "phonetic": "/ˈɛnədʒi ˈsaɪkəl/"
+      },
+      {
+        "word": "calorimetry",
+        "zh": "量热法",
+        "def": "Technique to measure heat energy changes in reactions",
+        "phonetic": "/ˌkæləˈrɪmɪtri/"
+      },
+      {
+        "word": "specific heat capacity",
+        "zh": "比热容",
+        "def": "Energy needed to raise the temperature of 1 g of substance by 1 K",
+        "phonetic": "/spɪˈsɪfɪk hiːt kəˈpæsɪti/"
+      },
+      {
+        "word": "bond enthalpy",
+        "zh": "键焓",
+        "def": "Energy required to break one mole of a specified bond in gaseous molecules",
+        "phonetic": "/bɒnd ˈɛnθəlpi/"
+      },
+      {
+        "word": "mean bond enthalpy",
+        "zh": "平均键焓",
+        "def": "Average bond enthalpy from a range of compounds",
+        "phonetic": "/miːn bɒnd ˈɛnθəlpi/"
+      },
+      {
+        "word": "lattice energy",
+        "zh": "晶格能",
+        "def": "Enthalpy change when one mole of ionic lattice forms from gaseous ions",
+        "phonetic": "/ˈlætɪs ˈɛnədʒi/"
+      },
+      {
+        "word": "Born-Haber cycle",
+        "zh": "玻恩-哈伯循环",
+        "def": "Energy cycle used to calculate lattice energy via Hess's law",
+        "phonetic": "/bɔːn ˈheɪbə ˈsaɪkəl/"
+      },
+      {
+        "word": "enthalpy of atomisation",
+        "zh": "原子化焓",
+        "def": "Enthalpy change when one mole of gaseous atoms forms from the element",
+        "phonetic": "/ˈɛnθəlpi ɒv ˌætəmaɪˈzeɪʃən/"
+      },
+      {
+        "word": "electron affinity",
+        "zh": "电子亲和能",
+        "def": "Enthalpy change when one mole of gaseous atoms gains one mole of electrons",
+        "phonetic": "/ɪˈlɛktrɒn əˈfɪnɪti/"
+      },
+      {
+        "word": "enthalpy of hydration",
+        "zh": "水化焓",
+        "def": "Enthalpy change when one mole of gaseous ions dissolves in excess water",
+        "phonetic": "/ˈɛnθəlpi ɒv haɪˈdreɪʃən/"
+      },
+      {
+        "word": "enthalpy of solution",
+        "zh": "溶解焓",
+        "def": "Enthalpy change when one mole of substance dissolves in excess solvent",
+        "phonetic": "/ˈɛnθəlpi ɒv səˈluːʃən/"
+      },
+      {
+        "word": "entropy",
+        "zh": "熵",
+        "def": "Measure of disorder or randomness in a system (S)",
+        "phonetic": "/ˈɛntrəpi/"
+      },
+      {
+        "word": "Gibbs free energy",
+        "zh": "吉布斯自由能",
+        "def": "ΔG = ΔH – TΔS; reaction is spontaneous if ΔG is negative",
+        "phonetic": "/ɡɪbz friː ˈɛnədʒi/"
+      },
+      {
+        "word": "spontaneous reaction",
+        "zh": "自发反应",
+        "def": "Reaction that proceeds without continuous external energy input",
+        "phonetic": "/spɒnˈteɪniəs riˈækʃən/"
+      },
+      {
+        "word": "activation energy",
+        "zh": "活化能",
+        "def": "Minimum energy required for a reaction to occur",
+        "phonetic": "/ˌæktɪˈveɪʃən ˈɛnədʒi/"
+      },
+      {
+        "word": "enthalpy profile diagram",
+        "zh": "焓变图",
+        "def": "Diagram showing enthalpy of reactants, transition state and products",
+        "phonetic": "/ˈɛnθəlpi ˈprəʊfaɪl ˈdaɪəɡræm/"
+      },
+      {
+        "word": "thermochemical equation",
+        "zh": "热化学方程式",
+        "def": "Balanced equation showing enthalpy change for the reaction as written",
+        "phonetic": "/ˌθɜːməʊˈkɛmɪkəl ɪˈkweɪʒən/"
+      }
+    ]
+  },
+  "ch08": {
+    "name": "Equilibria",
+    "num": "8",
+    "words": [
+      {
+        "word": "dynamic equilibrium",
+        "zh": "动态平衡",
+        "def": "State where forward and reverse reactions occur at equal rates",
+        "phonetic": "/daɪˈnæmɪk ˌiːkwɪˈlɪbriəm/"
+      },
+      {
+        "word": "reversible reaction",
+        "zh": "可逆反应",
+        "def": "Reaction that can proceed in both forward and reverse directions",
+        "phonetic": "/rɪˈvɜːsəbl riˈækʃən/"
+      },
+      {
+        "word": "Le Chatelier's principle",
+        "zh": "勒夏特列原理",
+        "def": "System at equilibrium responds to stress by shifting to oppose the change",
+        "phonetic": "/lə ʃætəˈljeɪz ˈprɪnsəpl/"
+      },
+      {
+        "word": "equilibrium constant Kc",
+        "zh": "平衡常数Kc",
+        "def": "Ratio of product to reactant concentrations at equilibrium",
+        "phonetic": "/ˌiːkwɪˈlɪbriəm ˈkɒnstənt keɪ siː/"
+      },
+      {
+        "word": "equilibrium constant Kp",
+        "zh": "平衡常数Kp",
+        "def": "Ratio of product to reactant partial pressures at equilibrium",
+        "phonetic": "/ˌiːkwɪˈlɪbriəm ˈkɒnstənt keɪ piː/"
+      },
+      {
+        "word": "partial pressure",
+        "zh": "分压",
+        "def": "Pressure exerted by one gas in a mixture",
+        "phonetic": "/ˈpɑːʃəl ˈprɛʃə/"
+      },
+      {
+        "word": "mole fraction",
+        "zh": "摩尔分数",
+        "def": "Ratio of moles of one component to total moles in mixture",
+        "phonetic": "/məʊl ˈfrækʃən/"
+      },
+      {
+        "word": "Brønsted-Lowry acid",
+        "zh": "布朗斯特-劳里酸",
+        "def": "Proton donor in an acid-base reaction",
+        "phonetic": "/ˈbrɒnstɪd ˈlaʊri ˈæsɪd/"
+      },
+      {
+        "word": "Brønsted-Lowry base",
+        "zh": "布朗斯特-劳里碱",
+        "def": "Proton acceptor in an acid-base reaction",
+        "phonetic": "/ˈbrɒnstɪd ˈlaʊri beɪs/"
+      },
+      {
+        "word": "conjugate acid-base pair",
+        "zh": "共轭酸碱对",
+        "def": "Acid and its conjugate base (or base and its conjugate acid) differing by one proton",
+        "phonetic": "/ˈkɒndʒʊɡɪt ˈæsɪd beɪs peə/"
+      },
+      {
+        "word": "pH",
+        "zh": "pH值",
+        "def": "Measure of hydrogen ion concentration: pH = –log[H⁺]",
+        "phonetic": "/piː eɪtʃ/"
+      },
+      {
+        "word": "Ka",
+        "zh": "酸解离常数",
+        "def": "Equilibrium constant for partial dissociation of a weak acid",
+        "phonetic": "/keɪ eɪ/"
+      },
+      {
+        "word": "Kb",
+        "zh": "碱解离常数",
+        "def": "Equilibrium constant for partial dissociation of a weak base",
+        "phonetic": "/keɪ biː/"
+      },
+      {
+        "word": "Kw",
+        "zh": "水的离子积",
+        "def": "Ionic product of water: [H⁺][OH⁻] = 10⁻¹⁴ at 298 K",
+        "phonetic": "/keɪ dʌbəljuː/"
+      },
+      {
+        "word": "Ksp",
+        "zh": "溶度积",
+        "def": "Solubility product: equilibrium constant for a sparingly soluble salt",
+        "phonetic": "/keɪ ɛs piː/"
+      },
+      {
+        "word": "buffer solution",
+        "zh": "缓冲溶液",
+        "def": "Solution that resists changes in pH when small amounts of acid or base are added",
+        "phonetic": "/ˈbʌfə səˈluːʃən/"
+      },
+      {
+        "word": "weak acid",
+        "zh": "弱酸",
+        "def": "Acid that is only partially dissociated in solution",
+        "phonetic": "/wiːk ˈæsɪd/"
+      },
+      {
+        "word": "strong acid",
+        "zh": "强酸",
+        "def": "Acid that is completely dissociated in solution",
+        "phonetic": "/strɒŋ ˈæsɪd/"
+      },
+      {
+        "word": "amphiprotic",
+        "zh": "两性质子性的",
+        "def": "Substance that can act as both a proton donor and acceptor",
+        "phonetic": "/ˌæmfɪˈprɒtɪk/"
+      },
+      {
+        "word": "hydrolysis",
+        "zh": "水解",
+        "def": "Reaction with water causing dissociation or decomposition",
+        "phonetic": "/haɪˈdrɒlɪsɪs/"
+      },
+      {
+        "word": "equivalence point",
+        "zh": "等当点",
+        "def": "Point in titration where moles of acid equal moles of base",
+        "phonetic": "/ɪˈkwɪvələns pɔɪnt/"
+      },
+      {
+        "word": "indicator",
+        "zh": "指示剂",
+        "def": "Weak acid/base that changes colour with pH",
+        "phonetic": "/ˈɪndɪkeɪtə/"
+      },
+      {
+        "word": "common ion effect",
+        "zh": "同离子效应",
+        "def": "Reduction in solubility of a salt by adding a common ion",
+        "phonetic": "/ˈkɒmən ˈaɪən ɪˈfɛkt/"
+      },
+      {
+        "word": "pKa",
+        "zh": "pKa值",
+        "def": "–log(Ka); lower pKa means stronger acid",
+        "phonetic": "/piː keɪ eɪ/"
+      },
+      {
+        "word": "acid dissociation",
+        "zh": "酸解离",
+        "def": "Splitting of acid molecules into ions in solution",
+        "phonetic": "/ˈæsɪd dɪˌsəʊsiˈeɪʃən/"
+      },
+      {
+        "word": "Equilibrium yield",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch09": {
+    "name": "Reaction Kinetics",
+    "num": "9",
+    "words": [
+      {
+        "word": "rate of reaction",
+        "zh": "反应速率",
+        "def": "Change in concentration of reactant or product per unit time",
+        "phonetic": "/reɪt ɒv riˈækʃən/"
+      },
+      {
+        "word": "rate equation",
+        "zh": "速率方程",
+        "def": "Mathematical expression: rate = k[A]ᵐ[B]ⁿ",
+        "phonetic": "/reɪt ɪˈkweɪʒən/"
+      },
+      {
+        "word": "rate constant k",
+        "zh": "速率常数k",
+        "def": "Proportionality constant in the rate equation; dependent on temperature",
+        "phonetic": "/reɪt ˈkɒnstənt keɪ/"
+      },
+      {
+        "word": "order of reaction",
+        "zh": "反应级数",
+        "def": "Power to which concentration term is raised in the rate equation",
+        "phonetic": "/ˈɔːdə ɒv riˈækʃən/"
+      },
+      {
+        "word": "first order",
+        "zh": "一级反应",
+        "def": "Rate proportional to concentration of one reactant: rate = k[A]",
+        "phonetic": "/fɜːst ˈɔːdə/"
+      },
+      {
+        "word": "second order",
+        "zh": "二级反应",
+        "def": "Rate proportional to concentration squared: rate = k[A]²",
+        "phonetic": "/ˈsɛkənd ˈɔːdə/"
+      },
+      {
+        "word": "zero order",
+        "zh": "零级反应",
+        "def": "Rate independent of reactant concentration",
+        "phonetic": "/ˈzɪərəʊ ˈɔːdə/"
+      },
+      {
+        "word": "half-life",
+        "zh": "半衰期",
+        "def": "Time for concentration to halve; constant for first-order reactions",
+        "phonetic": "/hæf laɪf/"
+      },
+      {
+        "word": "activation energy",
+        "zh": "活化能",
+        "def": "Minimum energy needed for reactant particles to react",
+        "phonetic": "/ˌæktɪˈveɪʃən ˈɛnədʒi/"
+      },
+      {
+        "word": "Arrhenius equation",
+        "zh": "阿累尼乌斯方程",
+        "def": "k = Ae^(–Ea/RT); shows how k varies with temperature",
+        "phonetic": "/əˈriːniəs ɪˈkweɪʒən/"
+      },
+      {
+        "word": "collision theory",
+        "zh": "碰撞理论",
+        "def": "Reactions occur when particles collide with sufficient energy and correct orientation",
+        "phonetic": "/kəˈlɪʒən ˈθɪəri/"
+      },
+      {
+        "word": "Maxwell-Boltzmann distribution",
+        "zh": "麦克斯韦-玻尔兹曼分布",
+        "def": "Graph showing distribution of molecular energies in a gas",
+        "phonetic": "/ˈmækswɛl ˈbɒltzmən ˌdɪstrɪˈbjuːʃən/"
+      },
+      {
+        "word": "catalyst",
+        "zh": "催化剂",
+        "def": "Substance that increases reaction rate without being consumed",
+        "phonetic": "/ˈkætəlɪst/"
+      },
+      {
+        "word": "homogeneous catalyst",
+        "zh": "均相催化剂",
+        "def": "Catalyst in the same phase as the reactants",
+        "phonetic": "/ˌhɒməˈdʒiːniəs ˈkætəlɪst/"
+      },
+      {
+        "word": "heterogeneous catalyst",
+        "zh": "非均相催化剂",
+        "def": "Catalyst in a different phase from the reactants",
+        "phonetic": "/ˌhɛtərəˈdʒiːniəs ˈkætəlɪst/"
+      },
+      {
+        "word": "transition state",
+        "zh": "过渡态",
+        "def": "Highest energy point along a reaction pathway",
+        "phonetic": "/trænˈzɪʃən steɪt/"
+      },
+      {
+        "word": "reaction mechanism",
+        "zh": "反应机理",
+        "def": "Step-by-step sequence of elementary reactions in an overall reaction",
+        "phonetic": "/riˈækʃən ˈmɛkənɪzəm/"
+      },
+      {
+        "word": "rate-determining step",
+        "zh": "决速步",
+        "def": "Slowest step in a reaction mechanism that determines the overall rate",
+        "phonetic": "/reɪt dɪˈtɜːmɪnɪŋ stɛp/"
+      },
+      {
+        "word": "intermediate",
+        "zh": "中间体",
+        "def": "Species formed in one step of a mechanism and consumed in a later step",
+        "phonetic": "/ˌɪntəˈmiːdiət/"
+      },
+      {
+        "word": "initial rate method",
+        "zh": "初始速率法",
+        "def": "Determining rate equation by measuring reaction rate at time zero",
+        "phonetic": "/ɪˈnɪʃəl reɪt ˈmɛθəd/"
+      },
+      {
+        "word": "integrated rate equation",
+        "zh": "积分速率方程",
+        "def": "Expression relating concentration to time for a given order",
+        "phonetic": "/ˈɪntɪɡreɪtɪd reɪt ɪˈkweɪʒən/"
+      },
+      {
+        "word": "enzyme",
+        "zh": "酶",
+        "def": "Biological catalyst, a protein that speeds up metabolic reactions",
+        "phonetic": "/ˈɛnzaɪm/"
+      },
+      {
+        "word": "inhibitor",
+        "zh": "抑制剂",
+        "def": "Substance that decreases reaction rate",
+        "phonetic": "/ɪnˈhɪbɪtə/"
+      },
+      {
+        "word": "effective collision",
+        "zh": "有效碰撞",
+        "def": "Collision with sufficient energy and correct orientation to result in reaction",
+        "phonetic": "/ɪˈfɛktɪv kəˈlɪʒən/"
+      },
+      {
+        "word": "First-order reaction",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Reaction pathway",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch10": {
+    "name": "The Periodic Table",
+    "num": "10",
+    "words": [
+      {
+        "word": "periodicity",
+        "zh": "周期性",
+        "def": "Regular repeating trends in properties across a period",
+        "phonetic": "/ˌpɪəriəˈdɪsɪti/"
+      },
+      {
+        "word": "period",
+        "zh": "周期",
+        "def": "Horizontal row of elements in the periodic table",
+        "phonetic": "/ˈpɪəriəd/"
+      },
+      {
+        "word": "group",
+        "zh": "族",
+        "def": "Vertical column of elements in the periodic table",
+        "phonetic": "/ɡruːp/"
+      },
+      {
+        "word": "transition element",
+        "zh": "过渡元素",
+        "def": "d-block element with an incomplete d subshell in at least one oxidation state",
+        "phonetic": "/trænˈzɪʃən ˈɛlɪmənt/"
+      },
+      {
+        "word": "d-block element",
+        "zh": "d区元素",
+        "def": "Element whose outermost electrons are in d orbitals",
+        "phonetic": "/diː blɒk ˈɛlɪmənt/"
+      },
+      {
+        "word": "variable oxidation state",
+        "zh": "可变氧化态",
+        "def": "Ability of transition metals to exist in multiple oxidation states",
+        "phonetic": "/ˈvɛəriəbl ˌɒksɪˈdeɪʃən steɪt/"
+      },
+      {
+        "word": "complex ion",
+        "zh": "配离子",
+        "def": "Metal ion bonded to ligands by coordinate bonds",
+        "phonetic": "/ˈkɒmplɛks ˈaɪən/"
+      },
+      {
+        "word": "ligand",
+        "zh": "配体",
+        "def": "Molecule or ion that donates a lone pair to a central metal ion",
+        "phonetic": "/ˈlaɪɡænd/"
+      },
+      {
+        "word": "coordination number",
+        "zh": "配位数",
+        "def": "Number of ligands bonded to the central metal ion",
+        "phonetic": "/kəʊˌɔːdɪˈneɪʃən ˈnʌmbə/"
+      },
+      {
+        "word": "bidentate ligand",
+        "zh": "双齿配体",
+        "def": "Ligand that forms two coordinate bonds with the metal ion",
+        "phonetic": "/baɪˈdenteɪt ˈlaɪɡænd/"
+      },
+      {
+        "word": "chelate",
+        "zh": "螯合物",
+        "def": "Complex with a ring formed by a polydentate ligand",
+        "phonetic": "/ˈkiːleɪt/"
+      },
+      {
+        "word": "precipitation reaction",
+        "zh": "沉淀反应",
+        "def": "Reaction forming an insoluble solid from aqueous ions",
+        "phonetic": "/prɪˌsɪpɪˈteɪʃən riˈækʃən/"
+      },
+      {
+        "word": "oxidation state",
+        "zh": "氧化态",
+        "def": "Hypothetical charge on an atom if all bonds were ionic",
+        "phonetic": "/ˌɒksɪˈdeɪʃən steɪt/"
+      },
+      {
+        "word": "oxidising agent",
+        "zh": "氧化剂",
+        "def": "Species that gains electrons and is itself reduced",
+        "phonetic": "/ˈɒksɪdaɪzɪŋ ˈeɪdʒənt/"
+      },
+      {
+        "word": "reducing agent",
+        "zh": "还原剂",
+        "def": "Species that loses electrons and is itself oxidised",
+        "phonetic": "/rɪˈdjuːsɪŋ ˈeɪdʒənt/"
+      },
+      {
+        "word": "disproportionation",
+        "zh": "歧化反应",
+        "def": "Reaction where the same element is both oxidised and reduced",
+        "phonetic": "/ˌdɪsprəˌpɔːʃəˈneɪʃən/"
+      },
+      {
+        "word": "catalytic activity",
+        "zh": "催化活性",
+        "def": "Ability of a transition metal to act as a catalyst",
+        "phonetic": "/ˌkætəˈlɪtɪk ækˈtɪvɪti/"
+      },
+      {
+        "word": "coloured ion",
+        "zh": "有色离子",
+        "def": "Transition metal ion that absorbs visible light due to d-d electron transitions",
+        "phonetic": "/ˈkʌləd ˈaɪən/"
+      },
+      {
+        "word": "half-equation",
+        "zh": "半方程式",
+        "def": "Equation showing only oxidation or reduction part of a redox reaction",
+        "phonetic": "/hæf ɪˈkweɪʒən/"
+      },
+      {
+        "word": "ligand substitution",
+        "zh": "配体取代",
+        "def": "Replacement of one ligand by another in a complex ion",
+        "phonetic": "/ˈlaɪɡænd ˌsʌbstɪˈtjuːʃən/"
+      },
+      {
+        "word": "ionisation energy trend",
+        "zh": "电离能趋势",
+        "def": "Variation in ionisation energies across a period or down a group",
+        "phonetic": "/ˌaɪənaɪˈzeɪʃən ˈɛnədʒi trɛnd/"
+      },
+      {
+        "word": "atomic radius",
+        "zh": "原子半径",
+        "def": "Half the distance between nuclei of two adjacent atoms",
+        "phonetic": "/əˈtɒmɪk ˈreɪdiəs/"
+      },
+      {
+        "word": "ionic radius",
+        "zh": "离子半径",
+        "def": "Radius of an ion in an ionic crystal",
+        "phonetic": "/aɪˈɒnɪk ˈreɪdiəs/"
+      },
+      {
+        "word": "electronegativity trend",
+        "zh": "电负性趋势",
+        "def": "Electronegativity generally increases across a period and decreases down a group",
+        "phonetic": "/ɪˌlɛktrəʊnɛɡəˈtɪvɪti trɛnd/"
+      },
+      {
+        "word": "shielding effect",
+        "zh": "屏蔽效应",
+        "def": "Reduction in nuclear attraction on outer electrons by inner electron shells",
+        "phonetic": "/ˈʃiːldɪŋ ɪˈfɛkt/"
+      },
+      {
+        "word": "Reactivity",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch11": {
+    "name": "Group 2",
+    "num": "11",
+    "words": [
+      {
+        "word": "alkaline earth metal",
+        "zh": "碱土金属",
+        "def": "Group 2 element (Be, Mg, Ca, Sr, Ba, Ra)",
+        "phonetic": "/ˈælkəlaɪn ɜːθ ˈmɛtəl/"
+      },
+      {
+        "word": "reactivity trend",
+        "zh": "反应活性趋势",
+        "def": "Group 2 metals become more reactive down the group",
+        "phonetic": "/riːækˈtɪvɪti trɛnd/"
+      },
+      {
+        "word": "thermal decomposition",
+        "zh": "热分解",
+        "def": "Breakdown of a compound by heating",
+        "phonetic": "/ˈθɜːməl ˌdiːkɒmpəˈzɪʃən/"
+      },
+      {
+        "word": "hydroxide",
+        "zh": "氢氧化物",
+        "def": "Compound containing OH⁻ ions",
+        "phonetic": "/haɪˈdrɒksaɪd/"
+      },
+      {
+        "word": "oxide",
+        "zh": "氧化物",
+        "def": "Compound of an element with oxygen",
+        "phonetic": "/ˈɒksaɪd/"
+      },
+      {
+        "word": "carbonate",
+        "zh": "碳酸盐",
+        "def": "Salt of carbonic acid containing CO₃²⁻ ions",
+        "phonetic": "/ˈkɑːbəneɪt/"
+      },
+      {
+        "word": "sulfate",
+        "zh": "硫酸盐",
+        "def": "Salt of sulfuric acid containing SO₄²⁻ ions",
+        "phonetic": "/ˈsʌlfeɪt/"
+      },
+      {
+        "word": "solubility trend",
+        "zh": "溶解性趋势",
+        "def": "Group 2 hydroxide solubility increases; sulfate solubility decreases down the group",
+        "phonetic": "/ˌsɒljʊˈbɪlɪti trɛnd/"
+      },
+      {
+        "word": "neutralisation",
+        "zh": "中和反应",
+        "def": "Reaction between an acid and a base to form salt and water",
+        "phonetic": "/ˌnjuːtrəlaɪˈzeɪʃən/"
+      },
+      {
+        "word": "calcium hydroxide",
+        "zh": "氢氧化钙",
+        "def": "Ca(OH)₂; used in agriculture to neutralise acid soils",
+        "phonetic": "/ˈkælsiəm haɪˈdrɒksaɪd/"
+      },
+      {
+        "word": "magnesium oxide",
+        "zh": "氧化镁",
+        "def": "MgO; used as antacid and refractory material",
+        "phonetic": "/mæɡˈniːziəm ˈɒksaɪd/"
+      },
+      {
+        "word": "barium sulfate",
+        "zh": "硫酸钡",
+        "def": "BaSO₄; insoluble white precipitate used in barium meals",
+        "phonetic": "/ˈbɛəriəm ˈsʌlfeɪt/"
+      },
+      {
+        "word": "barium chloride",
+        "zh": "氯化钡",
+        "def": "BaCl₂; reagent used to test for sulfate ions",
+        "phonetic": "/ˈbɛəriəm ˈklɔːraɪd/"
+      },
+      {
+        "word": "limewater",
+        "zh": "石灰水",
+        "def": "Dilute aqueous calcium hydroxide; turns milky with CO₂",
+        "phonetic": "/laɪmˈwɔːtə/"
+      },
+      {
+        "word": "effervescence",
+        "zh": "起泡/冒泡",
+        "def": "Rapid release of gas bubbles from a liquid during a reaction",
+        "phonetic": "/ˌɛfəˈvɛsəns/"
+      },
+      {
+        "word": "base",
+        "zh": "碱",
+        "def": "Substance that neutralises acids; proton acceptor",
+        "phonetic": "/beɪs/"
+      },
+      {
+        "word": "amphoteric",
+        "zh": "两性的",
+        "def": "Substance that can act as both acid and base",
+        "phonetic": "/ˌæmfəˈtɛrɪk/"
+      },
+      {
+        "word": "aqueous solution",
+        "zh": "水溶液",
+        "def": "Solution in which water is the solvent",
+        "phonetic": "/ˈeɪkwiəs səˈluːʃən/"
+      },
+      {
+        "word": "ionic equation",
+        "zh": "离子方程式",
+        "def": "Equation showing only the ions that change during a reaction",
+        "phonetic": "/aɪˈɒnɪk ɪˈkweɪʒən/"
+      },
+      {
+        "word": "spectator ion",
+        "zh": "旁观离子",
+        "def": "Ion that does not participate in a reaction",
+        "phonetic": "/spɛkˈteɪtə ˈaɪən/"
+      }
+    ]
+  },
+  "ch12": {
+    "name": "Group 17",
+    "num": "12",
+    "words": [
+      {
+        "word": "halogen",
+        "zh": "卤素",
+        "def": "Group 17 element (F, Cl, Br, I, At)",
+        "phonetic": "/ˈhælədʒən/"
+      },
+      {
+        "word": "halide ion",
+        "zh": "卤离子",
+        "def": "Anion formed when a halogen gains one electron (F⁻, Cl⁻, Br⁻, I⁻)",
+        "phonetic": "/ˈhælaɪd ˈaɪən/"
+      },
+      {
+        "word": "displacement reaction",
+        "zh": "置换反应",
+        "def": "More reactive halogen displaces less reactive halide from solution",
+        "phonetic": "/dɪsˈpleɪsmənt riˈækʃən/"
+      },
+      {
+        "word": "disproportionation",
+        "zh": "歧化反应",
+        "def": "Chlorine in water acts as both oxidising and reducing agent",
+        "phonetic": "/ˌdɪsprəˌpɔːʃəˈneɪʃən/"
+      },
+      {
+        "word": "oxidising power",
+        "zh": "氧化性",
+        "def": "Ability to gain electrons; decreases down Group 17",
+        "phonetic": "/ˈɒksɪdaɪzɪŋ ˈpaʊə/"
+      },
+      {
+        "word": "silver nitrate test",
+        "zh": "硝酸银测试",
+        "def": "AgNO₃ solution used to identify halide ions by colour of precipitate",
+        "phonetic": "/ˈsɪlvə ˈnaɪtreɪt tɛst/"
+      },
+      {
+        "word": "silver chloride",
+        "zh": "氯化银",
+        "def": "AgCl; white precipitate, soluble in dilute NH₃",
+        "phonetic": "/ˈsɪlvə ˈklɔːraɪd/"
+      },
+      {
+        "word": "silver bromide",
+        "zh": "溴化银",
+        "def": "AgBr; cream precipitate, soluble in concentrated NH₃",
+        "phonetic": "/ˈsɪlvə ˈbrəʊmaɪd/"
+      },
+      {
+        "word": "silver iodide",
+        "zh": "碘化银",
+        "def": "AgI; yellow precipitate, insoluble in NH₃",
+        "phonetic": "/ˈsɪlvə ˈaɪədaɪd/"
+      },
+      {
+        "word": "chlorine water",
+        "zh": "氯水",
+        "def": "Aqueous solution of Cl₂ containing HCl and HClO",
+        "phonetic": "/ˈklɔːriːn ˈwɔːtə/"
+      },
+      {
+        "word": "bleaching",
+        "zh": "漂白",
+        "def": "Removal of colour by oxidation using Cl₂ or ClO⁻",
+        "phonetic": "/ˈbliːtʃɪŋ/"
+      },
+      {
+        "word": "chlorate ion",
+        "zh": "氯酸根离子",
+        "def": "ClO⁻; formed when Cl₂ reacts with cold dilute NaOH",
+        "phonetic": "/ˈklɔːreɪt ˈaɪən/"
+      },
+      {
+        "word": "hydrogen halide",
+        "zh": "卤化氢",
+        "def": "HF, HCl, HBr, HI; acid strength increases down the group",
+        "phonetic": "/ˈhaɪdrədʒən ˈhælaɪd/"
+      },
+      {
+        "word": "concentrated sulfuric acid test",
+        "zh": "浓硫酸测试",
+        "def": "H₂SO₄ reacts with halide salts; distinguishes Cl⁻, Br⁻, I⁻",
+        "phonetic": "/ˈkɒnsənˌtreɪtɪd sʌlˈfjʊərɪk ˈæsɪd tɛst/"
+      },
+      {
+        "word": "reducing power",
+        "zh": "还原性",
+        "def": "Ability to donate electrons; halide reducing power increases down group",
+        "phonetic": "/rɪˈdjuːsɪŋ ˈpaʊə/"
+      },
+      {
+        "word": "sterilisation",
+        "zh": "消毒灭菌",
+        "def": "Killing microorganisms; Cl₂ used to sterilise water supplies",
+        "phonetic": "/ˌstɛrɪlaɪˈzeɪʃən/"
+      },
+      {
+        "word": "organic halide",
+        "zh": "有机卤化物",
+        "def": "Organic compound containing a halogen atom",
+        "phonetic": "/ɔːˈɡænɪk ˈhælaɪd/"
+      },
+      {
+        "word": "aqueous halogen",
+        "zh": "卤素水溶液",
+        "def": "Halogen dissolved in water; shows characteristic colours",
+        "phonetic": "/ˈeɪkwiəs ˈhælədʒən/"
+      },
+      {
+        "word": "interhalogen",
+        "zh": "互卤化合物",
+        "def": "Compound formed between two different halogens",
+        "phonetic": "/ˌɪntəˈhælədʒən/"
+      },
+      {
+        "word": "test for halide",
+        "zh": "卤离子检验",
+        "def": "Adding acidified AgNO₃ solution to identify Cl⁻, Br⁻ or I⁻",
+        "phonetic": "/tɛst fɔː ˈhælaɪd/"
+      }
+    ]
+  },
+  "ch13": {
+    "name": "Nitrogen & Sulfur",
+    "num": "13",
+    "words": [
+      {
+        "word": "Haber process",
+        "zh": "哈伯法",
+        "def": "Industrial synthesis of ammonia: N₂ + 3H₂ ⇌ 2NH₃",
+        "phonetic": "/ˈheɪbə ˈprəʊsɛs/"
+      },
+      {
+        "word": "Contact process",
+        "zh": "接触法",
+        "def": "Industrial synthesis of sulfuric acid via SO₃",
+        "phonetic": "/ˈkɒntækt ˈprəʊsɛs/"
+      },
+      {
+        "word": "nitrogen cycle",
+        "zh": "氮循环",
+        "def": "Biogeochemical cycle converting nitrogen between its various chemical forms",
+        "phonetic": "/ˈnaɪtrədʒən ˈsaɪkəl/"
+      },
+      {
+        "word": "nitrogen fixation",
+        "zh": "固氮",
+        "def": "Conversion of atmospheric N₂ to compounds usable by living organisms",
+        "phonetic": "/ˈnaɪtrədʒən fɪkˈseɪʃən/"
+      },
+      {
+        "word": "ammonia",
+        "zh": "氨",
+        "def": "NH₃; alkaline gas; used in fertilisers and nitric acid production",
+        "phonetic": "/əˈməʊniə/"
+      },
+      {
+        "word": "nitric acid",
+        "zh": "硝酸",
+        "def": "HNO₃; strong acid manufactured from ammonia by Ostwald process",
+        "phonetic": "/ˈnaɪtrɪk ˈæsɪd/"
+      },
+      {
+        "word": "nitrogen dioxide",
+        "zh": "二氧化氮",
+        "def": "NO₂; brown gas; pollutant formed in combustion engines",
+        "phonetic": "/ˈnaɪtrədʒən daɪˈɒksaɪd/"
+      },
+      {
+        "word": "nitrogen monoxide",
+        "zh": "一氧化氮",
+        "def": "NO; colourless gas that reacts with O₂ to form NO₂",
+        "phonetic": "/ˈnaɪtrədʒən məˈnɒksaɪd/"
+      },
+      {
+        "word": "acid rain",
+        "zh": "酸雨",
+        "def": "Precipitation made acidic by dissolved SO₂ and NOₓ",
+        "phonetic": "/ˈæsɪd reɪn/"
+      },
+      {
+        "word": "sulfur dioxide",
+        "zh": "二氧化硫",
+        "def": "SO₂; acidic gas released from burning fossil fuels; causes acid rain",
+        "phonetic": "/ˈsʌlfə daɪˈɒksaɪd/"
+      },
+      {
+        "word": "sulfur trioxide",
+        "zh": "三氧化硫",
+        "def": "SO₃; formed from SO₂ oxidation; reacts with water to form H₂SO₄",
+        "phonetic": "/ˈsʌlfə traɪˈɒksaɪd/"
+      },
+      {
+        "word": "catalytic converter",
+        "zh": "催化转化器",
+        "def": "Device in vehicles that converts NOₓ and CO to N₂ and CO₂",
+        "phonetic": "/kætəˈlɪtɪk kənˈvɜːtə/"
+      },
+      {
+        "word": "dehydrating agent",
+        "zh": "脱水剂",
+        "def": "Substance that removes water; concentrated H₂SO₄ is a strong dehydrating agent",
+        "phonetic": "/diːˈhaɪdreɪtɪŋ ˈeɪdʒənt/"
+      },
+      {
+        "word": "vanadium pentoxide",
+        "zh": "五氧化二钒",
+        "def": "V₂O₅; catalyst in the Contact process",
+        "phonetic": "/vəˈneɪdiəm pɛnˈtɒksaɪd/"
+      },
+      {
+        "word": "iron catalyst",
+        "zh": "铁催化剂",
+        "def": "Fe catalyst used in the Haber process",
+        "phonetic": "/ˈaɪən ˈkætəlɪst/"
+      },
+      {
+        "word": "oxidation of ammonia",
+        "zh": "氨的氧化",
+        "def": "4NH₃ + 5O₂ → 4NO + 6H₂O; first step of Ostwald process",
+        "phonetic": "/ˌɒksɪˈdeɪʃən ɒv əˈməʊniə/"
+      },
+      {
+        "word": "fertiliser",
+        "zh": "化肥",
+        "def": "Chemical providing nutrients (N, P, K) for plant growth",
+        "phonetic": "/ˈfɜːtɪlaɪzə/"
+      },
+      {
+        "word": "eutrophication",
+        "zh": "富营养化",
+        "def": "Over-enrichment of water with nutrients causing excessive algae growth",
+        "phonetic": "/juːˌtrɒfɪˈkeɪʃən/"
+      },
+      {
+        "word": "allotropes of sulfur",
+        "zh": "硫的同素异形体",
+        "def": "Rhombic and monoclinic sulfur; both contain S₈ rings",
+        "phonetic": "/ˈælətrəʊps ɒv ˈsʌlfə/"
+      },
+      {
+        "word": "fuming sulfuric acid",
+        "zh": "发烟硫酸/焦亚硫酸",
+        "def": "Oleum; H₂SO₄ with dissolved SO₃; used in sulfonation",
+        "phonetic": "/fjuːmɪŋ sʌlˈfjʊərɪk ˈæsɪd/"
+      }
+    ]
+  },
+  "ch14": {
+    "name": "Introduction to Organic Chemistry",
+    "num": "14",
+    "words": [
+      {
+        "word": "homologous series",
+        "zh": "同系列",
+        "def": "Series of compounds with the same functional group differing by CH₂",
+        "phonetic": "/həˈmɒləɡəs ˈsɪəriːz/"
+      },
+      {
+        "word": "functional group",
+        "zh": "官能团",
+        "def": "Atom or group responsible for the characteristic reactions of a compound",
+        "phonetic": "/ˈfʌŋkʃənəl ɡruːp/"
+      },
+      {
+        "word": "structural isomer",
+        "zh": "结构异构体",
+        "def": "Compounds with the same molecular formula but different structural arrangements",
+        "phonetic": "/ˈstrʌktʃərəl ˈaɪsəmə/"
+      },
+      {
+        "word": "stereoisomer",
+        "zh": "立体异构体",
+        "def": "Compounds with same bonding but different spatial arrangement of atoms",
+        "phonetic": "/ˌstɛriəʊˈaɪsəmə/"
+      },
+      {
+        "word": "geometric isomer",
+        "zh": "几何异构体",
+        "def": "Cis/trans isomers arising from restricted rotation around a C=C bond",
+        "phonetic": "/ˌdʒiːəˈmɛtrɪk ˈaɪsəmə/"
+      },
+      {
+        "word": "optical isomer",
+        "zh": "光学异构体",
+        "def": "Non-superimposable mirror image molecules (enantiomers)",
+        "phonetic": "/ˈɒptɪkəl ˈaɪsəmə/"
+      },
+      {
+        "word": "chiral centre",
+        "zh": "手性中心",
+        "def": "Carbon atom bonded to four different groups",
+        "phonetic": "/ˈtʃaɪrəl ˈsɛntə/"
+      },
+      {
+        "word": "enantiomer",
+        "zh": "对映体",
+        "def": "One of a pair of optical isomers",
+        "phonetic": "/ɪˈnæntiəmə/"
+      },
+      {
+        "word": "racemic mixture",
+        "zh": "外消旋混合物",
+        "def": "Equal mixture of two enantiomers; optically inactive",
+        "phonetic": "/rəˈsiːmɪk ˈmɪkstʃə/"
+      },
+      {
+        "word": "electrophile",
+        "zh": "亲电试剂",
+        "def": "Electron-pair acceptor; attacks electron-rich centres",
+        "phonetic": "/ɪˈlɛktrəfaɪl/"
+      },
+      {
+        "word": "nucleophile",
+        "zh": "亲核试剂",
+        "def": "Electron-pair donor; attacks electron-deficient centres",
+        "phonetic": "/ˈnjuːklɪəfaɪl/"
+      },
+      {
+        "word": "free radical",
+        "zh": "自由基",
+        "def": "Species with an unpaired electron",
+        "phonetic": "/friː ˈrædɪkəl/"
+      },
+      {
+        "word": "homolytic fission",
+        "zh": "均裂",
+        "def": "Bond breaking where each atom gets one electron",
+        "phonetic": "/ˌhɒməˈlɪtɪk ˈfɪʃən/"
+      },
+      {
+        "word": "heterolytic fission",
+        "zh": "异裂",
+        "def": "Bond breaking where both electrons go to one atom",
+        "phonetic": "/ˌhɛtərəˈlɪtɪk ˈfɪʃən/"
+      },
+      {
+        "word": "IUPAC nomenclature",
+        "zh": "IUPAC命名法",
+        "def": "International systematic naming rules for organic compounds",
+        "phonetic": "/ˈaɪjuːpæk nəʊˈmɛŋklətʃə/"
+      },
+      {
+        "word": "displayed formula",
+        "zh": "展示式",
+        "def": "Formula showing all bonds and atoms explicitly",
+        "phonetic": "/dɪsˈpleɪd ˈfɔːmjʊlə/"
+      },
+      {
+        "word": "skeletal formula",
+        "zh": "骨架式",
+        "def": "Simplified formula showing carbon skeleton with non-C/H atoms",
+        "phonetic": "/ˈskɛlɪtəl ˈfɔːmjʊlə/"
+      },
+      {
+        "word": "empirical formula",
+        "zh": "实验式",
+        "def": "Simplest whole-number ratio of atoms",
+        "phonetic": "/ɛmˈpɪrɪkəl ˈfɔːmjʊlə/"
+      },
+      {
+        "word": "degree of unsaturation",
+        "zh": "不饱和度",
+        "def": "Number of rings or double bonds in a molecule",
+        "phonetic": "/dɪˈɡriː ɒv ˌʌnsætʃʊˈreɪʃən/"
+      },
+      {
+        "word": "curly arrow",
+        "zh": "弯曲箭头",
+        "def": "Symbol representing movement of an electron pair in a mechanism",
+        "phonetic": "/ˈkɜːli ˈærəʊ/"
+      },
+      {
+        "word": "carbocation",
+        "zh": "碳正离子",
+        "def": "Positively charged carbon intermediate in organic reactions",
+        "phonetic": "/ˌkɑːbəˈkaɪʃən/"
+      },
+      {
+        "word": "carbanion",
+        "zh": "碳负离子",
+        "def": "Negatively charged carbon intermediate",
+        "phonetic": "/kɑːˈbænaɪən/"
+      },
+      {
+        "word": "polarisation of bond",
+        "zh": "键的极化",
+        "def": "Unequal distribution of electrons in a bond due to electronegativity",
+        "phonetic": "/ˌpəʊləraɪˈzeɪʃən ɒv bɒnd/"
+      },
+      {
+        "word": "inductive effect",
+        "zh": "诱导效应",
+        "def": "Transmission of charge through sigma bonds",
+        "phonetic": "/ɪnˈdʌktɪv ɪˈfɛkt/"
+      },
+      {
+        "word": "Geometric isomerism",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      },
+      {
+        "word": "Optical isomerism",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch15": {
+    "name": "Hydrocarbons",
+    "num": "15",
+    "words": [
+      {
+        "word": "alkane",
+        "zh": "烷烃",
+        "def": "Saturated hydrocarbon with general formula CₙH₂ₙ₊₂",
+        "phonetic": "/ˈælkeɪn/"
+      },
+      {
+        "word": "alkene",
+        "zh": "烯烃",
+        "def": "Unsaturated hydrocarbon containing a C=C double bond",
+        "phonetic": "/ˈælkiːn/"
+      },
+      {
+        "word": "arene",
+        "zh": "芳烃",
+        "def": "Aromatic hydrocarbon containing a benzene ring",
+        "phonetic": "/əˈriːn/"
+      },
+      {
+        "word": "benzene",
+        "zh": "苯",
+        "def": "C₆H₆; aromatic compound with delocalised π electrons",
+        "phonetic": "/ˈbɛnziːn/"
+      },
+      {
+        "word": "free radical substitution",
+        "zh": "自由基取代",
+        "def": "Mechanism for alkane halogenation: initiation, propagation, termination",
+        "phonetic": "/friː ˈrædɪkəl ˌsʌbstɪˈtjuːʃən/"
+      },
+      {
+        "word": "electrophilic addition",
+        "zh": "亲电加成",
+        "def": "Mechanism for alkene reactions with electrophiles",
+        "phonetic": "/ɪˌlɛktrəʊˈfɪlɪk əˈdɪʃən/"
+      },
+      {
+        "word": "electrophilic substitution",
+        "zh": "亲电取代",
+        "def": "Mechanism for benzene ring reactions with electrophiles",
+        "phonetic": "/ɪˌlɛktrəʊˈfɪlɪk ˌsʌbstɪˈtjuːʃən/"
+      },
+      {
+        "word": "Markovnikov's rule",
+        "zh": "马氏规则",
+        "def": "H adds to carbon with more H atoms in addition to HX across C=C",
+        "phonetic": "/mɑːˈkɒvnɪkɒvz ruːl/"
+      },
+      {
+        "word": "cracking",
+        "zh": "裂解",
+        "def": "Breaking down of large alkanes into smaller alkenes and alkanes",
+        "phonetic": "/ˈkrækɪŋ/"
+      },
+      {
+        "word": "nitration",
+        "zh": "硝化",
+        "def": "Substitution of NO₂ group into benzene ring using HNO₃/H₂SO₄",
+        "phonetic": "/naɪˈtreɪʃən/"
+      },
+      {
+        "word": "Friedel-Crafts alkylation",
+        "zh": "傅-克烷基化",
+        "def": "Addition of alkyl group to benzene using RCl and AlCl₃",
+        "phonetic": "/ˈfriːdəl krɑːfts ˌælkaɪˈleɪʃən/"
+      },
+      {
+        "word": "Friedel-Crafts acylation",
+        "zh": "傅-克酰基化",
+        "def": "Addition of acyl group to benzene using RCOX and AlCl₃",
+        "phonetic": "/ˈfriːdəl krɑːfts ˌæsɪˈleɪʃən/"
+      },
+      {
+        "word": "halogenation",
+        "zh": "卤化",
+        "def": "Introduction of halogen atoms into a molecule",
+        "phonetic": "/ˌhælədʒəˈneɪʃən/"
+      },
+      {
+        "word": "addition polymer",
+        "zh": "加聚物",
+        "def": "Polymer formed by addition reactions of alkene monomers",
+        "phonetic": "/əˈdɪʃən ˈpɒlɪmə/"
+      },
+      {
+        "word": "monomer",
+        "zh": "单体",
+        "def": "Small repeating unit that polymerises to form a polymer",
+        "phonetic": "/ˈmɒnəmə/"
+      },
+      {
+        "word": "cis isomer",
+        "zh": "顺式异构体",
+        "def": "Geometric isomer with same groups on the same side of C=C",
+        "phonetic": "/sɪs ˈaɪsəmə/"
+      },
+      {
+        "word": "trans isomer",
+        "zh": "反式异构体",
+        "def": "Geometric isomer with same groups on opposite sides of C=C",
+        "phonetic": "/trænz ˈaɪsəmə/"
+      },
+      {
+        "word": "saturated",
+        "zh": "饱和的",
+        "def": "Containing only single bonds between carbon atoms",
+        "phonetic": "/ˈsætʃəreɪtɪd/"
+      },
+      {
+        "word": "unsaturated",
+        "zh": "不饱和的",
+        "def": "Containing at least one double or triple bond",
+        "phonetic": "/ʌnˈsætʃəreɪtɪd/"
+      },
+      {
+        "word": "petroleum",
+        "zh": "石油",
+        "def": "Complex mixture of hydrocarbons obtained from crude oil",
+        "phonetic": "/pəˈtrəʊliəm/"
+      },
+      {
+        "word": "fractional distillation",
+        "zh": "分馏",
+        "def": "Separation of crude oil into fractions based on boiling points",
+        "phonetic": "/ˌfrækʃənəl ˌdɪstɪˈleɪʃən/"
+      },
+      {
+        "word": "bromine water test",
+        "zh": "溴水测试",
+        "def": "Alkenes decolourise brown Br₂ water by addition across C=C",
+        "phonetic": "/ˈbrəʊmiːn ˈwɔːtə tɛst/"
+      },
+      {
+        "word": "reforming",
+        "zh": "重整",
+        "def": "Converting straight-chain alkanes to branched or aromatic hydrocarbons",
+        "phonetic": "/riːˈfɔːmɪŋ/"
+      }
+    ]
+  },
+  "ch16": {
+    "name": "Halogen Compounds",
+    "num": "16",
+    "words": [
+      {
+        "word": "halogenoalkane",
+        "zh": "卤代烷",
+        "def": "Alkane in which one or more H atoms are replaced by halogen atoms",
+        "phonetic": "/ˌhælədʒənəʊˈælkeɪn/"
+      },
+      {
+        "word": "nucleophilic substitution",
+        "zh": "亲核取代",
+        "def": "Reaction where nucleophile replaces a leaving group",
+        "phonetic": "/ˌnjuːklɪəˈfɪlɪk ˌsʌbstɪˈtjuːʃən/"
+      },
+      {
+        "word": "SN1 mechanism",
+        "zh": "SN1机理",
+        "def": "Two-step substitution: rate depends on one species; forms carbocation intermediate",
+        "phonetic": "/ɛs ɛn wʌn ˈmɛkənɪzəm/"
+      },
+      {
+        "word": "SN2 mechanism",
+        "zh": "SN2机理",
+        "def": "One-step substitution: rate depends on two species; backside attack",
+        "phonetic": "/ɛs ɛn tuː ˈmɛkənɪzəm/"
+      },
+      {
+        "word": "elimination reaction",
+        "zh": "消除反应",
+        "def": "Removal of atoms from adjacent carbons to form a double bond",
+        "phonetic": "/ɪˌlɪmɪˈneɪʃən riˈækʃən/"
+      },
+      {
+        "word": "E1 mechanism",
+        "zh": "E1机理",
+        "def": "Two-step elimination through carbocation intermediate",
+        "phonetic": "/iː wʌn ˈmɛkənɪzəm/"
+      },
+      {
+        "word": "E2 mechanism",
+        "zh": "E2机理",
+        "def": "One-step elimination with simultaneous bond breaking and formation",
+        "phonetic": "/iː tuː ˈmɛkənɪzəm/"
+      },
+      {
+        "word": "primary halogenoalkane",
+        "zh": "伯卤代烷",
+        "def": "Halogenoalkane where the halogen-bearing carbon is bonded to one alkyl group",
+        "phonetic": "/ˈpraɪməri ˌhælədʒənəʊˈælkeɪn/"
+      },
+      {
+        "word": "secondary halogenoalkane",
+        "zh": "仲卤代烷",
+        "def": "Halogenoalkane where the halogen-bearing carbon is bonded to two alkyl groups",
+        "phonetic": "/ˈsɛkəndəri ˌhælədʒənəʊˈælkeɪn/"
+      },
+      {
+        "word": "tertiary halogenoalkane",
+        "zh": "叔卤代烷",
+        "def": "Halogenoalkane where the halogen-bearing carbon is bonded to three alkyl groups",
+        "phonetic": "/ˈtɜːʃəri ˌhælədʒənəʊˈælkeɪn/"
+      },
+      {
+        "word": "leaving group",
+        "zh": "离去基团",
+        "def": "Group that departs with the electron pair during substitution",
+        "phonetic": "/ˈliːvɪŋ ɡruːp/"
+      },
+      {
+        "word": "CFC",
+        "zh": "氯氟烃",
+        "def": "Chlorofluorocarbon; ozone-depleting refrigerant/propellant",
+        "phonetic": "/siː ɛf siː/"
+      },
+      {
+        "word": "ozone depletion",
+        "zh": "臭氧层破坏",
+        "def": "Destruction of stratospheric ozone by radical chain reaction with Cl·",
+        "phonetic": "/ˈəʊzəʊn dɪˈpliːʃən/"
+      },
+      {
+        "word": "hydrolysis",
+        "zh": "水解",
+        "def": "Reaction with water (or aqueous NaOH) to replace halogen with OH",
+        "phonetic": "/haɪˈdrɒlɪsɪs/"
+      },
+      {
+        "word": "silver nitrate test",
+        "zh": "硝酸银测试",
+        "def": "Acidified AgNO₃ identifies halogenoalkane type by precipitate colour/rate",
+        "phonetic": "/ˈsɪlvə ˈnaɪtreɪt tɛst/"
+      },
+      {
+        "word": "reactivity order",
+        "zh": "反应活性顺序",
+        "def": "RI > RBr > RCl due to decreasing C–X bond strength",
+        "phonetic": "/riːækˈtɪvɪti ˈɔːdə/"
+      },
+      {
+        "word": "inversion of configuration",
+        "zh": "构型翻转",
+        "def": "Walden inversion in SN2: product has opposite configuration to reactant",
+        "phonetic": "/ɪnˈvɜːʃən ɒv kənˌfɪɡjʊˈreɪʃən/"
+      },
+      {
+        "word": "racemisation",
+        "zh": "外消旋化",
+        "def": "Formation of equal amounts of both enantiomers, as in SN1 at chiral centre",
+        "phonetic": "/ˌreɪsɪmaɪˈzeɪʃən/"
+      },
+      {
+        "word": "Grignard reagent",
+        "zh": "格氏试剂",
+        "def": "Organomagnesium halide RMgX; useful for C–C bond formation",
+        "phonetic": "/ˈɡriːnɑːd ˈriːeɪdʒənt/"
+      },
+      {
+        "word": "nucleophile strength",
+        "zh": "亲核性强弱",
+        "def": "Measure of nucleophile's ability to donate electron pair to electrophile",
+        "phonetic": "/ˈnjuːklɪəfaɪl strɛŋθ/"
+      }
+    ]
+  },
+  "ch17": {
+    "name": "Hydroxy Compounds",
+    "num": "17",
+    "words": [
+      {
+        "word": "alcohol",
+        "zh": "醇",
+        "def": "Organic compound containing –OH group bonded to a carbon chain",
+        "phonetic": "/ˈælkəhɒl/"
+      },
+      {
+        "word": "phenol",
+        "zh": "苯酚",
+        "def": "Compound with –OH group directly bonded to benzene ring",
+        "phonetic": "/ˈfiːnɒl/"
+      },
+      {
+        "word": "primary alcohol",
+        "zh": "伯醇",
+        "def": "Alcohol where –OH carbon is bonded to one other carbon",
+        "phonetic": "/ˈpraɪməri ˈælkəhɒl/"
+      },
+      {
+        "word": "secondary alcohol",
+        "zh": "仲醇",
+        "def": "Alcohol where –OH carbon is bonded to two other carbons",
+        "phonetic": "/ˈsɛkəndəri ˈælkəhɒl/"
+      },
+      {
+        "word": "tertiary alcohol",
+        "zh": "叔醇",
+        "def": "Alcohol where –OH carbon is bonded to three other carbons",
+        "phonetic": "/ˈtɜːʃəri ˈælkəhɒl/"
+      },
+      {
+        "word": "oxidation of alcohol",
+        "zh": "醇的氧化",
+        "def": "Primary → aldehyde → carboxylic acid; secondary → ketone; tertiary: no reaction",
+        "phonetic": "/ˌɒksɪˈdeɪʃən ɒv ˈælkəhɒl/"
+      },
+      {
+        "word": "acidic oxidising agent",
+        "zh": "酸性氧化剂",
+        "def": "K₂Cr₂O₇/H₂SO₄ used to oxidise alcohols; Cr₂O₇²⁻ → Cr³⁺ (orange→green)",
+        "phonetic": "/əˈsɪdɪk ˈɒksɪdaɪzɪŋ ˈeɪdʒənt/"
+      },
+      {
+        "word": "esterification",
+        "zh": "酯化反应",
+        "def": "Reaction of an alcohol with a carboxylic acid to form an ester and water",
+        "phonetic": "/ɪsˌtɛrɪfɪˈkeɪʃən/"
+      },
+      {
+        "word": "dehydration",
+        "zh": "脱水",
+        "def": "Elimination of water from an alcohol to form an alkene",
+        "phonetic": "/ˌdiːhaɪˈdreɪʃən/"
+      },
+      {
+        "word": "fermentation",
+        "zh": "发酵",
+        "def": "Conversion of glucose to ethanol and CO₂ by yeast enzymes",
+        "phonetic": "/ˌfɜːmənˈteɪʃən/"
+      },
+      {
+        "word": "Lucas test",
+        "zh": "卢卡斯测试",
+        "def": "ZnCl₂/HCl used to distinguish primary, secondary and tertiary alcohols",
+        "phonetic": "/ˈluːkəs tɛst/"
+      },
+      {
+        "word": "iodoform test",
+        "zh": "碘仿测试",
+        "def": "I₂/NaOH produces CHI₃ precipitate with methyl ketones or CH₃CH(OH)–",
+        "phonetic": "/aɪˈɒdəfɔːm tɛst/"
+      },
+      {
+        "word": "acidity of phenol",
+        "zh": "苯酚的酸性",
+        "def": "Phenol is weakly acidic; reacts with NaOH but not Na₂CO₃",
+        "phonetic": "/əˈsɪdɪti ɒv ˈfiːnɒl/"
+      },
+      {
+        "word": "azo dye",
+        "zh": "偶氮染料",
+        "def": "Brightly coloured compound containing –N=N– group; made from diazonium coupling",
+        "phonetic": "/ˈeɪzəʊ daɪ/"
+      },
+      {
+        "word": "diazonium salt",
+        "zh": "重氮盐",
+        "def": "ArN₂⁺ ion formed from primary aromatic amine and NaNO₂/HCl at 0°C",
+        "phonetic": "/daɪəˈzəʊniəm sɔːlt/"
+      },
+      {
+        "word": "coupling reaction",
+        "zh": "偶联反应",
+        "def": "Diazonium ion reacts with phenol/amine to form azo dye",
+        "phonetic": "/ˈkʌplɪŋ riˈækʃən/"
+      },
+      {
+        "word": "substitution of benzene ring",
+        "zh": "苯环取代",
+        "def": "OH group activates benzene ring towards electrophilic substitution",
+        "phonetic": "/ˌsʌbstɪˈtjuːʃən ɒv ˈbɛnziːn rɪŋ/"
+      },
+      {
+        "word": "sodium alkoxide",
+        "zh": "醇钠",
+        "def": "RONa; formed when Na metal reacts with an alcohol",
+        "phonetic": "/ˈsəʊdiəm ælˈkɒksaɪd/"
+      },
+      {
+        "word": "hydrogen bonding in alcohols",
+        "zh": "醇中的氢键",
+        "def": "–OH groups form hydrogen bonds; raises boiling point significantly",
+        "phonetic": "/ˈhaɪdrədʒən ˈbɒndɪŋ ɪn ˈælkəhɒlz/"
+      },
+      {
+        "word": "solubility of alcohols",
+        "zh": "醇的溶解性",
+        "def": "Short-chain alcohols are miscible with water; solubility decreases with chain length",
+        "phonetic": "/ˌsɒljʊˈbɪlɪti ɒv ˈælkəhɒlz/"
+      },
+      {
+        "word": "Hydroxy compound",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch18": {
+    "name": "Carbonyl Compounds",
+    "num": "18",
+    "words": [
+      {
+        "word": "aldehyde",
+        "zh": "醛",
+        "def": "Compound with –CHO group; terminal carbonyl",
+        "phonetic": "/ˈældɪhaɪd/"
+      },
+      {
+        "word": "ketone",
+        "zh": "酮",
+        "def": "Compound with C=O group flanked by two carbon atoms",
+        "phonetic": "/ˈkiːtəʊn/"
+      },
+      {
+        "word": "nucleophilic addition",
+        "zh": "亲核加成",
+        "def": "Nucleophile attacks the δ+ carbon of a carbonyl group",
+        "phonetic": "/ˌnjuːklɪəˈfɪlɪk əˈdɪʃən/"
+      },
+      {
+        "word": "2,4-dinitrophenylhydrazine",
+        "zh": "2,4-二硝基苯肼",
+        "def": "2,4-DNPH; orange reagent forming orange/yellow precipitate with aldehydes and ketones",
+        "phonetic": "/tuː fɔː daɪˈnaɪtrəʊˌfiːnɪlˈhaɪdrəziːn/"
+      },
+      {
+        "word": "Tollens' reagent",
+        "zh": "托伦斯试剂",
+        "def": "Ammoniacal AgNO₃; forms silver mirror with aldehydes but not ketones",
+        "phonetic": "/ˈtɒlənz ˈriːeɪdʒənt/"
+      },
+      {
+        "word": "Fehling's solution",
+        "zh": "斐林试剂",
+        "def": "Blue Cu²⁺ solution; gives red Cu₂O precipitate with aldehydes",
+        "phonetic": "/ˈfeɪlɪŋz səˈluːʃən/"
+      },
+      {
+        "word": "oxidation of aldehydes",
+        "zh": "醛的氧化",
+        "def": "Aldehydes are easily oxidised to carboxylic acids; ketones are not",
+        "phonetic": "/ˌɒksɪˈdeɪʃən ɒv ˈældɪhaɪdz/"
+      },
+      {
+        "word": "reduction of carbonyls",
+        "zh": "羰基的还原",
+        "def": "NaBH₄ or LiAlH₄ reduces C=O to –OH",
+        "phonetic": "/rɪˈdʌkʃən ɒv ˈkɑːbənɪlz/"
+      },
+      {
+        "word": "cyanohydrin",
+        "zh": "氰醇",
+        "def": "Product of addition of HCN to a carbonyl compound",
+        "phonetic": "/saɪˈænəʊhaɪdrɪn/"
+      },
+      {
+        "word": "HCN addition",
+        "zh": "HCN加成",
+        "def": "CN⁻ attacks carbonyl carbon; H⁺ adds to O; forms hydroxynitrile",
+        "phonetic": "/eɪtʃ siː ɛn əˈdɪʃən/"
+      },
+      {
+        "word": "iodoform reaction",
+        "zh": "碘仿反应",
+        "def": "I₂/NaOH gives yellow CHI₃ precipitate with CH₃CO– or CH₃CHOH–",
+        "phonetic": "/aɪˈɒdəfɔːm riˈækʃən/"
+      },
+      {
+        "word": "condensation reaction",
+        "zh": "缩合反应",
+        "def": "Reaction of carbonyl with amine derivative to form C=N and eliminate water",
+        "phonetic": "/kəndɛnˈseɪʃən riˈækʃən/"
+      },
+      {
+        "word": "acetal formation",
+        "zh": "缩醛形成",
+        "def": "Addition of two alcohol molecules to an aldehyde in acidic conditions",
+        "phonetic": "/ˈæsɪtəl fɔːˈmeɪʃən/"
+      },
+      {
+        "word": "keto-enol tautomerism",
+        "zh": "酮-烯醇互变异构",
+        "def": "Equilibrium between keto (C=O) and enol (C–OH) forms",
+        "phonetic": "/ˈkiːtəʊ ˈiːnɒl tɔːˈtɒmərɪzəm/"
+      },
+      {
+        "word": "plane-polarised light",
+        "zh": "平面偏振光",
+        "def": "Light vibrating in one plane; used in polarimetry to detect optical activity",
+        "phonetic": "/pleɪn ˈpəʊləraɪzd laɪt/"
+      },
+      {
+        "word": "racemic mixture",
+        "zh": "外消旋混合物",
+        "def": "Equal mixture of two enantiomers formed when C=O reacts with nucleophile",
+        "phonetic": "/rəˈsiːmɪk ˈmɪkstʃə/"
+      },
+      {
+        "word": "mass spectrum",
+        "zh": "质谱",
+        "def": "Used to identify carbonyl compounds via molecular ion and fragmentation",
+        "phonetic": "/mæs ˈspɛktrəm/"
+      },
+      {
+        "word": "IR spectroscopy",
+        "zh": "红外光谱",
+        "def": "C=O stretch at ~1700 cm⁻¹ identifies carbonyl compounds",
+        "phonetic": "/aɪ ɑː spekˈtrɒskəpi/"
+      },
+      {
+        "word": "NMR spectroscopy",
+        "zh": "核磁共振",
+        "def": "Used to determine structure of carbonyl compounds from chemical shifts",
+        "phonetic": "/ɛn ɛm ɑː spekˈtrɒskəpi/"
+      },
+      {
+        "word": "aldol condensation",
+        "zh": "醇醛缩合",
+        "def": "Reaction between two carbonyl compounds to form a β-hydroxy carbonyl compound",
+        "phonetic": "/ˈældɒl kəndɛnˈseɪʃən/"
+      },
+      {
+        "word": "Carbonyl compound",
+        "zh": "",
+        "def": "",
+        "phonetic": ""
+      }
+    ]
+  },
+  "ch20": {
+    "name": "Electrochemistry",
+    "num": "20",
+    "words": [
+      {
+        "word": "oxidation",
+        "zh": "氧化",
+        "def": "Loss of electrons; increase in oxidation number",
+        "phonetic": "/ˌɒksɪˈdeɪʃən/"
+      },
+      {
+        "word": "reduction",
+        "zh": "还原",
+        "def": "Gain of electrons; decrease in oxidation number",
+        "phonetic": "/rɪˈdʌkʃən/"
+      },
+      {
+        "word": "redox reaction",
+        "zh": "氧化还原反应",
+        "def": "Reaction involving transfer of electrons between species",
+        "phonetic": "/ˈriːdɒks riˈækʃən/"
+      },
+      {
+        "word": "electrode potential",
+        "zh": "电极电位",
+        "def": "EMF of a half-cell measured relative to standard hydrogen electrode",
+        "phonetic": "/ɪˈlɛktrəʊd pəˈtɛnʃəl/"
+      },
+      {
+        "word": "standard electrode potential",
+        "zh": "标准电极电位",
+        "def": "Electrode potential measured under standard conditions (E°)",
+        "phonetic": "/ˈstændəd ɪˈlɛktrəʊd pəˈtɛnʃəl/"
+      },
+      {
+        "word": "standard hydrogen electrode",
+        "zh": "标准氢电极",
+        "def": "Reference electrode with E° = 0 V; H₂/H⁺ at 1 atm, 1 mol dm⁻³, 298 K",
+        "phonetic": "/ˈstændəd ˈhaɪdrədʒən ɪˈlɛktrəʊd/"
+      },
+      {
+        "word": "electrochemical cell",
+        "zh": "电化学电池",
+        "def": "Device that converts chemical energy into electrical energy via redox reaction",
+        "phonetic": "/ɪˌlɛktrəʊˈkɛmɪkəl sɛl/"
+      },
+      {
+        "word": "EMF",
+        "zh": "电动势",
+        "def": "Electromotive force; maximum potential difference produced by a cell",
+        "phonetic": "/iː ɛm ɛf/"
+      },
+      {
+        "word": "Ecell",
+        "zh": "电池电动势",
+        "def": "E°cell = E°cathode – E°anode; positive value indicates feasible reaction",
+        "phonetic": "/iː sɛl/"
+      },
+      {
+        "word": "cathode",
+        "zh": "阴极",
+        "def": "Electrode where reduction occurs (gains electrons)",
+        "phonetic": "/ˈkæθəʊd/"
+      },
+      {
+        "word": "anode",
+        "zh": "阳极",
+        "def": "Electrode where oxidation occurs (loses electrons)",
+        "phonetic": "/ˈænəʊd/"
+      },
+      {
+        "word": "electrolysis",
+        "zh": "电解",
+        "def": "Use of electric current to drive a non-spontaneous redox reaction",
+        "phonetic": "/ɪˌlɛkˈtrɒlɪsɪs/"
+      },
+      {
+        "word": "Faraday's laws",
+        "zh": "法拉第定律",
+        "def": "Mass of product in electrolysis is proportional to charge passed",
+        "phonetic": "/ˈfærədeɪz lɔːz/"
+      },
+      {
+        "word": "Faraday constant",
+        "zh": "法拉第常数",
+        "def": "Charge carried by one mole of electrons: 96500 C mol⁻¹",
+        "phonetic": "/ˈfærədeɪ ˈkɒnstənt/"
+      },
+      {
+        "word": "half-cell",
+        "zh": "半电池",
+        "def": "One electrode and its electrolyte in an electrochemical cell",
+        "phonetic": "/hæf sɛl/"
+      },
+      {
+        "word": "salt bridge",
+        "zh": "盐桥",
+        "def": "Allows ion flow between half-cells to maintain electrical neutrality",
+        "phonetic": "/sɔːl brɪdʒ/"
+      },
+      {
+        "word": "cell notation",
+        "zh": "电池符号",
+        "def": "Shorthand representation: anode | solution || solution | cathode",
+        "phonetic": "/sɛl nəʊˈteɪʃən/"
+      },
+      {
+        "word": "feasibility",
+        "zh": "可行性",
+        "def": "Reaction is feasible if Ecell > 0 (or ΔG < 0)",
+        "phonetic": "/ˌfiːzəˈbɪlɪti/"
+      },
+      {
+        "word": "disproportionation",
+        "zh": "歧化",
+        "def": "Element simultaneously oxidised and reduced in the same reaction",
+        "phonetic": "/ˌdɪsprəˌpɔːʃəˈneɪʃən/"
+      },
+      {
+        "word": "Nernst equation",
+        "zh": "能斯特方程",
+        "def": "Shows how electrode potential varies with concentration",
+        "phonetic": "/nɜːnst ɪˈkweɪʒən/"
+      },
+      {
+        "word": "corrosion",
+        "zh": "腐蚀",
+        "def": "Oxidation of metals by environment; iron rusting is an electrochemical process",
+        "phonetic": "/kəˈrəʊʒən/"
+      },
+      {
+        "word": "fuel cell",
+        "zh": "燃料电池",
+        "def": "Electrochemical cell generating electricity from fuel oxidation (e.g. H₂/O₂)",
+        "phonetic": "/fjuːəl sɛl/"
+      },
+      {
+        "word": "electrolytic cell",
+        "zh": "电解槽",
+        "def": "Cell in which electrolysis is carried out using external power supply",
+        "phonetic": "/ɪˌlɛktrəʊˈlɪtɪk sɛl/"
+      }
+    ]
+  },
+  "ch26": {
+    "name": "Carboxylic Acids & Derivatives",
+    "num": "26",
+    "words": [
+      {
+        "word": "carboxylic acid",
+        "zh": "羧酸",
+        "def": "Compound containing –COOH group",
+        "phonetic": "/ˌkɑːbɒksˈɪlɪk ˈæsɪd/"
+      },
+      {
+        "word": "ester",
+        "zh": "酯",
+        "def": "Compound formed from alcohol + carboxylic acid/acyl chloride; contains –COO–",
+        "phonetic": "/ˈɛstə/"
+      },
+      {
+        "word": "acyl chloride",
+        "zh": "酰氯",
+        "def": "RCOX; very reactive acylating agent; reacts vigorously with water",
+        "phonetic": "/ˈæsɪl ˈklɔːraɪd/"
+      },
+      {
+        "word": "acid anhydride",
+        "zh": "酸酐",
+        "def": "RCO–O–OCR; less reactive acylating agent than acyl chloride",
+        "phonetic": "/ˈæsɪd ænˈhaɪdraɪd/"
+      },
+      {
+        "word": "amine",
+        "zh": "胺",
+        "def": "Compound with one or more –NH₂ groups; basic due to lone pair on N",
+        "phonetic": "/əˈmiːn/"
+      },
+      {
+        "word": "amide",
+        "zh": "酰胺",
+        "def": "Compound with –CONH₂ group; formed from carboxylic acid + amine",
+        "phonetic": "/ˈæmaɪd/"
+      },
+      {
+        "word": "amino acid",
+        "zh": "氨基酸",
+        "def": "Compound with both –NH₂ and –COOH groups; building block of proteins",
+        "phonetic": "/əˈmiːnəʊ ˈæsɪd/"
+      },
+      {
+        "word": "zwitterion",
+        "zh": "两性离子",
+        "def": "Internal salt form of amino acid at isoelectric point",
+        "phonetic": "/ˈtsvɪtəraɪən/"
+      },
+      {
+        "word": "peptide bond",
+        "zh": "肽键",
+        "def": "–CO–NH– linkage between amino acids in a peptide/protein",
+        "phonetic": "/ˈpɛptaɪd bɒnd/"
+      },
+      {
+        "word": "condensation polymer",
+        "zh": "缩聚物",
+        "def": "Polymer formed with elimination of small molecule (e.g. H₂O or HCl)",
+        "phonetic": "/kəndɛnˈseɪʃən ˈpɒlɪmə/"
+      },
+      {
+        "word": "polyester",
+        "zh": "聚酯",
+        "def": "Condensation polymer formed between diol and dicarboxylic acid",
+        "phonetic": "/ˌpɒliˈɛstə/"
+      },
+      {
+        "word": "polyamide",
+        "zh": "聚酰胺",
+        "def": "Condensation polymer formed between diamine and dicarboxylic acid (e.g. nylon)",
+        "phonetic": "/ˌpɒliˈæmaɪd/"
+      },
+      {
+        "word": "saponification",
+        "zh": "皂化",
+        "def": "Alkaline hydrolysis of ester to produce alcohol and carboxylate salt",
+        "phonetic": "/səˌpɒnɪfɪˈkeɪʃən/"
+      },
+      {
+        "word": "hydrolysis of ester",
+        "zh": "酯的水解",
+        "def": "Ester + H₂O → acid + alcohol (acid catalysed); ester + NaOH → salt + alcohol",
+        "phonetic": "/haɪˈdrɒlɪsɪs ɒv ˈɛstə/"
+      },
+      {
+        "word": "nucleophilic acyl substitution",
+        "zh": "亲核酰基取代",
+        "def": "Mechanism for reactions of acyl chlorides and anhydrides with nucleophiles",
+        "phonetic": "/ˌnjuːklɪəˈfɪlɪk ˈæsɪl ˌsʌbstɪˈtjuːʃən/"
+      },
+      {
+        "word": "basicity of amines",
+        "zh": "胺的碱性",
+        "def": "Amines are weak bases; lone pair on N accepts protons",
+        "phonetic": "/bəˈsɪsɪti ɒv əˈmiːnz/"
+      },
+      {
+        "word": "isoelectric point",
+        "zh": "等电点",
+        "def": "pH at which amino acid has equal + and – charges; net charge = 0",
+        "phonetic": "/ˌaɪsəʊɪˈlɛktrɪk pɔɪnt/"
+      },
+      {
+        "word": "primary amine",
+        "zh": "伯胺",
+        "def": "Amine with one alkyl/aryl group on N: RNH₂",
+        "phonetic": "/ˈpraɪməri əˈmiːn/"
+      },
+      {
+        "word": "secondary amine",
+        "zh": "仲胺",
+        "def": "Amine with two alkyl/aryl groups on N: R₂NH",
+        "phonetic": "/ˈsɛkəndəri əˈmiːn/"
+      },
+      {
+        "word": "Hofmann degradation",
+        "zh": "霍夫曼降解",
+        "def": "Amide + Br₂/NaOH → primary amine with one fewer carbon atom",
+        "phonetic": "/ˈhɒfmən ˌdɛɡrəˈdeɪʃən/"
+      }
+    ]
+  },
+  "ch28": {
+    "name": "Polymerisation",
+    "num": "28",
+    "words": [
+      {
+        "word": "addition polymerisation",
+        "zh": "加聚反应",
+        "def": "Alkene monomers join together by breaking the C=C double bond",
+        "phonetic": "/əˈdɪʃən pəˌlɪməraɪˈzeɪʃən/"
+      },
+      {
+        "word": "condensation polymerisation",
+        "zh": "缩聚反应",
+        "def": "Monomers join with elimination of small molecules (H₂O, HCl)",
+        "phonetic": "/kəndɛnˈseɪʃən pəˌlɪməraɪˈzeɪʃən/"
+      },
+      {
+        "word": "polymer",
+        "zh": "聚合物",
+        "def": "Large molecule made of many repeating monomer units",
+        "phonetic": "/ˈpɒlɪmə/"
+      },
+      {
+        "word": "repeat unit",
+        "zh": "重复单元",
+        "def": "Smallest recurring structural unit in a polymer chain",
+        "phonetic": "/rɪˈpiːt ˈjuːnɪt/"
+      },
+      {
+        "word": "degree of polymerisation",
+        "zh": "聚合度",
+        "def": "Number of monomer units in a polymer chain",
+        "phonetic": "/dɪˈɡriː ɒv pəˌlɪməraɪˈzeɪʃən/"
+      },
+      {
+        "word": "thermoplastic",
+        "zh": "热塑性塑料",
+        "def": "Polymer that softens on heating and can be remoulded; chains are not cross-linked",
+        "phonetic": "/ˌθɜːməʊˈplæstɪk/"
+      },
+      {
+        "word": "thermosetting polymer",
+        "zh": "热固性聚合物",
+        "def": "Polymer that does not soften on heating; heavily cross-linked",
+        "phonetic": "/ˌθɜːməʊˈsɛtɪŋ ˈpɒlɪmə/"
+      },
+      {
+        "word": "cross-linking",
+        "zh": "交联",
+        "def": "Covalent bonds between polymer chains increasing rigidity and melting point",
+        "phonetic": "/krɒs ˈlɪŋkɪŋ/"
+      },
+      {
+        "word": "nylon",
+        "zh": "尼龙",
+        "def": "Polyamide condensation polymer used in textiles and engineering",
+        "phonetic": "/ˈnaɪlɒn/"
+      },
+      {
+        "word": "Terylene (PET)",
+        "zh": "涤纶(PET)",
+        "def": "Polyester condensation polymer used in fibres and bottles",
+        "phonetic": "/ˈtɛrəliːn piː iː tiː/"
+      },
+      {
+        "word": "poly(ethene)",
+        "zh": "聚乙烯",
+        "def": "Addition polymer of ethene; LDPE (branched) and HDPE (linear)",
+        "phonetic": "/ˈpɒli ˈɛθiːn/"
+      },
+      {
+        "word": "poly(propene)",
+        "zh": "聚丙烯",
+        "def": "Addition polymer of propene; isotactic (regular) and atactic (random)",
+        "phonetic": "/ˈpɒli ˈprəʊpiːn/"
+      },
+      {
+        "word": "biodegradable polymer",
+        "zh": "可生物降解聚合物",
+        "def": "Polymer broken down by microorganisms; reduces environmental impact",
+        "phonetic": "/ˌbaɪəʊdɪˈɡreɪdəbl ˈpɒlɪmə/"
+      },
+      {
+        "word": "plastic waste",
+        "zh": "塑料垃圾",
+        "def": "Non-biodegradable polymers accumulating in environment",
+        "phonetic": "/ˈplæstɪk weɪst/"
+      },
+      {
+        "word": "depolymerisation",
+        "zh": "解聚",
+        "def": "Breaking down polymer into monomers; used for recycling",
+        "phonetic": "/diːˌpɒlɪməraɪˈzeɪʃən/"
+      },
+      {
+        "word": "copolymer",
+        "zh": "共聚物",
+        "def": "Polymer made from two or more different monomers",
+        "phonetic": "/ˈkəʊpɒlɪmə/"
+      },
+      {
+        "word": "kevlar",
+        "zh": "凯夫拉",
+        "def": "Aromatic polyamide with exceptional strength; used in bulletproof vests",
+        "phonetic": "/ˈkɛvlɑː/"
+      },
+      {
+        "word": "vulcanisation",
+        "zh": "硫化",
+        "def": "Cross-linking of rubber chains with sulfur to improve strength and elasticity",
+        "phonetic": "/ˌvʌlkənaɪˈzeɪʃən/"
+      }
+    ]
+  },
+  "ch07": {
+    "name": "Redox Reactions",
+    "num": "7",
+    "words": [
+      {
+        "word": "oxidation",
+        "zh": "氧化",
+        "phonetic": "/ˌɒksɪˈdeɪʃən/",
+        "def": "Loss of electrons or increase in oxidation state"
+      },
+      {
+        "word": "reduction",
+        "zh": "还原",
+        "phonetic": "/rɪˈdʌkʃən/",
+        "def": "Gain of electrons or decrease in oxidation state"
+      },
+      {
+        "word": "redox reaction",
+        "zh": "氧化还原反应",
+        "phonetic": "/ˈriːdɒks rɪˈækʃən/",
+        "def": "A reaction involving simultaneous oxidation and reduction"
+      },
+      {
+        "word": "oxidising agent",
+        "zh": "氧化剂",
+        "phonetic": "/ˈɒksɪdaɪzɪŋ ˈeɪdʒənt/",
+        "def": "A substance that oxidises another substance and is itself reduced"
+      },
+      {
+        "word": "reducing agent",
+        "zh": "还原剂",
+        "phonetic": "/rɪˈdjuːsɪŋ ˈeɪdʒənt/",
+        "def": "A substance that reduces another substance and is itself oxidised"
+      },
+      {
+        "word": "oxidation state",
+        "zh": "氧化态",
+        "phonetic": "/ˌɒksɪˈdeɪʃən steɪt/",
+        "def": "The hypothetical charge on an atom if all bonds were ionic"
+      },
+      {
+        "word": "oxidation number",
+        "zh": "氧化数",
+        "phonetic": "/ˌɒksɪˈdeɪʃən ˈnʌmbə/",
+        "def": "A number assigned to an element in a compound representing its degree of oxidation"
+      },
+      {
+        "word": "half-equation",
+        "zh": "半方程式",
+        "phonetic": "/hɑːf ɪˈkweɪʒən/",
+        "def": "An equation showing either the oxidation or reduction process separately"
+      },
+      {
+        "word": "electron transfer",
+        "zh": "电子转移",
+        "phonetic": "/ɪˈlektrɒn ˈtrænsfɜː/",
+        "def": "The movement of electrons from one species to another in a redox reaction"
+      },
+      {
+        "word": "disproportionation",
+        "zh": "歧化反应",
+        "phonetic": "/ˌdɪsprəˌpɔːʃəˈneɪʃən/",
+        "def": "A redox reaction where an element is simultaneously oxidised and reduced"
+      },
+      {
+        "word": "ionic equation",
+        "zh": "离子方程式",
+        "phonetic": "/aɪˈɒnɪk ɪˈkweɪʒən/",
+        "def": "An equation showing only the ions and molecules that actually take part in a reaction"
+      },
+      {
+        "word": "spectator ion",
+        "zh": "旁观离子",
+        "phonetic": "/ˈspektəteɪ aɪən/",
+        "def": "An ion that is present in a reaction mixture but does not take part in the reaction"
+      },
+      {
+        "word": "oxidation state rules",
+        "zh": "氧化态规则",
+        "phonetic": "/ˌɒksɪˈdeɪʃən steɪt ruːlz/",
+        "def": "Rules used to assign oxidation numbers to atoms in compounds"
+      },
+      {
+        "word": "manganate(VII) ion",
+        "zh": "高锰酸根离子",
+        "phonetic": "/mæŋɡəneɪt ˈsevən aɪən/",
+        "def": "MnO₄⁻, a strong oxidising agent used in titrations"
+      },
+      {
+        "word": "dichromate(VI) ion",
+        "zh": "重铬酸根离子",
+        "phonetic": "/daɪˈkrəʊmeɪt sɪks aɪən/",
+        "def": "Cr₂O₇²⁻, a strong oxidising agent that turns from orange to green when reduced"
+      },
+      {
+        "word": "titration",
+        "zh": "滴定",
+        "phonetic": "/taɪˈtreɪʃən/",
+        "def": "A quantitative analytical technique using a standard solution to determine the concentration of another solution"
+      },
+      {
+        "word": "standard solution",
+        "zh": "标准溶液",
+        "phonetic": "/ˈstændəd səˈluːʃən/",
+        "def": "A solution of accurately known concentration"
+      },
+      {
+        "word": "equivalence point",
+        "zh": "等当点",
+        "phonetic": "/ɪˈkwɪvələns pɔɪnt/",
+        "def": "The point in a titration where the moles of titrant are stoichiometrically equivalent to the moles of analyte"
+      }
+    ]
+  },
+  "ch19": {
+    "name": "Lattice Energy",
+    "num": "19",
+    "words": [
+      {
+        "word": "lattice energy",
+        "zh": "晶格能",
+        "phonetic": "/ˈlætɪs ˈenədʒi/",
+        "def": "The enthalpy change when one mole of ionic solid is formed from its gaseous ions"
+      },
+      {
+        "word": "Born-Haber cycle",
+        "zh": "玻恩-哈伯循环",
+        "phonetic": "/bɔːn ˈheɪbə ˈsaɪkəl/",
+        "def": "An application of Hess's law used to calculate lattice energy"
+      },
+      {
+        "word": "enthalpy of atomisation",
+        "zh": "原子化焓",
+        "phonetic": "/ˈenθəlpi əv ˌætəmaɪˈzeɪʃən/",
+        "def": "The enthalpy change when one mole of gaseous atoms is formed from an element in its standard state"
+      },
+      {
+        "word": "first ionisation energy",
+        "zh": "第一电离能",
+        "phonetic": "/fɜːst ˌaɪənaɪˈzeɪʃən ˈenədʒi/",
+        "def": "The energy required to remove one electron from each atom in one mole of gaseous atoms"
+      },
+      {
+        "word": "electron affinity",
+        "zh": "电子亲和能",
+        "phonetic": "/ɪˈlektrɒn əˈfɪnɪti/",
+        "def": "The enthalpy change when one mole of gaseous atoms gains one electron"
+      },
+      {
+        "word": "first electron affinity",
+        "zh": "第一电子亲和能",
+        "phonetic": "/fɜːst ɪˈlektrɒn əˈfɪnɪti/",
+        "def": "The enthalpy change when one electron is added to each atom in one mole of gaseous atoms"
+      },
+      {
+        "word": "second electron affinity",
+        "zh": "第二电子亲和能",
+        "phonetic": "/ˈsekənd ɪˈlektrɒn əˈfɪnɪti/",
+        "def": "The enthalpy change when one electron is added to each ion in one mole of gaseous singly-charged negative ions"
+      },
+      {
+        "word": "enthalpy of formation",
+        "zh": "生成焓",
+        "phonetic": "/ˈenθəlpi əv fɔːˈmeɪʃən/",
+        "def": "The enthalpy change when one mole of a compound is formed from its elements in their standard states"
+      },
+      {
+        "word": "Hess's law",
+        "zh": "赫斯定律",
+        "phonetic": "/ˈhesɪz lɔː/",
+        "def": "The total enthalpy change in a reaction is independent of the route taken"
+      },
+      {
+        "word": "ionic radius",
+        "zh": "离子半径",
+        "phonetic": "/aɪˈɒnɪk ˈreɪdiəs/",
+        "def": "The radius of an ion in an ionic crystal"
+      },
+      {
+        "word": "charge density",
+        "zh": "电荷密度",
+        "phonetic": "/tʃɑːdʒ ˈdensɪti/",
+        "def": "The charge per unit volume of an ion; higher charge density leads to stronger ionic interactions"
+      },
+      {
+        "word": "polarisation",
+        "zh": "极化",
+        "phonetic": "/ˌpəʊləraɪˈzeɪʃən/",
+        "def": "The distortion of the electron cloud of an anion by a cation"
+      },
+      {
+        "word": "polarisability",
+        "zh": "可极化性",
+        "phonetic": "/ˌpəʊlərəˌzəˈbɪlɪti/",
+        "def": "The ease with which an ion's electron cloud is distorted"
+      },
+      {
+        "word": "theoretical lattice energy",
+        "zh": "理论晶格能",
+        "phonetic": "/θɪəˈretɪkəl ˈlætɪs ˈenədʒi/",
+        "def": "Lattice energy calculated assuming purely ionic bonding using Coulomb's law"
+      },
+      {
+        "word": "experimental lattice energy",
+        "zh": "实验晶格能",
+        "phonetic": "/ɪkˌsperɪˈmentəl ˈlætɪs ˈenədʒi/",
+        "def": "Lattice energy derived from the Born-Haber cycle using experimental data"
+      },
+      {
+        "word": "enthalpy of hydration",
+        "zh": "水合焓",
+        "phonetic": "/ˈenθəlpi əv haɪˈdreɪʃən/",
+        "def": "The enthalpy change when one mole of gaseous ions is completely surrounded by water molecules"
+      },
+      {
+        "word": "enthalpy of solution",
+        "zh": "溶解焓",
+        "phonetic": "/ˈenθəlpi əv səˈluːʃən/",
+        "def": "The enthalpy change when one mole of solute dissolves in a large amount of solvent"
+      },
+      {
+        "word": "solubility",
+        "zh": "溶解度",
+        "phonetic": "/ˌsɒljəˈbɪlɪti/",
+        "def": "The maximum amount of a solute that dissolves in a given amount of solvent at a given temperature"
+      }
+    ]
+  },
+  "ch21": {
+    "name": "Further Aspects of Equilibria",
+    "num": "21",
+    "words": [
+      {
+        "word": "Brønsted-Lowry acid",
+        "zh": "布朗斯特-劳里酸",
+        "phonetic": "/ˈbrɒnstɛd ˈlaʊri æsɪd/",
+        "def": "A proton donor in an acid-base reaction"
+      },
+      {
+        "word": "Brønsted-Lowry base",
+        "zh": "布朗斯特-劳里碱",
+        "phonetic": "/ˈbrɒnstɛd ˈlaʊri beɪs/",
+        "def": "A proton acceptor in an acid-base reaction"
+      },
+      {
+        "word": "conjugate acid-base pair",
+        "zh": "共轭酸碱对",
+        "phonetic": "/ˈkɒndʒʊɡɪt æsɪd beɪs peə/",
+        "def": "Two species related by the gain or loss of a single proton"
+      },
+      {
+        "word": "pH",
+        "zh": "pH值",
+        "phonetic": "/piː eɪtʃ/",
+        "def": "A measure of hydrogen ion concentration; pH = -log[H⁺]"
+      },
+      {
+        "word": "strong acid",
+        "zh": "强酸",
+        "phonetic": "/strɒŋ æsɪd/",
+        "def": "An acid that fully dissociates in aqueous solution"
+      },
+      {
+        "word": "weak acid",
+        "zh": "弱酸",
+        "phonetic": "/wiːk æsɪd/",
+        "def": "An acid that only partially dissociates in aqueous solution"
+      },
+      {
+        "word": "acid dissociation constant",
+        "zh": "酸解离常数",
+        "phonetic": "/æsɪd dɪˌsəʊsiˈeɪʃən ˈkɒnstənt/",
+        "def": "Ka, the equilibrium constant for the dissociation of a weak acid"
+      },
+      {
+        "word": "Ka",
+        "zh": "酸解离常数Ka",
+        "phonetic": "/keɪ eɪ/",
+        "def": "Equilibrium constant expression for weak acid dissociation: Ka = [H⁺][A⁻]/[HA]"
+      },
+      {
+        "word": "pKa",
+        "zh": "pKa",
+        "phonetic": "/piː keɪ eɪ/",
+        "def": "The negative logarithm of Ka; pKa = -log Ka"
+      },
+      {
+        "word": "buffer solution",
+        "zh": "缓冲溶液",
+        "phonetic": "/ˈbʌfə səˈluːʃən/",
+        "def": "A solution that resists changes in pH when small amounts of acid or base are added"
+      },
+      {
+        "word": "acidic buffer",
+        "zh": "酸性缓冲液",
+        "phonetic": "/æˈsɪdɪk ˈbʌfə/",
+        "def": "A buffer with pH below 7, made from a weak acid and its conjugate base"
+      },
+      {
+        "word": "alkaline buffer",
+        "zh": "碱性缓冲液",
+        "phonetic": "/ˈælkəlaɪn ˈbʌfə/",
+        "def": "A buffer with pH above 7, made from a weak base and its conjugate acid"
+      },
+      {
+        "word": "ionic product of water",
+        "zh": "水的离子积",
+        "phonetic": "/aɪˈɒnɪk ˈprɒdʌkt əv ˈwɔːtə/",
+        "def": "Kw = [H⁺][OH⁻] = 1×10⁻¹⁴ mol²dm⁻⁶ at 25°C"
+      },
+      {
+        "word": "Kw",
+        "zh": "水的离子积常数",
+        "phonetic": "/keɪ dʌbljuː/",
+        "def": "The equilibrium constant for the ionisation of water; Kw = [H⁺][OH⁻]"
+      },
+      {
+        "word": "neutralisation",
+        "zh": "中和",
+        "phonetic": "/ˌnjuːtrəlaɪˈzeɪʃən/",
+        "def": "The reaction between an acid and a base to form salt and water"
+      },
+      {
+        "word": "equivalence point",
+        "zh": "等当点",
+        "phonetic": "/ɪˈkwɪvələns pɔɪnt/",
+        "def": "The point in a titration where acid and base have reacted in stoichiometric amounts"
+      },
+      {
+        "word": "indicator",
+        "zh": "指示剂",
+        "phonetic": "/ˈɪndɪkeɪtə/",
+        "def": "A weak acid whose undissociated and dissociated forms have different colours"
+      },
+      {
+        "word": "solubility product",
+        "zh": "溶度积",
+        "phonetic": "/ˌsɒljəˈbɪlɪti ˈprɒdʌkt/",
+        "def": "Ksp, the equilibrium constant for the dissolution of a sparingly soluble ionic compound"
+      },
+      {
+        "word": "common ion effect",
+        "zh": "同离子效应",
+        "phonetic": "/ˈkɒmən aɪən ɪˈfekt/",
+        "def": "The decrease in solubility of an ionic compound when a common ion is added to the solution"
+      },
+      {
+        "word": "amphoteric",
+        "zh": "两性的",
+        "phonetic": "/ˌæmfəˈterɪk/",
+        "def": "A species that can act as both an acid and a base"
+      }
+    ]
+  },
+  "ch22": {
+    "name": "Reaction Kinetics",
+    "num": "22",
+    "words": [
+      {
+        "word": "rate of reaction",
+        "zh": "反应速率",
+        "phonetic": "/reɪt əv rɪˈækʃən/",
+        "def": "The change in concentration of a reactant or product per unit time"
+      },
+      {
+        "word": "rate equation",
+        "zh": "速率方程",
+        "phonetic": "/reɪt ɪˈkweɪʒən/",
+        "def": "An expression relating the rate of reaction to the concentrations of reactants: rate = k[A]ᵐ[B]ⁿ"
+      },
+      {
+        "word": "rate constant",
+        "zh": "速率常数",
+        "phonetic": "/reɪt ˈkɒnstənt/",
+        "def": "k in the rate equation; its value depends on temperature"
+      },
+      {
+        "word": "order of reaction",
+        "zh": "反应级数",
+        "phonetic": "/ˈɔːdə əv rɪˈækʃən/",
+        "def": "The power to which a concentration is raised in the rate equation"
+      },
+      {
+        "word": "overall order",
+        "zh": "总反应级数",
+        "phonetic": "/ˈəʊvərɔːl ˈɔːdə/",
+        "def": "The sum of the individual orders of all reactants in the rate equation"
+      },
+      {
+        "word": "zero order",
+        "zh": "零级反应",
+        "phonetic": "/ˈzɪərəʊ ˈɔːdə/",
+        "def": "Reaction order where rate is independent of concentration of that reactant"
+      },
+      {
+        "word": "first order",
+        "zh": "一级反应",
+        "phonetic": "/fɜːst ˈɔːdə/",
+        "def": "Reaction order where rate is directly proportional to concentration of that reactant"
+      },
+      {
+        "word": "second order",
+        "zh": "二级反应",
+        "phonetic": "/ˈsekənd ˈɔːdə/",
+        "def": "Reaction order where rate is proportional to the square of the concentration"
+      },
+      {
+        "word": "half-life",
+        "zh": "半衰期",
+        "phonetic": "/hɑːf laɪf/",
+        "def": "The time taken for the concentration of a reactant to fall to half its initial value"
+      },
+      {
+        "word": "Arrhenius equation",
+        "zh": "阿伦尼乌斯方程",
+        "phonetic": "/əˈriːniəs ɪˈkweɪʒən/",
+        "def": "k = Ae^(-Ea/RT), relating rate constant to temperature and activation energy"
+      },
+      {
+        "word": "activation energy",
+        "zh": "活化能",
+        "phonetic": "/ˌæktɪˈveɪʃən ˈenədʒi/",
+        "def": "The minimum energy required for a reaction to occur"
+      },
+      {
+        "word": "Arrhenius constant",
+        "zh": "阿伦尼乌斯常数",
+        "phonetic": "/əˈriːniəs ˈkɒnstənt/",
+        "def": "A (pre-exponential factor) in the Arrhenius equation, related to frequency of collisions with correct orientation"
+      },
+      {
+        "word": "frequency factor",
+        "zh": "频率因子",
+        "phonetic": "/ˈfriːkwənsi ˈfæktə/",
+        "def": "The pre-exponential factor A in the Arrhenius equation"
+      },
+      {
+        "word": "initial rate method",
+        "zh": "初始速率法",
+        "phonetic": "/ɪˈnɪʃəl reɪt ˈmeθəd/",
+        "def": "A method of determining reaction orders by measuring rates at the start of the reaction"
+      },
+      {
+        "word": "rate-determining step",
+        "zh": "决速步",
+        "phonetic": "/reɪt dɪˈtɜːmɪnɪŋ step/",
+        "def": "The slowest step in a reaction mechanism that determines the overall rate"
+      },
+      {
+        "word": "mechanism",
+        "zh": "反应机理",
+        "phonetic": "/ˈmekənɪzəm/",
+        "def": "A step-by-step description of how a reaction proceeds at the molecular level"
+      },
+      {
+        "word": "intermediate",
+        "zh": "中间体",
+        "phonetic": "/ˌɪntəˈmiːdiət/",
+        "def": "A species formed during a reaction that is consumed in a later step"
+      },
+      {
+        "word": "catalyst",
+        "zh": "催化剂",
+        "phonetic": "/ˈkætəlɪst/",
+        "def": "A substance that increases reaction rate without being consumed overall"
+      },
+      {
+        "word": "homogeneous catalyst",
+        "zh": "均相催化剂",
+        "phonetic": "/həˈmɒdʒɪniəs ˈkætəlɪst/",
+        "def": "A catalyst that is in the same phase as the reactants"
+      },
+      {
+        "word": "heterogeneous catalyst",
+        "zh": "多相催化剂",
+        "phonetic": "/ˌhetərəˈdʒiːniəs ˈkætəlɪst/",
+        "def": "A catalyst that is in a different phase from the reactants"
+      }
+    ]
+  },
+  "ch23": {
+    "name": "Entropy and Gibbs Free Energy",
+    "num": "23",
+    "words": [
+      {
+        "word": "entropy",
+        "zh": "熵",
+        "phonetic": "/ˈentrəpi/",
+        "def": "A measure of the disorder or randomness of a system; symbol S"
+      },
+      {
+        "word": "standard entropy",
+        "zh": "标准熵",
+        "phonetic": "/ˈstændəd ˈentrəpi/",
+        "def": "The entropy of one mole of a substance under standard conditions (298 K, 100 kPa)"
+      },
+      {
+        "word": "entropy change",
+        "zh": "熵变",
+        "phonetic": "/ˈentrəpi tʃeɪndʒ/",
+        "def": "ΔS = S(products) - S(reactants)"
+      },
+      {
+        "word": "Gibbs free energy",
+        "zh": "吉布斯自由能",
+        "phonetic": "/ɡɪbz friː ˈenədʒi/",
+        "def": "G = H - TS; a thermodynamic function that predicts whether a reaction is feasible"
+      },
+      {
+        "word": "Gibbs equation",
+        "zh": "吉布斯方程",
+        "phonetic": "/ɡɪbz ɪˈkweɪʒən/",
+        "def": "ΔG = ΔH - TΔS; used to calculate whether a reaction is spontaneous"
+      },
+      {
+        "word": "standard Gibbs free energy change",
+        "zh": "标准吉布斯自由能变",
+        "phonetic": "/ˈstændəd ɡɪbz friː ˈenədʒi tʃeɪndʒ/",
+        "def": "ΔG⊖, the Gibbs free energy change under standard conditions"
+      },
+      {
+        "word": "spontaneous reaction",
+        "zh": "自发反应",
+        "phonetic": "/spɒnˈteɪniəs rɪˈækʃən/",
+        "def": "A reaction that proceeds without any external input of energy; occurs when ΔG < 0"
+      },
+      {
+        "word": "feasibility",
+        "zh": "可行性",
+        "phonetic": "/ˌfiːzəˈbɪlɪti/",
+        "def": "Whether a reaction can occur spontaneously; a reaction is feasible when ΔG ≤ 0"
+      },
+      {
+        "word": "second law of thermodynamics",
+        "zh": "热力学第二定律",
+        "phonetic": "/ˈsekənd lɔː əv ˌθɜːməʊdaɪˈnæmɪks/",
+        "def": "The total entropy of an isolated system always increases in a spontaneous process"
+      },
+      {
+        "word": "total entropy change",
+        "zh": "总熵变",
+        "phonetic": "/ˈtəʊtəl ˈentrəpi tʃeɪndʒ/",
+        "def": "ΔS_total = ΔS_system + ΔS_surroundings; positive for spontaneous processes"
+      },
+      {
+        "word": "entropy of surroundings",
+        "zh": "环境熵变",
+        "phonetic": "/ˈentrəpi əv səˈraʊndɪŋz/",
+        "def": "ΔS_surr = -ΔH/T; the entropy change of the surroundings due to heat transfer"
+      },
+      {
+        "word": "standard conditions",
+        "zh": "标准状况",
+        "phonetic": "/ˈstændəd kənˈdɪʃənz/",
+        "def": "298 K (25°C) and 100 kPa (1 bar); used as reference for thermodynamic data"
+      },
+      {
+        "word": "disorder",
+        "zh": "无序度",
+        "phonetic": "/dɪsˈɔːdə/",
+        "def": "The degree of randomness or lack of order in a system, related to entropy"
+      },
+      {
+        "word": "microstates",
+        "zh": "微观状态数",
+        "phonetic": "/ˈmaɪkrəʊsteɪts/",
+        "def": "The number of ways energy can be distributed among particles in a system; S = k·lnW"
+      },
+      {
+        "word": "temperature dependence",
+        "zh": "温度依赖性",
+        "phonetic": "/ˈtemprɪtʃə dɪˈpendəns/",
+        "def": "The relationship between ΔG and temperature via the TΔS term in ΔG = ΔH - TΔS"
+      }
+    ]
+  },
+  "ch24": {
+    "name": "Transition Elements",
+    "num": "24",
+    "words": [
+      {
+        "word": "transition element",
+        "zh": "过渡元素",
+        "phonetic": "/trænˈzɪʃən ˈelɪmənt/",
+        "def": "An element that has an incomplete d subshell in at least one of its stable ions"
+      },
+      {
+        "word": "d-block element",
+        "zh": "d区元素",
+        "phonetic": "/diː blɒk ˈelɪmənt/",
+        "def": "An element in which the highest energy electron is in a d orbital"
+      },
+      {
+        "word": "variable oxidation state",
+        "zh": "可变氧化态",
+        "phonetic": "/ˈveəriəbl ˌɒksɪˈdeɪʃən steɪt/",
+        "def": "The ability of transition metals to form ions with different oxidation states"
+      },
+      {
+        "word": "complex ion",
+        "zh": "配合物离子",
+        "phonetic": "/ˈkɒmpleks aɪən/",
+        "def": "A metal ion surrounded by ligands that donate electron pairs to the metal"
+      },
+      {
+        "word": "ligand",
+        "zh": "配体",
+        "phonetic": "/ˈlɪɡənd/",
+        "def": "A molecule or ion that donates a lone pair of electrons to a central metal ion"
+      },
+      {
+        "word": "coordination number",
+        "zh": "配位数",
+        "phonetic": "/kəʊˌɔːdɪˈneɪʃən ˈnʌmbə/",
+        "def": "The number of coordinate bonds formed between the central metal ion and its ligands"
+      },
+      {
+        "word": "dative bond",
+        "zh": "配位键",
+        "phonetic": "/ˈdeɪtɪv bɒnd/",
+        "def": "A covalent bond where both electrons are donated by one atom (coordinate bond)"
+      },
+      {
+        "word": "monodentate ligand",
+        "zh": "单齿配体",
+        "phonetic": "/ˌmɒnəʊˈdentɪt ˈlɪɡənd/",
+        "def": "A ligand that forms one coordinate bond with the central metal ion (e.g. H₂O, NH₃, Cl⁻)"
+      },
+      {
+        "word": "bidentate ligand",
+        "zh": "双齿配体",
+        "phonetic": "/baɪˈdentɪt ˈlɪɡənd/",
+        "def": "A ligand that forms two coordinate bonds with the central metal ion (e.g. en, ethanedioate)"
+      },
+      {
+        "word": "multidentate ligand",
+        "zh": "多齿配体",
+        "phonetic": "/ˌmʌltiˈdentɪt ˈlɪɡənd/",
+        "def": "A ligand that forms more than two coordinate bonds (e.g. EDTA forms 6 bonds)"
+      },
+      {
+        "word": "chelate",
+        "zh": "螯合物",
+        "phonetic": "/ˈkiːleɪt/",
+        "def": "A complex formed when a polydentate ligand bonds to a metal ion in a ring structure"
+      },
+      {
+        "word": "chelate effect",
+        "zh": "螯合效应",
+        "phonetic": "/ˈkiːleɪt ɪˈfekt/",
+        "def": "The extra stability of chelate complexes relative to those with monodentate ligands"
+      },
+      {
+        "word": "ligand substitution",
+        "zh": "配体取代",
+        "phonetic": "/ˈlɪɡənd ˌsʌbstɪˈtjuːʃən/",
+        "def": "A reaction in which one or more ligands in a complex are replaced by other ligands"
+      },
+      {
+        "word": "coloured ion",
+        "zh": "有色离子",
+        "phonetic": "/ˈkʌləd aɪən/",
+        "def": "Transition metal ions that absorb visible light due to d-d electron transitions"
+      },
+      {
+        "word": "d-d transition",
+        "zh": "d-d跃迁",
+        "phonetic": "/diː diː trænˈzɪʃən/",
+        "def": "The promotion of an electron between d orbitals of different energy, which absorbs light and produces colour"
+      },
+      {
+        "word": "catalytic behaviour",
+        "zh": "催化行为",
+        "phonetic": "/kætəˈlɪtɪk bɪˈheɪvjə/",
+        "def": "The ability of transition metals to act as catalysts by using variable oxidation states"
+      },
+      {
+        "word": "EDTA",
+        "zh": "乙二胺四乙酸",
+        "phonetic": "/iː diː tiː eɪ/",
+        "def": "Ethylenediaminetetraacetic acid; a hexadentate ligand that forms very stable complexes"
+      },
+      {
+        "word": "haemoglobin",
+        "zh": "血红蛋白",
+        "phonetic": "/ˌhiːməˈɡləʊbɪn/",
+        "def": "An iron-containing protein in red blood cells that transports oxygen using Fe²⁺ complex"
+      },
+      {
+        "word": "precipitation",
+        "zh": "沉淀",
+        "phonetic": "/prɪˌsɪpɪˈteɪʃən/",
+        "def": "The formation of an insoluble solid from a solution; used to identify transition metal ions"
+      },
+      {
+        "word": "amphoteric hydroxide",
+        "zh": "两性氢氧化物",
+        "phonetic": "/ˌæmfəˈterɪk haɪˈdrɒksaɪd/",
+        "def": "A hydroxide that reacts with both acids and bases (e.g. Al(OH)₃, Cr(OH)₃, Zn(OH)₂)"
+      }
+    ]
+  },
+  "ch25": {
+    "name": "Benzene and its Compounds",
+    "num": "25",
+    "words": [
+      {
+        "word": "benzene",
+        "zh": "苯",
+        "phonetic": "/ˈbenziːn/",
+        "def": "A cyclic hydrocarbon C₆H₆ with a delocalised π electron system; the simplest aromatic compound"
+      },
+      {
+        "word": "arene",
+        "zh": "芳烃",
+        "phonetic": "/ˈæriːn/",
+        "def": "A hydrocarbon containing a benzene ring (aromatic hydrocarbon)"
+      },
+      {
+        "word": "aromatic compound",
+        "zh": "芳香族化合物",
+        "phonetic": "/ˌærəˈmætɪk ˈkɒmpaʊnd/",
+        "def": "A compound containing a benzene ring or similar aromatic ring system"
+      },
+      {
+        "word": "delocalised electrons",
+        "zh": "离域电子",
+        "phonetic": "/diːˈləʊkəlaɪzd ɪˈlektrɒnz/",
+        "def": "Electrons that are spread over several atoms rather than localised between two atoms"
+      },
+      {
+        "word": "electrophilic substitution",
+        "zh": "亲电取代",
+        "phonetic": "/ɪˌlektrəˈfɪlɪk ˌsʌbstɪˈtjuːʃən/",
+        "def": "A reaction where an electrophile replaces a hydrogen atom on the benzene ring"
+      },
+      {
+        "word": "nitration",
+        "zh": "硝化反应",
+        "phonetic": "/naɪˈtreɪʃən/",
+        "def": "The introduction of a nitro group (–NO₂) into a compound using a nitrating mixture"
+      },
+      {
+        "word": "nitrating mixture",
+        "zh": "硝化混合物",
+        "phonetic": "/ˈnaɪtreɪtɪŋ ˈmɪkstʃə/",
+        "def": "A mixture of concentrated HNO₃ and concentrated H₂SO₄ used for nitration"
+      },
+      {
+        "word": "nitronium ion",
+        "zh": "硝酰离子",
+        "phonetic": "/naɪˈtrəʊniəm aɪən/",
+        "def": "NO₂⁺, the electrophile formed in nitration reactions"
+      },
+      {
+        "word": "Friedel-Crafts reaction",
+        "zh": "傅-克反应",
+        "phonetic": "/ˈfriːdəl kræfts rɪˈækʃən/",
+        "def": "Electrophilic substitution using an acyl or alkyl halide with a Lewis acid catalyst"
+      },
+      {
+        "word": "acylation",
+        "zh": "酰化反应",
+        "phonetic": "/ˌæsɪˈleɪʃən/",
+        "def": "Introduction of an acyl group (RCO–) onto the benzene ring using Friedel-Crafts conditions"
+      },
+      {
+        "word": "alkylation",
+        "zh": "烷基化反应",
+        "phonetic": "/ˌælkɪˈleɪʃən/",
+        "def": "Introduction of an alkyl group onto the benzene ring using Friedel-Crafts conditions"
+      },
+      {
+        "word": "phenol",
+        "zh": "苯酚",
+        "phonetic": "/ˈfiːnɒl/",
+        "def": "C₆H₅OH; benzene with a hydroxyl group attached, which activates the ring"
+      },
+      {
+        "word": "phenylamine",
+        "zh": "苯胺",
+        "phonetic": "/ˈfenɪlˌæmiːn/",
+        "def": "C₆H₅NH₂ (aniline); benzene with an amino group, also activates the ring"
+      },
+      {
+        "word": "directing effect",
+        "zh": "定向效应",
+        "phonetic": "/dɪˈrektɪŋ ɪˈfekt/",
+        "def": "The influence of a substituent on the position of further electrophilic substitution (ortho/para or meta)"
+      },
+      {
+        "word": "activating group",
+        "zh": "活化基团",
+        "phonetic": "/ˈæktɪveɪtɪŋ ɡruːp/",
+        "def": "A substituent that increases the rate of electrophilic substitution by donating electron density to the ring"
+      },
+      {
+        "word": "deactivating group",
+        "zh": "钝化基团",
+        "phonetic": "/diːˈæktɪveɪtɪŋ ɡruːp/",
+        "def": "A substituent that decreases the rate of electrophilic substitution by withdrawing electron density"
+      },
+      {
+        "word": "Kekulé structure",
+        "zh": "凯库勒结构",
+        "phonetic": "/ˈkekʊleɪ ˈstrʌktʃə/",
+        "def": "The early structure of benzene with alternating single and double bonds proposed by Kekulé"
+      },
+      {
+        "word": "resonance hybrid",
+        "zh": "共振杂化体",
+        "phonetic": "/ˈrezənəns ˈhaɪbrɪd/",
+        "def": "A molecule best described as a mixture of two or more contributing structures"
+      }
+    ]
+  },
+  "ch27": {
+    "name": "Organic Nitrogen Compounds",
+    "num": "27",
+    "words": [
+      {
+        "word": "amine",
+        "zh": "胺",
+        "phonetic": "/əˈmiːn/",
+        "def": "An organic compound derived from ammonia by replacing H with alkyl or aryl groups (–NH₂, –NHR, –NR₂)"
+      },
+      {
+        "word": "primary amine",
+        "zh": "伯胺",
+        "phonetic": "/ˈpraɪməri əˈmiːn/",
+        "def": "An amine with one alkyl or aryl group attached to nitrogen (RNH₂)"
+      },
+      {
+        "word": "secondary amine",
+        "zh": "仲胺",
+        "phonetic": "/ˈsekəndri əˈmiːn/",
+        "def": "An amine with two alkyl or aryl groups attached to nitrogen (R₂NH)"
+      },
+      {
+        "word": "tertiary amine",
+        "zh": "叔胺",
+        "phonetic": "/ˈtɜːʃəri əˈmiːn/",
+        "def": "An amine with three alkyl or aryl groups attached to nitrogen (R₃N)"
+      },
+      {
+        "word": "basicity of amines",
+        "zh": "胺的碱性",
+        "phonetic": "/beɪˈsɪsɪti əv əˈmiːnz/",
+        "def": "Amines are bases because nitrogen has a lone pair that can accept a proton"
+      },
+      {
+        "word": "amide",
+        "zh": "酰胺",
+        "phonetic": "/ˈæmaɪd/",
+        "def": "A compound containing the –CONH₂ group; formed by reaction of carboxylic acid with amine"
+      },
+      {
+        "word": "peptide bond",
+        "zh": "肽键",
+        "phonetic": "/ˈpeptaɪd bɒnd/",
+        "def": "The –CO–NH– linkage formed between amino acids; an amide bond"
+      },
+      {
+        "word": "amino acid",
+        "zh": "氨基酸",
+        "phonetic": "/əˈmiːnəʊ æsɪd/",
+        "def": "A compound with both amino (–NH₂) and carboxyl (–COOH) groups; building blocks of proteins"
+      },
+      {
+        "word": "zwitterion",
+        "zh": "两性离子",
+        "phonetic": "/ˈtsvɪtərˌaɪən/",
+        "def": "A molecule with both a positive and negative charge at different sites; form of amino acids at neutral pH"
+      },
+      {
+        "word": "isoelectric point",
+        "zh": "等电点",
+        "phonetic": "/ˌaɪsəʊɪˈlektrɪk pɔɪnt/",
+        "def": "The pH at which an amino acid exists primarily as a zwitterion with zero net charge"
+      },
+      {
+        "word": "diazonium salt",
+        "zh": "重氮盐",
+        "phonetic": "/ˌdaɪəˈzəʊniəm sɔːlt/",
+        "def": "Ar–N₂⁺ X⁻; formed by diazotisation of primary aromatic amines at low temperature"
+      },
+      {
+        "word": "diazotisation",
+        "zh": "重氮化",
+        "phonetic": "/ˌdaɪəzəʊtaɪˈzeɪʃən/",
+        "def": "The reaction of a primary aromatic amine with NaNO₂/HCl at 0–5°C to form a diazonium salt"
+      },
+      {
+        "word": "coupling reaction",
+        "zh": "偶联反应",
+        "phonetic": "/ˈkʌplɪŋ rɪˈækʃən/",
+        "def": "Reaction of a diazonium salt with a coupling component (phenol or amine) to form an azo dye"
+      },
+      {
+        "word": "azo dye",
+        "zh": "偶氮染料",
+        "phonetic": "/ˈeɪzəʊ daɪ/",
+        "def": "A coloured compound containing the –N=N– group, made by coupling reactions"
+      },
+      {
+        "word": "reduction of nitrobenzene",
+        "zh": "硝基苯的还原",
+        "phonetic": "/rɪˈdʌkʃən əv ˌnaɪtrəʊˈbenziːn/",
+        "def": "C₆H₅NO₂ → C₆H₅NH₂ (phenylamine) using Sn/HCl followed by NaOH"
+      },
+      {
+        "word": "nucleophilic substitution",
+        "zh": "亲核取代",
+        "phonetic": "/ˌnjuːkliəˈfɪlɪk ˌsʌbstɪˈtjuːʃən/",
+        "def": "A reaction where a nucleophile replaces a leaving group"
+      },
+      {
+        "word": "Gabriel synthesis",
+        "zh": "盖布瑞尔合成法",
+        "phonetic": "/ˈɡeɪbriəl ˈsɪnθəsɪs/",
+        "def": "A method for preparing primary amines from phthalimide and haloalkanes"
+      },
+      {
+        "word": "Hofmann degradation",
+        "zh": "霍夫曼降解",
+        "phonetic": "/ˈhɒfmæn ˌdeɡrəˈdeɪʃən/",
+        "def": "Conversion of a primary amide to a primary amine with one fewer carbon using Br₂/NaOH"
+      }
+    ]
+  },
+  "ch29": {
+    "name": "Organic Synthesis",
+    "num": "29",
+    "words": [
+      {
+        "word": "retrosynthesis",
+        "zh": "逆合成分析",
+        "phonetic": "/ˌretrəʊˈsɪnθəsɪs/",
+        "def": "Working backwards from a target molecule to identify suitable starting materials and reagents"
+      },
+      {
+        "word": "synthetic route",
+        "zh": "合成路线",
+        "phonetic": "/sɪnˈθetɪk ruːt/",
+        "def": "The sequence of reactions and reagents used to convert a starting material to a target molecule"
+      },
+      {
+        "word": "functional group interconversion",
+        "zh": "官能团转换",
+        "phonetic": "/ˈfʌŋkʃənəl ɡruːp ˌɪntəˌkɒnvɜːˈʒən/",
+        "def": "Transforming one functional group into another during a synthesis"
+      },
+      {
+        "word": "protecting group",
+        "zh": "保护基",
+        "phonetic": "/prəˈtektɪŋ ɡruːp/",
+        "def": "A group temporarily added to prevent an unwanted reaction at that site during synthesis"
+      },
+      {
+        "word": "selectivity",
+        "zh": "选择性",
+        "phonetic": "/sɪˌlektɪˈvɪti/",
+        "def": "The preference for one reaction outcome (regiochemical or stereochemical) over another"
+      },
+      {
+        "word": "yield",
+        "zh": "产率",
+        "phonetic": "/jiːld/",
+        "def": "The amount of product obtained as a percentage of the theoretical maximum"
+      },
+      {
+        "word": "percentage yield",
+        "zh": "百分产率",
+        "phonetic": "/pəˈsentɪdʒ jiːld/",
+        "def": "actual yield / theoretical yield × 100%"
+      },
+      {
+        "word": "atom economy",
+        "zh": "原子经济性",
+        "phonetic": "/ˈætəm ɪˈkɒnəmi/",
+        "def": "The fraction of the mass of reactants converted to desired product: (MW product / MW all products) × 100%"
+      },
+      {
+        "word": "green chemistry",
+        "zh": "绿色化学",
+        "phonetic": "/ɡriːn ˈkemɪstri/",
+        "def": "Chemistry that aims to minimise environmental impact through efficient, sustainable reactions"
+      },
+      {
+        "word": "by-product",
+        "zh": "副产品",
+        "phonetic": "/ˈbaɪˌprɒdʌkt/",
+        "def": "An unwanted or secondary product formed in a chemical reaction"
+      },
+      {
+        "word": "multi-step synthesis",
+        "zh": "多步合成",
+        "phonetic": "/ˌmʌlti step ˈsɪnθəsɪs/",
+        "def": "A synthesis requiring several sequential reactions to reach the target molecule"
+      },
+      {
+        "word": "carbon skeleton",
+        "zh": "碳骨架",
+        "phonetic": "/ˈkɑːbən ˈskelɪtən/",
+        "def": "The arrangement of carbon atoms forming the backbone of an organic molecule"
+      },
+      {
+        "word": "chain extension",
+        "zh": "碳链增长",
+        "phonetic": "/tʃeɪn ɪkˈstenʃən/",
+        "def": "A reaction that increases the length of the carbon chain in a molecule"
+      },
+      {
+        "word": "reaction conditions",
+        "zh": "反应条件",
+        "phonetic": "/rɪˈækʃən kənˈdɪʃənz/",
+        "def": "Temperature, pressure, catalyst, solvent and other factors affecting a reaction"
+      },
+      {
+        "word": "purification",
+        "zh": "纯化",
+        "phonetic": "/ˌpjʊərɪfɪˈkeɪʃən/",
+        "def": "The process of removing impurities from a product (e.g. recrystallisation, distillation)"
+      },
+      {
+        "word": "recrystallisation",
+        "zh": "重结晶",
+        "phonetic": "/riːˌkrɪstəlaɪˈzeɪʃən/",
+        "def": "A purification technique where a solid is dissolved and allowed to crystallise again to remove impurities"
+      }
+    ]
+  },
+  "ch30": {
+    "name": "Analytical Chemistry",
+    "num": "30",
+    "words": [
+      {
+        "word": "mass spectrometry",
+        "zh": "质谱法",
+        "phonetic": "/mæs spekˈtrɒmɪtri/",
+        "def": "A technique for identifying compounds by measuring the mass-to-charge ratios of ions"
+      },
+      {
+        "word": "molecular ion peak",
+        "zh": "分子离子峰",
+        "phonetic": "/məˈlekjʊlə aɪən piːk/",
+        "def": "The peak at the highest m/z in a mass spectrum corresponding to M⁺, the molecular ion"
+      },
+      {
+        "word": "base peak",
+        "zh": "基峰",
+        "phonetic": "/beɪs piːk/",
+        "def": "The most intense peak in a mass spectrum, set to 100% relative abundance"
+      },
+      {
+        "word": "fragmentation pattern",
+        "zh": "碎片化模式",
+        "phonetic": "/ˌfræɡmənˈteɪʃən ˈpætən/",
+        "def": "The characteristic way a molecule breaks apart in a mass spectrometer, used for identification"
+      },
+      {
+        "word": "infrared spectroscopy",
+        "zh": "红外光谱法",
+        "phonetic": "/ˈɪnfrəred spekˈtrɒskəpi/",
+        "def": "A technique that identifies functional groups by measuring absorption of infrared radiation"
+      },
+      {
+        "word": "absorption",
+        "zh": "吸收",
+        "phonetic": "/əbˈzɔːpʃən/",
+        "def": "The process by which radiation is taken up by a substance, causing molecular vibrations"
+      },
+      {
+        "word": "wavenumber",
+        "zh": "波数",
+        "phonetic": "/ˈweɪvˌnʌmbə/",
+        "def": "The number of wavelengths per centimetre (cm⁻¹); used to indicate position of IR absorption peaks"
+      },
+      {
+        "word": "fingerprint region",
+        "zh": "指纹区",
+        "phonetic": "/ˈfɪŋɡəprɪnt ˈriːdʒən/",
+        "def": "The region of an IR spectrum below 1500 cm⁻¹ that is unique to each compound"
+      },
+      {
+        "word": "NMR spectroscopy",
+        "zh": "核磁共振光谱法",
+        "phonetic": "/en em ɑː spekˈtrɒskəpi/",
+        "def": "A technique using the behaviour of atomic nuclei in a magnetic field to determine molecular structure"
+      },
+      {
+        "word": "chemical shift",
+        "zh": "化学位移",
+        "phonetic": "/ˈkemɪkəl ʃɪft/",
+        "def": "The position of an NMR peak measured in ppm relative to TMS (δ = 0)"
+      },
+      {
+        "word": "TMS",
+        "zh": "四甲基硅烷",
+        "phonetic": "/tiː em es/",
+        "def": "Tetramethylsilane, Si(CH₃)₄; the reference standard for NMR chemical shift (δ = 0 ppm)"
+      },
+      {
+        "word": "integration",
+        "zh": "积分",
+        "phonetic": "/ˌɪntɪˈɡreɪʃən/",
+        "def": "The area under an NMR peak, proportional to the number of equivalent protons"
+      },
+      {
+        "word": "spin-spin coupling",
+        "zh": "自旋-自旋偶合",
+        "phonetic": "/spɪn spɪn ˈkʌplɪŋ/",
+        "def": "Interaction between neighbouring nuclear spins that causes peak splitting in NMR"
+      },
+      {
+        "word": "n+1 rule",
+        "zh": "n+1规则",
+        "phonetic": "/en plʌs wʌn ruːl/",
+        "def": "A ¹H NMR peak is split into (n+1) lines by n equivalent neighbouring protons"
+      },
+      {
+        "word": "doublet",
+        "zh": "双峰",
+        "phonetic": "/ˈdʌblɪt/",
+        "def": "An NMR peak split into 2 lines due to 1 neighbouring proton"
+      },
+      {
+        "word": "triplet",
+        "zh": "三峰",
+        "phonetic": "/ˈtrɪplɪt/",
+        "def": "An NMR peak split into 3 lines due to 2 neighbouring equivalent protons"
+      },
+      {
+        "word": "quartet",
+        "zh": "四峰",
+        "phonetic": "/kwɔːˈtet/",
+        "def": "An NMR peak split into 4 lines due to 3 neighbouring equivalent protons"
+      },
+      {
+        "word": "equivalent protons",
+        "zh": "等价质子",
+        "phonetic": "/ɪˈkwɪvələnt ˈprəʊtɒnz/",
+        "def": "Protons in the same chemical environment that give a single NMR signal"
+      },
+      {
+        "word": "¹H NMR",
+        "zh": "质子核磁共振",
+        "phonetic": "/prəʊtɒn en em ɑː/",
+        "def": "NMR spectroscopy using ¹H nuclei; the most common type used in organic structure determination"
+      },
+      {
+        "word": "¹³C NMR",
+        "zh": "碳-13核磁共振",
+        "phonetic": "/kɑːbən θɜːtiːn en em ɑː/",
+        "def": "NMR spectroscopy using ¹³C nuclei; each unique carbon environment gives one peak"
+      }
+    ]
+  }
+}

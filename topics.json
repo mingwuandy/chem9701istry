@@ -1,0 +1,212 @@
+{
+  "chapters": {
+    "ch01": {
+      "name": "Atomic Structure",
+      "topics": [
+        {"id": "ch01_t01", "name": "Protons, neutrons & electrons"},
+        {"id": "ch01_t02", "name": "Isotopes & relative atomic mass"},
+        {"id": "ch01_t03", "name": "Mass spectrometry"},
+        {"id": "ch01_t04", "name": "Electron configuration & orbitals"},
+        {"id": "ch01_t05", "name": "Ionisation energies"},
+        {"id": "ch01_t06", "name": "Atomic emission spectra"}
+      ]
+    },
+    "ch03": {
+      "name": "Atoms, Molecules & Stoichiometry",
+      "topics": [
+        {"id": "ch03_t01", "name": "Relative masses (Ar, Mr)"},
+        {"id": "ch03_t02", "name": "The mole concept & Avogadro constant"},
+        {"id": "ch03_t03", "name": "Empirical & molecular formulae"},
+        {"id": "ch03_t04", "name": "Molar volumes of gases"},
+        {"id": "ch03_t05", "name": "Solutions & concentrations"},
+        {"id": "ch03_t06", "name": "Stoichiometric calculations"},
+        {"id": "ch03_t07", "name": "Limiting reagent & % yield"}
+      ]
+    },
+    "ch04": {
+      "name": "Chemical Bonding",
+      "topics": [
+        {"id": "ch04_t01", "name": "Ionic bonding & ionic structures"},
+        {"id": "ch04_t02", "name": "Covalent bonding & dative bonds"},
+        {"id": "ch04_t03", "name": "Electronegativity & bond polarity"},
+        {"id": "ch04_t04", "name": "VSEPR & molecular shapes"},
+        {"id": "ch04_t05", "name": "Sigma & pi bonds"},
+        {"id": "ch04_t06", "name": "Intermolecular forces (van der Waals, dipole-dipole)"},
+        {"id": "ch04_t07", "name": "Hydrogen bonding"},
+        {"id": "ch04_t08", "name": "Metallic bonding"},
+        {"id": "ch04_t09", "name": "Bond energy & bond length"}
+      ]
+    },
+    "ch05": {
+      "name": "States of Matter",
+      "topics": [
+        {"id": "ch05_t01", "name": "Ideal gas behaviour & gas laws"},
+        {"id": "ch05_t02", "name": "Kinetic theory of gases"},
+        {"id": "ch05_t03", "name": "Ionic lattices (NaCl, CsCl)"},
+        {"id": "ch05_t04", "name": "Molecular lattices"},
+        {"id": "ch05_t05", "name": "Covalent network lattices (diamond, graphite)"},
+        {"id": "ch05_t06", "name": "Metallic lattices"},
+        {"id": "ch05_t07", "name": "Simple liquids & properties"},
+        {"id": "ch05_t08", "name": "Phase diagrams & changes of state"}
+      ]
+    },
+    "ch06": {
+      "name": "Chemical Energetics",
+      "topics": [
+        {"id": "ch06_t01", "name": "Enthalpy changes (ΔH)"},
+        {"id": "ch06_t02", "name": "Hess's law & energy cycles"},
+        {"id": "ch06_t03", "name": "Bond enthalpies"},
+        {"id": "ch06_t04", "name": "Lattice energy & Born-Haber cycles"},
+        {"id": "ch06_t05", "name": "Enthalpy of solution & hydration"},
+        {"id": "ch06_t06", "name": "Entropy (ΔS) & Gibbs free energy (ΔG)"}
+      ]
+    },
+    "ch08": {
+      "name": "Equilibria",
+      "topics": [
+        {"id": "ch08_t01", "name": "Dynamic equilibrium & Le Chatelier's principle"},
+        {"id": "ch08_t02", "name": "Equilibrium constant Kc"},
+        {"id": "ch08_t03", "name": "Equilibrium constant Kp"},
+        {"id": "ch08_t04", "name": "Acid-base equilibria & Brønsted-Lowry"},
+        {"id": "ch08_t05", "name": "pH, Ka & Kb calculations"},
+        {"id": "ch08_t06", "name": "Buffer solutions"},
+        {"id": "ch08_t07", "name": "Solubility product (Ksp)"},
+        {"id": "ch08_t08", "name": "Ionic product of water (Kw)"}
+      ]
+    },
+    "ch09": {
+      "name": "Reaction Kinetics",
+      "topics": [
+        {"id": "ch09_t01", "name": "Rate of reaction & measuring rates"},
+        {"id": "ch09_t02", "name": "Rate equations & rate constant k"},
+        {"id": "ch09_t03", "name": "Order of reaction (experimental determination)"},
+        {"id": "ch09_t04", "name": "Half-life"},
+        {"id": "ch09_t05", "name": "Activation energy & Arrhenius equation"},
+        {"id": "ch09_t06", "name": "Reaction mechanisms"},
+        {"id": "ch09_t07", "name": "Catalysis (homogeneous & heterogeneous)"}
+      ]
+    },
+    "ch10": {
+      "name": "The Periodic Table",
+      "topics": [
+        {"id": "ch10_t01", "name": "Periodicity of physical properties"},
+        {"id": "ch10_t02", "name": "Periodicity of chemical properties"},
+        {"id": "ch10_t03", "name": "First-row d-block elements: properties"},
+        {"id": "ch10_t04", "name": "Transition metal complexes & ligands"},
+        {"id": "ch10_t05", "name": "Oxidation states of transition metals"},
+        {"id": "ch10_t06", "name": "Colour & catalytic activity of transition metals"},
+        {"id": "ch10_t07", "name": "Reactions of d-block ions"}
+      ]
+    },
+    "ch11": {
+      "name": "Group 2",
+      "topics": [
+        {"id": "ch11_t01", "name": "Group 2 physical trends"},
+        {"id": "ch11_t02", "name": "Reactions with water & acids"},
+        {"id": "ch11_t03", "name": "Oxides, hydroxides & carbonates"},
+        {"id": "ch11_t04", "name": "Solubility trends in Group 2"},
+        {"id": "ch11_t05", "name": "Uses of Group 2 compounds"}
+      ]
+    },
+    "ch12": {
+      "name": "Group 17",
+      "topics": [
+        {"id": "ch12_t01", "name": "Group 17 physical trends"},
+        {"id": "ch12_t02", "name": "Reactions of halogens with halides"},
+        {"id": "ch12_t03", "name": "Reactions of halides with H2SO4"},
+        {"id": "ch12_t04", "name": "Reactions with water & alkali"},
+        {"id": "ch12_t05", "name": "Uses of halogens & halide compounds"}
+      ]
+    },
+    "ch13": {
+      "name": "Nitrogen & Sulfur",
+      "topics": [
+        {"id": "ch13_t01", "name": "Nitrogen oxides & atmospheric chemistry"},
+        {"id": "ch13_t02", "name": "Ammonia & the Haber process"},
+        {"id": "ch13_t03", "name": "Nitric acid production"},
+        {"id": "ch13_t04", "name": "Sulfur dioxide & acid rain"},
+        {"id": "ch13_t05", "name": "Sulfuric acid (Contact process)"}
+      ]
+    },
+    "ch14": {
+      "name": "Introduction to Organic Chemistry",
+      "topics": [
+        {"id": "ch14_t01", "name": "Organic nomenclature (IUPAC)"},
+        {"id": "ch14_t02", "name": "Structural & skeletal formulae"},
+        {"id": "ch14_t03", "name": "Isomerism (structural, geometric, optical)"},
+        {"id": "ch14_t04", "name": "Reaction types (addition, substitution, elimination)"},
+        {"id": "ch14_t05", "name": "Curly arrow mechanisms & intermediates"},
+        {"id": "ch14_t06", "name": "Functional group analysis"}
+      ]
+    },
+    "ch15": {
+      "name": "Hydrocarbons",
+      "topics": [
+        {"id": "ch15_t01", "name": "Alkanes: properties & free radical substitution"},
+        {"id": "ch15_t02", "name": "Alkenes: electrophilic addition"},
+        {"id": "ch15_t03", "name": "Benzene: structure & stability"},
+        {"id": "ch15_t04", "name": "Electrophilic substitution of benzene"},
+        {"id": "ch15_t05", "name": "Phenol reactions"},
+        {"id": "ch15_t06", "name": "Petrochemical industry & cracking"}
+      ]
+    },
+    "ch16": {
+      "name": "Halogen Compounds",
+      "topics": [
+        {"id": "ch16_t01", "name": "Nucleophilic substitution (SN1 & SN2)"},
+        {"id": "ch16_t02", "name": "Elimination reactions"},
+        {"id": "ch16_t03", "name": "Reactivity of halogenoalkanes"},
+        {"id": "ch16_t04", "name": "Uses & environmental issues of halogen compounds"}
+      ]
+    },
+    "ch17": {
+      "name": "Hydroxy Compounds",
+      "topics": [
+        {"id": "ch17_t01", "name": "Alcohols: classification & physical properties"},
+        {"id": "ch17_t02", "name": "Reactions of alcohols (oxidation, esterification)"},
+        {"id": "ch17_t03", "name": "Phenol: reactions & acidity"},
+        {"id": "ch17_t04", "name": "Tests to distinguish alcohols"}
+      ]
+    },
+    "ch18": {
+      "name": "Carbonyl Compounds",
+      "topics": [
+        {"id": "ch18_t01", "name": "Aldehydes & ketones: properties"},
+        {"id": "ch18_t02", "name": "Nucleophilic addition reactions"},
+        {"id": "ch18_t03", "name": "Oxidation & reduction of carbonyls"},
+        {"id": "ch18_t04", "name": "Tests to identify carbonyls (2,4-DNPH, Tollens)"},
+        {"id": "ch18_t05", "name": "Optical activity in carbonyl products"}
+      ]
+    },
+    "ch20": {
+      "name": "Electrochemistry",
+      "topics": [
+        {"id": "ch20_t01", "name": "Oxidation states & redox"},
+        {"id": "ch20_t02", "name": "Electrode potentials & Ecell"},
+        {"id": "ch20_t03", "name": "Electrochemical cells & cell notation"},
+        {"id": "ch20_t04", "name": "Electrolysis & Faraday's laws"},
+        {"id": "ch20_t05", "name": "Feasibility of reactions (ΔG & Ecell)"}
+      ]
+    },
+    "ch26": {
+      "name": "Carboxylic Acids & Derivatives",
+      "topics": [
+        {"id": "ch26_t01", "name": "Carboxylic acids: properties & reactions"},
+        {"id": "ch26_t02", "name": "Esters: formation & hydrolysis"},
+        {"id": "ch26_t03", "name": "Acyl chlorides & acid anhydrides"},
+        {"id": "ch26_t04", "name": "Amines & amides"},
+        {"id": "ch26_t05", "name": "Amino acids & proteins"},
+        {"id": "ch26_t06", "name": "Condensation polymers (polyesters & polyamides)"}
+      ]
+    },
+    "ch28": {
+      "name": "Polymerisation",
+      "topics": [
+        {"id": "ch28_t01", "name": "Addition polymerisation"},
+        {"id": "ch28_t02", "name": "Condensation polymerisation"},
+        {"id": "ch28_t03", "name": "Polymer properties & uses"},
+        {"id": "ch28_t04", "name": "Biodegradability & disposal of polymers"}
+      ]
+    }
+  }
+}
