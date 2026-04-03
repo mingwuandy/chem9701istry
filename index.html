@@ -300,8 +300,18 @@ select:focus,input:focus{border-color:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,2
 .boundary-table tr:nth-child(even) { background: #f9fafb; }
 .boundary-table tr:hover { background: #f0f9ff; }
 </style>
-<!-- docx.js — browser build for in-page Word export (local copy) -->
-<script src="docx.js"></script>
+<!-- docx.js — browser build for in-page Word export (local copy with CDN fallback) -->
+<script src="docx.js" onerror="loadDocxFromCDN()"></script>
+<script>
+function loadDocxFromCDN() {
+  console.warn('docx.js not found locally, loading from CDN...');
+  var s = document.createElement('script');
+  s.src = 'https://unpkg.com/docx@8.5.0/build/index.umd.js';
+  s.onload = function() { console.log('docx.js loaded from CDN'); };
+  s.onerror = function() { console.error('Failed to load docx.js from CDN too'); };
+  document.head.appendChild(s);
+}
+</script>
 </head>
 <body>
 <div class="app">
@@ -1377,10 +1387,13 @@ async function exportWord() {
       AlignmentType
     } = docx;
 
-    // Helper: load image from local server as ArrayBuffer
+    // Helper: load image from server as ArrayBuffer (works on both localhost and GitHub Pages)
     async function loadImg(fname, maxWpt = 440) {
       try {
-        const resp = await fetch(`images/${fname}`);
+        // Detect if we're on GitHub Pages or localhost
+        const isGitHub = window.location.hostname.includes('github.io');
+        const basePath = isGitHub ? '/chem9701istry/' : '/';
+        const resp = await fetch(`${basePath}images/${fname}`);
         if (!resp.ok) throw new Error('not found');
         const buf = await resp.arrayBuffer();
         const data = new Uint8Array(buf);
@@ -2871,6 +2884,8 @@ function toggleAllPapers(checkbox) {
 }
 
 function getPaperPath(paper) {
+  // Use external URL if available, otherwise fall back to local path
+  if (paper.url) return paper.url;
   return `past_papers/${paper.year}/Paper-${paper.paperNum}/${paper.filename}`;
 }
 
@@ -2878,13 +2893,18 @@ function downloadPaper(id) {
   const paper = PAST_PAPERS_DB.find(p => p.id === id);
   if (!paper) return;
 
-  const path = getPaperPath(paper);
-  const a = document.createElement('a');
-  a.href = path;
-  a.download = paper.filename;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
+  if (paper.url) {
+    // Open external URL in new tab (PDFs hosted externally)
+    window.open(paper.url, '_blank');
+  } else {
+    const path = getPaperPath(paper);
+    const a = document.createElement('a');
+    a.href = path;
+    a.download = paper.filename + '.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 }
 
 function downloadSelectedPapers() {
@@ -2894,12 +2914,21 @@ function downloadSelectedPapers() {
     return;
   }
 
-  checked.forEach(cb => {
-    const id = parseInt(cb.dataset.id);
-    downloadPaper(id);
+  const ids = [...checked].map(cb => parseInt(cb.dataset.id));
+  const hasExternal = ids.some(id => {
+    const p = PAST_PAPERS_DB.find(x => x.id === id);
+    return p && p.url;
   });
 
-  showToast(`Downloading ${checked.length} papers`);
+  if (hasExternal && ids.length > 5) {
+    if (!confirm(`Open ${ids.length} papers in new tabs? (Browser may block multiple popups — allow pop-ups for this site if needed)`)) return;
+  }
+
+  ids.forEach((id, i) => {
+    setTimeout(() => downloadPaper(id), i * 300); // stagger to avoid popup blocker
+  });
+
+  showToast(`Opening ${ids.length} paper${ids.length > 1 ? 's' : ''} — allow pop-ups if prompted`);
 }
 
 // ── PRINT STYLES ─────────────────────────────────────────────────────────────
