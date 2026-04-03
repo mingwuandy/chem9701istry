@@ -1,0 +1,322 @@
+{
+  "ch01": {
+    "chapter": "1~2 - Atomic Structure & Electrons in Atoms",
+    "points": [
+      {"title":"Sub-atomic particles","content":"Proton: relative mass 1, charge +1, in nucleus. Neutron: relative mass 1, charge 0, in nucleus. Electron: relative mass 1/1840, charge −1, outside nucleus."},
+      {"title":"Mass spectrometer steps","content":"1. Vaporisation → 2. Ionisation (electron bombardment) → 3. Acceleration → 4. Deflection (magnetic field) → 5. Detection. Ions with same m/z arrive together."},
+      {"title":"Calculating Ar from mass spectrum","content":"Ar = Σ(isotopic mass × relative abundance) / Σ(relative abundances). Multiply each peak's m/z by its height/%, sum all, divide by total %."},
+      {"title":"Electron sub-shells order","content":"Fill in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d... Note: 4s fills before 3d but empties before 3d in transition metals."},
+      {"title":"Hund's rule","content":"Electrons occupy orbitals of the same energy (degenerate orbitals) singly before pairing. All single electrons have parallel spins."},
+      {"title":"Ionisation energy trends","content":"Across a period: generally increases (increasing nuclear charge). Down a group: decreases (increased shielding, greater distance from nucleus). Exceptions: slight drop at Group 3 (2p vs 2s) and Group 6 (pairing in 2p)."},
+      {"title":"Emission spectrum of hydrogen","content":"Electrons fall from higher to lower energy levels, releasing photons. Lyman series (UV): n→1. Balmer series (visible): n→2. Paschen series (IR): n→3. ΔE = hf = hc/λ."},
+      {"title":"Evidence for shells from IE","content":"Large jumps in successive ionisation energies indicate change of shell. The jump position shows how many electrons are in the outer shell."},
+      {"title":"Shapes of orbitals","content":"s orbital: spherical. p orbital: two lobes (dumbbell), three p orbitals (px, py, pz) perpendicular to each other. d orbitals: five d orbitals with more complex shapes."},
+      {"title":"Shielding effect","content":"Inner electrons repel outer electrons, reducing the effective nuclear charge felt by outer electrons. More inner shells = more shielding = lower IE."}
+    ]
+  },
+  "ch03": {
+    "chapter": "3 - Atoms, Molecules and Stoichiometry",
+    "points": [
+      {"title":"Mole calculations","content":"n = m/M (mass/molar mass). n = V/24 (gas volume in dm³ at RTP). n = cV (concentration × volume in dm³). c = n/V."},
+      {"title":"Empirical vs molecular formula","content":"Empirical = simplest ratio. Molecular = actual number of atoms. Molecular formula = n × empirical formula, where n = Mr(molecular) / Mr(empirical)."},
+      {"title":"% composition by mass","content":"% element = (n × Ar of element / Mr of compound) × 100%. Conversely: divide % by Ar, find simplest ratio → empirical formula."},
+      {"title":"Ideal gas equation","content":"pV = nRT. Use SI units: p in Pa, V in m³, T in K, R = 8.314 J mol⁻¹ K⁻¹. At RTP (25°C, 100 kPa): Vm = 24.0 dm³ mol⁻¹. At STP (0°C, 100 kPa): Vm = 22.7 dm³ mol⁻¹."},
+      {"title":"Limiting reagent method","content":"1. Calculate moles of each reactant. 2. Divide by stoichiometric coefficient. 3. Smaller value = limiting reagent. 4. Calculate product from limiting reagent moles."},
+      {"title":"Percentage yield","content":"% yield = (actual yield / theoretical yield) × 100%. Theoretical yield calculated from limiting reagent via stoichiometry."},
+      {"title":"Atom economy","content":"Atom economy = (Mr of desired product(s) / total Mr of all products) × 100%. Higher atom economy = greener process (less waste)."},
+      {"title":"Concentration calculations","content":"Molarity c (mol dm⁻³) = n/V. Dilution: c₁V₁ = c₂V₂. Titration: at equivalence point, moles acid from one source are stoichiometrically equivalent to base."},
+      {"title":"Volumetric analysis procedure","content":"1. Pipette known volume of one solution. 2. Add indicator. 3. Burette with other solution. 4. Titrate to endpoint. 5. Repeat for concordant results (within 0.1 cm³). 6. Calculate moles, then unknown concentration."}
+    ]
+  },
+  "ch04": {
+    "chapter": "4 - Chemical Bonding",
+    "points": [
+      {"title":"VSEPR shapes","content":"2 bp: linear (180°). 3 bp: trigonal planar (120°). 4 bp: tetrahedral (109.5°). 3 bp + 1 lp: pyramidal (~107°). 2 bp + 2 lp: bent/V-shaped (~104.5°). 5 bp: trigonal bipyramidal. 6 bp: octahedral (90°)."},
+      {"title":"Effect of lone pairs on bond angles","content":"Lone pairs occupy more space than bonding pairs, reducing bond angles. Each lone pair reduces angles by ~2.5°. Order of repulsion: lp-lp > lp-bp > bp-bp."},
+      {"title":"Hybridisation summary","content":"sp³: tetrahedral (methane, water, ammonia). sp²: trigonal planar, one unhybridised p orbital for π bond (ethene, BF₃). sp: linear, two unhybridised p orbitals for two π bonds (ethyne, CO₂, BeCl₂)."},
+      {"title":"Electronegativity and bond polarity","content":"If ΔEN > 1.7: ionic. If 0.4 < ΔEN < 1.7: polar covalent. If ΔEN < 0.4: non-polar covalent. Pauling values: F(4.0) > O(3.5) > N(3.0) > Cl(3.0) > Br(2.8) > C(2.5) > H(2.1)."},
+      {"title":"Intermolecular forces comparison","content":"Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size). VdW increases with Mr (more electrons = larger temporary dipoles)."},
+      {"title":"Conditions for hydrogen bonding","content":"Must have: H bonded directly to N, O, or F in one molecule AND a lone pair on N, O, or F in another molecule. Examples: H₂O (2 H-bonds per molecule), NH₃, HF, DNA base pairs."},
+      {"title":"Properties of ionic compounds","content":"High melting/boiling points (strong ionic bonds). Conduct electricity when molten or dissolved (mobile ions). Hard but brittle. Soluble in polar solvents."},
+      {"title":"Giant covalent structures","content":"Diamond: 4 C-C bonds, tetrahedral, very hard, no electrical conduction. Graphite: 3 C-C bonds, layers, delocalized π electrons (conducts), lubricant. SiO₂: giant lattice, very hard, high mp."},
+      {"title":"Sigma and pi bonds","content":"Single bond = 1 σ bond. Double bond = 1 σ + 1 π bond. Triple bond = 1 σ + 2 π bonds. Rotation is possible around σ bonds but NOT around π bonds (restricted rotation in C=C causes geometric isomerism)."},
+      {"title":"Metallic bonding and properties","content":"Positive metal ions in a sea of delocalised electrons. High electrical/thermal conductivity (mobile electrons). Malleable/ductile (layers slide). High melting point (strong attraction). Increases with more delocalised electrons and smaller ion radius."}
+    ]
+  },
+  "ch05": {
+    "chapter": "5 - States of Matter",
+    "points": [
+      {"title":"Kinetic theory assumptions","content":"Molecules are point masses with negligible volume. No intermolecular forces. Collisions are perfectly elastic. Average KE ∝ absolute temperature (T in Kelvin). Molecules move in random directions."},
+      {"title":"Real vs ideal gas deviations","content":"At high pressure: real gas volume > ideal (repulsive forces) or < ideal (attractive forces dominate). At low temperature: attractive forces significant → real gas volume < ideal. Ideal behaviour: high T, low P."},
+      {"title":"Types of crystal structures","content":"Ionic (NaCl): high mp, conducts when molten/dissolved. Giant covalent (SiO₂, diamond): very high mp, no conduction. Simple molecular (ice, I₂): low mp, no conduction. Metallic (Fe, Cu): high mp, conducts."},
+      {"title":"Allotropes of carbon","content":"Diamond: sp³, tetrahedral, hardest natural substance, insulator. Graphite: sp², layered, conductor (delocalised electrons), lubricant. Buckminsterfullerene (C₆₀): spherical, molecular, used in nanotechnology."},
+      {"title":"Effect of structure on melting point","content":"Giant structures (ionic, covalent, metallic) have high melting points (must break many bonds). Simple molecular structures have low melting points (only overcome weak Van der Waals). Larger molecules have higher melting points (more VdW)."}
+    ]
+  },
+  "ch06": {
+    "chapter": "6 - Enthalpy Changes",
+    "points": [
+      {"title":"Standard conditions","content":"Temperature: 298 K (25°C). Pressure: 100 kPa (1 bar). Concentration: 1 mol dm⁻³ for solutions. All substances in their standard states."},
+      {"title":"Hess's Law application","content":"ΔHreaction = ΣΔHf°(products) − ΣΔHf°(reactants). OR use a two-step Hess cycle: route 1 (direct) = route 2 (via intermediates). ΔHf° of elements in standard states = 0."},
+      {"title":"Bond enthalpy calculations","content":"ΔH = Σ(bonds broken) − Σ(bonds formed). Bonds broken: endothermic (+). Bonds formed: exothermic (−). Mean bond enthalpies give approximate values; exact values require specific compound data."},
+      {"title":"Calorimetry calculation","content":"q = mcΔT (m = mass of solution in g, c = 4.18 J g⁻¹ K⁻¹ for water, ΔT = temperature change). ΔH = −q/n (negative sign: exothermic when T rises). Limitations: heat loss to surroundings, incomplete reaction."},
+      {"title":"Enthalpy profile diagrams","content":"Exothermic: products lower than reactants, ΔH < 0. Endothermic: products higher than reactants, ΔH > 0. Activation energy (Ea) is always positive. Catalyst lowers Ea but does NOT change ΔH."},
+      {"title":"Definitions of standard enthalpies","content":"ΔHf°: forming 1 mol compound from elements in standard states. ΔHc°: completely burning 1 mol substance. ΔHat°(element): forming 1 mol gaseous atoms from element. ΔHat°(compound): forming gaseous atoms from 1 mol compound."}
+    ]
+  },
+  "ch07": {
+    "chapter": "7 - Redox Reactions",
+    "points": [
+      {"title":"Oxidation number rules","content":"1. Free element = 0. 2. Monatomic ion = ionic charge. 3. O = −2 (except in peroxides −1, OF₂ +2). 4. H = +1 (except metal hydrides −1). 5. Sum = overall charge of species."},
+      {"title":"Balancing half-equations","content":"1. Balance atoms other than O and H. 2. Balance O by adding H₂O. 3. Balance H by adding H⁺. 4. Balance charge by adding e⁻. 5. Combine half-equations (multiply to equalise electrons). Acidic conditions: use H⁺/H₂O. Alkaline: use OH⁻/H₂O."},
+      {"title":"Oxidising/reducing agent identification","content":"The species that gains electrons (is reduced) is the oxidising agent. The species that loses electrons (is oxidised) is the reducing agent. OIL RIG: Oxidation Is Loss, Reduction Is Gain."},
+      {"title":"Common oxidising agents","content":"MnO₄⁻ (KMnO₄): Mn +7 → +2 (acidic) or +4. Cr₂O₇²⁻: Cr +6 → +3. H₂O₂: O −1 → −2. Cl₂: Cl 0 → −1. O₂: O 0 → −2. Fe³⁺: Fe +3 → +2."},
+      {"title":"Common reducing agents","content":"Fe²⁺ → Fe³⁺. SO₂/SO₃²⁻ → SO₄²⁻. I⁻ → I₂. H₂O₂ → O₂ (also oxidising agent). Metals (e.g. Fe, Zn) → metal ions."},
+      {"title":"Disproportionation examples","content":"Cl₂ + H₂O → HCl + HClO (Cl: 0 → −1 and +1). H₂O₂ → H₂O + O₂ (O: −1 → −2 and 0). Cu⁺ → Cu + Cu²⁺."}
+    ]
+  },
+  "ch08": {
+    "chapter": "8 - Equilibria",
+    "points": [
+      {"title":"Writing Kc expressions","content":"For aA + bB ⇌ cC + dD: Kc = [C]^c × [D]^d / ([A]^a × [B]^b). Pure solids and liquids are NOT included (activity = 1). Units depend on Δn = (c+d) − (a+b)."},
+      {"title":"Kp expressions and calculations","content":"Kp = Π p(products) / Π p(reactants). Partial pressure p = mole fraction × total pressure. Mole fraction = n(gas) / n(total gas). Kp units: Pa raised to Δn."},
+      {"title":"Effect of changes on equilibrium (Le Chatelier)","content":"Increase concentration of reactant → shift right (more products). Increase pressure (gas) → shift to side with fewer moles of gas. Increase temperature → shift in endothermic direction. Catalyst → no effect on position, only reaches equilibrium faster."},
+      {"title":"Kc and temperature","content":"Increasing T shifts equilibrium endothermic direction. If forward reaction is exothermic: Kc decreases with increasing T. If forward reaction is endothermic: Kc increases with increasing T. Catalyst does NOT affect Kc."},
+      {"title":"Haber process optimisation","content":"N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹. High pressure → higher yield (fewer moles gas on right). Low temperature → higher yield (exothermic). But low T is slow → compromise: 450°C, 200 atm, Fe catalyst."},
+      {"title":"Industrial equilibria trade-offs","content":"Compromise conditions balance yield and rate. Very high P is expensive (engineering costs). Catalyst increases rate without affecting yield. Economic viability requires continuous process with recycling of unreacted gases."}
+    ]
+  },
+  "ch09": {
+    "chapter": "9 - Rates of Reaction",
+    "points": [
+      {"title":"Factors affecting rate","content":"Temperature (↑T → ↑rate; more particles exceed Ea, more frequent collisions). Concentration (↑c → ↑rate; more frequent collisions). Pressure (gases: ↑P → ↑rate). Surface area (solids: ↑SA → ↑rate). Catalyst (lower Ea → ↑rate)."},
+      {"title":"Collision theory","content":"Reaction occurs when: 1. Particles collide. 2. With sufficient energy (≥ Ea). 3. With correct orientation. Rate ∝ frequency of successful collisions."},
+      {"title":"Boltzmann distribution and temperature","content":"At higher T: curve shifts right, peak moves right and down, area under curve is same (total particles unchanged). Area to right of Ea increases significantly → much greater fraction of molecules have energy ≥ Ea."},
+      {"title":"Determining reaction order from data","content":"Zero order: rate independent of [A], [A] vs t is linear. First order: rate ∝ [A], ln[A] vs t is linear, constant t½. Second order: rate ∝ [A]², 1/[A] vs t is linear, t½ increases with decreasing [A]."},
+      {"title":"Rate equations and units","content":"rate = k[A]^m[B]^n. Overall order = m + n. Units of k: for zero order: mol dm⁻³ s⁻¹; first order: s⁻¹; second order: dm³ mol⁻¹ s⁻¹. Doubling [A]: if 1st order → rate × 2; if 2nd order → rate × 4."},
+      {"title":"Catalysis mechanisms","content":"Heterogeneous: reactants adsorb onto catalyst surface (active sites), bonds weaken, reaction occurs, products desorb. Example: Fe in Haber process. Homogeneous: catalyst in same phase, forms intermediate. Example: Mn²⁺ catalysing H₂O₂ decomposition."},
+      {"title":"Half-life of first order reactions","content":"t½ = ln 2 / k = 0.693 / k. Constant half-life regardless of initial concentration. If t½ doubles when [A] halves → NOT first order (second order has increasing t½)."}
+    ]
+  },
+  "ch10": {
+    "chapter": "10 - Periodicity",
+    "points": [
+      {"title":"Period 3 structure and bonding","content":"Na, Mg, Al: metallic lattices. Si: giant covalent. P₄, S₈, Cl₂, Ar: simple molecular. This explains the trend in melting points: increases Na→Si, then drops sharply P→Ar."},
+      {"title":"Period 3 oxide reactions with water","content":"Na₂O: strongly alkaline (Na₂O + H₂O → 2NaOH). MgO: weakly alkaline. Al₂O₃: amphoteric (reacts with both acid and alkali). SiO₂: insoluble (giant covalent). P₄O₁₀: weakly/strongly acidic. SO₂: weakly acidic. SO₃: strongly acidic. Cl₂O₇: very strongly acidic."},
+      {"title":"Period 3 chlorides with water","content":"NaCl: neutral solution (ionic, dissociates). MgCl₂: slightly acidic. AlCl₃: acidic (Al³⁺ hydrolyses). SiCl₄: fumes of HCl, forms SiO₂ + HCl. PCl₃: H₃PO₃ + HCl. PCl₅: H₃PO₄ + HCl. SCl₂: very acidic."},
+      {"title":"Trends in atomic radius","content":"Decreases across a period (increasing Zeff, same shell). Increases down a group (more electron shells, increased shielding). Transition metals: similar radii due to shielding of d electrons."},
+      {"title":"Trends in electronegativity","content":"Increases across a period (increasing Zeff). Decreases down a group (increased shielding and atomic radius). Most electronegative: F (4.0). Pauling scale values used in A-level."},
+      {"title":"Ionisation energy anomalies in Period 2","content":"Drop from Be to B: B has one 2p electron, easier to remove than 2s. Drop from N to O: O has a paired 2p electron (extra repulsion), easier to remove than N's unpaired electron."}
+    ]
+  },
+  "ch11": {
+    "chapter": "11 - Group 2",
+    "points": [
+      {"title":"Reactions of Group 2 metals","content":"With O₂: 2M + O₂ → 2MO (Mg burns brilliantly white; Ba forms BaO₂). With water: M + 2H₂O → M(OH)₂ + H₂ (Mg reacts slowly; Ca–Ba react vigorously). With dilute acids: M + H₂SO₄ → MSO₄ + H₂."},
+      {"title":"Solubility trends","content":"Hydroxides: Mg(OH)₂ sparingly soluble → Ba(OH)₂ soluble (increases down group). Sulfates: MgSO₄ soluble → BaSO₄ insoluble (decreases down group). CaSO₄ sparingly soluble (scale in pipes)."},
+      {"title":"Thermal stability of carbonates","content":"MCO₃ → MO + CO₂. Stability increases down group (Mg easier to decompose; BaCO₃ requires higher T). Small, highly charged cation (Mg²⁺) polarises CO₃²⁻ more → destabilises → decomposes at lower T."},
+      {"title":"Uses of Group 2 compounds","content":"Ca(OH)₂ (slaked lime): neutralises acidic soils, flue gas desulfurisation. CaCO₃ (limestone): building material, neutralisation. BaSO₄: barium meal (X-ray contrast agent, insoluble so non-toxic). MgO: refractory (high mp)."},
+      {"title":"Flame colours","content":"Mg: no characteristic colour (bright white light). Ca: brick-red. Sr: crimson. Ba: green."}
+    ]
+  },
+  "ch12": {
+    "chapter": "12 - Group 17",
+    "points": [
+      {"title":"Physical properties trends","content":"Boiling point: F₂ < Cl₂ < Br₂ < I₂ (increases with Mr, stronger VdW forces). State at RTP: F₂ and Cl₂ (gases), Br₂ (liquid), I₂ (solid). Colour: F₂ (pale yellow), Cl₂ (green-yellow), Br₂ (red-brown), I₂ (dark grey/purple vapour)."},
+      {"title":"Halogen displacement reactions","content":"A more reactive halogen displaces a less reactive one from its salt. Cl₂ + 2Br⁻ → Br₂ + 2Cl⁻. Cl₂ + 2I⁻ → I₂ + 2Cl⁻. Br₂ + 2I⁻ → I₂ + 2Br⁻. F₂ displaces all; I₂ displaces none. Use organic solvent to identify halogen by colour."},
+      {"title":"Reactions with NaOH","content":"Cold dilute NaOH: Cl₂ + 2NaOH → NaCl + NaClO + H₂O (bleach/disinfectant). Hot concentrated NaOH: 3Cl₂ + 6NaOH → 5NaCl + NaClO₃ + 3H₂O. Both are disproportionation reactions."},
+      {"title":"Testing for halide ions","content":"Add dilute HNO₃ (to remove CO₃²⁻, SO₃²⁻ interferences), then AgNO₃(aq). AgCl: white precipitate, soluble in dilute NH₃. AgBr: cream precipitate, soluble in concentrated NH₃. AgI: yellow precipitate, insoluble in NH₃."},
+      {"title":"Hydrogen halide bond strengths","content":"HF > HCl > HBr > HI (bond enthalpy decreases, acid strength increases). HF is a weak acid (strong H-bond). HCl, HBr, HI are strong acids. HI is the strongest reducing agent (I⁻ can reduce H₂SO₄ to H₂S)."},
+      {"title":"Reactions of halide ions with H₂SO₄","content":"NaCl + H₂SO₄ → NaHSO₄ + HCl (only acid-base, Cl⁻ not strong enough to reduce H₂SO₄). NaBr + H₂SO₄ → fumes of HBr, also some Br₂ and SO₂. NaI + H₂SO₄ → HI, I₂, H₂S, S (more vigorous reduction due to stronger reducing power of I⁻)."}
+    ]
+  },
+  "ch13": {
+    "chapter": "13 - Nitrogen and Sulfur",
+    "points": [
+      {"title":"Haber Process","content":"N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹. Conditions: 450°C, 200 atm, iron catalyst with K₂O/Al₂O₃ promoter. ~15% yield per pass; unreacted gases recycled. Trade-off: lower T → higher yield but slower rate."},
+      {"title":"Ostwald Process (HNO₃ manufacture)","content":"1. 4NH₃ + 5O₂ → 4NO + 6H₂O (Pt/Rh catalyst, 900°C). 2. 2NO + O₂ → 2NO₂. 3. 4NO₂ + O₂ + 2H₂O → 4HNO₃."},
+      {"title":"Contact Process (H₂SO₄ manufacture)","content":"1. S + O₂ → SO₂. 2. 2SO₂ + O₂ ⇌ 2SO₃ (V₂O₅ catalyst, 450°C, 1 atm). 3. SO₃ + H₂SO₄ → H₂S₂O₇ (oleum). 4. H₂S₂O₇ + H₂O → 2H₂SO₄. Cannot add water directly to SO₃ (too vigorous, acidic mist)."},
+      {"title":"Environmental issues","content":"SO₂: causes acid rain (2SO₂ + O₂ + 2H₂O → 2H₂SO₄); removed by FGD using CaCO₃ or Ca(OH)₂. NOₓ: from vehicle engines, contributes to acid rain and photochemical smog. Catalytic converters: 2CO + 2NO → 2CO₂ + N₂ (Pt/Rh)."},
+      {"title":"Properties of ammonia","content":"Weak base (pKb ~4.7). Reacts with acids: NH₃ + HCl → NH₄Cl. Ligand (lone pair on N): forms [Cu(NH₃)₄]²⁺ (deep blue) with Cu²⁺ after dissolving Cu(OH)₂ precipitate. Test: moist red litmus turns blue."}
+    ]
+  },
+  "ch14": {
+    "chapter": "14 - Introduction to Organic Chemistry",
+    "points": [
+      {"title":"Types of structural isomers","content":"Chain isomers: different carbon skeletons. Position isomers: same functional group in different positions. Functional group isomers: same formula, different functional groups (e.g. alcohol vs ether, aldehyde vs ketone)."},
+      {"title":"Geometric isomerism conditions","content":"Requires: C=C double bond (or ring) AND two different groups on each carbon of the double bond. Cis: same groups on same side. Trans: same groups on opposite sides. Note: if either carbon has two identical groups, no geometric isomerism."},
+      {"title":"Optical isomerism","content":"Requires a chiral carbon (4 different groups). Two enantiomers are non-superimposable mirror images. Racemic mixture (racemate): equal amounts of both enantiomers, optically inactive. Plane-polarised light: (+) enantiomer rotates clockwise; (−) anticlockwise."},
+      {"title":"Reaction mechanisms types","content":"Free radical substitution (alkanes + Cl₂/Br₂, UV). Electrophilic addition (alkenes). Nucleophilic substitution (halogenoalkanes). Electrophilic substitution (benzene). Nucleophilic addition (carbonyls). Addition-elimination / condensation."},
+      {"title":"Drawing mechanisms","content":"Use curly arrows to show electron pair movement. Arrow starts from electron source (bond or lone pair) → goes to electron sink (electrophilic centre). Show all intermediates (carbocations, carbanions, radicals). For ionic mechanisms: show charges clearly."},
+      {"title":"Naming organic compounds (IUPAC)","content":"1. Find longest carbon chain = parent name. 2. Number from end nearest to substituents/functional groups. 3. Prefix substituents alphabetically with position numbers. 4. Suffix = principal functional group (ol, al, one, oic acid, amine, amide, ester). Ester: alkyl followed by parent acid -anoate."}
+    ]
+  },
+  "ch15": {
+    "chapter": "15 - Hydrocarbons",
+    "points": [
+      {"title":"Alkane reactions","content":"Combustion: CₙH₂ₙ₊₂ + O₂ → CO₂ + H₂O (complete). Free radical substitution: UV light required. Chain: initiation (Cl₂ → 2Cl•), propagation (Cl• + CH₄ → CH₃• + HCl; CH₃• + Cl₂ → CH₃Cl + Cl•), termination (radical + radical → molecule)."},
+      {"title":"Alkene reactions","content":"Electrophilic addition: H₂ (Ni catalyst, hydrogenation), HX (Markovnikov), H₂O (H₃PO₄, steam, hydration), X₂ (halogenation, test for C=C), KMnO₄/H⁺ (oxidation, test). Polymerisation. Mechanism: electrophile attacks π bond → carbocation → nucleophile attacks."},
+      {"title":"Test for alkenes","content":"Add bromine water (orange-brown): alkenes decolourise immediately (room temperature, no UV). Alkanes do NOT decolourise bromine water at room temperature. KMnO₄: alkenes decolourise purple → colourless (or brown MnO₂ in neutral conditions)."},
+      {"title":"Markovnikov's rule explained","content":"In addition of HX to unsymmetrical alkene, H adds to carbon with more H atoms. Reason: more substituted carbocation (2° or 3°) is more stable than 1° (alkyl groups donate electron density, stabilising + charge). Major product from more stable intermediate."},
+      {"title":"Cracking","content":"Thermal cracking: high T (>800°C), high P, long chain → shorter chains + alkenes (free radical mechanism). Catalytic cracking: zeolite catalyst, ~500°C, produces more branched alkanes (better octane rating for fuels). Steam cracking: produces ethene for plastics."},
+      {"title":"Petroleum fractionation","content":"Crude oil separated by fractional distillation. Fractions by decreasing boiling point: bitumen > fuel oil > diesel > kerosene > petrol > refinery gas. More C atoms → higher bp (stronger VdW). Reforming converts straight-chain to branched-chain alkanes."}
+    ]
+  },
+  "ch16": {
+    "chapter": "16 - Halogenoalkanes",
+    "points": [
+      {"title":"SN1 vs SN2 mechanisms","content":"SN2: one step, bimolecular, inversion of configuration (Walden inversion), favoured by primary halogenoalkanes and strong nucleophiles. SN1: two steps (carbocation intermediate), unimolecular, racemisation, favoured by tertiary halogenoalkanes and polar solvents."},
+      {"title":"Nucleophilic substitution reactions","content":"With NaOH(aq): → alcohol (OH⁻ nucleophile, warm). With KCN(alc): → nitrile (CN⁻ nucleophile, chain extended by 1C). With NH₃(alc, excess, sealed tube): → amine. With AgNO₃(aq): → silver halide precipitate (tests for halide after hydrolysis)."},
+      {"title":"Elimination reaction","content":"Halogenoalkane + hot concentrated KOH in ethanol → alkene + KX + H₂O. Favoured by: tertiary halogenoalkanes, hot conditions, concentrated base. Competes with substitution (aqueous NaOH favours substitution; alcoholic KOH favours elimination)."},
+      {"title":"Rate of hydrolysis","content":"Add aqueous AgNO₃ + ethanol (warm). Time for precipitate: C–I fastest (weakest bond), C–Br medium, C–Cl slowest. C–F does not hydrolyse (too strong). This shows bond strength, NOT electronegativity, determines rate."},
+      {"title":"Environmental impact of CFCs","content":"CFCs (e.g. CCl₂F₂) are very stable. In stratosphere: UV → Cl• radicals. Chain reaction: Cl• + O₃ → ClO• + O₂; ClO• + O• → Cl• + O₂. One Cl• destroys thousands of O₃ molecules. Replacement: HCFCs (less persistent) and HFCs (no Cl atoms)."}
+    ]
+  },
+  "ch17": {
+    "chapter": "17 - Alcohols, Esters and Carboxylic Acids",
+    "points": [
+      {"title":"Reactions of alcohols","content":"Combustion: complete burning. Oxidation: 1° → aldehyde (distil off) → carboxylic acid. 2° → ketone. 3° → no oxidation. Reagent: K₂Cr₂O₇/H₂SO₄ (orange → green). Dehydration: Al₂O₃ catalyst (180°C) → alkene. Esterification: carboxylic acid + H₂SO₄ catalyst (reversible). Reaction with Na: releases H₂."},
+      {"title":"Esterification mechanism and conditions","content":"RCOOH + R'OH ⇌ RCOOR' + H₂O. Acid catalyst (H₂SO₄ or H₃PO₄), warm. Equilibrium: excess alcohol or acid, remove water to improve yield. Reverse (hydrolysis): add water + acid catalyst (or NaOH for irreversible saponification)."},
+      {"title":"Properties of carboxylic acids","content":"Weak acids (partially dissociate). Stronger than carbonic acid → react with carbonates (CO₂ produced). H-bonding (dimer formation) → relatively high bp. React with: Na, NaOH, Na₂CO₃/NaHCO₃ (all give CO₂ with carbonates)."},
+      {"title":"Distinguishing aldehydes from carboxylic acids","content":"Both contain C=O. Carboxylic acid: reacts with Na₂CO₃ (effervescence). Aldehyde: does NOT react with Na₂CO₃; gives silver mirror with Tollens'; gives brick-red precipitate with Fehling's solution."},
+      {"title":"Biodiesel and fats","content":"Vegetable oils/animal fats: triglycerides (esters of glycerol + 3 fatty acids). Transesterification with methanol (NaOH catalyst): → biodiesel (FAME: fatty acid methyl esters) + glycerol. Biodiesel: renewable, lower net CO₂ emissions."}
+    ]
+  },
+  "ch18": {
+    "chapter": "18 - Carbonyl Compounds",
+    "points": [
+      {"title":"Nucleophilic addition mechanism to carbonyl","content":"Step 1: nucleophile (e.g. CN⁻, HCN) attacks the δ+ carbon of C=O. Step 2: protonation of O⁻ intermediate by H⁺ (or H₂O). Product: addition compound (alcohol). Example: RCHO + HCN → RCH(OH)CN (hydroxynitrile)."},
+      {"title":"Reduction of carbonyls","content":"Reagent: NaBH₄ (in water/ethanol) or LiAlH₄ (in dry ether). Aldehyde → primary alcohol. Ketone → secondary alcohol. Mechanism: H⁻ (hydride ion) is the nucleophile attacking C=O carbon. NaBH₄ is safer (less vigorous) than LiAlH₄."},
+      {"title":"Tests to distinguish aldehydes and ketones","content":"Tollens' reagent [Ag(NH₃)₂]⁺: aldehyde → silver mirror (Ag deposited); ketone → no reaction. Fehling's solution (Cu²⁺ in NaOH/tartrate): aldehyde → brick-red Cu₂O precipitate; ketone → no reaction. Both oxidise aldehyde (RCHO → RCOOH)."},
+      {"title":"Iodoform reaction (triiodomethane test)","content":"Reagent: I₂/NaOH. Positive result (pale yellow CHI₃ precipitate + antiseptic smell) with: methyl ketones (CH₃COR), ethanol (CH₃CH₂OH), ethanal (CH₃CHO). Tests for CH₃C=O or CH₃CHOH group."},
+      {"title":"Aldol condensation","content":"Two carbonyl compounds (with α-H) react under dilute NaOH (cold) → β-hydroxy carbonyl (aldol). On heating: dehydration → α,β-unsaturated carbonyl. Important in forming C–C bonds."},
+      {"title":"Cyanohydrin formation and use","content":"RCH=O + HCN → RCH(OH)CN (with KCN/H⁺ or NaCN). Creates new chiral centre → racemic mixture. Cyanohydrin can be hydrolysed to α-hydroxy acid or reduced to amino alcohol. Extends carbon chain by 1."}
+    ]
+  },
+  "ch19": {
+    "chapter": "19 - Lattice Energy",
+    "points": [
+      {"title":"Born-Haber cycle construction","content":"Steps: 1. ΔHf° (formation of ionic compound). 2. ΔHat° of metal. 3. ΔHat° of non-metal. 4. IE (ionisation energy of metal). 5. EA (electron affinity of non-metal). 6. Lattice energy (ΔHlat). By Hess's Law: ΔHf° = ΔHat°(M) + ΔHat°(X) + IE + EA + ΔHlat."},
+      {"title":"Factors affecting lattice energy","content":"Magnitude of lattice energy increases with: smaller ionic radius (ions closer together → stronger attraction) and higher ionic charge (more Coulombic force). |ΔHlat| order: MgO > CaO > NaCl > KCl. Na⁺ < K⁺ radius → NaCl more exothermic."},
+      {"title":"Theoretical vs experimental lattice energy","content":"For NaCl: theoretical (purely ionic) ≈ experimental. For AgCl: experimental ΔHlat more negative than theoretical → greater covalent character (Ag⁺ is polarising, Cl⁻ is polarisable). Discrepancy indicates partial covalent character."},
+      {"title":"Enthalpy of solution cycle","content":"ΔHsol = −ΔHlat(lattice dissociation) + ΔHhyd(cation) + ΔHhyd(anion). If ΔHhyd overcomes ΔHlat → soluble (ΔHsol negative or small positive). NaCl: slightly endothermic (+3.9 kJ/mol) but entropy drives dissolution."},
+      {"title":"Hydration enthalpy trends","content":"More exothermic (more negative) for: smaller ionic radius (ion-dipole interactions stronger), higher charge. Li⁺ > Na⁺ > K⁺. Mg²⁺ >> Na⁺. Anions: F⁻ >> I⁻ (smaller, higher charge density)."}
+    ]
+  },
+  "ch20": {
+    "chapter": "20 - Electrochemistry",
+    "points": [
+      {"title":"Standard electrode potential measurement","content":"Requires: standard hydrogen electrode (SHE, E° = 0.00 V) as reference. Standard conditions: 298 K, 1 mol dm⁻³ ion concentration, 100 kPa for gases. Connect with salt bridge (KNO₃) to complete circuit."},
+      {"title":"Predicting cell EMF and spontaneity","content":"E°cell = E°(cathode) − E°(anode) = E°(more +ve) − E°(less +ve). If E°cell > 0: reaction is spontaneous (feasible). The species with more positive E° is reduced (is the oxidising agent). Reaction at anode: oxidation. Cathode: reduction."},
+      {"title":"Limitations of E° predictions","content":"E° values predict thermodynamic feasibility only. Kinetic barriers (high Ea) may prevent reaction. Conditions (non-standard T, concentration) affect actual potentials (Nernst equation). A reaction may be feasible but imperceptibly slow."},
+      {"title":"Electrolysis: predicting products","content":"At cathode (−): cation with most positive (least negative) E° is discharged. At anode (+): anion with most negative E° is discharged. In practice: overpotential means Cl⁻ discharged preferentially over OH⁻ in concentrated NaCl(aq). At inert anode: O₂ from dilute solutions, Cl₂ from concentrated Cl⁻."},
+      {"title":"Faraday's laws calculations","content":"Q = It (charge = current × time). Moles of electrons = Q/F (F = 96485 C mol⁻¹ ≈ 96500). Moles of product = moles electrons / number of electrons in half-equation. Mass = moles × molar mass."},
+      {"title":"Fuel cells","content":"H₂-O₂ fuel cell: H₂ + ½O₂ → H₂O. Anode: H₂ → 2H⁺ + 2e⁻. Cathode: ½O₂ + 2H⁺ + 2e⁻ → H₂O. Advantages: higher efficiency than combustion engine, only water produced. Disadvantages: H₂ storage, expensive catalysts (Pt)."}
+    ]
+  },
+  "ch21": {
+    "chapter": "21 - Further Aspects of Equilibria",
+    "points": [
+      {"title":"pH calculations","content":"Strong acid: [H⁺] = c(acid) → pH = −log(c). Strong base: [OH⁻] = c(base), pOH = −log[OH⁻], pH = 14 − pOH. Weak acid: [H⁺] = √(Ka × c) assuming Ka << c. Buffer: [H⁺] = Ka × [HA]/[A⁻], pH = pKa + log([A⁻]/[HA])."},
+      {"title":"Buffer action explained","content":"Buffer = weak acid HA + its salt (A⁻). Add H⁺: HA ⇌ H⁺ + A⁻ shifts left (H⁺ + A⁻ → HA). Add OH⁻: HA + OH⁻ → A⁻ + H₂O (weak acid neutralises OH⁻). pH ≈ pKa when [HA] = [A⁻] (half-equivalence point)."},
+      {"title":"Indicators and titration curves","content":"Indicator works at pH = pKIn ± 1. Choose indicator whose pKIn falls in the vertical part of the titration curve. Strong acid–strong base: any indicator (phenolphthalein or methyl orange). Weak acid–strong base: phenolphthalein. Strong acid–weak base: methyl orange. Weak acid–weak base: no sharp endpoint."},
+      {"title":"Hydrolysis of salts","content":"NH₄Cl: NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺ → acidic. Na₂CO₃: CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻ → alkaline. NaCl: no hydrolysis → neutral. Al(NO₃)₃: Al³⁺ hydrolyses → acidic."},
+      {"title":"Kw and its temperature dependence","content":"Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 298 K. pH of pure water = 7 at 298 K. As T increases, Kw increases (ionisation of water is endothermic). At 50°C, Kw > 10⁻¹⁴ → pH < 7, but water is still neutral ([H⁺] = [OH⁻])."},
+      {"title":"Solubility product (Ksp)","content":"For MₐNb ⇌ aM^(b+) + bN^(a-): Ksp = [M^(b+)]^a × [N^(a-)]^b. If ionic product > Ksp: precipitate forms. Solubility s relates to Ksp. Common ion effect: adding a common ion decreases solubility (drives equilibrium back)."}
+    ]
+  },
+  "ch22": {
+    "chapter": "22 - Reaction Kinetics",
+    "points": [
+      {"title":"Determining rate equation from initial rates","content":"Compare experiments keeping all concentrations constant except one. If doubling [A] doubles rate → 1st order in A. If doubling [A] quadruples rate → 2nd order. If no change → 0th order. Repeat for each reactant. Then calculate k from rate = k[A]^m[B]^n."},
+      {"title":"Graphical methods for order","content":"0th order: [A] vs t = straight line with negative gradient (gradient = −k). 1st order: ln[A] vs t = straight line (gradient = −k), constant t½. 2nd order: 1/[A] vs t = straight line (gradient = k)."},
+      {"title":"Arrhenius equation and graph","content":"k = A·e^(−Ea/RT). Taking ln: ln k = ln A − Ea/RT. Plot ln k vs 1/T: gradient = −Ea/R → Ea = −gradient × R. Intercept = ln A. As T increases, k increases (exponential relationship)."},
+      {"title":"Deducing mechanism from rate equation","content":"Rate equation indicates which species are involved in the rate-determining step (RDS) and their molecularity. Only species in the rate equation appear in the RDS. Example: rate = k[A][B²] → A and 2 molecules of B in RDS. Propose mechanism consistent with overall equation and rate law."},
+      {"title":"Catalysis and rate","content":"Catalyst provides alternative pathway with lower Ea. Does NOT change ΔH or equilibrium position (for reversible reactions). Heterogeneous: different phase (Fe in Haber, Pt in catalytic converter). Homogeneous: same phase (H⁺ in esterification, Fe²⁺/Fe³⁺ in S₂O₈²⁻ + I⁻ reaction)."}
+    ]
+  },
+  "ch23": {
+    "chapter": "23 - Entropy and Gibbs Free Energy",
+    "points": [
+      {"title":"Entropy changes","content":"S increases when: solid → liquid → gas; dissolving; mixing; number of gas moles increases; temperature increases. S decreases when: gases condense; precipitation; number of gas moles decreases. ΔSsystem = ΣS(products) − ΣS(reactants)."},
+      {"title":"Total entropy and spontaneity","content":"ΔStotal = ΔSsystem + ΔSsurroundings. ΔSsurroundings = −ΔH/T. A process is spontaneous when ΔStotal > 0. This is equivalent to ΔG < 0 (since ΔG = −TΔStotal)."},
+      {"title":"ΔG analysis for different conditions","content":"ΔH < 0, ΔS > 0: always spontaneous (ΔG always negative). ΔH > 0, ΔS < 0: never spontaneous. ΔH < 0, ΔS < 0: spontaneous at low T (when |TΔS| < |ΔH|). ΔH > 0, ΔS > 0: spontaneous at high T (when TΔS > ΔH). Feasibility temperature: T = ΔH/ΔS."},
+      {"title":"ΔG and equilibrium constant","content":"ΔG° = −RT ln K. If K > 1: ΔG° < 0 (products favoured). If K < 1: ΔG° > 0 (reactants favoured). If K = 1: ΔG° = 0. At equilibrium: ΔG = 0 (not ΔG°). Standard value vs actual value: ΔG = ΔG° + RT ln Q."},
+      {"title":"Electrochemistry link to ΔG","content":"ΔG° = −nFE°cell. Where n = moles of electrons transferred, F = Faraday constant (96500 C mol⁻¹). If E°cell > 0: ΔG° < 0 (spontaneous). Consistent with K: ΔG° = −RT ln K = −nFE°."}
+    ]
+  },
+  "ch24": {
+    "chapter": "24 - Transition Elements",
+    "points": [
+      {"title":"Definition and properties of transition elements","content":"d-block elements that form at least one stable ion with incomplete d sub-shell (Ti to Cu; Sc and Zn excluded). Properties: variable oxidation states, coloured ions, catalytic activity, complex ion formation, paramagnetic."},
+      {"title":"Electronic configurations","content":"General: [Ar] 3d^n 4s². Exceptions: Cr = [Ar] 3d⁵ 4s¹; Cu = [Ar] 3d¹⁰ 4s¹ (extra stability of half-full and full d shells). When forming ions: 4s electrons lost first, then 3d. Fe³⁺ = [Ar] 3d⁵ (half-full d, stable)."},
+      {"title":"Colour of complex ions","content":"Due to d-d transition: ligands cause d orbital splitting (crystal field splitting). Electron absorbs visible light, moves from lower to higher d orbital. Complementary colour is observed. More splitting → shorter wavelength absorbed → different colour. [Cu(H₂O)₆]²⁺ blue; [Cu(NH₃)₄]²⁺ deep blue; [Fe(H₂O)₆]³⁺ pale violet."},
+      {"title":"Common complex ions","content":"[Fe(H₂O)₆]²⁺: green. [Fe(H₂O)₆]³⁺: pale violet/brown. [Cu(H₂O)₆]²⁺: light blue. [Cu(NH₃)₄(H₂O)₂]²⁺: deep blue. [Cr(H₂O)₆]³⁺: green-violet. [Co(H₂O)₆]²⁺: pink. [Fe(SCN)(H₂O)₅]²⁺: blood red (test for Fe³⁺). [FeCl₄]⁻: yellow."},
+      {"title":"Ligand substitution reactions","content":"H₂O replaced by stronger ligands. Cu²⁺(aq) + 4NH₃ → [Cu(NH₃)₄]²⁺ + 4H₂O (deepen blue; add excess NH₃ to Cu(OH)₂ precipitate). Fe³⁺(aq) + SCN⁻ → [Fe(SCN)]²⁺ (blood red; test for Fe³⁺). Haemoglobin: Fe²⁺ centre, O₂ ligand; CO binds more strongly → poisoning."},
+      {"title":"Redox reactions of vanadium","content":"V can exist as +5, +4, +3, +2. Reduction by Zn in acidic solution: VO₂⁺ (yellow, +5) → VO²⁺ (blue, +4) → V³⁺ (green, +3) → V²⁺ (violet, +2). This demonstrates variable oxidation states of transition metals."},
+      {"title":"Stability constant (Kstab)","content":"For [ML_n]^(a+) ⇌ M^(a+) + nL. Kstab = [M^(a+)][L]^n / [[ML_n]^(a+)] ... actually Kstab = product/reactants for formation. Large Kstab → stable complex. EDTA⁴⁻ forms very stable complexes with 4-coordinate binding (chelation); used in medicine (treatment of metal poisoning)."}
+    ]
+  },
+  "ch25": {
+    "chapter": "25 - Benzene and its Compounds",
+    "points": [
+      {"title":"Evidence for benzene structure","content":"Kekulé's alternating double bonds predicts: two forms of 1,2-disubstituted benzene (not observed), high reactivity to Br₂ (not seen), ΔHhyd more negative than expected. Actual evidence: all C-C bonds equal length (139 pm), thermodynamic stability (ΔHhyd less negative by ~150 kJ/mol = delocalisation energy), no addition reactions with bromine water."},
+      {"title":"Electrophilic substitution mechanism","content":"General: Ar–H + E⁺ → [Ar–H–E]⁺ (arenium ion/σ-complex) → Ar–E + H⁺. The ring is restored (aromaticity retained) by loss of H⁺. Nitration: E⁺ = NO₂⁺ (from HNO₃ + H₂SO₄). Halogenation: E⁺ from X₂ + AlX₃ (Lewis acid catalyst)."},
+      {"title":"Nitration conditions and mechanism","content":"Conc. HNO₃ + conc. H₂SO₄, 50-55°C (not higher: polynitration). Generation of NO₂⁺: HNO₃ + H₂SO₄ → NO₂⁺ + HSO₄⁻ + H₂O. NO₂⁺ attacks ring → σ-complex → lose H⁺ to HSO₄⁻ → nitrobenzene."},
+      {"title":"Friedel-Crafts reactions","content":"Alkylation: ArH + RCl + AlCl₃ → Ar–R + HCl + AlCl₃. Acylation: ArH + RCOCl + AlCl₃ → Ar–COR + HCl + AlCl₃. AlCl₃ is Lewis acid catalyst: generates R⁺ or RCO⁺ (acylium). Acylation preferred in synthesis (no rearrangement, product deactivated → monosubstitution only)."},
+      {"title":"Directing effects of substituents","content":"Activating (2,4-directors): –OH, –NH₂, –OCH₃ (donate electrons into ring by resonance). Deactivating (3-directors): –NO₂, –CN, –COOH, –CHO (withdraw electrons). Halogens: deactivating but 2,4-directors (lone pairs donate but electronegative). Use directing effects to plan synthesis routes."},
+      {"title":"Reactions of phenol","content":"Phenol is more reactive than benzene (–OH activates ring). Reacts with Br₂(aq) without catalyst → 2,4,6-tribromophenol (white precipitate, test for phenol). Reacts with NaOH → sodium phenoxide (phenol is weakly acidic, pKa ~10). Does NOT react with Na₂CO₃."}
+    ]
+  },
+  "ch26": {
+    "chapter": "26 - Carboxylic Acids and their Derivatives",
+    "points": [
+      {"title":"Reactivity order","content":"Acyl chloride > acid anhydride > carboxylic acid > ester > amide. Decreasing reactivity towards nucleophiles (better leaving groups make more reactive). Acyl chlorides react violently with water; amides hydrolyse slowly."},
+      {"title":"Reactions of acyl chlorides","content":"With water: RCOC1 + H₂O → RCOOH + HCl (vigorous, fumes). With alcohol: RCOCl + R'OH → RCOOR' + HCl (ester, no catalyst, room temperature). With amine: RCOCl + R'NH₂ → RCONHR' + HCl (amide). With ammonia: RCOCl + NH₃ → RCONH₂ + HCl."},
+      {"title":"Reactions of acid anhydrides","content":"Similar to acyl chlorides but less vigorous. With water: (RCO)₂O + H₂O → 2RCOOH. With alcohol: → ester + carboxylic acid (not ester + HCl). With amine: → amide + carboxylic acid. Ethanoic anhydride used industrially (safer, no HCl evolved)."},
+      {"title":"Mechanism: addition-elimination","content":"Step 1: nucleophile (e.g. OH⁻ or H₂O) adds to C=O → tetrahedral intermediate. Step 2: leaving group (Cl⁻ from acyl chloride, RCOO⁻ from anhydride) is expelled, C=O restored. Net result: substitution at carbonyl carbon."},
+      {"title":"Hydrolysis of esters","content":"Acid hydrolysis (H₂SO₄/H₂O, heat): reversible, gives carboxylic acid + alcohol. Alkaline hydrolysis / saponification (NaOH/H₂O, heat): irreversible, gives carboxylate salt + alcohol (used in soap making). Alkaline faster and complete."}
+    ]
+  },
+  "ch27": {
+    "chapter": "27 - Organic Nitrogen Compounds",
+    "points": [
+      {"title":"Basicity of amines","content":"Amines are bases: lone pair on N accepts H⁺. pKb: alkyl amines (~3-4, stronger than NH₃) < NH₃ (~4.7) < aryl amines (~9). Phenylamine weaker base: lone pair delocalised into benzene ring. Alkyl groups donate electrons → increase lone pair availability."},
+      {"title":"Reactions of amines","content":"With acids: RNH₂ + HCl → RNH₃⁺Cl⁻ (salt). With acyl chlorides: → amide + HCl. As nucleophile (nucleophilic substitution): attack halogenoalkane → secondary amine (then tertiary, then quaternary ammonium). With nitrous acid: ArNH₂ + HNO₂ → ArN₂⁺ (diazonium salt, 0-5°C)."},
+      {"title":"Amino acids properties","content":"Zwitterion: –NH₃⁺ and –COO⁻ simultaneously. Isoelectric point (pI): pH at which molecule carries no net charge; amine and carboxyl groups both in ionic form. In acidic solution: –NH₃⁺ group predominates (cation). In alkaline: –COO⁻ group (anion). Forms peptides via condensation."},
+      {"title":"Diazonium salt reactions","content":"Formed: ArNH₂ + NaNO₂ + HCl, 0-5°C → ArN₂⁺Cl⁻. Must keep cold (decomposes above 5°C). Coupling with phenol (alkaline): ArN₂⁺ + ArOH → Ar-N=N-Ar' (azo dye, orange-yellow). Coupling with aryl amines (weakly acidic): → red/orange azo compound."},
+      {"title":"Polyamides (nylon)","content":"Nylon-6,6: hexan-1,6-diamine + hexanedioic acid → [-NH-(CH₂)₆-NH-CO-(CH₂)₄-CO-]n + H₂O. Amide bonds between each monomer unit. H-bonds between chains → strong, tough fibre. Peptide bonds in proteins also amide bonds."}
+    ]
+  },
+  "ch28": {
+    "chapter": "28 - Polymerisation",
+    "points": [
+      {"title":"Addition polymers","content":"Monomer contains C=C double bond. Opens to form long chain; no other product. Examples: poly(ethene) from ethene, PVC from chloroethene, PTFE from tetrafluoroethene. Repeat unit loses one C=C: –[CH₂–CHX]n–. Problems: non-biodegradable, difficult to recycle."},
+      {"title":"Condensation polymers","content":"Two functional groups react, losing small molecule (H₂O or HCl) each time. Polyesters: diol + dicarboxylic acid → –[O–R–O–CO–R'–CO]n– + H₂O. Polyamides: diamine + diacid (or diacyl chloride) → –[NH–R–NH–CO–R'–CO]n– + H₂O (or HCl)."},
+      {"title":"Drawing repeat units","content":"Addition: draw the repeat unit from monomer (remove the double bond, put single bond between units). Condensation: identify the bonds formed between monomers (ester –COO– or amide –CONH–); show the atoms lost. Include brackets with n."},
+      {"title":"Hydrolysis of condensation polymers","content":"Polyesters hydrolyse in acid or alkali (break ester bonds → diol + diacid/salt). Polyamides hydrolyse in acid or alkali (break amide bonds → diamine + diacid). Addition polymers (C–C backbone) do NOT hydrolyse. This is why polyesters/polyamides are biodegradable."},
+      {"title":"Kevlar and other engineering polymers","content":"Kevlar: polyamide from benzene-1,4-diamine + benzene-1,4-dicarboxylic acid. Highly ordered H-bonds between parallel chains → exceptional strength. Used in body armour, tyres. Terylene (PET): polyester from ethylene glycol + terephthalic acid; used in fibres, bottles."}
+    ]
+  },
+  "ch29": {
+    "chapter": "29 - Organic Synthesis",
+    "points": [
+      {"title":"Key functional group interconversions","content":"Alkene → alkane (H₂/Ni), → alcohol (H₂O/acid), → halogenoalkane (HX), → diol (cold KMnO₄). Halogenoalkane → alcohol (NaOH/H₂O), → nitrile (KCN/alc), → amine (NH₃/alc), → alkene (KOH/alc, hot). Primary alcohol → aldehyde → carboxylic acid. Secondary alcohol → ketone. Aldehyde → primary alcohol (NaBH₄)."},
+      {"title":"Carbon chain extension methods","content":"+1C: Nucleophilic substitution with KCN/HCN (nitrile) → then hydrolysis to carboxylic acid. +1C: via Grignard reagent (A-level context: RMgX + CO₂ → carboxylic acid). Friedel-Crafts acylation extends chain on benzene ring."},
+      {"title":"Planning a synthesis route","content":"1. Identify carbon skeleton changes needed. 2. Identify functional group at start vs end. 3. Work backwards (retrosynthesis): what reaction produces target from simpler molecule? 4. Check reagents and conditions are known. 5. Consider stereochemistry (chiral products, geometric isomers)."},
+      {"title":"Controlling reaction type","content":"Halogenoalkane: with NaOH(aq) → substitution (alcohol). With KOH in ethanol → elimination (alkene). With NH₃(excess) → amine. With KCN → nitrile. Alcohol: oxidation conditions determine aldehyde vs carboxylic acid."},
+      {"title":"Protection of functional groups","content":"When a reaction would attack a sensitive group, protect it first. Example: to reduce ester without reducing acid: convert acid to ester temporarily. In peptide synthesis: protect –NH₂ as N-Boc amine, then deprotect. A-level: understand the principle of using protecting groups."}
+    ]
+  },
+  "ch30": {
+    "chapter": "30 - Analytical Chemistry",
+    "points": [
+      {"title":"Mass spectrometry interpretation","content":"Molecular ion (M⁺): highest m/z peak (excluding M+1, M+2 isotope peaks) = Mr. Fragmentation: loss of groups gives fragment peaks. Common losses: −15 (CH₃), −29 (CHO or C₂H₅), −45 (OEt), −77 (C₆H₅). Base peak: most abundant fragment ion."},
+      {"title":"IR spectroscopy key absorptions","content":"O–H (alcohol): broad 3230–3550 cm⁻¹. O–H (carboxylic acid): very broad 2500–3300 cm⁻¹. N–H: 3300–3500 cm⁻¹. C–H: 2850–3100 cm⁻¹. C≡N: 2200–2260 cm⁻¹. C=O (carbonyl): strong, sharp 1680–1750 cm⁻¹ (ester ~1735, aldehyde/ketone ~1715, carboxylic acid ~1710). C–O: 1050–1300 cm⁻¹. Fingerprint region: 500–1500 cm⁻¹."},
+      {"title":"¹H NMR chemical shifts","content":"TMS = 0 ppm reference. R–CH₃: ~0.9 ppm. R–CH₂–R: ~1.3 ppm. R–CH=: 4.5–6.5 ppm (alkene). ArH: 6.5–8.5 ppm (benzene ring). R–CHO: ~9–10 ppm (aldehyde). R–COOH: ~10–12 ppm (carboxylic acid). R–OH: 1–5 ppm (variable). NH: 1–5 ppm. Electronegative groups shift nearby H downfield (+)."},
+      {"title":"NMR spin-spin coupling","content":"(n+1) rule: a proton with n equivalent neighbouring protons is split into (n+1) peaks. Doublet (d): 1 neighbour. Triplet (t): 2 neighbours. Quartet (q): 3 neighbours. Singlet (s): 0 neighbours. Integration gives relative number of each type of H. D₂O shake: exchangeable H (OH, NH) disappear."},
+      {"title":"Combining spectroscopic data","content":"Strategy: 1. Find Mr from mass spectrum. 2. Calculate degrees of unsaturation: DoU = (2C + 2 + N − H − X)/2. 3. IR: identify functional groups (C=O, OH, NH). 4. ¹H NMR: count types of H, integration, coupling pattern. 5. Piece together consistent structure."},
+      {"title":"Chromatography types","content":"TLC (thin layer): stationary = silica, mobile = solvent. Rf = distance spot / distance solvent. GC: stationary = liquid on support, mobile = inert carrier gas; retention time identifies compound; used with MS for identification. HPLC: liquid mobile phase, high pressure; separates polar/ionic compounds. Paper chromatography: water in cellulose fibres is stationary phase."}
+    ]
+  }
+}
