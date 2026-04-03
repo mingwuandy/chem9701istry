@@ -2632,12 +2632,14 @@ async function renderPastPapers() {
 
   // Build header
   const yearRange = `${Math.min(...years)}-${Math.max(...years)}`;
+  const localCount = PAST_PAPERS_DB.filter(p => p.local === true).length;
+  const onlineCount = PAST_PAPERS_DB.length - localCount;
   view.innerHTML = `
     <div class="papers-header">
       <div class="papers-header-content">
         <div class="papers-title-group">
           <div class="papers-title">📄 CIE 9701 Chemistry Past Papers</div>
-          <div class="papers-subtitle">${PAST_PAPERS_DB.length} complete papers from ${years.length} years (${yearRange})</div>
+          <div class="papers-subtitle">${PAST_PAPERS_DB.length} papers from ${years.length} years (${yearRange}) · <span style="color:#059669;font-weight:600">${localCount} local</span> / <span style="color:#667eea;font-weight:600">${onlineCount} search</span></div>
         </div>
         <div class="papers-view-toggles">
           <button class="view-toggle ${papersViewMode === 'table' ? 'active' : ''}" onclick="papersViewMode='table';renderPastPapers()">
@@ -2691,11 +2693,11 @@ async function renderPastPapers() {
       </select>
     </div>
     <div class="filter-section filter-section-actions">
-      <button class="btn btn-primary" onclick="downloadSelectedPapers()" title="Search for selected papers (opens Google search tabs)">
+      <button class="btn btn-primary" onclick="downloadSelectedPapers()" title="Open local files or search Google for selected papers">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px">
           <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
         </svg>
-        Find PDFs
+        Open / Find
       </button>
       <button class="btn btn-secondary" onclick="window.print()" title="Print papers list">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px">
@@ -2762,6 +2764,7 @@ function renderPastPapersTable(filteredPapers, view) {
     else if (session === 'Oct/Nov') { seasonCode = 'w'; seasonLabel = '🍂 Oct/Nov'; }
     else if (session === 'Feb/Mar') { seasonCode = 'm'; seasonLabel = '🌱 Feb/Mar'; }
     
+    const isLocal = p.local === true;
     tr.innerHTML = `
       <td class="pt-check"><input type="checkbox" class="paper-checkbox" data-id="${p.id}"></td>
       <td class="pt-year"><span class="year-badge">${p.year}</span></td>
@@ -2770,12 +2773,20 @@ function renderPastPapersTable(filteredPapers, view) {
       <td class="pt-version"><span class="version-badge">v${p.version}</span></td>
       <td class="pt-type"><span class="type-badge ${typeColorClass}">${p.docType}</span></td>
       <td class="pt-action">
-        <button class="btn-download" onclick="downloadPaper(${p.id})" title="Search &amp; download ${p.filename || ''}">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-          </svg>
-          Download
-        </button>
+        ${isLocal
+          ? `<button class="btn-download btn-local" onclick="downloadPaper(${p.id})" title="Open local ${p.filename || ''}">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+              </svg>
+              Open
+            </button>`
+          : `<button class="btn-download btn-search" onclick="downloadPaper(${p.id})" title="Search for ${p.filename || ''} on Google">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+              Find PDF
+            </button>`
+        }
       </td>
     `;
     tbody.appendChild(tr);
@@ -2846,12 +2857,20 @@ function renderPastPapersCards(papersByYear, view) {
           </div>
         </div>
         <div class="card-footer">
-          <button class="btn btn-card-download" onclick="downloadPaper(${p.id})">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-            </svg>
-            Download
-          </button>
+          ${p.local === true
+            ? `<button class="btn btn-card-download btn-card-local" onclick="downloadPaper(${p.id})" title="Open local file">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                </svg>
+                Open
+              </button>`
+            : `<button class="btn btn-card-download btn-card-search" onclick="downloadPaper(${p.id})" title="Search on Google">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                Find PDF
+              </button>`
+          }
         </div>
       `;
       papersGrid.appendChild(card);
@@ -2898,21 +2917,33 @@ function downloadPaper(id) {
 function downloadSelectedPapers() {
   const checked = document.querySelectorAll('.paper-checkbox:checked');
   if (!checked.length) {
-    showToast('Please select at least one paper to download');
+    showToast('Please select at least one paper');
     return;
   }
 
   const ids = [...checked].map(cb => parseInt(cb.dataset.id));
+  const localIds = ids.filter(id => PAST_PAPERS_DB.find(p => p.id === id)?.local === true);
+  const searchIds = ids.filter(id => PAST_PAPERS_DB.find(p => p.id === id)?.local !== true);
 
   if (ids.length > 5) {
-    if (!confirm('Open ' + ids.length + ' search tabs? Allow pop-ups if your browser asks.')) return;
+    const localCount = localIds.length;
+    const searchCount = searchIds.length;
+    let msg = 'Open ' + ids.length + ' items?';
+    if (localCount > 0 && searchCount > 0) msg = `Open ${localCount} local file(s) + search ${searchCount} PDF(s) on Google?`;
+    else if (searchCount > 0) msg = `Search ${searchCount} PDF(s) on Google?`;
+    else msg = `Open ${localCount} local file(s)?`;
+    if (!confirm(msg + ' Allow pop-ups if your browser asks.')) return;
   }
 
   ids.forEach((id, i) => {
     setTimeout(() => downloadPaper(id), i * 400);
   });
 
-  showToast('Opening ' + ids.length + ' search tab' + (ids.length > 1 ? 's' : '') + ' — allow pop-ups if prompted');
+  let toastMsg = '';
+  if (localIds.length > 0 && searchIds.length > 0) toastMsg = `Opening ${localIds.length} local file(s) + ${searchIds.length} search tab(s)`;
+  else if (localIds.length > 0) toastMsg = `Opening ${localIds.length} local file(s)`;
+  else toastMsg = `Opening ${searchIds.length} search tab(s)`;
+  showToast(toastMsg + ' — allow pop-ups if prompted');
 }
 
 // ── PRINT STYLES ─────────────────────────────────────────────────────────────
@@ -3761,9 +3792,12 @@ function generateBlankPeriodicTable() {
 .season-w{background:#e0e7ff;color:#3f0f5c;border:1px solid #a5b4fc;font-weight:700}
 .season-m{background:#dcfce7;color:#14532d;border:1px solid #86efac;font-weight:700}
 .season-unknown{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;font-weight:600}
-.btn-download{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;background:#667eea;color:#fff;border:none;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(102,126,234,.25)}
-.btn-download:hover{background:#764ba2;transform:translateY(-1px);box-shadow:0 4px 12px rgba(102,126,234,.35)}
+.btn-download{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;color:#fff;border:none;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s}
 .btn-download:active{transform:translateY(0)}
+.btn-download.btn-local{background:#059669;box-shadow:0 2px 6px rgba(5,150,105,.25)}
+.btn-download.btn-local:hover{background:#047857;transform:translateY(-1px);box-shadow:0 4px 12px rgba(5,150,105,.35)}
+.btn-download.btn-search{background:#667eea;box-shadow:0 2px 6px rgba(102,126,234,.25)}
+.btn-download.btn-search:hover{background:#764ba2;transform:translateY(-1px);box-shadow:0 4px 12px rgba(102,126,234,.35)}
 
 /* Card Styles */
 .papers-cards-container{max-width:1400px;margin:0 auto}
@@ -3788,8 +3822,11 @@ function generateBlankPeriodicTable() {
 .info-item{display:flex;align-items:center;gap:4px;font-size:.78rem;color:#64748b;font-weight:500}
 .info-item svg{width:14px;height:14px;flex-shrink:0}
 .card-footer{display:flex;gap:8px}
-.btn-card-download{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 16px;background:#667eea;color:#fff;border:none;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(102,126,234,.25)}
-.btn-card-download:hover{background:#764ba2;transform:translateY(-1px);box-shadow:0 4px 12px rgba(102,126,234,.35)}
+.btn-card-download{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 16px;color:#fff;border:none;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-card-download.btn-card-local{background:#059669;box-shadow:0 2px 6px rgba(5,150,105,.25)}
+.btn-card-download.btn-card-local:hover{background:#047857;transform:translateY(-1px);box-shadow:0 4px 12px rgba(5,150,105,.35)}
+.btn-card-download.btn-card-search{background:#667eea;box-shadow:0 2px 6px rgba(102,126,234,.25)}
+.btn-card-download.btn-card-search:hover{background:#764ba2;transform:translateY(-1px);box-shadow:0 4px 12px rgba(102,126,234,.35)}
 
 /* Checkbox styling */
 input[type="checkbox"]{cursor:pointer;width:16px;height:16px;accent-color:#667eea}
