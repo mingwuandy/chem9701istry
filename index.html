@@ -2691,11 +2691,11 @@ async function renderPastPapers() {
       </select>
     </div>
     <div class="filter-section filter-section-actions">
-      <button class="btn btn-primary" onclick="downloadSelectedPapers()" title="Download selected papers">
+      <button class="btn btn-primary" onclick="downloadSelectedPapers()" title="Search for selected papers (opens Google search tabs)">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px">
           <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
         </svg>
-        Download Selected
+        Find PDFs
       </button>
       <button class="btn btn-secondary" onclick="window.print()" title="Print papers list">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px">
@@ -2755,24 +2755,22 @@ function renderPastPapersTable(filteredPapers, view) {
     if (p.docType === 'MS') typeColorClass = 'type-ms';
     else if (p.docType === 'CI') typeColorClass = 'type-ci';
     
-    // 从文件名中提取季节代码（s=Summer, w=Winter）
-    const filename = p.filename || '';
-    let seasonCode = '', seasonLabel = '';
-    const seasonMatch = filename.match(/_([sw])(\d{2})/);
-    if (seasonMatch) {
-      seasonCode = seasonMatch[1];
-      seasonLabel = seasonCode === 's' ? '🌞 Summer (s)' : '❄️ Winter (w)';
-    }
+    // 从 session 字段获取季节信息（May/June, Oct/Nov, Feb/Mar）
+    const session = p.session || p.season || '';
+    let seasonCode = 'unknown', seasonLabel = session;
+    if (session === 'May/June')  { seasonCode = 's'; seasonLabel = '☀️ May/June'; }
+    else if (session === 'Oct/Nov') { seasonCode = 'w'; seasonLabel = '🍂 Oct/Nov'; }
+    else if (session === 'Feb/Mar') { seasonCode = 'm'; seasonLabel = '🌱 Feb/Mar'; }
     
     tr.innerHTML = `
       <td class="pt-check"><input type="checkbox" class="paper-checkbox" data-id="${p.id}"></td>
       <td class="pt-year"><span class="year-badge">${p.year}</span></td>
-      <td class="pt-season"><span class="season-badge season-${seasonCode}">${seasonLabel || p.season}</span></td>
+      <td class="pt-season"><span class="season-badge season-${seasonCode}">${seasonLabel}</span></td>
       <td class="pt-paper"><strong>Paper ${p.paperNum}</strong></td>
       <td class="pt-version"><span class="version-badge">v${p.version}</span></td>
       <td class="pt-type"><span class="type-badge ${typeColorClass}">${p.docType}</span></td>
       <td class="pt-action">
-        <button class="btn-download" onclick="downloadPaper(${p.id})" title="Download this paper">
+        <button class="btn-download" onclick="downloadPaper(${p.id})" title="Search &amp; download ${p.filename || ''}">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
           </svg>
@@ -2821,13 +2819,12 @@ function renderPastPapersCards(papersByYear, view) {
       card.className = 'paper-card';
       
       // 从文件名中提取季节代码
-      const filename = p.filename || '';
-      let seasonCode = '', seasonLabel = '';
-      const seasonMatch = filename.match(/_([sw])(\d{2})/);
-      if (seasonMatch) {
-        seasonCode = seasonMatch[1];
-        seasonLabel = seasonCode === 's' ? '🌞 Summer' : '❄️ Winter';
-      }
+      // 从 session 字段获取季节信息
+      const session = p.session || p.season || '';
+      let seasonLabel = session;
+      if (session === 'May/June')  seasonLabel = '☀️ May/June';
+      else if (session === 'Oct/Nov') seasonLabel = '🍂 Oct/Nov';
+      else if (session === 'Feb/Mar') seasonLabel = '🌱 Feb/Mar';
       
       card.innerHTML = `
         <div class="card-header">
@@ -2840,7 +2837,7 @@ function renderPastPapersCards(papersByYear, view) {
           <div class="card-info">
             <span class="info-item">
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              ${p.month} ${p.year}
+              ${session} ${p.year}
             </span>
             <span class="info-item">
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/></svg>
@@ -2884,27 +2881,18 @@ function toggleAllPapers(checkbox) {
 }
 
 function getPaperPath(paper) {
-  // Use external URL if available, otherwise fall back to local path
   if (paper.url) return paper.url;
-  return `past_papers/${paper.year}/Paper-${paper.paperNum}/${paper.filename}`;
+  // fallback: Google search
+  const fname = paper.filename || (paper.docType === 'QP' ? 'qp' : 'ms');
+  return 'https://www.google.com/search?q=' + encodeURIComponent(fname + ' filetype:pdf CIE chemistry');
 }
 
 function downloadPaper(id) {
   const paper = PAST_PAPERS_DB.find(p => p.id === id);
   if (!paper) return;
 
-  if (paper.url) {
-    // Open external URL in new tab (PDFs hosted externally)
-    window.open(paper.url, '_blank');
-  } else {
-    const path = getPaperPath(paper);
-    const a = document.createElement('a');
-    a.href = path;
-    a.download = paper.filename + '.pdf';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  }
+  const url = paper.url || getPaperPath(paper);
+  window.open(url, '_blank');
 }
 
 function downloadSelectedPapers() {
@@ -2915,20 +2903,16 @@ function downloadSelectedPapers() {
   }
 
   const ids = [...checked].map(cb => parseInt(cb.dataset.id));
-  const hasExternal = ids.some(id => {
-    const p = PAST_PAPERS_DB.find(x => x.id === id);
-    return p && p.url;
-  });
 
-  if (hasExternal && ids.length > 5) {
-    if (!confirm(`Open ${ids.length} papers in new tabs? (Browser may block multiple popups — allow pop-ups for this site if needed)`)) return;
+  if (ids.length > 5) {
+    if (!confirm('Open ' + ids.length + ' search tabs? Allow pop-ups if your browser asks.')) return;
   }
 
   ids.forEach((id, i) => {
-    setTimeout(() => downloadPaper(id), i * 300); // stagger to avoid popup blocker
+    setTimeout(() => downloadPaper(id), i * 400);
   });
 
-  showToast(`Opening ${ids.length} paper${ids.length > 1 ? 's' : ''} — allow pop-ups if prompted`);
+  showToast('Opening ' + ids.length + ' search tab' + (ids.length > 1 ? 's' : '') + ' — allow pop-ups if prompted');
 }
 
 // ── PRINT STYLES ─────────────────────────────────────────────────────────────
@@ -3772,9 +3756,11 @@ function generateBlankPeriodicTable() {
 .type-qp{background:#dbeafe;color:#0c4a6e;border:1px solid #7dd3fc}
 .type-ms{background:#fef3c7;color:#78350f;border:1px solid #fcd34d}
 .type-ci{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1}
-.season-badge{display:inline-block;padding:4px 10px;border-radius:6px;font-weight:600;font-size:.75rem;text-transform:capitalize;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.season-badge{display:inline-block;padding:4px 10px;border-radius:6px;font-weight:600;font-size:.75rem;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .season-s{background:#fff7d6;color:#854d0e;border:1px solid #fde047;font-weight:700}
 .season-w{background:#e0e7ff;color:#3f0f5c;border:1px solid #a5b4fc;font-weight:700}
+.season-m{background:#dcfce7;color:#14532d;border:1px solid #86efac;font-weight:700}
+.season-unknown{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;font-weight:600}
 .btn-download{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;background:#667eea;color:#fff;border:none;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(102,126,234,.25)}
 .btn-download:hover{background:#764ba2;transform:translateY(-1px);box-shadow:0 4px 12px rgba(102,126,234,.35)}
 .btn-download:active{transform:translateY(0)}
