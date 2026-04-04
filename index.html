@@ -2766,7 +2766,7 @@ function renderPastPapersTable(filteredPapers, view) {
     
     const isAvail = p.available !== false;
     tr.innerHTML = `
-      <td class="pt-check"><input type="checkbox" class="paper-checkbox" data-id="${p.id}"></td>
+      <td class="pt-check"><input type="checkbox" class="paper-checkbox" data-filename="${p.filename}"></td>
       <td class="pt-year"><span class="year-badge">${p.year}</span></td>
       <td class="pt-season"><span class="season-badge season-${seasonCode}">${seasonLabel}</span></td>
       <td class="pt-paper"><strong>Paper ${p.paperNum}</strong></td>
@@ -2774,13 +2774,13 @@ function renderPastPapersTable(filteredPapers, view) {
       <td class="pt-type"><span class="type-badge ${typeColorClass}">${p.docType}</span></td>
       <td class="pt-action">
         ${isAvail
-          ? `<button class="btn-download btn-preview" onclick="previewPaper(${p.id})" title="Preview ${p.filename || ''}">
+          ? `<button class="btn-download btn-preview" onclick="previewPaper('${p.filename}')" title="Preview ${p.filename || ''}">
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
               </svg>
               Preview
             </button>
-             <button class="btn-download btn-download-file" onclick="downloadPaperFile(${p.id})" title="Download ${p.filename || ''}">
+             <button class="btn-download btn-download-file" onclick="downloadPaperFile('${p.filename}')" title="Download ${p.filename || ''}">
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
               </svg>
@@ -2840,7 +2840,7 @@ function renderPastPapersCards(papersByYear, view) {
       
       card.innerHTML = `
         <div class="card-header">
-          <input type="checkbox" class="paper-checkbox card-checkbox" data-id="${p.id}">
+          <input type="checkbox" class="paper-checkbox card-checkbox" data-filename="${p.filename}">
           <span class="card-type-badge type-${p.docType.toLowerCase()}">${p.docType}</span>
         </div>
         <div class="card-body">
@@ -2859,13 +2859,13 @@ function renderPastPapersCards(papersByYear, view) {
         </div>
         <div class="card-footer">
           ${p.available !== false
-            ? `<button class="btn btn-card-preview" onclick="previewPaper(${p.id})" title="Preview online">
+            ? `<button class="btn btn-card-preview" onclick="previewPaper('${p.filename}')" title="Preview online">
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
                 </svg>
                 Preview
               </button>
-              <button class="btn btn-card-download" onclick="downloadPaperFile(${p.id})" title="Download PDF">
+              <button class="btn btn-card-download" onclick="downloadPaperFile('${p.filename}')" title="Download PDF">
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
                 </svg>
@@ -2906,36 +2906,33 @@ function getPaperPath(paper) {
   return '';
 }
 
-function previewPaper(id) {
-  const paper = PAST_PAPERS_DB.find(p => p.id === id);
+function previewPaper(filenameOrId) {
+  // 支持 filename 字符串或 id 数字（向后兼容）
+  const paper = typeof filenameOrId === 'string'
+    ? PAST_PAPERS_DB.find(p => p.filename === filenameOrId)
+    : PAST_PAPERS_DB.find(p => p.id === filenameOrId);
   if (!paper || !paper.url) return;
   window.open(paper.url, '_blank');
 }
 
-function downloadPaperFile(id) {
-  const paper = PAST_PAPERS_DB.find(p => p.id === id);
+function downloadPaperFile(filenameOrId) {
+  // 支持 filename 字符串或 id 数字（向后兼容）
+  const paper = typeof filenameOrId === 'string'
+    ? PAST_PAPERS_DB.find(p => p.filename === filenameOrId)
+    : PAST_PAPERS_DB.find(p => p.id === filenameOrId);
   if (!paper || !paper.url) return;
-  // 用 fetch + blob 触发下载（而非新标签页打开）
-  fetch(paper.url)
-    .then(resp => resp.blob())
-    .then(blob => {
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = (paper.filename || 'paper') + '.pdf';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    })
-    .catch(() => {
-      // fallback: 新标签页打开
-      window.open(paper.url, '_blank');
-    });
+  // 直接用 <a download> 触发下载，避免 CORS 问题
+  const a = document.createElement('a');
+  a.href = paper.url;
+  a.download = (paper.filename || 'paper') + '.pdf';
+  a.target = '_blank';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }
 
-function downloadPaper(id) {
-  downloadPaperFile(id);
+function downloadPaper(filenameOrId) {
+  downloadPaperFile(filenameOrId);
 }
 
 function downloadSelectedPapers() {
@@ -2945,23 +2942,26 @@ function downloadSelectedPapers() {
     return;
   }
 
-  const ids = [...checked].map(cb => parseInt(cb.dataset.id));
-  const availIds = ids.filter(id => PAST_PAPERS_DB.find(p => p.id === id)?.available !== false);
+  const filenames = [...checked].map(cb => cb.dataset.filename);
+  const availFilenames = filenames.filter(fn => {
+    const p = PAST_PAPERS_DB.find(p => p.filename === fn);
+    return p && p.available !== false;
+  });
 
-  if (!availIds.length) {
+  if (!availFilenames.length) {
     showToast('Selected papers are not available');
     return;
   }
 
-  if (availIds.length > 5) {
-    if (!confirm('Download ' + availIds.length + ' PDFs? Allow pop-ups if your browser asks.')) return;
+  if (availFilenames.length > 5) {
+    if (!confirm('Download ' + availFilenames.length + ' PDFs? Allow pop-ups if your browser asks.')) return;
   }
 
-  availIds.forEach((id, i) => {
-    setTimeout(() => downloadPaperFile(id), i * 600);
+  availFilenames.forEach((fn, i) => {
+    setTimeout(() => downloadPaperFile(fn), i * 600);
   });
 
-  showToast('Downloading ' + availIds.length + ' PDF(s) — allow pop-ups if prompted');
+  showToast('Downloading ' + availFilenames.length + ' PDF(s) — allow pop-ups if prompted');
 }
 
 // ── PRINT STYLES ─────────────────────────────────────────────────────────────

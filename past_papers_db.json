@@ -9,7 +9,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_11.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 1
   },
   {
     "year": 2015,
@@ -21,7 +22,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_11.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 2
   },
   {
     "year": 2015,
@@ -33,7 +35,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_12.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 3
   },
   {
     "year": 2015,
@@ -45,7 +48,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_12.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 4
   },
   {
     "year": 2015,
@@ -57,7 +61,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_13.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 5
   },
   {
     "year": 2015,
@@ -69,7 +74,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_13.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 6
   },
   {
     "year": 2015,
@@ -81,7 +87,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_21.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 7
   },
   {
     "year": 2015,
@@ -93,7 +100,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_21.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 8
   },
   {
     "year": 2015,
@@ -105,7 +113,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_22.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 9
   },
   {
     "year": 2015,
@@ -117,7 +126,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_22.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 10
   },
   {
     "year": 2015,
@@ -129,7 +139,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_23.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 11
   },
   {
     "year": 2015,
@@ -141,7 +152,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_23.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 12
   },
   {
     "year": 2015,
@@ -153,7 +165,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_41.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 13
   },
   {
     "year": 2015,
@@ -165,7 +178,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_41.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 14
   },
   {
     "year": 2015,
@@ -177,7 +191,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_42.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 15
   },
   {
     "year": 2015,
@@ -189,7 +204,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_42.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 16
   },
   {
     "year": 2015,
@@ -201,7 +217,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_43.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 17
   },
   {
     "year": 2015,
@@ -213,7 +230,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_43.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 18
   },
   {
     "year": 2015,
@@ -225,7 +243,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_51.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 19
   },
   {
     "year": 2015,
@@ -237,7 +256,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_51.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 20
   },
   {
     "year": 2015,
@@ -249,7 +269,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_52.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 21
   },
   {
     "year": 2015,
@@ -261,7 +282,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_52.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 22
   },
   {
     "year": 2015,
@@ -273,7 +295,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_qp_53.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 23
   },
   {
     "year": 2015,
@@ -285,7 +308,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s15_ms_53.pdf",
     "title": "9701 Chemistry 2015 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 24
   },
   {
     "year": 2015,
@@ -297,7 +321,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_11.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 25
   },
   {
     "year": 2015,
@@ -309,7 +334,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_11.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 26
   },
   {
     "year": 2015,
@@ -321,7 +347,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_12.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 27
   },
   {
     "year": 2015,
@@ -333,7 +360,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_12.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 28
   },
   {
     "year": 2015,
@@ -345,7 +373,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_13.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 29
   },
   {
     "year": 2015,
@@ -357,7 +386,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_13.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 30
   },
   {
     "year": 2015,
@@ -369,7 +399,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_21.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 31
   },
   {
     "year": 2015,
@@ -381,7 +412,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_21.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 32
   },
   {
     "year": 2015,
@@ -393,7 +425,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_22.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 33
   },
   {
     "year": 2015,
@@ -405,7 +438,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_22.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 34
   },
   {
     "year": 2015,
@@ -417,7 +451,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_23.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 35
   },
   {
     "year": 2015,
@@ -429,7 +464,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_23.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 36
   },
   {
     "year": 2015,
@@ -441,7 +477,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_41.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 37
   },
   {
     "year": 2015,
@@ -453,7 +490,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_41.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 38
   },
   {
     "year": 2015,
@@ -465,7 +503,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_42.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 39
   },
   {
     "year": 2015,
@@ -477,7 +516,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_42.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 40
   },
   {
     "year": 2015,
@@ -489,7 +529,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_43.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 41
   },
   {
     "year": 2015,
@@ -501,7 +542,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_43.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 42
   },
   {
     "year": 2015,
@@ -513,7 +555,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_51.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 43
   },
   {
     "year": 2015,
@@ -525,7 +568,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_51.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 44
   },
   {
     "year": 2015,
@@ -537,7 +581,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_52.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 45
   },
   {
     "year": 2015,
@@ -549,7 +594,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_52.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 46
   },
   {
     "year": 2015,
@@ -561,7 +607,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_qp_53.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 47
   },
   {
     "year": 2015,
@@ -573,7 +620,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w15_ms_53.pdf",
     "title": "9701 Chemistry 2015 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 48
   },
   {
     "year": 2015,
@@ -585,7 +633,8 @@
     "url": "",
     "title": "9701 Chemistry 2015 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 49
   },
   {
     "year": 2015,
@@ -597,7 +646,8 @@
     "url": "",
     "title": "9701 Chemistry 2015 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 50
   },
   {
     "year": 2015,
@@ -609,7 +659,8 @@
     "url": "",
     "title": "9701 Chemistry 2015 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 51
   },
   {
     "year": 2015,
@@ -621,7 +672,8 @@
     "url": "",
     "title": "9701 Chemistry 2015 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 52
   },
   {
     "year": 2015,
@@ -633,7 +685,8 @@
     "url": "",
     "title": "9701 Chemistry 2015 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 53
   },
   {
     "year": 2015,
@@ -645,7 +698,8 @@
     "url": "",
     "title": "9701 Chemistry 2015 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 54
   },
   {
     "year": 2016,
@@ -657,7 +711,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_11.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 55
   },
   {
     "year": 2016,
@@ -669,7 +724,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_11.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 56
   },
   {
     "year": 2016,
@@ -681,7 +737,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_12.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 57
   },
   {
     "year": 2016,
@@ -693,7 +750,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_12.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 58
   },
   {
     "year": 2016,
@@ -705,7 +763,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_13.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 59
   },
   {
     "year": 2016,
@@ -717,7 +776,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_13.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 60
   },
   {
     "year": 2016,
@@ -729,7 +789,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_21.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 61
   },
   {
     "year": 2016,
@@ -741,7 +802,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_21.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 62
   },
   {
     "year": 2016,
@@ -753,7 +815,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_22.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 63
   },
   {
     "year": 2016,
@@ -765,7 +828,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_22.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 64
   },
   {
     "year": 2016,
@@ -777,7 +841,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_23.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 65
   },
   {
     "year": 2016,
@@ -789,7 +854,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_23.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 66
   },
   {
     "year": 2016,
@@ -801,7 +867,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_41.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 67
   },
   {
     "year": 2016,
@@ -813,7 +880,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_41.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 68
   },
   {
     "year": 2016,
@@ -825,7 +893,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_42.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 69
   },
   {
     "year": 2016,
@@ -837,7 +906,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_42.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 70
   },
   {
     "year": 2016,
@@ -849,7 +919,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_43.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 71
   },
   {
     "year": 2016,
@@ -861,7 +932,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_43.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 72
   },
   {
     "year": 2016,
@@ -873,7 +945,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_51.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 73
   },
   {
     "year": 2016,
@@ -885,7 +958,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_51.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 74
   },
   {
     "year": 2016,
@@ -897,7 +971,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_52.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 75
   },
   {
     "year": 2016,
@@ -909,7 +984,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_52.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 76
   },
   {
     "year": 2016,
@@ -921,7 +997,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_qp_53.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 77
   },
   {
     "year": 2016,
@@ -933,7 +1010,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s16_ms_53.pdf",
     "title": "9701 Chemistry 2016 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 78
   },
   {
     "year": 2016,
@@ -945,7 +1023,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_11.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 79
   },
   {
     "year": 2016,
@@ -957,7 +1036,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_11.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 80
   },
   {
     "year": 2016,
@@ -969,7 +1049,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_12.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 81
   },
   {
     "year": 2016,
@@ -981,7 +1062,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_12.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 82
   },
   {
     "year": 2016,
@@ -993,7 +1075,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_13.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 83
   },
   {
     "year": 2016,
@@ -1005,7 +1088,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_13.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 84
   },
   {
     "year": 2016,
@@ -1017,7 +1101,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_21.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 85
   },
   {
     "year": 2016,
@@ -1029,7 +1114,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_21.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 86
   },
   {
     "year": 2016,
@@ -1041,7 +1127,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_22.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 87
   },
   {
     "year": 2016,
@@ -1053,7 +1140,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_22.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 88
   },
   {
     "year": 2016,
@@ -1065,7 +1153,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_23.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 89
   },
   {
     "year": 2016,
@@ -1077,7 +1166,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_23.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 90
   },
   {
     "year": 2016,
@@ -1089,7 +1179,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_41.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 91
   },
   {
     "year": 2016,
@@ -1101,7 +1192,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_41.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 92
   },
   {
     "year": 2016,
@@ -1113,7 +1205,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_42.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 93
   },
   {
     "year": 2016,
@@ -1125,7 +1218,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_42.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 94
   },
   {
     "year": 2016,
@@ -1137,7 +1231,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_43.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 95
   },
   {
     "year": 2016,
@@ -1149,7 +1244,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_43.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 96
   },
   {
     "year": 2016,
@@ -1161,7 +1257,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_51.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 97
   },
   {
     "year": 2016,
@@ -1173,7 +1270,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_51.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 98
   },
   {
     "year": 2016,
@@ -1185,7 +1283,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_52.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 99
   },
   {
     "year": 2016,
@@ -1197,7 +1296,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_52.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 100
   },
   {
     "year": 2016,
@@ -1209,7 +1309,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_qp_53.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 101
   },
   {
     "year": 2016,
@@ -1221,7 +1322,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w16_ms_53.pdf",
     "title": "9701 Chemistry 2016 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 102
   },
   {
     "year": 2016,
@@ -1233,7 +1335,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m16_qp_12.pdf",
     "title": "9701 Chemistry 2016 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 103
   },
   {
     "year": 2016,
@@ -1245,7 +1348,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m16_ms_12.pdf",
     "title": "9701 Chemistry 2016 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 104
   },
   {
     "year": 2016,
@@ -1257,7 +1361,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m16_qp_22.pdf",
     "title": "9701 Chemistry 2016 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 105
   },
   {
     "year": 2016,
@@ -1269,7 +1374,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m16_ms_22.pdf",
     "title": "9701 Chemistry 2016 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 106
   },
   {
     "year": 2016,
@@ -1281,7 +1387,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m16_qp_42.pdf",
     "title": "9701 Chemistry 2016 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 107
   },
   {
     "year": 2016,
@@ -1293,7 +1400,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m16_ms_42.pdf",
     "title": "9701 Chemistry 2016 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 108
   },
   {
     "year": 2017,
@@ -1305,7 +1413,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_11.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 109
   },
   {
     "year": 2017,
@@ -1317,7 +1426,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_11.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 110
   },
   {
     "year": 2017,
@@ -1329,7 +1439,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_12.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 111
   },
   {
     "year": 2017,
@@ -1341,7 +1452,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_12.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 112
   },
   {
     "year": 2017,
@@ -1353,7 +1465,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_13.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 113
   },
   {
     "year": 2017,
@@ -1365,7 +1478,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_13.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 114
   },
   {
     "year": 2017,
@@ -1377,7 +1491,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_21.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 115
   },
   {
     "year": 2017,
@@ -1389,7 +1504,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_21.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 116
   },
   {
     "year": 2017,
@@ -1401,7 +1517,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_22.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 117
   },
   {
     "year": 2017,
@@ -1413,7 +1530,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_22.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 118
   },
   {
     "year": 2017,
@@ -1425,7 +1543,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_23.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 119
   },
   {
     "year": 2017,
@@ -1437,7 +1556,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_23.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 120
   },
   {
     "year": 2017,
@@ -1449,7 +1569,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_41.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 121
   },
   {
     "year": 2017,
@@ -1461,7 +1582,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_41.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 122
   },
   {
     "year": 2017,
@@ -1473,7 +1595,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_42.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 123
   },
   {
     "year": 2017,
@@ -1485,7 +1608,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_42.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 124
   },
   {
     "year": 2017,
@@ -1497,7 +1621,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_43.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 125
   },
   {
     "year": 2017,
@@ -1509,7 +1634,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_43.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 126
   },
   {
     "year": 2017,
@@ -1521,7 +1647,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_51.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 127
   },
   {
     "year": 2017,
@@ -1533,7 +1660,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_51.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 128
   },
   {
     "year": 2017,
@@ -1545,7 +1673,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_52.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 129
   },
   {
     "year": 2017,
@@ -1557,7 +1686,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_52.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 130
   },
   {
     "year": 2017,
@@ -1569,7 +1699,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_qp_53.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 131
   },
   {
     "year": 2017,
@@ -1581,7 +1712,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s17_ms_53.pdf",
     "title": "9701 Chemistry 2017 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 132
   },
   {
     "year": 2017,
@@ -1593,7 +1725,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_11.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 133
   },
   {
     "year": 2017,
@@ -1605,7 +1738,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_11.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 134
   },
   {
     "year": 2017,
@@ -1617,7 +1751,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_12.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 135
   },
   {
     "year": 2017,
@@ -1629,7 +1764,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_12.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 136
   },
   {
     "year": 2017,
@@ -1641,7 +1777,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_13.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 137
   },
   {
     "year": 2017,
@@ -1653,7 +1790,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_13.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 138
   },
   {
     "year": 2017,
@@ -1665,7 +1803,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_21.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 139
   },
   {
     "year": 2017,
@@ -1677,7 +1816,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_21.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 140
   },
   {
     "year": 2017,
@@ -1689,7 +1829,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_22.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 141
   },
   {
     "year": 2017,
@@ -1701,7 +1842,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_22.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 142
   },
   {
     "year": 2017,
@@ -1713,7 +1855,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_23.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 143
   },
   {
     "year": 2017,
@@ -1725,7 +1868,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_23.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 144
   },
   {
     "year": 2017,
@@ -1737,7 +1881,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_41.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 145
   },
   {
     "year": 2017,
@@ -1749,7 +1894,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_41.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 146
   },
   {
     "year": 2017,
@@ -1761,7 +1907,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_42.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 147
   },
   {
     "year": 2017,
@@ -1773,7 +1920,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_42.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 148
   },
   {
     "year": 2017,
@@ -1785,7 +1933,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_43.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 149
   },
   {
     "year": 2017,
@@ -1797,7 +1946,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_43.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 150
   },
   {
     "year": 2017,
@@ -1809,7 +1959,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_51.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 151
   },
   {
     "year": 2017,
@@ -1821,7 +1972,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_51.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 152
   },
   {
     "year": 2017,
@@ -1833,7 +1985,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_52.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 153
   },
   {
     "year": 2017,
@@ -1845,7 +1998,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_52.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 154
   },
   {
     "year": 2017,
@@ -1857,7 +2011,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_qp_53.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 155
   },
   {
     "year": 2017,
@@ -1869,7 +2024,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w17_ms_53.pdf",
     "title": "9701 Chemistry 2017 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 156
   },
   {
     "year": 2017,
@@ -1881,7 +2037,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m17_qp_12.pdf",
     "title": "9701 Chemistry 2017 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 157
   },
   {
     "year": 2017,
@@ -1893,7 +2050,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m17_ms_12.pdf",
     "title": "9701 Chemistry 2017 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 158
   },
   {
     "year": 2017,
@@ -1905,7 +2063,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m17_qp_22.pdf",
     "title": "9701 Chemistry 2017 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 159
   },
   {
     "year": 2017,
@@ -1917,7 +2076,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m17_ms_22.pdf",
     "title": "9701 Chemistry 2017 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 160
   },
   {
     "year": 2017,
@@ -1929,7 +2089,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m17_qp_42.pdf",
     "title": "9701 Chemistry 2017 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 161
   },
   {
     "year": 2017,
@@ -1941,7 +2102,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m17_ms_42.pdf",
     "title": "9701 Chemistry 2017 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 162
   },
   {
     "year": 2018,
@@ -1953,7 +2115,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_11.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 163
   },
   {
     "year": 2018,
@@ -1965,7 +2128,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_11.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 164
   },
   {
     "year": 2018,
@@ -1977,7 +2141,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_12.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 165
   },
   {
     "year": 2018,
@@ -1989,7 +2154,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_12.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 166
   },
   {
     "year": 2018,
@@ -2001,7 +2167,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_13.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 167
   },
   {
     "year": 2018,
@@ -2013,7 +2180,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_13.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 168
   },
   {
     "year": 2018,
@@ -2025,7 +2193,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_21.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 169
   },
   {
     "year": 2018,
@@ -2037,7 +2206,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_21.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 170
   },
   {
     "year": 2018,
@@ -2049,7 +2219,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_22.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 171
   },
   {
     "year": 2018,
@@ -2061,7 +2232,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_22.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 172
   },
   {
     "year": 2018,
@@ -2073,7 +2245,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_23.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 173
   },
   {
     "year": 2018,
@@ -2085,7 +2258,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_23.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 174
   },
   {
     "year": 2018,
@@ -2097,7 +2271,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_41.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 175
   },
   {
     "year": 2018,
@@ -2109,7 +2284,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_41.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 176
   },
   {
     "year": 2018,
@@ -2121,7 +2297,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_42.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 177
   },
   {
     "year": 2018,
@@ -2133,7 +2310,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_42.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 178
   },
   {
     "year": 2018,
@@ -2145,7 +2323,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_43.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 179
   },
   {
     "year": 2018,
@@ -2157,7 +2336,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_43.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 180
   },
   {
     "year": 2018,
@@ -2169,7 +2349,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_51.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 181
   },
   {
     "year": 2018,
@@ -2181,7 +2362,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_51.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 182
   },
   {
     "year": 2018,
@@ -2193,7 +2375,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_52.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 183
   },
   {
     "year": 2018,
@@ -2205,7 +2388,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_52.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 184
   },
   {
     "year": 2018,
@@ -2217,7 +2401,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_qp_53.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 185
   },
   {
     "year": 2018,
@@ -2229,7 +2414,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s18_ms_53.pdf",
     "title": "9701 Chemistry 2018 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 186
   },
   {
     "year": 2018,
@@ -2241,7 +2427,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_11.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 187
   },
   {
     "year": 2018,
@@ -2253,7 +2440,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_11.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 188
   },
   {
     "year": 2018,
@@ -2265,7 +2453,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_12.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 189
   },
   {
     "year": 2018,
@@ -2277,7 +2466,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_12.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 190
   },
   {
     "year": 2018,
@@ -2289,7 +2479,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_13.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 191
   },
   {
     "year": 2018,
@@ -2301,7 +2492,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_13.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 192
   },
   {
     "year": 2018,
@@ -2313,7 +2505,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_21.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 193
   },
   {
     "year": 2018,
@@ -2325,7 +2518,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_21.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 194
   },
   {
     "year": 2018,
@@ -2337,7 +2531,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_22.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 195
   },
   {
     "year": 2018,
@@ -2349,7 +2544,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_22.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 196
   },
   {
     "year": 2018,
@@ -2361,7 +2557,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_23.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 197
   },
   {
     "year": 2018,
@@ -2373,7 +2570,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_23.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 198
   },
   {
     "year": 2018,
@@ -2385,7 +2583,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_41.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 199
   },
   {
     "year": 2018,
@@ -2397,7 +2596,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_41.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 200
   },
   {
     "year": 2018,
@@ -2409,7 +2609,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_42.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 201
   },
   {
     "year": 2018,
@@ -2421,7 +2622,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_42.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 202
   },
   {
     "year": 2018,
@@ -2433,7 +2635,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_43.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 203
   },
   {
     "year": 2018,
@@ -2445,7 +2648,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_43.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 204
   },
   {
     "year": 2018,
@@ -2457,7 +2661,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_51.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 205
   },
   {
     "year": 2018,
@@ -2469,7 +2674,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_51.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 206
   },
   {
     "year": 2018,
@@ -2481,7 +2687,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_52.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 207
   },
   {
     "year": 2018,
@@ -2493,7 +2700,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_52.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 208
   },
   {
     "year": 2018,
@@ -2505,7 +2713,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_qp_53.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 209
   },
   {
     "year": 2018,
@@ -2517,7 +2726,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w18_ms_53.pdf",
     "title": "9701 Chemistry 2018 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 210
   },
   {
     "year": 2018,
@@ -2529,7 +2739,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m18_qp_12.pdf",
     "title": "9701 Chemistry 2018 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 211
   },
   {
     "year": 2018,
@@ -2541,7 +2752,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m18_ms_12.pdf",
     "title": "9701 Chemistry 2018 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 212
   },
   {
     "year": 2018,
@@ -2553,7 +2765,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m18_qp_22.pdf",
     "title": "9701 Chemistry 2018 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 213
   },
   {
     "year": 2018,
@@ -2565,7 +2778,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m18_ms_22.pdf",
     "title": "9701 Chemistry 2018 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 214
   },
   {
     "year": 2018,
@@ -2577,7 +2791,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m18_qp_42.pdf",
     "title": "9701 Chemistry 2018 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 215
   },
   {
     "year": 2018,
@@ -2589,7 +2804,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m18_ms_42.pdf",
     "title": "9701 Chemistry 2018 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 216
   },
   {
     "year": 2019,
@@ -2601,7 +2817,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_11.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 217
   },
   {
     "year": 2019,
@@ -2613,7 +2830,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_11.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 218
   },
   {
     "year": 2019,
@@ -2625,7 +2843,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_12.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 219
   },
   {
     "year": 2019,
@@ -2637,7 +2856,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_12.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 220
   },
   {
     "year": 2019,
@@ -2649,7 +2869,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_13.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 221
   },
   {
     "year": 2019,
@@ -2661,7 +2882,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_13.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 222
   },
   {
     "year": 2019,
@@ -2673,7 +2895,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_21.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 223
   },
   {
     "year": 2019,
@@ -2685,7 +2908,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_21.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 224
   },
   {
     "year": 2019,
@@ -2697,7 +2921,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_22.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 225
   },
   {
     "year": 2019,
@@ -2709,7 +2934,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_22.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 226
   },
   {
     "year": 2019,
@@ -2721,7 +2947,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_23.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 227
   },
   {
     "year": 2019,
@@ -2733,7 +2960,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_23.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 228
   },
   {
     "year": 2019,
@@ -2745,7 +2973,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_41.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 229
   },
   {
     "year": 2019,
@@ -2757,7 +2986,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_41.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 230
   },
   {
     "year": 2019,
@@ -2769,7 +2999,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_42.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 231
   },
   {
     "year": 2019,
@@ -2781,7 +3012,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_42.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 232
   },
   {
     "year": 2019,
@@ -2793,7 +3025,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_43.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 233
   },
   {
     "year": 2019,
@@ -2805,7 +3038,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_43.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 234
   },
   {
     "year": 2019,
@@ -2817,7 +3051,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_51.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 235
   },
   {
     "year": 2019,
@@ -2829,7 +3064,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_51.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 236
   },
   {
     "year": 2019,
@@ -2841,7 +3077,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_52.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 237
   },
   {
     "year": 2019,
@@ -2853,7 +3090,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_52.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 238
   },
   {
     "year": 2019,
@@ -2865,7 +3103,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_qp_53.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 239
   },
   {
     "year": 2019,
@@ -2877,7 +3116,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s19_ms_53.pdf",
     "title": "9701 Chemistry 2019 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 240
   },
   {
     "year": 2019,
@@ -2889,7 +3129,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_11.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 241
   },
   {
     "year": 2019,
@@ -2901,7 +3142,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_11.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 242
   },
   {
     "year": 2019,
@@ -2913,7 +3155,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_12.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 243
   },
   {
     "year": 2019,
@@ -2925,7 +3168,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_12.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 244
   },
   {
     "year": 2019,
@@ -2937,7 +3181,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_13.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 245
   },
   {
     "year": 2019,
@@ -2949,7 +3194,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_13.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 246
   },
   {
     "year": 2019,
@@ -2961,7 +3207,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_21.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 247
   },
   {
     "year": 2019,
@@ -2973,7 +3220,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_21.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 248
   },
   {
     "year": 2019,
@@ -2985,7 +3233,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_22.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 249
   },
   {
     "year": 2019,
@@ -2997,7 +3246,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_22.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 250
   },
   {
     "year": 2019,
@@ -3009,7 +3259,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_23.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 251
   },
   {
     "year": 2019,
@@ -3021,7 +3272,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_23.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 252
   },
   {
     "year": 2019,
@@ -3033,7 +3285,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_41.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 253
   },
   {
     "year": 2019,
@@ -3045,7 +3298,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_41.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 254
   },
   {
     "year": 2019,
@@ -3057,7 +3311,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_42.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 255
   },
   {
     "year": 2019,
@@ -3069,7 +3324,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_42.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 256
   },
   {
     "year": 2019,
@@ -3081,7 +3337,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_43.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 257
   },
   {
     "year": 2019,
@@ -3093,7 +3350,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_43.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 258
   },
   {
     "year": 2019,
@@ -3105,7 +3363,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_51.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 259
   },
   {
     "year": 2019,
@@ -3117,7 +3376,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_51.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 260
   },
   {
     "year": 2019,
@@ -3129,7 +3389,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_52.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 261
   },
   {
     "year": 2019,
@@ -3141,7 +3402,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_52.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 262
   },
   {
     "year": 2019,
@@ -3153,7 +3415,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_qp_53.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 263
   },
   {
     "year": 2019,
@@ -3165,7 +3428,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w19_ms_53.pdf",
     "title": "9701 Chemistry 2019 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 264
   },
   {
     "year": 2019,
@@ -3177,7 +3441,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m19_qp_12.pdf",
     "title": "9701 Chemistry 2019 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 265
   },
   {
     "year": 2019,
@@ -3189,7 +3454,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m19_ms_12.pdf",
     "title": "9701 Chemistry 2019 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 266
   },
   {
     "year": 2019,
@@ -3201,7 +3467,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m19_qp_22.pdf",
     "title": "9701 Chemistry 2019 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 267
   },
   {
     "year": 2019,
@@ -3213,7 +3480,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m19_ms_22.pdf",
     "title": "9701 Chemistry 2019 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 268
   },
   {
     "year": 2019,
@@ -3225,7 +3493,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m19_qp_42.pdf",
     "title": "9701 Chemistry 2019 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 269
   },
   {
     "year": 2019,
@@ -3237,7 +3506,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m19_ms_42.pdf",
     "title": "9701 Chemistry 2019 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 270
   },
   {
     "year": 2020,
@@ -3249,7 +3519,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_11.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 271
   },
   {
     "year": 2020,
@@ -3261,7 +3532,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_11.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 272
   },
   {
     "year": 2020,
@@ -3273,7 +3545,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_12.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 273
   },
   {
     "year": 2020,
@@ -3285,7 +3558,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_12.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 274
   },
   {
     "year": 2020,
@@ -3297,7 +3571,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_13.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 275
   },
   {
     "year": 2020,
@@ -3309,7 +3584,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_13.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 276
   },
   {
     "year": 2020,
@@ -3321,7 +3597,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_21.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 277
   },
   {
     "year": 2020,
@@ -3333,7 +3610,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_21.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 278
   },
   {
     "year": 2020,
@@ -3345,7 +3623,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_22.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 279
   },
   {
     "year": 2020,
@@ -3357,7 +3636,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_22.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 280
   },
   {
     "year": 2020,
@@ -3369,7 +3649,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_23.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 281
   },
   {
     "year": 2020,
@@ -3381,7 +3662,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_23.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 282
   },
   {
     "year": 2020,
@@ -3393,7 +3675,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_41.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 283
   },
   {
     "year": 2020,
@@ -3405,7 +3688,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_41.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 284
   },
   {
     "year": 2020,
@@ -3417,7 +3701,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_42.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 285
   },
   {
     "year": 2020,
@@ -3429,7 +3714,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_42.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 286
   },
   {
     "year": 2020,
@@ -3441,7 +3727,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_43.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 287
   },
   {
     "year": 2020,
@@ -3453,7 +3740,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_43.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 288
   },
   {
     "year": 2020,
@@ -3465,7 +3753,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_51.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 289
   },
   {
     "year": 2020,
@@ -3477,7 +3766,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_51.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 290
   },
   {
     "year": 2020,
@@ -3489,7 +3779,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_52.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 291
   },
   {
     "year": 2020,
@@ -3501,7 +3792,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_52.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 292
   },
   {
     "year": 2020,
@@ -3513,7 +3805,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_qp_53.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 293
   },
   {
     "year": 2020,
@@ -3525,7 +3818,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s20_ms_53.pdf",
     "title": "9701 Chemistry 2020 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 294
   },
   {
     "year": 2020,
@@ -3537,7 +3831,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_11.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 295
   },
   {
     "year": 2020,
@@ -3549,7 +3844,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_11.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 296
   },
   {
     "year": 2020,
@@ -3561,7 +3857,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_12.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 297
   },
   {
     "year": 2020,
@@ -3573,7 +3870,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_12.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 298
   },
   {
     "year": 2020,
@@ -3585,7 +3883,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_13.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 299
   },
   {
     "year": 2020,
@@ -3597,7 +3896,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_13.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 300
   },
   {
     "year": 2020,
@@ -3609,7 +3909,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_21.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 301
   },
   {
     "year": 2020,
@@ -3621,7 +3922,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_21.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 302
   },
   {
     "year": 2020,
@@ -3633,7 +3935,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_22.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 303
   },
   {
     "year": 2020,
@@ -3645,7 +3948,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_22.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 304
   },
   {
     "year": 2020,
@@ -3657,7 +3961,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_23.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 305
   },
   {
     "year": 2020,
@@ -3669,7 +3974,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_23.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 306
   },
   {
     "year": 2020,
@@ -3681,7 +3987,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_41.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 307
   },
   {
     "year": 2020,
@@ -3693,7 +4000,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_41.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 308
   },
   {
     "year": 2020,
@@ -3705,7 +4013,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_42.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 309
   },
   {
     "year": 2020,
@@ -3717,7 +4026,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_42.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 310
   },
   {
     "year": 2020,
@@ -3729,7 +4039,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_43.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 311
   },
   {
     "year": 2020,
@@ -3741,7 +4052,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_43.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 312
   },
   {
     "year": 2020,
@@ -3753,7 +4065,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_51.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 313
   },
   {
     "year": 2020,
@@ -3765,7 +4078,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_51.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 314
   },
   {
     "year": 2020,
@@ -3777,7 +4091,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_52.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 315
   },
   {
     "year": 2020,
@@ -3789,7 +4104,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_52.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 316
   },
   {
     "year": 2020,
@@ -3801,7 +4117,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_qp_53.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 317
   },
   {
     "year": 2020,
@@ -3813,7 +4130,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w20_ms_53.pdf",
     "title": "9701 Chemistry 2020 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 318
   },
   {
     "year": 2020,
@@ -3825,7 +4143,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m20_qp_12.pdf",
     "title": "9701 Chemistry 2020 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 319
   },
   {
     "year": 2020,
@@ -3837,7 +4156,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m20_ms_12.pdf",
     "title": "9701 Chemistry 2020 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 320
   },
   {
     "year": 2020,
@@ -3849,7 +4169,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m20_qp_22.pdf",
     "title": "9701 Chemistry 2020 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 321
   },
   {
     "year": 2020,
@@ -3861,7 +4182,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m20_ms_22.pdf",
     "title": "9701 Chemistry 2020 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 322
   },
   {
     "year": 2020,
@@ -3873,7 +4195,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m20_qp_42.pdf",
     "title": "9701 Chemistry 2020 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 323
   },
   {
     "year": 2020,
@@ -3885,7 +4208,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m20_ms_42.pdf",
     "title": "9701 Chemistry 2020 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 324
   },
   {
     "year": 2021,
@@ -3897,7 +4221,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_11.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 325
   },
   {
     "year": 2021,
@@ -3909,7 +4234,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_11.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 326
   },
   {
     "year": 2021,
@@ -3921,7 +4247,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_12.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 327
   },
   {
     "year": 2021,
@@ -3933,7 +4260,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_12.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 328
   },
   {
     "year": 2021,
@@ -3945,7 +4273,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_13.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 329
   },
   {
     "year": 2021,
@@ -3957,7 +4286,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_13.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 330
   },
   {
     "year": 2021,
@@ -3969,7 +4299,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_21.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 331
   },
   {
     "year": 2021,
@@ -3981,7 +4312,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_21.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 332
   },
   {
     "year": 2021,
@@ -3993,7 +4325,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_22.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 333
   },
   {
     "year": 2021,
@@ -4005,7 +4338,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_22.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 334
   },
   {
     "year": 2021,
@@ -4017,7 +4351,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_23.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 335
   },
   {
     "year": 2021,
@@ -4029,7 +4364,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_23.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 336
   },
   {
     "year": 2021,
@@ -4041,7 +4377,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_41.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 337
   },
   {
     "year": 2021,
@@ -4053,7 +4390,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_41.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 338
   },
   {
     "year": 2021,
@@ -4065,7 +4403,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_42.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 339
   },
   {
     "year": 2021,
@@ -4077,7 +4416,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_42.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 340
   },
   {
     "year": 2021,
@@ -4089,7 +4429,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_43.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 341
   },
   {
     "year": 2021,
@@ -4101,7 +4442,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_43.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 342
   },
   {
     "year": 2021,
@@ -4113,7 +4455,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_51.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 343
   },
   {
     "year": 2021,
@@ -4125,7 +4468,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_51.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 344
   },
   {
     "year": 2021,
@@ -4137,7 +4481,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_52.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 345
   },
   {
     "year": 2021,
@@ -4149,7 +4494,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_52.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 346
   },
   {
     "year": 2021,
@@ -4161,7 +4507,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_qp_53.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 347
   },
   {
     "year": 2021,
@@ -4173,7 +4520,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s21_ms_53.pdf",
     "title": "9701 Chemistry 2021 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 348
   },
   {
     "year": 2021,
@@ -4185,7 +4533,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_11.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 349
   },
   {
     "year": 2021,
@@ -4197,7 +4546,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_11.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 350
   },
   {
     "year": 2021,
@@ -4209,7 +4559,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_12.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 351
   },
   {
     "year": 2021,
@@ -4221,7 +4572,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_12.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 352
   },
   {
     "year": 2021,
@@ -4233,7 +4585,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_13.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 353
   },
   {
     "year": 2021,
@@ -4245,7 +4598,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_13.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 354
   },
   {
     "year": 2021,
@@ -4257,7 +4611,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_21.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 355
   },
   {
     "year": 2021,
@@ -4269,7 +4624,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_21.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 356
   },
   {
     "year": 2021,
@@ -4281,7 +4637,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_22.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 357
   },
   {
     "year": 2021,
@@ -4293,7 +4650,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_22.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 358
   },
   {
     "year": 2021,
@@ -4305,7 +4663,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_23.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 359
   },
   {
     "year": 2021,
@@ -4317,7 +4676,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_23.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 360
   },
   {
     "year": 2021,
@@ -4329,7 +4689,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_41.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 361
   },
   {
     "year": 2021,
@@ -4341,7 +4702,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_41.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 362
   },
   {
     "year": 2021,
@@ -4353,7 +4715,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_42.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 363
   },
   {
     "year": 2021,
@@ -4365,7 +4728,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_42.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 364
   },
   {
     "year": 2021,
@@ -4377,7 +4741,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_43.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 365
   },
   {
     "year": 2021,
@@ -4389,7 +4754,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_43.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 366
   },
   {
     "year": 2021,
@@ -4401,7 +4767,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_51.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 367
   },
   {
     "year": 2021,
@@ -4413,7 +4780,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_51.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 368
   },
   {
     "year": 2021,
@@ -4425,7 +4793,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_52.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 369
   },
   {
     "year": 2021,
@@ -4437,7 +4806,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_52.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 370
   },
   {
     "year": 2021,
@@ -4449,7 +4819,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_qp_53.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 371
   },
   {
     "year": 2021,
@@ -4461,7 +4832,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w21_ms_53.pdf",
     "title": "9701 Chemistry 2021 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 372
   },
   {
     "year": 2021,
@@ -4473,7 +4845,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m21_qp_12.pdf",
     "title": "9701 Chemistry 2021 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 373
   },
   {
     "year": 2021,
@@ -4485,7 +4858,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m21_ms_12.pdf",
     "title": "9701 Chemistry 2021 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 374
   },
   {
     "year": 2021,
@@ -4497,7 +4871,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m21_qp_22.pdf",
     "title": "9701 Chemistry 2021 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 375
   },
   {
     "year": 2021,
@@ -4509,7 +4884,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m21_ms_22.pdf",
     "title": "9701 Chemistry 2021 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 376
   },
   {
     "year": 2021,
@@ -4521,7 +4897,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m21_qp_42.pdf",
     "title": "9701 Chemistry 2021 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 377
   },
   {
     "year": 2021,
@@ -4533,7 +4910,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m21_ms_42.pdf",
     "title": "9701 Chemistry 2021 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 378
   },
   {
     "year": 2022,
@@ -4545,7 +4923,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_11.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 379
   },
   {
     "year": 2022,
@@ -4557,7 +4936,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_11.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 380
   },
   {
     "year": 2022,
@@ -4569,7 +4949,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_12.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 381
   },
   {
     "year": 2022,
@@ -4581,7 +4962,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_12.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 382
   },
   {
     "year": 2022,
@@ -4593,7 +4975,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_13.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 383
   },
   {
     "year": 2022,
@@ -4605,7 +4988,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_13.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 384
   },
   {
     "year": 2022,
@@ -4617,7 +5001,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_21.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 385
   },
   {
     "year": 2022,
@@ -4629,7 +5014,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_21.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 386
   },
   {
     "year": 2022,
@@ -4641,7 +5027,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_22.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 387
   },
   {
     "year": 2022,
@@ -4653,7 +5040,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_22.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 388
   },
   {
     "year": 2022,
@@ -4665,7 +5053,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_23.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 389
   },
   {
     "year": 2022,
@@ -4677,7 +5066,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_23.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 390
   },
   {
     "year": 2022,
@@ -4689,7 +5079,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_41.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 391
   },
   {
     "year": 2022,
@@ -4701,7 +5092,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_41.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 392
   },
   {
     "year": 2022,
@@ -4713,7 +5105,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_42.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 393
   },
   {
     "year": 2022,
@@ -4725,7 +5118,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_42.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 394
   },
   {
     "year": 2022,
@@ -4737,7 +5131,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_43.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 395
   },
   {
     "year": 2022,
@@ -4749,7 +5144,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_43.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 396
   },
   {
     "year": 2022,
@@ -4761,7 +5157,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_51.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 397
   },
   {
     "year": 2022,
@@ -4773,7 +5170,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_51.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 398
   },
   {
     "year": 2022,
@@ -4785,7 +5183,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_52.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 399
   },
   {
     "year": 2022,
@@ -4797,7 +5196,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_52.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 400
   },
   {
     "year": 2022,
@@ -4809,7 +5209,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_qp_53.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 401
   },
   {
     "year": 2022,
@@ -4821,7 +5222,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s22_ms_53.pdf",
     "title": "9701 Chemistry 2022 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 402
   },
   {
     "year": 2022,
@@ -4833,7 +5235,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_11.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 403
   },
   {
     "year": 2022,
@@ -4845,7 +5248,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_11.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 404
   },
   {
     "year": 2022,
@@ -4857,7 +5261,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_12.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 405
   },
   {
     "year": 2022,
@@ -4869,7 +5274,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_12.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 406
   },
   {
     "year": 2022,
@@ -4881,7 +5287,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_13.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 407
   },
   {
     "year": 2022,
@@ -4893,7 +5300,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_13.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 408
   },
   {
     "year": 2022,
@@ -4905,7 +5313,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_21.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 409
   },
   {
     "year": 2022,
@@ -4917,7 +5326,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_21.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 410
   },
   {
     "year": 2022,
@@ -4929,7 +5339,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_22.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 411
   },
   {
     "year": 2022,
@@ -4941,7 +5352,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_22.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 412
   },
   {
     "year": 2022,
@@ -4953,7 +5365,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_23.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 413
   },
   {
     "year": 2022,
@@ -4965,7 +5378,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_23.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 414
   },
   {
     "year": 2022,
@@ -4977,7 +5391,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_41.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 415
   },
   {
     "year": 2022,
@@ -4989,7 +5404,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_41.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 416
   },
   {
     "year": 2022,
@@ -5001,7 +5417,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_42.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 417
   },
   {
     "year": 2022,
@@ -5013,7 +5430,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_42.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 418
   },
   {
     "year": 2022,
@@ -5025,7 +5443,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_43.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 419
   },
   {
     "year": 2022,
@@ -5037,7 +5456,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_43.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 420
   },
   {
     "year": 2022,
@@ -5049,7 +5469,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_51.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 421
   },
   {
     "year": 2022,
@@ -5061,7 +5482,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_51.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 422
   },
   {
     "year": 2022,
@@ -5073,7 +5495,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_52.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 423
   },
   {
     "year": 2022,
@@ -5085,7 +5508,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_52.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 424
   },
   {
     "year": 2022,
@@ -5097,7 +5521,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_qp_53.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 425
   },
   {
     "year": 2022,
@@ -5109,7 +5534,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w22_ms_53.pdf",
     "title": "9701 Chemistry 2022 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 426
   },
   {
     "year": 2022,
@@ -5121,7 +5547,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m22_qp_12.pdf",
     "title": "9701 Chemistry 2022 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 427
   },
   {
     "year": 2022,
@@ -5133,7 +5560,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m22_ms_12.pdf",
     "title": "9701 Chemistry 2022 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 428
   },
   {
     "year": 2022,
@@ -5145,7 +5573,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m22_qp_22.pdf",
     "title": "9701 Chemistry 2022 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 429
   },
   {
     "year": 2022,
@@ -5157,7 +5586,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m22_ms_22.pdf",
     "title": "9701 Chemistry 2022 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 430
   },
   {
     "year": 2022,
@@ -5169,7 +5599,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m22_qp_42.pdf",
     "title": "9701 Chemistry 2022 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 431
   },
   {
     "year": 2022,
@@ -5181,7 +5612,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m22_ms_42.pdf",
     "title": "9701 Chemistry 2022 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 432
   },
   {
     "year": 2023,
@@ -5193,7 +5625,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_11.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 433
   },
   {
     "year": 2023,
@@ -5205,7 +5638,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_11.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 434
   },
   {
     "year": 2023,
@@ -5217,7 +5651,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_12.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 435
   },
   {
     "year": 2023,
@@ -5229,7 +5664,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_12.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 436
   },
   {
     "year": 2023,
@@ -5241,7 +5677,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_13.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 437
   },
   {
     "year": 2023,
@@ -5253,7 +5690,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_13.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 438
   },
   {
     "year": 2023,
@@ -5265,7 +5703,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_21.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 439
   },
   {
     "year": 2023,
@@ -5277,7 +5716,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_21.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 440
   },
   {
     "year": 2023,
@@ -5289,7 +5729,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_22.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 441
   },
   {
     "year": 2023,
@@ -5301,7 +5742,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_22.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 442
   },
   {
     "year": 2023,
@@ -5313,7 +5755,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_23.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 443
   },
   {
     "year": 2023,
@@ -5325,7 +5768,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_23.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 444
   },
   {
     "year": 2023,
@@ -5337,7 +5781,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_41.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 445
   },
   {
     "year": 2023,
@@ -5349,7 +5794,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_41.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 446
   },
   {
     "year": 2023,
@@ -5361,7 +5807,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_42.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 447
   },
   {
     "year": 2023,
@@ -5373,7 +5820,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_42.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 448
   },
   {
     "year": 2023,
@@ -5385,7 +5833,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_43.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 449
   },
   {
     "year": 2023,
@@ -5397,7 +5846,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_43.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 450
   },
   {
     "year": 2023,
@@ -5409,7 +5859,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_51.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 451
   },
   {
     "year": 2023,
@@ -5421,7 +5872,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_51.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 452
   },
   {
     "year": 2023,
@@ -5433,7 +5885,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_52.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 453
   },
   {
     "year": 2023,
@@ -5445,7 +5898,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_52.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 454
   },
   {
     "year": 2023,
@@ -5457,7 +5911,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_qp_53.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 455
   },
   {
     "year": 2023,
@@ -5469,7 +5924,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s23_ms_53.pdf",
     "title": "9701 Chemistry 2023 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 456
   },
   {
     "year": 2023,
@@ -5481,7 +5937,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_11.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 457
   },
   {
     "year": 2023,
@@ -5493,7 +5950,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_11.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 458
   },
   {
     "year": 2023,
@@ -5505,7 +5963,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_12.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 459
   },
   {
     "year": 2023,
@@ -5517,7 +5976,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_12.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 460
   },
   {
     "year": 2023,
@@ -5529,7 +5989,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_13.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 461
   },
   {
     "year": 2023,
@@ -5541,7 +6002,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_13.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 462
   },
   {
     "year": 2023,
@@ -5553,7 +6015,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_21.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 463
   },
   {
     "year": 2023,
@@ -5565,7 +6028,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_21.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 464
   },
   {
     "year": 2023,
@@ -5577,7 +6041,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_22.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 465
   },
   {
     "year": 2023,
@@ -5589,7 +6054,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_22.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 466
   },
   {
     "year": 2023,
@@ -5601,7 +6067,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_23.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 467
   },
   {
     "year": 2023,
@@ -5613,7 +6080,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_23.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 468
   },
   {
     "year": 2023,
@@ -5625,7 +6093,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_41.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 469
   },
   {
     "year": 2023,
@@ -5637,7 +6106,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_41.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 470
   },
   {
     "year": 2023,
@@ -5649,7 +6119,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_42.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 471
   },
   {
     "year": 2023,
@@ -5661,7 +6132,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_42.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 472
   },
   {
     "year": 2023,
@@ -5673,7 +6145,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_43.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 473
   },
   {
     "year": 2023,
@@ -5685,7 +6158,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_43.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 474
   },
   {
     "year": 2023,
@@ -5697,7 +6171,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_51.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 475
   },
   {
     "year": 2023,
@@ -5709,7 +6184,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_51.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 476
   },
   {
     "year": 2023,
@@ -5721,7 +6197,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_52.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 477
   },
   {
     "year": 2023,
@@ -5733,7 +6210,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_52.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 478
   },
   {
     "year": 2023,
@@ -5745,7 +6223,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_qp_53.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 479
   },
   {
     "year": 2023,
@@ -5757,7 +6236,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w23_ms_53.pdf",
     "title": "9701 Chemistry 2023 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 480
   },
   {
     "year": 2023,
@@ -5769,7 +6249,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m23_qp_12.pdf",
     "title": "9701 Chemistry 2023 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 481
   },
   {
     "year": 2023,
@@ -5781,7 +6262,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m23_ms_12.pdf",
     "title": "9701 Chemistry 2023 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 482
   },
   {
     "year": 2023,
@@ -5793,7 +6275,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m23_qp_22.pdf",
     "title": "9701 Chemistry 2023 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 483
   },
   {
     "year": 2023,
@@ -5805,7 +6288,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m23_ms_22.pdf",
     "title": "9701 Chemistry 2023 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 484
   },
   {
     "year": 2023,
@@ -5817,7 +6301,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m23_qp_42.pdf",
     "title": "9701 Chemistry 2023 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 485
   },
   {
     "year": 2023,
@@ -5829,7 +6314,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_m23_ms_42.pdf",
     "title": "9701 Chemistry 2023 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": true
+    "available": true,
+    "id": 486
   },
   {
     "year": 2024,
@@ -5841,7 +6327,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_11.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 11 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 487
   },
   {
     "year": 2024,
@@ -5853,7 +6340,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_11.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 11 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 488
   },
   {
     "year": 2024,
@@ -5865,7 +6353,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_12.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 12 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 489
   },
   {
     "year": 2024,
@@ -5877,7 +6366,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_12.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 12 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 490
   },
   {
     "year": 2024,
@@ -5889,7 +6379,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_13.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 13 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 491
   },
   {
     "year": 2024,
@@ -5901,7 +6392,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_13.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 13 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 492
   },
   {
     "year": 2024,
@@ -5913,7 +6405,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_21.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 21 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 493
   },
   {
     "year": 2024,
@@ -5925,7 +6418,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_21.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 21 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 494
   },
   {
     "year": 2024,
@@ -5937,7 +6431,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_22.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 22 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 495
   },
   {
     "year": 2024,
@@ -5949,7 +6444,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_22.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 22 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 496
   },
   {
     "year": 2024,
@@ -5961,7 +6457,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_23.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 23 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 497
   },
   {
     "year": 2024,
@@ -5973,7 +6470,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_23.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 23 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 498
   },
   {
     "year": 2024,
@@ -5985,7 +6483,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_41.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 41 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 499
   },
   {
     "year": 2024,
@@ -5997,7 +6496,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_41.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 41 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 500
   },
   {
     "year": 2024,
@@ -6009,7 +6509,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_42.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 42 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 501
   },
   {
     "year": 2024,
@@ -6021,7 +6522,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_42.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 42 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 502
   },
   {
     "year": 2024,
@@ -6033,7 +6535,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_43.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 43 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 503
   },
   {
     "year": 2024,
@@ -6045,7 +6548,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_43.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 43 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 504
   },
   {
     "year": 2024,
@@ -6057,7 +6561,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_51.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 51 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 505
   },
   {
     "year": 2024,
@@ -6069,7 +6574,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_51.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 51 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 506
   },
   {
     "year": 2024,
@@ -6081,7 +6587,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_52.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 52 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 507
   },
   {
     "year": 2024,
@@ -6093,7 +6600,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_52.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 52 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 508
   },
   {
     "year": 2024,
@@ -6105,7 +6613,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_qp_53.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 53 QP",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 509
   },
   {
     "year": 2024,
@@ -6117,7 +6626,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_s24_ms_53.pdf",
     "title": "9701 Chemistry 2024 May/June Paper 53 MS",
     "season": "May/June",
-    "available": true
+    "available": true,
+    "id": 510
   },
   {
     "year": 2024,
@@ -6129,7 +6639,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_11.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 11 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 511
   },
   {
     "year": 2024,
@@ -6141,7 +6652,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_11.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 11 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 512
   },
   {
     "year": 2024,
@@ -6153,7 +6665,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_12.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 12 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 513
   },
   {
     "year": 2024,
@@ -6165,7 +6678,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_12.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 12 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 514
   },
   {
     "year": 2024,
@@ -6177,7 +6691,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_13.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 13 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 515
   },
   {
     "year": 2024,
@@ -6189,7 +6704,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_13.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 13 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 516
   },
   {
     "year": 2024,
@@ -6201,7 +6717,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_21.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 21 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 517
   },
   {
     "year": 2024,
@@ -6213,7 +6730,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_21.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 21 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 518
   },
   {
     "year": 2024,
@@ -6225,7 +6743,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_22.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 22 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 519
   },
   {
     "year": 2024,
@@ -6237,7 +6756,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_22.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 22 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 520
   },
   {
     "year": 2024,
@@ -6249,7 +6769,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_23.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 23 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 521
   },
   {
     "year": 2024,
@@ -6261,7 +6782,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_23.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 23 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 522
   },
   {
     "year": 2024,
@@ -6273,7 +6795,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_41.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 41 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 523
   },
   {
     "year": 2024,
@@ -6285,7 +6808,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_41.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 41 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 524
   },
   {
     "year": 2024,
@@ -6297,7 +6821,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_42.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 42 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 525
   },
   {
     "year": 2024,
@@ -6309,7 +6834,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_42.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 42 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 526
   },
   {
     "year": 2024,
@@ -6321,7 +6847,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_43.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 43 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 527
   },
   {
     "year": 2024,
@@ -6333,7 +6860,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_43.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 43 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 528
   },
   {
     "year": 2024,
@@ -6345,7 +6873,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_51.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 51 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 529
   },
   {
     "year": 2024,
@@ -6357,7 +6886,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_51.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 51 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 530
   },
   {
     "year": 2024,
@@ -6369,7 +6899,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_52.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 52 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 531
   },
   {
     "year": 2024,
@@ -6381,7 +6912,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_52.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 52 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 532
   },
   {
     "year": 2024,
@@ -6393,7 +6925,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_qp_53.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 53 QP",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 533
   },
   {
     "year": 2024,
@@ -6405,7 +6938,8 @@
     "url": "https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Chemistry%20(9701)/9701_w24_ms_53.pdf",
     "title": "9701 Chemistry 2024 Oct/Nov Paper 53 MS",
     "season": "Oct/Nov",
-    "available": true
+    "available": true,
+    "id": 534
   },
   {
     "year": 2024,
@@ -6417,7 +6951,8 @@
     "url": "",
     "title": "9701 Chemistry 2024 Feb/Mar Paper 12 QP",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 535
   },
   {
     "year": 2024,
@@ -6429,7 +6964,8 @@
     "url": "",
     "title": "9701 Chemistry 2024 Feb/Mar Paper 12 MS",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 536
   },
   {
     "year": 2024,
@@ -6441,7 +6977,8 @@
     "url": "",
     "title": "9701 Chemistry 2024 Feb/Mar Paper 22 QP",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 537
   },
   {
     "year": 2024,
@@ -6453,7 +6990,8 @@
     "url": "",
     "title": "9701 Chemistry 2024 Feb/Mar Paper 22 MS",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 538
   },
   {
     "year": 2024,
@@ -6465,7 +7003,8 @@
     "url": "",
     "title": "9701 Chemistry 2024 Feb/Mar Paper 42 QP",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 539
   },
   {
     "year": 2024,
@@ -6477,6 +7016,7 @@
     "url": "",
     "title": "9701 Chemistry 2024 Feb/Mar Paper 42 MS",
     "season": "Feb/Mar",
-    "available": false
+    "available": false,
+    "id": 540
   }
 ]
