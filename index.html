@@ -3308,7 +3308,7 @@ function renderKnowMain() {
   let points = data.points || [];
   if (knowSearchQ.trim()) {
     const q = knowSearchQ.toLowerCase();
-    points = points.filter(p => p.topic.toLowerCase().includes(q) || p.content.toLowerCase().includes(q) || (p.exam_tip||'').toLowerCase().includes(q));
+    points = points.filter(p => (p.title||'').toLowerCase().includes(q) || (p.content||'').toLowerCase().includes(q) || (p.exam_tip||'').toLowerCase().includes(q));
   }
 
   let html = `<div class="study-toolbar">
@@ -3331,7 +3331,7 @@ function renderKnowMain() {
     points.forEach((p, i) => {
       const isExp = (knowExpandedId === i || knowExpandAllMode);
       // highlight search
-      let topicH = p.topic;
+      let topicH = p.title || '';
       if (knowSearchQ.trim()) {
         const re = new RegExp('(' + knowSearchQ.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'gi');
         topicH = topicH.replace(re, '<mark>$1</mark>');
@@ -3494,7 +3494,7 @@ function buildKnowHtml(title) {
   let points = data.points || [];
   if (knowSearchQ.trim()) {
     const q = knowSearchQ.toLowerCase();
-    points = points.filter(p => p.topic.toLowerCase().includes(q) || p.content.toLowerCase().includes(q));
+    points = points.filter(p => (p.title||'').toLowerCase().includes(q) || (p.content||'').toLowerCase().includes(q));
   }
   const fmtHtml = (t) => {
     if (!t) return '';
@@ -3517,7 +3517,7 @@ function buildKnowHtml(title) {
   };
   let sections = points.map((p,i) => `
     <div style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:14px;overflow:hidden;page-break-inside:avoid">
-      <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-weight:700;padding:10px 14px;font-size:13px">${i+1}. ${p.topic}</div>
+      <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-weight:700;padding:10px 14px;font-size:13px">${i+1}. ${p.title||''}</div>
       <div style="padding:12px 14px;background:#fafafa;font-size:12.5px;line-height:1.7;color:#374151;border-bottom:1px solid #f1f5f9">${fmtHtml(p.content)}</div>
       ${p.exam_tip ? `<div style="padding:10px 14px;background:#fffbeb;border-left:4px solid #f59e0b;font-size:12px;color:#92400e"><strong>💡 Exam Tip:</strong><br>${fmtHtml(p.exam_tip)}</div>` : ''}
       ${p.common_q ? `<div style="padding:10px 14px;background:#f0fdf4;border-left:4px solid #22c55e;font-size:12px">
