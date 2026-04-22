@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>chem9701 — Student Portal</title>
+<style>
+/* ── Reset & Base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px;scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f4f8;color:#1e293b;min-height:100vh}
+
+/* ── Login ── */
+.login-wrap{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+.login-box{background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.1);padding:40px 36px;width:100%;max-width:380px}
+.login-box h1{font-size:1.5rem;color:#1e293b;margin-bottom:4px}
+.login-box p{font-size:.82rem;color:#64748b;margin-bottom:28px}
+.login-box .subtitle{font-size:.75rem;color:#94a3b8;margin-bottom:24px;line-height:1.5}
+.f-group{margin-bottom:16px}
+.f-group label{display:block;font-size:.78rem;font-weight:600;color:#374151;margin-bottom:6px}
+.f-group input{width:100%;height:42px;border:1.5px solid #e2e8f0;border-radius:8px;padding:0 14px;font-size:.88rem;outline:none;transition:border-color .15s}
+.f-group input:focus{border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,.1)}
+.btn-login{width:100%;height:44px;background:#0d9488;color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;transition:background .15s;margin-top:8px}
+.btn-login:hover{background:#0f766e}
+.login-error{background:#fef2f2;border:1px solid #fecaca;color:#dc2626;border-radius:6px;padding:10px 14px;font-size:.82rem;margin-bottom:16px;display:none}
+.login-hint{background:#f0fdf4;border:1px solid #bbf7d0;color:#16a34a;border-radius:6px;padding:10px 14px;font-size:.8rem;margin-top:16px;line-height:1.6}
+
+/* ── App Layout ── */
+.app{display:none;flex:1;height:100vh;overflow:hidden}
+.app.active{display:flex}
+.sidebar{width:250px;min-width:210px;background:#1e293b;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.topbar{background:#fff;border-bottom:1px solid #e2e8f0;padding:12px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.content{flex:1;overflow-y:auto;padding:20px}
+
+/* ── Sidebar ── */
+.sidebar-header{padding:18px 16px 12px;border-bottom:1px solid #334155}
+.sidebar-header h1{font-size:1rem;font-weight:700;color:#f1f5f9;line-height:1.3}
+.sidebar-header p{font-size:.72rem;color:#94a3b8;margin-top:3px}
+.sidebar-user{padding:12px 16px;border-bottom:1px solid #334155;display:flex;align-items:center;gap:10px}
+.avatar{width:34px;height:34px;border-radius:50%;background:#0d9488;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.9rem;flex-shrink:0}
+.user-info .uname{font-size:.82rem;font-weight:600;color:#f1f5f9}
+.user-info .urole{font-size:.68rem;color:#64748b}
+.nav-section{padding:8px 0}
+.nav-label{font-size:.62rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px 4px}
+.nav-item{display:flex;align-items:center;gap:8px;padding:8px 16px;cursor:pointer;transition:background .15s;border-left:3px solid transparent;color:#cbd5e1;font-size:.82rem}
+.nav-item:hover{background:#334155;color:#f1f5f9}
+.nav-item.active{background:#0f766e;border-left-color:#2dd4bf;color:#fff}
+.nav-divider{height:1px;background:#334155;margin:6px 0}
+.btn-logout{width:calc(100% - 32px);margin:12px 16px;height:36px;background:#334155;color:#94a3b8;border:1px solid #475569;border-radius:7px;font-size:.78rem;cursor:pointer;transition:all .15s}
+.btn-logout:hover{background:#475569;color:#f1f5f9}
+
+/* ── Topbar ── */
+.page-title{font-size:1rem;font-weight:700;color:#1e293b}
+.breadcrumb{font-size:.75rem;color:#94a3b8}
+
+/* ── Cards & Common ── */
+.card{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;padding:20px;margin-bottom:16px}
+.card-title{font-size:.95rem;font-weight:700;color:#1e293b;margin-bottom:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:99px;font-size:.7rem;font-weight:600}
+.badge-green{background:#dcfce7;color:#16a34a}
+.badge-red{background:#fee2e2;color:#dc2626}
+.badge-blue{background:#dbeafe;color:#1d4ed8}
+.badge-amber{background:#fef3c7;color:#d97706}
+.badge-gray{background:#f1f5f9;color:#64748b}
+
+/* ── Mode Tabs ── */
+.mode-tabs{display:flex;gap:4px;background:#f1f5f9;border-radius:10px;padding:3px;flex-wrap:wrap}
+.mode-tab{padding:7px 16px;border-radius:7px;cursor:pointer;font-size:.82rem;font-weight:600;color:#64748b;transition:all .15s;white-space:nowrap;border:none;background:transparent}
+.mode-tab.active{background:#0d9488;color:#fff;box-shadow:0 2px 6px rgba(13,148,136,.3)}
+.mode-tab:not(.active):hover{background:#ccfbf1;color:#0f766e}
+
+/* ── Filters ── */
+.filter-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+select,input[type=text],input[type=number]{height:36px;border:1.5px solid #e2e8f0;border-radius:7px;padding:0 12px;font-size:.82rem;background:#fff;outline:none}
+select:focus,input:focus{border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,.1)}
+.btn{height:36px;padding:0 18px;border-radius:7px;border:none;cursor:pointer;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:all .15s;white-space:nowrap}
+.btn-primary{background:#0d9488;color:#fff}
+.btn-primary:hover{background:#0f766e}
+.btn-secondary{background:#f1f5f9;color:#374151;border:1.5px solid #e2e8f0}
+.btn-secondary:hover{background:#e2e8f0}
+.btn-success{background:#16a34a;color:#fff}
+.btn-success:hover{background:#15803d}
+.btn-danger{background:#dc2626;color:#fff}
+.btn-danger:hover{background:#b91c1c}
+.btn-amber{background:#d97706;color:#fff}
+.btn-amber:hover{background:#b45309}
+.btn-sm{height:30px;padding:0 12px;font-size:.75rem}
+
+/* ── Chapter/Topic Selection ── */
+.chapter-list{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.chapter-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s}
+.chapter-item:hover{border-color:#0d9488;background:#f0fdfb}
+.chapter-item.selected{border-color:#0d9488;background:#ccfbf1}
+.chapter-item input[type=checkbox]{width:16px;height:16px;accent-color:#0d9488}
+.chapter-name{flex:1;font-size:.82rem;font-weight:600;color:#374151}
+.chapter-meta{font-size:.72rem;color:#94a3b8}
+.topic-list{margin-left:30px;margin-bottom:8px;display:flex;flex-direction:column;gap:4px}
+.topic-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;font-size:.78rem;cursor:pointer;transition:all .15s}
+.topic-item:hover{border-color:#0d9488}
+.topic-item.selected{background:#d1fae5;border-color:#0d9488}
+.topic-item input[type=checkbox]{width:14px;height:14px;accent-color:#0d9488}
+.topic-qcount{font-size:.68rem;color:#94a3b8;margin-left:auto}
+.chapter-chevron{color:#94a3b8;font-size:.7rem;transition:transform .2s}
+.chapter-chevron.open{transform:rotate(90deg)}
+.selected-summary{font-size:.78rem;color:#64748b;padding:8px 12px;background:#f0fdfb;border:1px solid #bbf7d0;border-radius:6px;margin-bottom:12px}
+
+/* ── Quiz Mode ── */
+.quiz-settings{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.quiz-settings label{font-size:.78rem;color:#64748b}
+.q-counter{display:flex;align-items:center;gap:8px}
+.q-counter button{width:32px;height:32px;border:1.5px solid #e2e8f0;border-radius:6px;background:#fff;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.q-counter button:hover{background:#f1f5f9;border-color:#0d9488}
+.q-counter span{font-size:.9rem;font-weight:700;color:#1e293b;min-width:28px;text-align:center}
+.mode-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:16px}
+.mode-card{background:#fff;border:2px solid #e2e8f0;border-radius:10px;padding:18px;cursor:pointer;transition:all .15s;text-align:center}
+.mode-card:hover{border-color:#0d9488;box-shadow:0 4px 16px rgba(13,148,136,.12)}
+.mode-card.selected{border-color:#0d9488;background:#f0fdfb}
+.mode-card .mode-icon{font-size:2rem;margin-bottom:8px}
+.mode-card .mode-name{font-size:.88rem;font-weight:700;color:#1e293b;margin-bottom:4px}
+.mode-card .mode-desc{font-size:.72rem;color:#64748b;line-height:1.5}
+
+/* ── Question Card ── */
+.question-card{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;margin-bottom:16px;overflow:hidden}
+.q-header{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f8fafc;border-bottom:1px solid #e2e8f0}
+.q-progress{flex:1;font-size:.78rem;color:#64748b}
+.q-timer{font-size:.82rem;font-weight:600;color:#64748b}
+.q-timer.warning{color:#d97706}
+.q-timer.danger{color:#dc2626}
+.q-body{padding:20px}
+.q-source{font-size:.72rem;color:#94a3b8;margin-bottom:8px}
+.q-text{font-size:.9rem;line-height:1.7;color:#1e293b;margin-bottom:16px;font-weight:500}
+.q-img{max-width:100%;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:14px}
+.options{display:flex;flex-direction:column;gap:8px}
+.option{display:flex;align-items:center;gap:12px;padding:12px 16px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s;font-size:.88rem}
+.option:hover{border-color:#0d9488;background:#f0fdfb}
+.option.selected{border-color:#0d9488;background:#ccfbf1}
+.option.correct{border-color:#16a34a;background:#dcfce7}
+.option.wrong{border-color:#dc2626;background:#fee2e2}
+.option.disabled{cursor:default;opacity:.7}
+.option-letter{width:28px;height:28px;border-radius:50%;border:2px solid #e2e8f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.78rem;flex-shrink:0;transition:all .15s}
+.option.selected .option-letter{border-color:#0d9488;background:#0d9488;color:#fff}
+.option.correct .option-letter{border-color:#16a34a;background:#16a34a;color:#fff}
+.option.wrong .option-letter{border-color:#dc2626;background:#dc2626;color:#fff}
+.option-text{flex:1}
+.q-actions{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-top:1px solid #e2e8f0;background:#f8fafc}
+.feedback-box{padding:12px 16px;border-radius:8px;margin-bottom:12px;font-size:.82rem;line-height:1.6}
+.feedback-correct{background:#dcfce7;border:1px solid #86efac;color:#16a34a}
+.feedback-wrong{background:#fee2e2;border:1px solid #fecaca;color:#dc2626}
+.feedback-wrong strong{color:#dc2626}
+
+/* ── Definition Matching ── */
+.def-match{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.def-terms,.def-defs{display:flex;flex-direction:column;gap:8px}
+.def-term-item,.def-def-item{padding:12px 14px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s;font-size:.82rem;line-height:1.5}
+.def-term-item:hover,.def-def-item:hover{border-color:#0d9488}
+.def-term-item.selected-term{border-color:#0d9488;background:#ccfbf1}
+.def-term-item.correct{border-color:#16a34a;background:#dcfce7}
+.def-term-item.wrong{border-color:#dc2626;background:#fee2e2}
+.def-def-item:hover-def{border-color:#0d9488;background:#f0fdfb}
+.def-def-item.selected-def{border-color:#0d9488;background:#bbf7d0}
+.def-def-item.correct{border-color:#16a34a;background:#dcfce7}
+.def-def-item.wrong{border-color:#dc2626;background:#fee2e2}
+.def-def-item.matched{border-color:#0d9488;background:#f0fdfb;opacity:.5;cursor:default}
+.match-progress{text-align:center;font-size:.82rem;color:#64748b;margin-bottom:12px}
+
+/* ── Results ── */
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:20px}
+.result-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:18px;text-align:center}
+.result-card .rc-score{font-size:2.2rem;font-weight:800;color:#0d9488;line-height:1}
+.result-card .rc-label{font-size:.75rem;color:#64748b;margin-top:4px}
+.result-card .rc-sub{font-size:.7rem;color:#94a3b8;margin-top:2px}
+.result-card.accuracy .rc-score{color:#1d4ed8}
+.result-card.time .rc-score{color:#d97706}
+.topic-result{margin-bottom:12px}
+.topic-result-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.topic-name{font-size:.82rem;font-weight:600;color:#374151}
+.topic-score{font-size:.82rem;font-weight:700}
+.weak-bar{height:6px;background:#e2e8f0;border-radius:3px;overflow:hidden}
+.weak-bar-fill{height:100%;border-radius:3px;transition:width .5s}
+.weak-section{background:#fff;border:1.5px solid #e2e8f0;border-radius:12px;padding:20px;margin-bottom:16px}
+.weak-section h3{font-size:.9rem;font-weight:700;color:#1e293b;margin-bottom:12px}
+.weak-topics{display:flex;flex-wrap:wrap;gap:8px}
+.weak-topic{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#fee2e2;border:1px solid #fecaca;border-radius:99px;font-size:.78rem;color:#dc2626;font-weight:600}
+.weak-topic .wq{font-size:.68rem;color:#f87171}
+.strong-topics .weak-topic{background:#dcfce7;border-color:#86efac;color:#16a34a}
+
+/* ── Progress ── */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.stat-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center}
+.stat-card .sc-num{font-size:1.8rem;font-weight:800;color:#0d9488}
+.stat-card .sc-label{font-size:.72rem;color:#64748b;margin-top:4px}
+.history-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f1f5f9}
+.history-item:last-child{border-bottom:none}
+.history-date{font-size:.78rem;color:#64748b;min-width:80px}
+.history-mode{font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:99px}
+.history-score{font-size:.82rem;font-weight:700;margin-left:auto}
+
+/* ── Admin ── */
+.admin-section{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;padding:20px;margin-bottom:16px}
+.admin-section h3{font-size:.9rem;font-weight:700;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #f1f5f9}
+.student-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #f8fafc}
+.student-row:last-child{border-bottom:none}
+.student-row .sname{font-size:.82rem;font-weight:600;min-width:120px}
+.student-row .semail{font-size:.75rem;color:#64748b;flex:1}
+.student-row .sstats{font-size:.72rem;color:#94a3b8;min-width:100px;text-align:right}
+.csv-input{width:100%;height:100px;border:1.5px solid #e2e8f0;border-radius:8px;padding:10px;font-size:.8rem;font-family:monospace;resize:vertical;outline:none}
+.csv-input:focus{border-color:#0d9488}
+.csv-hint{font-size:.72rem;color:#94a3b8;margin-top:6px;line-height:1.6}
+
+/* ── Loading ── */
+.loading-overlay{position:fixed;inset:0;background:rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;z-index:1000}
+.loading-box{text-align:center}
+.spinner{width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#0d9488;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}
+
+/* ── Misc ── */
+.text-green{color:#16a34a}
+.text-red{color:#dc2626}
+.text-amber{color:#d97706}
+.mt-8{margin-top:8px}
+.mt-16{margin-top:16px}
+.flex-between{display:flex;align-items:center;justify-content:space-between}
+.empty-state{text-align:center;padding:40px 20px;color:#94a3b8}
+.empty-state .es-icon{font-size:2.5rem;margin-bottom:12px}
+.empty-state p{font-size:.82rem}
+.start-quiz-btn{width:100%;height:48px;background:#0d9488;color:#fff;border:none;border-radius:10px;font-size:.95rem;font-weight:700;cursor:pointer;transition:background .15s}
+.start-quiz-btn:hover{background:#0f766e}
+.start-quiz-btn:disabled{background:#94a3b8;cursor:not-allowed}
+
+/* Mobile */
+@media(max-width:640px){
+.app{flex-direction:column}
+.sidebar{width:100%;height:auto;max-height:50vh}
+.main{height:auto;overflow:auto}
+.def-match{grid-template-columns:1fr}
+.quiz-settings{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay" style="display:none">
+  <div class="loading-box">
+    <div class="spinner"></div>
+    <p style="font-size:.82rem;color:#64748b">Loading question bank...</p>
+  </div>
+</div>
+
+<!-- Login Screen -->
+<div id="loginScreen" class="login-wrap">
+  <div class="login-box">
+    <h1>chem9701 Student Portal</h1>
+    <p>CIE A-Level Chemistry · Practice &amp; Review</p>
+    <div class="login-error" id="loginError">Incorrect username or password.</div>
+    <div class="f-group">
+      <label>Username</label>
+      <input type="text" id="loginUser" placeholder="e.g. alice.chen" autocomplete="username"/>
+    </div>
+    <div class="f-group">
+      <label>Password</label>
+      <input type="password" id="loginPass" placeholder="Your password" autocomplete="current-password"/>
+    </div>
+    <button class="btn-login" onclick="handleLogin()">Sign In</button>
+    <div class="login-hint" id="loginHint" style="display:none"></div>
+  </div>
+</div>
+
+<!-- Main App -->
+<div id="mainApp" class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>chem9701</h1>
+      <p>Student Portal</p>
+    </div>
+    <div class="sidebar-user">
+      <div class="avatar" id="userAvatar">?</div>
+      <div class="user-info">
+        <div class="uname" id="userName">Student</div>
+        <div class="urole" id="userRole">Student</div>
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Practice</div>
+      <div class="nav-item active" data-page="mcq" onclick="showPage('mcq')">
+        <span>📝</span> MCQ Practice
+      </div>
+      <div class="nav-item" data-page="defs" onclick="showPage('defs')">
+        <span>📖</span> Definition Match
+      </div>
+      <div class="nav-item" data-page="review" onclick="showPage('review')">
+        <span>🔄</span> Review Quiz
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Progress</div>
+      <div class="nav-item" data-page="progress" onclick="showPage('progress')">
+        <span>📊</span> My Progress
+      </div>
+      <div class="nav-item" data-page="history" onclick="showPage('history')">
+        <span>📜</span> History
+      </div>
+    </div>
+    <div class="nav-section" id="adminNav" style="display:none">
+      <div class="nav-label">Teacher</div>
+      <div class="nav-item" data-page="admin" onclick="showPage('admin')">
+        <span>⚙️</span> Manage Students
+      </div>
+    </div>
+    <button class="btn-logout" onclick="handleLogout()">Sign Out</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <span class="page-title" id="pageTitle">MCQ Practice</span>
+      <span style="flex:1"></span>
+      <span class="badge badge-green" id="connectedDb" style="display:none">DB Ready</span>
+    </div>
+    <div class="content" id="pageContent"></div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let DB = { questions: [], definitions: {}, chapters: [] };
+let currentUser = null;
+let isAdmin = false;
+let quizState = null; // { mode, questions, answers, results, startTime }
+let defState = null;   // { pairs, matches, current, results, startTime }
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', async () => {
+  showLoading(true);
+  await loadDB();
+  await loadStudentsDB();
+  showLoading(false);
+  // Check session
+  const session = localStorage.getItem('ch9701_session');
+  if (session) {
+    try {
+      currentUser = JSON.parse(session);
+      restoreSession();
+    } catch(e) {
+      localStorage.removeItem('ch9701_session');
+    }
+  }
+});
+
+async function loadDB() {
+  try {
+    const [dbRes, defRes] = await Promise.all([
+      fetch('db.json'),
+      fetch('definitions_db.json')
+    ]);
+    const db = await dbRes.json();
+    const defs = await defRes.json();
+    DB.questions = db.questions;
+    DB.chapters = db.meta.chapters;
+    DB.definitions = defs.definitions || {};
+    document.getElementById('connectedDb').style.display = 'inline-block';
+  } catch(e) {
+    console.error('Failed to load DB:', e);
+    alert('Failed to load question database. Please refresh.');
+  }
+}
+
+async function loadStudentsDB() {
+  try {
+    const res = await fetch('students_db.json');
+    window.STUDENTS_DB = await res.json();
+  } catch(e) {
+    window.STUDENTS_DB = { students: [] };
+  }
+}
+
+/* ═══════════════════════════════════════════
+   AUTH
+═══════════════════════════════════════════ */
+function handleLogin() {
+  const u = document.getElementById('loginUser').value.trim();
+  const p = document.getElementById('loginPass').value;
+  const err = document.getElementById('loginError');
+  const hint = document.getElementById('loginHint');
+
+  if (!u || !p) { err.style.display='block'; err.textContent='Please enter username and password.'; return; }
+
+  // Check teacher/admin first
+  const adminList = [{username:'admin',password:'teacher2026',name:'Teacher',role:'admin'}];
+  const admin = adminList.find(a => a.username===u && a.password===p);
+  if (admin) {
+    currentUser = { username: admin.username, name: admin.name, role: 'admin' };
+    isAdmin = true;
+    localStorage.setItem('ch9701_session', JSON.stringify(currentUser));
+    restoreSession();
+    return;
+  }
+
+  // Check students
+  const students = window.STUDENTS_DB?.students || [];
+  const student = students.find(s => s.username===u && s.password===p);
+  if (student) {
+    currentUser = { username: student.username, name: student.name, role: 'student' };
+    isAdmin = false;
+    localStorage.setItem('ch9701_session', JSON.stringify(currentUser));
+    restoreSession();
+    return;
+  }
+
+  err.style.display='block';
+  err.textContent='Incorrect username or password.';
+}
+
+function handleLogout() {
+  localStorage.removeItem('ch9701_session');
+  currentUser = null;
+  isAdmin = false;
+  document.getElementById('mainApp').classList.remove('active');
+  document.getElementById('loginScreen').style.display='flex';
+  document.getElementById('loginUser').value='';
+  document.getElementById('loginPass').value='';
+  document.getElementById('loginError').style.display='none';
+}
+
+function restoreSession() {
+  document.getElementById('loginScreen').style.display='none';
+  document.getElementById('mainApp').classList.add('active');
+  document.getElementById('userName').textContent = currentUser.name;
+  document.getElementById('userAvatar').textContent = currentUser.name.charAt(0).toUpperCase();
+  document.getElementById('userRole').textContent = currentUser.role === 'admin' ? 'Teacher' : 'Student';
+  document.getElementById('adminNav').style.display = isAdmin ? 'block' : 'none';
+  showPage('mcq');
+}
+
+/* ═══════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════ */
+function showPage(page) {
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.querySelector(`.nav-item[data-page="${page}"]`)?.classList.add('active');
+  const titles = { mcq:'MCQ Practice', defs:'Definition Match', review:'Review Quiz', progress:'My Progress', history:'History', admin:'Manage Students' };
+  document.getElementById('pageTitle').textContent = titles[page] || page;
+
+  if (page === 'mcq') renderMCQPage();
+  else if (page === 'defs') renderDefsPage();
+  else if (page === 'review') renderReviewPage();
+  else if (page === 'progress') renderProgressPage();
+  else if (page === 'history') renderHistoryPage();
+  else if (page === 'admin') renderAdminPage();
+}
+
+/* ═══════════════════════════════════════════
+   MCQ PAGE
+═══════════════════════════════════════════ */
+function renderMCQPage() {
+  const content = document.getElementById('pageContent');
+  if (quizState && quizState.mode === 'mcq') {
+    renderQuiz();
+    return;
+  }
+  content.innerHTML = `
+    <div class="card">
+      <div class="card-title">📝 MCQ Practice</div>
+      <div class="mode-tabs mb-16">
+        <button class="mode-tab active" data-qtype="mcq">All MCQ</button>
+      </div>
+      <div class="quiz-settings">
+        <span style="font-size:.8rem;color:#64748b">Questions:</span>
+        <div class="q-counter">
+          <button onclick="adjustCount(-10)">−</button>
+          <span id="qCountDisplay">20</span>
+          <button onclick="adjustCount(10)">+</button>
+        </div>
+        <span style="font-size:.8rem;color:#64748b;margin-left:8px">per quiz</span>
+      </div>
+      <div class="selected-summary" id="selSummary">Select chapters below to begin</div>
+      ${renderChapterSelect()}
+      <button class="start-quiz-btn" id="startBtn" onclick="startMCQ()" disabled>Select chapters to start</button>
+    </div>
+  `;
+  window.quizCount = 20;
+}
+
+function renderChapterSelect() {
+  let html = '<div class="chapter-list" id="chapterList">';
+  DB.chapters.forEach(ch => {
+    const qCount = DB.questions.filter(q => q.chapter_id === ch.id).length;
+    html += `
+      <div class="chapter-item" onclick="toggleChapter('${ch.id}', event)">
+        <input type="checkbox" id="ch_${ch.id}" onchange="updateSelection()"/>
+        <span class="chapter-chevron" id="chev_${ch.id}">▶</span>
+        <span class="chapter-name">${ch.num} · ${ch.name}</span>
+        <span class="chapter-meta">${qCount} Qs</span>
+      </div>
+      <div class="topic-list" id="topics_${ch.id}" style="display:none"></div>
+    `;
+  });
+  html += '</div>';
+  return html;
+}
+
+function toggleChapter(chId, event) {
+  event.stopPropagation();
+  const topicsDiv = document.getElementById('topics_' + chId);
+  const chev = document.getElementById('chev_' + chId);
+  const checkbox = document.getElementById('ch_' + chId);
+  const isOpen = topicsDiv.style.display !== 'none';
+
+  if (isOpen) {
+    topicsDiv.style.display = 'none';
+    chev.classList.remove('open');
+    checkbox.checked = false;
+  } else {
+    topicsDiv.style.display = 'flex';
+    chev.classList.add('open');
+    // Render topics
+    const topics = getTopicsForChapter(chId);
+    const qMap = {};
+    DB.questions.filter(q => q.chapter_id === chId).forEach(q => {
+      (q.topic_ids || []).forEach(t => { qMap[t] = (qMap[t]||0)+1; });
+    });
+    let tHtml = '';
+    topics.forEach(t => {
+      tHtml += `
+        <div class="topic-item" onclick="event.stopPropagation();toggleTopic('${t.id}')">
+          <input type="checkbox" id="t_${t.id}" data-chapter="${chId}" onchange="updateChapterCheckbox('${chId}')"/>
+          <span>${t.name}</span>
+          <span class="topic-qcount">${qMap[t.id]||0} Qs</span>
+        </div>
+      `;
+    });
+    topicsDiv.innerHTML = tHtml;
+  }
+  updateSelection();
+}
+
+function toggleTopic(tId) {
+  const cb = document.getElementById('t_' + tId);
+  cb.checked = !cb.checked;
+  updateChapterCheckbox(getChapterOfTopic(tId));
+  updateSelection();
+}
+
+function getChapterOfTopic(tId) {
+  for (const [chId, topics] of Object.entries(getTopicsMap())) {
+    if (topics.find(t => t.id === tId)) return chId;
+  }
+  return null;
+}
+
+function getTopicsMap() {
+  // Group by chapter from topics.json if available
+  const map = {};
+  // Fallback: extract from questions
+  DB.questions.forEach(q => {
+    if (!map[q.chapter_id]) map[q.chapter_id] = {};
+    (q.topic_ids || []).forEach(t => {
+      if (!map[q.chapter_id][t]) map[q.chapter_id][t] = true;
+    });
+  });
+  const result = {};
+  Object.keys(map).forEach(chId => {
+    result[chId] = Object.keys(map[chId]).map(tid => ({ id: tid, name: tid.replace(/_/g,' ') }));
+  });
+  return result;
+}
+
+function getTopicsForChapter(chId) {
+  const map = getTopicsMap();
+  return map[chId] || [];
+}
+
+function updateChapterCheckbox(chId) {
+  const topicsDiv = document.getElementById('topics_' + chId);
+  const cb = document.getElementById('ch_' + chId);
+  const topicCbs = topicsDiv.querySelectorAll('input[type=checkbox]');
+  cb.checked = Array.from(topicCbs).some(c => c.checked);
+}
+
+function updateSelection() {
+  const selected = getSelectedTopics();
+  const summary = document.getElementById('selSummary');
+  const startBtn = document.getElementById('startBtn');
+  if (selected.length === 0) {
+    summary.textContent = 'Select chapters below to begin';
+    startBtn.disabled = true;
+    startBtn.textContent = 'Select chapters to start';
+  } else {
+    const totalQs = DB.questions.filter(q =>
+      q.topic_ids && q.topic_ids.some(t => selected.includes(t))
+    ).length;
+    summary.textContent = `${selected.length} topics selected · ${totalQs} questions available`;
+    startBtn.disabled = false;
+    startBtn.textContent = `Start Practice (${window.quizCount} questions)`;
+  }
+}
+
+function adjustCount(delta) {
+  window.quizCount = Math.max(5, Math.min(100, (window.quizCount||20) + delta));
+  document.getElementById('qCountDisplay').textContent = window.quizCount;
+  updateSelection();
+}
+
+function getSelectedTopics() {
+  const selected = [];
+  document.querySelectorAll('.topic-list input[type=checkbox]:checked').forEach(cb => {
+    selected.push(cb.id.replace('t_', ''));
+  });
+  return [...new Set(selected)];
+}
+
+function getSelectedChapters() {
+  const chapters = new Set();
+  getSelectedTopics().forEach(t => {
+    const ch = getChapterOfTopic(t);
+    if (ch) chapters.add(ch);
+  });
+  return [...chapters];
+}
+
+/* ═══════════════════════════════════════════
+   MCQ QUIZ LOGIC
+═══════════════════════════════════════════ */
+function startMCQ() {
+  const selectedTopics = getSelectedTopics();
+  if (selectedTopics.length === 0) return;
+
+  const allQs = DB.questions.filter(q =>
+    q.topic_ids && q.topic_ids.some(t => selectedTopics.includes(t))
+  );
+
+  if (allQs.length === 0) { alert('No questions found for selected topics.'); return; }
+
+  // Shuffle and pick
+  const shuffled = shuffle([...allQs]);
+  const count = Math.min(window.quizCount || 20, shuffled.length);
+  const questions = shuffled.slice(0, count);
+
+  quizState = {
+    mode: 'mcq',
+    questions,
+    currentIndex: 0,
+    answers: {},
+    results: [],
+    startTime: Date.now(),
+    selectedTopics
+  };
+
+  renderQuiz();
+}
+
+function renderQuiz() {
+  const { questions, currentIndex, answers, results } = quizState;
+  const total = questions.length;
+  const content = document.getElementById('pageContent');
+
+  if (currentIndex >= total) {
+    renderResults();
+    return;
+  }
+
+  const q = questions[currentIndex];
+  const answered = answers[q.id] !== undefined;
+  const isCorrect = answered && answers[q.id].selected === q.answer;
+
+  const elapsed = Math.floor((Date.now() - quizState.startTime) / 1000);
+  const mins = Math.floor(elapsed / 60);
+  const secs = elapsed % 60;
+  const timerClass = mins >= 10 ? 'danger' : mins >= 5 ? 'warning' : '';
+
+  let html = `
+    <div class="question-card">
+      <div class="q-header">
+        <span class="q-progress">Question ${currentIndex + 1} of ${total}</span>
+        <span class="badge badge-blue">MCQ</span>
+        <span class="q-timer ${timerClass}">⏱ ${mins}:${String(secs).padStart(2,'0')}</span>
+      </div>
+      <div class="q-body">
+        <div class="q-source">${q.source || ''} · ${q.year || ''} ${q.season || ''}</div>
+        <div class="q-text">${q.id.replace(/_/g,' ')}</div>
+  `;
+
+  if (q.img) {
+    html += `<img class="q-img" src="images/${q.img}" alt="Question image" loading="lazy"/>`;
+  }
+
+  const letters = ['A','B','C','D'];
+  // For MCQ, we need options. db.json doesn't have options text, only answer.
+  // We'll show the image and let user guess from what they see.
+  // This is a limitation - db.json has only answer keys.
+  // Show a note about this.
+  html += `
+        <div style="background:#fef9c3;border:1px solid #fde047;border-radius:6px;padding:10px 14px;margin-bottom:14px;font-size:.78rem;color:#854d0e">
+          📌 Select the correct answer based on the question above.
+        </div>
+        <div class="options">
+  `;
+  letters.forEach(letter => {
+    const isSelected = answered && answers[q.id].selected === letter;
+    html += `
+      <div class="option ${isSelected ? 'selected' : ''} ${answered ? 'disabled' : ''}"
+           onclick="${answered ? '' : `selectOption('${q.id}','${letter}')`}">
+        <div class="option-letter">${letter}</div>
+        <div class="option-text">Option ${letter}</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+
+  if (answered) {
+    const correctLetter = q.answer;
+    html += `
+      <div class="feedback-box ${isCorrect ? 'feedback-correct' : 'feedback-wrong'}">
+        ${isCorrect
+          ? '✅ <strong>Correct!</strong>'
+          : `❌ <strong>Incorrect.</strong> The correct answer is <strong>${correctLetter}</strong>.`
+        }
+      </div>
+    `;
+    // Highlight correct/wrong options
+    html = html.replace(
+      `class="option ${isSelected ? 'selected' : ''} ${answered ? 'disabled' : ''}" onclick="${answered ? '' : `selectOption('${q.id}','${letter}')`}"`,
+      `class="option ${isSelected ? (isCorrect ? 'correct' : 'wrong') : ''} ${correctLetter === letter ? 'correct' : ''} disabled"`
+    );
+  }
+
+  html += `
+      </div>
+      <div class="q-actions">
+        <span style="font-size:.78rem;color:#94a3b8">${answered ? 'Topic: ' + (q.topic_ids||[]).join(', ') : ''}</span>
+        <div style="display:flex;gap:8px">
+          ${currentIndex > 0 ? '<button class="btn btn-secondary btn-sm" onclick="prevQuestion()">← Prev</button>' : ''}
+          ${!answered
+            ? `<button class="btn btn-primary btn-sm" onclick="submitAnswer('${q.id}')" id="submitBtn">Submit</button>`
+            : `<button class="btn btn-primary btn-sm" onclick="nextQuestion()">${currentIndex < total - 1 ? 'Next →' : 'See Results'}</button>`
+          }
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:4px;margin-top:8px">
+      ${questions.map((_, i) => `
+        <div style="width:8px;height:8px;border-radius:50%;background:${i < currentIndex ? (answers[questions[i].id] ? (answers[questions[i].id].selected === questions[i].answer ? '#16a34a' : '#dc2626') : '#e2e8f0') : i === currentIndex ? '#0d9488' : '#e2e8f0'};transition:background .2s"></div>
+      `).join('')}
+    </div>
+  `;
+
+  content.innerHTML = html;
+}
+
+function selectOption(qId, letter) {
+  if (quizState.answers[qId] !== undefined) return;
+  quizState.answers[qId] = { selected: letter, time: Date.now() };
+  renderQuiz();
+}
+
+function submitAnswer(qId) {
+  // Already submitted if answer exists
+  if (quizState.answers[qId] === undefined) {
+    // If user clicks submit without selecting, auto-select nothing
+    // Actually we require selection first
+    return;
+  }
+  renderQuiz();
+}
+
+function nextQuestion() {
+  quizState.currentIndex++;
+  renderQuiz();
+}
+
+function prevQuestion() {
+  if (quizState.currentIndex > 0) {
+    quizState.currentIndex--;
+    renderQuiz();
+  }
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════ */
+function renderResults() {
+  const { questions, answers, startTime } = quizState;
+  const total = questions.length;
+  const correct = questions.filter(q => answers[q.id]?.selected === q.answer).length;
+  const wrong = total - correct;
+  const accuracy = Math.round(correct / total * 100);
+  const elapsed = Math.floor((Date.now() - startTime) / 1000);
+  const mins = Math.floor(elapsed / 60);
+  const secs = elapsed % 60;
+
+  // Analyze by topic
+  const topicStats = {};
+  questions.forEach(q => {
+    (q.topic_ids || []).forEach(t => {
+      if (!topicStats[t]) topicStats[t] = { total: 0, correct: 0 };
+      topicStats[t].total++;
+      if (answers[q.id]?.selected === q.answer) topicStats[t].correct++;
+    });
+  });
+
+  const weakTopics = Object.entries(topicStats)
+    .filter(([t, s]) => s.total >= 1 && (s.correct / s.total) < 0.6)
+    .sort((a, b) => (a[1].correct/a[1].total) - (b[1].correct/b[1].total))
+    .slice(0, 5);
+
+  const strongTopics = Object.entries(topicStats)
+    .filter(([t, s]) => s.total >= 2 && (s.correct / s.total) >= 0.8)
+    .sort((a, b) => (b[1].correct/b[1].total) - (a[1].correct/a[1].total))
+    .slice(0, 5);
+
+  // Save to history
+  saveQuizHistory({ mode: 'mcq', date: new Date().toISOString(), total, correct, wrong, accuracy, elapsed, weakTopics: weakTopics.map(t=>t[0]), strongTopics: strongTopics.map(t=>t[0]) });
+
+  const accColor = accuracy >= 80 ? '#16a34a' : accuracy >= 60 ? '#d97706' : '#dc2626';
+  const accBg = accuracy >= 80 ? '#dcfce7' : accuracy >= 60 ? '#fef3c7' : '#fee2e2';
+
+  let html = `
+    <div class="card">
+      <div class="card-title">🎉 Quiz Complete!</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="rc-score" style="color:${accColor}">${accuracy}%</div>
+          <div class="rc-label">Accuracy</div>
+          <div class="rc-sub">${correct}/${total} correct</div>
+        </div>
+        <div class="result-card">
+          <div class="rc-score" style="color:#dc2626">${wrong}</div>
+          <div class="rc-label">Wrong</div>
+          <div class="rc-sub">Need review</div>
+        </div>
+        <div class="result-card">
+          <div class="rc-score" style="color:#d97706">${mins}:${String(secs).padStart(2,'0')}</div>
+          <div class="rc-label">Time Spent</div>
+          <div class="rc-sub">avg ${Math.round(elapsed/total)}s/q</div>
+        </div>
+      </div>
+
+      ${weakTopics.length > 0 ? `
+      <div class="weak-section">
+        <h3>🔴 Weak Areas (priority for review)</h3>
+        <div class="weak-topics">
+          ${weakTopics.map(([t, s]) => {
+            const pct = Math.round(s.correct/s.total*100);
+            return `<div class="weak-topic">${t.replace(/_/g,' ')} <span class="wq">${pct}%</span></div>`;
+          }).join('')}
+        </div>
+      </div>
+      ` : ''}
+
+      ${strongTopics.length > 0 ? `
+      <div class="weak-section strong-topics">
+        <h3>🟢 Strong Areas</h3>
+        <div class="weak-topics">
+          ${strongTopics.map(([t, s]) => {
+            const pct = Math.round(s.correct/s.total*100);
+            return `<div class="weak-topic">${t.replace(/_/g,' ')} <span class="wq">${pct}%</span></div>`;
+          }).join('')}
+        </div>
+      </div>
+      ` : ''}
+    </div>
+
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-secondary" onclick="renderMCQPage()">← Practice Again</button>
+      ${weakTopics.length > 0 ? `<button class="btn btn-primary" onclick="startReviewQuiz(['${weakTopics.map(t=>t[0]).join("','")}'])">📝 Review Weak Topics</button>` : ''}
+      <button class="btn btn-amber" onclick="showPage('progress')">📊 View Progress</button>
+    </div>
+  `;
+
+  document.getElementById('pageContent').innerHTML = html;
+}
+
+/* ═══════════════════════════════════════════
+   DEFINITION MATCH PAGE
+═══════════════════════════════════════════ */
+function renderDefsPage() {
+  const content = document.getElementById('pageContent');
+  if (defState && defState.results) {
+    renderDefResults();
+    return;
+  }
+  if (defState) {
+    renderDefQuiz();
+    return;
+  }
+
+  content.innerHTML = `
+    <div class="card">
+      <div class="card-title">📖 Definition Match</div>
+      <p style="font-size:.82rem;color:#64748b;margin-bottom:16px">Match each term with its correct definition. Select a term, then select its matching definition.</p>
+      <div class="selected-summary" id="defSelSummary">Select a chapter to practice</div>
+      ${renderChapterSelectDefs()}
+      <button class="start-quiz-btn" id="defStartBtn" onclick="startDefQuiz()" disabled>Select a chapter to start</button>
+    </div>
+  `;
+  window.defSelectedChapters = [];
+}
+
+function renderChapterSelectDefs() {
+  let html = '<div class="chapter-list">';
+  DB.chapters.forEach(ch => {
+    const defCount = DB.definitions[ch.id]?.length || 0;
+    html += `
+      <div class="chapter-item" onclick="toggleDefChapter('${ch.id}')">
+        <input type="checkbox" id="defch_${ch.id}" onchange="updateDefSelection()"/>
+        <span class="chapter-name">${ch.num} · ${ch.name}</span>
+        <span class="chapter-meta">${defCount} definitions</span>
+      </div>
+    `;
+  });
+  html += '</div>';
+  return html;
+}
+
+function toggleDefChapter(chId) {
+  const cb = document.getElementById('defch_' + chId);
+  cb.checked = !cb.checked;
+  updateDefSelection();
+}
+
+function updateDefSelection() {
+  const selected = [];
+  document.querySelectorAll('[id^=defch_]:checked').forEach(cb => {
+    selected.push(cb.id.replace('defch_', ''));
+  });
+  window.defSelectedChapters = selected;
+  const summary = document.getElementById('defSelSummary');
+  const startBtn = document.getElementById('defStartBtn');
+  if (selected.length === 0) {
+    summary.textContent = 'Select a chapter to practice';
+    startBtn.disabled = true;
+    startBtn.textContent = 'Select a chapter to start';
+  } else {
+    const defCount = selected.reduce((sum, ch) => sum + (DB.definitions[ch]?.length || 0), 0);
+    summary.textContent = `${selected.length} chapter(s) selected · ${defCount} definitions`;
+    startBtn.disabled = defCount === 0;
+    startBtn.textContent = `Start Definition Match (${Math.min(defCount, 30)} pairs)`;
+  }
+}
+
+function startDefQuiz() {
+  const chapters = window.defSelectedChapters;
+  if (chapters.length === 0) return;
+
+  const allPairs = [];
+  chapters.forEach(ch => {
+    (DB.definitions[ch] || []).forEach(d => {
+      allPairs.push({ chapter: ch, term: d.term, definition: d.definition });
+    });
+  });
+
+  if (allPairs.length === 0) { alert('No definitions found.'); return; }
+
+  const count = Math.min(allPairs.length, 30);
+  const shuffled = shuffle([...allPairs]).slice(0, count);
+
+  // Build matching exercise
+  const terms = shuffled.map(p => ({ id: p.term, text: p.term, correct: p.definition }));
+  const defs = shuffle([...terms.map(t => ({ id: t.id, text: t.correct }))]);
+
+  defState = {
+    terms: shuffle([...terms]),
+    defs: shuffle([...defs]),
+    matches: {},     // termId -> defId
+    selectedTerm: null,
+    selectedDef: null,
+    results: [],
+    startTime: Date.now(),
+    chapters
+  };
+
+  renderDefQuiz();
+}
+
+function renderDefQuiz() {
+  const { terms, defs, matches, selectedTerm, selectedDef, results } = defState;
+  const matched = Object.keys(matches).length;
+  const total = terms.length;
+  const content = document.getElementById('pageContent');
+
+  const elapsed = Math.floor((Date.now() - defState.startTime) / 1000);
+  const mins = Math.floor(elapsed / 60);
+  const secs = elapsed % 60;
+
+  // Partition terms/defs into matched and unmatched
+  const unmatchedTerms = terms.filter(t => !matches[t.id]);
+  const unmatchedDefs = defs.filter(d => !Object.values(matches).includes(d.id));
+
+  let html = `
+    <div class="card">
+      <div class="q-header" style="padding:12px 16px;background:#f8fafc;border-radius:10px;margin-bottom:16px;border:1px solid #e2e8f0">
+        <span style="font-size:.82rem;color:#64748b">Matched: <strong>${matched}/${total}</strong></span>
+        <span style="flex:1"></span>
+        <span style="font-size:.82rem;color:#64748b">⏱ ${mins}:${String(secs).padStart(2,'0')}</span>
+      </div>
+      <div class="def-match">
+        <div>
+          <div style="font-size:.72rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Terms</div>
+          ${unmatchedTerms.map(t => `
+            <div class="def-term-item ${selectedTerm === t.id ? 'selected-term' : ''} ${matches[t.id] ? 'correct' : ''}"
+                 onclick="selectTermDef('${escapeHtml(t.id)}')">
+              ${escapeHtml(t.text)}
+            </div>
+          `).join('')}
+          ${Object.keys(matches).map(tid => `
+            <div class="def-term-item correct">✓ ${escapeHtml(tid)}</div>
+          `).join('')}
+        </div>
+        <div>
+          <div style="font-size:.72rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Definitions</div>
+          ${unmatchedDefs.map(d => `
+            <div class="def-def-item ${selectedDef === d.id ? 'selected-def' : ''}"
+                 onclick="selectDefMatch('${escapeHtml(d.id)}')">
+              ${escapeHtml(d.text.length > 80 ? d.text.substring(0,80) + '…' : d.text)}
+            </div>
+          `).join('')}
+          ${Object.keys(matches).map(defId => {
+            const matchedDef = defs.find(d => d.id === defId);
+            return matchedDef ? `<div class="def-def-item matched">✓ ${escapeHtml(matchedDef.text.substring(0,60))}…</div>` : '';
+          }).join('')}
+        </div>
+      </div>
+      ${selectedTerm && selectedDef ? `
+        <div style="display:flex;justify-content:center;gap:8px;margin-top:4px">
+          <button class="btn btn-danger btn-sm" onclick="clearDefSelection()">Clear</button>
+          <button class="btn btn-primary btn-sm" onclick="confirmDefMatch()">Confirm Match</button>
+        </div>
+      ` : ''}
+      ${matched === total ? `
+        <button class="btn btn-success" style="width:100%;margin-top:8px" onclick="finishDefQuiz()">See Results</button>
+      ` : ''}
+    </div>
+    <button class="btn btn-secondary" style="margin-top:4px" onclick="renderDefsPage()">← Back</button>
+  `;
+
+  content.innerHTML = html;
+}
+
+function selectTermDef(tId) {
+  if (Object.values(defState.matches).includes(tId)) return;
+  defState.selectedTerm = tId;
+  // Auto-select first unmatched def if none selected
+  renderDefQuiz();
+}
+
+function selectDefMatch(dId) {
+  if (Object.keys(defState.matches).includes(dId)) return;
+  defState.selectedDef = dId;
+  renderDefQuiz();
+}
+
+function clearDefSelection() {
+  defState.selectedTerm = null;
+  defState.selectedDef = null;
+  renderDefQuiz();
+}
+
+function confirmDefMatch() {
+  const { selectedTerm, selectedDef, terms, defs } = defState;
+  if (!selectedTerm || !selectedDef) return;
+
+  const termObj = terms.find(t => t.id === selectedTerm);
+  const defObj = defs.find(d => d.id === selectedDef);
+  if (!termObj || !defObj) return;
+
+  defState.matches[selectedTerm] = selectedDef;
+  defState.results.push({
+    term: selectedTerm,
+    definition: termObj.correct,
+    matchedDef: defObj.text,
+    isCorrect: termObj.correct === defObj.text
+  });
+
+  defState.selectedTerm = null;
+  defState.selectedDef = null;
+  renderDefQuiz();
+}
+
+function finishDefQuiz() {
+  defState.endTime = Date.now();
+  renderDefResults();
+}
+
+function renderDefResults() {
+  const { results, startTime, endTime, terms } = defState;
+  const total = terms.length;
+  const correct = results.filter(r => r.isCorrect).length;
+  const accuracy = Math.round(correct / total * 100);
+  const elapsed = Math.floor((endTime - startTime) / 1000);
+  const mins = Math.floor(elapsed / 60);
+  const secs = elapsed % 60;
+
+  saveQuizHistory({ mode: 'defs', date: new Date().toISOString(), total, correct, wrong: total - correct, accuracy, elapsed });
+
+  const content = document.getElementById('pageContent');
+  content.innerHTML = `
+    <div class="card">
+      <div class="card-title">📖 Definition Match Complete!</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="rc-score" style="color:${accuracy>=80?'#16a34a':accuracy>=60?'#d97706':'#dc2626'}">${accuracy}%</div>
+          <div class="rc-label">Accuracy</div>
+          <div class="rc-sub">${correct}/${total} correct</div>
+        </div>
+        <div class="result-card">
+          <div class="rc-score" style="color:#dc2626">${total-correct}</div>
+          <div class="rc-label">Wrong</div>
+        </div>
+        <div class="result-card">
+          <div class="rc-score" style="color:#d97706">${mins}:${String(secs).padStart(2,'0')}</div>
+          <div class="rc-label">Time</div>
+        </div>
+      </div>
+      <div class="weak-section">
+        <h3>Review</h3>
+        ${results.map(r => `
+          <div style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #f1f5f9;align-items:flex-start">
+            <span style="font-size:1rem;flex-shrink:0">${r.isCorrect ? '✅' : '❌'}</span>
+            <div style="flex:1">
+              <div style="font-size:.82rem;font-weight:600;color:#1e293b">${escapeHtml(r.term)}</div>
+              <div style="font-size:.78rem;color:#64748b;margin-top:2px"><strong>Correct:</strong> ${escapeHtml(r.definition)}</div>
+              ${!r.isCorrect ? `<div style="font-size:.78rem;color:#dc2626;margin-top:2px"><strong>You chose:</strong> ${escapeHtml(r.matchedDef)}</div>` : ''}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-secondary" onclick="defState=null;renderDefsPage()">← Practice Again</button>
+      <button class="btn btn-primary" onclick="showPage('progress')">📊 View Progress</button>
+    </div>
+  `;
+}
+
+/* ═══════════════════════════════════════════
+   REVIEW QUIZ PAGE
+═══════════════════════════════════════════ */
+function renderReviewPage() {
+  const history = JSON.parse(localStorage.getItem('ch9701_history') || '[]');
+  const weakTopics = {};
+  history.forEach(h => {
+    if (h.weakTopics) h.weakTopics.forEach(t => { weakTopics[t] = (weakTopics[t]||0)+1; });
+  });
+  const sortedWeak = Object.entries(weakTopics).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const content = document.getElementById('pageContent');
+
+  content.innerHTML = `
+    <div class="card">
+      <div class="card-title">🔄 Review Quiz</div>
+      <p style="font-size:.82rem;color:#64748b;margin-bottom:16px">
+        Automatically generated from your weak areas across all past quizzes.
+      </p>
+      ${sortedWeak.length === 0 ? `
+        <div class="empty-state">
+          <div class="es-icon">📊</div>
+          <p>No weak topics yet. Complete a few MCQ quizzes first!</p>
+        </div>
+      ` : `
+        <div style="margin-bottom:16px">
+          <div style="font-size:.8rem;font-weight:600;color:#374151;margin-bottom:8px">Priority weak areas:</div>
+          ${sortedWeak.map(([t,c]) => `
+            <div class="weak-topic" style="margin-bottom:6px">
+              ${t.replace(/_/g,' ')} <span class="wq">appeared ${c} time${c>1?'s':''}</span>
+            </div>
+          `).join('')}
+        </div>
+        <button class="start-quiz-btn" onclick="startReviewQuiz(['${sortedWeak.map(t=>t[0]).join("','")}'])">
+          📝 Start Review Quiz (${Math.min(sortedWeak.length*3, 30)} questions)
+        </button>
+      `}
+    </div>
+    <div class="card">
+      <div class="card-title">Quick Topic Review</div>
+      <p style="font-size:.78rem;color:#64748b;margin-bottom:12px">Or select specific topics to review:</p>
+      ${renderChapterSelect()}
+      <button class="start-quiz-btn" id="reviewStartBtn" onclick="startCustomReview()" disabled>Select topics to start</button>
+    </div>
+  `;
+  // Override updateSelection for review page
+  window.updateSelectionReview = () => {
+    const selected = getSelectedTopics();
+    const btn = document.getElementById('reviewStartBtn');
+    if (selected.length === 0) {
+      btn.disabled = true;
+      btn.textContent = 'Select topics to start';
+    } else {
+      btn.disabled = false;
+      btn.textContent = `Start Review (${Math.min(selected.length * 3, 30)} questions)`;
+    }
+  };
+  // Override updateSelection temporarily
+  const _orig = window.updateSelection;
+  window.updateSelection = function() {
+    if (typeof window.updateSelectionReview === 'function') window.updateSelectionReview();
+    if (_orig) _orig.call(this);
+  };
+}
+
+function startCustomReview() {
+  const selected = getSelectedTopics();
+  startReviewQuiz(selected);
+}
+
+function startReviewQuiz(topicIds) {
+  if (!topicIds || topicIds.length === 0) { alert('No weak topics found.'); return; }
+
+  const allQs = DB.questions.filter(q =>
+    q.topic_ids && q.topic_ids.some(t => topicIds.includes(t))
+  );
+
+  if (allQs.length === 0) { alert('No questions for these topics.'); return; }
+
+  const shuffled = shuffle([...allQs]);
+  const count = Math.min(shuffled.length, 30);
+
+  quizState = {
+    mode: 'review',
+    questions: shuffled.slice(0, count),
+    currentIndex: 0,
+    answers: {},
+    results: [],
+    startTime: Date.now(),
+    selectedTopics: topicIds
+  };
+
+  renderQuiz();
+}
+
+/* ═══════════════════════════════════════════
+   PROGRESS PAGE
+═══════════════════════════════════════════ */
+function renderProgressPage() {
+  const history = JSON.parse(localStorage.getItem('ch9701_history') || '[]');
+  const content = document.getElementById('pageContent');
+
+  const mcqHistory = history.filter(h => h.mode === 'mcq');
+  const defHistory = history.filter(h => h.mode === 'defs');
+
+  const totalMCQ = mcqHistory.reduce((s,h)=>s+h.total,0);
+  const totalCorrect = mcqHistory.reduce((s,h)=>s+h.correct,0);
+  const avgAccuracy = mcqHistory.length ? Math.round(totalCorrect/totalMCQ*100) : 0;
+
+  const totalDefs = defHistory.reduce((s,h)=>s+h.total,0);
+  const totalDefCorrect = defHistory.reduce((s,h)=>s+h.correct,0);
+
+  content.innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-card"><div class="sc-num">${mcqHistory.length}</div><div class="sc-label">MCQ Quizzes</div></div>
+      <div class="stat-card"><div class="sc-num">${totalMCQ}</div><div class="sc-label">MCQ Questions Done</div></div>
+      <div class="stat-card"><div class="sc-num" style="color:${avgAccuracy>=80?'#16a34a':avgAccuracy>=60?'#d97706':'#dc2626'}">${avgAccuracy}%</div><div class="sc-label">MCQ Avg Accuracy</div></div>
+      <div class="stat-card"><div class="sc-num">${defHistory.length}</div><div class="sc-label">Def Quizzes</div></div>
+      <div class="stat-card"><div class="sc-num">${totalDefs}</div><div class="sc-label">Definitions Done</div></div>
+      <div class="stat-card"><div class="sc-num">${totalDefCorrect}</div><div class="sc-label">Definitions Correct</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">📈 Accuracy Trend</div>
+      ${mcqHistory.length === 0 ? '<p style="font-size:.82rem;color:#94a3b8">Complete quizzes to see your trend.</p>' : `
+        <div style="display:flex;flex-direction:column;gap:6px">
+          ${mcqHistory.slice(-10).map((h,i) => {
+            const pct = h.accuracy;
+            const color = pct>=80?'#16a34a':pct>=60?'#d97706':'#dc2626';
+            return `
+              <div style="display:flex;align-items:center;gap:10px">
+                <span style="font-size:.72rem;color:#94a3b8;min-width:70px">${new Date(h.date).toLocaleDateString()}</span>
+                <div style="flex:1;height:20px;background:#f1f5f9;border-radius:4px;overflow:hidden">
+                  <div style="width:${pct}%;height:100%;background:${color};border-radius:4px"></div>
+                </div>
+                <span style="font-size:.78rem;font-weight:700;min-width:40px;text-align:right;color:${color}">${pct}%</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `}
+    </div>
+
+    <div class="card">
+      <div class="card-title">Recent Activity</div>
+      ${history.length === 0 ? '<p style="font-size:.82rem;color:#94a3b8">No activity yet. Start practicing!</p>' : `
+        <div>
+          ${history.slice(-10).reverse().map(h => `
+            <div class="history-item">
+              <span class="history-date">${new Date(h.date).toLocaleDateString()}</span>
+              <span class="history-mode" style="background:${h.mode==='mcq'?'#dbeafe':'#dcfce7'};color:${h.mode==='mcq'?'#1d4ed8':'#16a34a'}">${h.mode==='mcq'?'MCQ':'Defs'}</span>
+              <span style="font-size:.78rem;color:#64748b">${h.total} Qs</span>
+              <span class="history-score" style="color:${h.accuracy>=80?'#16a34a':h.accuracy>=60?'#d97706':'#dc2626'}">${h.accuracy}%</span>
+            </div>
+          `).join('')}
+        </div>
+      `}
+    </div>
+
+    <button class="btn btn-danger btn-sm" onclick="clearHistory()">🗑 Clear All History</button>
+  `;
+}
+
+function clearHistory() {
+  if (confirm('Clear all progress history? This cannot be undone.')) {
+    localStorage.removeItem('ch9701_history');
+    renderProgressPage();
+  }
+}
+
+function renderHistoryPage() {
+  const history = JSON.parse(localStorage.getItem('ch9701_history') || '[]');
+  const content = document.getElementById('pageContent');
+  content.innerHTML = `
+    <div class="card">
+      <div class="card-title">📜 Full History</div>
+      ${history.length === 0 ? '<p style="font-size:.82rem;color:#94a3b8">No history yet.</p>' : `
+        <div>
+          ${history.slice().reverse().map((h,i) => `
+            <div class="history-item">
+              <span class="history-date">${new Date(h.date).toLocaleDateString()}</span>
+              <span class="history-mode" style="background:${h.mode==='mcq'?'#dbeafe':'#dcfce7'};color:${h.mode==='mcq'?'#1d4ed8':'#16a34a'}">${h.mode==='mcq'?'MCQ':'Defs'}</span>
+              <span style="font-size:.78rem;color:#64748b">${h.total} Qs · ${h.correct} correct · ${h.elapsed}s</span>
+              <span class="history-score" style="color:${h.accuracy>=80?'#16a34a':h.accuracy>=60?'#d97706':'#dc2626'}">${h.accuracy}%</span>
+            </div>
+          `).join('')}
+        </div>
+      `}
+    </div>
+  `;
+}
+
+/* ═══════════════════════════════════════════
+   ADMIN PAGE
+═══════════════════════════════════════════ */
+function renderAdminPage() {
+  if (!isAdmin) { showPage('mcq'); return; }
+  const students = window.STUDENTS_DB?.students || [];
+  const content = document.getElementById('pageContent');
+  content.innerHTML = `
+    <div class="admin-section">
+      <h3>👥 Student Accounts (${students.length})</h3>
+      ${students.length === 0 ? '<p style="font-size:.82rem;color:#94a3b8">No students yet. Add some below.</p>' : `
+        ${students.map(s => `
+          <div class="student-row">
+            <div class="avatar" style="width:30px;height:30px;font-size:.75rem">${s.name.charAt(0)}</div>
+            <span class="sname">${s.name}</span>
+            <span class="semail">${s.username}</span>
+            <button class="btn btn-danger btn-sm" onclick="deleteStudent('${s.username}')">Delete</button>
+          </div>
+        `).join('')}
+      `}
+    </div>
+
+    <div class="admin-section">
+      <h3>➕ Add Single Student</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px">
+        <input type="text" id="newName" placeholder="Full name (e.g. Alice Chen)"/>
+        <input type="text" id="newUser" placeholder="Username (e.g. alice.chen)"/>
+        <input type="password" id="newPass" placeholder="Password"/>
+      </div>
+      <button class="btn btn-primary" onclick="addSingleStudent()">Add Student</button>
+    </div>
+
+    <div class="admin-section">
+      <h3>📋 Batch Create (CSV)</h3>
+      <p style="font-size:.75rem;color:#64748b;margin-bottom:10px">Format: <code>name,username,password</code> (one per line)</p>
+      <textarea class="csv-input" id="csvInput" placeholder="Alice Chen,alice.chen,pass123
+Bob Wang,bob.wang,pass456
+Carol Liu,carol.liu,pass789"></textarea>
+      <div class="csv-hint">⚠️ Save students_db.json after adding to persist changes.</div>
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <button class="btn btn-primary" onclick="batchAddStudents()">Add All</button>
+        <button class="btn btn-secondary" onclick="downloadStudentsDB()">⬇ Download students_db.json</button>
+      </div>
+      <div id="batchResult" style="margin-top:10px;font-size:.8rem"></div>
+    </div>
+
+    <div class="admin-section" style="border-color:#d97706;background:#fffbeb">
+      <h3>⚠️ How to Save Changes</h3>
+      <ol style="font-size:.78rem;color:#92400e;line-height:2;padding-left:20px">
+        <li>Click "Download students_db.json" above</li>
+        <li>Replace the file in your local <code>chem9701istry</code> folder</li>
+        <li>Commit and push to GitHub: <code style="background:#fef3c7;padding:1px 4px;border-radius:3px">git add students_db.json && git commit -m "Add students" && git push</code></li>
+        <li>Students can then log in with their credentials</li>
+      </ol>
+    </div>
+  `;
+}
+
+function addSingleStudent() {
+  const name = document.getElementById('newName').value.trim();
+  const username = document.getElementById('newUser').value.trim();
+  const password = document.getElementById('newPass').value;
+  if (!name || !username || !password) { alert('Fill all fields.'); return; }
+  const students = window.STUDENTS_DB?.students || [];
+  if (students.find(s => s.username === username)) { alert('Username already exists.'); return; }
+  students.push({ name, username, password });
+  window.STUDENTS_DB.students = students;
+  window.STUDENTS_DB.last_updated = new Date().toISOString().split('T')[0];
+  renderAdminPage();
+}
+
+function batchAddStudents() {
+  const csv = document.getElementById('csvInput').value.trim();
+  if (!csv) return;
+  const lines = csv.split('\n').filter(l => l.trim());
+  const students = window.STUDENTS_DB?.students || [];
+  let added = 0, skipped = 0;
+  lines.forEach(line => {
+    const parts = line.split(',').map(p => p.trim());
+    if (parts.length >= 3) {
+      const [name, username, password] = parts;
+      if (students.find(s => s.username === username)) { skipped++; return; }
+      students.push({ name, username, password });
+      added++;
+    }
+  });
+  window.STUDENTS_DB.students = students;
+  window.STUDENTS_DB.last_updated = new Date().toISOString().split('T')[0];
+  document.getElementById('batchResult').innerHTML =
+    `<span style="color:#16a34a">✅ Added ${added} student(s)</span>` +
+    (skipped ? ` <span style="color:#d97706">⏭ Skipped ${skipped} (already exists)</span>` : '');
+  renderAdminPage();
+}
+
+function deleteStudent(username) {
+  if (!confirm(`Delete student "${username}"?`)) return;
+  window.STUDENTS_DB.students = (window.STUDENTS_DB?.students || []).filter(s => s.username !== username);
+  renderAdminPage();
+}
+
+function downloadStudentsDB() {
+  const blob = new Blob([JSON.stringify(window.STUDENTS_DB, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'students_db.json';
+  a.click(); URL.revokeObjectURL(url);
+}
+
+/* ═══════════════════════════════════════════
+   HISTORY / PROGRESS
+═══════════════════════════════════════════ */
+function saveQuizHistory(record) {
+  const history = JSON.parse(localStorage.getItem('ch9701_history') || '[]');
+  history.push(record);
+  // Keep last 50
+  if (history.length > 50) history.splice(0, history.length - 50);
+  localStorage.setItem('ch9701_history', JSON.stringify(history));
+}
+
+/* ═══════════════════════════════════════════
+   UTILS
+═══════════════════════════════════════════ */
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function showLoading(show) {
+  document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
+}
+
+// Enter key for login
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.getElementById('loginScreen').style.display !== 'none') {
+    handleLogin();
+  }
+});
+</script>
+</body>
+</html>
