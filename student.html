@@ -80,12 +80,14 @@ textarea{min-height:80px;padding:10px 12px;resize:vertical;width:100%}
 .chapter-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s}
 .chapter-item:hover{border-color:#0d9488;background:#f0fdfb}
 .chapter-item input[type=checkbox]{width:16px;height:16px;accent-color:#0d9488}
+.chapter-no-mcq{opacity:.65;background:#fafafa}
+.chapter-no-mcq:hover{background:#f5f5f5;border-color:#d1d5db}
 .chapter-name{flex:1;font-size:.82rem;font-weight:600;color:#374151}
 .chapter-meta{font-size:.72rem;color:#94a3b8}
 .topic-list{margin-left:30px;margin-bottom:8px;display:flex;flex-direction:column;gap:4px}
-.topic-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;font-size:.78rem;cursor:pointer}
+.topic-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;font-size:.78rem;cursor:pointer;pointer-events:none}
 .topic-item:hover{border-color:#0d9488}
-.topic-item input[type=checkbox]{width:14px;height:14px;accent-color:#0d9488}
+.topic-item input[type=checkbox]{pointer-events:auto;width:14px;height:14px;accent-color:#0d9488;cursor:pointer;margin:0}
 .topic-qcount{font-size:.68rem;color:#94a3b8;margin-left:auto}
 .chapter-chevron{color:#94a3b8;font-size:.7rem;transition:transform .2s}
 .chapter-chevron.open{transform:rotate(90deg)}
@@ -94,9 +96,7 @@ textarea{min-height:80px;padding:10px 12px;resize:vertical;width:100%}
 .mode-tab{padding:7px 16px;border-radius:7px;cursor:pointer;font-size:.82rem;font-weight:600;color:#64748b;transition:all .15s;border:none;background:transparent}
 .mode-tab.active{background:#0d9488;color:#fff;box-shadow:0 2px 6px rgba(13,148,136,.3)}
 .mode-tab:not(.active):hover{background:#ccfbf1;color:#0f766e}
-.q-counter{display:flex;align-items:center;gap:8px}
-.q-counter button{width:32px;height:32px;border:1.5px solid #e2e8f0;border-radius:6px;background:#fff;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .15s}
-.q-counter button:hover{background:#f1f5f9;border-color:#0d9488}
+
 
 .question-card{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;margin-bottom:16px;overflow:hidden}
 .q-header{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f8fafc;border-bottom:1px solid #e2e8f0}
@@ -193,6 +193,31 @@ textarea{min-height:80px;padding:10px 12px;resize:vertical;width:100%}
 .empty-state .es-icon{font-size:2.5rem;margin-bottom:12px}
 .empty-state p{font-size:.82rem}
 
+/* Drawing Pad */
+.draw-pad-wrap{margin:12px 0;border:2px solid #e2e8f0;border-radius:10px;overflow:hidden;background:#fff}
+.draw-toolbar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#f8fafc;border-bottom:1px solid #e2e8f0;flex-wrap:wrap}
+.draw-toolbar .dt-label{font-size:.72rem;font-weight:700;color:#64748b;letter-spacing:.06em;text-transform:uppercase}
+.draw-btn{height:28px;padding:0 10px;border-radius:5px;border:1.5px solid #e2e8f0;background:#fff;cursor:pointer;font-size:.75rem;font-weight:600;color:#374151;transition:all .12s}
+.draw-btn:hover{border-color:#0d9488;color:#0d9488}
+.draw-btn.active{background:#0d9488;color:#fff;border-color:#0d9488}
+.draw-btn.clear-btn{background:#fee2e2;color:#dc2626;border-color:#fecaca}
+.draw-btn.clear-btn:hover{background:#dc2626;color:#fff}
+.draw-btn.undo-btn{background:#fef3c7;color:#d97706;border-color:#fde68a}
+.draw-btn.undo-btn:hover{background:#d97706;color:#fff}
+.draw-canvas{display:block;width:100%;touch-action:none;cursor:crosshair;background:#fff}
+.draw-input-hidden{display:none}
+textarea.draw-mode{font-family:'Segoe UI',system-ui,sans-serif}
+
+/* STR keyword scoring */
+.str-score-box{background:#fff;border-radius:10px;border:1.5px solid #e2e8f0;padding:14px 16px;margin:12px 0}
+.str-score-box h4{font-size:.82rem;font-weight:700;color:#1e293b;margin-bottom:8px}
+.str-score-bar{height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-bottom:6px}
+.str-score-fill{height:100%;border-radius:99px;transition:width .4s ease}
+.str-score-detail{font-size:.75rem;color:#64748b;line-height:1.7}
+.kw-match{color:#16a34a;font-weight:700}
+.kw-miss{color:#dc2626;font-weight:700}
+.kw-neutral{color:#94a3b8}
+
 @media(max-width:640px){
   .app{flex-direction:column}
   .sidebar{width:100%;height:auto;max-height:50vh}
@@ -228,7 +253,7 @@ textarea{min-height:80px;padding:10px 12px;resize:vertical;width:100%}
     <div class="nav-section">
       <div class="nav-label">Practice</div>
       <div class="nav-item active" data-page="mcq" onclick="showPage('mcq')"><span>📝</span> MCQ Practice</div>
-      <div class="nav-item" data-page="struct" onclick="showPage('struct')"><span>📄</span> Paper 2 &amp; 4</div>
+      <div class="nav-item" data-page="struct" onclick="showPage('struct')"><span>📄</span> STR Practice</div>
       <div class="nav-item" data-page="defs" onclick="showPage('defs')"><span>📖</span> Definition Match</div>
       <div class="nav-item" data-page="vocab" onclick="showPage('vocab')"><span>🔤</span> Vocabulary</div>
       <div class="nav-item" data-page="review" onclick="showPage('review')"><span>🔄</span> Review Quiz</div>
@@ -257,9 +282,11 @@ textarea{min-height:80px;padding:10px 12px;resize:vertical;width:100%}
 <script>
 /* STATE */
 var DB = { questions: [], definitions: {}, chapters: [], structDB: null, vocabDB: {} };
+var TOPICS_MAP = {};
+var CHAPTERS_MAP = {};
 var currentUser = null, isAdmin = false;
 var quizState = null, defState = null, structState = null, vocabState = null;
-var quizCount = 20;
+var quizCount = 20, strQuizCount = 10, structState = null;
 
 /* INIT */
 window.addEventListener('DOMContentLoaded', async function() {
@@ -284,14 +311,30 @@ async function loadDB() {
     showLoading(true, 'Loading vocabulary...');
     var vocab = await loadJson('vocab_db.json');
     DB.vocabDB = vocab || {};
+    showLoading(true, 'Loading topics...');
+    try {
+      var topics = await loadJson('topics.json');
+      TOPICS_MAP = {};
+      CHAPTERS_MAP = {};
+      Object.entries(topics.chapters || {}).forEach(function([chId, ch]) {
+        CHAPTERS_MAP[chId] = ch.name;
+        (ch.topics || []).forEach(function(t) { TOPICS_MAP[t.id] = t.name; });
+      });
+    } catch(e) { TOPICS_MAP = {}; CHAPTERS_MAP = {}; }
     showLoading(true, 'Loading students...');
     await loadStudentsDB();
     document.getElementById('dbStatus').style.display = 'inline-block';
   } catch(e) {
     console.error('DB error:', e);
-    document.getElementById('dbStatus').textContent = 'DB Error';
-    document.getElementById('dbStatus').style.background = '#fee2e2';
-    document.getElementById('dbStatus').style.color = '#dc2626';
+    // Hide loading overlay so user can still login
+    showLoading(false);
+    var dbStatus = document.getElementById('dbStatus');
+    if (dbStatus) {
+      dbStatus.textContent = '⚠ DB Error - some features may be unavailable';
+      dbStatus.style.display = 'inline-block';
+      dbStatus.style.background = '#fee2e2';
+      dbStatus.style.color = '#dc2626';
+    }
   }
 }
 
@@ -355,7 +398,7 @@ function showPage(page) {
   document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
   var nav = document.querySelector('.nav-item[data-page="'+page+'"]');
   if (nav) nav.classList.add('active');
-  var titles = {mcq:'MCQ Practice',struct:'Paper 2 & 4',defs:'Definition Match',vocab:'Vocabulary',review:'Review Quiz',progress:'My Progress',history:'History',admin:'Manage Students'};
+  var titles = {mcq:'MCQ Practice',struct:'STR Practice',defs:'Definition Match',vocab:'Vocabulary',review:'Review Quiz',progress:'My Progress',history:'History',admin:'Manage Students'};
   document.getElementById('pageTitle').textContent = titles[page] || page;
   var pages = {mcq:renderMCQPage,struct:renderStructPage,defs:renderDefsPage,vocab:renderVocabPage,review:renderReviewPage,progress:renderProgressPage,history:renderHistoryPage,admin:renderAdminPage};
   if (pages[page]) pages[page]();
@@ -365,8 +408,23 @@ function showPage(page) {
 function renderMCQPage() {
   var c = document.getElementById('pageContent');
   if (quizState && quizState.mode === 'mcq') { renderQuiz(); return; }
-  c.innerHTML = '<div class="card"><div class="card-title">📝 MCQ Practice</div>'+
-    '<div class="filter-bar"><span style="font-size:.8rem;color:#64748b">Questions:</span><div class="q-counter"><button onclick="adjustCount(-10)">-</button><span id="qCountDisplay">'+quizCount+'</span><button onclick="adjustCount(10)">+</button></div></div>'+
+  var saved = checkSavedQuiz();
+  var savedBanner = '';
+  if (saved && saved.questions) {
+    var done = Object.keys(saved.answers||{}).length;
+    savedBanner = '<div style="display:flex;align-items:center;gap:10px;padding:14px;background:#fffbeb;border:2px solid #f59e0b;border-radius:10px;margin-bottom:16px">'+
+      '<span style="font-size:1.4rem">📋</span>'+
+      '<div style="flex:1">'+
+        '<div style="font-size:.85rem;font-weight:700;color:#92400e">Unfinished Quiz</div>'+
+        '<div style="font-size:.75rem;color:#b45309">Q '+(done+1)+' of '+saved.questions.length+' · '+done+' answered</div>'+
+      '</div>'+
+      '<div style="display:flex;gap:8px">'+
+        '<button class="btn btn-amber btn-sm" onclick="continueSavedQuiz()">Continue</button>'+
+        '<button class="btn btn-secondary btn-sm" onclick="clearSavedQuiz();renderMCQPage()">Discard</button>'+
+      '</div></div>';
+  }
+  c.innerHTML = savedBanner+'<div class="card"><div class="card-title">📝 MCQ Practice</div>'+
+    '<div class="filter-bar"><span style="font-size:.8rem;color:#64748b;margin-right:6px">Questions:</span><input type="number" id="qCountInput" value="'+quizCount+'" min="1" max="100" style="width:60px;height:32px" oninput="quizCount=Math.max(1,Math.min(100,+this.value||1));updateSelection()"/></div>'+
     '<div class="selected-summary" id="selSummary">Select chapters below</div>'+
     renderChapterSelect()+
     '<button class="start-quiz-btn" id="startBtn" onclick="startMCQ()" disabled>Select chapters to start</button></div>';
@@ -375,12 +433,13 @@ function renderMCQPage() {
 function renderChapterSelect() {
   var h = '<div class="chapter-list" id="chapterList">';
   DB.chapters.forEach(function(ch) {
-    var qCount = DB.questions.filter(function(q){ return q.chapter_id === ch.id; }).length;
-    h += '<div class="chapter-item" onclick="toggleChapter(\''+ch.id+'\',event)">'+
+    var qCount = DB.questions.filter(function(q){ return q.chapter_id === ch.id && q.id.indexOf('_P1_') >= 0; }).length;
+    var noMcq = qCount === 0;
+    h += '<div class="chapter-item'+(noMcq?' chapter-no-mcq':'')+'" onclick="toggleChapter(\''+ch.id+'\',event)">'+
       '<input type="checkbox" id="ch_'+ch.id+'" onchange="updateSelection()"/>'+
       '<span class="chapter-chevron" id="chev_'+ch.id+'">▶</span>'+
       '<span class="chapter-name">'+ch.num+' · '+ch.name+'</span>'+
-      '<span class="chapter-meta">'+qCount+' Qs</span></div>'+
+      '<span class="chapter-meta">'+(noMcq?'<span style="color:#f59e0b;font-size:.7rem">no MCQ</span>':qCount+' Qs')+'</span></div>'+
       '<div class="topic-list" id="topics_'+ch.id+'" style="display:none"></div>';
   });
   return h + '</div>';
@@ -396,16 +455,20 @@ function toggleChapter(chId, e) {
   } else {
     td.style.display = 'flex'; cv.classList.add('open');
     var tMap = {};
-    DB.questions.filter(function(q){ return q.chapter_id === chId; }).forEach(function(q) {
+    DB.questions.filter(function(q){ return q.chapter_id === chId && q.id.indexOf('_P1_') >= 0; }).forEach(function(q) {
       (q.topic_ids||[]).forEach(function(t){ tMap[t] = (tMap[t]||0)+1; });
     });
-    var topics = Object.keys(tMap).map(function(tid){ return {id:tid, name:tid.replace(/_/g,' ')}; });
+    var topics = Object.keys(tMap).map(function(tid){ return {id:tid, name:TOPICS_MAP[tid] || tid.replace(/_/g,' ')}; });
     var th = '';
-    topics.forEach(function(t) {
-      th += '<div class="topic-item" onclick="event.stopPropagation();document.getElementById(\'t_'+t.id+'\').click()">'+
-        '<input type="checkbox" id="t_'+t.id+'" data-chapter="'+chId+'" onchange="updateChapterCheckbox(\''+chId+'\');updateSelection()"/>'+
-        '<span>'+t.name+'</span><span class="topic-qcount">'+tMap[t.id]+' Qs</span></div>';
-    });
+    if (topics.length === 0) {
+      th = '<div style="padding:10px 14px;font-size:.78rem;color:#b45309;background:#fffbeb;border-radius:6px;margin:4px 0">This chapter has no Paper 1 MCQ questions — only Paper 2/3/4 structured questions are in the database.</div>';
+    } else {
+      topics.forEach(function(t) {
+        th += '<div class="topic-item" data-chapter="'+chId+'">'+
+          '<input type="checkbox" id="t_'+t.id+'" data-chapter="'+chId+'" onchange="updateChapterCheckbox(\''+chId+'\');updateSelection()"/>'+
+          '<span>'+t.name+'</span><span class="topic-qcount">'+tMap[t.id]+' Qs</span></div>';
+      });
+    }
     td.innerHTML = th;
   }
   updateSelection();
@@ -426,17 +489,12 @@ function updateSelection() {
     btn.disabled = true; btn.textContent = 'Select chapters';
     return;
   }
-  var total = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return sel.indexOf(t)>=0; }); }).length;
+  var total = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return sel.indexOf(t)>=0; }) && q.id.indexOf('_P1_') >= 0; }).length;
   summary.textContent = sel.length+' topics selected · '+total+' questions available';
   btn.disabled = false;
   btn.textContent = 'Start Practice ('+Math.min(quizCount,total)+' questions)';
 }
 
-function adjustCount(delta) {
-  quizCount = Math.max(5, Math.min(100, quizCount + delta));
-  document.getElementById('qCountDisplay').textContent = quizCount;
-  updateSelection();
-}
 
 function getSelectedTopics() {
   var s = [];
@@ -447,7 +505,9 @@ function getSelectedTopics() {
 function startMCQ() {
   var sel = getSelectedTopics();
   if (!sel.length) return;
-  var allQs = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return sel.indexOf(t)>=0; }); });
+  var allQs = DB.questions.filter(function(q){
+    return q.topic_ids && q.topic_ids.some(function(t){ return sel.indexOf(t)>=0; }) && q.id.indexOf('_P1_') >= 0;
+  });
   if (!allQs.length) { alert('No questions found.'); return; }
   quizState = {mode:'mcq', questions:shuffle(allQs).slice(0,Math.min(quizCount,allQs.length)), currentIndex:0, answers:{}, startTime:Date.now()};
   renderQuiz();
@@ -470,7 +530,7 @@ function renderQuiz() {
     '</div>'+
     '<div class="q-body">';
   if (q.img) h += '<img class="q-img" src="images/'+q.img+'" alt="Question" onclick="this.style.maxWidth=this.style.maxWidth?\'none\':\'700px\'"/>';
-  h += '<div class="q-source">Topic: '+(q.topic_ids||[]).map(function(t){return t.replace(/_/g,' ');}).join(', ')+'</div>';
+  h += '<div class="q-source">Topic: '+(q.topic_ids||[]).map(function(t){return TOPICS_MAP[t]||t;}).join(', ')+'</div>';
   var letters = ['A','B','C','D'];
   letters.forEach(function(l) {
     var sel = answered && quizState.answers[q.id].selected === l;
@@ -487,7 +547,10 @@ function renderQuiz() {
       (isCorrect?'✅ <strong>Correct!</strong>':'❌ <strong>Incorrect.</strong> Answer: <strong>'+q.answer+'</strong>')+'</div>';
   }
   h += '</div><div class="q-actions">'+
-    '<span style="font-size:.75rem;color:#94a3b8">'+(q.season||'')+'</span>'+
+    '<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">'+
+      '<span style="font-size:.75rem;color:#94a3b8">'+(q.season||'')+'</span>'+
+      '<button class="btn btn-secondary btn-sm" style="background:#fffbeb;color:#92400e;border-color:#fde68a" onclick="saveQuizAndExit()">💾 Save & Exit</button>'+
+    '</div>'+
     '<div style="display:flex;gap:8px">'+
       (quizState.currentIndex>0 ? '<button class="btn btn-secondary btn-sm" onclick="quizState.currentIndex--;renderQuiz()">← Prev</button>' : '')+
       (!answered ? '<button class="btn btn-primary btn-sm" onclick="renderQuiz()" disabled>Select an option</button>' :
@@ -515,6 +578,38 @@ function selectOption(qId, letter) {
   renderQuiz();
 }
 
+function saveQuizAndExit() {
+  var done = Object.keys(quizState.answers).length;
+  if (done === 0) {
+    quizState = null;
+    showPage('mcq');
+    return;
+  }
+  localStorage.setItem('ch9701_quiz_saved', JSON.stringify(quizState));
+  var saved = JSON.parse(localStorage.getItem('ch9701_quiz_saved')||'{}');
+  var total = saved.questions ? saved.questions.length : 0;
+  quizState = null;
+  showPage('mcq');
+  alert('Progress saved! ' + done + '/' + total + ' questions answered.');
+}
+
+function checkSavedQuiz() {
+  var saved = localStorage.getItem('ch9701_quiz_saved');
+  if (!saved) return null;
+  try { return JSON.parse(saved); } catch(e) { return null; }
+}
+
+function continueSavedQuiz() {
+  var saved = checkSavedQuiz();
+  if (!saved) return;
+  quizState = saved;
+  renderQuiz();
+}
+
+function clearSavedQuiz() {
+  localStorage.removeItem('ch9701_quiz_saved');
+}
+
 /* RESULTS */
 function renderResults() {
   var qs = quizState.questions, ans = quizState.answers;
@@ -535,13 +630,14 @@ function renderResults() {
   var weak = Object.entries(topicStats).filter(function(e){return e[1].t>=1 && e[1].c/e[1].t<0.6;}).sort(function(a,b){return a[1].c/a[1].t - b[1].c/b[1].t;}).slice(0,5);
   var accColor = accuracy>=80?'#16a34a':accuracy>=60?'#d97706':'#dc2626';
   saveHistory({mode:'mcq',date:new Date().toISOString(),total,correct,wrong,accuracy,elapsed,weakTopics:weak.map(function(t){return t[0];})});
+  clearSavedQuiz();
   var h = '<div class="card"><div class="card-title">🎉 Quiz Complete!</div><div class="results-grid">'+
     '<div class="result-card"><div class="rc-score" style="color:'+accColor+'">'+accuracy+'%</div><div class="rc-label">Accuracy</div><div class="rc-sub">'+correct+'/'+total+' correct</div></div>'+
     '<div class="result-card"><div class="rc-score" style="color:#dc2626">'+wrong+'</div><div class="rc-label">Wrong</div></div>'+
     '<div class="result-card"><div class="rc-score" style="color:#d97706">'+mins+':'+String(secs).padStart(2,'0')+'</div><div class="rc-label">Time</div><div class="rc-sub">avg '+Math.round(elapsed/total)+'s/q</div></div></div>';
   if (weak.length) {
     h += '<div class="weak-section"><h3>🔴 Weak Areas</h3><div class="weak-topics">';
-    weak.forEach(function(e) { h += '<div class="weak-topic">'+e[0].replace(/_/g,' ')+' <span class="wq">'+Math.round(e[1].c/e[1].t*100)+'%</span></div>'; });
+    weak.forEach(function(e) { h += '<div class="weak-topic">'+TOPICS_MAP[e[0]]+' <span class="wq">'+Math.round(e[1].c/e[1].t*100)+'%</span></div>'; });
     h += '</div></div>';
   }
   h += '</div><div style="display:flex;gap:10px;flex-wrap:wrap">'+
@@ -555,82 +651,518 @@ function renderResults() {
 function renderStructPage() {
   var c = document.getElementById('pageContent');
   if (structState && structState.questions) { renderStructQuiz(); return; }
-  var p2Count = DB.structDB ? DB.structDB.P2 ? DB.structDB.P2.length : 0 : 0;
-  var p4Count = DB.structDB ? DB.structDB.P4 ? DB.structDB.P4.length : 0 : 0;
-  var years = DB.structDB && DB.structDB.meta && DB.structDB.meta.papers ? DB.structDB.meta.papers[0].years : [];
-  c.innerHTML = '<div class="card"><div class="card-title">📄 Paper 2 &amp; Paper 4</div>'+
-    '<p style="font-size:.82rem;color:#64748b;margin-bottom:16px">Structured questions from past papers. Answer, then check the Marking Scheme image.</p>'+
-    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">'+
-      '<div style="background:#eff6ff;border:2px solid #bfdbfe;border-radius:10px;padding:20px;text-align:center;cursor:pointer" onclick="startStructQuiz(\'P2\')">'+
-        '<div style="font-size:1.8rem;margin-bottom:8px">📄</div><div style="font-weight:700;font-size:1rem;color:#1d4ed8">Paper 2</div>'+
-        '<div style="font-size:.75rem;color:#64748b;margin:4px 0 8px">Structured Questions</div>'+
-        '<div style="font-size:1.1rem;font-weight:700;color:#1d4ed8">'+p2Count+' Questions</div></div>'+
-      '<div style="background:#f5f3ff;border:2px solid #ddd6fe;border-radius:10px;padding:20px;text-align:center;cursor:pointer" onclick="startStructQuiz(\'P4\')">'+
-        '<div style="font-size:1.8rem;margin-bottom:8px">📋</div><div style="font-weight:700;font-size:1rem;color:#7c3aed">Paper 4</div>'+
-        '<div style="font-size:.75rem;color:#64748b;margin:4px 0 8px">Planning Questions</div>'+
-        '<div style="font-size:1.1rem;font-weight:700;color:#7c3aed">'+p4Count+' Questions</div></div>'+
-    '</div>'+
-    (years.length ? '<div style="font-size:.8rem;color:#64748b;margin-bottom:16px">Years: '+years.join(', ')+'</div>' : '')+
-    '<div style="padding:14px;background:#fef9c3;border:1px solid #fde047;border-radius:8px;font-size:.78rem;color:#713f12">'+
-      '<strong>How it works:</strong> View the question image, write your answer, then reveal the Marking Scheme to compare.</div></div>';
+  var saved = checkSavedSTR();
+  var savedBanner = '';
+  if (saved && saved.questions) {
+    var done = Object.keys(saved.answers||{}).length;
+    savedBanner = '<div style="display:flex;align-items:center;gap:10px;padding:14px;background:#fffbeb;border:2px solid #f59e0b;border-radius:10px;margin-bottom:16px">'+
+      '<span style="font-size:1.4rem">📋</span>'+
+      '<div style="flex:1">'+
+        '<div style="font-size:.85rem;font-weight:700;color:#92400e">Unfinished STR Quiz</div>'+
+        '<div style="font-size:.75rem;color:#b45309">Q '+(done+1)+' of '+saved.questions.length+' · '+done+' answered</div>'+
+      '</div>'+
+      '<div style="display:flex;gap:8px">'+
+        '<button class="btn btn-amber btn-sm" onclick="continueSavedSTR()">Continue</button>'+
+        '<button class="btn btn-secondary btn-sm" onclick="clearSavedSTR();renderStructPage()">Discard</button>'+
+      '</div></div>';
+  }
+  var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+  c.innerHTML = savedBanner+'<div class="card"><div class="card-title">📄 STR Practice</div>'+
+    '<div class="filter-bar"><span style="font-size:.8rem;color:#64748b;margin-right:6px">Questions:</span>'+
+    '<input type="number" id="strQCountInput" value="'+strQuizCount+'" min="1" max="50" style="width:60px;height:32px" '+
+    'oninput="strQuizCount=Math.max(1,Math.min(50,+this.value||1));updateSTRSelection()"/></div>'+
+    '<div class="selected-summary" id="strSelSummary">Select chapters below</div>'+
+    renderSTRChapterSelect()+
+    '<button class="start-quiz-btn" id="strStartBtn" onclick="startSTRQuiz()" disabled>Select chapters</button></div>';
+}
+
+function renderSTRChapterSelect() {
+  var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+  
+  // Get chapter info from topics DB
+  var chapterNames = {};
+  var chapterTopics = {};
+  if (DB.topics && DB.topics.chapters) {
+    Object.keys(DB.topics.chapters).forEach(function(ch) {
+      chapterNames[ch] = DB.topics.chapters[ch].name;
+      chapterTopics[ch] = DB.topics.chapters[ch].topics || [];
+    });
+  }
+  
+  // Count questions per chapter
+  var chCount = {};
+  var chPapers = {}; // Which papers have questions for this chapter
+  allQs.forEach(function(q) {
+    var chapters = q.chapters || [q.ch] || [];
+    chapters.forEach(function(ch) {
+      if (!chCount[ch]) { chCount[ch] = 0; chPapers[ch] = {}; }
+      chCount[ch]++;
+      chPapers[ch][q.paper] = (chPapers[ch][q.paper] || 0) + 1;
+    });
+  });
+  
+  // Sort chapters (ch01, ch03, ch04, ... ch28)
+  var sortedChs = Object.keys(chCount).sort(function(a,b){
+    var na = parseInt(a.replace('ch','').replace(/[^0-9]/g,'')) || 0;
+    var nb = parseInt(b.replace('ch','').replace(/[^0-9]/g,'')) || 0;
+    return na - nb;
+  });
+  
+  var h = '<div class="chapter-list" id="strChapterList">';
+  
+  // Paper type filter
+  h += '<div style="display:flex;gap:8px;margin-bottom:12px;padding:0 2px">';
+  h += '<label style="display:flex;align-items:center;gap:4px;font-size:.75rem;cursor:pointer">'+
+    '<input type="checkbox" id="strFilterP2" checked onchange="renderSTRChapterSelect();updateSTRSelection()"/>'+
+    '<span style="padding:2px 8px;background:#1d4ed8;color:#fff;border-radius:4px;font-size:.65rem">P2</span></label>';
+  h += '<label style="display:flex;align-items:center;gap:4px;font-size:.75rem;cursor:pointer">'+
+    '<input type="checkbox" id="strFilterP4" checked onchange="renderSTRChapterSelect();updateSTRSelection()"/>'+
+    '<span style="padding:2px 8px;background:#7c3aed;color:#fff;border-radius:4px;font-size:.65rem">P4</span></label>';
+  h += '</div>';
+  
+  sortedChs.forEach(function(ch) {
+    var chId = ch.replace(/[^a-zA-Z0-9]/g,'');
+    var name = chapterNames[ch] || ch;
+    var qCount = chCount[ch];
+    var p2count = chPapers[ch]['P2'] || 0;
+    var p4count = chPapers[ch]['P4'] || 0;
+    var badge = '';
+    if (p2count > 0 && p4count > 0) badge = '<span class="badge badge-blue" style="font-size:.6rem">P2</span><span class="badge badge-purple" style="font-size:.6rem">P4</span>';
+    else if (p2count > 0) badge = '<span class="badge badge-blue" style="font-size:.6rem">P2</span>';
+    else badge = '<span class="badge badge-purple" style="font-size:.6rem">P4</span>';
+    
+    h += '<div class="chapter-item" onclick="toggleSTRChapter(\''+chId+'\',event)">'+
+      '<input type="checkbox" id="strch_'+chId+'" data-chapter="'+ch+'" onchange="updateSTRSelection()"/>'+
+      '<span class="chapter-chevron" id="strchev_'+chId+'">▶</span>'+
+      '<span class="chapter-name">'+ch.toUpperCase()+' '+name+'</span>'+
+      '<span class="chapter-meta">'+badge+'<span class="topic-qcount">'+qCount+' Qs</span></span>'+
+      '</div>'+
+      '<div class="topic-list" id="strtopics_'+chId+'" style="display:none"></div>';
+  });
+  
+  // No MCQ notice for chapters without STR questions
+  var allChs = Object.keys(chapterNames).sort(function(a,b){
+    return (parseInt(a.replace('ch',''))||0) - (parseInt(b.replace('ch',''))||0);
+  });
+  var missingChs = allChs.filter(function(ch){ return !chCount[ch]; });
+  if (missingChs.length > 0) {
+    h += '<div style="margin-top:16px;padding-top:16px;border-top:1px solid #e2e8f0">';
+    h += '<div style="font-size:.72rem;color:#94a3b8;margin-bottom:8px">No STR questions available for:</div>';
+    missingChs.forEach(function(ch) {
+      h += '<span class="chapter-no-mcq" style="display:inline-flex;align-items:center;padding:4px 10px;margin:2px;border-radius:6px;font-size:.72rem">'+ch.toUpperCase()+'</span>';
+    });
+    h += '</div>';
+  }
+  
+  return h + '</div>';
+}
+
+function toggleSTRChapter(chId, e) {
+  e.stopPropagation();
+  var td = document.getElementById('strtopics_'+chId);
+  var cv = document.getElementById('strchev_'+chId);
+  var cb = document.getElementById('strch_'+chId);
+  if (td.style.display !== 'none') {
+    td.style.display = 'none'; cv.classList.remove('open'); cb.checked = false;
+  } else {
+    td.style.display = 'flex'; cv.classList.add('open');
+    // Get chapter key
+    var chKey = cb.dataset.chapter;
+    var chapterNames = {};
+    if (DB.topics && DB.topics.chapters && DB.topics.chapters[chKey]) {
+      chapterNames = DB.topics.chapters[chKey].topics || [];
+    }
+    
+    var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+    var filterP2 = document.getElementById('strFilterP2').checked;
+    var filterP4 = document.getElementById('strFilterP4').checked;
+    
+    // Filter questions by chapter and paper type
+    var chQs = allQs.filter(function(q) {
+      var chapters = q.chapters || [q.ch] || [];
+      if (!chapters.includes(chKey)) return false;
+      if (!filterP2 && q.paper === 'P2') return false;
+      if (!filterP4 && q.paper === 'P4') return false;
+      return true;
+    });
+    
+    // Group by paper type
+    var byPaper = {P2:[], P4:[]};
+    chQs.forEach(function(q){ byPaper[q.paper].push(q); });
+    
+    var th = '<div style="padding:6px 0;font-size:.72rem;color:#94a3b8;margin-left:4px">'+chQs.length+' questions</div>';
+    
+    // Topic list (simplified - just show question types)
+    if (chQs.length > 0) {
+      th += '<div class="topic-item" style="pointer-events:none">';
+      th += '<input type="checkbox" id="strv_'+chId+'_all" class="str-chapter-cb" data-chapter="'+chKey+'" data-paper="all" onchange="updateSTRSelection()"/>';
+      th += '<span>All P2 & P4</span><span class="topic-qcount">'+chQs.length+' Qs</span>';
+      th += '</div>';
+    } else {
+      th += '<div style="padding:8px 14px;font-size:.75rem;color:#94a3b8">No questions match current filters</div>';
+    }
+    
+    td.innerHTML = th;
+  }
+  updateSTRSelection();
+}
+
+function updateSTRSelection() {
+  var sel = getSelectedSTRChapters();
+  var total = sel.reduce(function(s,v){return s+v.qs.length;},0);
+  var summary = document.getElementById('strSelSummary');
+  var btn = document.getElementById('strStartBtn');
+  if (sel.length === 0) {
+    summary.textContent = 'Select chapters below';
+    btn.disabled = true; btn.textContent = 'Select chapters';
+    return;
+  }
+  summary.textContent = sel.length+' chapter(s) selected · '+total+' questions available';
+  btn.disabled = total === 0;
+  btn.textContent = 'Start Practice ('+Math.min(strQuizCount,total)+' questions)';
+}
+
+function getSelectedSTRChapters() {
+  var result = [];
+  var seen = {};
+  var filterP2 = document.getElementById('strFilterP2').checked;
+  var filterP4 = document.getElementById('strFilterP4').checked;
+  
+  document.querySelectorAll('.str-chapter-cb:checked').forEach(function(c){
+    var ch = c.dataset.chapter;
+    var key = ch+'_'+c.dataset.paper;
+    if (seen[key]) return;
+    seen[key] = true;
+    
+    var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+    var qs = allQs.filter(function(q) {
+      var chapters = q.chapters || [q.ch] || [];
+      if (!chapters.includes(ch)) return false;
+      if (!filterP2 && q.paper === 'P2') return false;
+      if (!filterP4 && q.paper === 'P4') return false;
+      return true;
+    });
+    if (qs.length) result.push({chapter:ch, qs:qs});
+  });
+  return result;
+}
+
+function startSTRQuiz() {
+  var sel = getSelectedSTRChapters();
+  if (!sel.length) return;
+  var allQs = [];
+  sel.forEach(function(s){ allQs = allQs.concat(s.qs); });
+  if (!allQs.length) { alert('No questions found.'); return; }
+  var count = Math.min(strQuizCount, allQs.length);
+  structState = {questions:shuffle(allQs).slice(0,count), currentIndex:0, answers:{}, startTime:Date.now(), showMS:{}, drawData:{}};
+  renderStructQuiz();
 }
 
 function startStructQuiz(paper) {
   var qs = DB.structDB ? (DB.structDB[paper]||[]) : [];
   if (!qs.length) { alert('No questions available.'); return; }
-  structState = {paper:paper, questions:shuffle(qs.slice()), currentIndex:0, answers:{}, startTime:Date.now(), showMS:{}};
+  structState = {paper:paper, questions:shuffle(qs.slice()), currentIndex:0, answers:{}, startTime:Date.now(), showMS:{}, drawData:{}};
   renderStructQuiz();
 }
 
 function renderStructQuiz() {
   var c = document.getElementById('pageContent');
   if (structState.currentIndex >= structState.questions.length) {
-    c.innerHTML = '<div class="card"><div class="card-title">📄 '+structState.paper+' Practice Done!</div>'+
+    c.innerHTML = '<div class="card"><div class="card-title">📄 STR Practice Done!</div>'+
       '<p style="font-size:.82rem;color:#64748b">Completed '+structState.questions.length+' questions.</p>'+
       '<div style="display:flex;gap:10px;margin-top:16px">'+
         '<button class="btn btn-secondary" onclick="structState=null;renderStructPage()">← Back</button>'+
-        '<button class="btn btn-primary" onclick="startStructQuiz(\''+structState.paper+'\')">Practice Again</button></div></div>';
+        '<button class="btn btn-primary" onclick="startSTRQuiz()">Practice Again</button></div></div>';
     return;
   }
   var q = structState.questions[structState.currentIndex];
   var total = structState.questions.length;
   var msShown = structState.showMS[q.id] || false;
   var yearLabel = q.year + (q.season ? ' '+q.season : '');
+  var qid = q.id.replace(/[^a-zA-Z0-9]/g,'_');
+  var ansText = structState.answers[q.id] || '';
+  var savedDraw = structState.drawData ? structState.drawData[q.id] : null;
+  var hasDrawing = !!(savedDraw && savedDraw.imageData);
+  var scoreResult = msShown ? calcSTRScore(q, ansText) : null;
+  var scoreBarColor = scoreResult ? (scoreResult.pct>=70?'#16a34a':scoreResult.pct>=40?'#d97706':'#dc2626') : '#e2e8f0';
+
+  var chName = (q.ch && CHAPTERS_MAP[q.ch]) ? CHAPTERS_MAP[q.ch] : (q.ch || '');
+  var chNames = (q.chapters||[]).map(function(c){return CHAPTERS_MAP[c]||c;}).join(', ');
   var h = '<div class="question-card">'+
     '<div class="q-header">'+
-      '<span class="q-progress">'+structState.paper+' — Q'+q.qnum+' · '+yearLabel+'</span>'+
-      '<span class="badge badge-purple">Variant '+q.variant+'</span>'+
+      '<span class="q-progress">'+(chName ? chName : q.paper)+'</span>'+
+      (chNames !== chName ? '<span class="badge badge-blue" style="font-size:.65rem">'+chNames+'</span>' : '')+
       '<span style="flex:1"></span><span style="font-size:.78rem;color:#64748b">'+(structState.currentIndex+1)+'/'+total+'</span>'+
     '</div>'+
     '<div class="q-body">'+
+      '<div class="q-source" style="margin-bottom:10px">'+
+        '<span class="badge badge-purple" style="margin-right:6px">'+q.paper+'</span>'+
+        'Q'+q.qnum+' · '+yearLabel+ (q.variant ? ' · v'+q.variant : '')+
+      '</div>'+
       '<img class="struct-q-img" src="images/'+q.img+'" alt="Question" onclick="this.style.maxWidth=this.style.maxWidth?\'none\':\'800px\'"/>'+
       '<div class="struct-answer-area"><label>Your Answer:</label>'+
-        '<textarea id="stAnswer" placeholder="Write your answer here..." oninput="structState.answers[\''+q.id+'\']=this.value">'+(structState.answers[q.id]||'')+'</textarea></div>';
+        '<div class="draw-pad-wrap">'+
+          '<div class="draw-toolbar">'+
+            '<span class="dt-label">Mode:</span>'+
+            '<button class="draw-btn'+(hasDrawing||ansText?'':' active')+'" id="drawBtn_'+qid+'" onclick="toggleDrawMode(\''+qid+'\',\'text\')">⌨ Text</button>'+
+            '<button class="draw-btn'+(hasDrawing?' active':'')+'" id="drawBtnPen_'+qid+'" onclick="toggleDrawMode(\''+qid+'\',\'draw\')">✍ Handwrite</button>'+
+            '<span style="flex:1"></span>'+
+            '<button class="draw-btn undo-btn" id="undoBtn_'+qid+'" onclick="undoDraw(\''+qid+'\')" style="display:none">↩ Undo</button>'+
+            '<button class="draw-btn clear-btn" id="clearBtn_'+qid+'" onclick="clearDraw(\''+qid+'\')" style="display:none">🗑 Clear</button>'+
+          '</div>'+
+          '<textarea id="strAnsText_'+qid+'" class="draw-mode" placeholder="Type your answer here..." '+
+            'style="width:100%;min-height:160px;border:none;padding:14px;font-size:.88rem;line-height:1.7;resize:vertical;display:'+(hasDrawing?'none':'block')+'" '+
+            'oninput="structState.answers[\''+q.id+'\']=this.value">'+(hasDrawing?'':escHtml(ansText))+'</textarea>'+
+          '<div id="drawWrap_'+qid+'" style="position:relative;display:'+(hasDrawing?'block':'none')+'">'+
+            '<canvas id="drawCanvas_'+qid+'" class="draw-canvas" width="800" height="300"></canvas>'+
+          '</div>'+
+          (hasDrawing ? '<scr'+'ipt>initDrawPad(\''+qid+'\',true)</scr'+'ipt>' : '<scr'+'ipt>initDrawPad(\''+qid+'\',false)</scr'+'ipt>')+
+        '</div></div>';
+
+  // Keyword score display
+  if (msShown && scoreResult) {
+    h += '<div class="str-score-box">'+
+      '<h4>📊 Keyword Score</h4>'+
+      '<div class="str-score-bar"><div class="str-score-fill" style="width:'+scoreResult.pct+'%;background:'+scoreBarColor+'"></div></div>'+
+      '<div class="str-score-detail">'+scoreResult.pct+'% keywords matched ('+scoreResult.matched.length+'/'+scoreResult.total+'): ';
+    scoreResult.matched.forEach(function(kw){ h += '<span class="kw-match">'+escHtml(kw)+'</span> '; });
+    if (scoreResult.missed.length) {
+      h += '<br>Missing: ';
+      scoreResult.missed.forEach(function(kw){ h += '<span class="kw-miss">'+escHtml(kw)+'</span> '; });
+    }
+    h += '</div></div>';
+  }
+
   if (msShown && q.ms_img) {
     h += '<div class="struct-ms-section"><h4>✅ Marking Scheme</h4>'+
       '<img class="struct-ms-img" src="images/'+q.ms_img+'" alt="MS" onclick="this.style.maxWidth=this.style.maxWidth?\'none\':\'800px\'"/></div>';
   }
   h += '</div>'+
     '<div class="q-actions">'+
-      '<span style="font-size:.75rem;color:#94a3b8">'+q.source+'</span>'+
+      '<button class="btn btn-secondary btn-sm" onclick="saveSTRAndExit()">💾 Save &amp; Exit</button>'+
+      '<span style="flex:1;font-size:.72rem;color:#94a3b8;margin-left:8px">'+q.source+'</span>'+
       '<div style="display:flex;gap:8px">'+
         (structState.currentIndex>0 ? '<button class="btn btn-secondary btn-sm" onclick="structState.currentIndex--;renderStructQuiz()">← Prev</button>' : '')+
         (!msShown && q.ms_img ? '<button class="btn btn-amber btn-sm" onclick="structState.showMS[\''+q.id+'\']=true;renderStructQuiz()">Show MS</button>' : '')+
         '<button class="btn btn-primary btn-sm" onclick="structState.currentIndex++;renderStructQuiz()">'+(structState.currentIndex<total-1?'Next →':'Done')+'</button>'+
       '</div></div></div>';
-  // Progress
+  // Progress dots
   h += '<div class="q-nav">';
   structState.questions.forEach(function(_, i) {
     var shown = structState.showMS[structState.questions[i].id] || false;
     var hasAns = structState.answers[structState.questions[i].id] || false;
+    var hasDraw = !!(structState.drawData && structState.drawData[structState.questions[i].id]);
     var color = '#e2e8f0';
     if (shown) color = '#7c3aed';
-    else if (hasAns) color = '#0d9488';
+    else if (hasAns || hasDraw) color = '#0d9488';
     if (i === structState.currentIndex) color = '#0d9488';
     h += '<div style="width:8px;height:8px;border-radius:50%;background:'+color+';flex-shrink:0"></div>';
   });
   h += '</div>';
   c.innerHTML = h;
+  // Initialize drawing pad if in draw mode
+  if (hasDrawing) { setTimeout(function(){ initDrawPad(qid, true); }, 50); }
+}
+
+/* Drawing Pad */
+var _drawStrokes = {};
+function initDrawPad(qid, restore) {
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  if (!_drawStrokes[qid]) _drawStrokes[qid] = [];
+  var strokes = _drawStrokes[qid];
+  // Responsive canvas
+  var wrap = canvas.parentElement || document.getElementById('drawWrap_'+qid);
+  if (wrap) {
+    canvas.style.width = '100%';
+    canvas.style.height = 'auto';
+  }
+  function resizeCanvas() {
+    var rect = canvas.getBoundingClientRect();
+    var stored = canvas.width;
+    canvas.width = rect.width * 2;
+    canvas.height = rect.height * 2;
+    ctx.scale(2, 2);
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    // Redraw all strokes
+    strokes.forEach(function(stroke) {
+      if (stroke.length < 2) return;
+      ctx.beginPath();
+      ctx.moveTo(stroke[0].x, stroke[0].y);
+      for (var i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i].x, stroke[i].y);
+      ctx.stroke();
+    });
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+  var drawing = false, lastX = 0, lastY = 0;
+  function getPos(e) {
+    var rect = canvas.getBoundingClientRect();
+    var src = e.touches ? e.touches[0] : e;
+    return { x: src.clientX - rect.left, y: src.clientY - rect.top };
+  }
+  canvas.addEventListener('mousedown', function(e){ drawing=true; var p=getPos(e); lastX=p.x; lastY=p.y; strokes.push([p]); });
+  canvas.addEventListener('mousemove', function(e){ if(!drawing)return; var p=getPos(e); strokes.push(p); ctx.beginPath(); ctx.moveTo(lastX,lastY); ctx.lineTo(p.x,p.y); ctx.stroke(); lastX=p.x; lastY=p.y; });
+  canvas.addEventListener('mouseup', function(){ drawing=false; saveDrawData(qid); updateDrawBtns(qid); });
+  canvas.addEventListener('mouseleave', function(){ drawing=false; });
+  canvas.addEventListener('touchstart', function(e){ e.preventDefault(); drawing=true; var p=getPos(e); lastX=p.x; lastY=p.y; strokes.push([p]); }, {passive:false});
+  canvas.addEventListener('touchmove', function(e){ e.preventDefault(); if(!drawing)return; var p=getPos(e); strokes.push(p); ctx.beginPath(); ctx.moveTo(lastX,lastY); ctx.lineTo(p.x,p.y); ctx.stroke(); lastX=p.x; lastY=p.y; }, {passive:false});
+  canvas.addEventListener('touchend', function(){ drawing=false; saveDrawData(qid); updateDrawBtns(qid); });
+  // Restore drawing data
+  if (restore && structState && structState.drawData) {
+    var data = structState.drawData[qid.replace(/[^a-zA-Z0-9]/g,'_')];
+    if (data && data.strokes) {
+      _drawStrokes[qid] = data.strokes;
+      data.strokes.forEach(function(stroke) {
+        if (stroke.length < 2) return;
+        ctx.beginPath();
+        ctx.moveTo(stroke[0].x, stroke[0].y);
+        for (var i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i].x, stroke[i].y);
+        ctx.stroke();
+      });
+    }
+  }
+  updateDrawBtns(qid);
+}
+
+function toggleDrawMode(qid, mode) {
+  var textEl = document.getElementById('strAnsText_'+qid);
+  var drawWrap = document.getElementById('drawWrap_'+qid);
+  var btnText = document.getElementById('drawBtn_'+qid);
+  var btnPen = document.getElementById('drawBtnPen_'+qid);
+  var clearBtn = document.getElementById('clearBtn_'+qid);
+  var undoBtn = document.getElementById('undoBtn_'+qid);
+  if (mode === 'text') {
+    if (textEl) {
+      structState.answers[qid] = textEl.value;
+      textEl.style.display = 'block';
+    }
+    if (drawWrap) drawWrap.style.display = 'none';
+    if (btnText) btnText.classList.add('active');
+    if (btnPen) btnPen.classList.remove('active');
+    if (clearBtn) clearBtn.style.display = 'none';
+    if (undoBtn) undoBtn.style.display = 'none';
+  } else {
+    if (textEl) textEl.style.display = 'none';
+    if (drawWrap) {
+      drawWrap.style.display = 'block';
+      setTimeout(function(){ initDrawPad(qid, false); }, 30);
+    }
+    if (btnText) btnText.classList.remove('active');
+    if (btnPen) btnPen.classList.add('active');
+    if (clearBtn) clearBtn.style.display = 'inline-flex';
+    if (undoBtn) undoBtn.style.display = 'inline-flex';
+  }
+}
+
+function saveDrawData(qid) {
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  if (!canvas || !structState) return;
+  if (!structState.drawData) structState.drawData = {};
+  structState.drawData[qid] = {
+    imageData: canvas.toDataURL(),
+    strokes: _drawStrokes[qid] || []
+  };
+}
+
+function clearDraw(qid) {
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  var ctx = canvas ? canvas.getContext('2d') : null;
+  if (ctx) {
+    var rect = canvas.getBoundingClientRect();
+    ctx.clearRect(0, 0, rect.width, rect.height);
+  }
+  _drawStrokes[qid] = [];
+  if (structState && structState.drawData) delete structState.drawData[qid];
+  updateDrawBtns(qid);
+}
+
+function undoDraw(qid) {
+  if (!_drawStrokes[qid] || !_drawStrokes[qid].length) return;
+  _drawStrokes[qid].pop();
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  var ctx = canvas ? canvas.getContext('2d') : null;
+  if (!ctx) return;
+  var rect = canvas.getBoundingClientRect();
+  ctx.clearRect(0, 0, rect.width, rect.height);
+  ctx.strokeStyle = '#1e293b';
+  ctx.lineWidth = 2;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  var dpr = 2;
+  _drawStrokes[qid].forEach(function(stroke) {
+    if (stroke.length < 2) return;
+    ctx.beginPath();
+    ctx.moveTo(stroke[0].x, stroke[0].y);
+    for (var i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i].x, stroke[i].y);
+    ctx.stroke();
+  });
+  saveDrawData(qid);
+  updateDrawBtns(qid);
+}
+
+function updateDrawBtns(qid) {
+  var clearBtn = document.getElementById('clearBtn_'+qid);
+  var undoBtn = document.getElementById('undoBtn_'+qid);
+  var hasStrokes = _drawStrokes[qid] && _drawStrokes[qid].length > 0;
+  if (clearBtn) clearBtn.style.display = hasStrokes ? 'inline-flex' : 'none';
+  if (undoBtn) undoBtn.style.display = hasStrokes ? 'inline-flex' : 'none';
+}
+
+/* Keyword Scoring */
+var STR_KEYWORDS = {
+  // P2 common keywords by question pattern
+};
+function calcSTRScore(q, ansText) {
+  if (!ansText && !(structState && structState.drawData && structState.drawData[q.id])) return null;
+  var kws = STR_KEYWORDS[q.id] || getDefaultKeywords(q, ansText);
+  if (!kws || !kws.length) return null;
+  var lower = ansText.toLowerCase();
+  var matched = kws.filter(function(k){ return lower.indexOf(k.toLowerCase()) >= 0; });
+  var pct = Math.round(matched.length / kws.length * 100);
+  return { total: kws.length, matched: matched, missed: kws.filter(function(k){ return matched.indexOf(k) < 0; }), pct: pct };
+}
+function getDefaultKeywords(q, ansText) {
+  // Extract potential keywords from the question text itself as fallback
+  // These are common chemistry keywords for CIE 9701
+  var commonKws = ['enthalpy','entropy','hess','lattice','bond','hydrogen','covalent','ionic','metallic',
+    'oxidation','reduction','electrolyte','electrode','equilibrium','le chatelier','acid','base','buffer',
+    'pH','Ka','Kb','Kc','Kp','Ksp','rate','order','activation','catalyst','enthalpy change','standard',
+    'electron','orbital','isotope','mole','Avogadro','concentration','titration','ester','hydrolysis',
+    'nucleophilic','electrophilic','substitution','addition','elimination','polymer','monomer','amino',
+    'carboxyl','carbonyl','aldehyde','ketone','spectroscopy','infrared','mass spectrometry','NMR',
+    'chromatography','Rf','Rf value','coordinate','complex','ligand','colour','transition metal'];
+  // Simple heuristic: pick keywords that appear in the question img name or source
+  var src = (q.source||'').toLowerCase();
+  return commonKws.filter(function(k){ return src.indexOf(k.toLowerCase().split(' ')[0]) >= 0; }).slice(0,5);
+}
+
+/* STR Save/Continue */
+function checkSavedSTR() {
+  var saved = localStorage.getItem('ch9701_str_saved');
+  if (!saved) return null;
+  try { return JSON.parse(saved); } catch(e) { return null; }
+}
+function continueSavedSTR() {
+  var saved = checkSavedSTR();
+  if (!saved) return;
+  structState = saved;
+  renderStructQuiz();
+}
+function clearSavedSTR() {
+  localStorage.removeItem('ch9701_str_saved');
+}
+function saveSTRAndExit() {
+  var done = Object.keys(structState.answers||{}).length;
+  var total = structState.questions ? structState.questions.length : 0;
+  localStorage.setItem('ch9701_str_saved', JSON.stringify(structState));
+  structState = null;
+  showPage('struct');
+  alert('Progress saved! ' + done + '/' + total + ' questions answered.');
 }
 
 /* DEFINITIONS */
@@ -868,14 +1400,14 @@ function renderReviewPage() {
   c.innerHTML = '<div class="card"><div class="card-title">🔄 Review Quiz</div>'+
     (!sortedWeak.length ? '<div class="empty-state"><div class="es-icon">📊</div><p>Complete MCQ quizzes first to see weak areas!</p></div>' :
     '<div style="margin-bottom:16px"><div style="font-size:.8rem;font-weight:600;margin-bottom:8px">Priority weak areas:</div>'+
-    sortedWeak.map(function(e){return '<div class="weak-topic" style="margin-bottom:6px">'+e[0].replace(/_/g,' ')+' <span class="wq">x'+e[1]+'</span></div>';}).join('')+'</div>'+
+    sortedWeak.map(function(e){return '<div class="weak-topic" style="margin-bottom:6px">'+(TOPICS_MAP[e[0]]||e[0])+' <span class="wq">x'+e[1]+'</span></div>';}).join('')+'</div>'+
     '<button class="start-quiz-btn" onclick="startReviewQuiz([\''+sortedWeak.map(function(t){return t[0];}).join('\',\'')+'\'])">📝 Review ('+Math.min(sortedWeak.length*3,30)+' questions)</button>')+
     '</div>';
 }
 
 function startReviewQuiz(topicIds) {
   if (!topicIds || !topicIds.length) return;
-  var allQs = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return topicIds.indexOf(t)>=0; }); });
+  var allQs = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return topicIds.indexOf(t)>=0; }) && q.id.indexOf('_P1_') >= 0; });
   if (!allQs.length) { alert('No questions.'); return; }
   quizState = {mode:'review', questions:shuffle(allQs).slice(0,Math.min(allQs.length,30)), currentIndex:0, answers:{}, startTime:Date.now()};
   renderQuiz();
@@ -943,8 +1475,7 @@ function renderAdminPage() {
       '<button class="btn btn-primary" onclick="addSingleStudent()">Add Student</button></div>'+
     '<div class="admin-section"><h3>📋 Batch Create (CSV)</h3>'+
       '<p style="font-size:.75rem;color:#64748b;margin-bottom:10px">Format: <code>name,username,password</code> (one per line)</p>'+
-      '<textarea class="csv-input" id="csvInput" placeholder="Alice Chen,alice.chen,pass123
-Bob Wang,bob.wang,pass456"></textarea>'+
+      '<textarea class="csv-input" id="csvInput" placeholder="Alice Chen,alice.chen,pass123\nBob Wang,bob.wang,pass456"></textarea>'+
       '<div style="display:flex;gap:10px;margin-top:12px">'+
         '<button class="btn btn-primary" onclick="batchAddStudents()">Add All</button>'+
         '<button class="btn btn-secondary" onclick="downloadStudentsDB()">⬇ Download students_db.json</button></div>'+
@@ -973,8 +1504,7 @@ function batchAddStudents() {
   if (!csv) return;
   var students = window.STUDENTS_DB && window.STUDENTS_DB.students ? window.STUDENTS_DB.students : [];
   var added=0, skipped=0;
-  csv.split('
-').filter(function(l){return l.trim();}).forEach(function(line) {
+  csv.split(/\r?\n/).filter(function(l){return l.trim();}).forEach(function(line) {
     var p = line.split(',').map(function(x){return x.trim();});
     if (p.length >= 3) {
       if (students.find(function(s){return s.username===p[1];})) { skipped++; return; }
@@ -987,7 +1517,7 @@ function batchAddStudents() {
 }
 
 function deleteStudent(u) {
-  if (!confirm('Delete "'+u+'"?') return;
+  if (!confirm('Delete \"'+u+'\"?')) return;
   if (window.STUDENTS_DB && window.STUDENTS_DB.students) {
     window.STUDENTS_DB.students = window.STUDENTS_DB.students.filter(function(s){return s.username!==u;});
   }
