@@ -1652,6 +1652,19 @@ function downloadStudentsDB() {
   URL.revokeObjectURL(a.href);
 }
 
+function getLearnProgress() {
+  try { return JSON.parse(localStorage.getItem('ch9701_learn_progress')||'{}'); } catch(e) { return {}; }
+}
+function saveLearnProgress(prog) {
+  localStorage.setItem('ch9701_learn_progress', JSON.stringify(prog));
+}
+function getLearnXP() {
+  var prog = getLearnProgress();
+  var total = 0;
+  Object.values(prog).forEach(function(ch) { total += (ch.xp||0); });
+  return total;
+}
+
 function renderLearnPage() {
   var c = document.getElementById('pageContent');
   if (!DB.learnDB) {
