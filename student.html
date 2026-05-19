@@ -43,6 +43,117 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f4f8;color:#1e293
 .nav-divider{height:1px;background:#334155;margin:6px 0}
 .btn-logout{width:calc(100% - 32px);margin:12px 16px;height:36px;background:#334155;color:#94a3b8;border:1px solid #475569;border-radius:7px;font-size:.78rem;cursor:pointer;transition:all .15s}
 .btn-logout:hover{background:#475569;color:#f1f5f9}
+/* ===== LEARN PAGE STYLES ===== */
+.learn-chapter-card{
+  background:#fff;border-radius:14px;border:2px solid #e2e8f0;padding:20px;margin-bottom:14px;cursor:pointer;transition:all .2s;
+}
+.learn-chapter-card:hover{border-color:#7c3aed;box-shadow:0 4px 20px rgba(124,58,237,.12);transform:translateY(-2px)}
+.learn-chapter-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.learn-chapter-emoji{font-size:2rem}
+.learn-chapter-info{flex:1}
+.learn-chapter-name{font-size:.95rem;font-weight:700;color:#1e293b}
+.learn-chapter-sub{font-size:.72rem;color:#94a3b8;margin-top:2px}
+.learn-chapter-xp{font-size:.78rem;font-weight:700;color:#7c3aed;background:#f3e8ff;padding:3px 10px;border-radius:99px}
+.learn-progress-bar-wrap{background:#f1f5f9;border-radius:99px;height:6px;margin:8px 0}
+.learn-progress-bar{height:100%;border-radius:99px;background:linear-gradient(90deg,#7c3aed,#a78bfa);transition:width .4s ease}
+.learn-progress-text{font-size:.72rem;color:#64748b;display:flex;justify-content:space-between}
+.learn-level-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px}
+.learn-level-node{
+  display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;border-radius:12px;border:2px solid #e2e8f0;
+  background:#fff;cursor:pointer;transition:all .2s;position:relative;
+}
+.learn-level-node:hover{transform:translateY(-3px);box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.learn-level-node.completed{border-color:#16a34a;background:#f0fdf4}
+.learn-level-node.current{border-color:#d97706;background:#fffbeb}
+.learn-level-node.locked{border-color:#e2e8f0;background:#f8fafc;cursor:not-allowed;opacity:.6}
+.learn-level-node.locked:hover{transform:none;box-shadow:none}
+.learn-level-emoji{font-size:1.6rem}
+.learn-level-num{font-size:.62rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
+.learn-level-title{font-size:.72rem;font-weight:600;color:#374151;text-align:center;line-height:1.3}
+.learn-level-xp{font-size:.62rem;color:#7c3aed;font-weight:600}
+.learn-level-lock{position:absolute;top:6px;right:6px;font-size:.7rem}
+.learn-level-star{position:absolute;top:-8px;left:-8px;font-size:1rem}
+
+/* Level detail page */
+.learn-back-btn{background:none;border:none;cursor:pointer;color:#64748b;font-size:.82rem;display:flex;align-items:center;gap:4px;padding:4px 0;margin-bottom:14px}
+.learn-back-btn:hover{color:#0d9488}
+.learn-level-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.learn-level-emoji-lg{font-size:3rem}
+.learn-level-title-lg{flex:1}
+.learn-level-title-lg h2{font-size:1.1rem;color:#1e293b;margin-bottom:4px}
+.learn-level-title-lg .learn-level-sub{font-size:.75rem;color:#94a3b8}
+.learn-content-card{background:#fff;border-radius:14px;border:1.5px solid #e2e8f0;padding:24px;margin-bottom:16px}
+.learn-content-card h3{font-size:.9rem;color:#374151;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.learn-kp-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:10px 0}
+.learn-kp-table th{background:#f1f5f9;color:#374151;font-weight:700;padding:8px 12px;text-align:left;border-bottom:2px solid #e2e8f0}
+.learn-kp-table td{padding:8px 12px;border-bottom:1px solid #f1f5f9;color:#475农}
+.learn-kp-table tr:last-child td{border-bottom:none}
+.learn-step-list{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+.learn-step{display:flex;gap:10px;align-items:flex-start}
+.learn-step-num{width:24px;height:24px;border-radius:50%;background:#7c3aed;color:#fff;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.learn-step-name{font-weight:700;color:#374151;font-size:.82rem}
+.learn-step-desc{font-size:.78rem;color:#64748b}
+.learn-tip-box{background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:8px;padding:10px 14px;font-size:.8rem;color:#1d4ed8;margin:8px 0}
+.learn-tip-box strong{display:block;margin-bottom:2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.learn-memory-box{background:#fefce8;border:1.5px solid #fde68a;border-radius:8px;padding:10px 14px;font-size:.8rem;color:#92400e;margin:8px 0}
+.learn-memory-box strong{display:block;margin-bottom:2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.learn-analogy-box{background:#f5f3ff;border:1.5px solid #ddd6fe;border-radius:8px;padding:10px 14px;font-size:.8rem;color:#6d28d9;margin:8px 0}
+.learn-analogy-box strong{display:block;margin-bottom:2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.learn-example-table{width:100%;border-collapse:collapse;font-size:.8rem;margin:8px 0}
+.learn-example-table th{background:#f5f3ff;color:#6d28d9;padding:7px 12px;text-align:center;border:1px solid #ddd6fe;font-size:.72rem}
+.learn-example-table td{padding:7px 12px;border:1px solid #ede9fe;color:#475农;text-align:center}
+.learn-formula-box{background:#1e293b;color:#2dd4bf;border-radius:10px;padding:14px 18px;font-family:monospace;font-size:.88rem;margin:10px 0;line-height:1.6}
+.learn-formula-box strong{display:block;color:#f1f5f9;font-family:inherit;font-size:.75rem;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.learn-btn-ready{width:100%;height:50px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;border-radius:12px;font-size:.95rem;font-weight:700;cursor:pointer;margin-top:16px;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.learn-btn-ready:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(124,58,237,.4)}
+.learn-btn-ready:active{transform:translateY(0)}
+
+/* Quiz */
+.learn-quiz-card{background:#fff;border-radius:14px;border:1.5px solid #e2e8f0;padding:24px;margin-bottom:16px}
+.learn-quiz-q{font-size:.92rem;font-weight:700;color:#1e293b;margin-bottom:16px;line-height:1.5}
+.learn-quiz-options{display:flex;flex-direction:column;gap:8px}
+.learn-quiz-opt{padding:12px 16px;border:2px solid #e2e8f0;border-radius:10px;cursor:pointer;transition:all .15s;font-size:.85rem;color:#374151;display:flex;align-items:center;gap:10px}
+.learn-quiz-opt:hover{border-color:#7c3aed;background:#f5f3ff}
+.learn-quiz-opt.selected{border-color:#7c3aed;background:#ede9fe}
+.learn-quiz-opt.correct{border-color:#16a34a;background:#f0fdf4;color:#15803d}
+.learn-quiz-opt.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.learn-quiz-opt.disabled{cursor:not-allowed;pointer-events:none}
+.learn-quiz-opt-letter{width:22px;height:22px;border-radius:50%;background:#f1f5f9;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#64748b;flex-shrink:0}
+.learn-quiz-opt.selected .learn-quiz-opt-letter{background:#7c3aed;color:#fff}
+.learn-quiz-opt.correct .learn-quiz-opt-letter{background:#16a34a;color:#fff}
+.learn-quiz-opt.wrong .learn-quiz-opt-letter{background:#dc2626;color:#fff}
+.learn-hint-box{background:#fff7ed;border:1.5px solid #fed7aa;border-radius:8px;padding:12px 16px;font-size:.82rem;color:#c2410c;margin:12px 0 0;display:flex;gap:8px}
+.learn-hint-box strong{white-space:nowrap}
+.learn-explanation-box{background:#f0fdf4;border:2px solid #bbf7d0;border-radius:10px;padding:14px 16px;margin-top:14px}
+.learn-explanation-box .learn-xp-earned{font-size:.78rem;font-weight:700;color:#16a34a;margin-bottom:6px;display:flex;align-items:center;gap:4px}
+.learn-explanation-box p{font-size:.82rem;color:#15803d;line-height:1.5}
+.learn-btn-next{width:100%;height:44px;background:#7c3aed;color:#fff;border:none;border-radius:10px;font-size:.88rem;font-weight:700;cursor:pointer;margin-top:12px;display:flex;align-items:center;justify-content:center;gap:6px}
+.learn-btn-next:hover{background:#6d28d9}
+.learn-btn-retry{width:48%;height:44px;background:#fef3c7;color:#92400e;border:1.5px solid #fde68a;border-radius:10px;font-size:.85rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+.learn-btn-retry:hover{background:#fde68a}
+.learn-btn-relearn{width:48%;height:44px;background:#f1f5f9;color:#374151;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.85rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+.learn-btn-relearn:hover{background:#e2e8f0}
+.learn-btn-row{display:flex;gap:8px;margin-top:12px}
+.learn-xp-toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#1e293b;color:#a78bfa;font-weight:700;padding:10px 20px;border-radius:99px;font-size:.88rem;z-index:999;animation:xpToastAnim 2s ease forwards;pointer-events:none}
+@keyframes xpToastAnim{0%{opacity:0;transform:translateX(-50%) translateY(-10px)}20%{opacity:1;transform:translateX(-50%) translateY(0)}80%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-20px)}}
+.learn-complete-modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+.learn-complete-card{background:#fff;border-radius:20px;padding:32px;max-width:340px;width:100%;text-align:center;animation:modalPop .3s ease}
+@keyframes modalPop{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+.learn-complete-emoji{font-size:4rem;margin-bottom:12px}
+.learn-complete-title{font-size:1.2rem;font-weight:700;color:#1e293b;margin-bottom:6px}
+.learn-complete-sub{font-size:.82rem;color:#64748b;margin-bottom:20px}
+.learn-complete-xp{font-size:1.5rem;font-weight:700;color:#7c3aed;margin-bottom:6px}
+.learn-complete-xp span{font-size:.82rem;color:#64748b;font-weight:400}
+.learn-complete-badge{display:inline-flex;align-items:center;gap:6px;background:#f3e8ff;border:1.5px solid #ddd6fe;padding:6px 14px;border-radius:99px;font-size:.82rem;color:#6d28d9;font-weight:600;margin:8px 0}
+.learn-btn-mcq{width:100%;height:46px;background:#7c3aed;color:#fff;border:none;border-radius:10px;font-size:.88rem;font-weight:700;cursor:pointer;margin-top:8px}
+.learn-btn-mcq:hover{background:#6d28d9}
+.learn-badge-grid{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.learn-badge-item{display:flex;align-items:center;gap:6px;background:#f5f3ff;border:1px solid #ddd6fe;padding:5px 12px;border-radius:99px;font-size:.75rem;color:#6d28d9}
+
+/* XP bar in topbar */
+.xp-bar-wrap{flex:1;max-width:180px;height:6px;background:#e2e8f0;border-radius:99px;overflow:hidden}
+.xp-bar{height:100%;background:linear-gradient(90deg,#7c3aed,#a78bfa);border-radius:99px;transition:width .4s ease}
+.xp-text{font-size:.72rem;color:#7c3aed;font-weight:700;margin-left:8px}
 .page-title{font-size:1rem;font-weight:700;color:#1e293b}
 
 .card{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;padding:20px;margin-bottom:16px}
@@ -263,6 +374,10 @@ textarea.draw-mode{font-family:'Segoe UI',system-ui,sans-serif}
       <div class="nav-item" data-page="progress" onclick="showPage('progress')"><span>📊</span> My Progress</div>
       <div class="nav-item" data-page="history" onclick="showPage('history')"><span>📜</span> History</div>
     </div>
+    <div class="nav-section">
+      <div class="nav-label">Learn</div>
+      <div class="nav-item" data-page="learn" onclick="showPage('learn')"><span>🎮</span> Chapter Quests</div>
+    </div>
     <div class="nav-section" id="adminNav" style="display:none">
       <div class="nav-label">Teacher</div>
       <div class="nav-item" data-page="admin" onclick="showPage('admin')"><span>⚙️</span> Manage Students</div>
@@ -281,7 +396,7 @@ textarea.draw-mode{font-family:'Segoe UI',system-ui,sans-serif}
 
 <script>
 /* STATE */
-var DB = { questions: [], definitions: {}, chapters: [], structDB: null, vocabDB: {} };
+var DB = { questions: [], definitions: {}, chapters: [], structDB: null, vocabDB: {} , learnDB: null};
 var TOPICS_MAP = {};
 var CHAPTERS_MAP = {};
 var currentUser = null, isAdmin = false;
@@ -321,6 +436,9 @@ async function loadDB() {
         (ch.topics || []).forEach(function(t) { TOPICS_MAP[t.id] = t.name; });
       });
     } catch(e) { TOPICS_MAP = {}; CHAPTERS_MAP = {}; }
+    showLoading(true, 'Loading learn content...');
+    try { DB.learnDB = await loadJson('learn_db.json'); } catch(e) { DB.learnDB = null; }
+    document.getElementById('dbStatus').style.display = 'inline-block';
     showLoading(true, 'Loading students...');
     await loadStudentsDB();
     document.getElementById('dbStatus').style.display = 'inline-block';
@@ -398,9 +516,9 @@ function showPage(page) {
   document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
   var nav = document.querySelector('.nav-item[data-page="'+page+'"]');
   if (nav) nav.classList.add('active');
-  var titles = {mcq:'MCQ Practice',struct:'STR Practice',defs:'Definition Match',vocab:'Vocabulary',review:'Review Quiz',progress:'My Progress',history:'History',admin:'Manage Students'};
+  var titles = {mcq:'MCQ Practice',struct:'STR Practice',defs:'Definition Match',vocab:'Vocabulary',review:'Review Quiz',progress:'My Progress',history:'History',admin:'Manage Students',learn:'Chapter Quests'};
   document.getElementById('pageTitle').textContent = titles[page] || page;
-  var pages = {mcq:renderMCQPage,struct:renderStructPage,defs:renderDefsPage,vocab:renderVocabPage,review:renderReviewPage,progress:renderProgressPage,history:renderHistoryPage,admin:renderAdminPage};
+  var pages = {mcq:renderMCQPage,struct:renderStructPage,defs:renderDefsPage,vocab:renderVocabPage,review:renderReviewPage,progress:renderProgressPage,history:renderHistoryPage,learn:renderLearnPage,admin:renderAdminPage};
   if (pages[page]) pages[page]();
 }
 
@@ -1532,6 +1650,315 @@ function downloadStudentsDB() {
   a.download = 'students_db.json';
   a.click();
   URL.revokeObjectURL(a.href);
+}
+
+function renderLearnPage() {
+  var c = document.getElementById('pageContent');
+  if (!DB.learnDB) {
+    c.innerHTML = '<div class="card"><p style="color:#94a3b8;font-size:.85rem">Learn content not available.</p></div>';
+    return;
+  }
+  var prog = getLearnProgress();
+  var totalXP = getLearnXP();
+  var h = '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;background:#f5f3ff;border:1.5px solid #ddd6fe;border-radius:10px;padding:10px 14px">'+
+    '<span style="font-size:1.2rem">⭐</span>'+
+    '<span style="font-weight:700;color:#6d28d9;font-size:.88rem">'+totalXP+' XP</span>'+
+    '<span style="flex:1"></span>'+
+    '<span style="font-size:.72rem;color:#94a3b8">'+Object.keys(prog).length+' chapters started</span></div>';
+
+  Object.entries(DB.learnDB.chapters).forEach(function([chId, ch]) {
+    var chProg = prog[chId] || {};
+    var completed = chProg.completed_levels || [];
+    var xp = chProg.xp || 0;
+    var pct = Math.round((completed.length / ch.levels.length) * 100);
+    h += '<div class="learn-chapter-card" onclick="renderChapterLearnPage(\''+chId+'\')">'+
+      '<div class="learn-chapter-header">'+
+        '<span class="learn-chapter-emoji">'+ch.emoji+'</span>'+
+        '<div class="learn-chapter-info">'+
+          '<div class="learn-chapter-name">Chapter '+ch.chapter_num+' · '+ch.title+'</div>'+
+          '<div class="learn-chapter-sub">'+ch.levels.length+' levels · '+ch.total_xp+' XP total</div>'+
+        '</div>'+
+        (completed.length > 0 ? '<span class="learn-chapter-xp">⭐ '+xp+' XP</span>' : '')+
+      '</div>'+
+      '<div class="learn-progress-bar-wrap"><div class="learn-progress-bar" style="width:'+pct+'%"></div></div>'+
+      '<div class="learn-progress-text"><span>'+completed.length+'/'+ch.levels.length+' levels completed</span><span>'+pct+'%</span></div>'+
+    '</div>';
+  });
+
+  if (Object.keys(prog).length > 0) {
+    var allBadges = [];
+    Object.values(prog).forEach(function(ch) { (ch.badges||[]).forEach(function(b){ if(allBadges.indexOf(b)<0) allBadges.push(b); }); });
+    if (allBadges.length > 0) {
+      var badgeDefs = DB.learnDB.badges || [];
+      h += '<div style="margin-top:8px"><div style="font-size:.78rem;font-weight:700;color:#64748b;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">Your Badges</div><div class="learn-badge-grid">';
+      allBadges.forEach(function(bId) {
+        var bd = badgeDefs.find(function(b){return b.id===bId;});
+        if (bd) h += '<div class="learn-badge-item"><span>'+bd.emoji+'</span><span>'+bd.name+'</span></div>';
+      });
+      h += '</div></div>';
+    }
+  }
+  c.innerHTML = h;
+}
+
+function renderChapterLearnPage(chId) {
+  learnState.chapter = chId;
+  learnState.level = null;
+  var ch = DB.learnDB.chapters[chId];
+  if (!ch) return;
+  var prog = getLearnProgress();
+  var chProg = prog[chId] || {};
+  var completed = chProg.completed_levels || [];
+  var xp = chProg.xp || 0;
+  var c = document.getElementById('pageContent');
+  var h = '<button class="learn-back-btn" onclick="renderLearnPage()">← Back to Chapters</button>'+
+    '<div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">'+
+      '<span style="font-size:2.5rem">'+ch.emoji+'</span>'+
+      '<div><h2 style="font-size:1rem;color:#1e293b">Chapter '+ch.chapter_num+'</h2><p style="font-size:.82rem;color:#64748b">'+ch.title+'</p></div>'+
+      '<div style="margin-left:auto;text-align:right"><div style="font-weight:700;color:#7c3aed;font-size:.95rem">⭐ '+xp+' XP</div><div style="font-size:.7rem;color:#94a3b8">'+completed.length+'/'+ch.levels.length+' done</div></div>'+
+    '</div>';
+  h += '<div class="learn-level-grid">';
+  ch.levels.forEach(function(lv, idx) {
+    var isCompleted = completed.indexOf(lv.id) >= 0;
+    var isUnlocked = idx === 0 || completed.indexOf(ch.levels[idx-1].id) >= 0;
+    var status = isCompleted ? 'completed' : (isUnlocked ? 'current' : 'locked');
+    h += '<div class="learn-level-node '+status+'" onclick="'+(isUnlocked?'renderLevelPage(\''+chId+'\',\''+lv.id+'\')':'')+'">'+
+      (isCompleted ? '<span class="learn-level-star">⭐</span>' : '')+
+      (status==='locked' ? '<span class="learn-level-lock">🔒</span>' : '')+
+      '<span class="learn-level-emoji">'+lv.emoji+'</span>'+
+      '<span class="learn-level-num">Level '+lv.level_num+'</span>'+
+      '<span class="learn-level-title">'+lv.title+'</span>'+
+      '<span class="learn-level-xp">+'+lv.xp_learn+'+'+lv.xp_quiz_first+' XP</span>'+
+    '</div>';
+  });
+  h += '</div>';
+  c.innerHTML = h;
+}
+
+function renderLevelPage(chId, levelId) {
+  learnState.chapter = chId;
+  learnState.level = levelId;
+  learnState.quizAnswered = false;
+  learnState.quizCorrect = false;
+  learnState.attempts = 0;
+  var ch = DB.learnDB.chapters[chId];
+  var lv = ch.levels.find(function(l){return l.id===levelId;});
+  if (!lv) return;
+  renderLevelContent(chId, lv);
+}
+
+function renderLevelContent(chId, lv) {
+  var c = document.getElementById('pageContent');
+  var lvJson = JSON.stringify(lv).replace(/'/g,"&#39;");
+  var h = '<button class="learn-back-btn" onclick="renderChapterLearnPage(\''+chId+'\')">← Back to Chapter</button>'+
+    '<div class="learn-level-header">'+
+      '<span class="learn-level-emoji-lg">'+lv.emoji+'</span>'+
+      '<div class="learn-level-title-lg">'+
+        '<h2>Level '+lv.level_num+': '+lv.title+'</h2>'+
+        '<div class="learn-level-sub">+'+lv.xp_learn+' XP to learn · +'+lv.xp_quiz_first+' XP if correct first try</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="learn-content-card">'+
+      renderLearnContent(lv.content)+
+      '<button class="learn-btn-ready" onclick="renderLevelQuiz(\''+chId+'\',\''+lv.id+'\')">🧪 I\'m ready — quiz me!</button>'+
+    '</div>';
+  c.innerHTML = h;
+  c.scrollTop = 0;
+}
+
+function renderLearnContent(content) {
+  var h = '';
+  if (content.summary) h += '<p style="font-size:.88rem;line-height:1.7;color:#374151;margin-bottom:14px">'+content.summary+'</p>';
+  if (content.key_table) {
+    h += '<h3>📋 Key Data</h3><table class="learn-kp-table"><thead><tr>';
+    content.key_table.headers.forEach(function(th){ h += '<th>'+th+'</th>'; });
+    h += '</tr></thead><tbody>';
+    content.key_table.rows.forEach(function(row){ h += '<tr>'; row.forEach(function(td){ h += '<td>'+td+'</td>'; }); h += '</tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.formula) {
+    h += '<div class="learn-formula-box"><strong>Formula</strong>'+content.formula;
+    if (content.formula_example) h += '<div style="margin-top:8px;font-size:.8rem;color:#94a3b8">'+content.formula_example+'</div>';
+    h += '</div>';
+  }
+  if (content.steps) {
+    h += '<h3>📊 Step by Step</h3><div class="learn-step-list">';
+    content.steps.forEach(function(s){ h += '<div class="learn-step"><span class="learn-step-num">'+s.num+'</span><div><span class="learn-step-name">'+s.name+'</span><br><span class="learn-step-desc">'+s.desc+'</span></div></div>'; });
+    h += '</div>';
+  }
+  if (content.orbital_types) {
+    h += '<h3>🌀 Orbital Types</h3><table class="learn-kp-table"><thead><tr><th>Orbital</th><th>Shape</th><th>Capacity</th></tr></thead><tbody>';
+    content.orbital_types.forEach(function(o){ h += '<tr><td><strong>'+o.type+'</strong></td><td>'+o.shape+'</td><td>'+o.count+'</td></tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.trend_period || content.trend_group) {
+    h += '<h3>📈 Trends</h3>';
+    if (content.trend_period) h += '<div class="learn-tip-box"><strong>Across a Period →</strong> '+content.trend_period+'</div>';
+    if (content.trend_group) h += '<div class="learn-tip-box"><strong>Down a Group ↓</strong> '+content.trend_group+'</div>';
+  }
+  if (content.exceptions) {
+    h += '<div class="learn-tip-box" style="background:#fff7ed;border-color:#fed7aa"><strong style="color:#c2410c">⚠ Exceptions to Remember</strong>';
+    content.exceptions.forEach(function(e){ h += '<div style="margin-top:6px"><strong>'+e.group+':</strong> '+e.reason+'</div>'; });
+    h += '</div>';
+  }
+  if (content.series) {
+    h += '<h3>🌈 Emission Series</h3><table class="learn-kp-table"><thead><tr><th>Series</th><th>Falls to</th><th>Region</th></tr></thead><tbody>';
+    content.series.forEach(function(s){ h += '<tr><td><strong>'+s.name+'</strong></td><td>n='+s.to.replace('n=','')+'</td><td>'+s.region+'</td></tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.examples) {
+    h += '<h3>⚗️ Examples</h3><table class="learn-example-table"><thead><tr><th>Symbol</th><th>Name</th><th>Protons</th><th>Neutrons</th><th>Note</th></tr></thead><tbody>';
+    content.examples.forEach(function(ex){ h += '<tr><td><strong>'+ex.symbol+'</strong></td><td>'+ex.name+'</td><td>'+ex.p+'</td><td>'+ex.n+'</td><td style="text-align:left;font-size:.72rem">'+ex.note+'</td></tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.hunds_rule) h += '<div class="learn-memory-box"><strong>💡 Hund\'s Rule</strong>'+content.hunds_rule+'</div>';
+  if (content.fill_order) h += '<div class="learn-tip-box"><strong>📍 Filling Order</strong>'+content.fill_order+'<br><span style="font-size:.75rem">'+content.fill_note+'</span></div>';
+  if (content.equation) h += '<div class="learn-formula-box"><strong>Equation</strong>'+content.equation+'</div>';
+  if (content.why_line_spectrum) h += '<div class="learn-analogy-box"><strong>💡 Why Line Spectrum?</strong>'+content.why_line_spectrum+'</div>';
+  if (content.tip) h += '<div class="learn-tip-box"><strong>💡 Tip</strong>'+content.tip+'</div>';
+  if (content.memory) h += '<div class="learn-memory-box"><strong>🧠 Memory Trick</strong>'+content.memory+'</div>';
+  if (content.analogy) h += '<div class="learn-analogy-box"><strong>🔗 Analogy</strong>'+content.analogy+'</div>';
+  return h;
+}
+
+function renderLevelQuiz(chId, levelId) {
+  var ch = DB.learnDB.chapters[chId];
+  var lv = ch.levels.find(function(l){return l.id===levelId;});
+  var quiz = lv.quiz;
+  var c = document.getElementById('pageContent');
+  var lvJson = JSON.stringify(lv).replace(/'/g,"&#39;");
+  var options = quiz.options.map(function(opt, i) {
+    return '<div class="learn-quiz-opt" data-idx="'+i+'" onclick="learnCheckAnswer('+i+','+quiz.correct+',\''+chId+'\',\''+levelId+'\')">'+
+      '<span class="learn-quiz-opt-letter">'+String.fromCharCode(65+i)+'</span><span>'+opt+'</span></div>';
+  }).join('');
+  c.innerHTML = '<button class="learn-back-btn" onclick="renderLevelContent(\''+chId+'\','+lvJson+')">← Back to Lesson</button>'+
+    '<div class="learn-level-header">'+
+      '<span class="learn-level-emoji-lg">'+lv.emoji+'</span>'+
+      '<div class="learn-level-title-lg"><h2>🧪 Self-Check: '+lv.title+'</h2><div style="font-size:.75rem;color:#94a3b8">Answer correctly on first try for +'+lv.xp_quiz_first+' XP!</div></div>'+
+    '</div>'+
+    '<div class="learn-quiz-card">'+
+      '<div class="learn-quiz-q">'+quiz.question+'</div>'+
+      '<div class="learn-quiz-options" id="quizOptions">'+options+'</div>'+
+    '</div>';
+  c.scrollTop = 0;
+}
+
+function learnCheckAnswer(selected, correct, chId, levelId) {
+  if (learnState.quizAnswered) return;
+  learnState.quizAnswered = true;
+  learnState.attempts++;
+  var isCorrect = selected === correct;
+  learnState.quizCorrect = isCorrect;
+  var ch = DB.learnDB.chapters[chId];
+  var lv = ch.levels.find(function(l){return l.id===levelId;});
+  var quiz = lv.quiz;
+  var opts = document.querySelectorAll('.learn-quiz-opt');
+  opts.forEach(function(o, i) {
+    o.classList.add('disabled');
+    if (i === correct) o.classList.add('correct');
+    else if (i === selected && !isCorrect) o.classList.add('wrong');
+  });
+  var prog = getLearnProgress();
+  if (!prog[chId]) prog[chId] = { completed_levels: [], xp: 0, badges: [], level_records: {}, last_active: '', streak: 0 };
+  var chProg = prog[chId];
+  var xpEarned = 0;
+  if (isCorrect) {
+    xpEarned = (learnState.attempts === 1) ? lv.xp_quiz_first : lv.xp_quiz_retry;
+  }
+  chProg.xp = (chProg.xp||0) + xpEarned;
+  if (!isCorrect) {
+    var hintEl = document.createElement('div');
+    hintEl.className = 'learn-hint-box';
+    hintEl.innerHTML = '<strong>💡 Hint:</strong> '+quiz.hint;
+    document.getElementById('quizOptions').parentNode.insertBefore(hintEl, document.getElementById('quizOptions').nextSibling);
+  }
+  if (xpEarned > 0) showXPToast('+'+xpEarned+' XP!');
+  else showXPToast('Try again!');
+  var lvJson = JSON.stringify(lv).replace(/'/g,"&#39;");
+  var btnRow = document.createElement('div');
+  btnRow.className = 'learn-btn-row';
+  if (!isCorrect) {
+    btnRow.innerHTML = '<button class="learn-btn-retry" onclick="retryQuiz(\''+chId+'\',\''+levelId+'\')">🔄 Try Again</button>'+
+      '<button class="learn-btn-relearn" onclick="renderLevelContent(\''+chId+'\','+lvJson+')">📖 Review Lesson</button>';
+  } else {
+    var alreadyDone = chProg.completed_levels.indexOf(levelId) >= 0;
+    if (!alreadyDone) {
+      chProg.completed_levels.push(levelId);
+      chProg.xp = (chProg.xp||0) + lv.xp_learn;
+      showXPToast('+'+lv.xp_learn+' XP for completing the lesson!');
+      xpEarned += lv.xp_learn;
+    }
+    saveLearnProgress(prog);
+    var isChapterComplete = chProg.completed_levels.length >= ch.levels.length;
+    btnRow.innerHTML = '<button class="learn-btn-next" onclick="learnNextLevel(\''+chId+'\',\''+levelId+'\')">'+(isChapterComplete?'🏆 Finish Chapter':'Next Level →')+'</button>';
+  }
+  document.getElementById('quizOptions').parentNode.appendChild(btnRow);
+}
+
+function retryQuiz(chId, levelId) {
+  learnState.quizAnswered = false;
+  learnState.quizCorrect = false;
+  learnState.attempts++;
+  renderLevelQuiz(chId, levelId);
+}
+
+function learnNextLevel(chId, levelId) {
+  var ch = DB.learnDB.chapters[chId];
+  var idx = ch.levels.findIndex(function(l){return l.id===levelId;});
+  var isLast = idx === ch.levels.length - 1;
+  if (isLast) {
+    var prog = getLearnProgress();
+    var chProg = prog[chId];
+    var bonusXP = 100;
+    chProg.xp = (chProg.xp||0) + bonusXP;
+    var earnedBadges = checkNewBadges(prog, chId);
+    saveLearnProgress(prog);
+    showChapterCompleteModal(chId, bonusXP, earnedBadges);
+  } else {
+    renderLevelPage(chId, ch.levels[idx+1].id);
+  }
+}
+
+function checkNewBadges(prog, chId) {
+  var earned = [];
+  var chProg = prog[chId];
+  var ch = DB.learnDB.chapters[chId];
+  var completed = chProg.completed_levels || [];
+  chProg.badges = chProg.badges || [];
+  if (completed.indexOf(ch.levels[0].id) >= 0 && chProg.badges.indexOf('first_atom') < 0) { chProg.badges.push('first_atom'); earned.push('first_atom'); }
+  if (ch.levels[2] && completed.indexOf(ch.levels[2].id) >= 0 && chProg.badges.indexOf('nucleus_master') < 0) { chProg.badges.push('nucleus_master'); earned.push('nucleus_master'); }
+  if (ch.levels[3] && completed.indexOf(ch.levels[3].id) >= 0 && chProg.badges.indexOf('electron_wizard') < 0) { chProg.badges.push('electron_wizard'); earned.push('electron_wizard'); }
+  if (completed.length >= ch.levels.length && chProg.badges.indexOf('ch01_champion') < 0) { chProg.badges.push('ch01_champion'); earned.push('ch01_champion'); }
+  return earned;
+}
+
+function showChapterCompleteModal(chId, bonusXP, newBadges) {
+  var ch = DB.learnDB.chapters[chId];
+  var modal = document.createElement('div');
+  modal.className = 'learn-complete-modal';
+  var badgesHtml = '';
+  (newBadges||[]).forEach(function(bId) {
+    var bd = (DB.learnDB.badges||[]).find(function(b){return b.id===bId;});
+    if (bd) badgesHtml += '<div style="display:inline-flex;align-items:center;gap:6px;background:#f3e8ff;border:1.5px solid #ddd6fe;padding:6px 14px;border-radius:99px;font-size:.82rem;color:#6d28d9;font-weight:600;margin:4px"><span>'+bd.emoji+'</span><span>'+bd.name+'</span></div>';
+  });
+  modal.innerHTML = '<div class="learn-complete-card">'+
+    '<div class="learn-complete-emoji">🏆</div>'+
+    '<div class="learn-complete-title">Chapter Complete!</div>'+
+    '<div class="learn-complete-sub">You\'ve mastered '+ch.title+'</div>'+
+    '<div class="learn-complete-xp">+'+bonusXP+' XP <span>chapter bonus</span></div>'+
+    (badgesHtml ? '<div style="margin:10px 0">'+badgesHtml+'</div>' : '')+
+    '<button class="learn-btn-mcq" onclick="this.closest(\'.learn-complete-modal\').remove();renderChapterLearnPage(\''+chId+'\')">📝 Practice MCQ for Chapter '+ch.chapter_num+'</button>'+
+    '<button class="btn btn-secondary" style="width:100%;margin-top:8px;height:38px" onclick="this.closest(\'.learn-complete-modal\').remove();renderLearnPage()">← Back to Chapters</button>'+
+  '</div>';
+  document.body.appendChild(modal);
+}
+
+function showXPToast(text) {
+  var t = document.createElement('div');
+  t.className = 'learn-xp-toast';
+  t.textContent = text;
+  document.body.appendChild(t);
+  setTimeout(function(){ t.remove(); }, 2000);
 }
 
 /* UTILS */
