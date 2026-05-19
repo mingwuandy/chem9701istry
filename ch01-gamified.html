@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>chem9701 — ch01 闯关模式</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px;scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#1e1b4b 0%,#312e81 40%,#1e293b 100%);color:#e2e8f0;min-height:100vh;overflow-x:hidden}
+
+/* ===== TOP HUD ===== */
+.hud{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(0,0,0,.25);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;flex-wrap:wrap}
+.hud-brand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:.95rem;color:#fff}
+.hud-brand span{font-size:1.1rem}
+.hud-spacer{flex:1}
+
+/* HUD stats row */
+.hud-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+
+.hud-stat{display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.08);border-radius:99px;padding:4px 10px;font-size:.75rem;font-weight:600}
+.hud-stat .stat-icon{font-size:.85rem}
+.hud-stat .stat-val{color:#fbbf24;font-weight:700}
+
+.xp-bar-wrap{flex:1;min-width:80px;max-width:110px;height:7px;background:rgba(255,255,255,.12);border-radius:99px;overflow:hidden}
+.xp-bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#8b5cf6,#c4b5fd);transition:width .5s ease}
+.xp-bar-text{font-size:.62rem;color:#a78bfa;margin-left:3px}
+
+/* Daily goal ring */
+.daily-goal-wrap{display:flex;align-items:center;gap:4px;position:relative;cursor:pointer}
+.daily-goal-ring{width:28px;height:28px;position:relative}
+.daily-goal-ring svg{transform:rotate(-90deg)}
+.daily-goal-ring .ring-bg{fill:none;stroke:rgba(255,255,255,.12);stroke-width:3}
+.daily-goal-ring .ring-fill{fill:none;stroke:#8b5cf6;stroke-width:3;stroke-linecap:round;transition:stroke-dashoffset .5s ease}
+.daily-goal-label{font-size:.65rem;color:#a78bfa;font-weight:600}
+
+/* streak flame */
+@keyframes flame{0%{transform:scale(1)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
+.streak-flame{animation:flame 1.5s ease infinite;display:inline-block}
+.streak-freeze{display:inline-block;font-size:.7rem;background:#38bdf8;color:#0c4a6e;padding:1px 5px;border-radius:4px;font-weight:700}
+
+/* ===== CHAPTER MAP ===== */
+.chapter-map{padding:20px 14px;max-width:720px;margin:0 auto}
+.chapter-header{text-align:center;margin-bottom:20px}
+.chapter-header h1{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:4px}
+.chapter-header p{font-size:.82rem;color:#94a3b8}
+.chapter-header .ch01-badge{display:inline-block;background:linear-gradient(135deg,#7c3aed,#a78bfa);color:#fff;padding:3px 12px;border-radius:99px;font-size:.7rem;font-weight:700;margin-top:6px}
+
+.chapter-actions{display:flex;gap:6px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.mini-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:99px;padding:5px 12px;font-size:.72rem;color:#94a3b8;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:4px}
+.mini-btn:hover{background:rgba(255,255,255,.15);color:#e2e8f0}
+.mini-btn.active{background:rgba(139,92,246,.2);border-color:rgba(139,92,246,.4);color:#c4b5fd}
+
+/* weak topics bar */
+.weak-topics-bar{display:flex;align-items:center;gap:8px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.2);border-radius:12px;padding:10px 14px;margin-bottom:16px}
+.weak-topics-bar .wt-icon{font-size:1.2rem}
+.weak-topics-bar .wt-label{font-size:.72rem;color:#fbbf24;font-weight:700}
+.weak-topics-bar .wt-tags{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.wt-tag{background:rgba(251,191,36,.15);border-radius:4px;padding:2px 7px;font-size:.68rem;color:#fbbf24;font-weight:600;cursor:pointer}
+.wt-tag:hover{background:rgba(251,191,36,.3)}
+.wt-tag.done{background:rgba(34,197,94,.15);color:#4ade80;text-decoration:line-through}
+
+/* level path */
+.level-path{display:flex;flex-direction:column;gap:7px;position:relative;padding-left:38px}
+.level-path::before{content:'';position:absolute;left:18px;top:24px;bottom:24px;width:3px;background:linear-gradient(180deg,#7c3aed,#2dd4bf,#f59e0b);border-radius:99px;opacity:.35}
+
+.level-node{position:relative;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;cursor:pointer;transition:all .25s;backdrop-filter:blur(4px)}
+.level-node:hover{transform:translateX(4px);background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+.level-node.completed{border-color:#16a34a;background:rgba(22,163,74,.08)}
+.level-node.completed .level-status{background:#16a34a;color:#fff}
+.level-node.current{border-color:#d97706;background:rgba(217,119,6,.08);box-shadow:0 0 18px rgba(217,119,6,.15)}
+.level-node.current .level-status{background:#d97706;color:#fff}
+.level-node.locked{opacity:.45;cursor:not-allowed;pointer-events:none}
+.level-node.locked .level-status{background:#475569;color:#94a3b8}
+
+.level-status{position:absolute;left:-29px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.68rem}
+
+.level-body{display:flex;align-items:center;gap:12px}
+.level-emoji{font-size:2rem}
+.level-info{flex:1}
+.level-name{font-size:.88rem;font-weight:700;color:#f1f5f9;margin-bottom:2px}
+.level-desc{font-size:.72rem;color:#94a3b8;line-height:1.4}
+.level-xp{font-size:.68rem;color:#a78bfa;font-weight:600;margin-top:3px}
+
+.level-progress{margin-top:8px}
+.level-progress-bar{height:4px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.level-progress-fill{height:100%;border-radius:99px;transition:width .4s ease}
+.level-progress-fill.bronze{background:#cd7f32}
+.level-progress-fill.silver{background:#94a3b8}
+.level-progress-fill.gold{background:#fbbf24}
+.level-progress-fill.platinum{background:#a78bfa}
+.level-progress-fill.diamond{background:#2dd4bf}
+
+.level-stars{display:flex;gap:2px;margin-top:4px}
+.lv-star{color:#475569;font-size:.7rem}
+.lv-star.earned{color:#fbbf24}
+
+/* ===== QUIZ BATTLE SCREEN ===== */
+.battle-screen{display:none;position:fixed;inset:0;background:linear-gradient(135deg,#1e1b4b,#312e81);z-index:200;flex-direction:column}
+.battle-screen.active{display:flex}
+.battle-hud{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(0,0,0,.3)}
+.battle-hud .btn-back{background:rgba(255,255,255,.1);border:none;border-radius:8px;padding:5px 10px;color:#e2e8f0;font-size:.78rem;cursor:pointer}
+.battle-hud .battle-title{flex:1;text-align:center;font-weight:700;font-size:.82rem;color:#fbbf24}
+.battle-hud .battle-timer{font-family:monospace;font-weight:700;color:#2dd4bf;font-size:.85rem}
+.battle-hud .combo-pill{display:flex;align-items:center;gap:4px;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.3);border-radius:99px;padding:3px 9px;font-size:.7rem;color:#fbbf24;font-weight:700}
+
+.battle-arena{flex:1;overflow-y:auto;padding:16px 12px;display:flex;flex-direction:column;gap:14px;max-width:640px;margin:0 auto;width:100%}
+
+/* combo bar */
+.combo-bar{display:flex;align-items:center;gap:4px;padding:8px 12px;background:rgba(0,0,0,.2);border-radius:10px}
+.combo-bar-label{font-size:.68rem;color:#94a3b8;margin-right:6px}
+.combo-dot{width:8px;height:8px;border-radius:50%;background:#374151;transition:all .2s}
+.combo-dot.active{background:#fbbf24;box-shadow:0 0 6px rgba(251,191,36,.5)}
+.combo-dot.correct-green{background:#22c55e;box-shadow:0 0 6px rgba(34,197,94,.5)}
+
+/* question card */
+.q-card{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:14px;padding:18px}
+.q-number{font-size:.7rem;color:#94a3b8;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.q-number .q-current{color:#fbbf24;font-weight:700}
+.q-number .q-total{color:#64748b}
+
+.q-img-wrap{text-align:center;margin-bottom:14px}
+.q-img{max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.15);cursor:zoom-in;transition:transform .2s;max-height:280px;object-fit:contain}
+.q-img:hover{transform:scale(1.02)}
+
+.q-options{display:flex;flex-direction:column;gap:8px}
+.q-opt{padding:12px 14px;border:2px solid rgba(255,255,255,.15);border-radius:10px;cursor:pointer;transition:all .18s;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.03)}
+.q-opt:hover{border-color:#8b5cf6;background:rgba(139,92,246,.08)}
+.q-opt.selected{border-color:#8b5cf6;background:rgba(139,92,246,.15);box-shadow:0 0 12px rgba(139,92,246,.2)}
+.q-opt.correct{border-color:#16a34a;background:rgba(22,163,74,.15);box-shadow:0 0 12px rgba(22,163,74,.2)}
+.q-opt.wrong{border-color:#dc2626;background:rgba(220,38,38,.15);box-shadow:0 0 12px rgba(220,38,38,.2)}
+.q-opt.disabled{cursor:default;pointer-events:none;opacity:.7}
+
+.opt-letter{width:28px;height:28px;border-radius:50%;border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;flex-shrink:0;color:#94a3b8}
+.q-opt.selected .opt-letter{background:#8b5cf6;border-color:#8b5cf6;color:#fff}
+.q-opt.correct .opt-letter{background:#16a34a;border-color:#16a34a;color:#fff}
+.q-opt.wrong .opt-letter{background:#dc2626;border-color:#dc2626;color:#fff}
+
+/* XP breakdown tooltip */
+.xp-tooltip{display:none;background:rgba(0,0,0,.7);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:8px 12px;font-size:.72rem;color:#94a3b8;margin-top:6px}
+.xp-tooltip.show{display:block}
+.xp-tooltip-row{display:flex;justify-content:space-between;gap:16px}
+.xp-tooltip-row .xp-val{color:#fbbf24;font-weight:600}
+.xp-tooltip-row.bonus .xp-val{color:#4ade80}
+
+/* feedback */
+.q-feedback{margin-top:12px;padding:12px;border-radius:10px;font-size:.8rem;line-height:1.5;display:none}
+.q-feedback.show{display:block;animation:feedbackIn .3s ease}
+@keyframes feedbackIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.q-feedback.correct{background:rgba(22,163,74,.12);border:1.5px solid rgba(22,163,74,.3);color:#86efac}
+.q-feedback.wrong{background:rgba(220,38,38,.12);border:1.5px solid rgba(220,38,38,.3);color:#fca5a5}
+
+/* XP popup */
+.xp-popup{position:fixed;top:12%;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#7c3aed,#a78bfa);color:#fff;padding:12px 22px;border-radius:99px;font-weight:800;font-size:.95rem;z-index:500;animation:xpPop 2s ease forwards;pointer-events:none;box-shadow:0 8px 32px rgba(139,92,246,.4)}
+.xp-popup .xp-amount{font-size:1.2rem}
+.xp-popup .xp-label{font-size:.68rem;opacity:.8;display:block}
+.xp-popup .xp-breakdown{font-size:.62rem;opacity:.75;display:block;margin-top:2px}
+@keyframes xpPop{0%{opacity:0;transform:translateX(-50%) translateY(20px) scale(.8)}15%{opacity:1;transform:translateX(-50%) translateY(0) scale(1)}85%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-30px) scale(.9)}}
+
+/* combo streak popup */
+.combo-streak{position:fixed;top:20%;left:50%;transform:translateX(-50%);color:#fbbf24;font-weight:800;font-size:1.15rem;z-index:490;animation:comboIn 1.5s ease forwards;pointer-events:none;text-shadow:0 2px 12px rgba(251,191,36,.5);display:flex;flex-direction:column;align-items:center;gap:4px}
+@keyframes comboIn{0%{opacity:0;transform:translateX(-50%) scale(.5)}15%{opacity:1;transform:translateX(-50%) scale(1.1)}50%{opacity:1;transform:translateX(-50%) scale(1)}85%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-20px) scale(.8)}}
+.combo-streak .cs-fire{font-size:1.5rem}
+.combo-streak .cs-label{font-size:.75rem;opacity:.8}
+
+/* ===== RESULT SCREEN ===== */
+.result-screen{display:none;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:20px;text-align:center}
+.result-screen.active{display:flex}
+.result-emoji{font-size:4rem;margin-bottom:10px;animation:resultPop .6s ease}
+@keyframes resultPop{0%{transform:scale(0) rotate(-20deg)}60%{transform:scale(1.2) rotate(5deg)}100%{transform:scale(1) rotate(0)}}
+.result-title{font-size:1.4rem;font-weight:800;color:#fff;margin-bottom:6px}
+.result-sub{font-size:.82rem;color:#94a3b8;margin-bottom:16px;max-width:380px}
+
+.result-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:380px;margin-bottom:14px}
+.result-stat{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.1);border-radius:12px;padding:14px 10px}
+.result-stat .rs-val{font-size:1.5rem;font-weight:800;color:#fbbf24}
+.result-stat .rs-label{font-size:.68rem;color:#94a3b8;margin-top:3px}
+
+/* XP breakdown on result */
+.xp-breakdown-card{background:rgba(139,92,246,.1);border:1.5px solid rgba(139,92,246,.25);border-radius:12px;padding:12px 16px;width:100%;max-width:380px;margin-bottom:14px;text-align:left}
+.xp-breakdown-card h4{font-size:.72rem;color:#a78bfa;font-weight:700;margin-bottom:8px;text-align:center}
+.xp-breakdown-row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;font-size:.75rem;color:#94a3b8}
+.xp-breakdown-row .xd-val{color:#fbbf24;font-weight:600}
+.xp-breakdown-row.total{border-top:1px solid rgba(255,255,255,.1);margin-top:4px;padding-top:6px;font-weight:700;color:#e2e8f0}
+.xp-breakdown-row.total .xd-val{color:#a78bfa}
+
+.result-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:16px}
+.result-badge{display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:5px 10px;border-radius:99px;font-size:.7rem;color:#e2e8f0}
+.result-badge.new{background:rgba(139,92,246,.18);border-color:rgba(139,92,246,.35);color:#c4b5fd;animation:badgeGlow 2s ease infinite}
+@keyframes badgeGlow{0%,100%{box-shadow:0 0 0 0 rgba(139,92,246,0)}50%{box-shadow:0 0 12px 2px rgba(139,92,246,.3)}}
+
+.result-next{font-size:.78rem;color:#94a3b8;margin-bottom:14px}
+
+.btn-action{height:44px;padding:0 28px;border-radius:10px;border:none;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:7px}
+.btn-action:hover{transform:translateY(-2px)}
+.btn-primary-action{background:linear-gradient(135deg,#7c3aed,#a78bfa);color:#fff;box-shadow:0 4px 20px rgba(139,92,246,.3)}
+.btn-primary-action:hover{box-shadow:0 6px 28px rgba(139,92,246,.4)}
+.btn-secondary-action{background:rgba(255,255,255,.08);color:#e2e8f0;border:1.5px solid rgba(255,255,255,.13)}
+.btn-secondary-action:hover{background:rgba(255,255,255,.15)}
+
+/* ===== MASTERY DASHBOARD ===== */
+.mastery-screen{display:none;padding:16px 12px;max-width:680px;margin:0 auto}
+.mastery-screen.active{display:block}
+.mastery-hdr{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.mastery-hdr h2{font-size:1.15rem;font-weight:800;flex:1}
+.mastery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:12px}
+.mastery-card{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);border-radius:12px;padding:12px;text-align:center;transition:all .2s;cursor:pointer}
+.mastery-card:hover{background:rgba(255,255,255,.1)}
+.mastery-card .mc-emoji{font-size:1.6rem;margin-bottom:4px}
+.mastery-card .mc-name{font-size:.75rem;font-weight:700;color:#f1f5f9;margin-bottom:3px;line-height:1.3}
+.mastery-card .mc-bar{height:4px;background:rgba(255,255,255,.1);border-radius:99px;margin:6px 0;overflow:hidden}
+.mastery-card .mc-fill{height:100%;border-radius:99px;transition:width .4s ease}
+.mastery-card .mc-status{font-size:.65rem;font-weight:600}
+.mc-still-learning{color:#f59e0b}
+.mc-getting-there{color:#60a5fa}
+.mc-confident{color:#2dd4bf}
+
+/* ===== ANALYTICS DASHBOARD ===== */
+.analytics-screen{display:none;padding:16px 12px;max-width:680px;margin:0 auto}
+.analytics-screen.active{display:block}
+.analytics-screen h2{font-size:1.15rem;font-weight:800;margin-bottom:4px}
+.analytics-screen .analytics-sub{font-size:.78rem;color:#94a3b8;margin-bottom:16px}
+
+.analytics-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.analytics-stat{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:10px 8px;text-align:center}
+.analytics-stat .as-val{font-size:1.2rem;font-weight:800;color:#fbbf24}
+.analytics-stat .as-label{font-size:.62rem;color:#94a3b8;margin-top:2px}
+
+/* Heatmap */
+.heatmap-section{margin-bottom:16px}
+.heatmap-section h3{font-size:.85rem;font-weight:700;color:#94a3b8;margin-bottom:8px}
+.heatmap-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.hm-week{display:flex;flex-direction:column;gap:2px}
+.hm-day{width:100%;aspect-ratio:1;border-radius:2px;background:#1e293b;transition:background .2s}
+.hm-day.l0{background:#1e293b}
+.hm-day.l1{background:rgba(139,92,246,.3)}
+.hm-day.l2{background:rgba(139,92,246,.55)}
+.hm-day.l3{background:rgba(139,92,246,.8)}
+.hm-day.l4{background:#8b5cf6}
+
+/* Study calendar */
+.calendar-legend{display:flex;gap:4px;align-items:center;margin-top:6px;font-size:.62rem;color:#64748b}
+.calendar-legend span{margin-right:4px}
+
+/* Topic breakdown chart */
+.topic-chart{margin-bottom:16px}
+.topic-chart h3{font-size:.85rem;font-weight:700;color:#94a3b8;margin-bottom:8px}
+.topic-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.topic-bar-label{font-size:.7rem;color:#94a3b8;width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right}
+.topic-bar-wrap{flex:1;height:6px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden}
+.topic-bar-fill{height:100%;border-radius:99px;transition:width .5s ease}
+.topic-bar-pct{font-size:.65rem;color:#64748b;width:28px;text-align:right}
+
+/* Leaderboard */
+.leaderboard-screen{display:none;padding:16px 12px;max-width:680px;margin:0 auto}
+.leaderboard-screen.active{display:block}
+.leaderboard-screen h2{font-size:1.15rem;font-weight:800;margin-bottom:4px}
+.leaderboard-screen .lb-sub{font-size:.78rem;color:#94a3b8;margin-bottom:16px}
+.lb-notice{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);border-radius:8px;padding:8px 12px;font-size:.72rem;color:#60a5fa;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.lb-row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,.05);border-radius:10px;margin-bottom:6px}
+.lb-row.me{background:rgba(139,92,246,.12);border:1.5px solid rgba(139,92,246,.3)}
+.lb-rank{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;background:rgba(255,255,255,.1);color:#94a3b8;flex-shrink:0}
+.lb-rank.r1{background:rgba(251,191,36,.2);color:#fbbf24}
+.lb-rank.r2{background:rgba(148,163,184,.2);color:#94a3b8}
+.lb-rank.r3{background:rgba(180,120,80,.2);color:#b47850}
+.lb-info{flex:1}
+.lb-name{font-size:.82rem;font-weight:700;color:#f1f5f9}
+.lb-xp{font-size:.68rem;color:#a78bfa}
+.lb-badge{display:flex;align-items:center;gap:4px;font-size:.62rem;color:#fbbf24}
+
+/* ===== BOSS COUNTDOWN OVERLAY ===== */
+.boss-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:300;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px}
+.boss-overlay.active{display:flex;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.boss-title{font-size:2.5rem;font-weight:900;color:#fff;margin-bottom:8px;text-shadow:0 0 40px rgba(251,191,36,.5)}
+.boss-sub{font-size:.9rem;color:#94a3b8;margin-bottom:24px}
+.boss-countdown{font-size:4rem;font-weight:900;color:#fbbf24;text-shadow:0 0 40px rgba(251,191,36,.4);font-family:monospace;animation:pulse .8s ease infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.boss-go{font-size:2.5rem;font-weight:900;color:#4ade80;text-shadow:0 0 40px rgba(74,222,128,.5);animation:bounceIn .5s ease}
+@keyframes bounceIn{0%{transform:scale(0)}60%{transform:scale(1.2)}100%{transform:scale(1)}}
+
+/* ===== BADGE NOTIFICATION ===== */
+.badge-notify{position:fixed;bottom:20%;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#1e1b4b,#312e81);border:2px solid rgba(139,92,246,.5);border-radius:16px;padding:14px 20px;z-index:600;display:none;flex-direction:column;align-items:center;gap:6px;animation:badgeSlide 3s ease forwards;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.badge-notify.show{display:flex}
+@keyframes badgeSlide{0%{opacity:0;transform:translateX(-50%) translateY(30px)}15%{opacity:1;transform:translateX(-50%) translateY(0)}75%{opacity:1;transform:translateX(-50%) translateY(0)}100%{opacity:0;transform:translateX(-50%) translateY(-20px)}}
+.badge-notify .bn-emoji{font-size:2rem}
+.badge-notify .bn-name{font-size:.9rem;font-weight:800;color:#fff}
+.badge-notify .bn-desc{font-size:.72rem;color:#a78bfa}
+
+/* ===== LOADING ===== */
+.loading-overlay{position:fixed;inset:0;background:#1e1b4b;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999}
+.loading-overlay.hidden{display:none}
+.loader-ring{width:44px;height:44px;border:4px solid rgba(139,92,246,.2);border-top-color:#a78bfa;border-radius:50%;animation:spin .8s linear infinite;margin-bottom:14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loader-text{color:#94a3b8;font-size:.8rem}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:640px){
+  .result-stats{grid-template-columns:1fr}
+  .analytics-stats{grid-template-columns:repeat(2,1fr)}
+  .hud{gap:6px;padding:8px 10px}
+  .chapter-map{padding:14px 10px}
+}
+</style>
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="loader-ring"></div>
+  <div class="loader-text">加载题库中...</div>
+</div>
+
+<!-- Badge Notification -->
+<div id="badgeNotify" class="badge-notify">
+  <div class="bn-emoji" id="bnEmoji">🏆</div>
+  <div class="bn-name" id="bnName">新徽章解锁</div>
+  <div class="bn-desc" id="bnDesc">描述</div>
+</div>
+
+<!-- Boss Countdown Overlay -->
+<div id="bossOverlay" class="boss-overlay">
+  <div class="boss-title" id="bossTitle">👑 BOSS 挑战</div>
+  <div class="boss-sub" id="bossSub">准备好接受挑战了吗？</div>
+  <div id="bossCountdownWrap">
+    <div class="boss-countdown" id="bossCountdown">3</div>
+  </div>
+</div>
+
+<!-- Top HUD -->
+<div class="hud">
+  <div class="hud-brand"><span>🧪</span> chem9701</div>
+  <div class="hud-spacer"></div>
+  <div class="hud-row">
+    <div class="daily-goal-wrap" onclick="showAnalytics()" title="今日目标">
+      <div class="daily-goal-ring">
+        <svg width="28" height="28" viewBox="0 0 28 28">
+          <circle class="ring-bg" cx="14" cy="14" r="11"/>
+          <circle class="ring-fill" id="goalRing" cx="14" cy="14" r="11"
+            stroke-dasharray="69.115" stroke-dashoffset="69.115"/>
+        </svg>
+      </div>
+      <span class="daily-goal-label" id="goalLabel">0/10</span>
+    </div>
+    <div class="hud-stat" title="连击天数">
+      <span class="stat-icon streak-flame">🔥</span>
+      <span class="stat-val" id="hudStreak">1</span>
+      <span class="streak-freeze" id="hudFreeze" style="display:none">0❄️</span>
+    </div>
+    <div class="hud-stat" title="总 XP">
+      <span class="stat-icon">⭐</span>
+      <span class="stat-val" id="hudXP">0</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:3px">
+      <div class="xp-bar-wrap"><div class="xp-bar-fill" id="xpBarFill" style="width:0%"></div></div>
+      <span class="xp-bar-text" id="xpBarText">Lv.1</span>
+    </div>
+  </div>
+</div>
+
+<!-- Chapter Map -->
+<div id="chapterMap" class="chapter-map">
+  <div class="chapter-header">
+    <h1>⚛️ Atomic Structure & Electrons</h1>
+    <p>原子结构与电子 — ch01 · CIE 9701</p>
+    <div class="ch01-badge">🎮 闯关模式</div>
+    <p style="margin-top:6px"><a href="student.html" style="color:#a78bfa;font-size:.75rem;text-decoration:none">← 返回学习主页</a></p>
+  </div>
+
+  <div class="chapter-actions">
+    <button class="mini-btn active" id="btnMap" onclick="showMap()">🗺️ 关卡</button>
+    <button class="mini-btn" id="btnAnalytics" onclick="showAnalytics()">📊 数据</button>
+    <button class="mini-btn" id="btnMastery" onclick="showMastery()">🏅 掌握</button>
+    <button class="mini-btn" id="btnReview" onclick="showReview()">🔄 复习</button>
+    <button class="mini-btn" id="btnLeaderboard" onclick="showLeaderboard()">🏆 排行</button>
+  </div>
+
+  <!-- Weak Topics Bar (Cognito: weak topics auto-detection) -->
+  <div class="weak-topics-bar" id="weakBar" style="display:none">
+    <div class="wt-icon">💡</div>
+    <div class="wt-label">薄弱优先</div>
+    <div class="wt-tags" id="weakTags"></div>
+  </div>
+
+  <div id="mapContent">
+    <div class="level-path" id="levelPath"></div>
+  </div>
+</div>
+
+<!-- Quiz Battle Screen -->
+<div id="battleScreen" class="battle-screen">
+  <div class="battle-hud">
+    <button class="btn-back" onclick="exitBattle()">←</button>
+    <div class="battle-title" id="battleTitle">关卡 1</div>
+    <div class="combo-pill" id="comboPill" style="display:none">🔥 <span id="comboCount">0</span>连</div>
+    <div class="battle-timer" id="battleTimer">--:--</div>
+  </div>
+  <!-- Combo progress dots -->
+  <div style="padding:0 14px 0">
+    <div class="combo-bar" id="comboBar">
+      <span class="combo-bar-label">连击</span>
+    </div>
+  </div>
+  <div class="battle-arena" id="battleArena"></div>
+</div>
+
+<!-- Result Screen -->
+<div id="resultScreen" class="result-screen">
+  <div class="result-emoji" id="resultEmoji">🎉</div>
+  <div class="result-title" id="resultTitle">关卡完成！</div>
+  <div class="result-sub" id="resultSub"></div>
+
+  <div class="result-stats">
+    <div class="result-stat">
+      <div class="rs-val" id="rsScore">0/0</div>
+      <div class="rs-label">正确率</div>
+    </div>
+    <div class="result-stat">
+      <div class="rs-val" id="rsXP">+0</div>
+      <div class="rs-label">获得 XP</div>
+    </div>
+    <div class="result-stat">
+      <div class="rs-val" id="rsTime">0:00</div>
+      <div class="rs-label">用时</div>
+    </div>
+  </div>
+
+  <!-- XP Breakdown (Seneca: show how XP is earned) -->
+  <div class="xp-breakdown-card" id="xpBreakdownCard">
+    <h4>XP 详情</h4>
+    <div id="xpBreakdownRows"></div>
+  </div>
+
+  <div class="result-badges" id="resultBadges"></div>
+
+  <div class="result-next" id="resultNext"></div>
+
+  <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+    <button class="btn-action btn-primary-action" id="btnNext" onclick="nextLevel()">下一关 →</button>
+    <button class="btn-action btn-secondary-action" onclick="exitToMap()">返回地图</button>
+  </div>
+</div>
+
+<!-- Mastery Dashboard -->
+<div id="masteryScreen" class="mastery-screen">
+  <div class="mastery-hdr">
+    <h2>🏅 知识点掌握度</h2>
+    <button class="btn-back" onclick="exitMastery()">← 返回</button>
+  </div>
+  <p style="font-size:.78rem;color:#94a3b8;margin-bottom:8px">答对率 ≥85% + 5题 = 已掌握 (Confident)</p>
+  <div class="mastery-grid" id="masteryGrid"></div>
+</div>
+
+<!-- Analytics Dashboard (Cognito: heatmap + trends) -->
+<div id="analyticsScreen" class="analytics-screen">
+  <div class="mastery-hdr">
+    <h2>📊 学习数据中心</h2>
+    <button class="btn-back" onclick="exitAnalytics()">← 返回</button>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="analytics-stats" id="analyticsStats"></div>
+
+  <!-- Learning heatmap (Cognito: 52-week grid) -->
+  <div class="heatmap-section">
+    <h3>📅 学习热力图（近90天）</h3>
+    <div class="heatmap-grid" id="heatmapGrid"></div>
+    <div class="calendar-legend">
+      <span>少</span>
+      <div class="hm-day l0" style="width:12px;height:12px;display:inline-block;border-radius:2px"></div>
+      <div class="hm-day l1" style="width:12px;height:12px;display:inline-block;border-radius:2px"></div>
+      <div class="hm-day l2" style="width:12px;height:12px;display:inline-block;border-radius:2px"></div>
+      <div class="hm-day l3" style="width:12px;height:12px;display:inline-block;border-radius:2px"></div>
+      <div class="hm-day l4" style="width:12px;height:12px;display:inline-block;border-radius:2px"></div>
+      <span>多</span>
+    </div>
+  </div>
+
+  <!-- Topic breakdown -->
+  <div class="topic-chart">
+    <h3>📈 各知识点掌握度</h3>
+    <div id="topicChartRows"></div>
+  </div>
+
+  <!-- Next review -->
+  <div style="background:rgba(139,92,246,.08);border:1.5px solid rgba(139,92,246,.2);border-radius:12px;padding:12px 14px;margin-bottom:16px">
+    <div style="font-size:.82rem;font-weight:700;color:#a78bfa;margin-bottom:6px">🔄 间隔重复复习计划</div>
+    <div id="reviewSchedule" style="font-size:.75rem;color:#94a3b8"></div>
+  </div>
+</div>
+
+<!-- Leaderboard -->
+<div id="leaderboardScreen" class="leaderboard-screen">
+  <div class="mastery-hdr">
+    <h2>🏆 本地排行榜</h2>
+    <button class="btn-back" onclick="exitLeaderboard()">← 返回</button>
+  </div>
+  <div class="lb-notice">
+    <span>ℹ️</span> 此排行榜仅基于本地数据，与他人分享你的成绩，或邀请同学一起加入！
+  </div>
+  <div id="leaderboardList"></div>
+</div>
+
+<script>
+/* ============ CONFIG ============ */
+const CHAPTER_ID = 'ch01';
+const CHAPTER_NAME = 'Atomic Structure & Electrons';
+const STORAGE_KEY = 'chem9701_ch01_gamify';
+const DAILY_GOAL_DEFAULT = 10; // daily question target
+
+// XP Formula (Seneca + QuizAPI inspired):
+// Base XP = topicXP * accuracy (0-1)
+// Speed bonus = baseXP * 0.25 if time < expected AND accuracy >= 70%
+// Streak bonus = combo bonus per level
+// First attempt bonus = +20 if first attempt of this question
+const EXPECTED_TIME_PER_Q = 45; // seconds expected per question
+
+const TOPICS = [
+  {id:'ch01_t01', name:'Protons, neutrons & electrons', emoji:'🔬', desc:'Understanding subatomic particles', xpPerQ:10},
+  {id:'ch01_t02', name:'Isotopes & relative atomic mass', emoji:'⚖️', desc:'Calculating Ar and isotope abundances', xpPerQ:12},
+  {id:'ch01_t03', name:'Mass spectrometry', emoji:'📈', desc:'Mass spectrum interpretation', xpPerQ:14},
+  {id:'ch01_t04', name:'Electron configuration', emoji:'🔮', desc:'Orbitals, shells and electronic arrangements', xpPerQ:12},
+  {id:'ch01_t05', name:'Ionisation energies', emoji:'⚡', desc:'Trends and explanations', xpPerQ:14},
+  {id:'ch01_t06', name:'Atomic emission spectra', emoji:'🌈', desc:'Line spectra and energy levels', xpPerQ:15}
+];
+
+const LEVEL_CONFIG = {
+  none:    {color:'#374151', label:'未开始'},
+  bronze:  {color:'#cd7f32', label:'Bronze'},
+  silver:  {color:'#94a3b8', label:'Silver'},
+  gold:    {color:'#fbbf24', label:'Gold'},
+  platinum:{color:'#a78bfa', label:'Platinum'},
+  diamond: {color:'#2dd4bf', label:'Diamond'}
+};
+
+const XP_STREAK_BONUS = [0, 0, 3, 6, 10, 15, 20, 25, 30]; // combo bonus: 0-indexed, up to 8+
+const LEVEL_XP_REQS = [0, 100, 250, 500, 800, 1200, 1700, 2300, 3000, 3800, 5000];
+
+/* ============ BADGE SYSTEM (Seneca/Cognito style, 20+ badges) ============ */
+const BADGES = {
+  // --- 初学 ---
+  first_blood:    {id:'first_blood',    name:'初出茅庐',       emoji:'🎯', type:'milestone', desc:'完成第一道题'},
+  first_day:      {id:'first_day',      name:'第一天',          emoji:'🌱', type:'milestone', desc:'完成第一次学习'},
+  ten_questions:  {id:'ten_questions',  name:'小试牛刀',         emoji:'📝', type:'milestone', desc:'累计完成10道题'},
+  fifty_questions:{id:'fifty_questions',name:'学而不厌',         emoji:'📚', type:'milestone', desc:'累计完成50道题'},
+  hundred_questions:{id:'hundred_questions',name:'百题斩',      emoji:'💯', type:'milestone', desc:'累计完成100道题'},
+
+  // --- 连击 (Seneca: streaks) ---
+  streak_3:   {id:'streak_3',   name:'连中三元',   emoji:'🔥', type:'streak',   desc:'连续答对3题'},
+  streak_5:   {id:'streak_5',   name:'五连绝世',   emoji:'⚡', type:'streak',   desc:'连续答对5题'},
+  streak_10:  {id:'streak_10',  name:'十连封神',   emoji:'👑', type:'streak',   desc:'连续答对10题'},
+  streak_15:  {id:'streak_15',  name:'十五连击',   emoji:'🌟', type:'streak',   desc:'连续答对15题'},
+  streak_20:  {id:'streak_20',  name:'二十连无双', emoji:'💫', type:'streak',   desc:'连续答对20题'},
+
+  // --- 关卡 (Cognito: level completion) ---
+  perfect_level:   {id:'perfect_level',   name:'完美通关',      emoji:'💎', type:'level',     desc:'一题不错完成关卡'},
+  speed_demon:    {id:'speed_demon',    name:'闪电答题',       emoji:'🚀', type:'speed',     desc:'30秒内答对一题'},
+  perfect_boss:   {id:'perfect_boss',    name:'Boss克星',       emoji:'🏆', type:'boss',      desc:'BOSS战100%正确率'},
+
+  // --- 连续打卡 (Cognito: streak days) ---
+  daily_3:    {id:'daily_3',    name:'坚持3天',    emoji:'🔥', type:'daily',    desc:'连续学习3天'},
+  daily_7:    {id:'daily_7',    name:'周冠军',      emoji:'🏅', type:'daily',    desc:'连续学习7天 — 获得1张❄️冻结卡'},
+  daily_14:   {id:'daily_14',   name:'双周战士',    emoji:'🥈', type:'daily',    desc:'连续学习14天'},
+  daily_30:   {id:'daily_30',   name:'月度大师',    emoji:'🥇', type:'daily',    desc:'连续学习30天 — 获得2张❄️冻结卡'},
+  daily_60:   {id:'daily_60',   name:'钻石玩家',    emoji:'💠', type:'daily',    desc:'连续学习60天'},
+
+  // --- 掌握度 (Cognito: Confident) ---
+  topic_gold:     {id:'topic_gold',     name:'知识点达人',     emoji:'🧠', type:'mastery',  desc:'某个知识点达到Gold'},
+  topic_platinum: {id:'topic_platinum', name:'知识点大师',     emoji:'🧩', type:'mastery',  desc:'某个知识点达到Platinum'},
+  topic_diamond:  {id:'topic_diamond',  name:'全知识点钻石',   emoji:'💎', type:'mastery',  desc:'某个知识点达到Diamond'},
+  all_topics_gold:    {id:'all_topics_gold',     name:'全能Gold',    emoji:'🌟', type:'mastery',  desc:'所有知识点达到Gold'},
+  all_topics_confident:{id:'all_topics_confident',name:'全知全能',    emoji:'🏆', type:'mastery',  desc:'所有知识点达到Confident'},
+
+  // --- Comeback (Seneca: improvement) ---
+  comeback: {id:'comeback', name:'逆袭成功', emoji:'🔄', type:'comeback', desc:'复习一道之前答错的题并答对'},
+};
+
+/* ============ STATE ============ */
+let DB = {questions:[]};
+let GAME = null;
+let BATTLE = null;
+let TIMER = null;
+let CURRENT_SCREEN = 'map';
+
+/* ============ INIT / SAVE ============ */
+function initGame(){
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if(saved){ try{ GAME = JSON.parse(saved); }catch(e){} }
+  if(!GAME){
+    GAME = {
+      xp:0, level:1, streakDays:1, lastStudyDate:todayStr(),
+      combo:0, maxCombo:0, dailyGoal:DAILY_GOAL_DEFAULT,
+      topicMastery:{}, levelProgress:{}, badges:[],
+      reviewQueue:[], // {qid, nextReview, ease, interval, lastReview}
+      history:{}, // dateStr -> {correct, total, xpEarned}
+      dailyDone:{}, // dateStr -> questions answered today
+      totalQuestions:0, totalCorrect:0, studyTime:0,
+      streakFreezes:0, // Seneca/Cognito: streak freeze cards
+      questionAttempts:{}, // qid -> times attempted (for first attempt bonus)
+      leaderboardEnabled: true,
+    };
+    TOPICS.forEach(t=>{ GAME.topicMastery[t.id]={correct:0,total:0,status:'still_learning',lastCorrect:null}; });
+    saveGame();
+  }
+  checkStreak();
+  checkDailyFreeze();
+  updateHUD();
+}
+
+function saveGame(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(GAME)); }
+
+function todayStr(){ return new Date().toISOString().slice(0,10); }
+
+function checkStreak(){
+  const today = todayStr();
+  if(GAME.lastStudyDate !== today){
+    const last = new Date(GAME.lastStudyDate);
+    const now = new Date(today);
+    const diff = Math.floor((now - last)/(1000*60*60*24));
+    if(diff === 1){
+      GAME.streakDays++;
+      GAME.combo = 0;
+      // Award freeze card at milestones (Cognito)
+      if(GAME.streakDays === 7 || GAME.streakDays === 30){
+        GAME.streakFreezes++;
+        showStreakFreezeNotify(GAME.streakDays);
+      }
+    } else if(diff > 1){
+      // Seneca/Cognito: streak freeze can save you
+      if(diff === 2 && GAME.streakFreezes > 0){
+        GAME.streakFreezes--;
+        // Streak preserved, just didn't grow
+      } else {
+        GAME.streakDays = 1;
+      }
+      GAME.combo = 0;
+    }
+    GAME.lastStudyDate = today;
+    saveGame();
+  }
+}
+
+function showStreakFreezeNotify(days){
+  const msg = days === 7 ? '🎉 连续7天学习！获得 1 张❄️冻结卡！' : '🏆 连续30天学习！获得 2 张❄️冻结卡！';
+  showNotify('❄️', msg, '连击天数冻结卡');
+}
+
+/* ============ XP ENGINE (Seneca: detailed breakdown) ============ */
+function calculateXP(question, isCorrect, timeSpent, combo){
+  const base = BATTLE.level.topic.xpPerQ || 10;
+  const ACCURACY_MIN = 0.7;
+
+  if(!isCorrect) return {base:0, speedBonus:0, streakBonus:0, firstBonus:0, total:0};
+
+  // First attempt bonus (+20 XP)
+  const attempts = GAME.questionAttempts[question.id] || 0;
+  const firstBonus = attempts === 0 ? 20 : 0;
+  GAME.questionAttempts[question.id] = attempts + 1;
+
+  // Base XP (already correct, so full base)
+  const baseXP = base;
+
+  // Speed bonus: up to 25% of base if fast AND accuracy OK
+  const speedBonus = (timeSpent < EXPECTED_TIME_PER_Q) ? Math.round(baseXP * 0.25) : 0;
+
+  // Streak bonus (combo)
+  const streakBonus = XP_STREAK_BONUS[Math.min(combo, XP_STREAK_BONUS.length - 1)];
+
+  return {
+    base: baseXP,
+    speedBonus,
+    streakBonus,
+    firstBonus,
+    total: baseXP + speedBonus + streakBonus + firstBonus,
+    breakdown: `基础${baseXP}${speedBonus?' ⚡+'+speedBonus:''}${streakBonus?' 🔥+'+streakBonus:''}${firstBonus?' 🌟+'+firstBonus:''}`
+  };
+}
+
+function awardXP(amount, reason, breakdown){
+  GAME.xp += amount;
+  showXPPopup(amount, reason, breakdown);
+  updateHUD();
+  saveGame();
+}
+
+function showXPPopup(amount, reason, breakdown){
+  const el = document.createElement('div');
+  el.className = 'xp-popup';
+  el.innerHTML = `<span class="xp-amount">+${amount}</span><span class="xp-label">${reason || 'XP'}</span>${breakdown ? `<span class="xp-breakdown">${breakdown}</span>` : ''}`;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(), 2000);
+}
+
+function showComboPopup(combo){
+  if(combo < 3) return;
+  const labels = {
+    3:{fire:'🔥', text:'三连击！'},
+    5:{fire:'⚡', text:'五连绝世！'},
+    7:{fire:'🌟', text:'七连！势不可挡！'},
+    10:{fire:'👑', text:'十连封神！'},
+    15:{fire:'💫', text:'十五连击！'},
+    20:{fire:'🚀', text:'二十连无双！'},
+  };
+  const info = labels[combo] || {fire:'🔥', text:`${combo}连击！`};
+  const el = document.createElement('div');
+  el.className = 'combo-streak';
+  el.innerHTML = `<div class="cs-fire">${info.fire}</div><div class="cs-label">${info.text}</div>`;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(), 1500);
+}
+
+function getLevel(){
+  for(let i=LEVEL_XP_REQS.length-1;i>=0;i--){
+    if(GAME.xp >= LEVEL_XP_REQS[i]) return i+1;
+  }
+  return 1;
+}
+function getLevelProgress(){
+  const lv = getLevel();
+  const next = LEVEL_XP_REQS[lv] || LEVEL_XP_REQS[LEVEL_XP_REQS.length-1]*1.5;
+  const prev = LEVEL_XP_REQS[lv-1] || 0;
+  const pct = Math.min(100, Math.max(0, (GAME.xp - prev)/(next - prev)*100));
+  return {level:lv, pct, xp:GAME.xp, next, prev};
+}
+
+/* ============ HUD UPDATE ============ */
+function updateHUD(){
+  const prog = getLevelProgress();
+  const today = todayStr();
+  const todayDone = GAME.dailyDone[today] || 0;
+  const goal = GAME.dailyGoal || DAILY_GOAL_DEFAULT;
+
+  document.getElementById('hudStreak').textContent = GAME.streakDays;
+  document.getElementById('hudXP').textContent = GAME.xp.toLocaleString();
+  document.getElementById('xpBarFill').style.width = prog.pct + '%';
+  document.getElementById('xpBarText').textContent = 'Lv.' + prog.level;
+
+  // Daily goal ring
+  const circumference = 69.115;
+  const progress = Math.min(1, todayDone / goal);
+  const offset = circumference * (1 - progress);
+  document.getElementById('goalRing').style.strokeDashoffset = offset;
+  document.getElementById('goalLabel').textContent = `${todayDone}/${goal}`;
+
+  // Streak freeze display
+  const freezeEl = document.getElementById('hudFreeze');
+  if(GAME.streakFreezes > 0){
+    freezeEl.style.display = 'inline-block';
+    freezeEl.textContent = GAME.streakFreezes + '❄️';
+  } else {
+    freezeEl.style.display = 'none';
+  }
+
+  // Weak topics bar
+  updateWeakBar();
+}
+
+/* ============ WEAK TOPICS (Cognito: auto-detect) ============ */
+function getWeakTopics(){
+  const weak = TOPICS
+    .map(t => {
+      const m = GAME.topicMastery[t.id] || {correct:0,total:0};
+      return {topic:t, correct:m.correct, total:m.total, pct: m.total>0 ? m.correct/m.total*100 : -1};
+    })
+    .filter(x => x.total >= 3 && x.pct < 70)
+    .sort((a,b) => a.pct - b.pct);
+  return weak;
+}
+
+function updateWeakBar(){
+  const weak = getWeakTopics().slice(0,3);
+  const bar = document.getElementById('weakBar');
+  const tags = document.getElementById('weakTags');
+  if(weak.length === 0){ bar.style.display='none'; return; }
+  bar.style.display='flex';
+  tags.innerHTML = weak.map(w => {
+    const mastered = getMasteryLevel(w.topic.id);
+    const done = mastered.tier !== 'none' && mastered.tier !== 'bronze';
+    return `<span class="wt-tag${done?' done':''}" onclick="jumpToTopic('${w.topic.id}')">${w.topic.emoji} ${w.pct.toFixed(0)}%</span>`;
+  }).join('');
+}
+
+function jumpToTopic(topicId){
+  showMap();
+  setTimeout(()=>{
+    const el = document.querySelector(`[data-topic="${topicId}"]`);
+    if(el) el.scrollIntoView({behavior:'smooth',block:'center'});
+  }, 100);
+}
+
+/* ============ BADGES ============ */
+function checkBadges(context){
+  const newBadges = [];
+  const ctx = context || {};
+
+  // Milestone
+  if(!hasBadge('first_blood') && GAME.totalQuestions >= 1) newBadges.push('first_blood');
+  if(!hasBadge('first_day') && GAME.totalQuestions >= 1) newBadges.push('first_day');
+  if(!hasBadge('ten_questions') && GAME.totalQuestions >= 10) newBadges.push('ten_questions');
+  if(!hasBadge('fifty_questions') && GAME.totalQuestions >= 50) newBadges.push('fifty_questions');
+  if(!hasBadge('hundred_questions') && GAME.totalQuestions >= 100) newBadges.push('hundred_questions');
+
+  // Streaks
+  if(!hasBadge('streak_3') && (ctx.combo||0) >= 3) newBadges.push('streak_3');
+  if(!hasBadge('streak_5') && (ctx.combo||0) >= 5) newBadges.push('streak_5');
+  if(!hasBadge('streak_10') && (ctx.combo||0) >= 10) newBadges.push('streak_10');
+  if(!hasBadge('streak_15') && (ctx.combo||0) >= 15) newBadges.push('streak_15');
+  if(!hasBadge('streak_20') && (ctx.combo||0) >= 20) newBadges.push('streak_20');
+
+  // Level
+  if(!hasBadge('perfect_level') && ctx.perfect) newBadges.push('perfect_level');
+  if(!hasBadge('speed_demon') && ctx.fast) newBadges.push('speed_demon');
+  if(!hasBadge('perfect_boss') && ctx.perfectBoss) newBadges.push('perfect_boss');
+
+  // Daily
+  if(!hasBadge('daily_3') && GAME.streakDays >= 3) newBadges.push('daily_3');
+  if(!hasBadge('daily_7') && GAME.streakDays >= 7) newBadges.push('daily_7');
+  if(!hasBadge('daily_14') && GAME.streakDays >= 14) newBadges.push('daily_14');
+  if(!hasBadge('daily_30') && GAME.streakDays >= 30) newBadges.push('daily_30');
+  if(!hasBadge('daily_60') && GAME.streakDays >= 60) newBadges.push('daily_60');
+
+  // Comeback (review wrong and get it right)
+  if(!hasBadge('comeback') && ctx.comeback) newBadges.push('comeback');
+
+  // Mastery
+  const masteredTopics = TOPICS.filter(t => getMasteryLevel(t.id).tier !== 'none');
+  const goldTopics = TOPICS.filter(t => ['gold','platinum','diamond'].includes(getMasteryLevel(t.id).tier));
+  const platTopics = TOPICS.filter(t => ['platinum','diamond'].includes(getMasteryLevel(t.id).tier));
+  const diamondTopics = TOPICS.filter(t => getMasteryLevel(t.id).tier === 'diamond');
+  const confidentTopics = TOPICS.filter(t => getMasteryLevel(t.id).tier !== 'none' && getMasteryLevel(t.id).tier !== 'bronze');
+
+  if(!hasBadge('topic_gold') && goldTopics.length >= 1) newBadges.push('topic_gold');
+  if(!hasBadge('topic_platinum') && platTopics.length >= 1) newBadges.push('topic_platinum');
+  if(!hasBadge('topic_diamond') && diamondTopics.length >= 1) newBadges.push('topic_diamond');
+  if(!hasBadge('all_topics_gold') && masteredTopics.length === TOPICS.length && goldTopics.length === TOPICS.length) newBadges.push('all_topics_gold');
+  if(!hasBadge('all_topics_confident') && confidentTopics.length === TOPICS.length) newBadges.push('all_topics_confident');
+
+  newBadges.forEach(bid => {
+    if(!hasBadge(bid)){
+      GAME.badges.push(bid);
+      showBadgeNotify(bid);
+    }
+  });
+
+  if(newBadges.length) saveGame();
+  return newBadges;
+}
+function hasBadge(id){ return GAME.badges.includes(id); }
+
+function showBadgeNotify(bid){
+  const b = BADGES[bid];
+  if(!b) return;
+  const el = document.getElementById('badgeNotify');
+  document.getElementById('bnEmoji').textContent = b.emoji;
+  document.getElementById('bnName').textContent = b.name;
+  document.getElementById('bnDesc').textContent = b.desc;
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'), 3000);
+}
+
+function showNotify(emoji, text, sub){
+  const el = document.getElementById('badgeNotify');
+  document.getElementById('bnEmoji').textContent = emoji;
+  document.getElementById('bnName').textContent = text;
+  document.getElementById('bnDesc').textContent = sub || '';
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'), 3000);
+}
+
+/* ============ MASTERY ============ */
+function updateTopicMastery(topicId, isCorrect){
+  if(!GAME.topicMastery[topicId]) GAME.topicMastery[topicId]={correct:0,total:0,status:'still_learning',lastCorrect:null};
+  const m = GAME.topicMastery[topicId];
+  m.total++;
+  if(isCorrect) m.correct++;
+  const pct = m.total > 0 ? m.correct/m.total*100 : 0;
+  if(pct >= 95 && m.total >= 3) m.status = 'diamond';
+  else if(pct >= 85 && m.total >= 5) m.status = 'platinum';
+  else if(pct >= 70 && m.total >= 5) m.status = 'gold';
+  else if(pct >= 50 && m.total >= 5) m.status = 'silver';
+  else if(pct >= 30 && m.total >= 3) m.status = 'bronze';
+  else m.status = 'still_learning';
+  saveGame();
+}
+
+function getMasteryLevel(topicId){
+  const m = GAME.topicMastery[topicId] || {correct:0,total:0};
+  if(m.total === 0) return {tier:'none',pct:0,label:'未开始',correct:0,total:0};
+  const pct = m.correct/m.total*100;
+  let tier='bronze', label='Bronze';
+  if(pct >= 95 && m.total>=3){tier='diamond';label='Diamond'}
+  else if(pct >= 85 && m.total>=5){tier='platinum';label='Platinum'}
+  else if(pct >= 70 && m.total>=5){tier='gold';label='Gold'}
+  else if(pct >= 50 && m.total>=5){tier='silver';label='Silver'}
+  return {tier, pct:Math.round(pct), label, correct:m.correct, total:m.total};
+}
+
+/* ============ SPACED REPETITION (FSRS-inspired SM-2 variant, Cognito) ============ */
+function addToReview(qid, wasWrong){
+  const now = Date.now();
+  const existing = GAME.reviewQueue.findIndex(r=>r.qid===qid);
+  const prevWasCorrect = existing >= 0 && !wasWrong; // came back and got it right
+
+  if(existing >= 0){
+    const r = GAME.reviewQueue[existing];
+    if(wasWrong){
+      // Reset interval (Seneca: recover memory)
+      r.ease = Math.max(1, r.ease - 1);
+      r.interval = Math.max(1, Math.round(r.interval * 0.5));
+      r.nextReview = now + r.interval * 60 * 1000;
+    } else {
+      // Increase interval (Cognito FSRS)
+      r.ease = Math.min(8, r.ease + 1);
+      r.interval = Math.round(r.interval * r.ease * 0.5 + 1);
+      r.nextReview = now + r.interval * 60 * 1000;
+    }
+  } else {
+    GAME.reviewQueue.push({
+      qid,
+      nextReview: now + 10 * 60 * 1000,
+      ease: 2.5,
+      interval: 10, // minutes
+      lastReview: now
+    });
+  }
+
+  // Check comeback badge
+  if(prevWasCorrect && !wasWrong){
+    checkBadges({comeback:true});
+  }
+
+  saveGame();
+}
+
+function getReviewQuestions(count=10){
+  const now = Date.now();
+  const due = GAME.reviewQueue.filter(r=>r.nextReview <= now).map(r=>({...r}));
+  due.sort((a,b) => a.nextReview - b.nextReview);
+  return due.slice(0,count).map(r=>r.qid);
+}
+
+function getReviewStats(){
+  const now = Date.now();
+  const overdue = GAME.reviewQueue.filter(r=>r.nextReview <= now);
+  const upcoming = GAME.reviewQueue.filter(r=>r.nextReview > now).sort((a,b)=>a.nextReview-b.nextReview).slice(0,5);
+  return {overdueCount: overdue.length, upcoming, total: GAME.reviewQueue.length};
+}
+
+/* ============ DAILY HISTORY (for heatmap) ============ */
+function recordDailyActivity(correct, total, xpEarned){
+  const today = todayStr();
+  if(!GAME.history[today]) GAME.history[today] = {correct:0,total:0,xpEarned:0};
+  GAME.history[today].correct += correct;
+  GAME.history[today].total += total;
+  GAME.history[today].xpEarned += xpEarned;
+
+  if(!GAME.dailyDone[today]) GAME.dailyDone[today] = 0;
+  GAME.dailyDone[today] += total;
+
+  saveGame();
+  updateHUD();
+}
+
+/* ============ LEVELS ============ */
+function buildLevels(){
+  const levels = [];
+  TOPICS.forEach((t, idx)=>{
+    const qs = DB.questions.filter(q=>q.chapter_id===CHAPTER_ID && q.topic_ids && q.topic_ids.includes(t.id) && q.paper_type==='P1');
+    const mastered = getMasteryLevel(t.id);
+    levels.push({
+      index:idx, topic:t, questions:qs,
+      completed: GAME.levelProgress[idx]?.completed || false,
+      bestScore: GAME.levelProgress[idx]?.bestScore || 0,
+      stars: GAME.levelProgress[idx]?.stars || 0,
+      mastery: mastered
+    });
+  });
+  // Boss
+  const allCh01 = DB.questions.filter(q=>q.chapter_id===CHAPTER_ID && q.paper_type==='P1');
+  levels.push({
+    index:6,
+    topic:{name:'综合挑战', emoji:'👑', desc:'BOSS Battle: All ch01 topics mixed', xpPerQ:20},
+    questions:allCh01, isBoss:true,
+    completed:GAME.levelProgress[6]?.completed||false,
+    bestScore:GAME.levelProgress[6]?.bestScore||0,
+    stars:GAME.levelProgress[6]?.stars||0,
+    mastery:{tier:'none',pct:0,label:'Boss'}
+  });
+  return levels;
+}
+
+/* ============ RENDER MAP ============ */
+function renderMap(){
+  const levels = buildLevels();
+  const path = document.getElementById('levelPath');
+  path.innerHTML = '';
+  levels.forEach((lv, i)=>{
+    const prevCompleted = i===0 || (GAME.levelProgress[i-1]?.completed||false);
+    const locked = !prevCompleted && !lv.completed && i > 0;
+    const statusClass = lv.completed ? 'completed' : (locked ? 'locked' : 'current');
+    const statusIcon = lv.completed ? '✓' : (locked ? '🔒' : '●');
+
+    const el = document.createElement('div');
+    el.className = `level-node ${statusClass}`;
+    el.dataset.topic = lv.topic.id;
+    el.onclick = locked ? null : ()=>startBattle(lv);
+
+    const fillColor = LEVEL_CONFIG[lv.mastery.tier]?.color || '#374151';
+    const stars = lv.stars || (lv.bestScore >= 90 ? 3 : lv.bestScore >= 70 ? 2 : lv.bestScore >= 50 ? 1 : 0);
+
+    el.innerHTML = `
+      <div class="level-status">${statusIcon}</div>
+      <div class="level-body">
+        <div class="level-emoji">${lv.topic.emoji}</div>
+        <div class="level-info">
+          <div class="level-name">${lv.isBoss ? '👑 BOSS 战' : 'Level '+(i+1)+': '+lv.topic.name}</div>
+          <div class="level-desc">${lv.topic.desc}</div>
+          <div class="level-xp">${lv.completed ? '✓ 已完成 · 最佳 '+lv.bestScore+'%' : (lv.questions.length>0 ? lv.questions.length+' 题 · ' : '') + (lv.topic.xpPerQ ? '每题 +'+lv.topic.xpPerQ+' XP' : 'Boss战')}</div>
+          ${lv.completed ? `<div class="level-stars">${[1,2,3].map(n=>`<span class="lv-star${n<=stars?' earned':''}">★</span>`).join('')}</div>` : ''}
+        </div>
+      </div>
+      <div class="level-progress">
+        <div class="level-progress-bar">
+          <div class="level-progress-fill ${lv.mastery.tier}" style="width:${lv.mastery.pct}%;background:${fillColor}"></div>
+        </div>
+      </div>
+    `;
+    path.appendChild(el);
+  });
+}
+
+/* ============ BATTLE SYSTEM ============ */
+function startBattle(level){
+  BATTLE = {
+    level, questions:[], current:0, correct:0,
+    startTime:Date.now(), answers:[], combo:0, maxCombo:0,
+    xpBreakdown:[]
+  };
+
+  let qs = [];
+  if(level.isBoss){
+    const reviewIds = getReviewQuestions(5);
+    const reviewQs = DB.questions.filter(q=>reviewIds.includes(q.id));
+    const remaining = DB.questions.filter(q=>q.chapter_id===CHAPTER_ID && q.paper_type==='P1' && !reviewIds.includes(q.id));
+    shuffle(remaining);
+    qs = reviewQs.concat(remaining).slice(0, 10);
+  } else {
+    const topicQs = [...level.questions];
+    shuffle(topicQs);
+    qs = topicQs.slice(0, Math.min(topicQs.length, 10));
+  }
+
+  if(qs.length === 0){
+    alert('本关暂无题目！');
+    return;
+  }
+  BATTLE.questions = qs;
+
+  // Boss countdown (Cognito: dramatic boss entrance)
+  if(level.isBoss){
+    showBossCountdown(level);
+  } else {
+    enterBattleScreen(level);
+  }
+}
+
+function showBossCountdown(level){
+  const overlay = document.getElementById('bossOverlay');
+  document.getElementById('bossTitle').textContent = '👑 BOSS 综合挑战';
+  document.getElementById('bossSub').textContent = '综合测试你的 ch01 全部知识点！';
+  overlay.classList.add('active');
+
+  let count = 3;
+  document.getElementById('bossCountdown').textContent = count;
+  document.getElementById('bossCountdownWrap').style.display = 'block';
+
+  const interval = setInterval(()=>{
+    count--;
+    if(count > 0){
+      document.getElementById('bossCountdown').textContent = count;
+    } else {
+      clearInterval(interval);
+      document.getElementById('bossCountdownWrap').innerHTML = '<div class="boss-go">开始！</div>';
+      setTimeout(()=>{
+        overlay.classList.remove('active');
+        document.getElementById('bossCountdownWrap').innerHTML = '<div class="boss-countdown" id="bossCountdown">3</div>';
+        enterBattleScreen(level);
+      }, 800);
+    }
+  }, 800);
+}
+
+function enterBattleScreen(level){
+  document.getElementById('chapterMap').style.display = 'none';
+  document.getElementById('battleScreen').classList.add('active');
+  document.getElementById('battleTitle').textContent = level.isBoss ? '👑 BOSS 综合挑战' : 'Level '+(level.index+1)+': '+level.topic.name;
+  renderQuestion();
+  startTimer();
+}
+
+function shuffle(arr){
+  for(let i=arr.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]]=[arr[j],arr[i]];
+  }
+}
+
+function startTimer(){
+  clearInterval(TIMER);
+  const start = Date.now();
+  TIMER = setInterval(()=>{
+    const elapsed = Math.floor((Date.now()-start)/1000);
+    const m = String(Math.floor(elapsed/60)).padStart(2,'0');
+    const s = String(elapsed%60).padStart(2,'0');
+    document.getElementById('battleTimer').textContent = m+':'+s;
+  }, 1000);
+}
+
+function renderComboBar(){
+  const total = BATTLE.questions.length;
+  const bar = document.getElementById('comboBar');
+  bar.innerHTML = `<span class="combo-bar-label">进度</span>`;
+  for(let i=0;i<total;i++){
+    const dot = document.createElement('div');
+    dot.className = 'combo-dot';
+    if(i < BATTLE.current && BATTLE.answers[i]?.correct) dot.classList.add('correct-green');
+    else if(i < BATTLE.current) dot.classList.add('active');
+    bar.appendChild(dot);
+  }
+  // Combo pill
+  const pill = document.getElementById('comboPill');
+  const combo = BATTLE.combo;
+  if(combo >= 2){
+    pill.style.display = 'flex';
+    document.getElementById('comboCount').textContent = combo;
+  } else {
+    pill.style.display = 'none';
+  }
+}
+
+function renderQuestion(){
+  const q = BATTLE.questions[BATTLE.current];
+  if(!q){ endBattle(); return; }
+
+  const arena = document.getElementById('battleArena');
+  const total = BATTLE.questions.length;
+  const idx = BATTLE.current + 1;
+
+  arena.innerHTML = `
+    <div class="q-card">
+      <div class="q-number">题目 <span class="q-current">${idx}</span> / <span class="q-total">${total}</span></div>
+      <div class="q-img-wrap">
+        <img class="q-img" src="images/${q.img}" alt="Question" onclick="zoomImage(this)" onerror="this.style.display='none'"/>
+      </div>
+      <div class="q-options" id="qOptions"></div>
+      <div class="xp-tooltip" id="xpTooltip"></div>
+      <div class="q-feedback" id="qFeedback"></div>
+      <div style="display:flex;gap:7px;margin-top:14px">
+        <button class="btn-action btn-primary-action" id="btnSubmit" onclick="submitAnswer()" style="flex:1">提交答案</button>
+        <button class="btn-action btn-secondary-action" onclick="skipQuestion()" style="width:auto;padding:0 14px">跳过</button>
+      </div>
+    </div>
+  `;
+
+  const optsDiv = document.getElementById('qOptions');
+  const letters = ['A','B','C','D'];
+  letters.forEach(l=>{
+    const opt = document.createElement('div');
+    opt.className = 'q-opt';
+    opt.dataset.letter = l;
+    opt.innerHTML = `<div class="opt-letter">${l}</div><div>Option ${l}</div>`;
+    opt.onclick = function(){
+      if(this.classList.contains('disabled')) return;
+      document.querySelectorAll('.q-opt').forEach(o=>o.classList.remove('selected'));
+      this.classList.add('selected');
+      // Show XP tooltip preview
+      showXPTooltip();
+    };
+    optsDiv.appendChild(opt);
+  });
+
+  renderComboBar();
+  BATTLE.qStartTime = Date.now();
+}
+
+function showXPTooltip(){
+  const tooltip = document.getElementById('xpTooltip');
+  const selected = document.querySelector('.q-opt.selected');
+  if(!selected){ tooltip.classList.remove('show'); return; }
+
+  const base = BATTLE.level.topic.xpPerQ || 10;
+  const speedBonus = Math.round(base * 0.25);
+  const streakBonus = XP_STREAK_BONUS[Math.min(BATTLE.combo+1, XP_STREAK_BONUS.length-1)];
+  const attempts = GAME.questionAttempts[BATTLE.questions[BATTLE.current]?.id] || 0;
+  const firstBonus = attempts === 0 ? 20 : 0;
+  const maxTotal = base + speedBonus + streakBonus + firstBonus;
+
+  tooltip.innerHTML = `
+    <div class="xp-tooltip-row"><span>答对基础 XP</span><span class="xp-val">+${base}</span></div>
+    ${speedBonus ? `<div class="xp-tooltip-row bonus"><span>⚡ 速度奖励</span><span class="xp-val">+${speedBonus}</span></div>` : ''}
+    ${streakBonus ? `<div class="xp-tooltip-row bonus"><span>🔥 连击加成</span><span class="xp-val">+${streakBonus}</span></div>` : ''}
+    ${firstBonus ? `<div class="xp-tooltip-row bonus"><span>🌟 首次答题</span><span class="xp-val">+${firstBonus}</span></div>` : ''}
+    <div class="xp-tooltip-row" style="margin-top:4px;border-top:1px solid rgba(255,255,255,.1);padding-top:4px"><span>最高可获</span><span class="xp-val" style="color:#a78bfa">${maxTotal}</span></div>
+  `;
+  tooltip.classList.add('show');
+}
+
+function submitAnswer(){
+  const selected = document.querySelector('.q-opt.selected');
+  if(!selected) return;
+
+  const q = BATTLE.questions[BATTLE.current];
+  const userAns = selected.dataset.letter;
+  const correctAns = q.answer;
+  const isCorrect = userAns === correctAns;
+  const timeSpent = Math.floor((Date.now() - BATTLE.qStartTime)/1000);
+
+  document.querySelectorAll('.q-opt').forEach(o=>{
+    o.classList.add('disabled');
+    if(o.dataset.letter === correctAns) o.classList.add('correct');
+    if(o.dataset.letter === userAns && !isCorrect) o.classList.add('wrong');
+  });
+  document.getElementById('btnSubmit').disabled = true;
+
+  // XP calculation (Seneca style)
+  const xpInfo = calculateXP(q, isCorrect, timeSpent, BATTLE.combo);
+  BATTLE.xpBreakdown.push(xpInfo);
+
+  GAME.totalQuestions++;
+  if(isCorrect){
+    GAME.totalCorrect++;
+    BATTLE.correct++;
+    BATTLE.combo++;
+    GAME.combo = BATTLE.combo;
+    if(BATTLE.combo > BATTLE.maxCombo) BATTLE.maxCombo = BATTLE.combo;
+
+    awardXP(xpInfo.total, '答对！', xpInfo.breakdown);
+    showComboPopup(BATTLE.combo);
+
+    if(q.topic_ids) q.topic_ids.forEach(tid=>updateTopicMastery(tid, true));
+    // Remove from review queue if it was there (correct now)
+    const rIdx = GAME.reviewQueue.findIndex(r=>r.qid===q.id);
+    if(rIdx >= 0){
+      GAME.reviewQueue.splice(rIdx, 1);
+      saveGame();
+    }
+  } else {
+    BATTLE.combo = 0;
+    GAME.combo = 0;
+    if(q.topic_ids) q.topic_ids.forEach(tid=>updateTopicMastery(tid, false));
+    addToReview(q.id, true);
+  }
+
+  // Feedback
+  const fb = document.getElementById('qFeedback');
+  fb.className = 'q-feedback show ' + (isCorrect ? 'correct' : 'wrong');
+  const timeLabel = timeSpent < EXPECTED_TIME_PER_Q ? `⚡ ${timeSpent}秒` : `${timeSpent}秒`;
+  fb.innerHTML = isCorrect
+    ? `✅ 正确！${correctAns} &nbsp;${timeLabel}<br><span style="opacity:.8">${getEncouragement(BATTLE.combo)}</span>`
+    : `❌ 错误，正确答案是 ${correctAns}<br><span style="opacity:.8">已加入间隔复习队列 🔄</span>`;
+
+  BATTLE.answers.push({qid:q.id, correct:isCorrect, ans:userAns, time:timeSpent});
+
+  setTimeout(()=>{
+    BATTLE.current++;
+    renderQuestion();
+  }, isCorrect ? 1500 : 2000);
+
+  saveGame();
+}
+
+function skipQuestion(){
+  BATTLE.answers.push({qid:BATTLE.questions[BATTLE.current].id, correct:false, skipped:true});
+  BATTLE.current++;
+  renderQuestion();
+}
+
+function getEncouragement(combo){
+  const msgs = {
+    1:'很好！继续 💪', 2:'干得漂亮！', 3:'三连击！🔥',
+    5:'五连绝世！⚡', 7:'七连！势不可挡！', 10:'十连封神！👑',
+    15:'十五连击！💫', 20:'二十连无双！🚀'
+  };
+  return msgs[combo] || '继续保持！';
+}
+
+function endBattle(){
+  clearInterval(TIMER);
+  const duration = Math.floor((Date.now()-BATTLE.startTime)/1000);
+  const total = BATTLE.questions.length;
+  const correct = BATTLE.correct;
+  const pct = total > 0 ? Math.round(correct/total*100) : 0;
+
+  // Stars (Seneca)
+  const stars = pct >= 90 ? 3 : pct >= 70 ? 2 : pct >= 50 ? 1 : 0;
+
+  const lvIdx = BATTLE.level.index;
+  if(!GAME.levelProgress[lvIdx]) GAME.levelProgress[lvIdx] = {};
+  GAME.levelProgress[lvIdx].completed = true;
+  if(pct > (GAME.levelProgress[lvIdx].bestScore||0)) GAME.levelProgress[lvIdx].bestScore = pct;
+  if(stars > (GAME.levelProgress[lvIdx].stars||0)) GAME.levelProgress[lvIdx].stars = stars;
+
+  // Completion bonus XP (Seneca)
+  const completionBonus = pct >= 100 ? 50 : pct >= 90 ? 40 : pct >= 80 ? 30 : pct >= 60 ? 15 : 5;
+  const earnedXP = BATTLE.xpBreakdown.reduce((s,x)=>s+x.total,0) + completionBonus;
+
+  // Daily history
+  recordDailyActivity(correct, total, earnedXP);
+
+  // Badges
+  const badgeCtx = {
+    combo: BATTLE.maxCombo,
+    perfect: pct === 100 && total >= 5,
+    perfectBoss: BATTLE.level.isBoss && pct === 100,
+    fast: BATTLE.answers.some(a=>a.correct && a.time < 30)
+  };
+  const newBadges = checkBadges(badgeCtx);
+
+  GAME.studyTime += duration;
+  saveGame();
+
+  // Show result
+  document.getElementById('battleScreen').classList.remove('active');
+  document.getElementById('resultScreen').classList.add('active');
+
+  const emoji = pct === 100 ? '🌟' : pct >= 90 ? '🎉' : pct >= 70 ? '👍' : pct >= 50 ? '💪' : '🔄';
+  const title = pct === 100 ? '完美通关！' : pct >= 90 ? '优秀！' : pct >= 70 ? '关卡完成！' : pct >= 50 ? '还不错！' : '继续加油！';
+  const sub = pct === 100 ? '一题不错，太厉害了！' : `正确率 ${pct}% — 还有提升空间`;
+  const nextText = !BATTLE.level.isBoss && BATTLE.level.index < 5 ? '解锁下一关卡！' : BATTLE.level.isBoss ? '可重复挑战提升分数！' : '继续其他关卡！';
+
+  document.getElementById('resultEmoji').textContent = emoji;
+  document.getElementById('resultTitle').textContent = title;
+  document.getElementById('resultSub').textContent = sub;
+  document.getElementById('rsScore').textContent = correct + '/' + total;
+  document.getElementById('rsXP').textContent = '+' + earnedXP;
+  document.getElementById('rsTime').textContent = formatTime(duration);
+  document.getElementById('resultNext').textContent = nextText;
+
+  // XP Breakdown card
+  const bpRows = document.getElementById('xpBreakdownRows');
+  bpRows.innerHTML = BATTLE.xpBreakdown.filter(x=>x.total>0).map((x,i)=>`
+    <div class="xp-breakdown-row">
+      <span>第${i+1}题</span>
+      <span class="xd-val">+${x.total}</span>
+    </div>
+    ${x.speedBonus||x.firstBonus||x.streakBonus?`<div style="font-size:.65rem;color:#64748b;padding-left:12px">${x.breakdown}</div>`:''}
+  `).join('');
+  if(completionBonus > 0){
+    bpRows.innerHTML += `<div class="xp-breakdown-row total"><span>关卡完成奖励</span><span class="xd-val">+${completionBonus}</span></div>`;
+  }
+  bpRows.innerHTML += `<div class="xp-breakdown-row total" style="font-size:.82rem"><span>总计</span><span class="xd-val">+${earnedXP}</span></div>`;
+
+  // Badges
+  const badgesDiv = document.getElementById('resultBadges');
+  badgesDiv.innerHTML = '';
+  if(newBadges.length){
+    newBadges.forEach(bid=>{
+      const b = BADGES[bid];
+      badgesDiv.innerHTML += `<div class="result-badge new">${b.emoji} ${b.name}</div>`;
+    });
+  }
+  GAME.badges.slice(-6).forEach(bid=>{
+    if(!newBadges.includes(bid)){
+      const b = BADGES[bid];
+      if(b) badgesDiv.innerHTML += `<div class="result-badge">${b.emoji} ${b.name}</div>`;
+    }
+  });
+
+  // Next button
+  const btnNext = document.getElementById('btnNext');
+  if(BATTLE.level.isBoss || BATTLE.level.index >= 5){
+    btnNext.textContent = '🔄 再挑战一次';
+    btnNext.onclick = ()=>{ document.getElementById('resultScreen').classList.remove('active'); startBattle(BATTLE.level); };
+  } else {
+    btnNext.textContent = '下一关 →';
+    btnNext.onclick = nextLevel;
+  }
+
+  BATTLE = null;
+}
+
+function formatTime(sec){
+  const m = Math.floor(sec/60);
+  const s = sec%60;
+  return m + ':' + String(s).padStart(2,'0');
+}
+
+function exitBattle(){
+  clearInterval(TIMER);
+  BATTLE = null;
+  document.getElementById('battleScreen').classList.remove('active');
+  document.getElementById('chapterMap').style.display = 'block';
+}
+
+function nextLevel(){
+  document.getElementById('resultScreen').classList.remove('active');
+  document.getElementById('chapterMap').style.display = 'block';
+  showMap();
+}
+
+function exitToMap(){
+  document.getElementById('resultScreen').classList.remove('active');
+  document.getElementById('chapterMap').style.display = 'block';
+  showMap();
+}
+
+/* ============ MASTERY DASHBOARD ============ */
+function showMastery(){
+  hideAllScreens();
+  document.getElementById('masteryScreen').classList.add('active');
+  setActiveTab('btnMastery');
+  const grid = document.getElementById('masteryGrid');
+  grid.innerHTML = '';
+  TOPICS.forEach(t=>{
+    const m = getMasteryLevel(t.id);
+    const fillColor = LEVEL_CONFIG[m.tier]?.color || '#374151';
+    const statusText = m.tier==='none'?'未开始':m.status==='platinum'||m.status==='diamond'?'已掌握':'仍需学习';
+    const statusClass = m.tier==='none'?'mc-still-learning':m.status==='platinum'||m.status==='diamond'?'mc-confident':'mc-getting-there';
+
+    const card = document.createElement('div');
+    card.className = 'mastery-card';
+    card.innerHTML = `
+      <div class="mc-emoji">${t.emoji}</div>
+      <div class="mc-name">${t.name}</div>
+      <div class="mc-bar"><div class="mc-fill" style="width:${m.pct}%;background:${fillColor}"></div></div>
+      <div class="mc-status ${statusClass}">${m.label} · ${m.correct}/${m.total}题</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+/* ============ ANALYTICS DASHBOARD (Cognito style) ============ */
+function showAnalytics(){
+  hideAllScreens();
+  document.getElementById('analyticsScreen').classList.add('active');
+  setActiveTab('btnAnalytics');
+
+  // Stats
+  const statsEl = document.getElementById('analyticsStats');
+  const accuracy = GAME.totalQuestions > 0 ? Math.round(GAME.totalCorrect/GAME.totalQuestions*100) : 0;
+  statsEl.innerHTML = `
+    <div class="analytics-stat"><div class="as-val">${GAME.totalQuestions}</div><div class="as-label">总题数</div></div>
+    <div class="analytics-stat"><div class="as-val">${accuracy}%</div><div class="as-label">总正确率</div></div>
+    <div class="analytics-stat"><div class="as-val">${GAME.xp}</div><div class="as-label">总 XP</div></div>
+    <div class="analytics-stat"><div class="as-val">${GAME.badges.length}</div><div class="as-label">徽章</div></div>
+  `;
+
+  // Heatmap (90 days)
+  renderHeatmap();
+
+  // Topic breakdown
+  const chartEl = document.getElementById('topicChartRows');
+  chartEl.innerHTML = TOPICS.map(t=>{
+    const m = getMasteryLevel(t.id);
+    const fillColor = LEVEL_CONFIG[m.tier]?.color || '#374151';
+    return `
+      <div class="topic-bar-row">
+        <div class="topic-bar-label">${t.emoji} ${m.pct}%</div>
+        <div class="topic-bar-wrap"><div class="topic-bar-fill" style="width:${m.pct}%;background:${fillColor}"></div></div>
+      </div>
+    `;
+  }).join('');
+
+  // Review schedule
+  const revStats = getReviewStats();
+  const revEl = document.getElementById('reviewSchedule');
+  if(revStats.total === 0){
+    revEl.innerHTML = '暂无复习计划。继续答题，答错的题会自动进入复习队列。';
+  } else {
+    const dueText = revStats.overdueCount > 0 ? `<span style="color:#f59e0b">⚠️ ${revStats.overdueCount} 道题已到期需复习</span>` : '';
+    const upcomingText = revStats.upcoming.map(r=>{
+      const mins = Math.round((r.nextReview - Date.now())/60000);
+      const q = DB.questions.find(q=>q.id===r.qid);
+      const label = q ? `第${q.q_num||'?'}题` : r.qid;
+      return `${label}：${mins>0?mins+'分钟后':'即将'}`;
+    }).join(' · ');
+    revEl.innerHTML = `${dueText}${upcomingText ? `<br>即将复习：${upcomingText}` : ''}`;
+  }
+}
+
+function renderHeatmap(){
+  const grid = document.getElementById('heatmapGrid');
+  grid.innerHTML = '';
+  const today = new Date();
+  const start = new Date(today);
+  start.setDate(start.getDate() - 89);
+
+  // Go back to start of week
+  const startDow = start.getDay(); // 0=Sun
+  start.setDate(start.getDate() - startDow);
+
+  const weeks = [];
+  let current = new Date(start);
+  while(current <= today){
+    const week = [];
+    for(let d=0;d<7;d++){
+      const dateStr = current.toISOString().slice(0,10);
+      const hist = GAME.history[dateStr];
+      week.push({date:dateStr, count:hist?.total||0, correct:hist?.correct||0});
+      current.setDate(current.getDate()+1);
+    }
+    weeks.push(week);
+  }
+
+  grid.style.gridTemplateColumns = `repeat(${weeks.length}, 1fr)`;
+  weeks.forEach(week=>{
+    const weekEl = document.createElement('div');
+    weekEl.className = 'hm-week';
+    week.forEach(day=>{
+      const d = document.createElement('div');
+      d.className = 'hm-day';
+      const lvl = day.count===0?'l0':day.count<=2?'l1':day.count<=5?'l2':day.count<=10?'l3':'l4';
+      d.classList.add(lvl);
+      d.title = `${day.date}: ${day.count}题 (${day.correct}正确)`;
+      weekEl.appendChild(d);
+    });
+    grid.appendChild(weekEl);
+  });
+}
+
+/* ============ LEADERBOARD ============ */
+function showLeaderboard(){
+  hideAllScreens();
+  document.getElementById('leaderboardScreen').classList.add('active');
+  setActiveTab('btnLeaderboard');
+
+  const list = document.getElementById('leaderboardList');
+  // Mock local leaderboard (Seneca: opt-in, no pressure)
+  const entries = [
+    {name:'你', xp:GAME.xp, streak:GAME.streakDays, isMe:true},
+    {name:'Alex K.', xp:2840, streak:21, isMe:false},
+    {name:'Maria L.', xp:1960, streak:14, isMe:false},
+    {name:'James W.', xp:1420, streak:8, isMe:false},
+    {name:'Priya S.', xp:980, streak:5, isMe:false},
+  ].sort((a,b)=>b.xp-a.xp);
+
+  list.innerHTML = entries.map((e,i)=>`
+    <div class="lb-row${e.isMe?' me':''}">
+      <div class="lb-rank${i===0?' r1':i===1?' r2':i===2?' r3':''}">${i+1}</div>
+      <div class="lb-info">
+        <div class="lb-name">${e.name}${e.isMe?' (你)':''}</div>
+        <div class="lb-xp">⭐ ${e.xp.toLocaleString()} XP · 🔥 ${e.streak}天</div>
+      </div>
+      ${i<3?`<div class="lb-badge">${['🥇','🥈','🥉'][i]}</div>`:''}
+    </div>
+  `).join('');
+}
+
+/* ============ NAVIGATION ============ */
+function hideAllScreens(){
+  document.getElementById('chapterMap').style.display = 'none';
+  document.getElementById('masteryScreen').classList.remove('active');
+  document.getElementById('analyticsScreen').classList.remove('active');
+  document.getElementById('leaderboardScreen').classList.remove('active');
+}
+
+function showMap(){
+  hideAllScreens();
+  document.getElementById('chapterMap').style.display = 'block';
+  document.getElementById('mapContent').style.display = 'block';
+  renderMap();
+  setActiveTab('btnMap');
+}
+
+function exitMastery(){ showMap(); }
+function exitAnalytics(){ showMap(); }
+function exitLeaderboard(){ showMap(); }
+
+function setActiveTab(id){
+  ['btnMap','btnAnalytics','btnMastery','btnReview','btnLeaderboard'].forEach(b=>{
+    document.getElementById(b).classList.toggle('active', b===id);
+  });
+}
+
+function showReview(){
+  const reviewIds = getReviewQuestions(10);
+  if(reviewIds.length === 0){
+    alert('暂无需复习的题目！答错的题会自动进入间隔复习队列。');
+    return;
+  }
+  const reviewQs = DB.questions.filter(q=>reviewIds.includes(q.id));
+  const reviewLevel = {
+    index:-1,
+    topic:{name:'间隔复习', emoji:'🔄', desc:'FSRS间隔重复复习', xpPerQ:12},
+    questions:reviewQs, isBoss:false
+  };
+  hideAllScreens();
+  document.getElementById('chapterMap').style.display = 'block';
+  startBattle(reviewLevel);
+}
+
+function zoomImage(img){ window.open(img.src, '_blank'); }
+
+/* ============ DB LOADING ============ */
+async function loadDB(){
+  try{
+    const res = await fetch('db.json');
+    const data = await res.json();
+    DB.questions = data.questions || [];
+  }catch(e){
+    return new Promise((resolve,reject)=>{
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET','db.json');
+      xhr.onload = function(){
+        try{ const d=JSON.parse(xhr.responseText); DB.questions=d.questions||[]; resolve(); }
+        catch(err){ reject(err); }
+      };
+      xhr.onerror = reject;
+      xhr.send();
+    });
+  }
+}
+
+/* ============ DAILY WELCOME ============ */
+function showDailyWelcome(){
+  const today = todayStr();
+  const todayData = GAME.history[today];
+  if(GAME.streakDays >= 2){
+    const msgs = [
+      `🔥 第${GAME.streakDays}天！保持这个势头！`,
+      `⚡ 连续${GAME.streakDays}天学习，你就是学习机器！`,
+      `🏆 ${GAME.streakDays}天不间断，致敬坚持！`
+    ];
+    const msg = msgs[Math.floor(Math.random()*msgs.length)];
+    setTimeout(()=>showNotify('🔥', msg, `今日目标: ${(todayData?.total||0)}/${GAME.dailyGoal}题`), 1000);
+  }
+}
+
+/* ============ INIT ============ */
+window.addEventListener('DOMContentLoaded', async function(){
+  initGame();
+  await loadDB();
+  document.getElementById('loadingOverlay').classList.add('hidden');
+  renderMap();
+  showDailyWelcome();
+});
+</script>
+</body>
+</html>
