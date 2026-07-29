@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>chem9701 — ch01 闯关模式</title>
+<title>chem9701 — ch04 闯关模式</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:15px;scroll-behavior:smooth}
@@ -44,7 +44,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .chapter-header{text-align:center;margin-bottom:20px}
 .chapter-header h1{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:4px}
 .chapter-header p{font-size:.82rem;color:#94a3b8}
-.chapter-header .ch01-badge{display:inline-block;background:linear-gradient(135deg,#7c3aed,#a78bfa);color:#fff;padding:3px 12px;border-radius:99px;font-size:.7rem;font-weight:700;margin-top:6px}
+.chapter-header .ch04-badge{display:inline-block;background:linear-gradient(135deg,#7c3aed,#a78bfa);color:#fff;padding:3px 12px;border-radius:99px;font-size:.7rem;font-weight:700;margin-top:6px}
 
 .chapter-actions{display:flex;gap:6px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
 .mini-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:99px;padding:5px 12px;font-size:.72rem;color:#94a3b8;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:4px}
@@ -597,12 +597,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 
 <script>
 /* ============ CONFIG ============ */
-const CHAPTER_ID = 'ch01';
-const CHAPTER_NAME = 'Atomic Structure & Electrons';
-const STORAGE_KEY = 'chem9701_ch01_gamify';
+const CHAPTER_ID = 'ch04';
+const CHAPTER_NAME = 'Chemical Bonding';
+const STORAGE_KEY = 'chem9701_ch04_gamify';
 // 与 student.html Learn 模块共用同一个存储 key
 const LEARN_STORAGE_KEY = 'ch9701_learn_progress';
-const LEARN_CHAPTER_ID = 'ch01'; // learn_db.json 里的章节 key
+const LEARN_CHAPTER_ID = 'ch04'; // learn_db.json 里的章节 key
 const DAILY_GOAL_DEFAULT = 10; // daily question target
 
 // XP Formula (Seneca + QuizAPI inspired):
@@ -613,12 +613,16 @@ const DAILY_GOAL_DEFAULT = 10; // daily question target
 const EXPECTED_TIME_PER_Q = 45; // seconds expected per question
 
 const TOPICS = [
-  {id:'ch01_t01', name:'Protons, neutrons & electrons', emoji:'🔬', desc:'Understanding subatomic particles', xpPerQ:10},
-  {id:'ch01_t02', name:'Isotopes & relative atomic mass', emoji:'⚖️', desc:'Calculating Ar and isotope abundances', xpPerQ:12},
-  {id:'ch01_t03', name:'Mass spectrometry', emoji:'📈', desc:'Mass spectrum interpretation', xpPerQ:14},
-  {id:'ch01_t04', name:'Electron configuration', emoji:'🔮', desc:'Orbitals, shells and electronic arrangements', xpPerQ:12},
-  {id:'ch01_t05', name:'Ionisation energies', emoji:'⚡', desc:'Trends and explanations', xpPerQ:14},
-  {id:'ch01_t06', name:'Atomic emission spectra', emoji:'🌈', desc:'Line spectra and energy levels', xpPerQ:15}
+  {id:'ch04_t01', name:'VSEPR shapes', emoji:'🔷', desc:'VSEPR shapes', xpPerQ:10},
+  {id:'ch04_t02', name:'Effect of lone pairs on bond angles', emoji:'🌀', desc:'Effect of lone pairs on bond angles', xpPerQ:11},
+  {id:'ch04_t03', name:'Hybridisation summary', emoji:'🧬', desc:'Hybridisation summary', xpPerQ:12},
+  {id:'ch04_t04', name:'Electronegativity and bond polarity', emoji:'⚡', desc:'Electronegativity and bond polarity', xpPerQ:13},
+  {id:'ch04_t05', name:'Intermolecular forces comparison', emoji:'💧', desc:'Intermolecular forces comparison', xpPerQ:14},
+  {id:'ch04_t06', name:'Conditions for hydrogen bonding', emoji:'🔗', desc:'Conditions for hydrogen bonding', xpPerQ:10},
+  {id:'ch04_t07', name:'Properties of ionic compounds', emoji:'🧱', desc:'Properties of ionic compounds', xpPerQ:11},
+  {id:'ch04_t08', name:'Giant covalent structures', emoji:'💎', desc:'Giant covalent structures', xpPerQ:12},
+  {id:'ch04_t09', name:'Sigma and pi bonds', emoji:'π', desc:'Sigma and pi bonds', xpPerQ:13},
+  {id:'ch04_t10', name:'Metallic bonding and properties', emoji:'🔩', desc:'Metallic bonding and properties', xpPerQ:14},
 ];
 
 const LEVEL_CONFIG = {
@@ -674,12 +678,595 @@ const BADGES = {
 
 /* ============ STATE ============ */
 /* ---- ch01 P1 questions (inline, no fetch needed) ---- */
-const INLINE_QUESTIONS = [{"id": "ch01_P1_0001","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 1,"source": "9701_m20_qp_12","q_in_paper": 1,"year": 2020,"season": "Feb/Mar","img": "ch01_P1_0001.png","img_w": 965,"img_h": 296,"answer": "A","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0002","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 2,"source": "9701_w20_qp_11","q_in_paper": 3,"year": 2020,"season": "Oct/Nov","img": "ch01_P1_0002.png","img_w": 965,"img_h": 308,"answer": "C","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0003","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 3,"source": "9701_m18_qp_12","q_in_paper": 3,"year": 2018,"season": "Feb/Mar","img": "ch01_P1_0003.png","img_w": 965,"img_h": 167,"answer": "C","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0004","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 4,"source": "9701_s18_qp_13","q_in_paper": 2,"year": 2018,"season": "May/Jun","img": "ch01_P1_0004.png","img_w": 965,"img_h": 384,"answer": "D","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0005","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 5,"source": "9701_w18_qp_12","q_in_paper": 2,"year": 2018,"season": "Oct/Nov","img": "ch01_P1_0005.png","img_w": 965,"img_h": 255,"answer": "B","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0006","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 6,"source": "9701_s17_qp_12","q_in_paper": 1,"year": 2017,"season": "May/Jun","img": "ch01_P1_0006.png","img_w": 965,"img_h": 130,"answer": "B","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0007","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 7,"source": "9701_s17_qp_13","q_in_paper": 1,"year": 2017,"season": "May/Jun","img": "ch01_P1_0007.png","img_w": 965,"img_h": 326,"answer": "A","topic_ids": ["ch01_t02","ch01_t03"]},{"id": "ch01_P1_0008","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 8,"source": "9701_w17_qp_12","q_in_paper": 1,"year": 2017,"season": "Oct/Nov","img": "ch01_P1_0008.png","img_w": 965,"img_h": 224,"answer": "A","topic_ids": ["ch01_t02","ch01_t03"]},{"id": "ch01_P1_0009","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 9,"source": "9701_m16_qp_12","q_in_paper": 3,"year": 2016,"season": "Feb/Mar","img": "ch01_P1_0009.png","img_w": 965,"img_h": 155,"answer": "D","topic_ids": ["ch01_t02","ch01_t03"]},{"id": "ch01_P1_0010","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 10,"source": "9701_m16_qp_12","q_in_paper": 4,"year": 2016,"season": "Feb/Mar","img": "ch01_P1_0010.png","img_w": 965,"img_h": 143,"answer": "D","topic_ids": ["ch01_t02","ch01_t03"]},{"id": "ch01_P1_0011","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 11,"source": "9701_w16_qp_11","q_in_paper": 4,"year": 2016,"season": "Oct/Nov","img": "ch01_P1_0011.png","img_w": 965,"img_h": 348,"answer": "B","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0012","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 12,"source": "9701_m21_qp_12","q_in_paper": 1,"year": 2021,"season": "Feb/Mar","img": "ch01_P1_0012.png","img_w": 965,"img_h": 570,"answer": "A","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0013","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 13,"source": "9701_w21_qp_12","q_in_paper": 3,"year": 2021,"season": "Oct/Nov","img": "ch01_P1_0013.png","img_w": 965,"img_h": 180,"answer": "C","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0014","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 14,"source": "9701_s16_qp_11","q_in_paper": 4,"year": 2016,"season": "May/Jun","img": "ch01_P1_0014.png","img_w": 965,"img_h": 454,"answer": "A","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0015","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 15,"source": "9701_w16_qp_11","q_in_paper": 5,"year": 2016,"season": "Oct/Nov","img": "ch01_P1_0015.png","img_w": 965,"img_h": 321,"answer": "C","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0016","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 16,"source": "9701_m22_qp_12","q_in_paper": 2,"year": 2022,"season": "Feb/Mar","img": "ch01_P1_0016.png","img_w": 965,"img_h": 240,"answer": "A","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0017","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 17,"source": "9701_m21_qp_12","q_in_paper": 2,"year": 2021,"season": "Feb/Mar","img": "ch01_P1_0017.png","img_w": 965,"img_h": 327,"answer": "D","topic_ids": ["ch01_t03"]},{"id": "ch01_P1_0018","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 18,"source": "9701_s21_qp_11","q_in_paper": 2,"year": 2021,"season": "May/Jun","img": "ch01_P1_0018.png","img_w": 965,"img_h": 99,"answer": "C","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0019","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 19,"source": "9701_s21_qp_13","q_in_paper": 3,"year": 2021,"season": "May/Jun","img": "ch01_P1_0019.png","img_w": 965,"img_h": 109,"answer": "C","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0020","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 20,"source": "9701_w21_qp_11","q_in_paper": 4,"year": 2021,"season": "Oct/Nov","img": "ch01_P1_0020.png","img_w": 965,"img_h": 299,"answer": "B","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0021","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 21,"source": "9701_w21_qp_12","q_in_paper": 4,"year": 2021,"season": "Oct/Nov","img": "ch01_P1_0021.png","img_w": 965,"img_h": 255,"answer": "B","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0022","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 22,"source": "9701_s20_qp_11","q_in_paper": 10,"year": 2020,"season": "May/Jun","img": "ch01_P1_0022.png","img_w": 965,"img_h": 240,"answer": "A","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0023","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 23,"source": "9701_s20_qp_13","q_in_paper": 1,"year": 2020,"season": "May/Jun","img": "ch01_P1_0023.png","img_w": 965,"img_h": 147,"answer": "B","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0024","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 24,"source": "9701_s20_qp_13","q_in_paper": 8,"year": 2020,"season": "May/Jun","img": "ch01_P1_0024.png","img_w": 965,"img_h": 244,"answer": "D","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0025","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 25,"source": "9701_w20_qp_11","q_in_paper": 14,"year": 2020,"season": "Oct/Nov","img": "ch01_P1_0025.png","img_w": 965,"img_h": 271,"answer": "A","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0026","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 26,"source": "9701_w20_qp_12","q_in_paper": 3,"year": 2020,"season": "Oct/Nov","img": "ch01_P1_0026.png","img_w": 965,"img_h": 110,"answer": "C","topic_ids": ["ch01_t04"]},{"id": "ch01_P1_0027","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 27,"source": "9701_m19_qp_12","q_in_paper": 3,"year": 2019,"season": "Feb/Mar","img": "ch01_P1_0027.png","img_w": 965,"img_h": 238,"answer": "D","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0028","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 28,"source": "9701_s19_qp_11","q_in_paper": 4,"year": 2019,"season": "May/Jun","img": "ch01_P1_0028.png","img_w": 965,"img_h": 458,"answer": "A","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0029","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 29,"source": "9701_s19_qp_13","q_in_paper": 3,"year": 2019,"season": "May/Jun","img": "ch01_P1_0029.png","img_w": 965,"img_h": 241,"answer": "D","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0030","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 30,"source": "9701_w19_qp_12","q_in_paper": 4,"year": 2019,"season": "Oct/Nov","img": "ch01_P1_0030.png","img_w": 965,"img_h": 239,"answer": "D","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0031","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 31,"source": "9701_m18_qp_12","q_in_paper": 4,"year": 2018,"season": "Feb/Mar","img": "ch01_P1_0031.png","img_w": 965,"img_h": 121,"answer": "C","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0032","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 32,"source": "9701_s18_qp_11","q_in_paper": 1,"year": 2018,"season": "May/Jun","img": "ch01_P1_0032.png","img_w": 965,"img_h": 166,"answer": "A","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0033","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 33,"source": "9701_s18_qp_12","q_in_paper": 2,"year": 2018,"season": "May/Jun","img": "ch01_P1_0033.png","img_w": 965,"img_h": 362,"answer": "D","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0034","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 34,"source": "9701_s18_qp_13","q_in_paper": 3,"year": 2018,"season": "May/Jun","img": "ch01_P1_0034.png","img_w": 965,"img_h": 400,"answer": "B","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0035","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 35,"source": "9701_m17_qp_12","q_in_paper": 1,"year": 2017,"season": "Feb/Mar","img": "ch01_P1_0035.png","img_w": 965,"img_h": 118,"answer": "C","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0036","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 36,"source": "9701_s16_qp_12","q_in_paper": 2,"year": 2016,"season": "May/Jun","img": "ch01_P1_0036.png","img_w": 965,"img_h": 291,"answer": "D","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0037","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 37,"source": "9701_s16_qp_13","q_in_paper": 5,"year": 2016,"season": "May/Jun","img": "ch01_P1_0037.png","img_w": 965,"img_h": 227,"answer": "C","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0038","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 38,"source": "9701_s15_qp_12","q_in_paper": 1,"year": 2015,"season": "May/Jun","img": "ch01_P1_0038.png","img_w": 965,"img_h": 301,"answer": "B","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0039","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 39,"source": "9701_m22_qp_12","q_in_paper": 1,"year": 2022,"season": "Feb/Mar","img": "ch01_P1_0039.png","img_w": 965,"img_h": 371,"answer": "A","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0040","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 40,"source": "9701_s21_qp_11","q_in_paper": 7,"year": 2021,"season": "May/Jun","img": "ch01_P1_0040.png","img_w": 965,"img_h": 221,"answer": "C","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0041","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 41,"source": "9701_s21_qp_12","q_in_paper": 2,"year": 2021,"season": "May/Jun","img": "ch01_P1_0041.png","img_w": 965,"img_h": 226,"answer": "D","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0042","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 42,"source": "9701_w21_qp_11","q_in_paper": 3,"year": 2021,"season": "Oct/Nov","img": "ch01_P1_0042.png","img_w": 965,"img_h": 106,"answer": "A","topic_ids": ["ch01_t06"]},{"id": "ch01_P1_0043","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 43,"source": "9701_s20_qp_12","q_in_paper": 12,"year": 2020,"season": "May/Jun","img": "ch01_P1_0043.png","img_w": 965,"img_h": 396,"answer": "C","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0044","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 44,"source": "9701_s19_qp_12","q_in_paper": 13,"year": 2019,"season": "May/Jun","img": "ch01_P1_0044.png","img_w": 965,"img_h": 379,"answer": "C","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0045","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 45,"source": "9701_w18_qp_11","q_in_paper": 1,"year": 2018,"season": "Oct/Nov","img": "ch01_P1_0045.png","img_w": 965,"img_h": 251,"answer": "D","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0046","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 46,"source": "9701_s17_qp_11","q_in_paper": 4,"year": 2017,"season": "May/Jun","img": "ch01_P1_0046.png","img_w": 965,"img_h": 229,"answer": "C","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0047","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 47,"source": "9701_s17_qp_11","q_in_paper": 12,"year": 2017,"season": "May/Jun","img": "ch01_P1_0047.png","img_w": 965,"img_h": 260,"answer": "A","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0048","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 48,"source": "9701_m16_qp_12","q_in_paper": 2,"year": 2016,"season": "Feb/Mar","img": "ch01_P1_0048.png","img_w": 965,"img_h": 239,"answer": "D","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0049","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 49,"source": "9701_s16_qp_12","q_in_paper": 3,"year": 2016,"season": "May/Jun","img": "ch01_P1_0049.png","img_w": 965,"img_h": 516,"answer": "A","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_2012811201","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 1,"source": "9701_s23_qp_11","q_in_paper": 1,"year": 2023,"season": "May/Jun","img": null,"img_w": 0,"img_h": 0,"answer": "B","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_2012811202","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 2,"source": "9701_s23_qp_11","q_in_paper": 2,"year": 2023,"season": "May/Jun","img": null,"img_w": 0,"img_h": 0,"answer": "A","topic_ids": ["ch01_t01"]},{"id": "ch01_P1_0050","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 50,"source": "9701_s24_qp_11","q_in_paper": 2,"year": 2024,"season": "May/Jun","img": "ch01_P1_0050.png","img_w": 1110,"img_h": 266,"answer": "C","topic_ids": ["ch01_t05"]},{"id": "ch01_P1_0051","chapter_id": "ch01","chapter_num": "1~2","paper_type": "P1","q_num": 51,"source": "9701_s24_qp_11","q_in_paper": 3,"year": 2024,"season": "May/Jun","img": "ch01_P1_0051.png","img_w": 1110,"img_h": 344,"answer": "C","topic_ids": ["ch01_t05"]}];
+const INLINE_QUESTIONS = []; // No P1 questions yet for ch04
 let DB = {questions: INLINE_QUESTIONS};
 /* ============ ADAPTIVE QUESTION GENERATION ============ */
 const ELEMENTS = [{"Z": 1, "sym": "H", "name": "Hydrogen", "mass": 1, "config": "1s¹"}, {"Z": 2, "sym": "He", "name": "Helium", "mass": 4, "config": "1s²"}, {"Z": 3, "sym": "Li", "name": "Lithium", "mass": 7, "config": "1s² 2s¹"}, {"Z": 4, "sym": "Be", "name": "Beryllium", "mass": 9, "config": "1s² 2s²"}, {"Z": 5, "sym": "B", "name": "Boron", "mass": 11, "config": "1s² 2s² 2p¹"}, {"Z": 6, "sym": "C", "name": "Carbon", "mass": 12, "config": "1s² 2s² 2p²"}, {"Z": 7, "sym": "N", "name": "Nitrogen", "mass": 14, "config": "1s² 2s² 2p³"}, {"Z": 8, "sym": "O", "name": "Oxygen", "mass": 16, "config": "1s² 2s² 2p⁴"}, {"Z": 9, "sym": "F", "name": "Fluorine", "mass": 19, "config": "1s² 2s² 2p⁵"}, {"Z": 10, "sym": "Ne", "name": "Neon", "mass": 20, "config": "1s² 2s² 2p⁶"}, {"Z": 11, "sym": "Na", "name": "Sodium", "mass": 23, "config": "1s² 2s² 2p⁶ 3s¹"}, {"Z": 12, "sym": "Mg", "name": "Magnesium", "mass": 24, "config": "1s² 2s² 2p⁶ 3s²"}, {"Z": 13, "sym": "Al", "name": "Aluminium", "mass": 27, "config": "1s² 2s² 2p⁶ 3s² 3p¹"}, {"Z": 14, "sym": "Si", "name": "Silicon", "mass": 28, "config": "1s² 2s² 2p⁶ 3s² 3p²"}, {"Z": 15, "sym": "P", "name": "Phosphorus", "mass": 31, "config": "1s² 2s² 2p⁶ 3s² 3p³"}, {"Z": 16, "sym": "S", "name": "Sulfur", "mass": 32, "config": "1s² 2s² 2p⁶ 3s² 3p⁴"}, {"Z": 17, "sym": "Cl", "name": "Chlorine", "mass": 35.5, "config": "1s² 2s² 2p⁶ 3s² 3p⁵"}, {"Z": 18, "sym": "Ar", "name": "Argon", "mass": 40, "config": "1s² 2s² 2p⁶ 3s² 3p⁶"}, {"Z": 19, "sym": "K", "name": "Potassium", "mass": 39, "config": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹"}, {"Z": 20, "sym": "Ca", "name": "Calcium", "mass": 40, "config": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²"}];
 const DIFF = {"beginner": {"level": 1, "label": "🌱 入门", "color": "#22c55e", "xpMul": 0.6}, "easy": {"level": 2, "label": "📗 基础", "color": "#3b82f6", "xpMul": 0.8}, "medium": {"level": 3, "label": "📙 进阶", "color": "#f59e0b", "xpMul": 1.0}, "hard": {"level": 4, "label": "📕 挑战", "color": "#ef4444", "xpMul": 1.2}};
-const GEN_TEMPLATES = {"ch01_t01": {"beginner": [{"text": "Hydrogen (H) has atomic number 1. How many protons does it have?", "options": ["1", "1", "2", "3"], "answer": "1", "explanation": "Atomic number (Z) = proton number. Hydrogen has atomic number 1. Therefore it has 1 proton."}, {"text": "Helium (He) has atomic number 2. How many protons does it have?", "options": ["2", "1", "3", "4"], "answer": "2", "explanation": "Atomic number (Z) =  proton number. Helium has atomic number 2. Therefore it has 2 protons."}, {"text": "Lithium (Li) has atomic number 3. How many protons does it have?", "options": ["3", "2", "4", "7"], "answer": "3", "explanation": "Atomic number (Z) =  proton number. Lithium has atomic number 3. Therefore it has 3 protons."}, {"text": "Beryllium (Be) has atomic number 4. How many protons does it have?", "options": ["4", "3", "5", "7"], "answer": "4", "explanation": "Atomic number (Z) =  proton number. Beryllium has atomic number 4. Therefore it has 4 protons."}, {"text": "Boron (B) has atomic number 5. How many protons does it have?", "options": ["5", "4", "6", "8"], "answer": "5", "explanation": "Atomic number (Z) = proton number. Boron has atomic number 5. Therefore it has 5 protons."}, {"text": "Carbon (C) has atomic number 6. How many protons does it have?", "options": ["6", "5", "7", "9"], "answer": "6", "explanation": "Atomic number (Z) =  proton number. Carbon has atomic number 6. Therefore it has 6 protons."}, {"text": "Nitrogen (N) has atomic number 7. How many protons does it have?", "options": ["7", "6", "8", "9"], "answer": "7", "explanation": "Atomic number (Z) =  proton number. Nitrogen has atomic number 7. Therefore it has 7 protons."}, {"text": "Oxygen (O) has atomic number 8. How many protons does it have?", "options": ["8", "7", "9", "10"], "answer": "8", "explanation": "Atomic number (Z) = proton number. Oxygen has atomic number 8. Therefore it has 8 protons."}, {"text": "Fluorine (F) has atomic number 9. How many protons does it have?", "options": ["9", "8", "10", "14"], "answer": "9", "explanation": "Atomic number (Z) = proton number. Fluorine has atomic number 9. Therefore it has 9 protons."}, {"text": "Neon (Ne) has atomic number 10. How many protons does it have?", "options": ["10", "9", "11", "12"], "answer": "10", "explanation": "Atomic number (Z) =  proton number. Neon has atomic number 10. Therefore it has 10 protons."}, {"text": "Sodium (Na) has atomic number 11. How many protons does it have?", "options": ["11", "10", "12", "13"], "answer": "11", "explanation": "Atomic number (Z) = proton number. Sodium has atomic number 11. Therefore it has 11 protons."}, {"text": "Magnesium (Mg) has atomic number 12. How many protons does it have?", "options": ["12", "11", "13", "14"], "answer": "12", "explanation": "Atomic number (Z) = proton number. Magnesium has atomic number 12. Therefore it has 12 protons."}, {"text": "Aluminium (Al) has atomic number 13. How many protons does it have?", "options": ["13", "12", "14", "16"], "answer": "13", "explanation": "Atomic number (Z) =  proton number. Aluminium has atomic number 13. Therefore it has 13 protons."}, {"text": "Silicon (Si) has atomic number 14. How many protons does it have?", "options": ["14", "13", "15", "17"], "answer": "14", "explanation": "Atomic number (Z) =  proton number. Silicon has atomic number 14. Therefore it has 14 protons."}, {"text": "Phosphorus (P) has atomic number 15. How many protons does it have?", "options": ["15", "14", "16", "17"], "answer": "15", "explanation": "Atomic number (Z) = proton number. Phosphorus has atomic number 15. Therefore it has 15 protons."}, {"text": "Sulfur (S) has atomic number 16. How many protons does it have?", "options": ["16", "15", "17", "19"], "answer": "16", "explanation": "Atomic number (Z) = proton number. Sulfur has atomic number 16. Therefore it has 16 protons."}, {"text": "Chlorine (Cl) has atomic number 17. How many protons does it have?", "options": ["17", "16", "18", "22"], "answer": "17", "explanation": "Atomic number (Z) = proton number. Chlorine has atomic number 17. Therefore it has 17 protons."}, {"text": "Argon (Ar) has atomic number 18. How many protons does it have?", "options": ["18", "17", "19", "21"], "answer": "18", "explanation": "Atomic number (Z) =  proton number. Argon has atomic number 18. Therefore it has 18 protons."}, {"text": "Which statement about subatomic particle mass is correct? is's", "options": ["protonandneutronhave roughly equal masselectronmass approximatelyproton's 1/1836", "protonandelectronhave roughly equal massneutronmore", "neutronandelectronhave roughly equal massprotonmore", "protonneutronandelectron'sall"], "answer": "protonandneutronhave roughly equal masselectronmass approximatelyproton's 1/1836", "explanation": "proton andneutron's relative massallas 1electron's relative massas 1/1836very small compared toproton/neutron"}, {"text": "What are the relative charge and relative mass of a proton?", "options": ["+1relative mass ≈ 1", "0relative mass ≈ 0", "−1relative mass ≈ 1/1836", "+1relative mass ≈ 1/1836"], "answer": "+1relative mass ≈ 1", "explanation": "proton +1 relative massas 1neutron(0, ≈1)electron(−1, ≈1/1836)"}, {"text": "atom (nucleus) containhas", "options": ["protonandneutron", "protonandelectron", "neutronandelectron", "hasproton"], "answer": "protonandneutron", "explanation": "atombyproton andneutronelectroninoutside the nucleus"}, {"text": "neutron's is Itatatom's ", "options": ["charge is 0atatom", "charge is +1atatom", "charge is −1atoutside the nucleus", "charge is 0atoutside the nucleus"], "answer": "charge is 0atatom", "explanation": "neutronnot=0withprotonatomnucleus"}, {"text": "Nucleon numbermass number's is", "options": ["atominproton number + neutron number", "atomin'sproton number", "atomin'selectron number", "atomin'sneutron number"], "answer": "atominproton number + neutron number", "explanation": "mass number (A) = proton number (Z) + neutron number (N)isotope's inabovemass number"}], "easy": [{"text": "A Lithium isotope has mass number 8. How many neutrons does it have?", "options": ["5", "3", "8", "11"], "answer": "5", "explanation": "neutron number = mass number − proton number = 8 − 3 = 5"}, {"text": "A Beryllium isotope has mass number 11. How many neutrons does it have?", "options": ["7", "4", "11", "15"], "answer": "7", "explanation": "neutron number = mass number − proton number = 11 − 4 = 7"}, {"text": "A Boron isotope has mass number 11. How many neutrons does it have?", "options": ["6", "5", "11", "16"], "answer": "6", "explanation": "neutron number = mass number − proton number = 11 − 5 = 6"}, {"text": "A Carbon isotope has mass number 10. How many neutrons does it have?", "options": ["4", "6", "10", "16"], "answer": "4", "explanation": "neutron number = mass number − proton number = 10 − 6 = 4"}, {"text": "A Nitrogen isotope has mass number 13. How many neutrons does it have?", "options": ["6", "7", "13", "20"], "answer": "6", "explanation": "neutron number = mass number − proton number = 13 − 7 = 6"}, {"text": "A Oxygen isotope has mass number 17. How many neutrons does it have?", "options": ["9", "8", "17", "25"], "answer": "9", "explanation": "neutron number = mass number − proton number = 17 − 8 = 9"}, {"text": "A Fluorine isotope has mass number 19. How many neutrons does it have?", "options": ["10", "9", "19", "28"], "answer": "10", "explanation": "neutron number = mass number − proton number = 19 − 9 = 10"}, {"text": "A Neon isotope has mass number 20. How many neutrons does it have?", "options": ["10", "10", "20", "30"], "answer": "10", "explanation": "neutron number = mass number − proton number = 20 − 10 = 10"}, {"text": "A Sodium isotope has mass number 22. How many neutrons does it have?", "options": ["11", "11", "22", "33"], "answer": "11", "explanation": "neutron number = mass number − proton number = 22 − 11 = 11"}, {"text": "A Magnesium isotope has mass number 23. How many neutrons does it have?", "options": ["11", "12", "23", "35"], "answer": "11", "explanation": "neutron number = mass number − proton number = 23 − 12 = 11"}, {"text": "A Aluminium isotope has mass number 27. How many neutrons does it have?", "options": ["14", "13", "27", "40"], "answer": "14", "explanation": "neutron number = mass number − proton number = 27 − 13 = 14"}, {"text": "A Silicon isotope has mass number 26. How many neutrons does it have?", "options": ["12", "14", "26", "40"], "answer": "12", "explanation": "neutron number = mass number − proton number = 26 − 14 = 12"}, {"text": "A Phosphorus isotope has mass number 29. How many neutrons does it have?", "options": ["14", "15", "29", "44"], "answer": "14", "explanation": "neutron number = mass number − proton number = 29 − 15 = 14"}, {"text": "A Sulfur isotope has mass number 33. How many neutrons does it have?", "options": ["17", "16", "33", "49"], "answer": "17", "explanation": "neutron number = mass number − proton number = 33 − 16 = 17"}, {"text": "A Chlorine isotope has mass number 34. How many neutrons does it have?", "options": ["17", "17", "34", "51"], "answer": "17", "explanation": "neutron number = mass number − proton number = 34 − 17 = 17"}, {"text": "A Argon isotope has mass number 40. How many neutrons does it have?", "options": ["22", "18", "40", "58"], "answer": "22", "explanation": "neutron number = mass number − proton number = 40 − 18 = 22"}, {"text": "Boron There are two isotopes ofB-11 and B-13. Neutron number are respectively", "options": ["6 and 8", "5 and 5", "11 and 13", "5 and 8"], "answer": "6 and 8", "explanation": "B-11neutron = 11−5=6B-13neutron = 13−5=8"}, {"text": "Carbon There are two isotopes ofC-12 and C-15. Neutron number are respectively", "options": ["6 and 9", "6 and 6", "12 and 15", "6 and 9"], "answer": "6 and 9", "explanation": "C-12neutron = 12−6=6C-15neutron = 15−6=9"}, {"text": "Nitrogen There are two isotopes ofN-14 and N-16. Neutron number are respectively", "options": ["7 and 9", "7 and 7", "14 and 16", "7 and 9"], "answer": "7 and 9", "explanation": "N-14neutron = 14−7=7N-16neutron = 16−7=9"}, {"text": "Oxygen There are two isotopes ofO-16 and O-17. Neutron number are respectively", "options": ["8 and 9", "8 and 8", "16 and 17", "8 and 9"], "answer": "8 and 9", "explanation": "O-16neutron = 16−8=8O-17neutron = 17−8=9"}, {"text": "Fluorine There are two isotopes ofF-19 and F-22. Neutron number are respectively", "options": ["10 and 13", "9 and 9", "19 and 22", "9 and 13"], "answer": "10 and 13", "explanation": "F-19neutron = 19−9=10F-22neutron = 22−9=13"}, {"text": "Neon There are two isotopes ofNe-20 and Ne-22. Neutron number are respectively", "options": ["10 and 12", "10 and 10", "20 and 22", "10 and 12"], "answer": "10 and 12", "explanation": "Ne-20neutron = 20−10=10Ne-22neutron = 22−10=12"}, {"text": "Sodium There are two isotopes ofNa-23 and Na-26. Neutron number are respectively", "options": ["12 and 15", "11 and 11", "23 and 26", "11 and 15"], "answer": "12 and 15", "explanation": "Na-23neutron = 23−11=12Na-26neutron = 26−11=15"}, {"text": "Magnesium There are two isotopes ofMg-24 and Mg-25. Neutron number are respectively", "options": ["12 and 13", "12 and 12", "24 and 25", "12 and 13"], "answer": "12 and 13", "explanation": "Mg-24neutron = 24−12=12Mg-25neutron = 25−12=13"}, {"text": "Aluminium There are two isotopes ofAl-27 and Al-29. Neutron number are respectively", "options": ["14 and 16", "13 and 13", "27 and 29", "13 and 16"], "answer": "14 and 16", "explanation": "Al-27neutron = 27−13=14Al-29neutron = 29−13=16"}, {"text": "Silicon There are two isotopes ofSi-28 and Si-29. Neutron number are respectively", "options": ["14 and 15", "14 and 14", "28 and 29", "14 and 15"], "answer": "14 and 15", "explanation": "Si-28neutron = 28−14=14Si-29neutron = 29−14=15"}, {"text": "Phosphorus There are two isotopes ofP-31 and P-34. Neutron number are respectively", "options": ["16 and 19", "15 and 15", "31 and 34", "15 and 19"], "answer": "16 and 19", "explanation": "P-31neutron = 31−15=16P-34neutron = 34−15=19"}, {"text": " particle has 17 proton18 neutron and 18 electrons. What is its charge?", "options": ["−1", "0", "+1", "+17"], "answer": "−1", "explanation": " = proton number − electron number = 17 − 18 = −1is Cl⁻ ion"}, {"text": " in's Oxygen atom How many electrons(O Z=8)", "options": ["8", "16", "4", "0"], "answer": "8", "explanation": "inatominelectron number = proton number = ZO 's Z=8has 8 electron"}], "medium": [{"text": " Oxygen particle has 8 electrons. What is its charge?", "options": ["0inatom", "8+", "8−", "Cannot determine"], "answer": "0inatom", "explanation": "Oxygen has 8 protons, charge = 8 − 8 = 0"}, {"text": " Fluorine particle has 7 electrons. What is its charge?", "options": ["+2", "9+", "7−", "Cannot determine"], "answer": "+2", "explanation": "Fluorine has 9 protons, charge = 9 − 7 = 2"}, {"text": " Neon particle has 10 electrons. What is its charge?", "options": ["0inatom", "10+", "10−", "Cannot determine"], "answer": "0inatom", "explanation": "Neon has 10 protons, charge = 10 − 10 = 0"}, {"text": " Sodium particle has 9 electrons. What is its charge?", "options": ["+2", "11+", "9−", "Cannot determine"], "answer": "+2", "explanation": "Sodium has 11 protons, charge = 11 − 9 = 2"}, {"text": " Magnesium particle has 13 electrons. What is its charge?", "options": ["-1", "12+", "13−", "Cannot determine"], "answer": "-1", "explanation": "Magnesium has 12 protons, charge = 12 − 13 = -1"}, {"text": " Aluminium particle has 15 electrons. What is its charge?", "options": ["-2", "13+", "15−", "Cannot determine"], "answer": "-2", "explanation": "Aluminium has 13 protons, charge = 13 − 15 = -2"}, {"text": " Silicon particle has 16 electrons. What is its charge?", "options": ["-2", "14+", "16−", "Cannot determine"], "answer": "-2", "explanation": "Silicon has 14 protons, charge = 14 − 16 = -2"}, {"text": " Phosphorus particle has 16 electrons. What is its charge?", "options": ["-1", "15+", "16−", "Cannot determine"], "answer": "-1", "explanation": "Phosphorus has 15 protons, charge = 15 − 16 = -1"}, {"text": " Sulfur particle has 16 electrons. What is its charge?", "options": ["0inatom", "16+", "16−", "Cannot determine"], "answer": "0inatom", "explanation": "Sulfur has 16 protons, charge = 16 − 16 = 0"}, {"text": " Chlorine particle has 19 electrons. What is its charge?", "options": ["-2", "17+", "19−", "Cannot determine"], "answer": "-2", "explanation": "Chlorine has 17 protons, charge = 17 − 19 = -2"}, {"text": "belowcorrectasisotope", "options": ["¹²C and ¹⁴C", "¹²C and ¹⁴N", "C and N", "Na⁺ and Na"], "answer": "¹²C and ¹⁴C", "explanation": "isotopeisproton number. sameneutron numberdifferent of the sameelementatom¹²C and ¹⁴C alliscarbon(6 proton)butneutron numbernot the same(6 vs 8)"}, {"text": "chlorine (Cl) 's relative atomic massas 35.5below", "options": ["chlorinein nature is ³⁵Cl and ³⁷Cl mixture", "haschlorineatomallis 35.5", "chlorinehas ³⁵Cl isotope", "The relative atomic mass of chlorine is not based on neutrons"], "answer": "chlorinein nature is ³⁵Cl and ³⁷Cl mixture", "explanation": "relative atomic mass 35.5 is ³⁵Cl(75%) and ³⁷Cl(25%) weighted averagebecausethisis not"}, {"text": "below ionwith Ne iselectron (isoelectronic)", "options": ["Na⁺Mg²⁺O²⁻F⁻ all are", "has Na⁺", "has F⁻", "allnotelectron"], "answer": "Na⁺Mg²⁺O²⁻F⁻ all are", "explanation": "Ne has 10 electronNa⁺(11−1)Mg²⁺(12−2)O²⁻(8+2)F⁻(9+1) all have 10 electronall are Ne 's electron"}], "hard": [{"text": "A particle's proton number is 10. Neutron number is 9. Electron number is 12. What is the symbol?", "options": ["<sup>19</sup>Ne−2−", "<sup>21</sup>F", "<sup>10</sup>Ne⁺", "Ne"], "answer": "<sup>19</sup>Ne−2−", "explanation": "protons = 10 → Neon (Ne). Mass number = 10 + 9 = 19. Charge = 10−12=-2"}, {"text": "A particle's proton number is 11. Neutron number is 13. Electron number is 8. What is the symbol?", "options": ["<sup>24</sup>Na+3+", "<sup>26</sup>C", "<sup>11</sup>Na⁺", "Na"], "answer": "<sup>24</sup>Na+3+", "explanation": "protons = 11 → Sodium (Na). Mass number = 11 + 13 = 24. Charge = 11−8=3"}, {"text": "A particle's proton number is 12. Neutron number is 12. Electron number is 12. What is the symbol?", "options": ["<sup>24</sup>Mg", "<sup>25</sup>F", "<sup>12</sup>Mg⁺", "Mg"], "answer": "<sup>24</sup>Mg", "explanation": "protons = 12 → Magnesium (Mg). Mass number = 12 + 12 = 24. Charge = 12−12=0"}, {"text": "A particle's proton number is 13. Neutron number is 17. Electron number is 10. What is the symbol?", "options": ["<sup>30</sup>Al+3+", "<sup>31</sup>C", "<sup>13</sup>Al⁺", "Al"], "answer": "<sup>30</sup>Al+3+", "explanation": "protons = 13 → Aluminium (Al). Mass number = 13 + 17 = 30. Charge = 13−10=3"}, {"text": "A particle's proton number is 14. Neutron number is 16. Electron number is 11. What is the symbol?", "options": ["<sup>30</sup>Si+3+", "<sup>31</sup>C", "<sup>14</sup>Si⁺", "Si"], "answer": "<sup>30</sup>Si+3+", "explanation": "protons = 14 → Silicon (Si). Mass number = 14 + 16 = 30. Charge = 14−11=3"}, {"text": "A particle's proton number is 15. Neutron number is 17. Electron number is 14. What is the symbol?", "options": ["<sup>32</sup>P++", "<sup>34</sup>K", "<sup>15</sup>P⁺", "P"], "answer": "<sup>32</sup>P++", "explanation": "protons = 15 → Phosphorus (P). Mass number = 15 + 17 = 32. Charge = 15−14=1"}, {"text": "A particle's proton number is 16. Neutron number is 15. Electron number is 13. What is the symbol?", "options": ["<sup>31</sup>S+3+", "<sup>33</sup>He", "<sup>16</sup>S⁺", "S"], "answer": "<sup>31</sup>S+3+", "explanation": "protons = 16 → Sulfur (S). Mass number = 16 + 15 = 31. Charge = 16−13=3"}, {"text": "A particle's proton number is 17. Neutron number is 18. Electron number is 19. What is the symbol?", "options": ["<sup>35</sup>Cl−2−", "<sup>37</sup>Al", "<sup>17</sup>Cl⁺", "Cl"], "answer": "<sup>35</sup>Cl−2−", "explanation": "protons = 17 → Chlorine (Cl). Mass number = 17 + 18 = 35. Charge = 17−19=-2"}, {"text": "A particle's proton number is 18. Neutron number is 22. Electron number is 20. What is the symbol?", "options": ["<sup>40</sup>Ar−2−", "<sup>41</sup>Ca", "<sup>18</sup>Ar⁺", "Ar"], "answer": "<sup>40</sup>Ar−2−", "explanation": "protons = 18 → Argon (Ar). Mass number = 18 + 22 = 40. Charge = 18−20=-2"}, {"text": "A particle's proton number is 19. Neutron number is 23. Electron number is 19. What is the symbol?", "options": ["<sup>42</sup>K", "<sup>43</sup>S", "<sup>19</sup>K⁺", "K"], "answer": "<sup>42</sup>K", "explanation": "protons = 19 → Potassium (K). Mass number = 19 + 23 = 42. Charge = 19−19=0"}, {"text": "A particle's proton number is 20. Neutron number is 21. Electron number is 17. What is the symbol?", "options": ["<sup>41</sup>Ca+3+", "<sup>43</sup>B", "<sup>20</sup>Ca⁺", "Ca"], "answer": "<sup>41</sup>Ca+3+", "explanation": "protons = 20 → Calcium (Ca). Mass number = 20 + 21 = 41. Charge = 20−17=3"}, {"text": "atisotope's belowisnot's", "options": ["They have differentchemical properties", "Theirproton numbersame", "Theirneutron numbernotsame", "Ithassame'selectron configuration"], "answer": "They have differentchemical properties", "explanation": "isotopehassame's electron configuration → chemical propertiesall the sameA \"not the same\"isincorrect"}, {"text": "below1. The nucleus contains nearly all the mass of the atom2. neutron's relative massas 1/18363. isotope's neutron numbernot the same", "options": ["1 and 3", "all", "has 1", "has 2"], "answer": "1 and 3", "explanation": "2incorrectelectronis notneutronrelative mass ≈ 1/1836neutronrelative mass ≈ 11and3"}, {"text": "in ²³Na⁺ ioninproton number. neutron numberandelectron number are respectively", "options": ["11, 12, 10", "23, 11, 10", "11, 23, 11", "12, 11, 10"], "answer": "11, 12, 10", "explanation": "²³Na⁺proton=Z=11neutron=A−Z=23−11=12electron=11−1=10Na⁺ 1 electron"}]}, "ch01_t02": {"beginner": [{"text": "What are isotopes?", "options": ["Atoms of the same element with same protons but different neutrons", "Atoms of different elements with same neutrons but different protons", "Atoms of the same element with different numbers of electrons", "mass numbersame'snotsameelement'satom"], "answer": "Atoms of the same element with same protons but different neutrons", "explanation": "Isotopes are atoms of the same element with the same proton number (atomic number) but different neutron number (hence different mass number)."}, {"text": "Relative atomic mass (Aᵣ) is defined as:", "options": ["¹²C atomof mass 1/12", "¹⁶O atomof mass 1/16", "¹H atom", " proton's"], "answer": "¹²C atomof mass 1/12", "explanation": "Aᵣ is the weighted average mass of all isotopes of an element relative to 1/12 of the mass of a ¹²C atom (¹²C = 12.0000)."}, {"text": "Why is the Aᵣ of many elements not an integer?", "options": ["Because naturally occurring elements are mixtures of isotopes", "becauseasatomcontain neutron", "withneutronas", "becauseasinisotope"], "answer": "Because naturally occurring elements are mixtures of isotopes", "explanation": "Aᵣ is the weighted average of all isotopes. For example, Cl = 35.5 because it is a mixture of ³⁵Cl (75%) and ³⁷Cl (25%)."}], "easy": [{"text": "Boron has B-10 (41%) and B-12 (59%). Aᵣ is:", "options": ["11.2", "11.0", "12", "10"], "answer": "11.2", "explanation": "Aᵣ = 10 × 0.41 + 12 × 0.59 = 11.2"}, {"text": "Carbon has C-11 (33%) and C-13 (67%). Aᵣ is:", "options": ["12.3", "12.0", "13", "11"], "answer": "12.3", "explanation": "Aᵣ = 11 × 0.33 + 13 × 0.67 = 12.3"}, {"text": "Nitrogen has N-13 (40%) and N-15 (60%). Aᵣ is:", "options": ["14.2", "14.0", "15", "13"], "answer": "14.2", "explanation": "Aᵣ = 13 × 0.4 + 15 × 0.6 = 14.2"}, {"text": "Oxygen has O-15 (72%) and O-17 (28%). Aᵣ is:", "options": ["15.6", "16.0", "17", "15"], "answer": "15.6", "explanation": "Aᵣ = 15 × 0.72 + 17 × 0.28 = 15.6"}, {"text": "Fluorine has F-18 (60%) and F-20 (40%). Aᵣ is:", "options": ["18.8", "19.0", "20", "18"], "answer": "18.8", "explanation": "Aᵣ = 18 × 0.6 + 20 × 0.4 = 18.8"}, {"text": "Neon has Ne-19 (59%) and Ne-21 (41%). Aᵣ is:", "options": ["19.8", "20.0", "21", "19"], "answer": "19.8", "explanation": "Aᵣ = 19 × 0.59 + 21 × 0.41 = 19.8"}, {"text": "Sodium has Na-22 (41%) and Na-24 (59%). Aᵣ is:", "options": ["23.2", "23.0", "24", "22"], "answer": "23.2", "explanation": "Aᵣ = 22 × 0.41 + 24 × 0.59 = 23.2"}, {"text": "Magnesium has Mg-23 (72%) and Mg-25 (28%). Aᵣ is:", "options": ["23.6", "24.0", "25", "23"], "answer": "23.6", "explanation": "Aᵣ = 23 × 0.72 + 25 × 0.28 = 23.6"}, {"text": "Aluminium has Al-26 (62%) and Al-28 (38%). Aᵣ is:", "options": ["26.8", "27.0", "28", "26"], "answer": "26.8", "explanation": "Aᵣ = 26 × 0.62 + 28 × 0.38 = 26.8"}, {"text": "Silicon has Si-27 (52%) and Si-29 (48%). Aᵣ is:", "options": ["28.0", "28.0", "29", "27"], "answer": "28.0", "explanation": "Aᵣ = 27 × 0.52 + 29 × 0.48 = 28.0"}, {"text": "Phosphorus has P-30 (62%) and P-32 (38%). Aᵣ is:", "options": ["30.8", "31.0", "32", "30"], "answer": "30.8", "explanation": "Aᵣ = 30 × 0.62 + 32 × 0.38 = 30.8"}, {"text": "Sulfur has S-31 (50%) and S-33 (50%). Aᵣ is:", "options": ["32.0", "32.0", "33", "31"], "answer": "32.0", "explanation": "Aᵣ = 31 × 0.5 + 33 × 0.5 = 32.0"}, {"text": "Chlorine has Cl-35 (48%) and Cl-37 (52%). Aᵣ is:", "options": ["36.0", "36.0", "37", "35"], "answer": "36.0", "explanation": "Aᵣ = 35 × 0.48 + 37 × 0.52 = 36.0"}, {"text": "Chlorine has two isotopes: ³⁵Cl (75%) and ³⁷Cl (25%). Aᵣ(Cl) is:", "options": ["35.5", "35.0", "36.0", "36.5"], "answer": "35.5", "explanation": "Aᵣ = 35 × 0.75 + 37 × 0.25 = 26.25 + 9.25 = 35.5"}], "medium": [{"text": "Boron (B) has Aᵣ = 10.8 with isotopes ¹⁰B and ¹¹B. The abundance of ¹¹B is:", "options": ["80%", "20%", "50%", "10.8%"], "answer": "80%", "explanation": "Let ¹¹B = x: 10(1−x) + 11x = 10.8 → 10 + x = 10.8 → x = 0.8 = 80%"}, {"text": "In mass spectrometry, m/z = 35 and 37 peaks have an intensity ratio of 3:1. The element is:", "options": ["chlorine (Cl)", " (Br)", "fluorine (F)", " (I)"], "answer": "chlorine (Cl)", "explanation": "³⁵Cl : ³⁷Cl = 75% : 25% ≈ 3:1. Br has ⁷⁹Br : ⁸¹Br ≈ 1:1. F and I have only one isotope each."}, {"text": "In mass spectrometry, what determines the deflection of ions in a magnetic field?", "options": ["ion's m/zm/z ratio", "ion'schemical properties", "ion'slargesmall", "ion's"], "answer": "ion's m/zm/z ratio", "explanation": "Deflection ∝ 1/√(m/z). Smaller m/z → greater deflection."}], "hard": [{"text": "Bromine (Br) has Aᵣ = 79.9 with isotopes ⁷⁹Br and ⁸¹Br. The abundance of ⁸¹Br is:", "options": ["45%", "55%", "50%", "79.9%"], "answer": "45%", "explanation": "Let ⁸¹Br = x: 79(1−x) + 81x = 79.9 → 79 + 2x = 79.9 → x = 0.45 = 45%"}, {"text": "Magnesium has isotopes ²⁴Mg (79%), ²⁵Mg (10%), ²⁶Mg (11%). Aᵣ(Mg) =", "options": ["24.3", "24.0", "25.0", "24.5"], "answer": "24.3", "explanation": "24 × 0.79 + 25 × 0.10 + 26 × 0.11 = 18.96 + 2.50 + 2.86 = 24.32 ≈ 24.3"}, {"text": "For Br₂, what appears in the molecular ion region of the mass spectrum? (m/z values and ratios)", "options": ["158, 160, 162intensity ratio 1:2:1", "79, 811:1", "158, 1601:1", "158, 159, 160, 161, 162"], "answer": "158, 160, 162intensity ratio 1:2:1", "explanation": "⁷⁹Br–⁷⁹Br (158) : ⁷⁹Br–⁸¹Br (160) : ⁸¹Br–⁸¹Br (162) = ¼ : ½ : ¼ = 1 : 2 : 1"}]}, "ch01_t03": {"beginner": [{"text": "Which step does a sample undergo first in a mass spectrometer?", "options": [" (Vaporisation)", "ionization (Ionisation)", "add (Acceleration)", " (Detection)"], "answer": " (Vaporisation)", "explanation": "The 5 steps are: vaporisation → ionization → acceleration → deflection → detection"}, {"text": "What method is used in the ionization stage of a mass spectrometer?", "options": ["highcanelectron (electron bombardment)", "add", "magnetic field", "add"], "answer": "highcanelectron (electron bombardment)", "explanation": "Electron impact ionization: high-energy electrons knock out an electron from the sample molecule, producing M⁺ ions."}, {"text": "In mass spectrometry, m/z stands for:", "options": ["m/z ratio (mass-to-charge ratio)", "with", "moleculein'satom", ""], "answer": "m/z ratio (mass-to-charge ratio)", "explanation": "m/z = mass-to-charge ratio. For most ions with charge +1, m/z ≈ the ion's relative mass."}, {"text": "In a mass spectrometer, how are ions with different m/z values separated?", "options": ["magnetic field (Magnetic field)", "ion", ""], "answer": "magnetic field (Magnetic field)", "explanation": "A magnetic field deflects ions. Ions with smaller m/z are deflected more, separating them from each other."}, {"text": "In mass spectrometry, why is a vacuum needed?", "options": ["ionwith airmolecule", "oxygen", "low", "high"], "answer": "ionwith airmolecule", "explanation": "A high vacuum ensures ions do not collide with air molecules. Otherwise the ions would not reach the detector."}], "easy": [{"text": "In mass spectrometry, the largest peak is called the base peak. Why?", "options": ["base peak (Base peak)", "molecular ion", "", "isotope"], "answer": "base peak (Base peak)", "explanation": "The base peak is the peak with the highest intensity in a mass spectrum, set as 100%. It is the most abundant ion fragment."}, {"text": "Magnesium has peaks at m/z = 24, 25, 26. What do these peaks represent?", "options": ["magnesium's threeisotope ²⁴Mg,²⁵Mg,²⁶Mg", "notsame'smagnesiumion", "magnesium", ""], "answer": "magnesium's threeisotope ²⁴Mg,²⁵Mg,²⁶Mg", "explanation": "These correspond to the M⁺ ions of magnesium's three isotopes with mass numbers 24, 25, and 26."}, {"text": "m/z = 35 and 37 peaks have an intensity ratio of 3:1. The element is:", "options": ["chlorine (Chlorine)", " (Bromine)", "fluorine (Fluorine)", " (Iodine)"], "answer": "chlorine (Chlorine)", "explanation": "³⁵Cl : ³⁷Cl ≈ 3:1. Br has ⁷⁹Br : ⁸¹Br ≈ 1:1."}, {"text": "In the acceleration stage, ions are accelerated by:", "options": [" (Electric field)", "magnetic field (Magnetic field)", "", "can"], "answer": " (Electric field)", "explanation": "Ions are accelerated by an electric field. All ions with the same charge gain the same kinetic energy (KE = ½mv²). Ions with smaller mass travel faster."}], "medium": [{"text": "In the deflection stage, which ions are deflected the most?", "options": ["m/z mostsmall'sion", "m/z mostlarge'sion", "hasionsame", "not"], "answer": "m/z mostsmall'sion", "explanation": "Deflection ∝ 1/√(m/z). The lightest ions are deflected the most; the heaviest ions are deflected the least."}, {"text": "For Cl₂, what is the molecular ion m/z intensity ratio?", "options": ["70, 72, 74 (9:6:1)", "70, 72 (3:1)", "35, 37 (3:1)", "70, 71, 72, 73, 74"], "answer": "70, 72, 74 (9:6:1)", "explanation": "³⁵Cl–³⁵Cl (70): ¾ × ¾ = 9/16, ³⁵Cl–³⁷Cl + ³⁷Cl–³⁵Cl (72): 2 × ¾ × ¼ = 6/16, ³⁷Cl–³⁷Cl (74): ¼ × ¼ = 1/16. Ratio = 9:6:1"}, {"text": "If the molecular ion has M : M+2 = 3:1, the molecule contains:", "options": ["1 chlorineatom", "1 atom", "1 fluorineatom", "no"], "answer": "1 chlorineatom", "explanation": "M : M+2 ≈ 3:1 indicates chlorine (³⁵Cl : ³⁷Cl = 3:1). M : M+2 ≈ 1:1 indicates bromine (⁷⁹Br : ⁸¹Br ≈ 1:1)."}], "hard": [{"text": "For Br₂, what is the molecular ion M : M+2 : M+4 intensity ratio?", "options": ["1:2:1", "1:1:0", "3:1:0", "9:6:1"], "answer": "1:2:1", "explanation": "Since Br₂ contains two Br atoms: (a+b)² = a² + 2ab + b² = (½)² : 2(½)(½) : (½)² = 1 : 2 : 1"}, {"text": "A molecule containing Br has molecular ion peaks at m/z = 122 and 124. Mᵣ is:", "options": ["122⁷⁹Brand 124⁸¹Br", "122", "124", "123"], "answer": "122⁷⁹Brand 124⁸¹Br", "explanation": "Containing Br means ⁷⁹Br and ⁸¹Br ≈ 1:1. If M : M+2 = 1:1, then Mᵣ = 122 (with ⁷⁹Br)."}, {"text": "m/z = 28 could be N₂⁺, CO⁺, or C₂H₄⁺. How can they be distinguished?", "options": ["allcancan Low-resolution MS cannot distinguish", "can only be N₂⁺", "can only be CO⁺", "can only be C₂H₄⁺"], "answer": "allcancan Low-resolution MS cannot distinguish", "explanation": "All have Mᵣ ≈ 28. Low-resolution MS cannot distinguish them. High-resolution mass spectrometry is needed to distinguish them by exact mass."}]}, "ch01_t04": {"beginner": [{"text": "How many electrons can an s orbital hold at most?", "options": ["2", "6", "10", "14"], "answer": "2", "explanation": "Each s orbital can hold at most 2 electrons. p: 6, d: 10, f: 14."}, {"text": "How many sub-shells does the n=1 energy level contain?", "options": ["has 1s", "1s and 1p", "1s1p and 1d", "has 1p"], "answer": "has 1s", "explanation": "n=1 has only s orbital. n=2 has s and p. n=3 has s, p, and d."}, {"text": "Where are electrons located in an atom?", "options": ["electron/orbital (Shells/Orbitals)", "atom (Nucleus)", "neutron", "proton"], "answer": "electron/orbital (Shells/Orbitals)", "explanation": "Electrons move in specific regions of space outside the nucleus, called electron shells or orbitals."}, {"text": "Hydrogen (Z=1): its electron configuration is:", "options": ["1s¹", "1s² 2s² 2p⁵", "1s² 2s² 2p²", "1s² 2s² 2p⁶ 3s² 3p⁶"], "answer": "1s¹", "explanation": "Hydrogen has 1 electrons. Fill from low to high energy: 1s¹"}, {"text": "Helium (Z=2): its electron configuration is:", "options": ["1s²", "1s² 2s² 2p⁶ 3s² 3p⁵", "1s² 2s²", "1s² 2s¹"], "answer": "1s²", "explanation": "Helium has 2 electrons. Fill from low to high energy: 1s²"}, {"text": "Lithium (Z=3): its electron configuration is:", "options": ["1s² 2s¹", "1s² 2s² 2p¹", "1s² 2s² 2p²", "1s² 2s² 2p³"], "answer": "1s² 2s¹", "explanation": "Lithium has 3 electrons. Fill from low to high energy: 1s² 2s¹"}, {"text": "Beryllium (Z=4): its electron configuration is:", "options": ["1s² 2s²", "1s² 2s² 2p⁶ 3s² 3p³", "1s² 2s¹", "1s² 2s² 2p⁶ 3s² 3p²"], "answer": "1s² 2s²", "explanation": "Beryllium has 4 electrons. Fill from low to high energy: 1s² 2s²"}, {"text": "Boron (Z=5): its electron configuration is:", "options": ["1s² 2s² 2p¹", "1s² 2s² 2p⁶ 3s² 3p²", "1s² 2s² 2p⁶ 3s² 3p⁴", "1s² 2s² 2p⁶ 3s² 3p⁶"], "answer": "1s² 2s² 2p¹", "explanation": "Boron has 5 electrons. Fill from low to high energy: 1s² 2s² 2p¹"}, {"text": "Carbon (Z=6): its electron configuration is:", "options": ["1s² 2s² 2p²", "1s² 2s² 2p⁶", "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹", "1s¹"], "answer": "1s² 2s² 2p²", "explanation": "Carbon has 6 electrons. Fill from low to high energy: 1s² 2s² 2p²"}, {"text": "Nitrogen (Z=7): its electron configuration is:", "options": ["1s² 2s² 2p³", "1s² 2s²", "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹", "1s² 2s² 2p⁶"], "answer": "1s² 2s² 2p³", "explanation": "Nitrogen has 7 electrons. Fill from low to high energy: 1s² 2s² 2p³"}, {"text": "Oxygen (Z=8): its electron configuration is:", "options": ["1s² 2s² 2p⁴", "1s² 2s² 2p⁶ 3s²", "1s² 2s²", "1s² 2s² 2p⁶ 3s¹"], "answer": "1s² 2s² 2p⁴", "explanation": "Oxygen has 8 electrons. Fill from low to high energy: 1s² 2s² 2p⁴"}, {"text": "Fluorine (Z=9): its electron configuration is:", "options": ["1s² 2s² 2p⁵", "1s² 2s² 2p⁶ 3s² 3p³", "1s² 2s² 2p²", "1s² 2s² 2p⁶ 3s² 3p⁴"], "answer": "1s² 2s² 2p⁵", "explanation": "Fluorine has 9 electrons. Fill from low to high energy: 1s² 2s² 2p⁵"}, {"text": "Neon (Z=10): its electron configuration is:", "options": ["1s² 2s² 2p⁶", "1s¹", "1s² 2s² 2p⁵", "1s² 2s² 2p⁶ 3s² 3p⁶"], "answer": "1s² 2s² 2p⁶", "explanation": "Neon has 10 electrons. Fill from low to high energy: 1s² 2s² 2p⁶"}], "easy": [{"text": "What is the Aufbau principle for filling electron orbitals??", "options": ["canmostlow1s→2s→2p→3s→3p→4s→3d", "fromto", "after", ""], "answer": "canmostlow1s→2s→2p→3s→3p→4s→3d", "explanation": "Electrons fill the lowest energy empty orbitals first. Note: 4s fills before 3d."}, {"text": "Why does the 4s orbital fill before 3d?", "options": ["4s electronmorehasnuclear chargemorelarge", "4s than 3d morelarge", "3d notin", "4s electronmore"], "answer": "4s electronmorehasnuclear chargemorelarge", "explanation": "The 4s orbital has a lower energy than 3d. 4s penetrates closer to the nucleus, experiencing greater nuclear attraction."}, {"text": "Sodium (Z=11): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s¹", "[He] 1s² 2s² 2p⁶ 3s¹", "[Ar] [Ne] 3s¹", "1s² 2s² 2p⁶ 3s¹"], "answer": "[Ne] 3s¹", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So Na is [Ne] 3s¹."}, {"text": "Magnesium (Z=12): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s²", "[He] 1s² 2s² 2p⁶ 3s²", "[Ar] [Ne] 3s²", "1s² 2s² 2p⁶ 3s²"], "answer": "[Ne] 3s²", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So Mg is [Ne] 3s²."}, {"text": "Aluminium (Z=13): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s² 3p¹", "[He] 1s² 2s² 2p⁶ 3s² 3p¹", "[Ar] [Ne] 3s² 3p¹", "1s² 2s² 2p⁶ 3s² 3p¹"], "answer": "[Ne] 3s² 3p¹", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So Al is [Ne] 3s² 3p¹."}, {"text": "Silicon (Z=14): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s² 3p²", "[He] 1s² 2s² 2p⁶ 3s² 3p²", "[Ar] [Ne] 3s² 3p²", "1s² 2s² 2p⁶ 3s² 3p²"], "answer": "[Ne] 3s² 3p²", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So Si is [Ne] 3s² 3p²."}, {"text": "Phosphorus (Z=15): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s² 3p³", "[He] 1s² 2s² 2p⁶ 3s² 3p³", "[Ar] [Ne] 3s² 3p³", "1s² 2s² 2p⁶ 3s² 3p³"], "answer": "[Ne] 3s² 3p³", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So P is [Ne] 3s² 3p³."}, {"text": "Sulfur (Z=16): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s² 3p⁴", "[He] 1s² 2s² 2p⁶ 3s² 3p⁴", "[Ar] [Ne] 3s² 3p⁴", "1s² 2s² 2p⁶ 3s² 3p⁴"], "answer": "[Ne] 3s² 3p⁴", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So S is [Ne] 3s² 3p⁴."}, {"text": "Chlorine (Z=17): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s² 3p⁵", "[He] 1s² 2s² 2p⁶ 3s² 3p⁵", "[Ar] [Ne] 3s² 3p⁵", "1s² 2s² 2p⁶ 3s² 3p⁵"], "answer": "[Ne] 3s² 3p⁵", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So Cl is [Ne] 3s² 3p⁵."}, {"text": "Argon (Z=18): its electron configuration (abbreviated) is:", "options": ["[Ne] 3s² 3p⁶", "[He] 1s² 2s² 2p⁶ 3s² 3p⁶", "[Ar] [Ne] 3s² 3p⁶", "1s² 2s² 2p⁶ 3s² 3p⁶"], "answer": "[Ne] 3s² 3p⁶", "explanation": "The first 10 electrons match Ne (1s² 2s² 2p⁶), abbreviated as [Ne]. So Ar is [Ne] 3s² 3p⁶."}], "medium": [{"text": "Cr (Z=24) has electron configuration [Ar]3d⁵4s¹ rather than [Ar]3d⁴4s². Why?", "options": ["half-filled d⁵ moreHund's Rule", "Cr has 4s orbital", "3d canthan 4s low", "incorrect"], "answer": "half-filled d⁵ moreHund's Rule", "explanation": "Half-filled (d⁵) and fully filled (d¹⁰) configurations are extra stable. Cr and Cu are exceptions to the Aufbau principle."}, {"text": "Fe²⁺ ion: its electron configuration is (Fe Z=26, [Ar]3d⁶4s²):", "options": ["[Ar] 3d⁶", "[Ar] 3d⁴ 4s²", "[Ar] 3d⁵ 4s¹", "[Ar] 3d⁸"], "answer": "[Ar] 3d⁶", "explanation": "When forming ions, 4s electrons are lost first. Fe²⁺ loses the 2 4s electrons: [Ar]3d⁶."}, {"text": "For N atom (2p³), how are the three 2p electrons arranged?", "options": [" electronoccupy one each p orbitalparallel spin (↑↑↑)", " correct+ ", " insameorbital", ""], "answer": " electronoccupy one each p orbitalparallel spin (↑↑↑)", "explanation": "Hund's Rule: electrons occupy degenerate orbitals singly with parallel spins before pairing. Half-filled 2p³ explains why N's IE₁ is high."}], "hard": [{"text": "Cu⁺ ion: its electron configuration is (Cu Z=29):", "options": ["[Ar] 3d¹⁰", "[Ar] 3d⁹ 4s¹", "[Ar] 3d⁸ 4s²", "[Ar] 3d⁹"], "answer": "[Ar] 3d¹⁰", "explanation": "Cu atom: [Ar]3d¹⁰4s¹. Cu⁺ loses the 4s¹ electron → [Ar]3d¹⁰. The fully filled d¹⁰ is very stable."}, {"text": "Which of the following ions have the same electron configuration as Ar (18e⁻)?", "options": ["K⁺, Ca²⁺, Cl⁻, S²⁻, P³⁻", "has Cl⁻", "K⁺ and Ca²⁺", "has S²⁻"], "answer": "K⁺, Ca²⁺, Cl⁻, S²⁻, P³⁻", "explanation": "Ar has 18 electrons. K⁺(19−1), Ca²⁺(20−2), Cl⁻(17+1), S²⁻(16+2), P³⁻(15+3) all have 18e⁻. These are isoelectronic with Ar."}, {"text": "Mn²⁺: How many unpaired electrons? (Mn Z=25)", "options": ["5", "0", "1", "3"], "answer": "5", "explanation": "Mn²⁺: [Ar]3d⁵. The 5 d electrons each occupy one d orbital with parallel spins: ↑↑↑↑↑. All 5 are unpaired."}]}, "ch01_t05": {"beginner": [{"text": "First ionisation energy (IE₁) is defined as:", "options": ["from 1mol atomin 1mol electronneedcan", "Energy required to remove the first electron from a solid", "atom electron'scan", "atom'scan"], "answer": "from 1mol atomin 1mol electronneedcan", "explanation": "IE₁: X(g) → X⁺(g) + e⁻. The energy required to remove the outermost electron."}, {"text": "Across a period, ionisation energy generally:", "options": ["largehassmall", "minussmall", "minusafter", "not"], "answer": "largehassmall", "explanation": "Nuclear charge increases, atomic radius decreases → electron more attracted → IE₁ generally increases. But there are dips at Group 3 and Group 6."}, {"text": "Down a group, ionisation energy generally:", "options": ["minussmall", "large", "afterminus", "not"], "answer": "minussmall", "explanation": "Atomic radius increases, more shielding → electron less attracted → IE₁ decreases."}, {"text": "Which factor does NOT affect first ionisation energy?", "options": ["neutron number", "nuclear charge", "atomic radius", "shielding effect"], "answer": "neutron number", "explanation": "IE₁ depends on: nuclear charge (+), atomic radius (−), shielding effect (−), and electron configuration. Neutron number does not affect IE."}], "easy": [{"text": "Why is B's first ionisation energy lower than Be? (Group 3 dip)", "options": ["B 's 2p electronenergy higher than Be 's 2smore", "B 'satomic numberthan Be small", "B 'sthan Be small", "B 'sthan Be small"], "answer": "B 's 2p electronenergy higher than Be 's 2smore", "explanation": "Be (2s²): the electron removed is from 2s. B (2s²2p¹): the electron removed is from 2p. 2p has higher energy than 2s → B's IE₁ is lower."}, {"text": "Why is O's first ionisation energy lower than N? (Group 6 dip)", "options": ["N 's 2p³ half-filledO 's 2p⁴ haselectron", "O 'satomic numberthan N small", "O 'sthan N large", "O 'sthan N large"], "answer": "N 's 2p³ half-filledO 's 2p⁴ haselectron", "explanation": "N: 2p³ (↑↑↑, half-filled). O: 2p⁴ has one paired electron. Electron-electron repulsion makes one easier to remove."}, {"text": "In Period 3 (Na→Ar), which element has the highest IE₁?", "options": ["Ar (Argon)", "Na (Sodium)", "Cl (Chlorine)", "Al (Aluminium)"], "answer": "Ar (Argon)", "explanation": "Ar has the highest nuclear charge (Z=18) and smallest radius in Period 3, with a stable 3p⁶ configuration. IE₁ ≈ 1521 kJ/mol."}, {"text": "In Period 3 (Na→Ar), which element has the lowest IE₁?", "options": ["Na (Sodium)", "Al (Aluminium)", "S (Sulfur)", "Ar (Argon)"], "answer": "Na (Sodium)", "explanation": "Na has the largest radius and smallest nuclear charge (Z=11) in Period 3. IE₁ ≈ 496 kJ/mol."}], "medium": [{"text": "An element has IE (kJ/mol): IE₁=578, IE₂=1817, IE₃=2745, IE₄=11578. The element is:", "options": ["Al (Aluminium)", "Mg (Magnesium)", "Si (Silicon)", "Na (Sodium)"], "answer": "Al (Aluminium)", "explanation": "IE₁→IE₃ increase gradually (outer electrons). IE₄ jumps ~4× → the 4th electron is from an inner shell. So the element has 3 outer electrons: Al (Z=13, 3s²3p¹)."}, {"text": "Why is Mg's second IE much greater than its first IE?", "options": ["Mg⁺ ionsmaller radiuselectronmore", "#ionization energytotalissmallat#", "Mg haselectron", ""], "answer": "Mg⁺ ionsmaller radiuselectronmore", "explanation": "Mg→Mg⁺→Mg²⁺. Mg⁺ is already a cation with smaller radius and greater effective nuclear charge. Removing a second electron requires much more energy."}, {"text": "In Period 3, Al's IE₁ is lower than Mg because:", "options": ["Al 's 3p electronenergy higher than Mg 's 3s", "Al 'snuclear chargesmallat Mg", "Al 'slargeat Mg", "Al largeat Mg"], "answer": "Al 's 3p electronenergy higher than Mg 's 3s", "explanation": "Mg (3s²): 3s electron removed. Al (3s²3p¹): 3p electron removed. 3p has higher energy than 3s → Al has lower IE₁."}], "hard": [{"text": "An element has IE₁=738, IE₂=1451, IE₃=7733, IE₄=10543. The element is:", "options": ["Mg (Magnesium)", "Al (Aluminium)", "Na (Sodium)", "Si (Silicon)"], "answer": "Mg (Magnesium)", "explanation": "IE₁→IE₂ increase ~2× (2 outer electrons). IE₃ jumps ~5.3× → the 3rd electron is from an inner shell. So the element has 2 outer electrons: Mg."}, {"text": "Why is Na's IE₂ (4562) much larger than Mg's IE₂ (1451)?", "options": ["Na⁺ is [Ne] hasvery stable", "Na 'snuclear chargelargeat Mg", "Mg 'slargeat Na", "Na 'ssmallat Mg"], "answer": "Na⁺ is [Ne] hasvery stable", "explanation": "Na⁺([Ne]) has a full 2s²2p⁶ shell, which is very stable. Removing an electron from this requires much energy. Mg⁺ removes a 3s¹ electron, which is easier."}, {"text": "An element's first 8 IE values: 1012, 1907, 2914, 4964, 6274, 21267... The element is:", "options": ["P (Phosphorus)", "S (Sulfur)", "Si (Silicon)", "Cl (Chlorine)"], "answer": "P (Phosphorus)", "explanation": "IE₁→IE₅ increase gradually. IE₆ jumps ~3.4× → 5 outer electrons. P ([Ne]3s²3p³) has 5 outer electrons. ✓"}]}, "ch01_t06": {"beginner": [{"text": "An atom's emission spectrum is unique because:", "options": ["Electrons emit photons when transitioning from higher to lower energy levels", "atomcan", "electronfromlowenergy leveltransitions tohighenergy level", "atom"], "answer": "Electrons emit photons when transitioning from higher to lower energy levels", "explanation": "When excited electrons return to lower energy levels, they emit photons of energy ΔE = hν. The pattern of lines is unique to each element."}, {"text": "Why is hydrogen's spectrum a line spectrum rather than continuous?", "options": ["electroncanis's canenergy level", "hydrogenhas electron", "not", "hydrogenis "], "answer": "electroncanis's canenergy level", "explanation": "Energy levels are quantised → transitions between discrete levels produce specific photon energies → line spectrum."}, {"text": "The Balmer series (n→2) produces spectral lines in which region?", "options": ["can (Visible)", " (UV)", " (IR)", "X "], "answer": "can (Visible)", "explanation": "Lyman (n→1) = UV, Balmer (n→2) = Visible, Paschen (n→3) = IR."}, {"text": "In an emission spectrum, why do spectral lines get closer together at higher energy?", "options": [" most", "", ""], "answer": " most", "explanation": "Higher energy levels are closer together (E ∝ 1/n²). So transitions from high n levels produce lines that converge at the convergence limit."}, {"text": "Why are different elements' emission spectra different?", "options": ["notsameelement'senergy levelnotsame", "notsameelement'snotsame", "notsameelement'sneutron numbernotsame", "notsameelement'satomlargesmallsame"], "answer": "notsameelement'senergy levelnotsame", "explanation": "Each element's energy levels are unique → its spectrum is also unique. This is why spectra act as elemental fingerprints."}], "easy": [{"text": "For a H atom, an electron transitioning from n=3 to n=2 belongs to which series?", "options": [" (Hα, 656nm)", " (Hβ)", " (Hγ)", "notcan"], "answer": " (Hα, 656nm)", "explanation": "Balmer series (n→2): Hα (3→2, 656 nm), Hβ (4→2, 486 nm), Hγ (5→2, 434 nm)."}, {"text": "The convergence limit corresponds to:", "options": ["electronfrom n=∞ transitions to n=1 ", "from n=2 to n=1", "from n=1 to n=2", "atom"], "answer": "electronfrom n=∞ transitions to n=1 ", "explanation": "Convergence limit is the transition n=∞→n=1, i.e. the energy to completely remove the electron. IE = hν_convergence."}, {"text": "In an absorption spectrum, what is observed?", "options": ["At exactly the same positions as the bright lines in the emission spectrum", "", "in", "withemission spectrumallnotsame's"], "answer": "At exactly the same positions as the bright lines in the emission spectrum", "explanation": "An absorption spectrum is the inverse of emission: electrons absorb photons and transition to higher energy levels. Dark lines appear at the same wavelengths as the emission spectrum."}], "medium": [{"text": "He⁺ spectrum is similar to H but at different wavelengths because:", "options": ["He⁺ 'snuclear chargemorelarge (Z=2)energy levelenergy difference is H 's 4 ", "He⁺ has electron", "He⁺ 'selectronin d orbital", "He⁺ 'sspectrumis's"], "answer": "He⁺ 'snuclear chargemorelarge (Z=2)energy levelenergy difference is H 's 4 ", "explanation": "For hydrogen-like ions: Eₙ = −Z²R_H/n². He⁺ (Z=2) → energy differences are 4× those of H → wavelengths are 1/4 of H's."}, {"text": "Balmer series wavelengths: 656 → 486 → 434 → 410 nm. Why do they get closer?", "options": ["minussmall → energy levelhigh", "large → energy levellarge", "not", ""], "answer": "minussmall → energy levelhigh", "explanation": "656−486 = 170, 486−434 = 52, 434−410 = 24 nm. The gaps decrease because E ∝ 1/n², so higher levels are closer together."}, {"text": "Why does a hydrogen atom with only 1 electron produce many spectral lines?", "options": ["The single electron can occupy different energy levelsmanycorrectmanyspectral line", "H hasmany electron", "spectral line", "H ismanytime"], "answer": "The single electron can occupy different energy levelsmanycorrectmanyspectral line", "explanation": "Although there is only 1 electron, it can be excited to n = 2, 3, 4, ... ∞. Returning to lower levels produces photons of different energies = many spectral lines."}], "hard": [{"text": "Which statement about emission spectra is incorrect?", "options": ["highspectral linewill", "eachelement'sspectrumis's", "spectral linein", "spectrumcanatelement"], "answer": "highspectral linewill", "explanation": "Spectral lines are determined by energy level differences, not by the element's mass. The spectrum is unique to each element."}, {"text": "For H atom, the wavelength of n=∞→n=2 is: (R_H = 1.097×10⁷ m⁻¹)", "options": ["365nmBalmer 's", "91.2nmLyman ", "656nmHα", "821nmPaschen"], "answer": "365nmBalmer 's", "explanation": "∞→2: 1/λ = R_H(1/4 − 0) = R_H/4 → λ = 4/(1.097×10⁷) = 365 nm. This is the Balmer series limit."}, {"text": "Why does Na's D line appear as a doublet (589.0 and 589.6 nm)?", "options": ["-orbitalcoupling makes 3p energy levelas ", "Na has electron", "", "notsame's Balmer "], "answer": "-orbitalcoupling makes 3p energy levelas ", "explanation": "Na D line is 3p→3s. Spin-orbit coupling splits 3p into ²P₃/₂ and ²P₁/₂, producing two lines separated by only 0.6 nm."}]}};
+const GEN_TEMPLATES = {
+  "ch04_t01": {
+    "beginner": [
+      {
+        "text": "VSEPR shapes: 3 bp + 1 lp?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "3 bp + 1 lp: pyramidal (~107°)."
+      }
+    ],
+    "easy": [],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes vsepr shapes?",
+        "options": [
+          "3 bp: trigonal planar (120°)...",
+          "4 bp: tetrahedral (109.5°)...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "3 bp: trigonal planar (120°)...",
+        "explanation": "3 bp: trigonal planar (120°)."
+      }
+    ]
+  },
+  "ch04_t02": {
+    "beginner": [
+      {
+        "text": "Effect of lone pairs on bond angles: Lone pairs occupy more space than bonding pairs?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Lone pairs occupy more space than bonding pairs, reducing bond angles."
+      },
+      {
+        "text": "Effect of lone pairs on bond angles: Each lone pair reduces angles by ~2.5°?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Each lone pair reduces angles by ~2.5°."
+      },
+      {
+        "text": "Effect of lone pairs on bond angles: Order of repulsion?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Order of repulsion: lp-lp > lp-bp > bp-bp.."
+      }
+    ],
+    "easy": [
+      {
+        "text": "Effect of lone pairs on bond angles: Lone pairs occupy ___ space than bonding pairs, reducing bond angles",
+        "options": [
+          "more",
+          "erom",
+          "None",
+          "All of above"
+        ],
+        "answer": "more",
+        "explanation": "Lone pairs occupy more space than bonding pairs, reducing bond angles."
+      },
+      {
+        "text": "Effect of lone pairs on bond angles: Each lone pair ___ angles by ~2.5°",
+        "options": [
+          "reduces",
+          "secuder",
+          "None",
+          "All of above"
+        ],
+        "answer": "reduces",
+        "explanation": "Each lone pair reduces angles by ~2.5°."
+      },
+      {
+        "text": "Effect of lone pairs on bond angles: Order of repulsion: ___ > lp-bp > bp-bp.",
+        "options": [
+          "lp-lp",
+          "pl-pl",
+          "None",
+          "All of above"
+        ],
+        "answer": "lp-lp",
+        "explanation": "Order of repulsion: lp-lp > lp-bp > bp-bp.."
+      }
+    ],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes effect of lone pairs on bond angles?",
+        "options": [
+          "Lone pairs occupy more space than bonding pairs, reducing bo...",
+          "Each lone pair reduces angles by ~2.5°...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "Lone pairs occupy more space than bonding pairs, reducing bo...",
+        "explanation": "Lone pairs occupy more space than bonding pairs, reducing bond angles."
+      }
+    ]
+  },
+  "ch04_t03": {
+    "beginner": [],
+    "easy": [
+      {
+        "text": "Hybridisation summary: sp²: trigonal planar, ___ unhybridised p orbital for π bond (ethene, BF₃)",
+        "options": [
+          "one",
+          "N/A",
+          "None",
+          "All of above"
+        ],
+        "answer": "one",
+        "explanation": "sp²: trigonal planar, one unhybridised p orbital for π bond (ethene, BF₃)."
+      },
+      {
+        "text": "Hybridisation summary: sp: linear, two ___ p orbitals for two π bonds (ethyne, CO₂, BeCl₂).",
+        "options": [
+          "unhybridised",
+          "desidirbyhnu",
+          "None",
+          "All of above"
+        ],
+        "answer": "unhybridised",
+        "explanation": "sp: linear, two unhybridised p orbitals for two π bonds (ethyne, CO₂, BeCl₂).."
+      }
+    ],
+    "medium": [
+      {
+        "text": "Which statement about hybridisation summary is correct?",
+        "options": [
+          "sp: linear, two unhybridised p orbitals for two π ...",
+          "The opposite is true",
+          "It depends on temperature",
+          "None of these"
+        ],
+        "answer": "sp: linear, two unhybridised p orbitals for two π ...",
+        "explanation": "sp: linear, two unhybridised p orbitals for two π bonds (ethyne, CO₂, BeCl₂).."
+      }
+    ],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes hybridisation summary?",
+        "options": [
+          "sp³: tetrahedral (methane, water, ammonia)...",
+          "sp²: trigonal planar, one unhybridised p orbital for π bond ...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "sp³: tetrahedral (methane, water, ammonia)...",
+        "explanation": "sp³: tetrahedral (methane, water, ammonia)."
+      }
+    ]
+  },
+  "ch04_t04": {
+    "beginner": [
+      {
+        "text": "Electronegativity and bond polarity: If 0.4 < ΔEN < 1.7?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "If 0.4 < ΔEN < 1.7: polar covalent."
+      },
+      {
+        "text": "Electronegativity and bond polarity: If ΔEN < 0.4?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "If ΔEN < 0.4: non-polar covalent."
+      },
+      {
+        "text": "Electronegativity and bond polarity: Pauling values?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Pauling values: F(4.0) > O(3.5) > N(3.0) > Cl(3.0) > Br(2.8) > C(2.5) > H(2.1).."
+      }
+    ],
+    "easy": [
+      {
+        "text": "Electronegativity and bond polarity: If 0.4 < ___ < 1.7: polar covalent",
+        "options": [
+          "ΔEN",
+          "N/A",
+          "None",
+          "All of above"
+        ],
+        "answer": "ΔEN",
+        "explanation": "If 0.4 < ΔEN < 1.7: polar covalent."
+      }
+    ],
+    "medium": [
+      {
+        "text": "Which statement about electronegativity and bond polarity is correct?",
+        "options": [
+          "Pauling values: F(4.0) > O(3.5) > N(3.0) > Cl(3.0)...",
+          "The opposite is true",
+          "It depends on temperature",
+          "None of these"
+        ],
+        "answer": "Pauling values: F(4.0) > O(3.5) > N(3.0) > Cl(3.0)...",
+        "explanation": "Pauling values: F(4.0) > O(3.5) > N(3.0) > Cl(3.0) > Br(2.8) > C(2.5) > H(2.1).."
+      }
+    ],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes electronegativity and bond polarity?",
+        "options": [
+          "If 0.4 < ΔEN < 1.7: polar covalent...",
+          "If ΔEN < 0.4: non-polar covalent...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "If 0.4 < ΔEN < 1.7: polar covalent...",
+        "explanation": "If 0.4 < ΔEN < 1.7: polar covalent."
+      }
+    ]
+  },
+  "ch04_t05": {
+    "beginner": [
+      {
+        "text": "Intermolecular forces comparison: Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size)?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size)."
+      },
+      {
+        "text": "Intermolecular forces comparison: VdW increases with Mr (more electrons = larger temporary dipoles).?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "VdW increases with Mr (more electrons = larger temporary dipoles).."
+      }
+    ],
+    "easy": [
+      {
+        "text": "Intermolecular forces comparison: Hydrogen bonds (~20 ___ > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size)",
+        "options": [
+          "kJ/mol",
+          "lom/Jk",
+          "None",
+          "All of above"
+        ],
+        "answer": "kJ/mol",
+        "explanation": "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size)."
+      }
+    ],
+    "medium": [
+      {
+        "text": "Which statement about intermolecular forces comparison is correct?",
+        "options": [
+          "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dip...",
+          "The opposite is true",
+          "It depends on temperature",
+          "None of these"
+        ],
+        "answer": "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dip...",
+        "explanation": "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size)."
+      },
+      {
+        "text": "Which statement about intermolecular forces comparison is correct?",
+        "options": [
+          "VdW increases with Mr (more electrons = larger tem...",
+          "The opposite is true",
+          "It depends on temperature",
+          "None of these"
+        ],
+        "answer": "VdW increases with Mr (more electrons = larger tem...",
+        "explanation": "VdW increases with Mr (more electrons = larger temporary dipoles).."
+      }
+    ],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes intermolecular forces comparison?",
+        "options": [
+          "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 ...",
+          "VdW increases with Mr (more electrons = larger temporary dip...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 ...",
+        "explanation": "Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size)."
+      }
+    ]
+  },
+  "ch04_t06": {
+    "beginner": [],
+    "easy": [
+      {
+        "text": "Conditions for hydrogen bonding: Must have: H ___ directly to N, O, or F in one molecule AND a lone pair on N, O, or F in another molecule",
+        "options": [
+          "bonded",
+          "dednob",
+          "None",
+          "All of above"
+        ],
+        "answer": "bonded",
+        "explanation": "Must have: H bonded directly to N, O, or F in one molecule AND a lone pair on N, O, or F in another molecule."
+      },
+      {
+        "text": "Conditions for hydrogen bonding: Examples: H₂O (2 ___ per molecule), NH₃, HF, DNA base pairs.",
+        "options": [
+          "H-bonds",
+          "sdnob-H",
+          "None",
+          "All of above"
+        ],
+        "answer": "H-bonds",
+        "explanation": "Examples: H₂O (2 H-bonds per molecule), NH₃, HF, DNA base pairs.."
+      }
+    ],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes conditions for hydrogen bonding?",
+        "options": [
+          "Must have: H bonded directly to N, O, or F in one molecule A...",
+          "Examples: H₂O (2 H-bonds per molecule), NH₃, HF, DNA base pa...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "Must have: H bonded directly to N, O, or F in one molecule A...",
+        "explanation": "Must have: H bonded directly to N, O, or F in one molecule AND a lone pair on N, O, or F in another molecule."
+      }
+    ]
+  },
+  "ch04_t07": {
+    "beginner": [
+      {
+        "text": "Properties of ionic compounds: High melting/boiling points (strong ionic bonds)?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "High melting/boiling points (strong ionic bonds)."
+      },
+      {
+        "text": "Properties of ionic compounds: Conduct electricity when molten or dissolved (mobile ions)?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Conduct electricity when molten or dissolved (mobile ions)."
+      },
+      {
+        "text": "Properties of ionic compounds: Soluble in polar solvents.?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Soluble in polar solvents.."
+      }
+    ],
+    "easy": [
+      {
+        "text": "Properties of ionic compounds: Conduct electricity when ___ or dissolved (mobile ions)",
+        "options": [
+          "molten",
+          "netlom",
+          "None",
+          "All of above"
+        ],
+        "answer": "molten",
+        "explanation": "Conduct electricity when molten or dissolved (mobile ions)."
+      }
+    ],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes properties of ionic compounds?",
+        "options": [
+          "High melting/boiling points (strong ionic bonds)...",
+          "Conduct electricity when molten or dissolved (mobile ions)...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "High melting/boiling points (strong ionic bonds)...",
+        "explanation": "High melting/boiling points (strong ionic bonds)."
+      }
+    ]
+  },
+  "ch04_t08": {
+    "beginner": [],
+    "easy": [
+      {
+        "text": "Giant covalent structures: Diamond: 4 C-C ___ tetrahedral, very hard, no electrical conduction",
+        "options": [
+          "bonds",
+          "sdnob",
+          "None",
+          "All of above"
+        ],
+        "answer": "bonds",
+        "explanation": "Diamond: 4 C-C bonds, tetrahedral, very hard, no electrical conduction."
+      },
+      {
+        "text": "Giant covalent structures: Graphite: 3 C-C ___ layers, delocalized π electrons (conducts), lubricant",
+        "options": [
+          "bonds",
+          "sdnob",
+          "None",
+          "All of above"
+        ],
+        "answer": "bonds",
+        "explanation": "Graphite: 3 C-C bonds, layers, delocalized π electrons (conducts), lubricant."
+      },
+      {
+        "text": "Giant covalent structures: SiO₂: giant lattice, ___ hard, high mp.",
+        "options": [
+          "very",
+          "yrev",
+          "None",
+          "All of above"
+        ],
+        "answer": "very",
+        "explanation": "SiO₂: giant lattice, very hard, high mp.."
+      }
+    ],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes giant covalent structures?",
+        "options": [
+          "Diamond: 4 C-C bonds, tetrahedral, very hard, no electrical ...",
+          "Graphite: 3 C-C bonds, layers, delocalized π electrons (cond...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "Diamond: 4 C-C bonds, tetrahedral, very hard, no electrical ...",
+        "explanation": "Diamond: 4 C-C bonds, tetrahedral, very hard, no electrical conduction."
+      }
+    ]
+  },
+  "ch04_t09": {
+    "beginner": [
+      {
+        "text": "Sigma and pi bonds: Single bond = 1 σ bond?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Single bond = 1 σ bond."
+      },
+      {
+        "text": "Sigma and pi bonds: Double bond = 1 σ + 1 π bond?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Double bond = 1 σ + 1 π bond."
+      },
+      {
+        "text": "Sigma and pi bonds: Triple bond = 1 σ + 2 π bonds?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Triple bond = 1 σ + 2 π bonds."
+      }
+    ],
+    "easy": [],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes sigma and pi bonds?",
+        "options": [
+          "Single bond = 1 σ bond...",
+          "Double bond = 1 σ + 1 π bond...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "Single bond = 1 σ bond...",
+        "explanation": "Single bond = 1 σ bond."
+      }
+    ]
+  },
+  "ch04_t10": {
+    "beginner": [
+      {
+        "text": "Metallic bonding and properties: Positive metal ions in a sea of delocalised electrons?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Positive metal ions in a sea of delocalised electrons."
+      },
+      {
+        "text": "Metallic bonding and properties: High electrical/thermal conductivity (mobile electrons)?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "High electrical/thermal conductivity (mobile electrons)."
+      },
+      {
+        "text": "Metallic bonding and properties: Malleable/ductile (layers slide)?",
+        "options": [
+          "True",
+          "False",
+          "Not sure",
+          "Depends"
+        ],
+        "answer": "True",
+        "explanation": "Malleable/ductile (layers slide)."
+      }
+    ],
+    "easy": [],
+    "medium": [],
+    "hard": [
+      {
+        "text": "Compare and apply: Which best describes metallic bonding and properties?",
+        "options": [
+          "Positive metal ions in a sea of delocalised electrons...",
+          "High electrical/thermal conductivity (mobile electrons)...",
+          "Both are incorrect",
+          "Not enough information"
+        ],
+        "answer": "Positive metal ions in a sea of delocalised electrons...",
+        "explanation": "Positive metal ions in a sea of delocalised electrons."
+      }
+    ]
+  }
+};
 
 function Rnd(a,b){ return typeof b==='undefined' ? a[Math.floor(Math.random()*a.length)] : Math.floor(Math.random()*(b-a+1))+a; }
 function shuffleArr(a){ for(let i=a.length-1;i>0;i--){const j=Rnd(0,i);[a[i],a[j]]=[a[j],a[i]];} return a; }
@@ -1270,12 +1857,12 @@ function buildLevels(){
   // Boss
   const allCh01 = DB.questions.filter(q=>q.chapter_id===CHAPTER_ID && q.paper_type==='P1');
   levels.push({
-    index:6,
-    topic:{name:'综合挑战', emoji:'👑', desc:'BOSS Battle: All ch01 topics mixed', xpPerQ:20},
+    index:10,
+    topic:{name:'综合挑战', emoji:'👑', desc:'BOSS Battle: All ch04 topics mixed', xpPerQ:20},
     questions:allCh01, isBoss:true,
-    completed:GAME.levelProgress[6]?.completed||false,
-    bestScore:GAME.levelProgress[6]?.bestScore||0,
-    stars:GAME.levelProgress[6]?.stars||0,
+    completed:GAME.levelProgress[10]?.completed||false,
+    bestScore:GAME.levelProgress[10]?.bestScore||0,
+    stars:GAME.levelProgress[10]?.stars||0,
     mastery:{tier:'none',pct:0,label:'Boss'}
   });
   return levels;
@@ -2058,7 +2645,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 // Global learn DB cache
 // learn_db.json inlined — no fetch needed (works with file:// protocol)
-var LEARN_DB_CACHE = {"chapters": {"ch01": {"id": "ch01", "title": "Atomic Structure & Electrons in Atoms", "chapter_num": "1~2", "emoji": "⚛️", "color": "#7c3aed", "total_xp": 430, "badge_id": "ch01_champion", "levels": [{"id": "ch01_L1", "level_num": 1, "topic_id": "ch01_t01", "title": "Protons, Neutrons & Electrons", "emoji": "🔬", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "Everything in the universe is made of tiny particles called <strong>atoms</strong>. Atoms themselves are made of three even smaller particles: <strong>protons</strong>, <strong>neutrons</strong>, and <strong>electrons</strong>.", "key_table": {"headers": ["Particle", "Location", "Rel. Mass", "Charge"], "rows": [["Proton (p⁺)", "Inside nucleus", "1", "+1"], ["Neutron (n⁰)", "Inside nucleus", "1", "0"], ["Electron (e⁻)", "Outside nucleus", "1/1840", "−1"]]}, "tip": "Atomic Number (Z) = number of protons = number of electrons (in a neutral atom). Mass Number (A) = protons + neutrons.", "memory": "⚠️ Electrons are SO light (1/1840 of a proton) that we often ignore their mass when calculating mass number!", "analogy": "Think of an atom like a tiny solar system: the nucleus is the Sun (tiny but heavy), electrons are planets orbiting around it."}, "diagram": {"type": "atom_structure", "title": "Atom Structure Diagram"}, "animation": {"type": "atom_structure", "title": "Atom Structure Visualization"}, "quiz": {"question": "How many neutrons are in a ₁₇³⁵Cl atom?", "options": ["A. 17", "B. 18", "C. 35", "D. 52"], "correct": 1, "hint": "Neutrons = Mass Number (A) − Atomic Number (Z)", "explanation": "For ₁₇³⁵Cl: neutrons = 35 − 17 = 18. The mass number is the sum of protons and neutrons in the nucleus."}, "videos": [{"src": "videos/ch01/khan_p01_p1.mp4", "title": "Elements & Atoms (1/3)"}, {"src": "videos/ch01/khan_p01_p2.mp4", "title": "Elements & Atoms (2/3)"}, {"src": "videos/ch01/khan_p01_p3.mp4", "title": "Elements & Atoms (3/3)"}, {"src": "videos/ch01/khan_p02_p1.mp4", "title": "Intro to Atoms (1/5)"}, {"src": "videos/ch01/khan_p02_p2.mp4", "title": "Intro to Atoms (2/5)"}, {"src": "videos/ch01/khan_p02_p3.mp4", "title": "Intro to Atoms (3/5)"}, {"src": "videos/ch01/khan_p02_p4.mp4", "title": "Intro to Atoms (4/5)"}, {"src": "videos/ch01/khan_p02_p5.mp4", "title": "Intro to Atoms (5/5)"}]}, {"id": "ch01_L2", "level_num": 2, "topic_id": "ch01_t02", "title": "Isotopes & Relative Atomic Mass", "emoji": "⚗️", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Isotopes</strong> are atoms of the same element (same number of protons) but with different numbers of neutrons — so they have different mass numbers.", "examples": [{"symbol": "¹H", "name": "Protium", "p": 1, "n": 0, "note": "Most common hydrogen"}, {"symbol": "²H (D)", "name": "Deuterium", "p": 1, "n": 1, "note": "Heavy hydrogen"}, {"symbol": "³H (T)", "name": "Tritium", "p": 1, "n": 2, "note": "Radioactive, unstable"}], "formula": "Aᵣ = Σ(mass × relative abundance) / Σ(relative abundances)", "formula_example": "Example: Cl has ³⁵Cl (75%) and ³⁷Cl (25%) → Aᵣ = (35×75 + 37×25) / 100 = 35.5", "tip": "The 'r' in Aᵣ stands for 'relative'. Aᵣ has NO units — it's just a ratio compared to carbon-12.", "memory": "Isotopes = same Z, different A. They behave the same chemically (same electrons) but have different masses!"}, "diagram": {"type": "isotopes", "title": "Hydrogen Isotopes"}, "animation": {"type": "isotopes_comparison", "title": "Isotopes Comparison"}, "quiz": {"question": "Bromine has two isotopes: ⁷⁹Br (50%) and ⁸¹Br (50%). What is the relative atomic mass?", "options": ["A. 79", "B. 80", "C. 81", "D. 160"], "correct": 1, "hint": "Apply the formula: Aᵣ = (mass₁ × abundance₁ + mass₂ × abundance₂) / total abundance", "explanation": "Aᵣ = (79 × 50 + 81 × 50) / 100 = (3950 + 4050) / 100 = 80. Notice that 50%+50%=100%, so it's simply the average of 79 and 81."}, "videos": []}, {"id": "ch01_L3", "level_num": 3, "topic_id": "ch01_t03", "title": "Mass Spectrometry", "emoji": "📊", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "A <strong>mass spectrometer</strong> is a powerful tool that measures the mass and abundance of isotopes with incredible precision. It can find exact isotopic masses and calculate Aᵣ.", "steps": [{"num": 1, "name": "Vaporisation", "desc": "Sample is turned into a gas"}, {"num": 2, "name": "Ionisation", "desc": "High-energy electrons knock off one electron → M⁺ ions"}, {"num": 3, "name": "Acceleration", "desc": "Electric field speeds up all ions to the same kinetic energy"}, {"num": 4, "name": "Deflection", "desc": "Magnetic field bends ion paths — lighter ions (low m/z) deflect MORE"}, {"num": 5, "name": "Detection", "desc": "Ions arrive at detector, creating peaks on the mass spectrum"}], "tip": "Acceleration uses an ELECTRIC field. Deflection uses a MAGNETIC field. Different forces, different jobs!", "memory": "The mass spectrum shows: x-axis = m/z (mass/charge ratio), y-axis = relative abundance (%). Each peak is one isotope.", "formula": "m/z = mass / charge. Since most ions are singly charged (+1), m/z ≈ mass number."}, "diagram": {"type": "mass_spec", "title": "Mass Spectrometer Diagram"}, "quiz": {"question": "In a mass spectrometer, which field is used to deflect ions?", "options": ["A. Electric field only", "B. Magnetic field only", "C. Both electric and magnetic fields", "D. Gravitational field"], "correct": 1, "hint": "Remember: acceleration = electric field. Deflection = ?", "explanation": "The ELECTRIC field accelerates ions (Step 3). The MAGNETIC field deflects them (Step 4). These are two separate, sequential processes. Step 4 deflection separates ions by their m/z ratio."}, "animation": {"type": "mass_spec_flow", "title": "Mass Spectrometer Workflow"}, "videos": []}, {"id": "ch01_L4", "level_num": 4, "topic_id": "ch01_t04", "title": "Electron Configuration & Orbitals", "emoji": "🌌", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "Electrons don't orbit the nucleus like planets! Instead, they occupy regions called <strong>orbitals</strong> — where each orbital can hold a maximum of 2 electrons.", "orbital_types": [{"type": "s", "shape": "Spherical", "count": "1 orbital, 2 e⁻", "color": "#ef4444"}, {"type": "p", "shape": "Dumbbell (two lobes)", "count": "3 orbitals (px, py, pz), 6 e⁻", "color": "#3b82f6"}, {"type": "d", "shape": "Complex (4 or more lobes)", "count": "5 orbitals, 10 e⁻", "color": "#eab308"}], "fill_order": "1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → ...", "fill_note": "⚠️ 4s fills BEFORE 3d (lower energy). But 3d is emptied before 4s in transition metals!", "hunds_rule": "When filling orbitals of the same energy (like the 3 p orbitals), electrons go into EMPTY orbitals FIRST, with parallel spins.", "example": "Nitrogen (Z=7): 1s² 2s² 2p³. The 3 p electrons each go into a separate p orbital (Hund's Rule).", "tip": "The filling order follows the diagonal rule — trace diagonals from top-right to bottom-left on your subshell energy diagram."}, "diagram": {"type": "orbitals", "title": "Orbital Shapes & Filling Order"}, "quiz": {"question": "Which of the following is the correct electron configuration for nitrogen (Z=7)?", "options": ["A. 1s² 2s² 2p³", "B. 1s² 2s³ 2p²", "C. 1s² 2p⁵", "D. 1s³ 2s² 2p²"], "correct": 0, "hint": "Count electrons: Z=7 means 7 electrons total. Fill in order: 1s (2), then 2s (2), remaining electrons go to 2p.", "explanation": "Filling: 1s² (2 e⁻) + 2s² (2 e⁻) + 2p³ (3 e⁻) = 7 electrons total. The notation shows how many electrons are in each subshell."}, "animation": {"type": "orbital_filling", "title": "Orbital Filling Order"}, "videos": [{"src": "videos/ch01/khan_p03_orbitals.mp4", "title": "🎬 Electron Orbitals (13:27)"}, {"src": "videos/ch01/khan_p04_orbitals2.mp4", "title": "🎬 Electron Orbitals cont. (13:37)"}, {"src": "videos/ch01/khan_p05_e_config.mp4", "title": "🎬 Electron Configuration (10:17)"}, {"src": "videos/ch01/khan_p06_e_config2.mp4", "title": "🎬 Electron Configuration 2 (10:19)"}]}, {"id": "ch01_L5", "level_num": 5, "topic_id": "ch01_t05", "title": "Ionisation Energies", "emoji": "⚡", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>First ionisation energy (IE₁)</strong> is the energy needed to remove one electron from one mole of gaseous atoms.", "equation": "X(g) → X⁺(g) + e⁻", "trend_period": "Across a period (left → right): IE generally INCREASES because nuclear charge increases, pulling electrons closer.", "trend_group": "Down a group: IE DECREASES because inner electron shells increase (more shielding), and outer electrons are farther from the nucleus.", "exceptions": [{"group": "Group 3 (B, Al...)", "reason": "Electron enters a new p subshell (2p vs 2s) — higher energy, easier to remove"}, {"group": "Group 6 (O, S...)", "reason": "Electron pairing in a p orbital causes repulsion — one electron is easier to remove"}], "successive_ie": "Each successive IE is larger than the previous. A BIG JUMP indicates all electrons in one shell have been removed — revealing how many outer electrons the atom has.", "tip": "The position of the big jump tells you the GROUP number! If IE₂→IE₃ is the big jump, the atom has 2 outer electrons = Group 2.", "example": "Na has tiny IE₁, then a MASSIVE jump to IE₂. This proves Na has 1 outer electron (Group 1)."}, "diagram": {"type": "ie_trend", "title": "Ionisation Energy Trends"}, "quiz": {"question": "Successive ionisation energies (kJ mol⁻¹): 590, 1145, 4912, 6474... Which group is this element in?", "options": ["A. Group 1", "B. Group 2", "C. Group 3", "D. Group 4"], "correct": 1, "hint": "Look at where the BIG jump happens. The jump = from the last outer electron to the first inner electron.", "explanation": "590→1145 (small jump) = removing outer electrons. 1145→4912 (BIG jump!) = all outer electrons gone. Two outer electrons = Group 2. The massive jump is because electrons in a lower shell are much harder to remove."}, "animation": {"type": "ie_trend", "title": "Ionisation Energy Trends (Period 2)"}, "videos": [{"src": "videos/ch01/khan_p07_valence.mp4", "title": "🎬 Valence Electrons (14:12)"}, {"src": "videos/ch01/khan_p09_ie.mp4", "title": "🎬 Ionization Energy (10:17)"}]}, {"id": "ch01_L6", "level_num": 6, "topic_id": "ch01_t06", "title": "Atomic Emission Spectra", "emoji": "🌈", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "When atoms absorb energy (heat or electricity), electrons jump to <strong>excited states</strong>. When they fall back down, they release energy as <strong>light (photons)</strong>.", "equation": "ΔE = hf = hc/λ", "why_line_spectrum": "Unlike white light (continuous), atoms produce LINE spectra. Why? Because electrons can ONLY exist at specific energy levels — quantum theory! They can only make specific jumps, releasing specific photon energies.", "series": [{"name": "Lyman Series", "to": "n=1", "region": "UV (ultraviolet)", "example": "Far UV, invisible to us"}, {"name": "Balmer Series", "to": "n=2", "region": "Visible light", "example": "The colors we can see!"}, {"name": "Paschen Series", "to": "n=3", "region": "IR (infrared)", "example": "Below visible red"}], "tip": "Balmer series (n→2) is special because it produces VISIBLE light — red, blue-green, blue, violet. These are the lines you see in hydrogen's emission spectrum.", "memory": "Think of the energy levels like steps on a staircase. Electrons can only stand on steps, not between them. When they jump down, they release exactly the energy difference between those two steps."}, "diagram": {"type": "emission_spectrum", "title": "Hydrogen Energy Levels & Emission Series"}, "quiz": {"question": "Which series of hydrogen's emission spectrum corresponds to visible light?", "options": ["A. Lyman series", "B. Balmer series", "C. Paschen series", "D. All of the above"], "correct": 1, "hint": "Remember: Lyman (UV), Balmer (Visible), Paschen (IR) — think of the electromagnetic spectrum from left to right.", "explanation": "Balmer series: electrons falling to n=2. The energy differences at this level correspond to visible wavelengths (400-700nm). Lyman is UV (higher energy), Paschen is IR (lower energy)."}, "animation": {"type": "emission_spectrum", "title": "Hydrogen Energy Levels & Emission Spectrum"}, "videos": [{"src": "videos/ch01/khan_p08_groups.mp4", "title": "🎬 Groups in Periodic Table (11:50)"}, {"src": "videos/ch01/khan_p10_en.mp4", "title": "🎬 Electronegativity (16:14)"}]}]}, "ch03": {"id": "ch03", "title": "Atoms, Molecules & Stoichiometry", "chapter_num": "3", "emoji": "⚗️", "color": "#0891b2", "total_xp": 510, "badge_id": "ch03_champion", "levels": [{"id": "ch03_L1", "level_num": 1, "topic_id": "ch03_t01", "title": "Relative Masses (Ar, Mr)", "emoji": "⚖️", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "To compare masses of atoms, we use <strong>relative</strong> scales — no units! <strong>Ar</strong> (relative atomic mass) compares a single atom to carbon-12. <strong>Mr</strong> (relative molecular mass) is the sum of Ar for all atoms in a molecule.", "key_formula": "Ar = mass of one atom / (mass of one carbon-12 atom / 12)", "formula": "Mr = sum of (Ar × number of atoms)", "formula_example": "H₂SO₄: Mr = (1×2) + (32×1) + (16×4) = 98", "tip": "Ar has NO units — it's a ratio. Think of it like a 'score' comparing atoms to carbon-12.", "memory": "⚠️ Don't confuse Ar (one element) with Mr (whole molecule)!"}, "diagram": {"type": "relative_mass", "title": "Ar vs Mr"}, "quiz": {"question": "What is the Mr of CO₂? (Ar: C=12, O=16)", "options": ["A. 28", "B. 44", "C. 40", "D. 32"], "correct": 1, "hint": "Mr = Ar(C) + 2 × Ar(O)", "explanation": "Mr(CO₂) = 12 + 2(16) = 12 + 32 = 44. One carbon atom plus two oxygen atoms."}}, {"id": "ch03_L2", "level_num": 2, "topic_id": "ch03_t02", "title": "The Mole & Avogadro", "emoji": "🧮", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "The <strong>mole (mol)</strong> is a count — like a 'dozen' but astronomically larger. <strong>Avogadro's constant</strong> (NA = 6.02 × 10²³ mol⁻¹) tells us exactly how many particles are in one mole. Mass (m), molar mass (M), and moles (n) are linked by the most important formula in chemistry.", "formula": "n = m / M   (moles = mass / molar mass)", "formula_example": "n = 98g / 98 g mol⁻¹ = 1 mol of H₂SO₄", "avogadro": "1 mol = 6.02 × 10²³ particles (atoms, molecules, ions, electrons)", "tip": "M (molar mass) has the SAME numerical value as Mr, but units g mol⁻¹. M = Mr g/mol by definition!", "memory": "Molar mass M (g mol⁻¹) = Mr × 1 g/mol. So M and Mr have the same number but different units!"}, "diagram": {"type": "mole_concept", "title": "The Mole"}, "quiz": {"question": "How many moles are in 36g of water? (Mr H₂O = 18)?", "options": ["A. 0.5 mol", "B. 1 mol", "C. 2 mol", "D. 3 mol"], "correct": 2, "hint": "n = m / M = 36 / 18", "explanation": "n = m/M = 36g / 18 g mol⁻¹ = 2 mol. Simple division — the key formula n = m/M is the most-used in ch03!"}}, {"id": "ch03_L3", "level_num": 3, "topic_id": "ch03_t03", "title": "Empirical & Molecular Formulae", "emoji": "🧩", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Empirical formula</strong> = simplest whole-number ratio of atoms. <strong>Molecular formula</strong> = actual number of atoms. To find empirical: convert % to moles → divide by smallest → round to whole numbers. Molecular = n × empirical, where n = Mr(molecular) / Mr(empirical).", "formula": "Empirical → divide each % by Ar → divide by smallest → whole numbers", "formula_example": "C₆H₁₂O₆ → empirical = CH₂O (divide by 6)", "molecular_n": "n = Mr(molecular) / Mr(empirical)", "molecular_example": "Empirical CH₂O, Mr=60 → molecular = 2 × CH₂O = C₂H₄O₂", "tip": "If a question gives % composition by mass, start by assuming 100g total — then % becomes grams directly!", "memory": "Empirical = 'EGG-splest ratio' 📐. Molecular = actual number in one molecule. Start with % → moles → ratio → empirical."}, "diagram": {"type": "formula_conversion", "title": "Empirical ↔ Molecular"}, "quiz": {"question": "A compound is 40% C, 6.7% H, 53.3% O. What is its empirical formula? (Ar: C=12, H=1, O=16)?", "options": ["A. C₂H₂O₂", "B. C₂H₄O₂", "C. CH₂O", "D. C₃H₆O₃"], "correct": 2, "hint": "Assume 100g: C=40g, H=6.7g, O=53.3g → divide by Ar → divide by smallest", "explanation": "C: 40/12=3.33, H: 6.7/1=6.7, O: 53.3/16=3.33 → divide all by 3.33 → C₁H₂O₁ = CH₂O"}}, {"id": "ch03_L4", "level_num": 4, "topic_id": "ch03_t04", "title": "Molar Gas Volumes", "emoji": "💨", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "Gases at the <strong>same temperature and pressure</strong> contain the same number of molecules per unit volume. At RTP (25°C, 100 kPa): <strong>Vm = 24.0 dm³ mol⁻¹</strong>. At STP (0°C, 100 kPa): Vm = 22.7 dm³ mol⁻¹. The <strong>ideal gas equation</strong> handles any condition.", "formula": "pV = nRT  (pressure × volume = moles × R × temperature)", "variables": "p in Pa, V in m³, T in K, R = 8.314 J mol⁻¹ K⁻¹, n in mol", "molar_volumes": "RTP: 24.0 dm³ mol⁻¹ (25°C, 100 kPa) | STP: 22.7 dm³ mol⁻¹ (0°C, 100 kPa)", "tip": "⚠️ V in dm³ for molar volume: V (dm³) = n × 24. But convert to m³ for pV = nRT! 1 dm³ = 1×10⁻³ m³", "memory": "24 at RTP, 22.7 at STP. 25°C=298K, 0°C=273K. Gas volume questions = n × Vm = m/M × Vm."}, "diagram": {"type": "gas_equations", "title": "Gas Volume Equations"}, "quiz": {"question": "What volume does 2 mol of gas occupy at RTP? (Vm = 24.0 dm³ mol⁻¹)?", "options": ["A. 12.0 dm³", "B. 24.0 dm³", "C. 48.0 dm³", "D. 96.0 dm³"], "correct": 2, "hint": "V = n × Vm", "explanation": "V = 2 mol × 24.0 dm³ mol⁻¹ = 48.0 dm³. The molar volume × moles = gas volume!"}}, {"id": "ch03_L5", "level_num": 5, "topic_id": "ch03_t05", "title": "Solutions & Concentrations", "emoji": "🧪", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Concentration (c)</strong> = moles of solute per volume of solution. <strong>Molarity (M)</strong> in mol dm⁻³ = mol / dm³. Dilution formula: c₁V₁ = c₂V₂ (moles stay the same). Titration: at equivalence, moles acid = stoichiometric ratio × moles base.", "formula": "c = n / V   (concentration = moles / volume in dm³)", "dilution": "c₁V₁ = c₂V₂ (moles before = moles after)", "dilution_example": "10 cm³ of 2 mol dm⁻³ HCl diluted to 100 cm³ → c₂ = 10×2/100 = 0.2 mol dm⁻³", "tip": "⚠️ Always convert cm³ to dm³: divide by 1000! 25 cm³ = 0.025 dm³. This trips up many students!", "memory": "c = n/V. Dilution: c drops when V increases (same moles in bigger container). Titration: look for equivalence point = equal moles ratio."}, "diagram": {"type": "titration", "title": "Volumetric Analysis"}, "quiz": {"question": "How many moles are in 250 cm³ of 0.5 mol dm⁻³ NaOH solution?", "options": ["A. 0.125 mol", "B. 0.25 mol", "C. 0.5 mol", "D. 2 mol"], "correct": 0, "hint": "n = c × V, but convert 250 cm³ to dm³ first", "explanation": "V = 250/1000 = 0.25 dm³. n = 0.5 × 0.25 = 0.125 mol. Remember: cm³ → dm³ ÷ 1000!"}}, {"id": "ch03_L6", "level_num": 6, "topic_id": "ch03_t06", "title": "Stoichiometric Calculations", "emoji": "⚖️", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Stoichiometry</strong> = using balanced equations to find amounts. Key steps: (1) Write balanced equation. (2) Convert given mass to moles (÷ M). (3) Use mole ratio from equation. (4) Convert back to mass (× M) or volume.", "formula": "Balanced equation: aA + bB → cC\nMole ratio: nA : nB : nC = a : b : c", "step_guide": "1. m → n (÷M). 2. Use ratio. 3. n → mass/volume (×M or ×24).", "tip": "Always check your mole ratio from the balanced equation's coefficients — NOT from eyeballing!", "memory": "The 'golden path': grams → moles → ratio → grams/mol/vol. Every stoichiometry question follows this route!"}, "diagram": {"type": "stoich_flow", "title": "Stoichiometry Flow"}, "quiz": {"question": "2H₂ + O₂ → 2H₂O. How many moles of H₂O from 4 mol H₂?", "options": ["A. 1 mol", "B. 2 mol", "C. 4 mol", "D. 8 mol"], "correct": 2, "hint": "Ratio H₂ : H₂O = 2 : 2 = 1 : 1", "explanation": "From the equation: 2 mol H₂ produces 2 mol H₂O. Ratio is 1:1, so 4 mol H₂ → 4 mol H₂O."}}, {"id": "ch03_L7", "level_num": 7, "topic_id": "ch03_t07", "title": "Limiting Reagent & Yield", "emoji": "🎯", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Limiting reagent</strong> = reactant that runs out first, stopping the reaction. Find it by dividing moles of each reactant by its coefficient — the smallest result is limiting. <strong>% yield</strong> measures efficiency. <strong>Atom economy</strong> measures 'greenness' — how much product contains desired atoms.", "limiting_method": "1. Calculate moles of each reactant. 2. Divide by stoichiometric coefficient. 3. Smallest value = limiting reagent.", "yield": "% yield = (actual yield / theoretical yield) × 100%", "yield_example": "Theoretical = 10g, Actual = 8g → % yield = 80%", "atom_economy": "Atom economy = (Mr of desired product / total Mr of all products) × 100%", "atom_economy_example": "N₂ + 3H₂ → 2NH₃: Mr(NH₃)=17, total products=34 → economy = 2×17/34×100 = 100% (all atoms in product)", "tip": "Theoretical yield is calculated from the LIMITING REAGENT — never from the excess!", "memory": "Limiting = 'the one that runs out first' — divide moles by coefficient. Yield = actual/theoretical. Atom economy = 'green' measure of how much ends up in product."}, "diagram": {"type": "limiting_yield", "title": "Limiting Reagent & Yield"}, "quiz": {"question": "N₂ + 3H₂ → 2NH₃. If 1 mol N₂ and 3 mol H₂ react in exact ratio, and 0.8 mol NH₃ is obtained, what is the % yield?", "options": ["A. 40%", "B. 60%", "C. 80%", "D. 100%"], "correct": 0, "hint": "Theoretical NH₃ = 2 mol (from equation). % yield = (actual/theoretical) × 100%", "explanation": "Exact 1:3 ratio → neither limiting. Theoretical = 2 mol NH₃. % yield = (0.8/2)×100 = 40%. Actual < theoretical is normal: side reactions, incomplete conversion, product loss during handling."}}]}}, "badges": [{"id": "first_atom", "name": "First Atom", "emoji": "🔬", "condition": "Complete Level 1"}, {"id": "nucleus_master", "name": "Nucleus Master", "emoji": "⚛️", "condition": "Complete Levels 1–3"}, {"id": "electron_wizard", "name": "Electron Wizard", "emoji": "🌟", "condition": "Complete Level 4"}, {"id": "ch01_champion", "name": "Ch01 Champion", "emoji": "🏆", "condition": "Complete all 6 levels"}, {"id": "streak_3", "name": "3-Day Streak", "emoji": "🔥", "condition": "Learn for 3 consecutive days"}, {"id": "perfect_run", "name": "Perfect Run", "emoji": "⚡", "condition": "All quiz questions answered correctly on first try"}, {"id": "ch03_first_mole", "name": "First Mole", "emoji": "🧮", "condition": "Complete Level 1 (Relative Masses)", "chapter": "ch03"}, {"id": "ch03_stoich_master", "name": "Stoich Master", "emoji": "⚖️", "condition": "Complete Levels 1-3", "chapter": "ch03"}, {"id": "ch03_solution_skill", "name": "Solution Skill", "emoji": "🧪", "condition": "Complete Level 5 (Solutions)", "chapter": "ch03"}, {"id": "ch03_champion", "name": "Ch03 Champion", "emoji": "🏆", "condition": "Complete all 7 levels", "chapter": "ch03"}, {"id": "ch03_yield_expert", "name": "Yield Expert", "emoji": "🎯", "condition": "Complete Level 7 (Limiting Reagent & Yield)", "chapter": "ch03"}], "xp_rules": {"per_level_complete": 40, "chapter_complete_bonus": 100, "streak_3_day_bonus": 50}};
+var LEARN_DB_CACHE = {"chapters": {"ch01": {"id": "ch01", "title": "Atomic Structure & Electrons in Atoms", "chapter_num": "1~2", "emoji": "⚛️", "color": "#7c3aed", "total_xp": 430, "badge_id": "ch01_champion", "levels": [{"id": "ch01_L1", "level_num": 1, "topic_id": "ch01_t01", "title": "Protons, Neutrons & Electrons", "emoji": "🔬", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "Everything in the universe is made of tiny particles called <strong>atoms</strong>. Atoms themselves are made of three even smaller particles: <strong>protons</strong>, <strong>neutrons</strong>, and <strong>electrons</strong>.", "key_table": {"headers": ["Particle", "Location", "Rel. Mass", "Charge"], "rows": [["Proton (p⁺)", "Inside nucleus", "1", "+1"], ["Neutron (n⁰)", "Inside nucleus", "1", "0"], ["Electron (e⁻)", "Outside nucleus", "1/1840", "−1"]]}, "tip": "Atomic Number (Z) = number of protons = number of electrons (in a neutral atom). Mass Number (A) = protons + neutrons.", "memory": "⚠️ Electrons are SO light (1/1840 of a proton) that we often ignore their mass when calculating mass number!", "analogy": "Think of an atom like a tiny solar system: the nucleus is the Sun (tiny but heavy), electrons are planets orbiting around it."}, "diagram": {"type": "atom_structure", "title": "Atom Structure Diagram"}, "animation": {"type": "atom_structure", "title": "Atom Structure Visualization"}, "quiz": {"question": "How many neutrons are in a ₁₇³⁵Cl atom?", "options": ["A. 17", "B. 18", "C. 35", "D. 52"], "correct": 1, "hint": "Neutrons = Mass Number (A) − Atomic Number (Z)", "explanation": "For ₁₇³⁵Cl: neutrons = 35 − 17 = 18. The mass number is the sum of protons and neutrons in the nucleus."}, "videos": [{"src": "videos/ch01/khan_p01_elements_atoms_p1.mp4", "title": "Elements & Atoms (1/3)"}, {"src": "videos/ch01/khan_p01_elements_atoms_p2.mp4", "title": "Elements & Atoms (2/3)"}, {"src": "videos/ch01/khan_p01_elements_atoms_p3.mp4", "title": "Elements & Atoms (3/3)"}, {"src": "videos/ch01/khan_p02_atoms_intro_p1.mp4", "title": "Intro to Atoms (1/5)"}, {"src": "videos/ch01/khan_p02_atoms_intro_p2.mp4", "title": "Intro to Atoms (2/5)"}, {"src": "videos/ch01/khan_p02_atoms_intro_p3.mp4", "title": "Intro to Atoms (3/5)"}, {"src": "videos/ch01/khan_p02_atoms_intro_p4.mp4", "title": "Intro to Atoms (4/5)"}, {"src": "videos/ch01/khan_p02_atoms_intro_p5.mp4", "title": "Intro to Atoms (5/5)"}]}, {"id": "ch01_L2", "level_num": 2, "topic_id": "ch01_t02", "title": "Isotopes & Relative Atomic Mass", "emoji": "⚗️", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Isotopes</strong> are atoms of the same element (same number of protons) but with different numbers of neutrons — so they have different mass numbers.", "examples": [{"symbol": "¹H", "name": "Protium", "p": 1, "n": 0, "note": "Most common hydrogen"}, {"symbol": "²H (D)", "name": "Deuterium", "p": 1, "n": 1, "note": "Heavy hydrogen"}, {"symbol": "³H (T)", "name": "Tritium", "p": 1, "n": 2, "note": "Radioactive, unstable"}], "formula": "Aᵣ = Σ(mass × relative abundance) / Σ(relative abundances)", "formula_example": "Example: Cl has ³⁵Cl (75%) and ³⁷Cl (25%) → Aᵣ = (35×75 + 37×25) / 100 = 35.5", "tip": "The 'r' in Aᵣ stands for 'relative'. Aᵣ has NO units — it's just a ratio compared to carbon-12.", "memory": "Isotopes = same Z, different A. They behave the same chemically (same electrons) but have different masses!"}, "diagram": {"type": "isotopes", "title": "Hydrogen Isotopes"}, "animation": {"type": "isotopes_comparison", "title": "Isotopes Comparison"}, "quiz": {"question": "Bromine has two isotopes: ⁷⁹Br (50%) and ⁸¹Br (50%). What is the relative atomic mass?", "options": ["A. 79", "B. 80", "C. 81", "D. 160"], "correct": 1, "hint": "Apply the formula: Aᵣ = (mass₁ × abundance₁ + mass₂ × abundance₂) / total abundance", "explanation": "Aᵣ = (79 × 50 + 81 × 50) / 100 = (3950 + 4050) / 100 = 80. Notice that 50%+50%=100%, so it's simply the average of 79 and 81."}, "videos": []}, {"id": "ch01_L3", "level_num": 3, "topic_id": "ch01_t03", "title": "Mass Spectrometry", "emoji": "📊", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "A <strong>mass spectrometer</strong> is a powerful tool that measures the mass and abundance of isotopes with incredible precision. It can find exact isotopic masses and calculate Aᵣ.", "steps": [{"num": 1, "name": "Vaporisation", "desc": "Sample is turned into a gas"}, {"num": 2, "name": "Ionisation", "desc": "High-energy electrons knock off one electron → M⁺ ions"}, {"num": 3, "name": "Acceleration", "desc": "Electric field speeds up all ions to the same kinetic energy"}, {"num": 4, "name": "Deflection", "desc": "Magnetic field bends ion paths — lighter ions (low m/z) deflect MORE"}, {"num": 5, "name": "Detection", "desc": "Ions arrive at detector, creating peaks on the mass spectrum"}], "tip": "Acceleration uses an ELECTRIC field. Deflection uses a MAGNETIC field. Different forces, different jobs!", "memory": "The mass spectrum shows: x-axis = m/z (mass/charge ratio), y-axis = relative abundance (%). Each peak is one isotope.", "formula": "m/z = mass / charge. Since most ions are singly charged (+1), m/z ≈ mass number."}, "diagram": {"type": "mass_spec", "title": "Mass Spectrometer Diagram"}, "quiz": {"question": "In a mass spectrometer, which field is used to deflect ions?", "options": ["A. Electric field only", "B. Magnetic field only", "C. Both electric and magnetic fields", "D. Gravitational field"], "correct": 1, "hint": "Remember: acceleration = electric field. Deflection = ?", "explanation": "The ELECTRIC field accelerates ions (Step 3). The MAGNETIC field deflects them (Step 4). These are two separate, sequential processes. Step 4 deflection separates ions by their m/z ratio."}, "animation": {"type": "mass_spec_flow", "title": "Mass Spectrometer Workflow"}, "videos": []}, {"id": "ch01_L4", "level_num": 4, "topic_id": "ch01_t04", "title": "Electron Configuration & Orbitals", "emoji": "🌌", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "Electrons don't orbit the nucleus like planets! Instead, they occupy regions called <strong>orbitals</strong> — where each orbital can hold a maximum of 2 electrons.", "orbital_types": [{"type": "s", "shape": "Spherical", "count": "1 orbital, 2 e⁻", "color": "#ef4444"}, {"type": "p", "shape": "Dumbbell (two lobes)", "count": "3 orbitals (px, py, pz), 6 e⁻", "color": "#3b82f6"}, {"type": "d", "shape": "Complex (4 or more lobes)", "count": "5 orbitals, 10 e⁻", "color": "#eab308"}], "fill_order": "1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → ...", "fill_note": "⚠️ 4s fills BEFORE 3d (lower energy). But 3d is emptied before 4s in transition metals!", "hunds_rule": "When filling orbitals of the same energy (like the 3 p orbitals), electrons go into EMPTY orbitals FIRST, with parallel spins.", "example": "Nitrogen (Z=7): 1s² 2s² 2p³. The 3 p electrons each go into a separate p orbital (Hund's Rule).", "tip": "The filling order follows the diagonal rule — trace diagonals from top-right to bottom-left on your subshell energy diagram."}, "diagram": {"type": "orbitals", "title": "Orbital Shapes & Filling Order"}, "quiz": {"question": "Which of the following is the correct electron configuration for nitrogen (Z=7)?", "options": ["A. 1s² 2s² 2p³", "B. 1s² 2s³ 2p²", "C. 1s² 2p⁵", "D. 1s³ 2s² 2p²"], "correct": 0, "hint": "Count electrons: Z=7 means 7 electrons total. Fill in order: 1s (2), then 2s (2), remaining electrons go to 2p.", "explanation": "Filling: 1s² (2 e⁻) + 2s² (2 e⁻) + 2p³ (3 e⁻) = 7 electrons total. The notation shows how many electrons are in each subshell."}, "animation": {"type": "orbital_filling", "title": "Orbital Filling Order"}, "videos": [{"src": "videos/ch01/khan_p03_orbitals.mp4", "title": "🎬 Electron Orbitals (13:27)"}, {"src": "videos/ch01/khan_p04_orbitals2.mp4", "title": "🎬 Electron Orbitals cont. (13:37)"}, {"src": "videos/ch01/khan_p05_e_config.mp4", "title": "🎬 Electron Configuration (10:17)"}, {"src": "videos/ch01/khan_p06_e_config2.mp4", "title": "🎬 Electron Configuration 2 (10:19)"}]}, {"id": "ch01_L5", "level_num": 5, "topic_id": "ch01_t05", "title": "Ionisation Energies", "emoji": "⚡", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>First ionisation energy (IE₁)</strong> is the energy needed to remove one electron from one mole of gaseous atoms.", "equation": "X(g) → X⁺(g) + e⁻", "trend_period": "Across a period (left → right): IE generally INCREASES because nuclear charge increases, pulling electrons closer.", "trend_group": "Down a group: IE DECREASES because inner electron shells increase (more shielding), and outer electrons are farther from the nucleus.", "exceptions": [{"group": "Group 3 (B, Al...)", "reason": "Electron enters a new p subshell (2p vs 2s) — higher energy, easier to remove"}, {"group": "Group 6 (O, S...)", "reason": "Electron pairing in a p orbital causes repulsion — one electron is easier to remove"}], "successive_ie": "Each successive IE is larger than the previous. A BIG JUMP indicates all electrons in one shell have been removed — revealing how many outer electrons the atom has.", "tip": "The position of the big jump tells you the GROUP number! If IE₂→IE₃ is the big jump, the atom has 2 outer electrons = Group 2.", "example": "Na has tiny IE₁, then a MASSIVE jump to IE₂. This proves Na has 1 outer electron (Group 1)."}, "diagram": {"type": "ie_trend", "title": "Ionisation Energy Trends"}, "quiz": {"question": "Successive ionisation energies (kJ mol⁻¹): 590, 1145, 4912, 6474... Which group is this element in?", "options": ["A. Group 1", "B. Group 2", "C. Group 3", "D. Group 4"], "correct": 1, "hint": "Look at where the BIG jump happens. The jump = from the last outer electron to the first inner electron.", "explanation": "590→1145 (small jump) = removing outer electrons. 1145→4912 (BIG jump!) = all outer electrons gone. Two outer electrons = Group 2. The massive jump is because electrons in a lower shell are much harder to remove."}, "animation": {"type": "ie_trend", "title": "Ionisation Energy Trends (Period 2)"}, "videos": [{"src": "videos/ch01/khan_p07_valence.mp4", "title": "🎬 Valence Electrons (14:12)"}, {"src": "videos/ch01/khan_p09_ie.mp4", "title": "🎬 Ionization Energy (10:17)"}]}, {"id": "ch01_L6", "level_num": 6, "topic_id": "ch01_t06", "title": "Atomic Emission Spectra", "emoji": "🌈", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "When atoms absorb energy (heat or electricity), electrons jump to <strong>excited states</strong>. When they fall back down, they release energy as <strong>light (photons)</strong>.", "equation": "ΔE = hf = hc/λ", "why_line_spectrum": "Unlike white light (continuous), atoms produce LINE spectra. Why? Because electrons can ONLY exist at specific energy levels — quantum theory! They can only make specific jumps, releasing specific photon energies.", "series": [{"name": "Lyman Series", "to": "n=1", "region": "UV (ultraviolet)", "example": "Far UV, invisible to us"}, {"name": "Balmer Series", "to": "n=2", "region": "Visible light", "example": "The colors we can see!"}, {"name": "Paschen Series", "to": "n=3", "region": "IR (infrared)", "example": "Below visible red"}], "tip": "Balmer series (n→2) is special because it produces VISIBLE light — red, blue-green, blue, violet. These are the lines you see in hydrogen's emission spectrum.", "memory": "Think of the energy levels like steps on a staircase. Electrons can only stand on steps, not between them. When they jump down, they release exactly the energy difference between those two steps."}, "diagram": {"type": "emission_spectrum", "title": "Hydrogen Energy Levels & Emission Series"}, "quiz": {"question": "Which series of hydrogen's emission spectrum corresponds to visible light?", "options": ["A. Lyman series", "B. Balmer series", "C. Paschen series", "D. All of the above"], "correct": 1, "hint": "Remember: Lyman (UV), Balmer (Visible), Paschen (IR) — think of the electromagnetic spectrum from left to right.", "explanation": "Balmer series: electrons falling to n=2. The energy differences at this level correspond to visible wavelengths (400-700nm). Lyman is UV (higher energy), Paschen is IR (lower energy)."}, "animation": {"type": "emission_spectrum", "title": "Hydrogen Energy Levels & Emission Spectrum"}, "videos": [{"src": "videos/ch01/khan_p08_groups.mp4", "title": "🎬 Groups in Periodic Table (11:50)"}, {"src": "videos/ch01/khan_p10_en.mp4", "title": "🎬 Electronegativity (16:14)"}]}]}, "ch03": {"id": "ch03", "title": "Atoms, Molecules & Stoichiometry", "chapter_num": "3", "emoji": "⚗️", "color": "#0891b2", "total_xp": 510, "badge_id": "ch03_champion", "levels": [{"id": "ch03_L1", "level_num": 1, "topic_id": "ch03_t01", "title": "Relative Masses (Ar, Mr)", "emoji": "⚖️", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "To compare masses of atoms, we use <strong>relative</strong> scales — no units! <strong>Ar</strong> (relative atomic mass) compares a single atom to carbon-12. <strong>Mr</strong> (relative molecular mass) is the sum of Ar for all atoms in a molecule.", "key_formula": "Ar = mass of one atom / (mass of one carbon-12 atom / 12)", "formula": "Mr = sum of (Ar × number of atoms)", "formula_example": "H₂SO₄: Mr = (1×2) + (32×1) + (16×4) = 98", "tip": "Ar has NO units — it's a ratio. Think of it like a 'score' comparing atoms to carbon-12.", "memory": "⚠️ Don't confuse Ar (one element) with Mr (whole molecule)!"}, "diagram": {"type": "relative_mass", "title": "Ar vs Mr"}, "quiz": {"question": "What is the Mr of CO₂? (Ar: C=12, O=16)", "options": ["A. 28", "B. 44", "C. 40", "D. 32"], "correct": 1, "hint": "Mr = Ar(C) + 2 × Ar(O)", "explanation": "Mr(CO₂) = 12 + 2(16) = 12 + 32 = 44. One carbon atom plus two oxygen atoms."}}, {"id": "ch03_L2", "level_num": 2, "topic_id": "ch03_t02", "title": "The Mole & Avogadro", "emoji": "🧮", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "The <strong>mole (mol)</strong> is a count — like a 'dozen' but astronomically larger. <strong>Avogadro's constant</strong> (NA = 6.02 × 10²³ mol⁻¹) tells us exactly how many particles are in one mole. Mass (m), molar mass (M), and moles (n) are linked by the most important formula in chemistry.", "formula": "n = m / M   (moles = mass / molar mass)", "formula_example": "n = 98g / 98 g mol⁻¹ = 1 mol of H₂SO₄", "avogadro": "1 mol = 6.02 × 10²³ particles (atoms, molecules, ions, electrons)", "tip": "M (molar mass) has the SAME numerical value as Mr, but units g mol⁻¹. M = Mr g/mol by definition!", "memory": "Molar mass M (g mol⁻¹) = Mr × 1 g/mol. So M and Mr have the same number but different units!"}, "diagram": {"type": "mole_concept", "title": "The Mole"}, "quiz": {"question": "How many moles are in 36g of water? (Mr H₂O = 18)?", "options": ["A. 0.5 mol", "B. 1 mol", "C. 2 mol", "D. 3 mol"], "correct": 2, "hint": "n = m / M = 36 / 18", "explanation": "n = m/M = 36g / 18 g mol⁻¹ = 2 mol. Simple division — the key formula n = m/M is the most-used in ch03!"}}, {"id": "ch03_L3", "level_num": 3, "topic_id": "ch03_t03", "title": "Empirical & Molecular Formulae", "emoji": "🧩", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Empirical formula</strong> = simplest whole-number ratio of atoms. <strong>Molecular formula</strong> = actual number of atoms. To find empirical: convert % to moles → divide by smallest → round to whole numbers. Molecular = n × empirical, where n = Mr(molecular) / Mr(empirical).", "formula": "Empirical → divide each % by Ar → divide by smallest → whole numbers", "formula_example": "C₆H₁₂O₆ → empirical = CH₂O (divide by 6)", "molecular_n": "n = Mr(molecular) / Mr(empirical)", "molecular_example": "Empirical CH₂O, Mr=60 → molecular = 2 × CH₂O = C₂H₄O₂", "tip": "If a question gives % composition by mass, start by assuming 100g total — then % becomes grams directly!", "memory": "Empirical = 'EGG-splest ratio' 📐. Molecular = actual number in one molecule. Start with % → moles → ratio → empirical."}, "diagram": {"type": "formula_conversion", "title": "Empirical ↔ Molecular"}, "quiz": {"question": "A compound is 40% C, 6.7% H, 53.3% O. What is its empirical formula? (Ar: C=12, H=1, O=16)?", "options": ["A. C₂H₂O₂", "B. C₂H₄O₂", "C. CH₂O", "D. C₃H₆O₃"], "correct": 2, "hint": "Assume 100g: C=40g, H=6.7g, O=53.3g → divide by Ar → divide by smallest", "explanation": "C: 40/12=3.33, H: 6.7/1=6.7, O: 53.3/16=3.33 → divide all by 3.33 → C₁H₂O₁ = CH₂O"}}, {"id": "ch03_L4", "level_num": 4, "topic_id": "ch03_t04", "title": "Molar Gas Volumes", "emoji": "💨", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "Gases at the <strong>same temperature and pressure</strong> contain the same number of molecules per unit volume. At RTP (25°C, 100 kPa): <strong>Vm = 24.0 dm³ mol⁻¹</strong>. At STP (0°C, 100 kPa): Vm = 22.7 dm³ mol⁻¹. The <strong>ideal gas equation</strong> handles any condition.", "formula": "pV = nRT  (pressure × volume = moles × R × temperature)", "variables": "p in Pa, V in m³, T in K, R = 8.314 J mol⁻¹ K⁻¹, n in mol", "molar_volumes": "RTP: 24.0 dm³ mol⁻¹ (25°C, 100 kPa) | STP: 22.7 dm³ mol⁻¹ (0°C, 100 kPa)", "tip": "⚠️ V in dm³ for molar volume: V (dm³) = n × 24. But convert to m³ for pV = nRT! 1 dm³ = 1×10⁻³ m³", "memory": "24 at RTP, 22.7 at STP. 25°C=298K, 0°C=273K. Gas volume questions = n × Vm = m/M × Vm."}, "diagram": {"type": "gas_equations", "title": "Gas Volume Equations"}, "quiz": {"question": "What volume does 2 mol of gas occupy at RTP? (Vm = 24.0 dm³ mol⁻¹)?", "options": ["A. 12.0 dm³", "B. 24.0 dm³", "C. 48.0 dm³", "D. 96.0 dm³"], "correct": 2, "hint": "V = n × Vm", "explanation": "V = 2 mol × 24.0 dm³ mol⁻¹ = 48.0 dm³. The molar volume × moles = gas volume!"}}, {"id": "ch03_L5", "level_num": 5, "topic_id": "ch03_t05", "title": "Solutions & Concentrations", "emoji": "🧪", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Concentration (c)</strong> = moles of solute per volume of solution. <strong>Molarity (M)</strong> in mol dm⁻³ = mol / dm³. Dilution formula: c₁V₁ = c₂V₂ (moles stay the same). Titration: at equivalence, moles acid = stoichiometric ratio × moles base.", "formula": "c = n / V   (concentration = moles / volume in dm³)", "dilution": "c₁V₁ = c₂V₂ (moles before = moles after)", "dilution_example": "10 cm³ of 2 mol dm⁻³ HCl diluted to 100 cm³ → c₂ = 10×2/100 = 0.2 mol dm⁻³", "tip": "⚠️ Always convert cm³ to dm³: divide by 1000! 25 cm³ = 0.025 dm³. This trips up many students!", "memory": "c = n/V. Dilution: c drops when V increases (same moles in bigger container). Titration: look for equivalence point = equal moles ratio."}, "diagram": {"type": "titration", "title": "Volumetric Analysis"}, "quiz": {"question": "How many moles are in 250 cm³ of 0.5 mol dm⁻³ NaOH solution?", "options": ["A. 0.125 mol", "B. 0.25 mol", "C. 0.5 mol", "D. 2 mol"], "correct": 0, "hint": "n = c × V, but convert 250 cm³ to dm³ first", "explanation": "V = 250/1000 = 0.25 dm³. n = 0.5 × 0.25 = 0.125 mol. Remember: cm³ → dm³ ÷ 1000!"}}, {"id": "ch03_L6", "level_num": 6, "topic_id": "ch03_t06", "title": "Stoichiometric Calculations", "emoji": "⚖️", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Stoichiometry</strong> = using balanced equations to find amounts. Key steps: (1) Write balanced equation. (2) Convert given mass to moles (÷ M). (3) Use mole ratio from equation. (4) Convert back to mass (× M) or volume.", "formula": "Balanced equation: aA + bB → cC\nMole ratio: nA : nB : nC = a : b : c", "step_guide": "1. m → n (÷M). 2. Use ratio. 3. n → mass/volume (×M or ×24).", "tip": "Always check your mole ratio from the balanced equation's coefficients — NOT from eyeballing!", "memory": "The 'golden path': grams → moles → ratio → grams/mol/vol. Every stoichiometry question follows this route!"}, "diagram": {"type": "stoich_flow", "title": "Stoichiometry Flow"}, "quiz": {"question": "2H₂ + O₂ → 2H₂O. How many moles of H₂O from 4 mol H₂?", "options": ["A. 1 mol", "B. 2 mol", "C. 4 mol", "D. 8 mol"], "correct": 2, "hint": "Ratio H₂ : H₂O = 2 : 2 = 1 : 1", "explanation": "From the equation: 2 mol H₂ produces 2 mol H₂O. Ratio is 1:1, so 4 mol H₂ → 4 mol H₂O."}}, {"id": "ch03_L7", "level_num": 7, "topic_id": "ch03_t07", "title": "Limiting Reagent & Yield", "emoji": "🎯", "xp_learn": 10, "xp_quiz_first": 30, "xp_quiz_retry": 15, "content": {"summary": "<strong>Limiting reagent</strong> = reactant that runs out first, stopping the reaction. Find it by dividing moles of each reactant by its coefficient — the smallest result is limiting. <strong>% yield</strong> measures efficiency. <strong>Atom economy</strong> measures 'greenness' — how much product contains desired atoms.", "limiting_method": "1. Calculate moles of each reactant. 2. Divide by stoichiometric coefficient. 3. Smallest value = limiting reagent.", "yield": "% yield = (actual yield / theoretical yield) × 100%", "yield_example": "Theoretical = 10g, Actual = 8g → % yield = 80%", "atom_economy": "Atom economy = (Mr of desired product / total Mr of all products) × 100%", "atom_economy_example": "N₂ + 3H₂ → 2NH₃: Mr(NH₃)=17, total products=34 → economy = 2×17/34×100 = 100% (all atoms in product)", "tip": "Theoretical yield is calculated from the LIMITING REAGENT — never from the excess!", "memory": "Limiting = 'the one that runs out first' — divide moles by coefficient. Yield = actual/theoretical. Atom economy = 'green' measure of how much ends up in product."}, "diagram": {"type": "limiting_yield", "title": "Limiting Reagent & Yield"}, "quiz": {"question": "N₂ + 3H₂ → 2NH₃. If 1 mol N₂ and 3 mol H₂ react in exact ratio, and 0.8 mol NH₃ is obtained, what is the % yield?", "options": ["A. 40%", "B. 60%", "C. 80%", "D. 100%"], "correct": 0, "hint": "Theoretical NH₃ = 2 mol (from equation). % yield = (actual/theoretical) × 100%", "explanation": "Exact 1:3 ratio → neither limiting. Theoretical = 2 mol NH₃. % yield = (0.8/2)×100 = 40%. Actual < theoretical is normal: side reactions, incomplete conversion, product loss during handling."}}]}}, "badges": [{"id": "first_atom", "name": "First Atom", "emoji": "🔬", "condition": "Complete Level 1"}, {"id": "nucleus_master", "name": "Nucleus Master", "emoji": "⚛️", "condition": "Complete Levels 1–3"}, {"id": "electron_wizard", "name": "Electron Wizard", "emoji": "🌟", "condition": "Complete Level 4"}, {"id": "ch01_champion", "name": "Ch01 Champion", "emoji": "🏆", "condition": "Complete all 6 levels"}, {"id": "streak_3", "name": "3-Day Streak", "emoji": "🔥", "condition": "Learn for 3 consecutive days"}, {"id": "perfect_run", "name": "Perfect Run", "emoji": "⚡", "condition": "All quiz questions answered correctly on first try"}, {"id": "ch03_first_mole", "name": "First Mole", "emoji": "🧮", "condition": "Complete Level 1 (Relative Masses)", "chapter": "ch03"}, {"id": "ch03_stoich_master", "name": "Stoich Master", "emoji": "⚖️", "condition": "Complete Levels 1-3", "chapter": "ch03"}, {"id": "ch03_solution_skill", "name": "Solution Skill", "emoji": "🧪", "condition": "Complete Level 5 (Solutions)", "chapter": "ch03"}, {"id": "ch03_champion", "name": "Ch03 Champion", "emoji": "🏆", "condition": "Complete all 7 levels", "chapter": "ch03"}, {"id": "ch03_yield_expert", "name": "Yield Expert", "emoji": "🎯", "condition": "Complete Level 7 (Limiting Reagent & Yield)", "chapter": "ch03"}], "xp_rules": {"per_level_complete": 40, "chapter_complete_bonus": 100, "streak_3_day_bonus": 50}};
 
 // === VOCABULARY & DEFINITIONS for each knowledge point ===
 var VOCAB_DATA = {

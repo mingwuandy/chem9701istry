@@ -1,0 +1,1296 @@
+{
+  "chapters": {
+    "ch01": {
+      "id": "ch01",
+      "title": "Atomic Structure & Electrons in Atoms",
+      "chapter_num": "1~2",
+      "emoji": "⚛️",
+      "color": "#7c3aed",
+      "total_xp": 430,
+      "badge_id": "ch01_champion",
+      "levels": [
+        {
+          "id": "ch01_L1",
+          "level_num": 1,
+          "topic_id": "ch01_t01",
+          "title": "Protons, Neutrons & Electrons",
+          "emoji": "🔬",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "Everything in the universe is made of tiny particles called <strong>atoms</strong>. Atoms themselves are made of three even smaller particles: <strong>protons</strong>, <strong>neutrons</strong>, and <strong>electrons</strong>.",
+            "key_table": {
+              "headers": [
+                "Particle",
+                "Location",
+                "Rel. Mass",
+                "Charge"
+              ],
+              "rows": [
+                [
+                  "Proton (p⁺)",
+                  "Inside nucleus",
+                  "1",
+                  "+1"
+                ],
+                [
+                  "Neutron (n⁰)",
+                  "Inside nucleus",
+                  "1",
+                  "0"
+                ],
+                [
+                  "Electron (e⁻)",
+                  "Outside nucleus",
+                  "1/1840",
+                  "−1"
+                ]
+              ]
+            },
+            "tip": "Atomic Number (Z) = number of protons = number of electrons (in a neutral atom). Mass Number (A) = protons + neutrons.",
+            "memory": "⚠️ Electrons are SO light (1/1840 of a proton) that we often ignore their mass when calculating mass number!",
+            "analogy": "Think of an atom like a tiny solar system: the nucleus is the Sun (tiny but heavy), electrons are planets orbiting around it."
+          },
+          "diagram": {
+            "type": "atom_structure",
+            "title": "Atom Structure Diagram"
+          },
+          "animation": {
+            "type": "atom_structure",
+            "title": "Atom Structure Visualization"
+          },
+          "quiz": {
+            "question": "How many neutrons are in a ₁₇³⁵Cl atom?",
+            "options": [
+              "A. 17",
+              "B. 18",
+              "C. 35",
+              "D. 52"
+            ],
+            "correct": 1,
+            "hint": "Neutrons = Mass Number (A) − Atomic Number (Z)",
+            "explanation": "For ₁₇³⁵Cl: neutrons = 35 − 17 = 18. The mass number is the sum of protons and neutrons in the nucleus."
+          },
+          "videos": [
+            {
+              "src": "videos/ch01/khan_p01_elements_atoms_p1.mp4",
+              "title": "Elements & Atoms (1/3)"
+            },
+            {
+              "src": "videos/ch01/khan_p01_elements_atoms_p2.mp4",
+              "title": "Elements & Atoms (2/3)"
+            },
+            {
+              "src": "videos/ch01/khan_p01_elements_atoms_p3.mp4",
+              "title": "Elements & Atoms (3/3)"
+            },
+            {
+              "src": "videos/ch01/khan_p02_atoms_intro_p1.mp4",
+              "title": "Intro to Atoms (1/5)"
+            },
+            {
+              "src": "videos/ch01/khan_p02_atoms_intro_p2.mp4",
+              "title": "Intro to Atoms (2/5)"
+            },
+            {
+              "src": "videos/ch01/khan_p02_atoms_intro_p3.mp4",
+              "title": "Intro to Atoms (3/5)"
+            },
+            {
+              "src": "videos/ch01/khan_p02_atoms_intro_p4.mp4",
+              "title": "Intro to Atoms (4/5)"
+            },
+            {
+              "src": "videos/ch01/khan_p02_atoms_intro_p5.mp4",
+              "title": "Intro to Atoms (5/5)"
+            }
+          ]
+        },
+        {
+          "id": "ch01_L2",
+          "level_num": 2,
+          "topic_id": "ch01_t02",
+          "title": "Isotopes & Relative Atomic Mass",
+          "emoji": "⚗️",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<strong>Isotopes</strong> are atoms of the same element (same number of protons) but with different numbers of neutrons — so they have different mass numbers.",
+            "examples": [
+              {
+                "symbol": "¹H",
+                "name": "Protium",
+                "p": 1,
+                "n": 0,
+                "note": "Most common hydrogen"
+              },
+              {
+                "symbol": "²H (D)",
+                "name": "Deuterium",
+                "p": 1,
+                "n": 1,
+                "note": "Heavy hydrogen"
+              },
+              {
+                "symbol": "³H (T)",
+                "name": "Tritium",
+                "p": 1,
+                "n": 2,
+                "note": "Radioactive, unstable"
+              }
+            ],
+            "formula": "Aᵣ = Σ(mass × relative abundance) / Σ(relative abundances)",
+            "formula_example": "Example: Cl has ³⁵Cl (75%) and ³⁷Cl (25%) → Aᵣ = (35×75 + 37×25) / 100 = 35.5",
+            "tip": "The 'r' in Aᵣ stands for 'relative'. Aᵣ has NO units — it's just a ratio compared to carbon-12.",
+            "memory": "Isotopes = same Z, different A. They behave the same chemically (same electrons) but have different masses!"
+          },
+          "diagram": {
+            "type": "isotopes",
+            "title": "Hydrogen Isotopes"
+          },
+          "animation": {
+            "type": "isotopes_comparison",
+            "title": "Isotopes Comparison"
+          },
+          "quiz": {
+            "question": "Bromine has two isotopes: ⁷⁹Br (50%) and ⁸¹Br (50%). What is the relative atomic mass?",
+            "options": [
+              "A. 79",
+              "B. 80",
+              "C. 81",
+              "D. 160"
+            ],
+            "correct": 1,
+            "hint": "Apply the formula: Aᵣ = (mass₁ × abundance₁ + mass₂ × abundance₂) / total abundance",
+            "explanation": "Aᵣ = (79 × 50 + 81 × 50) / 100 = (3950 + 4050) / 100 = 80. Notice that 50%+50%=100%, so it's simply the average of 79 and 81."
+          },
+          "videos": []
+        },
+        {
+          "id": "ch01_L3",
+          "level_num": 3,
+          "topic_id": "ch01_t03",
+          "title": "Mass Spectrometry",
+          "emoji": "📊",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "A <strong>mass spectrometer</strong> is a powerful tool that measures the mass and abundance of isotopes with incredible precision. It can find exact isotopic masses and calculate Aᵣ.",
+            "steps": [
+              {
+                "num": 1,
+                "name": "Vaporisation",
+                "desc": "Sample is turned into a gas"
+              },
+              {
+                "num": 2,
+                "name": "Ionisation",
+                "desc": "High-energy electrons knock off one electron → M⁺ ions"
+              },
+              {
+                "num": 3,
+                "name": "Acceleration",
+                "desc": "Electric field speeds up all ions to the same kinetic energy"
+              },
+              {
+                "num": 4,
+                "name": "Deflection",
+                "desc": "Magnetic field bends ion paths — lighter ions (low m/z) deflect MORE"
+              },
+              {
+                "num": 5,
+                "name": "Detection",
+                "desc": "Ions arrive at detector, creating peaks on the mass spectrum"
+              }
+            ],
+            "tip": "Acceleration uses an ELECTRIC field. Deflection uses a MAGNETIC field. Different forces, different jobs!",
+            "memory": "The mass spectrum shows: x-axis = m/z (mass/charge ratio), y-axis = relative abundance (%). Each peak is one isotope.",
+            "formula": "m/z = mass / charge. Since most ions are singly charged (+1), m/z ≈ mass number."
+          },
+          "diagram": {
+            "type": "mass_spec",
+            "title": "Mass Spectrometer Diagram"
+          },
+          "quiz": {
+            "question": "In a mass spectrometer, which field is used to deflect ions?",
+            "options": [
+              "A. Electric field only",
+              "B. Magnetic field only",
+              "C. Both electric and magnetic fields",
+              "D. Gravitational field"
+            ],
+            "correct": 1,
+            "hint": "Remember: acceleration = electric field. Deflection = ?",
+            "explanation": "The ELECTRIC field accelerates ions (Step 3). The MAGNETIC field deflects them (Step 4). These are two separate, sequential processes. Step 4 deflection separates ions by their m/z ratio."
+          },
+          "animation": {
+            "type": "mass_spec_flow",
+            "title": "Mass Spectrometer Workflow"
+          },
+          "videos": []
+        },
+        {
+          "id": "ch01_L4",
+          "level_num": 4,
+          "topic_id": "ch01_t04",
+          "title": "Electron Configuration & Orbitals",
+          "emoji": "🌌",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "Electrons don't orbit the nucleus like planets! Instead, they occupy regions called <strong>orbitals</strong> — where each orbital can hold a maximum of 2 electrons.",
+            "orbital_types": [
+              {
+                "type": "s",
+                "shape": "Spherical",
+                "count": "1 orbital, 2 e⁻",
+                "color": "#ef4444"
+              },
+              {
+                "type": "p",
+                "shape": "Dumbbell (two lobes)",
+                "count": "3 orbitals (px, py, pz), 6 e⁻",
+                "color": "#3b82f6"
+              },
+              {
+                "type": "d",
+                "shape": "Complex (4 or more lobes)",
+                "count": "5 orbitals, 10 e⁻",
+                "color": "#eab308"
+              }
+            ],
+            "fill_order": "1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → ...",
+            "fill_note": "⚠️ 4s fills BEFORE 3d (lower energy). But 3d is emptied before 4s in transition metals!",
+            "hunds_rule": "When filling orbitals of the same energy (like the 3 p orbitals), electrons go into EMPTY orbitals FIRST, with parallel spins.",
+            "example": "Nitrogen (Z=7): 1s² 2s² 2p³. The 3 p electrons each go into a separate p orbital (Hund's Rule).",
+            "tip": "The filling order follows the diagonal rule — trace diagonals from top-right to bottom-left on your subshell energy diagram."
+          },
+          "diagram": {
+            "type": "orbitals",
+            "title": "Orbital Shapes & Filling Order"
+          },
+          "quiz": {
+            "question": "Which of the following is the correct electron configuration for nitrogen (Z=7)?",
+            "options": [
+              "A. 1s² 2s² 2p³",
+              "B. 1s² 2s³ 2p²",
+              "C. 1s² 2p⁵",
+              "D. 1s³ 2s² 2p²"
+            ],
+            "correct": 0,
+            "hint": "Count electrons: Z=7 means 7 electrons total. Fill in order: 1s (2), then 2s (2), remaining electrons go to 2p.",
+            "explanation": "Filling: 1s² (2 e⁻) + 2s² (2 e⁻) + 2p³ (3 e⁻) = 7 electrons total. The notation shows how many electrons are in each subshell."
+          },
+          "animation": {
+            "type": "orbital_filling",
+            "title": "Orbital Filling Order"
+          },
+          "videos": [
+            {
+              "src": "videos/ch01/khan_p03_orbitals.mp4",
+              "title": "🎬 Electron Orbitals (13:27)"
+            },
+            {
+              "src": "videos/ch01/khan_p04_orbitals2.mp4",
+              "title": "🎬 Electron Orbitals cont. (13:37)"
+            },
+            {
+              "src": "videos/ch01/khan_p05_e_config.mp4",
+              "title": "🎬 Electron Configuration (10:17)"
+            },
+            {
+              "src": "videos/ch01/khan_p06_e_config2.mp4",
+              "title": "🎬 Electron Configuration 2 (10:19)"
+            }
+          ]
+        },
+        {
+          "id": "ch01_L5",
+          "level_num": 5,
+          "topic_id": "ch01_t05",
+          "title": "Ionisation Energies",
+          "emoji": "⚡",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<strong>First ionisation energy (IE₁)</strong> is the energy needed to remove one electron from one mole of gaseous atoms.",
+            "equation": "X(g) → X⁺(g) + e⁻",
+            "trend_period": "Across a period (left → right): IE generally INCREASES because nuclear charge increases, pulling electrons closer.",
+            "trend_group": "Down a group: IE DECREASES because inner electron shells increase (more shielding), and outer electrons are farther from the nucleus.",
+            "exceptions": [
+              {
+                "group": "Group 3 (B, Al...)",
+                "reason": "Electron enters a new p subshell (2p vs 2s) — higher energy, easier to remove"
+              },
+              {
+                "group": "Group 6 (O, S...)",
+                "reason": "Electron pairing in a p orbital causes repulsion — one electron is easier to remove"
+              }
+            ],
+            "successive_ie": "Each successive IE is larger than the previous. A BIG JUMP indicates all electrons in one shell have been removed — revealing how many outer electrons the atom has.",
+            "tip": "The position of the big jump tells you the GROUP number! If IE₂→IE₃ is the big jump, the atom has 2 outer electrons = Group 2.",
+            "example": "Na has tiny IE₁, then a MASSIVE jump to IE₂. This proves Na has 1 outer electron (Group 1)."
+          },
+          "diagram": {
+            "type": "ie_trend",
+            "title": "Ionisation Energy Trends"
+          },
+          "quiz": {
+            "question": "Successive ionisation energies (kJ mol⁻¹): 590, 1145, 4912, 6474... Which group is this element in?",
+            "options": [
+              "A. Group 1",
+              "B. Group 2",
+              "C. Group 3",
+              "D. Group 4"
+            ],
+            "correct": 1,
+            "hint": "Look at where the BIG jump happens. The jump = from the last outer electron to the first inner electron.",
+            "explanation": "590→1145 (small jump) = removing outer electrons. 1145→4912 (BIG jump!) = all outer electrons gone. Two outer electrons = Group 2. The massive jump is because electrons in a lower shell are much harder to remove."
+          },
+          "animation": {
+            "type": "ie_trend",
+            "title": "Ionisation Energy Trends (Period 2)"
+          },
+          "videos": [
+            {
+              "src": "videos/ch01/khan_p07_valence.mp4",
+              "title": "🎬 Valence Electrons (14:12)"
+            },
+            {
+              "src": "videos/ch01/khan_p09_ie.mp4",
+              "title": "🎬 Ionization Energy (10:17)"
+            }
+          ]
+        },
+        {
+          "id": "ch01_L6",
+          "level_num": 6,
+          "topic_id": "ch01_t06",
+          "title": "Atomic Emission Spectra",
+          "emoji": "🌈",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "When atoms absorb energy (heat or electricity), electrons jump to <strong>excited states</strong>. When they fall back down, they release energy as <strong>light (photons)</strong>.",
+            "equation": "ΔE = hf = hc/λ",
+            "why_line_spectrum": "Unlike white light (continuous), atoms produce LINE spectra. Why? Because electrons can ONLY exist at specific energy levels — quantum theory! They can only make specific jumps, releasing specific photon energies.",
+            "series": [
+              {
+                "name": "Lyman Series",
+                "to": "n=1",
+                "region": "UV (ultraviolet)",
+                "example": "Far UV, invisible to us"
+              },
+              {
+                "name": "Balmer Series",
+                "to": "n=2",
+                "region": "Visible light",
+                "example": "The colors we can see!"
+              },
+              {
+                "name": "Paschen Series",
+                "to": "n=3",
+                "region": "IR (infrared)",
+                "example": "Below visible red"
+              }
+            ],
+            "tip": "Balmer series (n→2) is special because it produces VISIBLE light — red, blue-green, blue, violet. These are the lines you see in hydrogen's emission spectrum.",
+            "memory": "Think of the energy levels like steps on a staircase. Electrons can only stand on steps, not between them. When they jump down, they release exactly the energy difference between those two steps."
+          },
+          "diagram": {
+            "type": "emission_spectrum",
+            "title": "Hydrogen Energy Levels & Emission Series"
+          },
+          "quiz": {
+            "question": "Which series of hydrogen's emission spectrum corresponds to visible light?",
+            "options": [
+              "A. Lyman series",
+              "B. Balmer series",
+              "C. Paschen series",
+              "D. All of the above"
+            ],
+            "correct": 1,
+            "hint": "Remember: Lyman (UV), Balmer (Visible), Paschen (IR) — think of the electromagnetic spectrum from left to right.",
+            "explanation": "Balmer series: electrons falling to n=2. The energy differences at this level correspond to visible wavelengths (400-700nm). Lyman is UV (higher energy), Paschen is IR (lower energy)."
+          },
+          "animation": {
+            "type": "emission_spectrum",
+            "title": "Hydrogen Energy Levels & Emission Spectrum"
+          },
+          "videos": [
+            {
+              "src": "videos/ch01/khan_p08_groups.mp4",
+              "title": "🎬 Groups in Periodic Table (11:50)"
+            },
+            {
+              "src": "videos/ch01/khan_p10_en.mp4",
+              "title": "🎬 Electronegativity (16:14)"
+            }
+          ]
+        }
+      ]
+    },
+    "ch03": {
+      "id": "ch03",
+      "title": "Atoms, Molecules & Stoichiometry",
+      "chapter_num": "3",
+      "emoji": "⚗️",
+      "color": "#0891b2",
+      "total_xp": 510,
+      "badge_id": "ch03_champion",
+      "levels": [
+        {
+          "id": "ch03_L1",
+          "level_num": 1,
+          "topic_id": "ch03_t01",
+          "title": "Relative Masses (Ar, Mr)",
+          "emoji": "⚖️",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "To compare masses of atoms, we use <strong>relative</strong> scales — no units! <strong>Ar</strong> (relative atomic mass) compares a single atom to carbon-12. <strong>Mr</strong> (relative molecular mass) is the sum of Ar for all atoms in a molecule.",
+            "key_formula": "Ar = mass of one atom / (mass of one carbon-12 atom / 12)",
+            "formula": "Mr = sum of (Ar × number of atoms)",
+            "formula_example": "H₂SO₄: Mr = (1×2) + (32×1) + (16×4) = 98",
+            "tip": "Ar has NO units — it's a ratio. Think of it like a 'score' comparing atoms to carbon-12.",
+            "memory": "⚠️ Don't confuse Ar (one element) with Mr (whole molecule)!"
+          },
+          "diagram": {
+            "type": "relative_mass",
+            "title": "Ar vs Mr"
+          },
+          "quiz": {
+            "question": "What is the Mr of CO₂? (Ar: C=12, O=16)",
+            "options": [
+              "A. 28",
+              "B. 44",
+              "C. 40",
+              "D. 32"
+            ],
+            "correct": 1,
+            "hint": "Mr = Ar(C) + 2 × Ar(O)",
+            "explanation": "Mr(CO₂) = 12 + 2(16) = 12 + 32 = 44. One carbon atom plus two oxygen atoms."
+          }
+        },
+        {
+          "id": "ch03_L2",
+          "level_num": 2,
+          "topic_id": "ch03_t02",
+          "title": "The Mole & Avogadro",
+          "emoji": "🧮",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "The <strong>mole (mol)</strong> is a count — like a 'dozen' but astronomically larger. <strong>Avogadro's constant</strong> (NA = 6.02 × 10²³ mol⁻¹) tells us exactly how many particles are in one mole. Mass (m), molar mass (M), and moles (n) are linked by the most important formula in chemistry.",
+            "formula": "n = m / M   (moles = mass / molar mass)",
+            "formula_example": "n = 98g / 98 g mol⁻¹ = 1 mol of H₂SO₄",
+            "avogadro": "1 mol = 6.02 × 10²³ particles (atoms, molecules, ions, electrons)",
+            "tip": "M (molar mass) has the SAME numerical value as Mr, but units g mol⁻¹. M = Mr g/mol by definition!",
+            "memory": "Molar mass M (g mol⁻¹) = Mr × 1 g/mol. So M and Mr have the same number but different units!"
+          },
+          "diagram": {
+            "type": "mole_concept",
+            "title": "The Mole"
+          },
+          "quiz": {
+            "question": "How many moles are in 36g of water? (Mr H₂O = 18)?",
+            "options": [
+              "A. 0.5 mol",
+              "B. 1 mol",
+              "C. 2 mol",
+              "D. 3 mol"
+            ],
+            "correct": 2,
+            "hint": "n = m / M = 36 / 18",
+            "explanation": "n = m/M = 36g / 18 g mol⁻¹ = 2 mol. Simple division — the key formula n = m/M is the most-used in ch03!"
+          }
+        },
+        {
+          "id": "ch03_L3",
+          "level_num": 3,
+          "topic_id": "ch03_t03",
+          "title": "Empirical & Molecular Formulae",
+          "emoji": "🧩",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<strong>Empirical formula</strong> = simplest whole-number ratio of atoms. <strong>Molecular formula</strong> = actual number of atoms. To find empirical: convert % to moles → divide by smallest → round to whole numbers. Molecular = n × empirical, where n = Mr(molecular) / Mr(empirical).",
+            "formula": "Empirical → divide each % by Ar → divide by smallest → whole numbers",
+            "formula_example": "C₆H₁₂O₆ → empirical = CH₂O (divide by 6)",
+            "molecular_n": "n = Mr(molecular) / Mr(empirical)",
+            "molecular_example": "Empirical CH₂O, Mr=60 → molecular = 2 × CH₂O = C₂H₄O₂",
+            "tip": "If a question gives % composition by mass, start by assuming 100g total — then % becomes grams directly!",
+            "memory": "Empirical = 'EGG-splest ratio' 📐. Molecular = actual number in one molecule. Start with % → moles → ratio → empirical."
+          },
+          "diagram": {
+            "type": "formula_conversion",
+            "title": "Empirical ↔ Molecular"
+          },
+          "quiz": {
+            "question": "A compound is 40% C, 6.7% H, 53.3% O. What is its empirical formula? (Ar: C=12, H=1, O=16)?",
+            "options": [
+              "A. C₂H₂O₂",
+              "B. C₂H₄O₂",
+              "C. CH₂O",
+              "D. C₃H₆O₃"
+            ],
+            "correct": 2,
+            "hint": "Assume 100g: C=40g, H=6.7g, O=53.3g → divide by Ar → divide by smallest",
+            "explanation": "C: 40/12=3.33, H: 6.7/1=6.7, O: 53.3/16=3.33 → divide all by 3.33 → C₁H₂O₁ = CH₂O"
+          }
+        },
+        {
+          "id": "ch03_L4",
+          "level_num": 4,
+          "topic_id": "ch03_t04",
+          "title": "Molar Gas Volumes",
+          "emoji": "💨",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "Gases at the <strong>same temperature and pressure</strong> contain the same number of molecules per unit volume. At RTP (25°C, 100 kPa): <strong>Vm = 24.0 dm³ mol⁻¹</strong>. At STP (0°C, 100 kPa): Vm = 22.7 dm³ mol⁻¹. The <strong>ideal gas equation</strong> handles any condition.",
+            "formula": "pV = nRT  (pressure × volume = moles × R × temperature)",
+            "variables": "p in Pa, V in m³, T in K, R = 8.314 J mol⁻¹ K⁻¹, n in mol",
+            "molar_volumes": "RTP: 24.0 dm³ mol⁻¹ (25°C, 100 kPa) | STP: 22.7 dm³ mol⁻¹ (0°C, 100 kPa)",
+            "tip": "⚠️ V in dm³ for molar volume: V (dm³) = n × 24. But convert to m³ for pV = nRT! 1 dm³ = 1×10⁻³ m³",
+            "memory": "24 at RTP, 22.7 at STP. 25°C=298K, 0°C=273K. Gas volume questions = n × Vm = m/M × Vm."
+          },
+          "diagram": {
+            "type": "gas_equations",
+            "title": "Gas Volume Equations"
+          },
+          "quiz": {
+            "question": "What volume does 2 mol of gas occupy at RTP? (Vm = 24.0 dm³ mol⁻¹)?",
+            "options": [
+              "A. 12.0 dm³",
+              "B. 24.0 dm³",
+              "C. 48.0 dm³",
+              "D. 96.0 dm³"
+            ],
+            "correct": 2,
+            "hint": "V = n × Vm",
+            "explanation": "V = 2 mol × 24.0 dm³ mol⁻¹ = 48.0 dm³. The molar volume × moles = gas volume!"
+          }
+        },
+        {
+          "id": "ch03_L5",
+          "level_num": 5,
+          "topic_id": "ch03_t05",
+          "title": "Solutions & Concentrations",
+          "emoji": "🧪",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<strong>Concentration (c)</strong> = moles of solute per volume of solution. <strong>Molarity (M)</strong> in mol dm⁻³ = mol / dm³. Dilution formula: c₁V₁ = c₂V₂ (moles stay the same). Titration: at equivalence, moles acid = stoichiometric ratio × moles base.",
+            "formula": "c = n / V   (concentration = moles / volume in dm³)",
+            "dilution": "c₁V₁ = c₂V₂ (moles before = moles after)",
+            "dilution_example": "10 cm³ of 2 mol dm⁻³ HCl diluted to 100 cm³ → c₂ = 10×2/100 = 0.2 mol dm⁻³",
+            "tip": "⚠️ Always convert cm³ to dm³: divide by 1000! 25 cm³ = 0.025 dm³. This trips up many students!",
+            "memory": "c = n/V. Dilution: c drops when V increases (same moles in bigger container). Titration: look for equivalence point = equal moles ratio."
+          },
+          "diagram": {
+            "type": "titration",
+            "title": "Volumetric Analysis"
+          },
+          "quiz": {
+            "question": "How many moles are in 250 cm³ of 0.5 mol dm⁻³ NaOH solution?",
+            "options": [
+              "A. 0.125 mol",
+              "B. 0.25 mol",
+              "C. 0.5 mol",
+              "D. 2 mol"
+            ],
+            "correct": 0,
+            "hint": "n = c × V, but convert 250 cm³ to dm³ first",
+            "explanation": "V = 250/1000 = 0.25 dm³. n = 0.5 × 0.25 = 0.125 mol. Remember: cm³ → dm³ ÷ 1000!"
+          }
+        },
+        {
+          "id": "ch03_L6",
+          "level_num": 6,
+          "topic_id": "ch03_t06",
+          "title": "Stoichiometric Calculations",
+          "emoji": "⚖️",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<strong>Stoichiometry</strong> = using balanced equations to find amounts. Key steps: (1) Write balanced equation. (2) Convert given mass to moles (÷ M). (3) Use mole ratio from equation. (4) Convert back to mass (× M) or volume.",
+            "formula": "Balanced equation: aA + bB → cC\nMole ratio: nA : nB : nC = a : b : c",
+            "step_guide": "1. m → n (÷M). 2. Use ratio. 3. n → mass/volume (×M or ×24).",
+            "tip": "Always check your mole ratio from the balanced equation's coefficients — NOT from eyeballing!",
+            "memory": "The 'golden path': grams → moles → ratio → grams/mol/vol. Every stoichiometry question follows this route!"
+          },
+          "diagram": {
+            "type": "stoich_flow",
+            "title": "Stoichiometry Flow"
+          },
+          "quiz": {
+            "question": "2H₂ + O₂ → 2H₂O. How many moles of H₂O from 4 mol H₂?",
+            "options": [
+              "A. 1 mol",
+              "B. 2 mol",
+              "C. 4 mol",
+              "D. 8 mol"
+            ],
+            "correct": 2,
+            "hint": "Ratio H₂ : H₂O = 2 : 2 = 1 : 1",
+            "explanation": "From the equation: 2 mol H₂ produces 2 mol H₂O. Ratio is 1:1, so 4 mol H₂ → 4 mol H₂O."
+          }
+        },
+        {
+          "id": "ch03_L7",
+          "level_num": 7,
+          "topic_id": "ch03_t07",
+          "title": "Limiting Reagent & Yield",
+          "emoji": "🎯",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<strong>Limiting reagent</strong> = reactant that runs out first, stopping the reaction. Find it by dividing moles of each reactant by its coefficient — the smallest result is limiting. <strong>% yield</strong> measures efficiency. <strong>Atom economy</strong> measures 'greenness' — how much product contains desired atoms.",
+            "limiting_method": "1. Calculate moles of each reactant. 2. Divide by stoichiometric coefficient. 3. Smallest value = limiting reagent.",
+            "yield": "% yield = (actual yield / theoretical yield) × 100%",
+            "yield_example": "Theoretical = 10g, Actual = 8g → % yield = 80%",
+            "atom_economy": "Atom economy = (Mr of desired product / total Mr of all products) × 100%",
+            "atom_economy_example": "N₂ + 3H₂ → 2NH₃: Mr(NH₃)=17, total products=34 → economy = 2×17/34×100 = 100% (all atoms in product)",
+            "tip": "Theoretical yield is calculated from the LIMITING REAGENT — never from the excess!",
+            "memory": "Limiting = 'the one that runs out first' — divide moles by coefficient. Yield = actual/theoretical. Atom economy = 'green' measure of how much ends up in product."
+          },
+          "diagram": {
+            "type": "limiting_yield",
+            "title": "Limiting Reagent & Yield"
+          },
+          "quiz": {
+            "question": "N₂ + 3H₂ → 2NH₃. If 1 mol N₂ and 3 mol H₂ react in exact ratio, and 0.8 mol NH₃ is obtained, what is the % yield?",
+            "options": [
+              "A. 40%",
+              "B. 60%",
+              "C. 80%",
+              "D. 100%"
+            ],
+            "correct": 0,
+            "hint": "Theoretical NH₃ = 2 mol (from equation). % yield = (actual/theoretical) × 100%",
+            "explanation": "Exact 1:3 ratio → neither limiting. Theoretical = 2 mol NH₃. % yield = (0.8/2)×100 = 40%. Actual < theoretical is normal: side reactions, incomplete conversion, product loss during handling."
+          }
+        }
+      ]
+    },
+    "ch04": {
+      "id": "ch04",
+      "title": "Chemical Bonding",
+      "chapter_num": "4",
+      "emoji": "🔗",
+      "color": "#f59e0b",
+      "total_xp": 400,
+      "badge_id": "ch04_champion",
+      "levels": [
+        {
+          "id": "ch04_L1",
+          "level_num": 1,
+          "topic_id": "ch04_t01",
+          "title": "VSEPR shapes",
+          "emoji": "🔷",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>2 bp: linear (180°). 3 bp: trigonal planar (120°). 4 bp: tetrahedral (109.5°). 3 bp + 1 lp: pyramidal (~107°). 2 bp + 2 lp: bent/V-shaped (~104.5°). 5 bp: trigonal bipyramidal. 6 bp: octahedral (90°).</p>"
+          }
+        },
+        {
+          "id": "ch04_L2",
+          "level_num": 2,
+          "topic_id": "ch04_t02",
+          "title": "Effect of lone pairs on bond angles",
+          "emoji": "🌀",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Lone pairs occupy more space than bonding pairs, reducing bond angles. Each lone pair reduces angles by ~2.5°.</p>",
+            "tip": "Order of repulsion: lp-lp > lp-bp > bp-bp."
+          }
+        },
+        {
+          "id": "ch04_L3",
+          "level_num": 3,
+          "topic_id": "ch04_t03",
+          "title": "Hybridisation summary",
+          "emoji": "🧬",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>sp³: tetrahedral (methane, water, ammonia). sp²: trigonal planar, one unhybridised p orbital for π bond (ethene, BF₃). sp: linear, two unhybridised p orbitals for two π bonds (ethyne, CO₂, BeCl₂).</p>",
+            "key_formula": "<code>sp³ hybridisation → tetrahedral (109.5°)</code><br><code>sp² → trigonal planar, 1 unhybridised p for π bond</code><br><code>sp → linear, 2 unhybridised p for 2 π bonds</code>"
+          }
+        },
+        {
+          "id": "ch04_L4",
+          "level_num": 4,
+          "topic_id": "ch04_t04",
+          "title": "Electronegativity and bond polarity",
+          "emoji": "⚡",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>If ΔEN > 1.7: ionic. If 0.4 < ΔEN < 1.7: polar covalent.</p>",
+            "key_formula": "<code>ΔEN > 1.7 → ionic</code><br><code>0.4 < ΔEN < 1.7 → polar covalent</code><br><code>ΔEN < 0.4 → non-polar covalent</code>",
+            "tip": "If ΔEN < 0.4: non-polar covalent. Pauling values: F(4.0) > O(3.5) > N(3.0) > Cl(3.0) > Br(2.8) > C(2.5) > H(2.1)."
+          }
+        },
+        {
+          "id": "ch04_L5",
+          "level_num": 5,
+          "topic_id": "ch04_t05",
+          "title": "Intermolecular forces comparison",
+          "emoji": "💧",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Hydrogen bonds (~20 kJ/mol) > Permanent dipole-dipole (~2-5 kJ/mol) > Van der Waals/London (depends on size).</p>",
+            "tip": "VdW increases with Mr (more electrons = larger temporary dipoles)."
+          }
+        },
+        {
+          "id": "ch04_L6",
+          "level_num": 6,
+          "topic_id": "ch04_t06",
+          "title": "Conditions for hydrogen bonding",
+          "emoji": "🔗",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Must have: H bonded directly to N, O, or F in one molecule AND a lone pair on N, O, or F in another molecule.</p>",
+            "tip": "Examples: H₂O (2 H-bonds per molecule), NH₃, HF, DNA base pairs."
+          }
+        },
+        {
+          "id": "ch04_L7",
+          "level_num": 7,
+          "topic_id": "ch04_t07",
+          "title": "Properties of ionic compounds",
+          "emoji": "🧱",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>High melting/boiling points (strong ionic bonds). Conduct electricity when molten or dissolved (mobile ions).</p>",
+            "tip": "Hard but brittle. Soluble in polar solvents."
+          }
+        },
+        {
+          "id": "ch04_L8",
+          "level_num": 8,
+          "topic_id": "ch04_t08",
+          "title": "Giant covalent structures",
+          "emoji": "💎",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Diamond: 4 C-C bonds, tetrahedral, very hard, no electrical conduction. Graphite: 3 C-C bonds, layers, delocalized π electrons (conducts), lubricant.</p>",
+            "key_formula": "<code>Sigma & Pi bonds: Single bond = 1 σ, Double bond = 1 σ + 1 π, Triple bond = 1 σ + 2 π</code>",
+            "tip": "SiO₂: giant lattice, very hard, high mp."
+          }
+        },
+        {
+          "id": "ch04_L9",
+          "level_num": 9,
+          "topic_id": "ch04_t09",
+          "title": "Sigma and pi bonds",
+          "emoji": "π",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Single bond = 1 σ bond. Double bond = 1 σ + 1 π bond.</p>",
+            "tip": "Triple bond = 1 σ + 2 π bonds. Rotation is possible around σ bonds but NOT around π bonds (restricted rotation in C=C causes geometric isomerism)."
+          }
+        },
+        {
+          "id": "ch04_L10",
+          "level_num": 10,
+          "topic_id": "ch04_t10",
+          "title": "Metallic bonding and properties",
+          "emoji": "🔩",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Positive metal ions in a sea of delocalised electrons. High electrical/thermal conductivity (mobile electrons).</p>",
+            "tip": "Malleable/ductile (layers slide). High melting point (strong attraction). Increases with more delocalised electrons and smaller ion radius."
+          }
+        }
+      ]
+    },
+    "ch05": {
+      "id": "ch05",
+      "title": "States of Matter",
+      "chapter_num": "5",
+      "emoji": "🧊",
+      "color": "#06b6d4",
+      "total_xp": 200,
+      "badge_id": "ch05_champion",
+      "levels": [
+        {
+          "id": "ch05_L1",
+          "level_num": 1,
+          "topic_id": "ch05_t01",
+          "title": "Kinetic theory assumptions",
+          "emoji": "🎯",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Molecules are point masses with negligible volume. No intermolecular forces.</p>",
+            "tip": "Collisions are perfectly elastic. Average KE ∝ absolute temperature (T in Kelvin). Molecules move in random directions."
+          }
+        },
+        {
+          "id": "ch05_L2",
+          "level_num": 2,
+          "topic_id": "ch05_t02",
+          "title": "Real vs ideal gas deviations",
+          "emoji": "📊",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>At high pressure: real gas volume > ideal (repulsive forces) or < ideal (attractive forces dominate). At low temperature: attractive forces significant → real gas volume < ideal.</p>",
+            "tip": "Ideal behaviour: high T, low P."
+          }
+        },
+        {
+          "id": "ch05_L3",
+          "level_num": 3,
+          "topic_id": "ch05_t03",
+          "title": "Types of crystal structures",
+          "emoji": "💎",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Ionic (NaCl): high mp, conducts when molten/dissolved. Giant covalent (SiO₂, diamond): very high mp, no conduction.</p>",
+            "tip": "Simple molecular (ice, I₂): low mp, no conduction. Metallic (Fe, Cu): high mp, conducts."
+          }
+        },
+        {
+          "id": "ch05_L4",
+          "level_num": 4,
+          "topic_id": "ch05_t04",
+          "title": "Allotropes of carbon",
+          "emoji": "🪨",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Diamond: sp³, tetrahedral, hardest natural substance, insulator. Graphite: sp², layered, conductor (delocalised electrons), lubricant.</p>",
+            "tip": "Buckminsterfullerene (C₆₀): spherical, molecular, used in nanotechnology."
+          }
+        },
+        {
+          "id": "ch05_L5",
+          "level_num": 5,
+          "topic_id": "ch05_t05",
+          "title": "Effect of structure on melting point",
+          "emoji": "🌡️",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Giant structures (ionic, covalent, metallic) have high melting points (must break many bonds). Simple molecular structures have low melting points (only overcome weak Van der Waals).</p>",
+            "tip": "Larger molecules have higher melting points (more VdW)."
+          }
+        }
+      ]
+    },
+    "ch06": {
+      "id": "ch06",
+      "title": "Enthalpy Changes",
+      "chapter_num": "6",
+      "emoji": "🔥",
+      "color": "#ef4444",
+      "total_xp": 240,
+      "badge_id": "ch06_champion",
+      "levels": [
+        {
+          "id": "ch06_L1",
+          "level_num": 1,
+          "topic_id": "ch06_t01",
+          "title": "Standard conditions",
+          "emoji": "📐",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Temperature: 298 K (25°C). Pressure: 100 kPa (1 bar).</p>",
+            "key_formula": "<code>Standard conditions: T = 298 K, P = 100 kPa, [soln] = 1 mol dm⁻³</code>",
+            "tip": "Concentration: 1 mol dm⁻³ for solutions. All substances in their standard states."
+          }
+        },
+        {
+          "id": "ch06_L2",
+          "level_num": 2,
+          "topic_id": "ch06_t02",
+          "title": "Hess's Law application",
+          "emoji": "🧮",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>ΔHreaction = ΣΔHf°(products) − ΣΔHf°(reactants). OR use a two-step Hess cycle: route 1 (direct) = route 2 (via intermediates).</p>",
+            "key_formula": "<code>ΔH° = ΣΔHf°(products) − ΣΔHf°(reactants)</code>",
+            "tip": "ΔHf° of elements in standard states = 0."
+          }
+        },
+        {
+          "id": "ch06_L3",
+          "level_num": 3,
+          "topic_id": "ch06_t03",
+          "title": "Bond enthalpy calculations",
+          "emoji": "💥",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>ΔH = Σ(bonds broken) − Σ(bonds formed). Bonds broken: endothermic (+).</p>",
+            "key_formula": "<code>ΔH = Σ(Bonds Broken) − Σ(Bonds Formed)</code>",
+            "tip": "Bonds formed: exothermic (−). Mean bond enthalpies give approximate values; exact values require specific compound data."
+          }
+        },
+        {
+          "id": "ch06_L4",
+          "level_num": 4,
+          "topic_id": "ch06_t04",
+          "title": "Calorimetry calculation",
+          "emoji": "🌡️",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>q = mcΔT (m = mass of solution in g, c = 4.18 J g⁻¹ K⁻¹ for water, ΔT = temperature change). ΔH = −q/n (negative sign: exothermic when T rises).</p>",
+            "key_formula": "<code>q = mcΔT  (m = mass/g, c = 4.18 J g⁻¹ K⁻¹, ΔT = temp change)</code>",
+            "tip": "Limitations: heat loss to surroundings, incomplete reaction."
+          }
+        },
+        {
+          "id": "ch06_L5",
+          "level_num": 5,
+          "topic_id": "ch06_t05",
+          "title": "Enthalpy profile diagrams",
+          "emoji": "📈",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Exothermic: products lower than reactants, ΔH < 0. Endothermic: products higher than reactants, ΔH > 0.</p>",
+            "tip": "Activation energy (Ea) is always positive. Catalyst lowers Ea but does NOT change ΔH."
+          }
+        },
+        {
+          "id": "ch06_L6",
+          "level_num": 6,
+          "topic_id": "ch06_t06",
+          "title": "Definitions of standard enthalpies",
+          "emoji": "📋",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>ΔHf°: forming 1 mol compound from elements in standard states. ΔHc°: completely burning 1 mol substance.</p>",
+            "tip": "ΔHat°(element): forming 1 mol gaseous atoms from element. ΔHat°(compound): forming gaseous atoms from 1 mol compound."
+          }
+        }
+      ]
+    },
+    "ch07": {
+      "id": "ch07",
+      "title": "Redox Reactions",
+      "chapter_num": "7",
+      "emoji": "⚡",
+      "color": "#8b5cf6",
+      "total_xp": 240,
+      "badge_id": "ch07_champion",
+      "levels": [
+        {
+          "id": "ch07_L1",
+          "level_num": 1,
+          "topic_id": "ch07_t01",
+          "title": "Oxidation number rules",
+          "emoji": "🔢",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>1. Free element = 0. 2.</p>",
+            "key_formula": "<code>Oxidation Number Rules: Free element = 0, O = −2, H = +1, Sum = charge</code>",
+            "tip": "Monatomic ion = ionic charge. 3. O = −2 (except in peroxides −1, OF₂ +2). 4. H = +1 (except metal hydrides −1). 5. Sum = overall charge of species."
+          }
+        },
+        {
+          "id": "ch07_L2",
+          "level_num": 2,
+          "topic_id": "ch07_t02",
+          "title": "Balancing half-equations",
+          "emoji": "⚖️",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>1. Balance atoms other than O and H. 2.</p>",
+            "tip": "Balance O by adding H₂O. 3. Balance H by adding H⁺. 4. Balance charge by adding e⁻. 5. Combine half-equations (multiply to equalise electrons). Acidic conditions: use H⁺/H₂O. Alkaline: use OH⁻/H₂O."
+          }
+        },
+        {
+          "id": "ch07_L3",
+          "level_num": 3,
+          "topic_id": "ch07_t03",
+          "title": "Oxidising/reducing agent identification",
+          "emoji": "🎭",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>The species that gains electrons (is reduced) is the oxidising agent. The species that loses electrons (is oxidised) is the reducing agent.</p>",
+            "tip": "OIL RIG: Oxidation Is Loss, Reduction Is Gain."
+          }
+        },
+        {
+          "id": "ch07_L4",
+          "level_num": 4,
+          "topic_id": "ch07_t04",
+          "title": "Common oxidising agents",
+          "emoji": "🧪",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>MnO₄⁻ (KMnO₄): Mn +7 → +2 (acidic) or +4. Cr₂O₇²⁻: Cr +6 → +3.</p>",
+            "tip": "H₂O₂: O −1 → −2. Cl₂: Cl 0 → −1. O₂: O 0 → −2. Fe³⁺: Fe +3 → +2."
+          }
+        },
+        {
+          "id": "ch07_L5",
+          "level_num": 5,
+          "topic_id": "ch07_t05",
+          "title": "Common reducing agents",
+          "emoji": "🔬",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Fe²⁺ → Fe³⁺. SO₂/SO₃²⁻ → SO₄²⁻.</p>",
+            "tip": "I⁻ → I₂. H₂O₂ → O₂ (also oxidising agent). Metals (e.g. Fe, Zn) → metal ions."
+          }
+        },
+        {
+          "id": "ch07_L6",
+          "level_num": 6,
+          "topic_id": "ch07_t06",
+          "title": "Disproportionation examples",
+          "emoji": "🔄",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Cl₂ + H₂O → HCl + HClO (Cl: 0 → −1 and +1). H₂O₂ → H₂O + O₂ (O: −1 → −2 and 0).</p>",
+            "tip": "Cu⁺ → Cu + Cu²⁺."
+          }
+        }
+      ]
+    },
+    "ch08": {
+      "id": "ch08",
+      "title": "Equilibria",
+      "chapter_num": "8",
+      "emoji": "⚖️",
+      "color": "#10b981",
+      "total_xp": 240,
+      "badge_id": "ch08_champion",
+      "levels": [
+        {
+          "id": "ch08_L1",
+          "level_num": 1,
+          "topic_id": "ch08_t01",
+          "title": "Writing Kc expressions",
+          "emoji": "📝",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>For aA + bB ⇌ cC + dD: Kc = [C]^c × [D]^d / ([A]^a × [B]^b). Pure solids and liquids are NOT included (activity = 1).</p>",
+            "key_formula": "<code>Kc = [C]^c × [D]^d / ([A]^a × [B]^b)  — solids & liquids excluded</code>",
+            "tip": "Units depend on Δn = (c+d) − (a+b)."
+          }
+        },
+        {
+          "id": "ch08_L2",
+          "level_num": 2,
+          "topic_id": "ch08_t02",
+          "title": "Kp expressions and calculations",
+          "emoji": "🎯",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Kp = Π p(products) / Π p(reactants). Partial pressure p = mole fraction × total pressure.</p>",
+            "key_formula": "<code>Kp = Π p(products) / Π p(reactants)</code><br><code>Partial pressure p = mole fraction × P_total</code>",
+            "tip": "Mole fraction = n(gas) / n(total gas). Kp units: Pa raised to Δn."
+          }
+        },
+        {
+          "id": "ch08_L3",
+          "level_num": 3,
+          "topic_id": "ch08_t03",
+          "title": "Effect of changes on equilibrium (Le Chatelier)",
+          "emoji": "🔄",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Increase concentration of reactant → shift right (more products). Increase pressure (gas) → shift to side with fewer moles of gas.</p>",
+            "tip": "Increase temperature → shift in endothermic direction. Catalyst → no effect on position, only reaches equilibrium faster."
+          }
+        },
+        {
+          "id": "ch08_L4",
+          "level_num": 4,
+          "topic_id": "ch08_t04",
+          "title": "Kc and temperature",
+          "emoji": "📊",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Increasing T shifts equilibrium endothermic direction. If forward reaction is exothermic: Kc decreases with increasing T.</p>",
+            "key_formula": "<code>Exothermic: Kc ↓ as T ↑</code><br><code>Endothermic: Kc ↑ as T ↑</code>",
+            "tip": "If forward reaction is endothermic: Kc increases with increasing T. Catalyst does NOT affect Kc."
+          }
+        },
+        {
+          "id": "ch08_L5",
+          "level_num": 5,
+          "topic_id": "ch08_t05",
+          "title": "Haber process optimisation",
+          "emoji": "🏭",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹. High pressure → higher yield (fewer moles gas on right).</p>",
+            "key_formula": "<code>N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹</code><br><code>Compromise: 450°C, 200 atm, Fe catalyst</code>",
+            "tip": "Low temperature → higher yield (exothermic). But low T is slow → compromise: 450°C, 200 atm, Fe catalyst."
+          }
+        },
+        {
+          "id": "ch08_L6",
+          "level_num": 6,
+          "topic_id": "ch08_t06",
+          "title": "Industrial equilibria trade-offs",
+          "emoji": "💡",
+          "xp_learn": 10,
+          "xp_quiz_first": 30,
+          "xp_quiz_retry": 15,
+          "content": {
+            "summary": "<p>Compromise conditions balance yield and rate. Very high P is expensive (engineering costs).</p>",
+            "tip": "Catalyst increases rate without affecting yield. Economic viability requires continuous process with recycling of unreacted gases."
+          }
+        }
+      ]
+    }
+  },
+  "badges": [
+    {
+      "id": "first_atom",
+      "name": "First Atom",
+      "emoji": "🔬",
+      "condition": "Complete Level 1"
+    },
+    {
+      "id": "nucleus_master",
+      "name": "Nucleus Master",
+      "emoji": "⚛️",
+      "condition": "Complete Levels 1–3"
+    },
+    {
+      "id": "electron_wizard",
+      "name": "Electron Wizard",
+      "emoji": "🌟",
+      "condition": "Complete Level 4"
+    },
+    {
+      "id": "ch01_champion",
+      "name": "Ch01 Champion",
+      "emoji": "🏆",
+      "condition": "Complete all 6 levels"
+    },
+    {
+      "id": "streak_3",
+      "name": "3-Day Streak",
+      "emoji": "🔥",
+      "condition": "Learn for 3 consecutive days"
+    },
+    {
+      "id": "perfect_run",
+      "name": "Perfect Run",
+      "emoji": "⚡",
+      "condition": "All quiz questions answered correctly on first try"
+    },
+    {
+      "id": "ch03_first_mole",
+      "name": "First Mole",
+      "emoji": "🧮",
+      "condition": "Complete Level 1 (Relative Masses)",
+      "chapter": "ch03"
+    },
+    {
+      "id": "ch03_stoich_master",
+      "name": "Stoich Master",
+      "emoji": "⚖️",
+      "condition": "Complete Levels 1-3",
+      "chapter": "ch03"
+    },
+    {
+      "id": "ch03_solution_skill",
+      "name": "Solution Skill",
+      "emoji": "🧪",
+      "condition": "Complete Level 5 (Solutions)",
+      "chapter": "ch03"
+    },
+    {
+      "id": "ch03_champion",
+      "name": "Ch03 Champion",
+      "emoji": "🏆",
+      "condition": "Complete all 7 levels",
+      "chapter": "ch03"
+    },
+    {
+      "id": "ch03_yield_expert",
+      "name": "Yield Expert",
+      "emoji": "🎯",
+      "condition": "Complete Level 7 (Limiting Reagent & Yield)",
+      "chapter": "ch03"
+    }
+  ],
+  "xp_rules": {
+    "per_level_complete": 40,
+    "chapter_complete_bonus": 100,
+    "streak_3_day_bonus": 50
+  }
+}

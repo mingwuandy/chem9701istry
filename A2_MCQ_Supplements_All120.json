@@ -1,0 +1,3135 @@
+{
+  "meta": {
+    "author": "Seven (CAIE 9701 Senior Examiner)",
+    "date": "2026-07-29",
+    "description": "A2 MCQ Supplements - 120 original questions covering 9 A2 chapters with critical P1 gaps",
+    "total_questions": 120,
+    "batches": [
+      "Batch1",
+      "Batch2"
+    ],
+    "format": "CAIE 9701 Paper 1 style MCQ, text-based, with answer/explanation/difficulty/ao/new_topic fields"
+  },
+  "questions": [
+    {
+      "id": "ch22_P1_0001",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 1,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "The rate equation for a reaction is: rate = k[A]²[B]\n\nWhat are the units of the rate constant k?",
+      "options": {
+        "A": "mol⁻² dm⁶ s⁻¹",
+        "B": "mol⁻¹ dm³ s⁻¹",
+        "C": "mol⁻² dm⁶ min⁻¹",
+        "D": "mol⁻¹ dm³ min⁻¹"
+      },
+      "explanation": "The overall order of the reaction is 2 + 1 = 3 (third order). The units of k are found by rearranging: k = rate / ([A]²[B]) = (mol dm⁻³ s⁻¹) / ((mol dm⁻³)² × (mol dm⁻³)) = (mol dm⁻³ s⁻¹) / (mol³ dm⁻⁹) = mol⁻² dm⁶ s⁻¹. Option A is correct. Option B would be for a second-order reaction. Options C and D use minutes instead of seconds, which is incorrect when rate is in s⁻¹.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0002",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 2,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "For the reaction X + Y → Z, the following initial rate data were obtained at constant temperature.\n\nExperiment 1: [X] = 0.10 mol dm⁻³, [Y] = 0.10 mol dm⁻³, rate = 2.0 × 10⁻³ mol dm⁻³ s⁻¹\nExperiment 2: [X] = 0.20 mol dm⁻³, [Y] = 0.10 mol dm⁻³, rate = 4.0 × 10⁻³ mol dm⁻³ s⁻¹\nExperiment 3: [X] = 0.10 mol dm⁻³, [Y] = 0.20 mol dm⁻³, rate = 8.0 × 10⁻³ mol dm⁻³ s⁻¹\n\nWhat is the rate equation for this reaction?",
+      "options": {
+        "A": "rate = k[X][Y]",
+        "B": "rate = k[X][Y]²",
+        "C": "rate = k[X]²[Y]",
+        "D": "rate = k[X]²[Y]²"
+      },
+      "explanation": "Comparing experiments 1 and 2: [X] doubles while [Y] is constant, and the rate doubles. This means the reaction is first order with respect to X. Comparing experiments 1 and 3: [Y] doubles while [X] is constant, and the rate quadruples (from 2.0 × 10⁻³ to 8.0 × 10⁻³). A quadrupling of rate when concentration doubles means second order with respect to Y. Therefore rate = k[X][Y]², which is option B. Option A would require rate to double in exp 3. Option C would require rate to quadruple in exp 2. Option D is inconsistent with both comparisons.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0003",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 3,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "For a first-order reaction, which statement about the half-life (t½) is correct?",
+      "options": {
+        "A": "t½ is independent of the initial concentration of the reactant",
+        "B": "t½ is directly proportional to the initial concentration of the reactant",
+        "C": "t½ is inversely proportional to the initial concentration of the reactant",
+        "D": "t½ doubles when the initial concentration doubles"
+      },
+      "explanation": "For a first-order reaction, t½ = ln(2)/k = 0.693/k. Since k is a constant at a given temperature, t½ is a constant and is independent of the initial concentration. This is a defining characteristic of first-order kinetics. Option A is correct. Options B and D describe second-order behaviour (t½ ∝ 1/[A]₀, which means t½ increases when concentration decreases, not directly proportional). Option C describes zero-order behaviour.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0004",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 4,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "The Arrhenius equation is: k = Ae^(−Ea/RT)\n\nA reaction has Ea = 52.0 kJ mol⁻¹. At T = 300 K, k = 1.50 × 10⁻³ s⁻¹.\n(R = 8.31 J mol⁻¹ K⁻¹)\n\nWhat is the value of ln(A)?",
+      "options": {
+        "A": "11.8",
+        "B": "12.5",
+        "C": "13.4",
+        "D": "14.4"
+      },
+      "explanation": "Rearranging the Arrhenius equation: ln(k) = ln(A) − Ea/(RT), so ln(A) = ln(k) + Ea/(RT). Converting Ea to J: 52000 J mol⁻¹. ln(1.50 × 10⁻³) = −6.502. Ea/(RT) = 52000/(8.31 × 300) = 52000/2493 = 20.86. Therefore ln(A) = −6.502 + 20.86 = 14.36 ≈ 14.4. Option D is correct. Option A would result from forgetting to convert Ea to joules. Option B uses an incorrect value of ln(k). Option C results from a calculation error in Ea/(RT).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0005",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 5,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "The reaction between ozone and nitrogen monoxide is thought to occur via the following mechanism.\n\nStep 1 (slow): NO + O₃ → NO₂ + O₂\nStep 2 (fast): O + O₃ → 2O₂\n\nWhat is the rate equation for this reaction?",
+      "options": {
+        "A": "rate = k[NO][O₃]",
+        "B": "rate = k[NO]²[O₃]",
+        "C": "rate = k[O₃]²",
+        "D": "rate = k[NO][O₃]²"
+      },
+      "explanation": "The rate-determining step is the slowest step in the mechanism, which is Step 1. The rate equation is determined by the species involved in the rate-determining step. Since Step 1 involves one molecule of NO and one molecule of O₃, the rate equation is rate = k[NO][O₃], which is option A. Option B incorrectly assumes NO appears twice. Options C and D incorrectly use species from Step 2 or assume O₃ appears twice.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0006",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 6,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "The concentration-time graph for a reactant P shows a constant half-life of 45 minutes. The initial concentration of P is 0.80 mol dm⁻³.\n\nWhat is the concentration of P after 135 minutes?",
+      "options": {
+        "A": "0.05 mol dm⁻³",
+        "B": "0.10 mol dm⁻³",
+        "C": "0.15 mol dm⁻³",
+        "D": "0.20 mol dm⁻³"
+      },
+      "explanation": "A constant half-life indicates first-order kinetics. After each half-life of 45 minutes, the concentration halves. After 135 minutes, three half-lives have elapsed (135/45 = 3). After 1st half-life: 0.80/2 = 0.40 mol dm⁻³. After 2nd half-life: 0.40/2 = 0.20 mol dm⁻³. After 3rd half-life: 0.20/2 = 0.10 mol dm⁻³. Option B is correct. Option A would be after 4 half-lives (180 min). Option C has no logical basis. Option D would be after 2 half-lives (90 min).",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0007",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 7,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement about a catalyst is correct?",
+      "options": {
+        "A": "A homogeneous catalyst is in a different phase from the reactants",
+        "B": "A catalyst increases the value of ΔH for the reaction",
+        "C": "A catalyst provides an alternative reaction pathway with a lower activation energy",
+        "D": "A catalyst shifts the position of equilibrium to favour the products"
+      },
+      "explanation": "A catalyst works by providing an alternative reaction pathway with a lower activation energy, increasing the rate of both forward and reverse reactions equally. Option C is correct. Option A is wrong because a homogeneous catalyst is in the same phase as the reactants (a different phase indicates heterogeneous catalysis). Option B is wrong because a catalyst does not affect ΔH. Option D is wrong because a catalyst does not affect the position of equilibrium, only the rate at which equilibrium is reached.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0008",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 8,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "For a reaction with the rate equation rate = k[A]², the concentration of A is increased by a factor of 3.\n\nBy what factor does the rate of reaction change?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "8",
+        "D": "9"
+      },
+      "explanation": "Since the reaction is second order with respect to A, rate ∝ [A]². If [A] increases by a factor of 3, the rate increases by a factor of 3² = 9. Option D is correct. Option A would be correct for a first-order reaction. Option B has no theoretical basis. Option C would correspond to 2³, which is irrelevant here.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0009",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 9,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "For the reaction: 2NO₂(g) → 2NO(g) + O₂(g)\n\nThe rate equation is: rate = k[NO₂]²\nAt 400 K, when [NO₂] = 0.015 mol dm⁻³, the rate is 2.4 × 10⁻⁵ mol dm⁻³ s⁻¹.\n\nWhat is the value of k (including units)?",
+      "options": {
+        "A": "0.107 mol⁻¹ dm³ s⁻¹",
+        "B": "0.160 mol⁻¹ dm³ s⁻¹",
+        "C": "1.60 × 10⁻³ mol⁻¹ dm³ s⁻¹",
+        "D": "6.25 mol⁻¹ dm³ s⁻¹"
+      },
+      "explanation": "Rearranging: k = rate / [NO₂]² = (2.4 × 10⁻⁵) / (0.015)² = (2.4 × 10⁻⁵) / (2.25 × 10⁻⁴) = 0.1067 ≈ 0.107 mol⁻¹ dm³ s⁻¹. The units come from k = rate/[A]² = (mol dm⁻³ s⁻¹)/(mol² dm⁻⁶) = mol⁻¹ dm³ s⁻¹ (second order overall). Option A is correct. Option B results from using [NO₂] instead of [NO₂]². Option C results from multiplying instead of dividing. Option D results from an arithmetic error.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0010",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 10,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "An Arrhenius plot of ln(k) against 1/T gives a straight line with gradient = −9800 K.\n(R = 8.31 J mol⁻¹ K⁻¹)\n\nWhat is the activation energy Ea of the reaction?",
+      "options": {
+        "A": "66.2 kJ mol⁻¹",
+        "B": "81.4 kJ mol⁻¹",
+        "C": "91.3 kJ mol⁻¹",
+        "D": "118 kJ mol⁻¹"
+      },
+      "explanation": "From the Arrhenius equation in linear form: ln(k) = ln(A) − Ea/(RT), the gradient of ln(k) vs 1/T is −Ea/R. Therefore Ea = −gradient × R = 9800 × 8.31 = 81438 J mol⁻¹ = 81.4 kJ mol⁻¹. Option B is correct. Option A would result from using R = 6.75 (incorrect). Option C uses R = 9.32 (incorrect). Option D uses R = 12.04 (incorrect).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0011",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 11,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which is an example of heterogeneous catalysis?",
+      "options": {
+        "A": "Catalysis of ester hydrolysis by H⁺(aq)",
+        "B": "Decomposition of O₃ catalysed by NO(g)",
+        "C": "Hydrogenation of vegetable oils using Ni(s)",
+        "D": "Reaction of I⁻ and S₂O₈²⁻ catalysed by Fe²⁺(aq)"
+      },
+      "explanation": "In heterogeneous catalysis, the catalyst is in a different phase from the reactants. In option C, Ni(s) is a solid catalyst while the vegetable oil and hydrogen are liquid and gas respectively, making this heterogeneous catalysis. Options A, B and D all involve catalysts in the same phase (aqueous or gaseous) as the reactants, which is homogeneous catalysis. Option C is correct.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0012",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 12,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "A reaction A → products follows the rate equation: rate = k[A]².\nThe half-life of A when [A]₀ = 0.50 mol dm⁻³ is t₁.\n\nWhat is the half-life of A when [A]₀ = 0.25 mol dm⁻³?",
+      "options": {
+        "A": "t₁/2",
+        "B": "t₁/4",
+        "C": "2t₁",
+        "D": "4t₁"
+      },
+      "explanation": "For a second-order reaction, t½ = 1/(k[A]₀), so t½ is inversely proportional to [A]₀. When [A]₀ is halved (from 0.50 to 0.25 mol dm⁻³), the half-life doubles. Therefore the new half-life is 2t₁. Option C is correct. Option A would be correct for a first-order reaction (constant half-life). Options B and D are incorrect extrapolations.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0013",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 13,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement correctly describes the effect of increasing temperature on the rate constant k?",
+      "options": {
+        "A": "k increases linearly with temperature",
+        "B": "k increases exponentially with temperature, as described by the Arrhenius equation",
+        "C": "k decreases as temperature increases",
+        "D": "k is unaffected by temperature"
+      },
+      "explanation": "According to the Arrhenius equation k = Ae^(−Ea/RT), increasing T decreases the exponent −Ea/RT (makes it less negative), causing k to increase exponentially. Option B is correct. Option A is wrong because the relationship is exponential, not linear. Option C is wrong because k increases with temperature. Option D is wrong because k is temperature-dependent.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0014",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 14,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "The gas-phase decomposition of a compound A has the rate equation: rate = k[A].\nAt 350 K, the half-life of A is 120 s.\nWhen the temperature is increased to 360 K, the rate constant doubles.\n(R = 8.31 J mol⁻¹ K⁻¹)\n\nWhat is the activation energy Ea?",
+      "options": {
+        "A": "36.3 kJ mol⁻¹",
+        "B": "52.5 kJ mol⁻¹",
+        "C": "72.6 kJ mol⁻¹",
+        "D": "145 kJ mol⁻¹"
+      },
+      "explanation": "Using ln(k₂/k₁) = (Ea/R)(1/T₁ − 1/T₂). Since k₂ = 2k₁, ln(2) = 0.693. 1/T₁ − 1/T₂ = 1/350 − 1/360 = (360−350)/(350×360) = 10/126000 = 7.937 × 10⁻⁵ K⁻¹. So 0.693 = (Ea/8.31) × 7.937 × 10⁻⁵. Ea = 0.693 × 8.31 / 7.937 × 10⁻⁵ = 5.760 / 7.937 × 10⁻⁵ = 72560 J mol⁻¹ = 72.6 kJ mol⁻¹. Option C is correct. Option A is approximately half the correct answer (forgetting the factor of 2). Option D is approximately double. Option B is a common miscalculation error.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch22_P1_0015",
+      "chapter_id": "ch22",
+      "chapter_num": "22",
+      "paper_type": "P1",
+      "q_num": 15,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch22_t01"
+      ],
+      "is_original": true,
+      "question_text": "A reaction has the rate equation: rate = k[A][B]².\nThe concentration of A is doubled and the concentration of B is halved.\n\nWhat happens to the rate of reaction?",
+      "options": {
+        "A": "The rate doubles",
+        "B": "The rate quadruples",
+        "C": "The rate remains unchanged",
+        "D": "The rate halves"
+      },
+      "explanation": "Let initial rate r₁ = k[A][B]². New concentrations: [A]' = 2[A], [B]' = [B]/2. New rate r₂ = k(2[A])([B]/2)² = k × 2[A] × [B]²/4 = (2/4) × k[A][B]² = 0.5 × r₁. The rate halves. Option D is correct. Option A ignores the effect of B. Option B incorrectly multiplies both effects as 2×2. Option C would be correct if both were first order (2 × 0.5 = 1), but B is second order so 2 × (0.5)² = 0.5.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 26
+    },
+    {
+      "id": "ch19_P1_0001",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 16,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which equation correctly represents the lattice energy of magnesium oxide?",
+      "options": {
+        "A": "Mg²⁺(g) + O²⁻(g) → MgO(s)",
+        "B": "MgO(s) → Mg²⁺(g) + O²⁻(g)",
+        "C": "Mg(s) + ½O₂(g) → MgO(s)",
+        "D": "Mg²⁺(aq) + O²⁻(aq) → MgO(s)"
+      },
+      "explanation": "Lattice energy (lattice enthalpy of formation) is defined as the enthalpy change when one mole of an ionic compound is formed from its gaseous ions under standard conditions. Option A shows Mg²⁺(g) + O²⁻(g) → MgO(s), which is correct. Option B represents lattice dissociation energy (the reverse process). Option C represents the standard enthalpy of formation. Option D represents precipitation from aqueous ions.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0002",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 17,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which ionic compound is expected to have the most exothermic (most negative) lattice energy?",
+      "options": {
+        "A": "NaF",
+        "B": "MgO",
+        "C": "NaCl",
+        "D": "KCl"
+      },
+      "explanation": "Lattice energy becomes more exothermic with higher ionic charges and smaller ionic radii. MgO contains Mg²⁺ and O²⁻ (both doubly charged), giving it the strongest electrostatic attraction and hence the most exothermic lattice energy. Options A, C and D all contain singly charged ions (Na⁺/K⁺ and F⁻/Cl⁻), resulting in less exothermic lattice energies. Option B is correct.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0003",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 18,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "In a Born-Haber cycle for potassium chloride, which step is exothermic?",
+      "options": {
+        "A": "Sublimation of potassium: K(s) → K(g)",
+        "B": "First ionisation of potassium: K(g) → K⁺(g) + e⁻",
+        "C": "Electron affinity of chlorine: ½Cl₂(g) + e⁻ → Cl⁻(g)",
+        "D": "Atomisation of chlorine: ½Cl₂(g) → Cl(g)"
+      },
+      "explanation": "The electron affinity of chlorine is exothermic because energy is released when an electron is added to a chlorine atom to form the stable Cl⁻ ion with a noble gas configuration. Option C is correct. Options A, B and D are all endothermic processes: sublimation requires energy to overcome metallic bonding, ionisation requires energy to remove an electron, and atomisation requires energy to break the Cl-Cl bond.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0004",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 19,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "The lattice energy of CaO is more exothermic than that of NaCl.\n\nWhat is the main reason for this?",
+      "options": {
+        "A": "Ca²⁺ and O²⁻ have higher charges than Na⁺ and Cl⁻",
+        "B": "Ca²⁺ has a smaller ionic radius than Na⁺",
+        "C": "O²⁻ has a smaller ionic radius than Cl⁻",
+        "D": "CaO has more covalent character than NaCl"
+      },
+      "explanation": "The primary factor is the higher charges on the ions. Lattice energy is proportional to q₊ × q⁻ / r, so doubling both charges (from 1 to 2) gives a factor of 4 increase in lattice energy. While ionic radii also play a role, the charge effect is dominant. Option A is correct. Options B and C may be true but are secondary effects. Option D is incorrect because more covalent character would typically decrease the measured lattice energy relative to the theoretical ionic value.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0005",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 20,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "The lattice energy of NaCl is −780 kJ mol⁻¹.\nThe enthalpy of solution of NaCl is +3.8 kJ mol⁻¹.\n\nWhat is the total enthalpy of hydration of the ions in NaCl?",
+      "options": {
+        "A": "−783.8 kJ mol⁻¹",
+        "B": "−776.2 kJ mol⁻¹",
+        "C": "+776.2 kJ mol⁻¹",
+        "D": "+783.8 kJ mol⁻¹"
+      },
+      "explanation": "Using the relationship: ΔHₛₒₙ = −lattice energy + ΔHₕₑₖₖₒₙ (where lattice energy is the formation value, i.e. negative). Rearranging: ΔHₕₑₖₖₒₙ = ΔHₛₒₙ + lattice energy = 3.8 + (−780) = −776.2 kJ mol⁻¹. Option B is correct. Option A incorrectly adds instead of subtracting. Options C and D have the wrong sign — hydration is exothermic because ion-dipole bonds form.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0006",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 21,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which compound is expected to have the least exothermic (closest to zero) lattice energy?",
+      "options": {
+        "A": "LiF",
+        "B": "NaF",
+        "C": "KBr",
+        "D": "NaCl"
+      },
+      "explanation": "Lattice energy is less exothermic when ions have lower charges and larger radii. All four compounds contain singly charged ions. KBr has the largest ions (K⁺ is larger than Na⁺ and Li⁺; Br⁻ is larger than F⁻ and Cl⁻), so it has the weakest electrostatic attraction and the least exothermic lattice energy. Option C is correct. Option A (LiF) has the smallest ions and would have the most exothermic lattice energy among these.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0007",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 22,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which definition correctly describes the standard enthalpy of solution?",
+      "options": {
+        "A": "The enthalpy change when 1 mole of solute dissolves in sufficient solvent to form an infinitely dilute solution",
+        "B": "The enthalpy change when 1 mole of solute dissolves in 1 dm³ of solvent",
+        "C": "The enthalpy change when 1 mole of solute dissolves to form a saturated solution",
+        "D": "The enthalpy change when 1 mole of solid ionic compound is formed from its gaseous ions"
+      },
+      "explanation": "The standard enthalpy of solution is defined as the enthalpy change when one mole of solute dissolves in sufficient solvent to form an infinitely dilute solution under standard conditions. Option A is correct. Option B incorrectly specifies a fixed volume of solvent. Option C describes saturation, not infinite dilution. Option D defines lattice energy, not enthalpy of solution.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0008",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 23,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Using the following data for calcium chloride, what is the lattice energy of CaCl₂?\n\nΔH₟(CaCl₂) = −796 kJ mol⁻¹\nAtomisation of Ca = +178 kJ mol⁻¹\nFirst IE of Ca = +590 kJ mol⁻¹\nSecond IE of Ca = +1150 kJ mol⁻¹\nAtomisation of Cl₂ = +244 kJ mol⁻¹ (for Cl₂ → 2Cl)\nElectron affinity of Cl = −349 kJ mol⁻¹ (per mole of Cl)",
+      "options": {
+        "A": "−1464 kJ mol⁻¹",
+        "B": "−1796 kJ mol⁻¹",
+        "C": "−2060 kJ mol⁻¹",
+        "D": "−2260 kJ mol⁻¹"
+      },
+      "explanation": "Born-Haber cycle: ΔH₟ = atomisation(Ca) + IE₁ + IE₂ + atomisation(Cl₂) + 2×EA(Cl) + LE. Sum of steps = 178 + 590 + 1150 + 244 + 2(−349) = 178 + 590 + 1150 + 244 − 698 = 1464 kJ mol⁻¹. LE = ΔH₟ − 1464 = −796 − 1464 = −2260 kJ mol⁻¹. Option D is correct. Option A is just the sum of the intermediate steps without subtracting from ΔH₟. Options B and C result from arithmetic errors (e.g. using one EA instead of two, or sign errors).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0009",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 24,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "The enthalpy of hydration of an ion depends on which factor(s)?",
+      "options": {
+        "A": "Only the charge on the ion",
+        "B": "Both the charge density and ionic radius of the ion",
+        "C": "Only the ionic radius of the ion",
+        "D": "The electronegativity of the ion"
+      },
+      "explanation": "The enthalpy of hydration depends on the charge density of the ion, which is determined by both the charge and the ionic radius. Ions with higher charge and smaller radius have higher charge density, attracting water molecules more strongly and producing more exothermic hydration enthalpies. Option B is correct. Options A and C are incomplete as each considers only one factor. Option D is irrelevant to hydration enthalpy.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0010",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 25,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "The enthalpy of hydration of Li⁺ is more exothermic than that of Na⁺.\n\nWhat is the best explanation for this?",
+      "options": {
+        "A": "Li⁺ has a greater charge than Na⁺",
+        "B": "Li⁺ is more electronegative than Na⁺",
+        "C": "Li⁺ has a smaller ionic radius, giving it a higher charge density",
+        "D": "Li⁺ has more electron shells than Na⁺"
+      },
+      "explanation": "Both Li⁺ and Na⁺ have the same charge (+1), but Li⁺ has a smaller ionic radius because it has fewer electron shells. This gives Li⁺ a higher charge density, resulting in stronger ion-dipole interactions with water molecules and a more exothermic hydration enthalpy. Option C is correct. Option A is wrong because both have the same charge. Option B is irrelevant. Option D is wrong because Na⁺ has more electron shells than Li⁺, not the other way round.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0011",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 26,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement about Born-Haber cycles is correct?",
+      "options": {
+        "A": "They use Hess's law to calculate lattice energies that cannot be measured directly",
+        "B": "They can only be constructed for compounds containing 1+ and 1− ions",
+        "C": "They directly measure lattice energy using a bomb calorimeter",
+        "D": "They require only bond energies to construct"
+      },
+      "explanation": "Born-Haber cycles apply Hess's law to a series of energy changes (atomisation, ionisation, electron affinity, formation) to calculate lattice energy indirectly, since lattice energy cannot be measured experimentally by direct means. Option A is correct. Option B is wrong because Born-Haber cycles can be constructed for any ionic compound regardless of ion charge. Option C is wrong because lattice energy is calculated, not measured directly. Option D is wrong because multiple types of energy data are required, not just bond energies.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0012",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 27,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which sequence correctly orders the compounds from most exothermic to least exothermic lattice energy?",
+      "options": {
+        "A": "NaCl > NaBr > NaI > NaF",
+        "B": "MgO > MgS > CaO > CaS",
+        "C": "MgO > CaO > NaCl > KCl",
+        "D": "LiCl > NaCl > MgCl₂ > AlCl₃"
+      },
+      "explanation": "Lattice energy is more exothermic with higher charges and smaller radii. MgO (2+, 2−) is most exothermic. CaO (2+, 2−, but Ca²⁺ is larger) is next. NaCl (1+, 1−) follows. KCl (1+, 1−, K⁺ is larger) is least exothermic. Option C is correct. Option A is wrong because NaF should be most exothermic (smallest anion). Option B is wrong because MgS has larger anion than MgO but CaO and CaS should be compared carefully. Option D is wrong because AlCl₃ (3+ ion) should have the most exothermic lattice energy.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0013",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 28,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "When an ionic compound dissolves in water, which process is endothermic?",
+      "options": {
+        "A": "Hydration of cations",
+        "B": "Hydration of anions",
+        "C": "Formation of hydrogen bonds between water molecules",
+        "D": "Separation of ions from the crystal lattice (lattice dissociation)"
+      },
+      "explanation": "When an ionic compound dissolves, energy must be supplied to overcome the lattice energy and separate the ions (lattice dissociation), which is endothermic. Options A and B are exothermic because energy is released when ion-dipole bonds form between ions and water molecules. Option C is not directly relevant to the dissolution process. Option D is correct.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0014",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 29,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "The enthalpy of solution of ammonium nitrate is endothermic (+25.7 kJ mol⁻¹).\nDespite this, ammonium nitrate readily dissolves in water at room temperature.\n\nWhich statement explains this observation?",
+      "options": {
+        "A": "The lattice energy is very exothermic",
+        "B": "The Gibbs free energy change for dissolving is negative due to a large positive entropy change",
+        "C": "The hydration enthalpies of the ions are very exothermic",
+        "D": "The solubility is independent of both enthalpy and entropy changes"
+      },
+      "explanation": "Even though ΔHₛₒₙ is positive, dissolution can still be spontaneous if ΔG < 0. Since ΔG = ΔH − TΔS, a large positive ΔS (due to the increased disorder when the solid lattice breaks down and ions disperse) can make ΔG negative at room temperature. Option B is correct. Option A is contradictory because an exothermic lattice energy would make dissolution more endothermic. Option C contradicts the given data (if hydration were very exothermic, ΔHₛₒₙ would be negative). Option D is wrong because thermodynamics governs solubility.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch19_P1_0015",
+      "chapter_id": "ch19",
+      "chapter_num": "19",
+      "paper_type": "P1",
+      "q_num": 30,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch19_t01"
+      ],
+      "is_original": true,
+      "question_text": "The lattice energy of MgCl₂ is −2526 kJ mol⁻¹.\nThe enthalpy of hydration of Mg²⁺ is −1920 kJ mol⁻¹.\nThe enthalpy of hydration of Cl⁻ is −364 kJ mol⁻¹.\n\nWhat is the enthalpy of solution of MgCl₂?",
+      "options": {
+        "A": "−55 kJ mol⁻¹",
+        "B": "−87 kJ mol⁻¹",
+        "C": "+87 kJ mol⁻¹",
+        "D": "−122 kJ mol⁻¹"
+      },
+      "explanation": "ΔHₛₒₙ = −lattice energy + ΔHₕₑₖ(Mg²⁺) + 2×ΔHₕₑₖ(Cl⁻). Lattice dissociation = +2526 kJ mol⁻¹ (reverse of formation). Total hydration = −1920 + 2(−364) = −1920 − 728 = −2648 kJ mol⁻¹. ΔHₛₒₙ = 2526 + (−2648) = −122 kJ mol⁻¹. Option D is correct. Option A forgets to multiply Cl⁻ hydration by 2. Option B uses an incorrect lattice energy. Option C has the wrong sign.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch20_P1_0001",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 31,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "What is meant by the standard electrode potential E⦵ of a half-cell?",
+      "options": {
+        "A": "The potential of a half-cell measured against a standard hydrogen electrode under standard conditions",
+        "B": "The potential difference between two identical half-cells",
+        "C": "The voltage measured when the half-cell is connected to a saturated calomel electrode",
+        "D": "The potential of a half-cell at any given concentration of ions"
+      },
+      "explanation": "The standard electrode potential E⦵ is defined as the electromotive force (emf) of a cell consisting of the half-cell connected to a standard hydrogen electrode (SHE), with all species at standard conditions (298 K, 100 kPa, 1.0 mol dm⁻³). Option A is correct. Option B describes a cell with zero potential. Option C describes measurement against a reference electrode other than SHE. Option D ignores the requirement for standard conditions.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0002",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 32,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Given the following standard electrode potentials:\nE⦵(Zn²⁺/Zn) = −0.76 V\nE⦵(Cu²⁺/Cu) = +0.34 V\n\nWhat is E⦵ₑₑₗ for the reaction: Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)?",
+      "options": {
+        "A": "0.42 V",
+        "B": "1.10 V",
+        "C": "−1.10 V",
+        "D": "−0.42 V"
+      },
+      "explanation": "E⦵ₑₑₗ = E⦵(reduction) − E⦵(oxidation). Cu²⁺ is reduced (higher E⦵) and Zn is oxidised. E⦵ₑₑₗ = E⦵(Cu²⁺/Cu) − E⦵(Zn²⁺/Zn) = 0.34 − (−0.76) = 1.10 V. Option B is correct. Option A incorrectly subtracts 0.34 from 0.76. Option C has the wrong sign. Option D is the result of subtracting in the wrong order.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0003",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 33,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement about the standard hydrogen electrode (SHE) is correct?",
+      "options": {
+        "A": "It uses a platinum wire in a solution of pH 7",
+        "B": "It operates at 25 °C with H₂ gas at 1 atm and [H⁺] = 1.0 × 10⁻⁷ mol dm⁻³",
+        "C": "It uses a platinum electrode coated with platinum black, in contact with H₂(g) at 100 kPa and H⁺(aq) at 1.0 mol dm⁻³",
+        "D": "It has an assigned potential of +1.00 V"
+      },
+      "explanation": "The standard hydrogen electrode consists of a platinum electrode coated with platinum black, dipped into a solution of H⁺ ions at 1.0 mol dm⁻³, with H₂ gas at 100 kPa, all at 298 K. It is assigned a potential of 0.00 V. Option C is correct. Option A is wrong because [H⁺] must be 1.0 mol dm⁻³ (pH 0), not pH 7. Option B repeats the pH 7 error and uses 1 atm instead of 100 kPa. Option D is wrong because SHE is assigned 0.00 V.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0004",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 34,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "For a reaction with E⦵ₑₑₗ = +0.92 V and n = 2, what is ΔG⦵ at 298 K?\n(F = 96500 C mol⁻¹)",
+      "options": {
+        "A": "−89 kJ mol⁻¹",
+        "B": "+178 kJ mol⁻¹",
+        "C": "+89 kJ mol⁻¹",
+        "D": "−178 kJ mol⁻¹"
+      },
+      "explanation": "Using ΔG⦵ = −nFE⦵ₑₑₗ = −2 × 96500 × 0.92 = −177560 J mol⁻¹ = −178 kJ mol⁻¹. Option D is correct. Option A uses n = 1 instead of n = 2. Option B has the wrong sign (forgetting the negative sign in the equation). Option C combines both errors (n = 1 and wrong sign).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0005",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 35,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which relationship correctly links standard electrode potential and Gibbs free energy?",
+      "options": {
+        "A": "ΔG⦵ = −nFE⦵",
+        "B": "ΔG⦵ = +nFE⦵",
+        "C": "ΔG⦵ = −E⦵/(nF)",
+        "D": "ΔG⦵ = nF/E⦵"
+      },
+      "explanation": "The relationship between Gibbs free energy and electrode potential is ΔG⦵ = −nFE⦵, where n is the number of moles of electrons transferred and F is the Faraday constant. The negative sign indicates that a positive E⦵ (feasible reaction) gives a negative ΔG (spontaneous). Option A is correct. Option B has the wrong sign. Options C and D have incorrect algebraic arrangements of the variables.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0006",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 36,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Given the following standard electrode potentials:\nE⦵(Fe³⁺/Fe²⁺) = +0.77 V\nE⦵(I₂/I⁻) = +0.54 V\nE⦵(Br₂/Br⁻) = +1.07 V\n\nWhich reagent will oxidise Fe²⁺ to Fe³⁺?",
+      "options": {
+        "A": "I₂",
+        "B": "Br₂",
+        "C": "I⁻",
+        "D": "Fe³⁺"
+      },
+      "explanation": "For a species to oxidise Fe²⁺ to Fe³⁺, it must be reduced itself, and its E⦵ must be more positive than E⦵(Fe³⁺/Fe²⁺) = +0.77 V. Br₂ has E⦵ = +1.07 V > +0.77 V, so Br₂ can oxidise Fe²⁺. I₂ has E⦵ = +0.54 V < +0.77 V, so it cannot. Option B is correct. Option A cannot oxidise Fe²⁺. Option C (I⁻) is already reduced and cannot act as an oxidant. Option D (Fe³⁺) is the product, not the oxidant.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0007",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 37,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "In a hydrogen-oxygen fuel cell operating in alkaline conditions, what happens at the anode (negative electrode)?",
+      "options": {
+        "A": "O₂ is reduced to OH⁻",
+        "B": "H₂ is oxidised to H⁺ ions",
+        "C": "H₂ is oxidised, reacting with OH⁻ to form water",
+        "D": "O₂ is oxidised to O²⁻"
+      },
+      "explanation": "At the anode (negative electrode) in an alkaline fuel cell, hydrogen is oxidised: H₂ + 2OH⁻ → 2H₂O + 2e⁻. Option C is correct. Option A describes the cathode reaction. Option B describes the anode reaction in acidic conditions, not alkaline. Option D is incorrect because oxygen is reduced, not oxidised, at the cathode.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0008",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 38,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "A current of 0.50 A is passed through molten lead(II) bromide for 30 minutes.\nWhat mass of lead is deposited at the cathode?\n(Pb = 207, F = 96500 C mol⁻¹)",
+      "options": {
+        "A": "0.97 g",
+        "B": "1.93 g",
+        "C": "3.86 g",
+        "D": "0.48 g"
+      },
+      "explanation": "Q = It = 0.50 × 30 × 60 = 900 C. Moles of electrons = 900/96500 = 0.00933 mol. At the cathode: Pb²⁺ + 2e⁻ → Pb, so moles of Pb = 0.00933/2 = 0.00466 mol. Mass = 0.00466 × 207 = 0.965 ≈ 0.97 g. Option A is correct. Option B forgets to divide by 2 (using n = 1). Option C uses n = 1 and doubles the current. Option D halves the correct answer.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0009",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 39,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Given:\nE⦵(Ag⁺/Ag) = +0.80 V\nE⦵(Cu²⁺/Cu) = +0.34 V\n\nCalculate E⦵ₑₑₗ and determine whether the reaction below is feasible:\n2Ag(s) + Cu²⁺(aq) → 2Ag⁺(aq) + Cu(s)",
+      "options": {
+        "A": "E⦵ₑₑₗ = +0.46 V, reaction is feasible",
+        "B": "E⦵ₑₑₗ = +0.46 V, reaction is not feasible",
+        "C": "E⦵ₑₑₗ = −0.46 V, reaction is feasible",
+        "D": "E⦵ₑₑₗ = −0.46 V, reaction is not feasible"
+      },
+      "explanation": "Cu²⁺ would be reduced (it is the oxidant) and Ag would be oxidised. E⦵ₑₑₗ = E⦵(reduction) − E⦵(oxidation) = E⦵(Cu²⁺/Cu) − E⦵(Ag⁺/Ag) = 0.34 − 0.80 = −0.46 V. Since E⦵ₑₑₗ is negative, ΔG⦵ is positive and the reaction is not feasible. Option D is correct. Options A and B have the wrong sign for E⦵ₑₑₗ. Option C incorrectly states that a negative E⦵ₑₑₗ is feasible.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0010",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 40,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "During the electrolysis of dilute sulfuric acid using inert electrodes, a current of 2.0 A is passed for 1 hour and 20 minutes.\nWhat volume of oxygen gas is produced at the anode at room temperature and pressure?\n(Molar volume = 24 dm³ mol⁻¹, F = 96500 C mol⁻¹)",
+      "options": {
+        "A": "0.30 dm³",
+        "B": "0.60 dm³",
+        "C": "1.19 dm³",
+        "D": "2.39 dm³"
+      },
+      "explanation": "Time = 80 min = 4800 s. Q = It = 2.0 × 4800 = 9600 C. Moles of electrons = 9600/96500 = 0.0995 mol. At the anode: 2H₂O → O₂ + 4H⁺ + 4e⁻, so 4 moles of electrons produce 1 mole of O₂. Moles of O₂ = 0.0995/4 = 0.0249 mol. Volume = 0.0249 × 24 = 0.597 ≈ 0.60 dm³. Option B is correct. Option A uses n = 8 (wrong). Option C uses n = 2 (hydrogen equation). Option D uses n = 1 (forgetting to divide by 4).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0011",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 41,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement about fuel cells is correct?",
+      "options": {
+        "A": "Fuel cells store energy chemically and release it upon combustion",
+        "B": "Fuel cells produce alternating current (AC)",
+        "C": "In a fuel cell, the fuel is oxidised at the anode and the oxidant is reduced at the cathode",
+        "D": "Fuel cells require periodic recharging like secondary cells"
+      },
+      "explanation": "In a fuel cell, the fuel (e.g. H₂) is continuously supplied and oxidised at the anode (negative electrode), while the oxidant (e.g. O₂) is reduced at the cathode (positive electrode). Option C is correct. Option A describes a combustion engine, not a fuel cell. Option B is wrong because fuel cells produce direct current (DC). Option D is wrong because fuel cells operate continuously as long as fuel is supplied and do not require recharging.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0012",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 42,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "The standard electrode potential of the Fe³⁺/Fe²⁺ half-cell is +0.77 V.\nThe half-equation is: Fe³⁺(aq) + e⁻ ⇌ Fe²⁺(aq)\n\nWhat is the effect on the electrode potential when the concentration of Fe²⁺ is increased while [Fe³⁺] remains at 1.0 mol dm⁻³?",
+      "options": {
+        "A": "The electrode potential decreases",
+        "B": "The electrode potential increases",
+        "C": "The electrode potential remains unchanged",
+        "D": "The electrode potential becomes zero"
+      },
+      "explanation": "Using the Nernst equation: E = E⦵ − (RT/nF)ln([Fe²⁺]/[Fe³⁺]). Increasing [Fe²⁺] increases the ratio [Fe²⁺]/[Fe³⁺], making ln(ratio) more positive, so E decreases. This makes sense by Le Chatelier's principle: increasing the product Fe²⁺ shifts the equilibrium to the left, making reduction less favourable and lowering the electrode potential. Option A is correct.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0013",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 43,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "In the reaction:\nCr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O\n\nHow many moles of electrons are transferred in the overall reaction?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "12"
+      },
+      "explanation": "In Cr₂O₇²⁻, Cr has oxidation state +6. In Cr³⁺, Cr has oxidation state +3. Each Cr gains 3 electrons, and there are 2 Cr atoms, so 6 electrons are gained. Each Fe²⁺ loses 1 electron to become Fe³⁺, and there are 6 Fe atoms, so 6 electrons are lost. Total electrons transferred = 6. Option C is correct. Option A considers only one Cr atom. Option B is wrong. Option D doubles the correct answer.",
+      "difficulty": "A-grade",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0014",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 44,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which factor does NOT affect the electrode potential of a half-cell under non-standard conditions?",
+      "options": {
+        "A": "Temperature",
+        "B": "The identity of the inert electrode material",
+        "C": "The concentration of ions in solution",
+        "D": "The pressure of gas in a gas electrode"
+      },
+      "explanation": "According to the Nernst equation, E depends on temperature, ion concentration, and gas pressure. The identity of the inert electrode material (e.g. platinum vs graphite) does not affect the electrode potential, as long as the material is truly inert and does not participate in the reaction. Option B is correct. Options A, C and D all appear in the Nernst equation and do affect the electrode potential.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 24
+    },
+    {
+      "id": "ch20_P1_0015",
+      "chapter_id": "ch20",
+      "chapter_num": "20",
+      "paper_type": "P1",
+      "q_num": 45,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch20_t01"
+      ],
+      "is_original": true,
+      "question_text": "A Daniell cell operates at 298 K with:\nE⦵(Zn²⁺/Zn) = −0.76 V, E⦵(Cu²⁺/Cu) = +0.34 V\n[Zn²⁺] = 0.10 mol dm⁻³ and [Cu²⁺] = 2.0 mol dm⁻³\nUsing the Nernst equation: Eₑₑₗ = E⦵ₑₑₗ − (RT/nF)lnQ\nwhere Q = [Zn²⁺]/[Cu²⁺], n = 2, R = 8.31 J mol⁻¹ K⁻¹, F = 96500 C mol⁻¹\n\nWhat is Eₑₑₗ?",
+      "options": {
+        "A": "1.06 V",
+        "B": "1.10 V",
+        "C": "1.12 V",
+        "D": "1.14 V"
+      },
+      "explanation": "E⦵ₑₑₗ = 0.34 − (−0.76) = 1.10 V. Q = 0.10/2.0 = 0.05. ln(0.05) = −2.996. RT/(nF) = (8.31 × 298)/(2 × 96500) = 2476.4/193000 = 0.01283. Eₑₑₗ = 1.10 − 0.01283 × (−2.996) = 1.10 + 0.0385 = 1.1385 ≈ 1.14 V. Option D is correct. Option B is the standard potential (ignoring concentration effects). Options A and C result from sign errors or incorrect Q values.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 24
+    },
+    {
+      "id": "ch23_P1_0001",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 46,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement correctly describes entropy?",
+      "options": {
+        "A": "Entropy is a measure of the number of ways in which particles and energy can be arranged in a system",
+        "B": "Entropy always decreases in a spontaneous process",
+        "C": "Entropy is the energy released when chemical bonds are formed",
+        "D": "Entropy is independent of temperature"
+      },
+      "explanation": "Entropy (S) is a measure of the dispersal of energy and the number of ways particles can be arranged (the number of microstates). Option A is correct. Option B is wrong because the total entropy of the universe increases in a spontaneous process (Second Law of Thermodynamics). Option C describes enthalpy of bond formation, not entropy. Option D is wrong because entropy increases with temperature.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0002",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 47,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "For which reaction is ΔS⦵ most likely to be negative?",
+      "options": {
+        "A": "CaCO₃(s) → CaO(s) + CO₂(g)",
+        "B": "N₂(g) + 3H₂(g) → 2NH₃(g)",
+        "C": "NH₄Cl(s) → NH₃(g) + HCl(g)",
+        "D": "2H₂O₂(l) → 2H₂O(l) + O₂(g)"
+      },
+      "explanation": "In option B, 4 moles of gas are converted to 2 moles of gas, reducing the number of particles and the disorder, so ΔS⦵ is negative. Option A produces gas from solid (positive ΔS). Option C produces 2 moles of gas from solid (positive ΔS). Option D produces gas from liquid (positive ΔS). Option B is correct.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0003",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 48,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which state of water has the highest standard molar entropy, S⦵?",
+      "options": {
+        "A": "H₂O(s)",
+        "B": "H₂O(l)",
+        "C": "H₂O(g)",
+        "D": "All three states have the same entropy"
+      },
+      "explanation": "Entropy increases from solid to liquid to gas because the degree of disorder increases. In the solid, molecules are in fixed positions (lowest entropy). In the liquid, molecules can move past each other (higher entropy). In the gas, molecules are completely dispersed (highest entropy). Option C is correct.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0004",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 49,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "Calculate ΔS⦵ for the reaction: CaCO₃(s) → CaO(s) + CO₂(g)\n\nGiven: S⦵(CaCO₃) = 92.9 J K⁻¹ mol⁻¹, S⦵(CaO) = 39.7 J K⁻¹ mol⁻¹, S⦵(CO₂) = 213.6 J K⁻¹ mol⁻¹",
+      "options": {
+        "A": "−160.4 J K⁻¹ mol⁻¹",
+        "B": "92.9 J K⁻¹ mol⁻¹",
+        "C": "253.3 J K⁻¹ mol⁻¹",
+        "D": "+160.4 J K⁻¹ mol⁻¹"
+      },
+      "explanation": "ΔS⦵ = ΣS⦵(products) − ΣS⦵(reactants) = (39.7 + 213.6) − 92.9 = 253.3 − 92.9 = +160.4 J K⁻¹ mol⁻¹. Option D is correct. Option A has the wrong sign (subtracting in the wrong order). Option B is just the entropy of the reactant. Option C is the sum of product entropies without subtracting the reactant entropy.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0005",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 50,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "The Gibbs free energy equation is: ΔG = ΔH − TΔS\n\nFor a reaction to be thermodynamically feasible at constant temperature and pressure, which condition must be met?",
+      "options": {
+        "A": "ΔG < 0",
+        "B": "ΔG > 0",
+        "C": "ΔG = 0",
+        "D": "ΔH < 0"
+      },
+      "explanation": "A reaction is thermodynamically feasible (spontaneous) when ΔG is negative (ΔG < 0). Option A is correct. Option B describes a non-feasible reaction. Option C describes equilibrium. Option D is insufficient because even with ΔH < 0, a large negative ΔS at high temperature could make ΔG positive.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0006",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 51,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "A reaction has ΔH = −50 kJ mol⁻¹ and ΔS = −150 J K⁻¹ mol⁻¹.\n\nAt what temperature does the reaction become non-feasible?",
+      "options": {
+        "A": "167 K",
+        "B": "333 K",
+        "C": "500 K",
+        "D": "1000 K"
+      },
+      "explanation": "At the boundary of feasibility, ΔG = 0, so T = ΔH/ΔS = (−50000)/(−150) = 333 K. Below 333 K, ΔG < 0 (feasible). Above 333 K, the TΔS term dominates (making ΔG > 0, non-feasible). Option B is correct. Option A results from dividing by 300 instead of 150. Option C and D are incorrect calculations.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0007",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 52,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "A reaction has ΔH = +120 kJ mol⁻¹ and ΔS = +250 J K⁻¹ mol⁻¹.\nAt 298 K, ΔG = +45.5 kJ mol⁻¹.\n\nAbove what minimum temperature does the reaction become feasible?",
+      "options": {
+        "A": "250 K",
+        "B": "360 K",
+        "C": "480 K",
+        "D": "720 K"
+      },
+      "explanation": "At the boundary of feasibility: ΔG = 0, so T = ΔH/ΔS = 120000/250 = 480 K. At T < 480 K, ΔG > 0 (not feasible). At T > 480 K, ΔG < 0 (feasible). Option C is correct. Option A uses ΔS/2 instead of ΔH/ΔS. Option B is 298 + 60 (arbitrary). Option D results from using ΔH = 180000 instead of 120000.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0008",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 53,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "For a reaction where ΔH is negative and ΔS is positive, which statement is correct?",
+      "options": {
+        "A": "The reaction is feasible at all temperatures",
+        "B": "The reaction is feasible only at low temperatures",
+        "C": "The reaction is feasible only at high temperatures",
+        "D": "The reaction is never feasible"
+      },
+      "explanation": "When ΔH < 0 and ΔS > 0, both terms in ΔG = ΔH − TΔS are negative (since −TΔS is also negative). Therefore ΔG is always negative regardless of temperature, and the reaction is feasible at all temperatures. Option A is correct. Options B, C and D describe other combinations of ΔH and ΔS signs.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0009",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 54,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "Calculate ΔG⦵ for the combustion of methane at 298 K.\nCH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)\nΔH⦵ = −890 kJ mol⁻¹\nΔS⦵ = −243 J K⁻¹ mol⁻¹",
+      "options": {
+        "A": "−962 kJ mol⁻¹",
+        "B": "+818 kJ mol⁻¹",
+        "C": "−724 kJ mol⁻¹",
+        "D": "−818 kJ mol⁻¹"
+      },
+      "explanation": "ΔG⦵ = ΔH⦵ − TΔS⦵ = −890000 − 298 × (−243) = −890000 + 72414 = −817586 J mol⁻¹ ≈ −818 kJ mol⁻¹. Option D is correct. Option A incorrectly adds instead of subtracting TΔS. Option B has the wrong sign. Option C uses only the TΔS term without combining with ΔH.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0010",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 55,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "At the boiling point of a liquid, the system is at equilibrium, so ΔG = 0.\nFor a liquid with ΔH⦵ᵥₐᵖ = +30.0 kJ mol⁻¹ and ΔS⦵ᵥₐᵖ = +85.0 J K⁻¹ mol⁻¹, what is the boiling point?",
+      "options": {
+        "A": "298 K",
+        "B": "353 K",
+        "C": "403 K",
+        "D": "273 K"
+      },
+      "explanation": "At the boiling point, ΔG = 0, so T = ΔH/ΔS = 30000/85.0 = 352.9 ≈ 353 K (80 °C). Option B is correct. Option A is room temperature. Option C results from using ΔS = 75 instead of 85. Option D is the freezing point of water.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0011",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 56,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which reaction is expected to have a positive ΔS⦵?",
+      "options": {
+        "A": "2H₂(g) + O₂(g) → 2H₂O(l)",
+        "B": "NH₃(g) + HCl(g) → NH₄Cl(s)",
+        "C": "2NaHCO₃(s) → Na₂CO₃(s) + H₂O(g) + CO₂(g)",
+        "D": "H₂O(g) → H₂O(l)"
+      },
+      "explanation": "Option C produces gaseous products (H₂O and CO₂) from a solid reactant, greatly increasing disorder and giving a positive ΔS⦵. Option A reduces 3 moles of gas to liquid (negative ΔS). Option B converts 2 moles of gas to solid (negative ΔS). Option D converts gas to liquid (negative ΔS). Option C is correct.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0012",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 57,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "For the reaction: N₂(g) + O₂(g) → 2NO(g)\nΔH = +180 kJ mol⁻¹, ΔS = +25 J K⁻¹ mol⁻¹\n\nAbove what temperature does this reaction become feasible?",
+      "options": {
+        "A": "7200 K",
+        "B": "3600 K",
+        "C": "180 K",
+        "D": "720 K"
+      },
+      "explanation": "At the boundary of feasibility: T = ΔH/ΔS = 180000/25 = 7200 K. This extremely high temperature explains why N₂ and O₂ do not react under normal conditions. Option A is correct. Option B halves the correct answer. Option C divides ΔH by 1000 instead of converting properly. Option D uses ΔS = 250 instead of 25.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0013",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 58,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which combination of ΔH and ΔS results in a reaction that is feasible only at low temperatures?",
+      "options": {
+        "A": "ΔH > 0, ΔS > 0",
+        "B": "ΔH < 0, ΔS < 0",
+        "C": "ΔH < 0, ΔS > 0",
+        "D": "ΔH > 0, ΔS < 0"
+      },
+      "explanation": "When ΔH < 0 and ΔS < 0: ΔG = ΔH − TΔS. At low T, ΔH dominates and ΔG < 0 (feasible). At high T, the −TΔS term becomes large and positive, making ΔG > 0 (not feasible). Option B is correct. Option A is feasible only at high T. Option C is feasible at all T. Option D is never feasible.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0014",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 59,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "The dissolution of ammonium chloride in water has:\nΔH = +14.8 kJ mol⁻¹\nΔS = +79.2 J K⁻¹ mol⁻¹\n\nWhat is the minimum temperature at which the dissolution becomes thermodynamically feasible?",
+      "options": {
+        "A": "148 K",
+        "B": "167 K",
+        "C": "187 K",
+        "D": "298 K"
+      },
+      "explanation": "At the boundary of feasibility: T = ΔH/ΔS = 14800/79.2 = 186.9 ≈ 187 K. Below this temperature, ΔG > 0 (not feasible); above it, ΔG < 0 (feasible). Since 187 K is well below room temperature (298 K), ammonium chloride dissolves readily at normal conditions. Option C is correct. Option A uses ΔS = 100 (wrong). Option B uses ΔS = 88.6 (wrong). Option D is room temperature but is not the minimum feasible temperature.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch23_P1_0015",
+      "chapter_id": "ch23",
+      "chapter_num": "23",
+      "paper_type": "P1",
+      "q_num": 60,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch23_t01"
+      ],
+      "is_original": true,
+      "question_text": "A reaction has ΔH = −75.0 kJ mol⁻¹ and ΔS = −120 J K⁻¹ mol⁻¹.\n\nWhat is ΔG at 500 K, and is the reaction feasible at this temperature?",
+      "options": {
+        "A": "ΔG = −135 kJ mol⁻¹, feasible",
+        "B": "ΔG = +45 kJ mol⁻¹, not feasible",
+        "C": "ΔG = −75 kJ mol⁻¹, feasible",
+        "D": "ΔG = −15 kJ mol⁻¹, feasible"
+      },
+      "explanation": "ΔG = ΔH − TΔS = −75000 − 500 × (−120) = −75000 + 60000 = −15000 J mol⁻¹ = −15 kJ mol⁻¹. Since ΔG < 0, the reaction is feasible at 500 K. The reaction becomes non-feasible above T = ΔH/ΔS = 75000/120 = 625 K. Option D is correct. Option A incorrectly adds ΔH and TΔS. Option B has the wrong sign. Option C ignores the TΔS term entirely.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 23
+    },
+    {
+      "id": "ch25_P1_0001",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 1,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement about the bonding in benzene is correct?",
+      "options": {
+        "A": "Each carbon atom in benzene uses sp³ hybrid orbitals, giving a non-planar ring structure.",
+        "B": "Each carbon atom in benzene uses sp² hybrid orbitals to form σ bonds, and the remaining p orbitals overlap sideways to form a delocalised π system above and below the ring.",
+        "C": "Benzene contains three localised C=C double bonds and three C–C single bonds arranged alternately.",
+        "D": "The π electrons in benzene are localised in three discrete pairs between adjacent carbon atoms."
+      },
+      "explanation": "B is correct: each carbon in benzene is sp² hybridised, forming three σ bonds (two C–C and one C–H) in a plane. The remaining unhybridised p orbital on each carbon overlaps sideways with neighbouring p orbitals to form a delocalised π system of six electrons above and below the ring plane. A is wrong (sp³ would give tetrahedral geometry, not planar). C and D describe the Kekulé model, which is incorrect because all C–C bonds in benzene are equivalent.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0002",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 2,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "The C–C bond length in benzene is 0.139 nm. The typical C=C bond length is 0.134 nm and the typical C–C single bond length is 0.154 nm.\n\nWhat does this indicate about the bonding in benzene?",
+      "options": {
+        "A": "All six C–C bonds in benzene are identical and intermediate in length between single and double bonds, consistent with a delocalised π system.",
+        "B": "Benzene has three bonds of length 0.134 nm and three bonds of length 0.154 nm, but rapid interconversion averages the measured value.",
+        "C": "The C–C bond length in benzene equals the arithmetic mean of typical single and double bond lengths, proving equal bond order.",
+        "D": "The bond length of 0.139 nm indicates that benzene contains three weak double bonds and three normal single bonds."
+      },
+      "explanation": "A is correct: the single observed bond length (0.139 nm) is intermediate between a C–C single bond (0.154 nm) and a C=C double bond (0.134 nm), confirming all six bonds are equivalent due to delocalisation. B describes the outdated Kekulé oscillation model. C is wrong because 0.139 nm is not the arithmetic mean (0.144 nm); bond length depends on bond order, not simple averaging. D incorrectly proposes alternating bond types.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0003",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 3,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "The electrophile in the nitration of benzene is the nitronium ion, NO₂⁺.\n\nHow is this electrophile generated from concentrated nitric acid and concentrated sulfuric acid?",
+      "options": {
+        "A": "HNO₃ acts as an acid and donates a proton to H₂SO₄.",
+        "B": "H₂SO₄ oxidises HNO₃ to produce NO₂⁺ and SO₂.",
+        "C": "HNO₃ undergoes homolytic fission to produce NO₂ radicals.",
+        "D": "H₂SO₄ protonates HNO₃, which then loses water to form NO₂⁺."
+      },
+      "explanation": "D is correct: H₂SO₄ (the stronger acid) protonates HNO₃ to form H₂NO₃⁺, which then loses a water molecule to generate the nitronium ion NO₂⁺. The overall equation is HNO₃ + H₂SO₄ → NO₂⁺ + HSO₄⁻ + H₂O. A is wrong (HNO₃ is the weaker acid, so it does not donate a proton to H₂SO₄). B is wrong (no redox occurs). C is wrong (the process is ionic, not radical).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0004",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 4,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Benzene does not react with chlorine in the dark at room temperature, whereas ethene reacts readily under these conditions.\n\nWhich conditions are required for the chlorination of benzene?",
+      "options": {
+        "A": "Cl₂ with NaOH(aq) at 0°C",
+        "B": "Cl₂ in UV light at room temperature",
+        "C": "Cl₂ with AlCl₃ catalyst at room temperature",
+        "D": "HCl with AlCl₃ catalyst at 50°C"
+      },
+      "explanation": "C is correct: benzene requires a Lewis acid catalyst (AlCl₃ or FeCl₃) to polarise the Cl–Cl bond and generate the electrophile Cl⁺ (or Clδ⁺). A gives bleach (NaOCl), B causes radical substitution (not electrophilic), and D uses HCl which cannot provide an electrophile for electrophilic aromatic substitution.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0005",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 5,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "In a Friedel-Crafts acylation, benzene reacts with ethanoyl chloride (CH₃COCl) in the presence of anhydrous AlCl₃.\n\nWhat is the major organic product?",
+      "options": {
+        "A": "C₆H₅COCH₃ (phenylethanone / acetophenone)",
+        "B": "C₆H₅CH₂CH₃ (ethylbenzene)",
+        "C": "C₆H₅OOCCH₃ (phenyl ethanoate)",
+        "D": "C₆H₅CH(OH)CH₃ (1-phenylethanol)"
+      },
+      "explanation": "A is correct: AlCl₃ generates the acylium ion CH₃CO⁺, which attacks benzene. After loss of H⁺, the product is C₆H₅COCH₃ (acetophenone). B would result from Friedel-Crafts alkylation with CH₃CH₂Cl. C is an ester, not a ketone. D would require nucleophilic addition, not electrophilic substitution.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0006",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 6,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which statement describes a significant disadvantage of Friedel-Crafts alkylation compared to acylation?",
+      "options": {
+        "A": "Alkylation requires higher temperatures than acylation.",
+        "B": "Alkylation only works with methyl and ethyl halides.",
+        "C": "The alkyl halide must be primary; tertiary halides do not react.",
+        "D": "The alkyl group introduced is an activating group, so polyalkylation can occur."
+      },
+      "explanation": "D is correct: alkyl groups are electron-donating (activating), making the product more reactive than the starting benzene, leading to polyalkylation. In acylation, the acyl group (–COR) is deactivating, so mono-substitution occurs readily. A is wrong (similar conditions are used). B is wrong (many alkyl halides work). C is wrong (tertiary halides can react via carbocation rearrangement).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0007",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 7,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "When methylbenzene reacts with a mixture of concentrated HNO₃ and H₂SO₄, the major products are 2-nitromethylbenzene and 4-nitromethylbenzene.\n\nWhy does the methyl group direct incoming electrophiles to the ortho and para positions?",
+      "options": {
+        "A": "The methyl group withdraws electrons by induction, destabilising the meta position.",
+        "B": "The methyl group donates electrons by hyperconjugation and induction, stabilising the σ-complex (Wheland intermediate) at ortho and para positions more than at meta.",
+        "C": "The methyl group increases steric hindrance at the meta position, blocking electrophilic attack there.",
+        "D": "The methyl group forms a covalent bond with the incoming electrophile at the ortho and para positions."
+      },
+      "explanation": "B is correct: the methyl group donates electrons inductively and by hyperconjugation. In the σ-complex for ortho/para attack, one resonance structure places the positive charge on the carbon bearing the methyl group, which is stabilised by electron donation. For meta attack, no such stabilising resonance structure exists. A is wrong (methyl donates, not withdraws). C is wrong (steric effects are secondary, not the main reason). D is wrong (no covalent bond forms between methyl and electrophile).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0008",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 8,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "When nitrobenzene undergoes further nitration, the major product is 1,3-dinitrobenzene (meta product).\n\nWhy is the nitro group a meta-director?",
+      "options": {
+        "A": "The nitro group donates electrons by resonance, stabilising the meta position.",
+        "B": "The nitro group is sterically bulky, blocking the ortho and para positions.",
+        "C": "The nitro group withdraws electrons by both inductive and mesomeric effects, destabilising the σ-complex at ortho and para positions more than at meta.",
+        "D": "The nitro group reacts with the electrophile before it reaches the ring, redirecting it to the meta position."
+      },
+      "explanation": "C is correct: the –NO₂ group withdraws electrons by both induction (via the electronegative N and O atoms) and mesomeric (resonance) effects. In the σ-complex for ortho/para attack, one resonance structure places the positive charge on the carbon directly bonded to –NO₂, which is highly destabilised. For meta attack, no such unfavourable resonance structure exists, so meta is relatively favoured. A is wrong (NO₂ withdraws, not donates). B is wrong (steric effects are secondary). D is wrong (NO₂ does not react with the electrophile first).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0009",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 9,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Benzene does not decolourise bromine water, whereas ethene decolourises bromine water rapidly.\n\nWhich statement best explains this difference in reactivity?",
+      "options": {
+        "A": "The delocalised π electrons in benzene are more stable and less available for electrophilic addition; benzene tends to undergo substitution instead to preserve the delocalised system.",
+        "B": "Benzene has no π electrons available for reaction, whereas ethene has a localised π bond.",
+        "C": "Benzene is sterically hindered, preventing attack by bromine.",
+        "D": "Ethene is more polar than benzene, making it more reactive towards bromine."
+      },
+      "explanation": "A is correct: benzene's delocalised π system is stabilised by resonance energy (~152 kJ mol⁻¹), making the electrons less available for electrophilic addition. Benzene undergoes electrophilic substitution rather than addition to preserve this stability. B is wrong (benzene has 6 π electrons). C is wrong (steric hindrance is not the key factor). D is wrong (both molecules are non-polar).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0010",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 10,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Phenol (pKa ≈ 10.0) is more acidic than ethanol (pKa ≈ 15.9) but less acidic than ethanoic acid (pKa ≈ 4.8).\n\nWhy is phenol more acidic than ethanol?",
+      "options": {
+        "A": "The O–H bond in phenol is longer and weaker than in ethanol.",
+        "B": "The phenoxide ion is stabilised by delocalisation of the negative charge into the aromatic ring.",
+        "C": "The benzene ring donates electrons to the O–H bond, weakening it.",
+        "D": "Phenol can form more hydrogen bonds than ethanol, stabilising the products."
+      },
+      "explanation": "D is correct: when phenol loses a proton, the resulting phenoxide ion (C₆H₅O⁻) is stabilised because the negative charge on oxygen is delocalised into the benzene ring via resonance. This stabilisation of the conjugate base makes phenol more acidic. A is wrong (bond length is not the key factor). B is wrong (H-bonding does not explain the difference in acidity). C is wrong (electron donation into the O–H bond would strengthen it, not weaken it; the key is conjugate base stabilisation).",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0011",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 11,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which reagent does NOT react with phenol at room temperature to produce a visible reaction?",
+      "options": {
+        "A": "Na₂CO₃(aq)",
+        "B": "NaOH(aq)",
+        "C": "Br₂(aq)",
+        "D": "Na(s)"
+      },
+      "explanation": "A is correct: phenol (pKa ≈ 10) is not acidic enough to liberate CO₂ from Na₂CO₃ (which requires pKa < ~6.5), so no visible reaction occurs. B reacts (phenol + NaOH → sodium phenoxide + H₂O). C reacts (bromine water is decolourised; 2,4,6-tribromophenol white precipitate forms). D reacts (phenol + Na → sodium phenoxide + H₂ gas, effervescence).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0012",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 12,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Phenol reacts with bromine water to give 2,4,6-tribromophenol, whereas benzene requires Br₂/FeBr₃ for monobromination.\n\nWhy is phenol more reactive than benzene towards electrophilic substitution?",
+      "options": {
+        "A": "The –OH group withdraws electrons inductively, making the ring more electrophilic.",
+        "B": "The –OH group makes phenol more acidic, increasing its reactivity.",
+        "C": "The lone pair on the oxygen atom delocalises into the ring, increasing electron density at the ortho and para positions and stabilising the σ-complex.",
+        "D": "Phenol has a larger molecular size than benzene, providing more sites for attack."
+      },
+      "explanation": "C is correct: the oxygen lone pair in phenol donates into the ring by mesomeric (resonance) effect, increasing electron density at ortho and para positions. This activates the ring towards electrophilic substitution and stabilises the σ-complex intermediate, so no catalyst is needed for bromination. A is wrong (inductive withdrawal is outweighed by mesomeric donation). B is wrong (acidity is not directly related to electrophilic substitution reactivity). D is wrong (molecular size is irrelevant).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0013",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 13,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "When phenol reacts with dilute bromine water at room temperature, a white precipitate forms.\n\nWhat is the structure of this precipitate?",
+      "options": {
+        "A": "2,4,6-tribromophenol",
+        "B": "2-bromophenol",
+        "C": "2,4-dibromophenol",
+        "D": "1-bromo-2,4,6-tribromocyclohexane"
+      },
+      "explanation": "A is correct: phenol is so strongly activated towards electrophilic substitution that all three ortho/para positions are substituted by bromine, giving 2,4,6-tribromophenol as a white precipitate. B and C are incomplete substitution products. D is an addition product, not a substitution product – electrophilic substitution (not addition) occurs to preserve the aromatic ring.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0014",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 14,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "The experimental enthalpy of hydrogenation of benzene to cyclohexane is –208 kJ mol⁻¹. The enthalpy of hydrogenation of cyclohexene is –120 kJ mol⁻¹.\n\nWhat is the delocalisation energy (stabilisation energy) of benzene?",
+      "options": {
+        "A": "88 kJ mol⁻¹",
+        "B": "152 kJ mol⁻¹",
+        "C": "328 kJ mol⁻¹",
+        "D": "–152 kJ mol⁻¹"
+      },
+      "explanation": "B is correct: if benzene had three isolated C=C bonds, the expected enthalpy of hydrogenation would be 3 × (–120) = –360 kJ mol⁻¹. The actual value is –208 kJ mol⁻¹. The difference (–208) – (–360) = +152 kJ mol⁻¹ represents the extra stability (delocalisation energy) of benzene. A (88) is the difference between –208 and –296 (= 2 × –120 + something), which is incorrect. C (328) is wrong. D is wrong because the delocalisation energy is a positive value representing stabilisation, not a negative value.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 30
+    },
+    {
+      "id": "ch25_P1_0015",
+      "chapter_id": "ch25",
+      "chapter_num": "25",
+      "paper_type": "P1",
+      "q_num": 15,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch25_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which intermediate is formed during electrophilic substitution of benzene?",
+      "options": {
+        "A": "A carbocation formed by loss of a hydride ion from the ring",
+        "B": "A benzyne intermediate with a triple bond in the ring",
+        "C": "A radical intermediate with an unpaired electron on the ring",
+        "D": "A σ-complex (Wheland intermediate) in which the electrophile is bonded to a carbon that becomes sp³ hybridised"
+      },
+      "explanation": "D is correct: in electrophilic aromatic substitution, the electrophile attacks a carbon in the ring, forming a σ-complex (Wheland intermediate). The attacked carbon changes from sp² to sp³ hybridisation, and the positive charge is delocalised over the remaining five carbons. A is wrong (no hydride loss occurs; a proton is lost in the final step). B is wrong (benzyne is a different mechanism, not standard electrophilic substitution). C is wrong (the mechanism is ionic, not radical).",
+      "difficulty": "A-star",
+      "ao": "AO1",
+      "new_topic": 30
+    },
+    {
+      "id": "ch27_P1_0016",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 16,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which compound is a secondary amine?",
+      "options": {
+        "A": "CH₃NH₂",
+        "B": "(CH₃)₃N",
+        "C": "(CH₃)₂NH",
+        "D": "C₆H₅NH₂"
+      },
+      "explanation": "C is correct: (CH₃)₂NH (dimethylamine) has the nitrogen bonded to two carbon atoms and one hydrogen, making it a secondary amine. A (CH₃NH₂, methylamine) is primary (one C bonded to N). B ((CH₃)₃N, trimethylamine) is tertiary (three C atoms bonded to N). D (C₆H₅NH₂, phenylamine) is primary (one C bonded to N).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0017",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 17,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which correctly ranks the bases in order of increasing basicity (weakest first) in aqueous solution?",
+      "options": {
+        "A": "NH₃ < CH₃NH₂ < (CH₃)₂NH",
+        "B": "CH₃NH₂ < NH₃ < (CH₃)₂NH",
+        "C": "(CH₃)₂NH < CH₃NH₂ < NH₃",
+        "D": "NH₃ < (CH₃)₂NH < CH₃NH₂"
+      },
+      "explanation": "A is correct: in aqueous solution, basicity increases from NH₃ (pKb ≈ 4.75) < CH₃NH₂ (pKb ≈ 3.36) < (CH₃)₂NH (pKb ≈ 3.27). Alkyl groups donate electrons inductively, increasing electron density on N and stabilising the conjugate acid. Two methyl groups provide more donation than one. (Note: (CH₃)₃N is less basic than (CH₃)₂NH in water due to reduced solvation of the conjugate acid.) B, C, and D have incorrect orderings.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0018",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 18,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Why are primary aliphatic amines more basic than ammonia?",
+      "options": {
+        "A": "Alkyl groups withdraw electrons by induction, making the nitrogen a stronger base.",
+        "B": "Alkyl groups form hydrogen bonds with water, increasing basicity.",
+        "C": "Alkyl groups decrease steric hindrance around nitrogen, making it more accessible to protons.",
+        "D": "Alkyl groups donate electrons by induction, increasing the electron density on nitrogen and stabilising the conjugate acid."
+      },
+      "explanation": "D is correct: alkyl groups are electron-donating by the inductive effect (+I), which increases the electron density on the nitrogen atom. This makes the lone pair more available for protonation and stabilises the resulting alkylammonium ion (conjugate acid). A is wrong (alkyl groups donate, not withdraw). B is wrong (H-bonding of alkyl groups is not relevant to basicity). C is wrong (alkyl groups actually increase steric hindrance slightly).",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0019",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 19,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Phenylamine is a much weaker base than ammonia (pKb ≈ 9.4 vs 4.8).\n\nWhat is the main reason for this?",
+      "options": {
+        "A": "The benzene ring withdraws electrons inductively from nitrogen, but the lone pair is unaffected.",
+        "B": "The lone pair on nitrogen is delocalised into the benzene ring, making it less available to accept a proton.",
+        "C": "The phenyl group increases steric hindrance around nitrogen.",
+        "D": "Phenylamine forms hydrogen bonds with water, reducing its basicity."
+      },
+      "explanation": "B is correct: in phenylamine, the nitrogen lone pair is delocalised into the benzene ring by mesomeric (resonance) effect, making it less available to accept a proton. This is the dominant factor. A is wrong (both inductive and mesomeric effects operate, but the key factor is lone pair delocalisation, not just induction). C is wrong (steric effects are minor). D is wrong (H-bonding does not reduce basicity in this context).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0020",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 20,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "When 1-bromopropane reacts with excess ammonia in ethanol, what is the major organic product?",
+      "options": {
+        "A": "(CH₃CH₂CH₂)₂NH",
+        "B": "(CH₃CH₂CH₂)₃N",
+        "C": "CH₃CH₂CH₂NH₂",
+        "D": "CH₃CH₂CH₂OH"
+      },
+      "explanation": "C is correct: with excess ammonia, the primary amine CH₃CH₂CH₂NH₂ (propylamine) is the major product via nucleophilic substitution (NH₃ acts as the nucleophile). Using excess ammonia minimises further substitution to secondary and tertiary amines. A and B would form with excess halogenoalkane. D would form if NaOH(aq) were used instead of ammonia.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0021",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 21,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Propanenitrile (CH₃CH₂CN) is reduced using LiAlH₄ in dry ether, followed by acid work-up.\n\nWhat is the product?",
+      "options": {
+        "A": "CH₃CH₂CH₂NH₂",
+        "B": "CH₃CH₂CH₂OH",
+        "C": "CH₃CH₂CONH₂",
+        "D": "CH₃CH₂COOH"
+      },
+      "explanation": "A is correct: LiAlH₄ reduces the C≡N triple bond to CH₂–NH₂, converting propanenitrile (CH₃CH₂CN) to propylamine (CH₃CH₂CH₂NH₂). B would result from hydrolysis, not reduction. C is the amide intermediate (partial hydrolysis), not the LiAlH₄ reduction product. D would result from acid hydrolysis of the nitrile.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0022",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 22,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "At its isoelectric point, an amino acid exists mainly as a zwitterion.\n\nWhich structure correctly represents the zwitterion of glycine (H₂NCH₂COOH)?",
+      "options": {
+        "A": "H₂NCH₂COOH",
+        "B": "⁺H₃NCH₂COOH",
+        "C": "H₂NCH₂COO⁻",
+        "D": "⁺H₃NCH₂COO⁻"
+      },
+      "explanation": "D is correct: at the isoelectric point, the amino group is protonated (–NH₃⁺) and the carboxyl group is deprotonated (–COO⁻), giving the zwitterion ⁺H₃NCH₂COO⁻ with no net charge. A is the neutral (non-ionised) form. B has a net +1 charge (protonated amino, undissociated carboxyl). C has a net –1 charge (free amino, dissociated carboxyl).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0023",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 23,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "An amino acid has an isoelectric point at pH 6.0. In a solution buffered at pH 2.0, how will this amino acid migrate during electrophoresis?",
+      "options": {
+        "A": "It will not migrate.",
+        "B": "Towards the cathode (negative electrode).",
+        "C": "Towards the anode (positive electrode).",
+        "D": "It will migrate towards both electrodes simultaneously."
+      },
+      "explanation": "B is correct: at pH 2.0 (well below the isoelectric point of 6.0), both the amino and carboxyl groups are protonated, giving the form ⁺H₃N–CHR–COOH with a net positive charge. Positively charged species migrate towards the cathode (negative electrode). A is wrong (it would not migrate only at its isoelectric point). C is wrong (that would happen at pH above the pI, where it has a net negative charge). D is impossible.",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0024",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 24,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Ethanamide (CH₃CONH₂) is heated under reflux with dilute hydrochloric acid.\n\nWhat are the products?",
+      "options": {
+        "A": "CH₃COCl and NH₃",
+        "B": "CH₃COOH and NH₃",
+        "C": "CH₃COOH and NH₄Cl",
+        "D": "CH₃NH₂ and CO₂"
+      },
+      "explanation": "C is correct: acid hydrolysis of an amide produces the carboxylic acid and the ammonium salt. The reaction is CH₃CONH₂ + H₂O + HCl → CH₃COOH + NH₄Cl. The ammonia initially formed is protonated by the acid to give NH₄⁺. A is wrong (no acyl chloride forms). B is wrong (in acidic conditions, NH₃ is protonated to NH₄⁺). D is wrong (these are not hydrolysis products of an amide).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0025",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 25,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Why is ethanamide a much weaker base than ethylamine?",
+      "options": {
+        "A": "The lone pair on nitrogen in ethanamide is delocalised towards the carbonyl group, making it less available to accept a proton.",
+        "B": "The carbonyl group is electron-donating, reducing the basicity of nitrogen.",
+        "C": "Ethanamide has a larger molecular mass, making it less basic.",
+        "D": "The nitrogen in ethanamide is sp hybridised, reducing basicity."
+      },
+      "explanation": "A is correct: in ethanamide (CH₃CONH₂), the nitrogen lone pair is delocalised towards the adjacent C=O group by mesomeric effect (resonance: N–C=O ↔ N⁺=C–O⁻). This delocalisation makes the lone pair less available for protonation, drastically reducing basicity. B is wrong (C=O is electron-withdrawing, not donating). C is wrong (molecular mass is irrelevant to basicity). D is wrong (the nitrogen in amides is sp² hybridised, not sp).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0026",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 26,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Phenylamine reacts with NaNO₂ and HCl at 0–5°C to form a diazonium salt.\n\nWhat is the structure of the diazonium ion formed?",
+      "options": {
+        "A": "C₆H₅N₂",
+        "B": "C₆H₄N₂⁺",
+        "C": "C₆H₅NH=N⁺",
+        "D": "C₆H₅N₂⁺"
+      },
+      "explanation": "D is correct: the diazotisation reaction produces the benzenediazonium ion C₆H₅N₂⁺, where the N₂⁺ group is attached directly to the ring. A is wrong (no charge shown; this would be a neutral diazo compound, not a diazonium salt). B is wrong (this implies loss of a ring hydrogen, giving C₆H₄, which is incorrect). C is wrong (the structure shows an incorrect bonding arrangement; the correct structure is C₆H₅–N≡N⁺).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0027",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 27,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "A diazonium salt reacts with phenol in alkaline conditions to form an azo dye.\n\nWhich type of reaction is the coupling step?",
+      "options": {
+        "A": "Nucleophilic addition to the diazonium group",
+        "B": "Electrophilic aromatic substitution, where the diazonium ion acts as the electrophile",
+        "C": "Radical substitution on the aromatic ring",
+        "D": "Elimination reaction"
+      },
+      "explanation": "B is correct: the diazonium ion (ArN₂⁺) is a weak electrophile that attacks the electron-rich ring of phenol (activated by –OH) at the para position, displacing a proton. This is electrophilic aromatic substitution. A is wrong (it is substitution, not addition). C is wrong (the mechanism is ionic, not radical). D is wrong (no elimination occurs; a new C–N bond forms).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0028",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 28,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "When ethylamine reacts with dilute hydrochloric acid, what is the product?",
+      "options": {
+        "A": "C₂H₅Cl + NH₃",
+        "B": "C₂H₅OH + NH₄Cl",
+        "C": "C₂H₅NH₃⁺Cl⁻",
+        "D": "C₂H₅NCl₂"
+      },
+      "explanation": "C is correct: ethylamine is a base and reacts with HCl in a straightforward acid-base reaction to form the salt ethylammonium chloride: C₂H₅NH₂ + HCl → C₂H₅NH₃⁺Cl⁻. A is wrong (no nucleophilic substitution occurs with dilute acid). B is wrong (no hydrolysis occurs). D is wrong (no multiple chlorination of nitrogen occurs).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0029",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 29,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Direct nitration of phenylamine gives a complex mixture of oxidised and poly-nitrated products.\n\nWhich strategy is used to obtain mainly p-nitrophenylamine?",
+      "options": {
+        "A": "The amine group is first protected by acetylation (reaction with ethanoyl chloride), then nitrated, then the protecting group is removed by hydrolysis.",
+        "B": "The reaction is carried out at very low temperature (–78°C) to control the product.",
+        "C": "The amine is first oxidised to a nitro group, then reduced selectively at the para position.",
+        "D": "Nitration is performed using dilute nitric acid without any catalyst."
+      },
+      "explanation": "A is correct: the –NH₂ group is too strongly activating and is easily oxidised by nitrating mixture. By converting it to –NHCOCH₃ (acetamide) with ethanoyl chloride, the group becomes less activating and more resistant to oxidation. Nitration then gives mainly the para product due to steric and electronic effects. The acetyl group is subsequently removed by acid hydrolysis to regenerate –NH₂. B, C, and D would not solve the problems of oxidation and over-reaction.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 34
+    },
+    {
+      "id": "ch27_P1_0030",
+      "chapter_id": "ch27",
+      "chapter_num": "27",
+      "paper_type": "P1",
+      "q_num": 30,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch27_t01"
+      ],
+      "is_original": true,
+      "question_text": "Ethylamine reacts with ethanoyl chloride.\n\nWhat type of product is formed?",
+      "options": {
+        "A": "An ester",
+        "B": "A nitrile",
+        "C": "An imine",
+        "D": "An amide"
+      },
+      "explanation": "D is correct: amines react with acyl chlorides to form amides. The reaction is CH₃COCl + C₂H₅NH₂ → CH₃CONHC₂H₅ + HCl (N-ethylethanamide). A is wrong (esters form from alcohols + acyl chlorides). B is wrong (nitriles form from dehydration of amides, not from amines + acyl chlorides). C is wrong (imines form from carbonyl compounds + primary amines).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 34
+    },
+    {
+      "id": "ch29_P1_0031",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 31,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which sequence of reagents converts ethanol into ethyl ethanoate via ethanoic acid?",
+      "options": {
+        "A": "(1) Acidified K₂Cr₂O₇, distil immediately; (2) Ethanol, conc. H₂SO₄, heat",
+        "B": "(1) Acidified K₂Cr₂O₇, heat under reflux; (2) Ethanol, conc. H₂SO₄, heat",
+        "C": "(1) Acidified K₂Cr₂O₇, heat under reflux; (2) Ethanol, Na, room temperature",
+        "D": "(1) Acidified K₂Cr₂O₇, distil immediately; (2) Ethanol, NaOH, heat"
+      },
+      "explanation": "B is correct: Step 1 requires full oxidation of ethanol to ethanoic acid, which needs heating under reflux with acidified K₂Cr₂O₇ (distilling immediately would only give ethanal). Step 2 requires esterification of ethanoic acid with ethanol using conc. H₂SO₄ catalyst and heat. A is wrong (distillation gives ethanal, not ethanoic acid). C is wrong (Na + ethanol gives sodium ethoxide, not an ester). D is wrong on both steps.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0032",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 32,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "The target molecule is 4-methylpentanenitrile, (CH₃)₂CHCH₂CH₂CN.\n\nWhich retrosynthetic disconnection gives the most practical forward synthesis?",
+      "options": {
+        "A": "Disconnect all C–C bonds and synthesise from methane",
+        "B": "Disconnect the C–C bond adjacent to the branch: forward reaction uses (CH₃)₂CHBr + BrCH₂CH₂CN",
+        "C": "Disconnect the C–CN bond: forward reaction uses (CH₃)₂CHCH₂CH₂Br + KCN in ethanol",
+        "D": "Disconnect the C≡N triple bond: forward reaction uses (CH₃)₂CHCH₂CH₂CH₂NH₂ with an oxidising agent"
+      },
+      "explanation": "C is correct: disconnecting the C–CN bond gives a primary halide (CH₃)₂CHCH₂CH₂Br and cyanide ion. The forward reaction is nucleophilic substitution: the halide reacts with KCN in ethanol to form the nitrile, extending the carbon chain by one. A is impractical. B involves a secondary halide which would undergo elimination rather than substitution. D has no valid chemical basis (oxidising an amine does not give a nitrile).",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0033",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 33,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which reagent and conditions convert propan-1-ol into propanal?",
+      "options": {
+        "A": "Acidified K₂Cr₂O₇, distil immediately",
+        "B": "Acidified K₂Cr₂O₇, heat under reflux",
+        "C": "H₂, Ni catalyst, heat",
+        "D": "NaBH₄ in dry ether"
+      },
+      "explanation": "A is correct: primary alcohols are oxidised to aldehydes using acidified K₂Cr₂O₇, and the aldehyde must be distilled off immediately to prevent further oxidation to the carboxylic acid. B is wrong (refluxing would produce propanoic acid). C is wrong (H₂/Ni is a reducing agent, not an oxidising agent). D is wrong (NaBH₄ is also a reducing agent).",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0034",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 34,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which reagent converts propanoic acid into methyl propanoate?",
+      "options": {
+        "A": "Methanol, NaOH, heat",
+        "B": "Ethanol, conc. H₂SO₄, heat",
+        "C": "Methanol, conc. H₂SO₄, heat",
+        "D": "Methanal, conc. H₂SO₄, heat"
+      },
+      "explanation": "D is correct: esterification of propanoic acid with methanol using conc. H₂SO₄ as catalyst gives methyl propanoate (CH₃CH₂COOCH₃) + H₂O. A is wrong (NaOH would deprotonate the acid, preventing esterification). B is wrong (ethanol would give ethyl propanoate). C is wrong (methanal is an aldehyde, not an alcohol; it cannot form an ester directly).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0035",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 35,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which reagent reduces a ketone to a secondary alcohol but does NOT reduce a carboxylic acid?",
+      "options": {
+        "A": "LiAlH₄ in dry ether",
+        "B": "NaBH₄ in aqueous ethanol",
+        "C": "H₂, Ni catalyst, heat",
+        "D": "Sn, conc. HCl"
+      },
+      "explanation": "B is correct: NaBH₄ is a mild reducing agent that reduces ketones (and aldehydes) to alcohols but does not reduce carboxylic acids, esters, or amides. A is wrong (LiAlH₄ is a powerful reducing agent that reduces carboxylic acids as well). C is wrong (H₂/Ni can reduce multiple functional groups). D is wrong (Sn/HCl reduces nitro groups to amines, not ketones to alcohols).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0036",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 36,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "In the synthesis of p-nitrophenylamine from phenylamine, which reagent is used to protect the –NH₂ group before nitration?",
+      "options": {
+        "A": "Dilute HCl",
+        "B": "NaNO₂ and HCl at 0–5°C",
+        "C": "Ethanoyl chloride (CH₃COCl)",
+        "D": "Bromine water"
+      },
+      "explanation": "C is correct: the –NH₂ group is protected by acetylation with ethanoyl chloride to form –NHCOCH₃ (an amide). This reduces the activating effect of the nitrogen and prevents oxidation during nitration, while still directing to the para position. After nitration, the acetyl group is removed by acid hydrolysis. A is wrong (HCl would form a salt but not protect against oxidation). B is wrong (this forms a diazonium salt). D is wrong (bromine water would brominate the ring).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0037",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 37,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which sequence of reagents converts ethene into ethylamine (C₂H₅NH₂)?",
+      "options": {
+        "A": "(1) HBr; (2) Excess NH₃ in ethanol, heat in sealed tube",
+        "B": "(1) HBr; (2) KCN in ethanol, heat; (3) LiAlH₄ in dry ether, then H⁺",
+        "C": "(1) H₂O, H₂SO₄; (2) Excess NH₃",
+        "D": "(1) HCN; (2) H₂/Ni"
+      },
+      "explanation": "A is correct: Step 1: CH₂=CH₂ + HBr → CH₃CH₂Br (electrophilic addition). Step 2: CH₃CH₂Br + excess NH₃ → CH₃CH₂NH₂ (nucleophilic substitution). This gives ethylamine (2 carbons). B is wrong (the KCN route adds a carbon: CH₃CH₂CN → CH₃CH₂CH₂NH₂, giving propylamine, 3 carbons). C is wrong (alcohols do not react with NH₃ directly). D is wrong (HCN adds to ethene to give propanenitrile, then reduction gives propylamine).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0038",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 38,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Propanenitrile (CH₃CH₂CN) is heated under reflux with dilute sulfuric acid.\n\nWhat is the organic product?",
+      "options": {
+        "A": "Propanamide (CH₃CH₂CONH₂)",
+        "B": "Propylamine (CH₃CH₂CH₂NH₂)",
+        "C": "Ethanoic acid (CH₃COOH)",
+        "D": "Propanoic acid (CH₃CH₂COOH)"
+      },
+      "explanation": "D is correct: acid hydrolysis of a nitrile produces a carboxylic acid: CH₃CH₂CN + 2H₂O + H⁺ → CH₃CH₂COOH + NH₄⁺. The nitrile is hydrolysed via the amide intermediate, but under prolonged reflux with dilute acid, the amide is further hydrolysed to the carboxylic acid. A is the intermediate product (incomplete hydrolysis). B would require reduction (LiAlH₄), not hydrolysis. C has the wrong number of carbons.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0039",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 39,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "A student plans to synthesise phenylamine from benzene in three steps.\n\nWhich is the correct sequence?",
+      "options": {
+        "A": "(1) Conc. HNO₃ only; (2) Sn/conc. HCl; (3) H₂/Pt",
+        "B": "(1) Conc. HNO₃/conc. H₂SO₄, 50°C; (2) Sn/conc. HCl, heat; (3) NaOH(aq)",
+        "C": "(1) Br₂/FeBr₃; (2) Excess NH₃; (3) NaOH",
+        "D": "(1) Conc. HNO₃/conc. H₂SO₄, 50°C; (2) H₂/Ni; (3) NaBH₄"
+      },
+      "explanation": "B is correct: Step 1: nitration of benzene with conc. HNO₃/conc. H₂SO₄ at 50°C gives nitrobenzene. Step 2: reduction with Sn/conc. HCl gives phenylammonium chloride. Step 3: NaOH(aq) liberates the free base phenylamine. A is wrong (conc. HNO₃ alone without H₂SO₄ is insufficient for nitration; H₂/Pt is unnecessary after Sn/HCl reduction). C is wrong (bromobenzene does not react with NH₃ easily; it lacks a good leaving group for nucleophilic substitution). D is wrong (NaBH₄ does not reduce nitro groups; also, H₂/Ni is not the standard reagent for reducing nitrobenzene in CAIE).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch29_P1_0040",
+      "chapter_id": "ch29",
+      "chapter_num": "29",
+      "paper_type": "P1",
+      "q_num": 40,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch29_t01"
+      ],
+      "is_original": true,
+      "question_text": "Which reagent converts 2-bromopropane into propan-2-ol?",
+      "options": {
+        "A": "NaOH in ethanol, heat",
+        "B": "H₂O, room temperature",
+        "C": "NaOH(aq), heat",
+        "D": "K₂Cr₂O₇/H⁺"
+      },
+      "explanation": "C is correct: NaOH(aq) provides OH⁻ as a nucleophile for substitution (SN1 or SN2), converting 2-bromopropane to propan-2-ol. A is wrong (NaOH in ethanol favours elimination, producing propene). B is wrong (water alone is too weak a nucleophile for efficient substitution at room temperature). D is wrong (K₂Cr₂O₇/H⁺ is an oxidising agent, not a nucleophilic substitution reagent).",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 36
+    },
+    {
+      "id": "ch30_P1_0041",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 41,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "In the ¹H NMR spectrum of propanal (CH₃CH₂CHO), how many different proton environments are present?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "3"
+      },
+      "explanation": "D is correct: propanal has three distinct proton environments: the CH₃ group (3H), the CH₂ group (2H), and the CHO proton (1H). Each is in a different chemical environment. A and B are wrong (there are more than 1 or 2 environments). C is wrong (there is no fourth environment; the molecule has no symmetry that would create additional distinct environments).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0042",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 42,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "A compound has the molecular formula C₃H₈O. Its ¹H NMR spectrum shows three signals with integration ratios 6:1:1.\n\nWhat is the structure of the compound?",
+      "options": {
+        "A": "(CH₃)₂CHOH (propan-2-ol)",
+        "B": "CH₃CH₂CH₂OH (propan-1-ol)",
+        "C": "CH₃OCH₂CH₃ (methoxyethane)",
+        "D": "(CH₃)₃COH (2-methylpropan-2-ol)"
+      },
+      "explanation": "A is correct: propan-2-ol has three proton environments: two equivalent CH₃ groups (6H), one CH (1H), and one OH (1H), giving integration 6:1:1. B is wrong (propan-1-ol has 4 environments with ratio 3:2:2:1). C is wrong (methoxyethane has 3 environments with ratio 3:2:3). D is wrong ((CH₃)₃COH has formula C₄H₁₀O, not C₃H₈O).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0043",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 43,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "In the ¹H NMR spectrum of ethoxyethane (CH₃CH₂OCH₂CH₃), what is the splitting pattern of the CH₂ protons?",
+      "options": {
+        "A": "Triplet",
+        "B": "Quartet",
+        "C": "Singlet",
+        "D": "Doublet"
+      },
+      "explanation": "B is correct: the CH₂ protons are adjacent to 3 protons on the neighbouring CH₃ group. By the n+1 rule, they are split into 3+1 = 4 peaks (a quartet). A (triplet) would be the pattern of the CH₃ protons (adjacent to 2H on CH₂). C (singlet) would mean no adjacent protons. D (doublet) would mean 1 adjacent proton.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0044",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 44,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "Why is tetramethylsilane (TMS, (CH₄)₄Si) used as a reference in NMR spectroscopy?",
+      "options": {
+        "A": "TMS produces twelve identical peaks that serve as a calibration grid.",
+        "B": "TMS is the most chemically reactive compound available, making it easy to detect.",
+        "C": "TMS gives a single sharp peak at δ = 0; silicon is less electronegative than carbon, so all other proton/carbon signals appear downfield.",
+        "D": "TMS absorbs strongly in the UV region, calibrating the spectrometer."
+      },
+      "explanation": "C is correct: TMS has 12 equivalent protons and 4 equivalent carbons, giving a single sharp peak. Silicon is less electronegative than carbon, so the TMS protons/carbons are more shielded than in almost all organic compounds. Its signal is defined as δ = 0, and all other signals appear at higher δ (downfield). A is wrong (TMS gives one peak, not twelve). B is wrong (TMS is chemically inert). D is wrong (TMS is used in NMR, not UV spectroscopy).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0045",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 45,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "Why are deuterated solvents such as CDCl₃ used in ¹H NMR spectroscopy?",
+      "options": {
+        "A": "Deuterated solvents are cheaper than non-deuterated ones.",
+        "B": "Deuterium has the same nuclear spin as ¹H but absorbs at a different frequency.",
+        "C": "Deuterated solvents improve the solubility of organic compounds.",
+        "D": "Deuterium (²H) has a different nuclear spin from ¹H, so it does not produce a signal in the ¹H NMR spectrum, avoiding interference with the sample's proton signals."
+      },
+      "explanation": "D is correct: ²H (deuterium) has a nuclear spin of 1, different from ¹H (spin ½). The ¹H NMR spectrometer is tuned to the Larmor frequency of ¹H, so ²H does not resonate and produces no signal, preventing solvent interference. A is wrong (deuterated solvents are more expensive). B is wrong (deuterium has a different nuclear spin, not the same). C is wrong (solubility is not the reason for using deuterated solvents).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0046",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 46,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "How many peaks are present in the ¹³C NMR spectrum of 1,2-dichlorobenzene?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "2"
+      },
+      "explanation": "A is correct: 1,2-dichlorobenzene has a plane of symmetry passing through C1–C2 and C4–C5. The carbon environments are: C1 and C2 (both bearing Cl, equivalent), C3 and C6 (equivalent), and C4 and C5 (equivalent). This gives 3 unique carbon environments → 3 peaks. B is wrong. C is wrong (6 would mean all carbons are unique, ignoring symmetry). D is wrong (2 would require more symmetry than exists).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0047",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 47,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "A compound has the molecular formula C₄H₁₀O. In its mass spectrum, what is the m/z value of the molecular ion peak (M⁺)?",
+      "options": {
+        "A": "73",
+        "B": "74",
+        "C": "75",
+        "D": "59"
+      },
+      "explanation": "B is correct: the molecular mass = 4(12) + 10(1) + 16 = 48 + 10 + 16 = 74. The molecular ion peak M⁺ appears at m/z = 74. A (73) would be [M–H]⁺. C (75) would be [M+H]⁺ (more common in CI-MS, not EI-MS). D (59) would be [M–CH₃]⁺, a fragmentation peak.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0048",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 48,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "In the mass spectrum of propan-1-ol (CH₃CH₂CH₂OH), a prominent peak is observed at m/z = 31.\n\nWhat fragment is responsible for this peak?",
+      "options": {
+        "A": "C₃H₇⁺ (loss of OH)",
+        "B": "CH₃CH₂⁺ (loss of CH₂OH)",
+        "C": "CH₂=OH⁺ (loss of C₂H₅)",
+        "D": "H₂O⁺ (loss of C₃H₆)"
+      },
+      "explanation": "C is correct: m/z = 31 corresponds to CH₂=OH⁺ (12 + 2 + 16 + 1 = 31), formed by α-cleavage (loss of the ethyl group, C₂H₅•, mass 29). This is a characteristic fragmentation of primary alcohols. A would be at m/z = 43 (C₃H₇⁺). B would be at m/z = 29 (C₂H₅⁺). D would be at m/z = 18 (H₂O⁺).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0049",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 49,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "In thin layer chromatography (TLC), two compounds X and Y have Rf values of 0.8 and 0.2 respectively in a given solvent system.\n\nWhich statement is correct?",
+      "options": {
+        "A": "Compound Y travels further up the plate than compound X.",
+        "B": "Both compounds have the same affinity for the stationary phase.",
+        "C": "Compound X has a higher molecular mass than compound Y.",
+        "D": "Compound X is more soluble in the mobile phase than compound Y."
+      },
+      "explanation": "D is correct: a higher Rf value means the compound spends more time in the mobile phase and travels further. Compound X (Rf = 0.8) is more soluble in the mobile phase (or has less affinity for the stationary phase) than Y (Rf = 0.2). A is wrong (X travels further than Y, not vice versa). B is wrong (different Rf values indicate different affinities). C is wrong (Rf does not directly correlate with molecular mass).",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0050",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 50,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "In gas-liquid chromatography (GLC), what is the function of the stationary phase?",
+      "options": {
+        "A": "It is a high-boiling liquid coated on an inert solid support, separating components based on their relative solubilities.",
+        "B": "It is a solid adsorbent that separates components by size exclusion.",
+        "C": "It is a gas that carries the sample through the column.",
+        "D": "It is a membrane that only allows small molecules to pass through."
+      },
+      "explanation": "A is correct: in GLC, the stationary phase is a high-boiling liquid (e.g., silicone oil) coated on an inert solid support inside the column. Components separate based on their relative solubilities in this liquid stationary phase – more soluble components are retained longer. B describes size-exclusion chromatography. C describes the mobile phase (carrier gas), not the stationary phase. D describes a filtration membrane.",
+      "difficulty": "Standard",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0051",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 51,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "In column chromatography using silica gel (polar stationary phase), which compound elutes first when using a non-polar mobile phase?",
+      "options": {
+        "A": "The more polar compound, because it interacts more strongly with the mobile phase.",
+        "B": "The less polar compound, because it has weaker interactions with the polar stationary phase and is carried through more quickly.",
+        "C": "The compound with the higher molecular mass, regardless of polarity.",
+        "D": "Both compounds elute simultaneously."
+      },
+      "explanation": "B is correct: with a polar stationary phase (silica gel), less polar compounds have weaker interactions with the stationary phase and are carried through the column more quickly by the non-polar mobile phase, so they elute first. A is wrong (more polar compounds interact more strongly with the polar stationary phase, so they are retained longer). C is wrong (molecular mass is not the primary factor; polarity is). D is wrong (different compounds have different retention times).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0052",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 52,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "A compound of molecular formula C₃H₆O has a strong absorption at 1715 cm⁻¹ in its IR spectrum. Its ¹H NMR spectrum shows a single signal: a singlet at δ ≈ 2.1 (6H).\n\nWhat is the structure of the compound?",
+      "options": {
+        "A": "Propanal (CH₃CH₂CHO)",
+        "B": "Propan-1-ol (CH₃CH₂CH₂OH)",
+        "C": "Propanone (CH₃COCH₃)",
+        "D": "Propanoic acid (CH₃COOH)"
+      },
+      "explanation": "C is correct: the IR absorption at 1715 cm⁻¹ indicates a C=O stretch (ketone or aldehyde). The ¹H NMR shows a single singlet at δ 2.1 with 6H, indicating two equivalent CH₃ groups adjacent to C=O. This matches propanone (CH₃COCH₃). A is wrong (propanal would show 3 signals: a triplet, a multiplet/sextet, and a triplet, not a single singlet). B is wrong (no C=O absorption; would show broad O–H). D is wrong (wrong formula C₃H₆O₂; would show broad O–H at 2500–3300 cm⁻¹).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0053",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 53,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "A compound X has a molecular ion peak at m/z = 86 in its mass spectrum. Its ¹H NMR spectrum shows two signals: a quartet at δ ≈ 2.4 (4H) and a triplet at δ ≈ 1.1 (6H), with integration ratio 2:3.\n\nWhat is compound X?",
+      "options": {
+        "A": "Pentan-2-one (CH₃COCH₂CH₂CH₃)",
+        "B": "Ethyl ethanoate (CH₃COOCH₂CH₃)",
+        "C": "2-methylbutanal ((CH₃)₂CHCH₂CHO)",
+        "D": "Pentan-3-one (CH₃CH₂COCH₂CH₃)"
+      },
+      "explanation": "D is correct: M = 86 corresponds to C₅H₁₀O (5×12 + 10 + 16 = 86). Only two ¹H NMR signals with ratio 2:3 (= 4H:6H) indicates a highly symmetrical molecule with two equivalent ethyl groups. The quartet at δ 2.4 (CH₂ next to C=O) and triplet at δ 1.1 (CH₃) match pentan-3-one (CH₃CH₂COCH₂CH₃). A is wrong (would show 4 signals due to lack of symmetry). B is wrong (M = 88, not 86). C is wrong (would show 4 signals and the aldehyde proton at δ ~9.5).",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0054",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 54,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "A",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "An organic compound Q has the following spectral data:\n- Molecular ion peak at m/z = 60\n- IR: strong broad absorption at 2500–3300 cm⁻¹ and strong absorption at 1715 cm⁻¹\n- ¹H NMR: singlet (3H, δ 2.1) and broad singlet (1H, δ 11.0)\n\nWhat is compound Q?",
+      "options": {
+        "A": "CH₃COOH (ethanoic acid)",
+        "B": "CH₃CH₂OH (ethanol)",
+        "C": "CH₃CHO (ethanal)",
+        "D": "HCOOCH₃ (methyl methanoate)"
+      },
+      "explanation": "A is correct: M = 60 matches C₂H₄O₂ (24 + 4 + 32 = 60). The IR broad absorption at 2500–3300 cm⁻¹ is characteristic of O–H stretch in carboxylic acids, and 1715 cm⁻¹ is C=O stretch. The ¹H NMR singlet at δ 2.1 (3H, CH₃) and broad singlet at δ 11.0 (1H, COOH) match ethanoic acid. B is wrong (M = 46; no C=O absorption). C is wrong (M = 44; would show aldehyde C–H stretch at ~2700 cm⁻¹). D is wrong (M = 60 but is an ester; no broad O–H absorption at 2500–3300 cm⁻¹).",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 37
+    },
+    {
+      "id": "ch30_P1_0055",
+      "chapter_id": "ch30",
+      "chapter_num": "30",
+      "paper_type": "P1",
+      "q_num": 55,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch30_t01"
+      ],
+      "is_original": true,
+      "question_text": "How many peaks are present in the ¹³C NMR spectrum of methylbenzene (C₆H₅CH₃)?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "7",
+        "D": "6"
+      },
+      "explanation": "B is correct: methylbenzene has a plane of symmetry through the CH₃ group, C1, and C4. The carbon environments are: C1 (bearing CH₃), C2/C6 (ortho, equivalent), C3/C5 (meta, equivalent), C4 (para), and the CH₃ carbon itself = 5 unique environments → 5 peaks. A (4) would miss one environment. C (7) counts all 7 carbons as unique (ignoring symmetry). D (6) counts only ring carbons, missing the methyl carbon.",
+      "difficulty": "A-grade",
+      "ao": "AO1",
+      "new_topic": 37
+    },
+    {
+      "id": "ch21_P1_0056",
+      "chapter_id": "ch21",
+      "chapter_num": "21",
+      "paper_type": "P1",
+      "q_num": 56,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "C",
+      "topic_ids": [
+        "ch21_t01"
+      ],
+      "is_original": true,
+      "question_text": "A buffer solution contains 0.10 mol of ethanoic acid (Ka = 1.8 × 10⁻⁵ mol dm⁻³) and 0.10 mol of sodium ethanoate in 1.0 dm³ of solution.\n\nWhat is the pH of this buffer?",
+      "options": {
+        "A": "9.26",
+        "B": "4.56",
+        "C": "4.74",
+        "D": "5.00"
+      },
+      "explanation": "C is correct: using the Henderson-Hasselbalch equation, pH = pKa + log([A⁻]/[HA]). pKa = –log(1.8 × 10⁻⁵) = 4.74. Since [A⁻] = [HA] = 0.10 mol dm⁻³, log(0.10/0.10) = log(1) = 0. Therefore pH = 4.74 + 0 = 4.74. A (9.26) is 14 – 4.74, confusing acid and base. B (4.56) would result from an incorrect ratio. D (5.00) has no basis in the calculation.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 25
+    },
+    {
+      "id": "ch21_P1_0057",
+      "chapter_id": "ch21",
+      "chapter_num": "21",
+      "paper_type": "P1",
+      "q_num": 57,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch21_t01"
+      ],
+      "is_original": true,
+      "question_text": "At 298 K, Kw = 1.0 × 10⁻¹⁴ mol² dm⁻⁶.\n\nWhat is the pH of a 0.025 mol dm⁻³ solution of Ba(OH)₂?",
+      "options": {
+        "A": "12.40",
+        "B": "13.00",
+        "C": "1.30",
+        "D": "12.70"
+      },
+      "explanation": "D is correct: Ba(OH)₂ → Ba²⁺ + 2OH⁻, so [OH⁻] = 2 × 0.025 = 0.050 mol dm⁻³. pOH = –log(0.050) = 1.30. pH = 14.00 – 1.30 = 12.70. A (12.40) would result from using [OH⁻] = 0.025 (forgetting the factor of 2). B (13.00) would result from [OH⁻] = 0.10. C (1.30) is the pOH value, not the pH.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 25
+    },
+    {
+      "id": "ch21_P1_0058",
+      "chapter_id": "ch21",
+      "chapter_num": "21",
+      "paper_type": "P1",
+      "q_num": 58,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "B",
+      "topic_ids": [
+        "ch21_t01"
+      ],
+      "is_original": true,
+      "question_text": "A weak acid HA has Ka = 4.0 × 10⁻⁵ mol dm⁻³. A 0.10 mol dm⁻³ solution is prepared.\n\nWhat is the pH of this solution?",
+      "options": {
+        "A": "4.40",
+        "B": "2.70",
+        "C": "3.40",
+        "D": "1.00"
+      },
+      "explanation": "B is correct: for a weak acid, Ka = [H⁺][A⁻]/[HA] ≈ x²/[HA]₀. So x² = Ka × [HA]₀ = 4.0 × 10⁻⁵ × 0.10 = 4.0 × 10⁻⁶. x = √(4.0 × 10⁻⁶) = 2.0 × 10⁻³ mol dm⁻³. pH = –log(2.0 × 10⁻³) = 2.70. A (4.40) is the pKa value (–log Ka), not the pH. C (3.40) would result from using x = 4.0 × 10⁻⁴ (incorrectly taking Ka directly). D (1.00) would be the pH of a 0.10 mol dm⁻³ strong acid.",
+      "difficulty": "Standard",
+      "ao": "AO2",
+      "new_topic": 25
+    },
+    {
+      "id": "ch21_P1_0059",
+      "chapter_id": "ch21",
+      "chapter_num": "21",
+      "paper_type": "P1",
+      "q_num": 59,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch21_t01"
+      ],
+      "is_original": true,
+      "question_text": "The solubility product of AgCl is 1.8 × 10⁻¹⁰ mol² dm⁻⁶ at 298 K.\n\nWhat is the solubility of AgCl in a 0.10 mol dm⁻³ solution of NaCl?",
+      "options": {
+        "A": "1.3 × 10⁻⁵ mol dm⁻³",
+        "B": "1.8 × 10⁻¹¹ mol dm⁻³",
+        "C": "3.6 × 10⁻⁹ mol dm⁻³",
+        "D": "1.8 × 10⁻⁹ mol dm⁻³"
+      },
+      "explanation": "D is correct: let s = solubility of AgCl. Then [Ag⁺] = s and [Cl⁻] = s + 0.10 ≈ 0.10 (since s << 0.10). Ksp = [Ag⁺][Cl⁻] = s × 0.10 = 1.8 × 10⁻¹⁰. Therefore s = 1.8 × 10⁻⁹ mol dm⁻³. This demonstrates the common ion effect: the presence of Cl⁻ from NaCl suppresses the dissolution of AgCl. A (1.3 × 10⁻⁵) is the solubility in pure water (√Ksp = √(1.8 × 10⁻¹⁰)). B is wrong (would require [Cl⁻] = 10). C is wrong (would require Ksp = 3.6 × 10⁻¹⁰).",
+      "difficulty": "A-grade",
+      "ao": "AO2",
+      "new_topic": 25
+    },
+    {
+      "id": "ch21_P1_0060",
+      "chapter_id": "ch21",
+      "chapter_num": "21",
+      "paper_type": "P1",
+      "q_num": 60,
+      "source": "Seven_Original_2026",
+      "year": 2026,
+      "season": "Original",
+      "answer": "D",
+      "topic_ids": [
+        "ch21_t01"
+      ],
+      "is_original": true,
+      "question_text": "A solute X distributes between water and dichloromethane with partition coefficient Kd = [X(CH₂Cl₂)]/[X(H₂O)] = 5.0. 100 cm³ of aqueous solution containing 0.60 g of X is shaken with 100 cm³ of dichloromethane.\n\nWhat mass of X remains in the aqueous layer?",
+      "options": {
+        "A": "0.30 g",
+        "B": "0.50 g",
+        "C": "0.12 g",
+        "D": "0.10 g"
+      },
+      "explanation": "D is correct: let x = mass of X in CH₂Cl₂, then (0.60 – x) = mass in H₂O. Since equal volumes are used, Kd = x/(0.60–x) = 5.0. Solving: x = 5.0(0.60 – x) = 3.0 – 5x, so 6x = 3.0, x = 0.50 g in CH₂Cl₂. Mass remaining in water = 0.60 – 0.50 = 0.10 g. A (0.30 g) would be the result if Kd = 1 (equal distribution). B (0.50 g) is the mass transferred to CH₂Cl₂, not remaining in water. C (0.12 g) would result from an incorrect calculation.",
+      "difficulty": "A-star",
+      "ao": "AO2",
+      "new_topic": 25
+    }
+  ]
+}

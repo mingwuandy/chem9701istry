@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Netlify / Wrangler local
+.netlify/
+.wrangler/
+
+# Backup files
+db_backup.json
+index_backup.html
+knowledge_db_backup_*.json
+
+# Videos (too large for git, use external storage)
+videos/
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,8 @@
+{
+  "_comment": "学生账号库 - 老师通过网站管理界面批量创建",
+  "version": "1",
+  "last_updated": "2026-05-22",
+  "students": [
+    {"name": "Test Student", "username": "student", "password": "chem9701"}
+  ]
+}

@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>chem9701 — Student Portal</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px;scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f4f8;color:#1e293b;min-height:100vh}
+
+.login-wrap{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+.login-box{background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.1);padding:40px 36px;width:100%;max-width:380px}
+.login-box h1{font-size:1.5rem;color:#1e293b;margin-bottom:4px}
+.login-box p{font-size:.82rem;color:#64748b;margin-bottom:28px}
+.f-group{margin-bottom:16px}
+.f-group label{display:block;font-size:.78rem;font-weight:600;color:#374151;margin-bottom:6px}
+.f-group input{width:100%;height:42px;border:1.5px solid #e2e8f0;border-radius:8px;padding:0 14px;font-size:.88rem;outline:none;transition:border-color .15s}
+.f-group input:focus{border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,.1)}
+.btn-login{width:100%;height:44px;background:#0d9488;color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;transition:background .15s;margin-top:8px}
+.btn-login:hover{background:#0f766e}
+.btn-guest{width:100%;height:44px;background:#fff;color:#0d9488;border:2px solid #0d9488;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;transition:all .15s;margin-top:10px}
+.btn-guest:hover{background:#f0fdfa;box-shadow:0 0 0 3px rgba(13,148,136,.1)}
+.login-error{background:#fef2f2;border:1px solid #fecaca;color:#dc2626;border-radius:6px;padding:10px 14px;font-size:.82rem;margin-bottom:16px;display:none}
+
+.app{display:none;flex:1;height:100vh;overflow:hidden}
+.app.active{display:flex}
+.sidebar{width:250px;min-width:210px;background:#1e293b;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.topbar{background:#fff;border-bottom:1px solid #e2e8f0;padding:12px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.content{flex:1;overflow-y:auto;padding:20px}
+
+.sidebar-header{padding:18px 16px 12px;border-bottom:1px solid #334155}
+.sidebar-header h1{font-size:1rem;font-weight:700;color:#f1f5f9;line-height:1.3}
+.sidebar-header p{font-size:.72rem;color:#94a3b8;margin-top:3px}
+.sidebar-user{padding:12px 16px;border-bottom:1px solid #334155;display:flex;align-items:center;gap:10px}
+.avatar{width:34px;height:34px;border-radius:50%;background:#0d9488;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.9rem;flex-shrink:0}
+.user-info .uname{font-size:.82rem;font-weight:600;color:#f1f5f9}
+.user-info .urole{font-size:.68rem;color:#64748b}
+.nav-section{padding:8px 0}
+.nav-label{font-size:.62rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px 4px}
+.nav-item{display:flex;align-items:center;gap:8px;padding:8px 16px;cursor:pointer;transition:background .15s;border-left:3px solid transparent;color:#cbd5e1;font-size:.82rem}
+.nav-item:hover{background:#334155;color:#f1f5f9}
+.nav-item.active{background:#0f766e;border-left-color:#2dd4bf;color:#fff}
+.nav-divider{height:1px;background:#334155;margin:6px 0}
+.btn-logout{width:calc(100% - 32px);margin:12px 16px;height:36px;background:#334155;color:#94a3b8;border:1px solid #475569;border-radius:7px;font-size:.78rem;cursor:pointer;transition:all .15s}
+.btn-logout:hover{background:#475569;color:#f1f5f9}
+/* ===== LEARN PAGE STYLES ===== */
+.learn-chapter-card{
+  background:#fff;border-radius:14px;border:2px solid #e2e8f0;padding:20px;margin-bottom:14px;cursor:pointer;transition:all .2s;
+}
+.learn-chapter-card:hover{border-color:#7c3aed;box-shadow:0 4px 20px rgba(124,58,237,.12);transform:translateY(-2px)}
+.learn-chapter-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.learn-chapter-emoji{font-size:2rem}
+.learn-chapter-info{flex:1}
+.learn-chapter-name{font-size:.95rem;font-weight:700;color:#1e293b}
+.learn-chapter-sub{font-size:.72rem;color:#94a3b8;margin-top:2px}
+.learn-chapter-xp{font-size:.78rem;font-weight:700;color:#7c3aed;background:#f3e8ff;padding:3px 10px;border-radius:99px}
+.learn-progress-bar-wrap{background:#f1f5f9;border-radius:99px;height:6px;margin:8px 0}
+.learn-progress-bar{height:100%;border-radius:99px;background:linear-gradient(90deg,#7c3aed,#a78bfa);transition:width .4s ease}
+.learn-progress-text{font-size:.72rem;color:#64748b;display:flex;justify-content:space-between}
+.learn-level-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px}
+.learn-level-node{
+  display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;border-radius:12px;border:2px solid #e2e8f0;
+  background:#fff;cursor:pointer;transition:all .2s;position:relative;
+}
+.learn-level-node:hover{transform:translateY(-3px);box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.learn-level-node.completed{border-color:#16a34a;background:#f0fdf4}
+.learn-level-node.current{border-color:#d97706;background:#fffbeb}
+.learn-level-node.locked{border-color:#e2e8f0;background:#f8fafc;cursor:not-allowed;opacity:.6}
+.learn-level-node.locked:hover{transform:none;box-shadow:none}
+.learn-level-emoji{font-size:1.6rem}
+.learn-level-num{font-size:.62rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
+.learn-level-title{font-size:.72rem;font-weight:600;color:#374151;text-align:center;line-height:1.3}
+.learn-level-xp{font-size:.62rem;color:#7c3aed;font-weight:600}
+.learn-level-lock{position:absolute;top:6px;right:6px;font-size:.7rem}
+.learn-level-star{position:absolute;top:-8px;left:-8px;font-size:1rem}
+
+/* Level detail page */
+.learn-back-btn{background:none;border:none;cursor:pointer;color:#64748b;font-size:.82rem;display:flex;align-items:center;gap:4px;padding:4px 0;margin-bottom:14px}
+.learn-back-btn:hover{color:#0d9488}
+.learn-level-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.learn-level-emoji-lg{font-size:3rem}
+.learn-level-title-lg{flex:1}
+.learn-level-title-lg h2{font-size:1.1rem;color:#1e293b;margin-bottom:4px}
+.learn-level-title-lg .learn-level-sub{font-size:.75rem;color:#94a3b8}
+.learn-content-card{background:#fff;border-radius:14px;border:1.5px solid #e2e8f0;padding:24px;margin-bottom:16px}
+.learn-content-card h3{font-size:.9rem;color:#374151;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.learn-kp-table{width:100%;border-collapse:collapse;font-size:.82rem;margin:10px 0}
+.learn-kp-table th{background:#f1f5f9;color:#374151;font-weight:700;padding:8px 12px;text-align:left;border-bottom:2px solid #e2e8f0}
+.learn-kp-table td{padding:8px 12px;border-bottom:1px solid #f1f5f9;color:#475农}
+.learn-kp-table tr:last-child td{border-bottom:none}
+.learn-step-list{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+.learn-step{display:flex;gap:10px;align-items:flex-start}
+.learn-step-num{width:24px;height:24px;border-radius:50%;background:#7c3aed;color:#fff;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.learn-step-name{font-weight:700;color:#374151;font-size:.82rem}
+.learn-step-desc{font-size:.78rem;color:#64748b}
+.learn-tip-box{background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:8px;padding:10px 14px;font-size:.8rem;color:#1d4ed8;margin:8px 0}
+.learn-tip-box strong{display:block;margin-bottom:2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.learn-memory-box{background:#fefce8;border:1.5px solid #fde68a;border-radius:8px;padding:10px 14px;font-size:.8rem;color:#92400e;margin:8px 0}
+.learn-memory-box strong{display:block;margin-bottom:2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.learn-analogy-box{background:#f5f3ff;border:1.5px solid #ddd6fe;border-radius:8px;padding:10px 14px;font-size:.8rem;color:#6d28d9;margin:8px 0}
+.learn-analogy-box strong{display:block;margin-bottom:2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
+.learn-animation-wrap{margin:10px 0;background:#0f172a;border-radius:12px;overflow:hidden;border:1.5px solid rgba(99,102,241,.15)}
+.learn-animation-title{padding:10px 16px;background:rgba(99,102,241,.1);font-size:.75rem;font-weight:600;color:#a5b4fc;border-bottom:1px solid rgba(99,102,241,.1)}
+.learn-animation-svg{width:100%;padding:0}
+.learn-animation-svg svg{width:100%;height:auto;display:block}
+.learn-example-table{width:100%;border-collapse:collapse;font-size:.8rem;margin:8px 0}
+.learn-example-table th{background:#f5f3ff;color:#6d28d9;padding:7px 12px;text-align:center;border:1px solid #ddd6fe;font-size:.72rem}
+.learn-example-table td{padding:7px 12px;border:1px solid #ede9fe;color:#475农;text-align:center}
+.learn-formula-box{background:#1e293b;color:#2dd4bf;border-radius:10px;padding:14px 18px;font-family:monospace;font-size:.88rem;margin:10px 0;line-height:1.6}
+.learn-formula-box strong{display:block;color:#f1f5f9;font-family:inherit;font-size:.75rem;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.learn-btn-ready{width:100%;height:50px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;border-radius:12px;font-size:.95rem;font-weight:700;cursor:pointer;margin-top:16px;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.learn-btn-ready:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(124,58,237,.4)}
+.learn-btn-ready:active{transform:translateY(0)}
+
+/* Quiz */
+.learn-quiz-card{background:#fff;border-radius:14px;border:1.5px solid #e2e8f0;padding:24px;margin-bottom:16px}
+.learn-quiz-q{font-size:.92rem;font-weight:700;color:#1e293b;margin-bottom:16px;line-height:1.5}
+.learn-quiz-options{display:flex;flex-direction:column;gap:8px}
+.learn-quiz-opt{padding:12px 16px;border:2px solid #e2e8f0;border-radius:10px;cursor:pointer;transition:all .15s;font-size:.85rem;color:#374151;display:flex;align-items:center;gap:10px}
+.learn-quiz-opt:hover{border-color:#7c3aed;background:#f5f3ff}
+.learn-quiz-opt.selected{border-color:#7c3aed;background:#ede9fe}
+.learn-quiz-opt.correct{border-color:#16a34a;background:#f0fdf4;color:#15803d}
+.learn-quiz-opt.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.learn-quiz-opt.disabled{cursor:not-allowed;pointer-events:none}
+.learn-quiz-opt-letter{width:22px;height:22px;border-radius:50%;background:#f1f5f9;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#64748b;flex-shrink:0}
+.learn-quiz-opt.selected .learn-quiz-opt-letter{background:#7c3aed;color:#fff}
+.learn-quiz-opt.correct .learn-quiz-opt-letter{background:#16a34a;color:#fff}
+.learn-quiz-opt.wrong .learn-quiz-opt-letter{background:#dc2626;color:#fff}
+.learn-hint-box{background:#fff7ed;border:1.5px solid #fed7aa;border-radius:8px;padding:12px 16px;font-size:.82rem;color:#c2410c;margin:12px 0 0;display:flex;gap:8px}
+.learn-hint-box strong{white-space:nowrap}
+.learn-explanation-box{background:#f0fdf4;border:2px solid #bbf7d0;border-radius:10px;padding:14px 16px;margin-top:14px}
+.learn-explanation-box .learn-xp-earned{font-size:.78rem;font-weight:700;color:#16a34a;margin-bottom:6px;display:flex;align-items:center;gap:4px}
+.learn-explanation-box p{font-size:.82rem;color:#15803d;line-height:1.5}
+.learn-btn-next{width:100%;height:44px;background:#7c3aed;color:#fff;border:none;border-radius:10px;font-size:.88rem;font-weight:700;cursor:pointer;margin-top:12px;display:flex;align-items:center;justify-content:center;gap:6px}
+.learn-btn-next:hover{background:#6d28d9}
+.learn-btn-retry{width:48%;height:44px;background:#fef3c7;color:#92400e;border:1.5px solid #fde68a;border-radius:10px;font-size:.85rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+.learn-btn-retry:hover{background:#fde68a}
+.learn-btn-relearn{width:48%;height:44px;background:#f1f5f9;color:#374151;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.85rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+.learn-btn-relearn:hover{background:#e2e8f0}
+.learn-btn-row{display:flex;gap:8px;margin-top:12px}
+.learn-xp-toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#1e293b;color:#a78bfa;font-weight:700;padding:10px 20px;border-radius:99px;font-size:.88rem;z-index:999;animation:xpToastAnim 2s ease forwards;pointer-events:none}
+@keyframes xpToastAnim{0%{opacity:0;transform:translateX(-50%) translateY(-10px)}20%{opacity:1;transform:translateX(-50%) translateY(0)}80%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-20px)}}
+.learn-complete-modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+.learn-complete-card{background:#fff;border-radius:20px;padding:32px;max-width:340px;width:100%;text-align:center;animation:modalPop .3s ease}
+@keyframes modalPop{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+.learn-complete-emoji{font-size:4rem;margin-bottom:12px}
+.learn-complete-title{font-size:1.2rem;font-weight:700;color:#1e293b;margin-bottom:6px}
+.learn-complete-sub{font-size:.82rem;color:#64748b;margin-bottom:20px}
+.learn-complete-xp{font-size:1.5rem;font-weight:700;color:#7c3aed;margin-bottom:6px}
+.learn-complete-xp span{font-size:.82rem;color:#64748b;font-weight:400}
+.learn-complete-badge{display:inline-flex;align-items:center;gap:6px;background:#f3e8ff;border:1.5px solid #ddd6fe;padding:6px 14px;border-radius:99px;font-size:.82rem;color:#6d28d9;font-weight:600;margin:8px 0}
+.learn-btn-mcq{width:100%;height:46px;background:#7c3aed;color:#fff;border:none;border-radius:10px;font-size:.88rem;font-weight:700;cursor:pointer;margin-top:8px}
+.learn-btn-mcq:hover{background:#6d28d9}
+.learn-badge-grid{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.learn-badge-item{display:flex;align-items:center;gap:6px;background:#f5f3ff;border:1px solid #ddd6fe;padding:5px 12px;border-radius:99px;font-size:.75rem;color:#6d28d9}
+
+/* XP bar in topbar */
+.xp-bar-wrap{flex:1;max-width:180px;height:6px;background:#e2e8f0;border-radius:99px;overflow:hidden}
+.xp-bar{height:100%;background:linear-gradient(90deg,#7c3aed,#a78bfa);border-radius:99px;transition:width .4s ease}
+.xp-text{font-size:.72rem;color:#7c3aed;font-weight:700;margin-left:8px}
+.page-title{font-size:1rem;font-weight:700;color:#1e293b}
+
+.card{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;padding:20px;margin-bottom:16px}
+.card-title{font-size:.95rem;font-weight:700;color:#1e293b;margin-bottom:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:99px;font-size:.7rem;font-weight:600}
+.badge-green{background:#dcfce7;color:#16a34a}
+.badge-red{background:#fee2e2;color:#dc2626}
+.badge-blue{background:#dbeafe;color:#1d4ed8}
+.badge-amber{background:#fef3c7;color:#d97706}
+.badge-purple{background:#f3e8ff;color:#7c3aed}
+.badge-gray{background:#f1f5f9;color:#64748b}
+
+.filter-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+select,input,textarea{border:1.5px solid #e2e8f0;border-radius:7px;padding:0 12px;font-size:.82rem;background:#fff;outline:none}
+select,input{height:36px}
+select:focus,input:focus,textarea:focus{border-color:#0d9488;box-shadow:0 0 0 3px rgba(13,148,136,.1)}
+textarea{min-height:80px;padding:10px 12px;resize:vertical;width:100%}
+.btn{height:36px;padding:0 18px;border-radius:7px;border:none;cursor:pointer;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:all .15s;white-space:nowrap}
+.btn-primary{background:#0d9488;color:#fff}
+.btn-primary:hover{background:#0f766e}
+.btn-secondary{background:#f1f5f9;color:#374151;border:1.5px solid #e2e8f0}
+.btn-secondary:hover{background:#e2e8f0}
+.btn-success{background:#16a34a;color:#fff}
+.btn-success:hover{background:#15803d}
+.btn-danger{background:#dc2626;color:#fff}
+.btn-danger:hover{background:#b91c1c}
+.btn-amber{background:#d97706;color:#fff}
+.btn-amber:hover{background:#b45309}
+.btn-purple{background:#7c3aed;color:#fff}
+.btn-purple:hover{background:#6d28d9}
+.btn-sm{height:30px;padding:0 12px;font-size:.75rem}
+.btn-lg{height:44px;padding:0 24px;font-size:.9rem}
+
+.chapter-list{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.chapter-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s}
+.chapter-item:hover{border-color:#0d9488;background:#f0fdfb}
+.chapter-item input[type=checkbox]{width:16px;height:16px;accent-color:#0d9488}
+.chapter-no-mcq{opacity:.65;background:#fafafa}
+.chapter-no-mcq:hover{background:#f5f5f5;border-color:#d1d5db}
+.chapter-name{flex:1;font-size:.82rem;font-weight:600;color:#374151}
+.chapter-meta{font-size:.72rem;color:#94a3b8}
+.topic-list{margin-left:30px;margin-bottom:8px;display:flex;flex-direction:column;gap:4px}
+.topic-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;font-size:.78rem;cursor:pointer;pointer-events:none}
+.topic-item:hover{border-color:#0d9488}
+.topic-item input[type=checkbox]{pointer-events:auto;width:14px;height:14px;accent-color:#0d9488;cursor:pointer;margin:0}
+.topic-qcount{font-size:.68rem;color:#94a3b8;margin-left:auto}
+.chapter-chevron{color:#94a3b8;font-size:.7rem;transition:transform .2s}
+.chapter-chevron.open{transform:rotate(90deg)}
+.selected-summary{font-size:.78rem;color:#64748b;padding:8px 12px;background:#f0fdfb;border:1px solid #bbf7d0;border-radius:6px;margin-bottom:12px}
+.mode-tabs{display:flex;gap:4px;background:#f1f5f9;border-radius:10px;padding:3px;flex-wrap:wrap}
+.mode-tab{padding:7px 16px;border-radius:7px;cursor:pointer;font-size:.82rem;font-weight:600;color:#64748b;transition:all .15s;border:none;background:transparent}
+.mode-tab.active{background:#0d9488;color:#fff;box-shadow:0 2px 6px rgba(13,148,136,.3)}
+.mode-tab:not(.active):hover{background:#ccfbf1;color:#0f766e}
+
+
+.question-card{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;margin-bottom:16px;overflow:hidden}
+.q-header{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f8fafc;border-bottom:1px solid #e2e8f0}
+.q-progress{flex:1;font-size:.78rem;color:#64748b}
+.q-timer{font-size:.82rem;font-weight:600;color:#64748b}
+.q-body{padding:20px}
+.q-source{font-size:.72rem;color:#94a3b8;margin-bottom:8px}
+.q-text{font-size:.9rem;line-height:1.7;color:#1e293b;margin-bottom:16px;font-weight:500}
+.q-img{max-width:100%;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:14px;cursor:zoom-in}
+.options{display:flex;flex-direction:column;gap:8px}
+.option{display:flex;align-items:center;gap:12px;padding:12px 16px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s;font-size:.88rem}
+.option:hover:not(.disabled){border-color:#0d9488;background:#f0fdfb}
+.option.selected{border-color:#0d9488;background:#ccfbf1}
+.option.correct{border-color:#16a34a;background:#dcfce7}
+.option.wrong{border-color:#dc2626;background:#fee2e2}
+.option.disabled{cursor:default;opacity:.7}
+.option-letter{width:28px;height:28px;border-radius:50%;border:2px solid #e2e8f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.78rem;flex-shrink:0}
+.option.selected .option-letter{border-color:#0d9488;background:#0d9488;color:#fff}
+.option.correct .option-letter{border-color:#16a34a;background:#16a34a;color:#fff}
+.option.wrong .option-letter{border-color:#dc2626;background:#dc2626;color:#fff}
+.option-text{flex:1}
+.q-actions{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-top:1px solid #e2e8f0;background:#f8fafc}
+.feedback-box{padding:12px 16px;border-radius:8px;margin-bottom:12px;font-size:.82rem;line-height:1.6}
+.feedback-correct{background:#dcfce7;border:1px solid #86efac;color:#16a34a}
+.feedback-wrong{background:#fee2e2;border:1px solid #fecaca;color:#dc2626}
+.q-nav{display:flex;justify-content:center;gap:4px;margin-top:8px}
+
+.struct-q-img{max-width:100%;border-radius:8px;border:2px solid #e2e8f0;margin:12px 0;cursor:zoom-in}
+.struct-answer-area{margin:16px 0}
+.struct-answer-area label{display:block;font-size:.82rem;font-weight:600;color:#374151;margin-bottom:8px}
+.struct-answer-area textarea{width:100%;min-height:120px;border:2px solid #e2e8f0;border-radius:8px;padding:12px;font-size:.85rem;line-height:1.6;resize:vertical}
+.struct-ms-section{background:#f0fdfb;border:2px solid #0d9488;border-radius:10px;padding:16px;margin-top:16px}
+.struct-ms-section h4{font-size:.85rem;font-weight:700;color:#0d9488;margin-bottom:10px}
+.struct-ms-img{max-width:100%;border-radius:6px;border:1px solid #0d9488}
+
+.def-match{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.def-term-item,.def-def-item{padding:12px 14px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s;font-size:.82rem;line-height:1.5}
+.def-term-item:hover,.def-def-item:hover{border-color:#0d9488}
+.def-term-item.selected-term{border-color:#0d9488;background:#ccfbf1}
+.def-term-item.correct{border-color:#16a34a;background:#dcfce7}
+.def-def-item.selected-def{border-color:#0d9488;background:#bbf7d0}
+
+.vocab-card{background:#fff;border-radius:14px;border:2px solid #e2e8f0;overflow:hidden;max-width:480px;margin:0 auto}
+.vocab-inner{padding:32px 28px;text-align:center}
+.vocab-word{font-size:1.8rem;font-weight:800;color:#1e293b;margin-bottom:6px}
+.vocab-phonetic{font-size:.85rem;color:#94a3b8;margin-bottom:16px;font-style:italic}
+.vocab-zh{font-size:1.1rem;color:#374151;margin-bottom:16px}
+.vocab-def{font-size:.85rem;color:#64748b;line-height:1.7;text-align:left;background:#f8fafc;border-radius:8px;padding:14px;margin-bottom:20px}
+.vocab-nav{display:flex;justify-content:center;gap:12px;margin-top:16px}
+.vocab-progress{text-align:center;font-size:.78rem;color:#94a3b8;margin-bottom:12px}
+
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:20px}
+.result-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:18px;text-align:center}
+.result-card .rc-score{font-size:2.2rem;font-weight:800;color:#0d9488;line-height:1}
+.result-card .rc-label{font-size:.75rem;color:#64748b;margin-top:4px}
+.result-card .rc-sub{font-size:.7rem;color:#94a3b8;margin-top:2px}
+.weak-section{background:#fff;border:1.5px solid #e2e8f0;border-radius:12px;padding:20px;margin-bottom:16px}
+.weak-section h3{font-size:.9rem;font-weight:700;color:#1e293b;margin-bottom:12px}
+.weak-topics{display:flex;flex-wrap:wrap;gap:8px}
+.weak-topic{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#fee2e2;border:1px solid #fecaca;border-radius:99px;font-size:.78rem;color:#dc2626;font-weight:600}
+.weak-topic .wq{font-size:.68rem;color:#f87171}
+.strong-topics .weak-topic{background:#dcfce7;border-color:#86efac;color:#16a34a}
+
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.stat-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center}
+.stat-card .sc-num{font-size:1.8rem;font-weight:800;color:#0d9488}
+.stat-card .sc-label{font-size:.72rem;color:#64748b;margin-top:4px}
+.history-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f1f5f9}
+.history-item:last-child{border-bottom:none}
+.history-date{font-size:.78rem;color:#64748b;min-width:80px}
+.history-mode{font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:99px}
+.history-score{font-size:.82rem;font-weight:700;margin-left:auto}
+
+.admin-section{background:#fff;border-radius:12px;border:1.5px solid #e2e8f0;padding:20px;margin-bottom:16px}
+.admin-section h3{font-size:.9rem;font-weight:700;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #f1f5f9}
+.student-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #f8fafc}
+.student-row:last-child{border-bottom:none}
+.student-row .sname{font-size:.82rem;font-weight:600;min-width:120px}
+.student-row .semail{font-size:.75rem;color:#64748b;flex:1}
+.csv-input{width:100%;height:100px;border:1.5px solid #e2e8f0;border-radius:8px;padding:10px;font-size:.8rem;font-family:monospace;resize:vertical;outline:none}
+.csv-input:focus{border-color:#0d9488}
+.csv-hint{font-size:.72rem;color:#94a3b8;margin-top:6px;line-height:1.6}
+.loading-overlay{position:fixed;inset:0;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;z-index:1000}
+.loading-box{text-align:center}
+.spinner{width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#0d9488;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.text-green{color:#16a34a}
+.text-red{color:#dc2626}
+.text-amber{color:#d97706}
+.start-quiz-btn{width:100%;height:48px;background:#0d9488;color:#fff;border:none;border-radius:10px;font-size:.95rem;font-weight:700;cursor:pointer;transition:background .15s}
+.start-quiz-btn:hover{background:#0f766e}
+.start-quiz-btn:disabled{background:#94a3b8;cursor:not-allowed}
+.empty-state{text-align:center;padding:40px 20px;color:#94a3b8}
+.empty-state .es-icon{font-size:2.5rem;margin-bottom:12px}
+.empty-state p{font-size:.82rem}
+
+/* Drawing Pad */
+.draw-pad-wrap{margin:12px 0;border:2px solid #e2e8f0;border-radius:10px;overflow:hidden;background:#fff}
+.draw-toolbar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#f8fafc;border-bottom:1px solid #e2e8f0;flex-wrap:wrap}
+.draw-toolbar .dt-label{font-size:.72rem;font-weight:700;color:#64748b;letter-spacing:.06em;text-transform:uppercase}
+.draw-btn{height:28px;padding:0 10px;border-radius:5px;border:1.5px solid #e2e8f0;background:#fff;cursor:pointer;font-size:.75rem;font-weight:600;color:#374151;transition:all .12s}
+.draw-btn:hover{border-color:#0d9488;color:#0d9488}
+.draw-btn.active{background:#0d9488;color:#fff;border-color:#0d9488}
+.draw-btn.clear-btn{background:#fee2e2;color:#dc2626;border-color:#fecaca}
+.draw-btn.clear-btn:hover{background:#dc2626;color:#fff}
+.draw-btn.undo-btn{background:#fef3c7;color:#d97706;border-color:#fde68a}
+.draw-btn.undo-btn:hover{background:#d97706;color:#fff}
+.draw-canvas{display:block;width:100%;touch-action:none;cursor:crosshair;background:#fff}
+.draw-input-hidden{display:none}
+textarea.draw-mode{font-family:'Segoe UI',system-ui,sans-serif}
+
+/* STR keyword scoring */
+.str-score-box{background:#fff;border-radius:10px;border:1.5px solid #e2e8f0;padding:14px 16px;margin:12px 0}
+.str-score-box h4{font-size:.82rem;font-weight:700;color:#1e293b;margin-bottom:8px}
+.str-score-bar{height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-bottom:6px}
+.str-score-fill{height:100%;border-radius:99px;transition:width .4s ease}
+.str-score-detail{font-size:.75rem;color:#64748b;line-height:1.7}
+.kw-match{color:#16a34a;font-weight:700}
+.kw-miss{color:#dc2626;font-weight:700}
+.kw-neutral{color:#94a3b8}
+
+@media(max-width:640px){
+  .app{flex-direction:column}
+  .sidebar{width:100%;height:auto;max-height:50vh}
+  .main{height:auto;overflow:auto}
+  .def-match{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="loadingOverlay" class="loading-overlay" style="display:none">
+  <div class="loading-box"><div class="spinner"></div><p style="font-size:.82rem;color:#64748b" id="loadingText">Loading...</p></div>
+</div>
+
+<div id="loginScreen" class="login-wrap">
+  <div class="login-box">
+    <h1>chem9701 Student Portal</h1>
+    <p>CIE A-Level Chemistry · Practice &amp; Review</p>
+    <div class="login-error" id="loginError">Incorrect username or password.</div>
+    <div class="f-group"><label>Username</label><input type="text" id="loginUser" placeholder="e.g. alice.chen" autocomplete="username"/></div>
+    <div class="f-group"><label>Password</label><input type="password" id="loginPass" placeholder="Your password" autocomplete="current-password"/></div>
+    <button class="btn-login" onclick="handleLogin()">Sign In</button>
+    <button class="btn-guest" onclick="handleGuestLogin()">游客模式 · 一键进入</button>
+  </div>
+</div>
+
+<div id="mainApp" class="app">
+  <div class="sidebar">
+    <div class="sidebar-header"><h1>chem9701</h1><p>Student Portal</p></div>
+    <div class="sidebar-user">
+      <div class="avatar" id="userAvatar">?</div>
+      <div class="user-info"><div class="uname" id="userName">Student</div><div class="urole" id="userRole">Student</div></div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Practice</div>
+      <div class="nav-item active" data-page="mcq" onclick="showPage('mcq')"><span>📝</span> MCQ Practice</div>
+      <div class="nav-item" data-page="struct" onclick="showPage('struct')"><span>📄</span> STR Practice</div>
+      <div class="nav-item" data-page="defs" onclick="showPage('defs')"><span>📖</span> Definition Match</div>
+      <div class="nav-item" data-page="vocab" onclick="showPage('vocab')"><span>🔤</span> Vocabulary</div>
+      <div class="nav-item" data-page="review" onclick="showPage('review')"><span>🔄</span> Review Quiz</div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Progress</div>
+      <div class="nav-item" data-page="progress" onclick="showPage('progress')"><span>📊</span> My Progress</div>
+      <div class="nav-item" data-page="history" onclick="showPage('history')"><span>📜</span> History</div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Learn</div>
+      <div class="nav-item" data-page="learn" onclick="showPage('learn')"><span>🎮</span> Chapter Quests</div>
+      <a href="ch01-gamified.html" style="text-decoration:none"><div class="nav-item" style="color:#cbd5e1"><span>⚔️</span> ch01 闯关模式</div></a>
+      <a href="ch03-gamified.html" style="text-decoration:none"><div class="nav-item" style="color:#cbd5e1"><span>⚗️</span> ch03 闯关模式</div></a>
+    </div>
+    <div class="nav-section" id="adminNav" style="display:none">
+      <div class="nav-label">Teacher</div>
+      <div class="nav-item" data-page="admin" onclick="showPage('admin')"><span>⚙️</span> Manage Students</div>
+    </div>
+    <button class="btn-logout" onclick="handleLogout()">Sign Out</button>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <span class="page-title" id="pageTitle">MCQ Practice</span>
+      <span style="flex:1"></span>
+      <span class="badge badge-green" id="dbStatus" style="display:none">DB Ready</span>
+    </div>
+    <div class="content" id="pageContent"></div>
+  </div>
+</div>
+
+<script>
+/* STATE */
+var DB = { questions: [], definitions: {}, chapters: [], structDB: null, vocabDB: {} , learnDB: null};
+var TOPICS_MAP = {};
+var CHAPTERS_MAP = {};
+var currentUser = null, isAdmin = false;
+var quizState = null, defState = null, structState = null, vocabState = null;
+var quizCount = 20, strQuizCount = 10, structState = null;
+
+/* INIT */
+window.addEventListener('DOMContentLoaded', async function() {
+  showLoading(true, 'Loading databases...');
+  await loadDB();
+  showLoading(false);
+  var s = localStorage.getItem('ch9701_session');
+  if (s) { try { currentUser = JSON.parse(s); restoreSession(); } catch(e) { localStorage.removeItem('ch9701_session'); } }
+
+  // 处理 URL 参数（来自 ch01-gamified.html 跳转）
+  var params = new URLSearchParams(window.location.search);
+  var page = params.get('page');
+  if (page === 'learn') {
+    showPage('learn');
+    // 可选：滚动到顶部
+    document.getElementById('pageContent').scrollTop = 0;
+  }
+  var learnLevel = params.get('learn'); // e.g. 'ch01_L1'
+  if (learnLevel && learnLevel.indexOf('_L') >= 0) {
+    var chId = learnLevel.split('_L')[0]; // 'ch01'
+    showPage('learn');
+    setTimeout(function(){
+      try { renderChapterLearnPage(chId); } catch(e){}
+      setTimeout(function(){
+        try { renderLevelPage(chId, learnLevel); } catch(e){}
+      }, 100);
+    }, 200);
+  }
+});
+
+async function loadDB() {
+  try {
+    showLoading(true, 'Loading MCQ...');
+    var db = await loadJson('db.json');
+    DB.questions = db.questions || [];
+    DB.chapters = db.meta ? db.meta.chapters : [];
+    showLoading(true, 'Loading definitions...');
+    var defs = await loadJson('definitions_db.json');
+    DB.definitions = defs.definitions || {};
+    showLoading(true, 'Loading P2/P4...');
+    DB.structDB = await loadJson('structured_q_db.json');
+    showLoading(true, 'Loading vocabulary...');
+    var vocab = await loadJson('vocab_db.json');
+    DB.vocabDB = vocab || {};
+    showLoading(true, 'Loading topics...');
+    try {
+      var topics = await loadJson('topics.json');
+      TOPICS_MAP = {};
+      CHAPTERS_MAP = {};
+      Object.entries(topics.chapters || {}).forEach(function([chId, ch]) {
+        CHAPTERS_MAP[chId] = ch.name;
+        (ch.topics || []).forEach(function(t) { TOPICS_MAP[t.id] = t.name; });
+      });
+    } catch(e) { TOPICS_MAP = {}; CHAPTERS_MAP = {}; }
+    showLoading(true, 'Loading learn content...');
+    DB.learnDB = {"chapters":{"ch01":{"id":"ch01","title":"Atomic Structure & Electrons in Atoms","chapter_num":"1~2","emoji":"⚛️","color":"#7c3aed","total_xp":430,"badge_id":"ch01_champion","levels":[{"id":"ch01_L1","level_num":1,"topic_id":"ch01_t01","title":"Protons, Neutrons & Electrons","emoji":"🔬","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"Everything in the universe is made of tiny particles called <strong>atoms</strong>. Atoms themselves are made of three even smaller particles: <strong>protons</strong>, <strong>neutrons</strong>, and <strong>electrons</strong>.","key_table":{"headers":["Particle","Location","Rel. Mass","Charge"],"rows":[["Proton (p⁺)","Inside nucleus","1","+1"],["Neutron (n⁰)","Inside nucleus","1","0"],["Electron (e⁻)","Outside nucleus","1/1840","−1"]]},"tip":"Atomic Number (Z) = number of protons = number of electrons (in a neutral atom). Mass Number (A) = protons + neutrons.","memory":"⚠️ Electrons are SO light (1/1840 of a proton) that we often ignore their mass when calculating mass number!","analogy":"Think of an atom like a tiny solar system: the nucleus is the Sun (tiny but heavy), electrons are planets orbiting around it."},"diagram":{"type":"atom_structure","title":"Atom Structure Diagram"},"animation":{"type":"atom_structure","title":"Atom Structure Visualization"},"quiz":{"question":"How many neutrons are in a ₁₇³⁵Cl atom?","options":["A. 17","B. 18","C. 35","D. 52"],"correct":1,"hint":"Neutrons = Mass Number (A) − Atomic Number (Z)","explanation":"For ₁₇³⁵Cl: neutrons = 35 − 17 = 18. The mass number is the sum of protons and neutrons in the nucleus."}},{"id":"ch01_L2","level_num":2,"topic_id":"ch01_t02","title":"Isotopes & Relative Atomic Mass","emoji":"⚗️","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"<strong>Isotopes</strong> are atoms of the same element (same number of protons) but with different numbers of neutrons — so they have different mass numbers.","examples":[{"symbol":"¹H","name":"Protium","p":1,"n":0,"note":"Most common hydrogen"},{"symbol":"²H (D)","name":"Deuterium","p":1,"n":1,"note":"Heavy hydrogen"},{"symbol":"³H (T)","name":"Tritium","p":1,"n":2,"note":"Radioactive, unstable"}],"formula":"Aᵣ = Σ(mass × relative abundance) / Σ(relative abundances)","formula_example":"Example: Cl has ³⁵Cl (75%) and ³⁷Cl (25%) → Aᵣ = (35×75 + 37×25) / 100 = 35.5","tip":"The 'r' in Aᵣ stands for 'relative'. Aᵣ has NO units — it's just a ratio compared to carbon-12.","memory":"Isotopes = same Z, different A. They behave the same chemically (same electrons) but have different masses!"},"diagram":{"type":"isotopes","title":"Hydrogen Isotopes"},"animation":{"type":"isotopes_comparison","title":"Isotopes Comparison"},"quiz":{"question":"Bromine has two isotopes: ⁷⁹Br (50%) and ⁸¹Br (50%). What is the relative atomic mass?","options":["A. 79","B. 80","C. 81","D. 160"],"correct":1,"hint":"Apply the formula: Aᵣ = (mass₁ × abundance₁ + mass₂ × abundance₂) / total abundance","explanation":"Aᵣ = (79 × 50 + 81 × 50) / 100 = (3950 + 4050) / 100 = 80. Notice that 50%+50%=100%, so it's simply the average of 79 and 81."}},{"id":"ch01_L3","level_num":3,"topic_id":"ch01_t03","title":"Mass Spectrometry","emoji":"📊","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"A <strong>mass spectrometer</strong> is a powerful tool that measures the mass and abundance of isotopes with incredible precision. It can find exact isotopic masses and calculate Aᵣ.","steps":[{"num":1,"name":"Vaporisation","desc":"Sample is turned into a gas"},{"num":2,"name":"Ionisation","desc":"High-energy electrons knock off one electron → M⁺ ions"},{"num":3,"name":"Acceleration","desc":"Electric field speeds up all ions to the same kinetic energy"},{"num":4,"name":"Deflection","desc":"Magnetic field bends ion paths — lighter ions (low m/z) deflect MORE"},{"num":5,"name":"Detection","desc":"Ions arrive at detector, creating peaks on the mass spectrum"}],"tip":"Acceleration uses an ELECTRIC field. Deflection uses a MAGNETIC field. Different forces, different jobs!","memory":"The mass spectrum shows: x-axis = m/z (mass/charge ratio), y-axis = relative abundance (%). Each peak is one isotope.","formula":"m/z = mass / charge. Since most ions are singly charged (+1), m/z ≈ mass number."},"diagram":{"type":"mass_spec","title":"Mass Spectrometer Diagram"},"quiz":{"question":"In a mass spectrometer, which field is used to deflect ions?","options":["A. Electric field only","B. Magnetic field only","C. Both electric and magnetic fields","D. Gravitational field"],"correct":1,"hint":"Remember: acceleration = electric field. Deflection = ?","explanation":"The ELECTRIC field accelerates ions (Step 3). The MAGNETIC field deflects them (Step 4). These are two separate, sequential processes. Step 4 deflection separates ions by their m/z ratio."},"animation":{"type":"mass_spec_flow","title":"Mass Spectrometer Workflow"}},{"id":"ch01_L4","level_num":4,"topic_id":"ch01_t04","title":"Electron Configuration & Orbitals","emoji":"🌌","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"Electrons don't orbit the nucleus like planets! Instead, they occupy regions called <strong>orbitals</strong> — where each orbital can hold a maximum of 2 electrons.","orbital_types":[{"type":"s","shape":"Spherical","count":"1 orbital, 2 e⁻","color":"#ef4444"},{"type":"p","shape":"Dumbbell (two lobes)","count":"3 orbitals (px, py, pz), 6 e⁻","color":"#3b82f6"},{"type":"d","shape":"Complex (4 or more lobes)","count":"5 orbitals, 10 e⁻","color":"#eab308"}],"fill_order":"1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → ...","fill_note":"⚠️ 4s fills BEFORE 3d (lower energy). But 3d is emptied before 4s in transition metals!","hunds_rule":"When filling orbitals of the same energy (like the 3 p orbitals), electrons go into EMPTY orbitals FIRST, with parallel spins.","example":"Nitrogen (Z=7): 1s² 2s² 2p³. The 3 p electrons each go into a separate p orbital (Hund's Rule).","tip":"The filling order follows the diagonal rule — trace diagonals from top-right to bottom-left on your subshell energy diagram."},"diagram":{"type":"orbitals","title":"Orbital Shapes & Filling Order"},"quiz":{"question":"Which of the following is the correct electron configuration for nitrogen (Z=7)?","options":["A. 1s² 2s² 2p³","B. 1s² 2s³ 2p²","C. 1s² 2p⁵","D. 1s³ 2s² 2p²"],"correct":0,"hint":"Count electrons: Z=7 means 7 electrons total. Fill in order: 1s (2), then 2s (2), remaining electrons go to 2p.","explanation":"Filling: 1s² (2 e⁻) + 2s² (2 e⁻) + 2p³ (3 e⁻) = 7 electrons total. The notation shows how many electrons are in each subshell."},"animation":{"type":"orbital_filling","title":"Orbital Filling Order"}},{"id":"ch01_L5","level_num":5,"topic_id":"ch01_t05","title":"Ionisation Energies","emoji":"⚡","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"<strong>First ionisation energy (IE₁)</strong> is the energy needed to remove one electron from one mole of gaseous atoms.","equation":"X(g) → X⁺(g) + e⁻","trend_period":"Across a period (left → right): IE generally INCREASES because nuclear charge increases, pulling electrons closer.","trend_group":"Down a group: IE DECREASES because inner electron shells increase (more shielding), and outer electrons are farther from the nucleus.","exceptions":[{"group":"Group 3 (B, Al...)","reason":"Electron enters a new p subshell (2p vs 2s) — higher energy, easier to remove"},{"group":"Group 6 (O, S...)","reason":"Electron pairing in a p orbital causes repulsion — one electron is easier to remove"}],"successive_ie":"Each successive IE is larger than the previous. A BIG JUMP indicates all electrons in one shell have been removed — revealing how many outer electrons the atom has.","tip":"The position of the big jump tells you the GROUP number! If IE₂→IE₃ is the big jump, the atom has 2 outer electrons = Group 2.","example":"Na has tiny IE₁, then a MASSIVE jump to IE₂. This proves Na has 1 outer electron (Group 1)."},"diagram":{"type":"ie_trend","title":"Ionisation Energy Trends"},"quiz":{"question":"Successive ionisation energies (kJ mol⁻¹): 590, 1145, 4912, 6474... Which group is this element in?","options":["A. Group 1","B. Group 2","C. Group 3","D. Group 4"],"correct":1,"hint":"Look at where the BIG jump happens. The jump = from the last outer electron to the first inner electron.","explanation":"590→1145 (small jump) = removing outer electrons. 1145→4912 (BIG jump!) = all outer electrons gone. Two outer electrons = Group 2. The massive jump is because electrons in a lower shell are much harder to remove."},"animation":{"type":"ie_trend","title":"Ionisation Energy Trends (Period 2)"}},{"id":"ch01_L6","level_num":6,"topic_id":"ch01_t06","title":"Atomic Emission Spectra","emoji":"🌈","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"When atoms absorb energy (heat or electricity), electrons jump to <strong>excited states</strong>. When they fall back down, they release energy as <strong>light (photons)</strong>.","equation":"ΔE = hf = hc/λ","why_line_spectrum":"Unlike white light (continuous), atoms produce LINE spectra. Why? Because electrons can ONLY exist at specific energy levels — quantum theory! They can only make specific jumps, releasing specific photon energies.","series":[{"name":"Lyman Series","to":"n=1","region":"UV (ultraviolet)","example":"Far UV, invisible to us"},{"name":"Balmer Series","to":"n=2","region":"Visible light","example":"The colors we can see!"},{"name":"Paschen Series","to":"n=3","region":"IR (infrared)","example":"Below visible red"}],"tip":"Balmer series (n→2) is special because it produces VISIBLE light — red, blue-green, blue, violet. These are the lines you see in hydrogen's emission spectrum.","memory":"Think of the energy levels like steps on a staircase. Electrons can only stand on steps, not between them. When they jump down, they release exactly the energy difference between those two steps."},"diagram":{"type":"emission_spectrum","title":"Hydrogen Energy Levels & Emission Series"},"quiz":{"question":"Which series of hydrogen's emission spectrum corresponds to visible light?","options":["A. Lyman series","B. Balmer series","C. Paschen series","D. All of the above"],"correct":1,"hint":"Remember: Lyman (UV), Balmer (Visible), Paschen (IR) — think of the electromagnetic spectrum from left to right.","explanation":"Balmer series: electrons falling to n=2. The energy differences at this level correspond to visible wavelengths (400-700nm). Lyman is UV (higher energy), Paschen is IR (lower energy)."},"animation":{"type":"emission_spectrum","title":"Hydrogen Energy Levels & Emission Spectrum"}}]},"ch03":{"id":"ch03","title":"Atoms, Molecules & Stoichiometry","chapter_num":"3","emoji":"⚗️","color":"#0891b2","total_xp":510,"badge_id":"ch03_champion","levels":[{"id":"ch03_L1","level_num":1,"topic_id":"ch03_t01","title":"Relative Masses (Ar, Mr)","emoji":"⚖️","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"To compare masses of atoms, we use <strong>relative</strong> scales — no units! <strong>Ar</strong> (relative atomic mass) compares a single atom to carbon-12. <strong>Mr</strong> (relative molecular mass) is the sum of Ar for all atoms in a molecule.","key_formula":"Ar = mass of one atom / (mass of one carbon-12 atom / 12)","formula":"Mr = sum of (Ar × number of atoms)","formula_example":"H₂SO₄: Mr = (1×2) + (32×1) + (16×4) = 98","tip":"Ar has NO units — it's a ratio. Think of it like a 'score' comparing atoms to carbon-12.","memory":"⚠️ Don't confuse Ar (one element) with Mr (whole molecule)!"},"diagram":{"type":"relative_mass","title":"Ar vs Mr"},"quiz":{"question":"What is the Mr of CO₂? (Ar: C=12, O=16)","options":["A. 28","B. 44","C. 40","D. 32"],"correct":1,"hint":"Mr = Ar(C) + 2 × Ar(O)","explanation":"Mr(CO₂) = 12 + 2(16) = 12 + 32 = 44. One carbon atom plus two oxygen atoms."}},{"id":"ch03_L2","level_num":2,"topic_id":"ch03_t02","title":"The Mole & Avogadro","emoji":"🧮","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"The <strong>mole (mol)</strong> is a count — like a 'dozen' but astronomically larger. <strong>Avogadro's constant</strong> (NA = 6.02 × 10²³ mol⁻¹) tells us exactly how many particles are in one mole. Mass (m), molar mass (M), and moles (n) are linked by the most important formula in chemistry.","formula":"n = m / M   (moles = mass / molar mass)","formula_example":"n = 98g / 98 g mol⁻¹ = 1 mol of H₂SO₄","avogadro":"1 mol = 6.02 × 10²³ particles (atoms, molecules, ions, electrons)","tip":"M (molar mass) has the SAME numerical value as Mr, but units g mol⁻¹. M = Mr g/mol by definition!","memory":"Molar mass M (g mol⁻¹) = Mr × 1 g/mol. So M and Mr have the same number but different units!"},"diagram":{"type":"mole_concept","title":"The Mole"},"quiz":{"question":"How many moles are in 36g of water? (Mr H₂O = 18)?","options":["A. 0.5 mol","B. 1 mol","C. 2 mol","D. 3 mol"],"correct":2,"hint":"n = m / M = 36 / 18","explanation":"n = m/M = 36g / 18 g mol⁻¹ = 2 mol. Simple division — the key formula n = m/M is the most-used in ch03!"}},{"id":"ch03_L3","level_num":3,"topic_id":"ch03_t03","title":"Empirical & Molecular Formulae","emoji":"🧩","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"<strong>Empirical formula</strong> = simplest whole-number ratio of atoms. <strong>Molecular formula</strong> = actual number of atoms. To find empirical: convert % to moles → divide by smallest → round to whole numbers. Molecular = n × empirical, where n = Mr(molecular) / Mr(empirical).","formula":"Empirical → divide each % by Ar → divide by smallest → whole numbers","formula_example":"C₆H₁₂O₆ → empirical = CH₂O (divide by 6)","molecular_n":"n = Mr(molecular) / Mr(empirical)","molecular_example":"Empirical CH₂O, Mr=60 → molecular = 2 × CH₂O = C₂H₄O₂","tip":"If a question gives % composition by mass, start by assuming 100g total — then % becomes grams directly!","memory":"Empirical = 'EGG-splest ratio' 📐. Molecular = actual number in one molecule. Start with % → moles → ratio → empirical."},"diagram":{"type":"formula_conversion","title":"Empirical ↔ Molecular"},"quiz":{"question":"A compound is 40% C, 6.7% H, 53.3% O. What is its empirical formula? (Ar: C=12, H=1, O=16)?","options":["A. C₂H₂O₂","B. C₂H₄O₂","C. CH₂O","D. C₃H₆O₃"],"correct":2,"hint":"Assume 100g: C=40g, H=6.7g, O=53.3g → divide by Ar → divide by smallest","explanation":"C: 40/12=3.33, H: 6.7/1=6.7, O: 53.3/16=3.33 → divide all by 3.33 → C₁H₂O₁ = CH₂O"}},{"id":"ch03_L4","level_num":4,"topic_id":"ch03_t04","title":"Molar Gas Volumes","emoji":"💨","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"Gases at the <strong>same temperature and pressure</strong> contain the same number of molecules per unit volume. At RTP (25°C, 100 kPa): <strong>Vm = 24.0 dm³ mol⁻¹</strong>. At STP (0°C, 100 kPa): Vm = 22.7 dm³ mol⁻¹. The <strong>ideal gas equation</strong> handles any condition.","formula":"pV = nRT  (pressure × volume = moles × R × temperature)","variables":"p in Pa, V in m³, T in K, R = 8.314 J mol⁻¹ K⁻¹, n in mol","molar_volumes":"RTP: 24.0 dm³ mol⁻¹ (25°C, 100 kPa) | STP: 22.7 dm³ mol⁻¹ (0°C, 100 kPa)","tip":"⚠️ V in dm³ for molar volume: V (dm³) = n × 24. But convert to m³ for pV = nRT! 1 dm³ = 1×10⁻³ m³","memory":"24 at RTP, 22.7 at STP. 25°C=298K, 0°C=273K. Gas volume questions = n × Vm = m/M × Vm."},"diagram":{"type":"gas_equations","title":"Gas Volume Equations"},"quiz":{"question":"What volume does 2 mol of gas occupy at RTP? (Vm = 24.0 dm³ mol⁻¹)?","options":["A. 12.0 dm³","B. 24.0 dm³","C. 48.0 dm³","D. 96.0 dm³"],"correct":2,"hint":"V = n × Vm","explanation":"V = 2 mol × 24.0 dm³ mol⁻¹ = 48.0 dm³. The molar volume × moles = gas volume!"}},{"id":"ch03_L5","level_num":5,"topic_id":"ch03_t05","title":"Solutions & Concentrations","emoji":"🧪","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"<strong>Concentration (c)</strong> = moles of solute per volume of solution. <strong>Molarity (M)</strong> in mol dm⁻³ = mol / dm³. Dilution formula: c₁V₁ = c₂V₂ (moles stay the same). Titration: at equivalence, moles acid = stoichiometric ratio × moles base.","formula":"c = n / V   (concentration = moles / volume in dm³)","dilution":"c₁V₁ = c₂V₂ (moles before = moles after)","dilution_example":"10 cm³ of 2 mol dm⁻³ HCl diluted to 100 cm³ → c₂ = 10×2/100 = 0.2 mol dm⁻³","tip":"⚠️ Always convert cm³ to dm³: divide by 1000! 25 cm³ = 0.025 dm³. This trips up many students!","memory":"c = n/V. Dilution: c drops when V increases (same moles in bigger container). Titration: look for equivalence point = equal moles ratio."},"diagram":{"type":"titration","title":"Volumetric Analysis"},"quiz":{"question":"How many moles are in 250 cm³ of 0.5 mol dm⁻³ NaOH solution?","options":["A. 0.125 mol","B. 0.25 mol","C. 0.5 mol","D. 2 mol"],"correct":0,"hint":"n = c × V, but convert 250 cm³ to dm³ first","explanation":"V = 250/1000 = 0.25 dm³. n = 0.5 × 0.25 = 0.125 mol. Remember: cm³ → dm³ ÷ 1000!"}},{"id":"ch03_L6","level_num":6,"topic_id":"ch03_t06","title":"Stoichiometric Calculations","emoji":"⚖️","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"<strong>Stoichiometry</strong> = using balanced equations to find amounts. Key steps: (1) Write balanced equation. (2) Convert given mass to moles (÷ M). (3) Use mole ratio from equation. (4) Convert back to mass (× M) or volume.","formula":"Balanced equation: aA + bB → cC\nMole ratio: nA : nB : nC = a : b : c","step_guide":"1. m → n (÷M). 2. Use ratio. 3. n → mass/volume (×M or ×24).","tip":"Always check your mole ratio from the balanced equation's coefficients — NOT from eyeballing!","memory":"The 'golden path': grams → moles → ratio → grams/mol/vol. Every stoichiometry question follows this route!"},"diagram":{"type":"stoich_flow","title":"Stoichiometry Flow"},"quiz":{"question":"2H₂ + O₂ → 2H₂O. How many moles of H₂O from 4 mol H₂?","options":["A. 1 mol","B. 2 mol","C. 4 mol","D. 8 mol"],"correct":2,"hint":"Ratio H₂ : H₂O = 2 : 2 = 1 : 1","explanation":"From the equation: 2 mol H₂ produces 2 mol H₂O. Ratio is 1:1, so 4 mol H₂ → 4 mol H₂O."}},{"id":"ch03_L7","level_num":7,"topic_id":"ch03_t07","title":"Limiting Reagent & Yield","emoji":"🎯","xp_learn":10,"xp_quiz_first":30,"xp_quiz_retry":15,"content":{"summary":"<strong>Limiting reagent</strong> = reactant that runs out first, stopping the reaction. Find it by dividing moles of each reactant by its coefficient — the smallest result is limiting. <strong>% yield</strong> measures efficiency. <strong>Atom economy</strong> measures 'greenness' — how much product contains desired atoms.","limiting_method":"1. Calculate moles of each reactant. 2. Divide by stoichiometric coefficient. 3. Smallest value = limiting reagent.","yield":"% yield = (actual yield / theoretical yield) × 100%","yield_example":"Theoretical = 10g, Actual = 8g → % yield = 80%","atom_economy":"Atom economy = (Mr of desired product / total Mr of all products) × 100%","atom_economy_example":"N₂ + 3H₂ → 2NH₃: Mr(NH₃)=17, total products=34 → economy = 2×17/34×100 = 100% (all atoms in product)","tip":"Theoretical yield is calculated from the LIMITING REAGENT — never from the excess!","memory":"Limiting = 'the one that runs out first' — divide moles by coefficient. Yield = actual/theoretical. Atom economy = 'green' measure of how much ends up in product."},"diagram":{"type":"limiting_yield","title":"Limiting Reagent & Yield"},"quiz":{"question":"N₂ + 3H₂ → 2NH₃. If 1 mol N₂ and 3 mol H₂ react in exact ratio, and 0.8 mol NH₃ is obtained, what is the % yield?","options":["A. 40%","B. 60%","C. 80%","D. 100%"],"correct":0,"hint":"Theoretical NH₃ = 2 mol (from equation). % yield = (actual/theoretical) × 100%","explanation":"Exact 1:3 ratio → neither limiting. Theoretical = 2 mol NH₃. % yield = (0.8/2)×100 = 40%. Actual < theoretical is normal: side reactions, incomplete conversion, product loss during handling."}}]}},"badges":[{"id":"first_atom","name":"First Atom","emoji":"🔬","condition":"Complete Level 1"},{"id":"nucleus_master","name":"Nucleus Master","emoji":"⚛️","condition":"Complete Levels 1–3"},{"id":"electron_wizard","name":"Electron Wizard","emoji":"🌟","condition":"Complete Level 4"},{"id":"ch01_champion","name":"Ch01 Champion","emoji":"🏆","condition":"Complete all 6 levels"},{"id":"streak_3","name":"3-Day Streak","emoji":"🔥","condition":"Learn for 3 consecutive days"},{"id":"perfect_run","name":"Perfect Run","emoji":"⚡","condition":"All quiz questions answered correctly on first try"},{"id":"ch03_first_mole","name":"First Mole","emoji":"🧮","condition":"Complete Level 1 (Relative Masses)","chapter":"ch03"},{"id":"ch03_stoich_master","name":"Stoich Master","emoji":"⚖️","condition":"Complete Levels 1-3","chapter":"ch03"},{"id":"ch03_solution_skill","name":"Solution Skill","emoji":"🧪","condition":"Complete Level 5 (Solutions)","chapter":"ch03"},{"id":"ch03_champion","name":"Ch03 Champion","emoji":"🏆","condition":"Complete all 7 levels","chapter":"ch03"},{"id":"ch03_yield_expert","name":"Yield Expert","emoji":"🎯","condition":"Complete Level 7 (Limiting Reagent & Yield)","chapter":"ch03"}],"xp_rules":{"per_level_complete":40,"chapter_complete_bonus":100,"streak_3_day_bonus":50}}; // inlined — no fetch needed
+    document.getElementById('dbStatus').style.display = 'inline-block';
+    showLoading(true, 'Loading students...');
+    await loadStudentsDB();
+    document.getElementById('dbStatus').style.display = 'inline-block';
+  } catch(e) {
+    console.error('DB error:', e);
+    // Hide loading overlay so user can still login
+    showLoading(false);
+    var dbStatus = document.getElementById('dbStatus');
+    if (dbStatus) {
+      dbStatus.textContent = '⚠ DB Error - some features may be unavailable';
+      dbStatus.style.display = 'inline-block';
+      dbStatus.style.background = '#fee2e2';
+      dbStatus.style.color = '#dc2626';
+    }
+  }
+}
+
+function loadJson(url) {
+  return new Promise(function(resolve, reject) {
+    fetch(url).then(function(r) { if (!r.ok) throw new Error(url); return r.json(); }).then(resolve).catch(function() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url);
+      xhr.onload = function() { try { resolve(JSON.parse(xhr.responseText)); } catch(e) { reject(e); } };
+      xhr.onerror = reject;
+      xhr.send();
+    });
+  });
+}
+
+async function loadStudentsDB() {
+  try { window.STUDENTS_DB = await loadJson('students_db.json'); }
+  catch(e) { window.STUDENTS_DB = { students: [] }; }
+}
+
+/* AUTH */
+function handleLogin() {
+  var u = document.getElementById('loginUser').value.trim();
+  var p = document.getElementById('loginPass').value;
+  var err = document.getElementById('loginError');
+  if (!u || !p) { err.style.display='block'; err.textContent='Enter username and password.'; return; }
+  if (u==='admin' && p==='teacher2026') {
+    currentUser = {username:'admin',name:'Teacher',role:'admin'}; isAdmin = true;
+    localStorage.setItem('ch9701_session', JSON.stringify(currentUser)); restoreSession(); return;
+  }
+  if (u==='student' && p==='chem9701') {
+    currentUser = {username:'student',name:'Test Student',role:'student'}; isAdmin = false;
+    localStorage.setItem('ch9701_session', JSON.stringify(currentUser)); restoreSession(); return;
+  }
+  var st = (window.STUDENTS_DB && window.STUDENTS_DB.students) ? window.STUDENTS_DB.students.find(function(s){return s.username===u && s.password===p;}) : null;
+  if (st) {
+    currentUser = {username:st.username,name:st.name,role:'student'}; isAdmin = false;
+    localStorage.setItem('ch9701_session', JSON.stringify(currentUser)); restoreSession(); return;
+  }
+  err.style.display='block'; err.textContent='Incorrect username or password.';
+}
+
+function handleGuestLogin() {
+  currentUser = {username:'guest',name:'Guest Student',role:'student'}; isAdmin = false;
+  localStorage.setItem('ch9701_session', JSON.stringify(currentUser)); restoreSession();
+}
+
+function handleLogout() {
+  localStorage.removeItem('ch9701_session');
+  currentUser = null; isAdmin = false;
+  document.getElementById('mainApp').classList.remove('active');
+  document.getElementById('loginScreen').style.display = 'flex';
+  document.getElementById('loginUser').value = '';
+  document.getElementById('loginPass').value = '';
+  document.getElementById('loginError').style.display = 'none';
+}
+
+function restoreSession() {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('mainApp').classList.add('active');
+  document.getElementById('userName').textContent = currentUser.name;
+  document.getElementById('userAvatar').textContent = currentUser.name.charAt(0).toUpperCase();
+  document.getElementById('userRole').textContent = currentUser.role === 'admin' ? 'Teacher' : 'Student';
+  document.getElementById('adminNav').style.display = isAdmin ? 'block' : 'none';
+  showPage('mcq');
+}
+
+/* NAVIGATION */
+function showPage(page) {
+  document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
+  var nav = document.querySelector('.nav-item[data-page="'+page+'"]');
+  if (nav) nav.classList.add('active');
+  var titles = {mcq:'MCQ Practice',struct:'STR Practice',defs:'Definition Match',vocab:'Vocabulary',review:'Review Quiz',progress:'My Progress',history:'History',admin:'Manage Students',learn:'Chapter Quests'};
+  document.getElementById('pageTitle').textContent = titles[page] || page;
+  var pages = {mcq:renderMCQPage,struct:renderStructPage,defs:renderDefsPage,vocab:renderVocabPage,review:renderReviewPage,progress:renderProgressPage,history:renderHistoryPage,learn:renderLearnPage,admin:renderAdminPage};
+  if (pages[page]) pages[page]();
+}
+
+/* MCQ PAGE */
+function renderMCQPage() {
+  var c = document.getElementById('pageContent');
+  if (quizState && quizState.mode === 'mcq') { renderQuiz(); return; }
+  var saved = checkSavedQuiz();
+  var savedBanner = '';
+  if (saved && saved.questions) {
+    var done = Object.keys(saved.answers||{}).length;
+    savedBanner = '<div style="display:flex;align-items:center;gap:10px;padding:14px;background:#fffbeb;border:2px solid #f59e0b;border-radius:10px;margin-bottom:16px">'+
+      '<span style="font-size:1.4rem">📋</span>'+
+      '<div style="flex:1">'+
+        '<div style="font-size:.85rem;font-weight:700;color:#92400e">Unfinished Quiz</div>'+
+        '<div style="font-size:.75rem;color:#b45309">Q '+(done+1)+' of '+saved.questions.length+' · '+done+' answered</div>'+
+      '</div>'+
+      '<div style="display:flex;gap:8px">'+
+        '<button class="btn btn-amber btn-sm" onclick="continueSavedQuiz()">Continue</button>'+
+        '<button class="btn btn-secondary btn-sm" onclick="clearSavedQuiz();renderMCQPage()">Discard</button>'+
+      '</div></div>';
+  }
+  c.innerHTML = savedBanner+'<div class="card"><div class="card-title">📝 MCQ Practice</div>'+
+    '<div class="filter-bar"><span style="font-size:.8rem;color:#64748b;margin-right:6px">Questions:</span><input type="number" id="qCountInput" value="'+quizCount+'" min="1" max="100" style="width:60px;height:32px" oninput="quizCount=Math.max(1,Math.min(100,+this.value||1));updateSelection()"/></div>'+
+    '<div class="selected-summary" id="selSummary">Select chapters below</div>'+
+    renderChapterSelect()+
+    '<button class="start-quiz-btn" id="startBtn" onclick="startMCQ()" disabled>Select chapters to start</button></div>';
+}
+
+function renderChapterSelect() {
+  var h = '<div class="chapter-list" id="chapterList">';
+  DB.chapters.forEach(function(ch) {
+    var qCount = DB.questions.filter(function(q){ return q.chapter_id === ch.id && q.id.indexOf('_P1_') >= 0; }).length;
+    var noMcq = qCount === 0;
+    h += '<div class="chapter-item'+(noMcq?' chapter-no-mcq':'')+'" onclick="toggleChapter(\''+ch.id+'\',event)">'+
+      '<input type="checkbox" id="ch_'+ch.id+'" onchange="updateSelection()"/>'+
+      '<span class="chapter-chevron" id="chev_'+ch.id+'">▶</span>'+
+      '<span class="chapter-name">'+ch.num+' · '+ch.name+'</span>'+
+      '<span class="chapter-meta">'+(noMcq?'<span style="color:#f59e0b;font-size:.7rem">no MCQ</span>':qCount+' Qs')+'</span></div>'+
+      '<div class="topic-list" id="topics_'+ch.id+'" style="display:none"></div>';
+  });
+  return h + '</div>';
+}
+
+function toggleChapter(chId, e) {
+  e.stopPropagation();
+  var td = document.getElementById('topics_'+chId);
+  var cv = document.getElementById('chev_'+chId);
+  var cb = document.getElementById('ch_'+chId);
+  if (td.style.display !== 'none') {
+    td.style.display = 'none'; cv.classList.remove('open'); cb.checked = false;
+  } else {
+    td.style.display = 'flex'; cv.classList.add('open');
+    var tMap = {};
+    DB.questions.filter(function(q){ return q.chapter_id === chId && q.id.indexOf('_P1_') >= 0; }).forEach(function(q) {
+      (q.topic_ids||[]).forEach(function(t){ tMap[t] = (tMap[t]||0)+1; });
+    });
+    var topics = Object.keys(tMap).map(function(tid){ return {id:tid, name:TOPICS_MAP[tid] || tid.replace(/_/g,' ')}; });
+    var th = '';
+    if (topics.length === 0) {
+      th = '<div style="padding:10px 14px;font-size:.78rem;color:#b45309;background:#fffbeb;border-radius:6px;margin:4px 0">This chapter has no Paper 1 MCQ questions — only Paper 2/3/4 structured questions are in the database.</div>';
+    } else {
+      topics.forEach(function(t) {
+        th += '<div class="topic-item" data-chapter="'+chId+'">'+
+          '<input type="checkbox" id="t_'+t.id+'" data-chapter="'+chId+'" onchange="updateChapterCheckbox(\''+chId+'\');updateSelection()"/>'+
+          '<span>'+t.name+'</span><span class="topic-qcount">'+tMap[t.id]+' Qs</span></div>';
+      });
+    }
+    td.innerHTML = th;
+  }
+  updateSelection();
+}
+
+function updateChapterCheckbox(chId) {
+  var td = document.getElementById('topics_'+chId);
+  var cb = document.getElementById('ch_'+chId);
+  cb.checked = Array.from(td.querySelectorAll('input[type=checkbox]')).some(function(c){ return c.checked; });
+}
+
+function updateSelection() {
+  var sel = getSelectedTopics();
+  var summary = document.getElementById('selSummary');
+  var btn = document.getElementById('startBtn');
+  if (sel.length === 0) {
+    summary.textContent = 'Select chapters below';
+    btn.disabled = true; btn.textContent = 'Select chapters';
+    return;
+  }
+  var total = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return sel.indexOf(t)>=0; }) && q.id.indexOf('_P1_') >= 0; }).length;
+  summary.textContent = sel.length+' topics selected · '+total+' questions available';
+  btn.disabled = false;
+  btn.textContent = 'Start Practice ('+Math.min(quizCount,total)+' questions)';
+}
+
+
+function getSelectedTopics() {
+  var s = [];
+  document.querySelectorAll('.topic-list input:checked').forEach(function(c){ s.push(c.id.replace('t_','')); });
+  return [...new Set(s)];
+}
+
+function startMCQ() {
+  var sel = getSelectedTopics();
+  if (!sel.length) return;
+  var allQs = DB.questions.filter(function(q){
+    return q.topic_ids && q.topic_ids.some(function(t){ return sel.indexOf(t)>=0; }) && q.id.indexOf('_P1_') >= 0;
+  });
+  if (!allQs.length) { alert('No questions found.'); return; }
+  quizState = {mode:'mcq', questions:shuffle(allQs).slice(0,Math.min(quizCount,allQs.length)), currentIndex:0, answers:{}, startTime:Date.now()};
+  renderQuiz();
+}
+
+function renderQuiz() {
+  var c = document.getElementById('pageContent');
+  if (quizState.currentIndex >= quizState.questions.length) { renderResults(); return; }
+  var q = quizState.questions[quizState.currentIndex];
+  var answered = quizState.answers[q.id] !== undefined;
+  var isCorrect = answered && quizState.answers[q.id].selected === q.answer;
+  var elapsed = Math.floor((Date.now()-quizState.startTime)/1000);
+  var mins = Math.floor(elapsed/60), secs = elapsed%60;
+  var timerCls = mins>=10 ? 'danger' : mins>=5 ? 'warning' : '';
+  var h = '<div class="question-card">'+
+    '<div class="q-header">'+
+      '<span class="q-progress">Q '+(quizState.currentIndex+1)+'/'+quizState.questions.length+'</span>'+
+      '<span class="badge badge-blue">'+(q.source||'')+' '+(q.year||'')+'</span>'+
+      '<span class="q-timer '+timerCls+'">⏱ '+mins+':'+String(secs).padStart(2,'0')+'</span>'+
+    '</div>'+
+    '<div class="q-body">';
+  if (q.img) h += '<img class="q-img" src="images/'+q.img+'" alt="Question" onclick="this.style.maxWidth=this.style.maxWidth?\'none\':\'700px\'"/>';
+  h += '<div class="q-source">Topic: '+(q.topic_ids||[]).map(function(t){return TOPICS_MAP[t]||t;}).join(', ')+'</div>';
+  var letters = ['A','B','C','D'];
+  letters.forEach(function(l) {
+    var sel = answered && quizState.answers[q.id].selected === l;
+    var cls = 'option' + (sel ? ' selected' : '') + (answered ? ' disabled' : '');
+    if (answered) {
+      if (l === q.answer) cls = 'option correct disabled';
+      else if (sel) cls = 'option wrong disabled';
+    }
+    h += '<div class="'+cls+'" onclick="'+(answered?'':'selectOption(\''+q.id+'\',\''+l+'\')')+'">'+
+      '<div class="option-letter">'+l+'</div><div class="option-text">Option '+l+'</div></div>';
+  });
+  if (answered) {
+    h += '<div class="feedback-box '+(isCorrect?'feedback-correct':'feedback-wrong')+'>'+
+      (isCorrect?'✅ <strong>Correct!</strong>':'❌ <strong>Incorrect.</strong> Answer: <strong>'+q.answer+'</strong>')+'</div>';
+  }
+  h += '</div><div class="q-actions">'+
+    '<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">'+
+      '<span style="font-size:.75rem;color:#94a3b8">'+(q.season||'')+'</span>'+
+      '<button class="btn btn-secondary btn-sm" style="background:#fffbeb;color:#92400e;border-color:#fde68a" onclick="saveQuizAndExit()">💾 Save & Exit</button>'+
+    '</div>'+
+    '<div style="display:flex;gap:8px">'+
+      (quizState.currentIndex>0 ? '<button class="btn btn-secondary btn-sm" onclick="quizState.currentIndex--;renderQuiz()">← Prev</button>' : '')+
+      (!answered ? '<button class="btn btn-primary btn-sm" onclick="renderQuiz()" disabled>Select an option</button>' :
+        '<button class="btn btn-primary btn-sm" onclick="quizState.currentIndex++;renderQuiz()">'+(quizState.currentIndex<quizState.questions.length-1?'Next →':'Results')+'</button>')+
+    '</div></div></div>';
+  // Progress dots
+  h += '<div class="q-nav">';
+  quizState.questions.forEach(function(_, i) {
+    var a = quizState.answers[quizState.questions[i].id];
+    var done = a !== undefined;
+    var correct = done && a.selected === quizState.questions[i].answer;
+    var color = '#e2e8f0';
+    if (done && correct) color = '#16a34a';
+    else if (done) color = '#dc2626';
+    else if (i === quizState.currentIndex) color = '#0d9488';
+    h += '<div style="width:8px;height:8px;border-radius:50%;background:'+color+';flex-shrink:0"></div>';
+  });
+  h += '</div>';
+  c.innerHTML = h;
+}
+
+function selectOption(qId, letter) {
+  if (quizState.answers[qId] !== undefined) return;
+  quizState.answers[qId] = {selected:letter, time:Date.now()};
+  renderQuiz();
+}
+
+function saveQuizAndExit() {
+  var done = Object.keys(quizState.answers).length;
+  if (done === 0) {
+    quizState = null;
+    showPage('mcq');
+    return;
+  }
+  localStorage.setItem('ch9701_quiz_saved', JSON.stringify(quizState));
+  var saved = JSON.parse(localStorage.getItem('ch9701_quiz_saved')||'{}');
+  var total = saved.questions ? saved.questions.length : 0;
+  quizState = null;
+  showPage('mcq');
+  alert('Progress saved! ' + done + '/' + total + ' questions answered.');
+}
+
+function checkSavedQuiz() {
+  var saved = localStorage.getItem('ch9701_quiz_saved');
+  if (!saved) return null;
+  try { return JSON.parse(saved); } catch(e) { return null; }
+}
+
+function continueSavedQuiz() {
+  var saved = checkSavedQuiz();
+  if (!saved) return;
+  quizState = saved;
+  renderQuiz();
+}
+
+function clearSavedQuiz() {
+  localStorage.removeItem('ch9701_quiz_saved');
+}
+
+/* RESULTS */
+function renderResults() {
+  var qs = quizState.questions, ans = quizState.answers;
+  var total = qs.length;
+  var correct = qs.filter(function(q){ return ans[q.id] && ans[q.id].selected === q.answer; }).length;
+  var wrong = total - correct;
+  var accuracy = Math.round(correct/total*100);
+  var elapsed = Math.floor((Date.now()-quizState.startTime)/1000);
+  var mins = Math.floor(elapsed/60), secs = elapsed%60;
+  var topicStats = {};
+  qs.forEach(function(q) {
+    (q.topic_ids||[]).forEach(function(t) {
+      if (!topicStats[t]) topicStats[t] = {t:0,c:0};
+      topicStats[t].t++;
+      if (ans[q.id] && ans[q.id].selected === q.answer) topicStats[t].c++;
+    });
+  });
+  var weak = Object.entries(topicStats).filter(function(e){return e[1].t>=1 && e[1].c/e[1].t<0.6;}).sort(function(a,b){return a[1].c/a[1].t - b[1].c/b[1].t;}).slice(0,5);
+  var accColor = accuracy>=80?'#16a34a':accuracy>=60?'#d97706':'#dc2626';
+  saveHistory({mode:'mcq',date:new Date().toISOString(),total,correct,wrong,accuracy,elapsed,weakTopics:weak.map(function(t){return t[0];})});
+  clearSavedQuiz();
+  var h = '<div class="card"><div class="card-title">🎉 Quiz Complete!</div><div class="results-grid">'+
+    '<div class="result-card"><div class="rc-score" style="color:'+accColor+'">'+accuracy+'%</div><div class="rc-label">Accuracy</div><div class="rc-sub">'+correct+'/'+total+' correct</div></div>'+
+    '<div class="result-card"><div class="rc-score" style="color:#dc2626">'+wrong+'</div><div class="rc-label">Wrong</div></div>'+
+    '<div class="result-card"><div class="rc-score" style="color:#d97706">'+mins+':'+String(secs).padStart(2,'0')+'</div><div class="rc-label">Time</div><div class="rc-sub">avg '+Math.round(elapsed/total)+'s/q</div></div></div>';
+  if (weak.length) {
+    h += '<div class="weak-section"><h3>🔴 Weak Areas</h3><div class="weak-topics">';
+    weak.forEach(function(e) { h += '<div class="weak-topic">'+TOPICS_MAP[e[0]]+' <span class="wq">'+Math.round(e[1].c/e[1].t*100)+'%</span></div>'; });
+    h += '</div></div>';
+  }
+  h += '</div><div style="display:flex;gap:10px;flex-wrap:wrap">'+
+    '<button class="btn btn-secondary" onclick="quizState=null;renderMCQPage()">← Practice Again</button>'+
+    (weak.length ? '<button class="btn btn-primary" onclick="startReviewQuiz([\''+weak.map(function(t){return t[0];}).join('\',\'')+'\'])">📝 Review Weak Topics</button>' : '')+
+    '<button class="btn btn-amber" onclick="showPage(\'progress\')">📊 Progress</button></div>';
+  document.getElementById('pageContent').innerHTML = h;
+}
+
+/* STRUCTURED QUESTIONS */
+function renderStructPage() {
+  var c = document.getElementById('pageContent');
+  if (structState && structState.questions) { renderStructQuiz(); return; }
+  var saved = checkSavedSTR();
+  var savedBanner = '';
+  if (saved && saved.questions) {
+    var done = Object.keys(saved.answers||{}).length;
+    savedBanner = '<div style="display:flex;align-items:center;gap:10px;padding:14px;background:#fffbeb;border:2px solid #f59e0b;border-radius:10px;margin-bottom:16px">'+
+      '<span style="font-size:1.4rem">📋</span>'+
+      '<div style="flex:1">'+
+        '<div style="font-size:.85rem;font-weight:700;color:#92400e">Unfinished STR Quiz</div>'+
+        '<div style="font-size:.75rem;color:#b45309">Q '+(done+1)+' of '+saved.questions.length+' · '+done+' answered</div>'+
+      '</div>'+
+      '<div style="display:flex;gap:8px">'+
+        '<button class="btn btn-amber btn-sm" onclick="continueSavedSTR()">Continue</button>'+
+        '<button class="btn btn-secondary btn-sm" onclick="clearSavedSTR();renderStructPage()">Discard</button>'+
+      '</div></div>';
+  }
+  var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+  c.innerHTML = savedBanner+'<div class="card"><div class="card-title">📄 STR Practice</div>'+
+    '<div class="filter-bar"><span style="font-size:.8rem;color:#64748b;margin-right:6px">Questions:</span>'+
+    '<input type="number" id="strQCountInput" value="'+strQuizCount+'" min="1" max="50" style="width:60px;height:32px" '+
+    'oninput="strQuizCount=Math.max(1,Math.min(50,+this.value||1));updateSTRSelection()"/></div>'+
+    '<div class="selected-summary" id="strSelSummary">Select chapters below</div>'+
+    renderSTRChapterSelect()+
+    '<button class="start-quiz-btn" id="strStartBtn" onclick="startSTRQuiz()" disabled>Select chapters</button></div>';
+}
+
+function renderSTRChapterSelect() {
+  var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+  
+  // Get chapter info from topics DB
+  var chapterNames = {};
+  var chapterTopics = {};
+  if (DB.topics && DB.topics.chapters) {
+    Object.keys(DB.topics.chapters).forEach(function(ch) {
+      chapterNames[ch] = DB.topics.chapters[ch].name;
+      chapterTopics[ch] = DB.topics.chapters[ch].topics || [];
+    });
+  }
+  
+  // Count questions per chapter
+  var chCount = {};
+  var chPapers = {}; // Which papers have questions for this chapter
+  allQs.forEach(function(q) {
+    var chapters = q.chapters || [q.ch] || [];
+    chapters.forEach(function(ch) {
+      if (!chCount[ch]) { chCount[ch] = 0; chPapers[ch] = {}; }
+      chCount[ch]++;
+      chPapers[ch][q.paper] = (chPapers[ch][q.paper] || 0) + 1;
+    });
+  });
+  
+  // Sort chapters (ch01, ch03, ch04, ... ch28)
+  var sortedChs = Object.keys(chCount).sort(function(a,b){
+    var na = parseInt(a.replace('ch','').replace(/[^0-9]/g,'')) || 0;
+    var nb = parseInt(b.replace('ch','').replace(/[^0-9]/g,'')) || 0;
+    return na - nb;
+  });
+  
+  var h = '<div class="chapter-list" id="strChapterList">';
+  
+  // Paper type filter
+  h += '<div style="display:flex;gap:8px;margin-bottom:12px;padding:0 2px">';
+  h += '<label style="display:flex;align-items:center;gap:4px;font-size:.75rem;cursor:pointer">'+
+    '<input type="checkbox" id="strFilterP2" checked onchange="renderSTRChapterSelect();updateSTRSelection()"/>'+
+    '<span style="padding:2px 8px;background:#1d4ed8;color:#fff;border-radius:4px;font-size:.65rem">P2</span></label>';
+  h += '<label style="display:flex;align-items:center;gap:4px;font-size:.75rem;cursor:pointer">'+
+    '<input type="checkbox" id="strFilterP4" checked onchange="renderSTRChapterSelect();updateSTRSelection()"/>'+
+    '<span style="padding:2px 8px;background:#7c3aed;color:#fff;border-radius:4px;font-size:.65rem">P4</span></label>';
+  h += '</div>';
+  
+  sortedChs.forEach(function(ch) {
+    var chId = ch.replace(/[^a-zA-Z0-9]/g,'');
+    var name = chapterNames[ch] || ch;
+    var qCount = chCount[ch];
+    var p2count = chPapers[ch]['P2'] || 0;
+    var p4count = chPapers[ch]['P4'] || 0;
+    var badge = '';
+    if (p2count > 0 && p4count > 0) badge = '<span class="badge badge-blue" style="font-size:.6rem">P2</span><span class="badge badge-purple" style="font-size:.6rem">P4</span>';
+    else if (p2count > 0) badge = '<span class="badge badge-blue" style="font-size:.6rem">P2</span>';
+    else badge = '<span class="badge badge-purple" style="font-size:.6rem">P4</span>';
+    
+    h += '<div class="chapter-item" onclick="toggleSTRChapter(\''+chId+'\',event)">'+
+      '<input type="checkbox" id="strch_'+chId+'" data-chapter="'+ch+'" onchange="updateSTRSelection()"/>'+
+      '<span class="chapter-chevron" id="strchev_'+chId+'">▶</span>'+
+      '<span class="chapter-name">'+ch.toUpperCase()+' '+name+'</span>'+
+      '<span class="chapter-meta">'+badge+'<span class="topic-qcount">'+qCount+' Qs</span></span>'+
+      '</div>'+
+      '<div class="topic-list" id="strtopics_'+chId+'" style="display:none"></div>';
+  });
+  
+  // No MCQ notice for chapters without STR questions
+  var allChs = Object.keys(chapterNames).sort(function(a,b){
+    return (parseInt(a.replace('ch',''))||0) - (parseInt(b.replace('ch',''))||0);
+  });
+  var missingChs = allChs.filter(function(ch){ return !chCount[ch]; });
+  if (missingChs.length > 0) {
+    h += '<div style="margin-top:16px;padding-top:16px;border-top:1px solid #e2e8f0">';
+    h += '<div style="font-size:.72rem;color:#94a3b8;margin-bottom:8px">No STR questions available for:</div>';
+    missingChs.forEach(function(ch) {
+      h += '<span class="chapter-no-mcq" style="display:inline-flex;align-items:center;padding:4px 10px;margin:2px;border-radius:6px;font-size:.72rem">'+ch.toUpperCase()+'</span>';
+    });
+    h += '</div>';
+  }
+  
+  return h + '</div>';
+}
+
+function toggleSTRChapter(chId, e) {
+  e.stopPropagation();
+  var td = document.getElementById('strtopics_'+chId);
+  var cv = document.getElementById('strchev_'+chId);
+  var cb = document.getElementById('strch_'+chId);
+  if (td.style.display !== 'none') {
+    td.style.display = 'none'; cv.classList.remove('open'); cb.checked = false;
+  } else {
+    td.style.display = 'flex'; cv.classList.add('open');
+    // Get chapter key
+    var chKey = cb.dataset.chapter;
+    var chapterNames = {};
+    if (DB.topics && DB.topics.chapters && DB.topics.chapters[chKey]) {
+      chapterNames = DB.topics.chapters[chKey].topics || [];
+    }
+    
+    var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+    var filterP2 = document.getElementById('strFilterP2').checked;
+    var filterP4 = document.getElementById('strFilterP4').checked;
+    
+    // Filter questions by chapter and paper type
+    var chQs = allQs.filter(function(q) {
+      var chapters = q.chapters || [q.ch] || [];
+      if (!chapters.includes(chKey)) return false;
+      if (!filterP2 && q.paper === 'P2') return false;
+      if (!filterP4 && q.paper === 'P4') return false;
+      return true;
+    });
+    
+    // Group by paper type
+    var byPaper = {P2:[], P4:[]};
+    chQs.forEach(function(q){ byPaper[q.paper].push(q); });
+    
+    var th = '<div style="padding:6px 0;font-size:.72rem;color:#94a3b8;margin-left:4px">'+chQs.length+' questions</div>';
+    
+    // Topic list (simplified - just show question types)
+    if (chQs.length > 0) {
+      th += '<div class="topic-item" style="pointer-events:none">';
+      th += '<input type="checkbox" id="strv_'+chId+'_all" class="str-chapter-cb" data-chapter="'+chKey+'" data-paper="all" onchange="updateSTRSelection()"/>';
+      th += '<span>All P2 & P4</span><span class="topic-qcount">'+chQs.length+' Qs</span>';
+      th += '</div>';
+    } else {
+      th += '<div style="padding:8px 14px;font-size:.75rem;color:#94a3b8">No questions match current filters</div>';
+    }
+    
+    td.innerHTML = th;
+  }
+  updateSTRSelection();
+}
+
+function updateSTRSelection() {
+  var sel = getSelectedSTRChapters();
+  var total = sel.reduce(function(s,v){return s+v.qs.length;},0);
+  var summary = document.getElementById('strSelSummary');
+  var btn = document.getElementById('strStartBtn');
+  if (sel.length === 0) {
+    summary.textContent = 'Select chapters below';
+    btn.disabled = true; btn.textContent = 'Select chapters';
+    return;
+  }
+  summary.textContent = sel.length+' chapter(s) selected · '+total+' questions available';
+  btn.disabled = total === 0;
+  btn.textContent = 'Start Practice ('+Math.min(strQuizCount,total)+' questions)';
+}
+
+function getSelectedSTRChapters() {
+  var result = [];
+  var seen = {};
+  var filterP2 = document.getElementById('strFilterP2').checked;
+  var filterP4 = document.getElementById('strFilterP4').checked;
+  
+  document.querySelectorAll('.str-chapter-cb:checked').forEach(function(c){
+    var ch = c.dataset.chapter;
+    var key = ch+'_'+c.dataset.paper;
+    if (seen[key]) return;
+    seen[key] = true;
+    
+    var allQs = (DB.structDB ? (DB.structDB.P2||[]).concat(DB.structDB.P4||[]) : []);
+    var qs = allQs.filter(function(q) {
+      var chapters = q.chapters || [q.ch] || [];
+      if (!chapters.includes(ch)) return false;
+      if (!filterP2 && q.paper === 'P2') return false;
+      if (!filterP4 && q.paper === 'P4') return false;
+      return true;
+    });
+    if (qs.length) result.push({chapter:ch, qs:qs});
+  });
+  return result;
+}
+
+function startSTRQuiz() {
+  var sel = getSelectedSTRChapters();
+  if (!sel.length) return;
+  var allQs = [];
+  sel.forEach(function(s){ allQs = allQs.concat(s.qs); });
+  if (!allQs.length) { alert('No questions found.'); return; }
+  var count = Math.min(strQuizCount, allQs.length);
+  structState = {questions:shuffle(allQs).slice(0,count), currentIndex:0, answers:{}, startTime:Date.now(), showMS:{}, drawData:{}};
+  renderStructQuiz();
+}
+
+function startStructQuiz(paper) {
+  var qs = DB.structDB ? (DB.structDB[paper]||[]) : [];
+  if (!qs.length) { alert('No questions available.'); return; }
+  structState = {paper:paper, questions:shuffle(qs.slice()), currentIndex:0, answers:{}, startTime:Date.now(), showMS:{}, drawData:{}};
+  renderStructQuiz();
+}
+
+function renderStructQuiz() {
+  var c = document.getElementById('pageContent');
+  if (structState.currentIndex >= structState.questions.length) {
+    c.innerHTML = '<div class="card"><div class="card-title">📄 STR Practice Done!</div>'+
+      '<p style="font-size:.82rem;color:#64748b">Completed '+structState.questions.length+' questions.</p>'+
+      '<div style="display:flex;gap:10px;margin-top:16px">'+
+        '<button class="btn btn-secondary" onclick="structState=null;renderStructPage()">← Back</button>'+
+        '<button class="btn btn-primary" onclick="startSTRQuiz()">Practice Again</button></div></div>';
+    return;
+  }
+  var q = structState.questions[structState.currentIndex];
+  var total = structState.questions.length;
+  var msShown = structState.showMS[q.id] || false;
+  var yearLabel = q.year + (q.season ? ' '+q.season : '');
+  var qid = q.id.replace(/[^a-zA-Z0-9]/g,'_');
+  var ansText = structState.answers[q.id] || '';
+  var savedDraw = structState.drawData ? structState.drawData[q.id] : null;
+  var hasDrawing = !!(savedDraw && savedDraw.imageData);
+  var scoreResult = msShown ? calcSTRScore(q, ansText) : null;
+  var scoreBarColor = scoreResult ? (scoreResult.pct>=70?'#16a34a':scoreResult.pct>=40?'#d97706':'#dc2626') : '#e2e8f0';
+
+  var chName = (q.ch && CHAPTERS_MAP[q.ch]) ? CHAPTERS_MAP[q.ch] : (q.ch || '');
+  var chNames = (q.chapters||[]).map(function(c){return CHAPTERS_MAP[c]||c;}).join(', ');
+  var h = '<div class="question-card">'+
+    '<div class="q-header">'+
+      '<span class="q-progress">'+(chName ? chName : q.paper)+'</span>'+
+      (chNames !== chName ? '<span class="badge badge-blue" style="font-size:.65rem">'+chNames+'</span>' : '')+
+      '<span style="flex:1"></span><span style="font-size:.78rem;color:#64748b">'+(structState.currentIndex+1)+'/'+total+'</span>'+
+    '</div>'+
+    '<div class="q-body">'+
+      '<div class="q-source" style="margin-bottom:10px">'+
+        '<span class="badge badge-purple" style="margin-right:6px">'+q.paper+'</span>'+
+        'Q'+q.qnum+' · '+yearLabel+ (q.variant ? ' · v'+q.variant : '')+
+      '</div>'+
+      '<img class="struct-q-img" src="images/'+q.img+'" alt="Question" onclick="this.style.maxWidth=this.style.maxWidth?\'none\':\'800px\'"/>'+
+      '<div class="struct-answer-area"><label>Your Answer:</label>'+
+        '<div class="draw-pad-wrap">'+
+          '<div class="draw-toolbar">'+
+            '<span class="dt-label">Mode:</span>'+
+            '<button class="draw-btn'+(hasDrawing||ansText?'':' active')+'" id="drawBtn_'+qid+'" onclick="toggleDrawMode(\''+qid+'\',\'text\')">⌨ Text</button>'+
+            '<button class="draw-btn'+(hasDrawing?' active':'')+'" id="drawBtnPen_'+qid+'" onclick="toggleDrawMode(\''+qid+'\',\'draw\')">✍ Handwrite</button>'+
+            '<span style="flex:1"></span>'+
+            '<button class="draw-btn undo-btn" id="undoBtn_'+qid+'" onclick="undoDraw(\''+qid+'\')" style="display:none">↩ Undo</button>'+
+            '<button class="draw-btn clear-btn" id="clearBtn_'+qid+'" onclick="clearDraw(\''+qid+'\')" style="display:none">🗑 Clear</button>'+
+          '</div>'+
+          '<textarea id="strAnsText_'+qid+'" class="draw-mode" placeholder="Type your answer here..." '+
+            'style="width:100%;min-height:160px;border:none;padding:14px;font-size:.88rem;line-height:1.7;resize:vertical;display:'+(hasDrawing?'none':'block')+'" '+
+            'oninput="structState.answers[\''+q.id+'\']=this.value">'+(hasDrawing?'':escHtml(ansText))+'</textarea>'+
+          '<div id="drawWrap_'+qid+'" style="position:relative;display:'+(hasDrawing?'block':'none')+'">'+
+            '<canvas id="drawCanvas_'+qid+'" class="draw-canvas" width="800" height="300"></canvas>'+
+          '</div>'+
+          (hasDrawing ? '<scr'+'ipt>initDrawPad(\''+qid+'\',true)</scr'+'ipt>' : '<scr'+'ipt>initDrawPad(\''+qid+'\',false)</scr'+'ipt>')+
+        '</div></div>';
+
+  // Keyword score display
+  if (msShown && scoreResult) {
+    h += '<div class="str-score-box">'+
+      '<h4>📊 Keyword Score</h4>'+
+      '<div class="str-score-bar"><div class="str-score-fill" style="width:'+scoreResult.pct+'%;background:'+scoreBarColor+'"></div></div>'+
+      '<div class="str-score-detail">'+scoreResult.pct+'% keywords matched ('+scoreResult.matched.length+'/'+scoreResult.total+'): ';
+    scoreResult.matched.forEach(function(kw){ h += '<span class="kw-match">'+escHtml(kw)+'</span> '; });
+    if (scoreResult.missed.length) {
+      h += '<br>Missing: ';
+      scoreResult.missed.forEach(function(kw){ h += '<span class="kw-miss">'+escHtml(kw)+'</span> '; });
+    }
+    h += '</div></div>';
+  }
+
+  if (msShown && q.ms_img) {
+    h += '<div class="struct-ms-section"><h4>✅ Marking Scheme</h4>'+
+      '<img class="struct-ms-img" src="images/'+q.ms_img+'" alt="MS" onclick="this.style.maxWidth=this.style.maxWidth?\'none\':\'800px\'"/></div>';
+  }
+  h += '</div>'+
+    '<div class="q-actions">'+
+      '<button class="btn btn-secondary btn-sm" onclick="saveSTRAndExit()">💾 Save &amp; Exit</button>'+
+      '<span style="flex:1;font-size:.72rem;color:#94a3b8;margin-left:8px">'+q.source+'</span>'+
+      '<div style="display:flex;gap:8px">'+
+        (structState.currentIndex>0 ? '<button class="btn btn-secondary btn-sm" onclick="structState.currentIndex--;renderStructQuiz()">← Prev</button>' : '')+
+        (!msShown && q.ms_img ? '<button class="btn btn-amber btn-sm" onclick="structState.showMS[\''+q.id+'\']=true;renderStructQuiz()">Show MS</button>' : '')+
+        '<button class="btn btn-primary btn-sm" onclick="structState.currentIndex++;renderStructQuiz()">'+(structState.currentIndex<total-1?'Next →':'Done')+'</button>'+
+      '</div></div></div>';
+  // Progress dots
+  h += '<div class="q-nav">';
+  structState.questions.forEach(function(_, i) {
+    var shown = structState.showMS[structState.questions[i].id] || false;
+    var hasAns = structState.answers[structState.questions[i].id] || false;
+    var hasDraw = !!(structState.drawData && structState.drawData[structState.questions[i].id]);
+    var color = '#e2e8f0';
+    if (shown) color = '#7c3aed';
+    else if (hasAns || hasDraw) color = '#0d9488';
+    if (i === structState.currentIndex) color = '#0d9488';
+    h += '<div style="width:8px;height:8px;border-radius:50%;background:'+color+';flex-shrink:0"></div>';
+  });
+  h += '</div>';
+  c.innerHTML = h;
+  // Initialize drawing pad if in draw mode
+  if (hasDrawing) { setTimeout(function(){ initDrawPad(qid, true); }, 50); }
+}
+
+/* Drawing Pad */
+var _drawStrokes = {};
+function initDrawPad(qid, restore) {
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  if (!_drawStrokes[qid]) _drawStrokes[qid] = [];
+  var strokes = _drawStrokes[qid];
+  // Responsive canvas
+  var wrap = canvas.parentElement || document.getElementById('drawWrap_'+qid);
+  if (wrap) {
+    canvas.style.width = '100%';
+    canvas.style.height = 'auto';
+  }
+  function resizeCanvas() {
+    var rect = canvas.getBoundingClientRect();
+    var stored = canvas.width;
+    canvas.width = rect.width * 2;
+    canvas.height = rect.height * 2;
+    ctx.scale(2, 2);
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    // Redraw all strokes
+    strokes.forEach(function(stroke) {
+      if (stroke.length < 2) return;
+      ctx.beginPath();
+      ctx.moveTo(stroke[0].x, stroke[0].y);
+      for (var i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i].x, stroke[i].y);
+      ctx.stroke();
+    });
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+  var drawing = false, lastX = 0, lastY = 0;
+  function getPos(e) {
+    var rect = canvas.getBoundingClientRect();
+    var src = e.touches ? e.touches[0] : e;
+    return { x: src.clientX - rect.left, y: src.clientY - rect.top };
+  }
+  canvas.addEventListener('mousedown', function(e){ drawing=true; var p=getPos(e); lastX=p.x; lastY=p.y; strokes.push([p]); });
+  canvas.addEventListener('mousemove', function(e){ if(!drawing)return; var p=getPos(e); strokes.push(p); ctx.beginPath(); ctx.moveTo(lastX,lastY); ctx.lineTo(p.x,p.y); ctx.stroke(); lastX=p.x; lastY=p.y; });
+  canvas.addEventListener('mouseup', function(){ drawing=false; saveDrawData(qid); updateDrawBtns(qid); });
+  canvas.addEventListener('mouseleave', function(){ drawing=false; });
+  canvas.addEventListener('touchstart', function(e){ e.preventDefault(); drawing=true; var p=getPos(e); lastX=p.x; lastY=p.y; strokes.push([p]); }, {passive:false});
+  canvas.addEventListener('touchmove', function(e){ e.preventDefault(); if(!drawing)return; var p=getPos(e); strokes.push(p); ctx.beginPath(); ctx.moveTo(lastX,lastY); ctx.lineTo(p.x,p.y); ctx.stroke(); lastX=p.x; lastY=p.y; }, {passive:false});
+  canvas.addEventListener('touchend', function(){ drawing=false; saveDrawData(qid); updateDrawBtns(qid); });
+  // Restore drawing data
+  if (restore && structState && structState.drawData) {
+    var data = structState.drawData[qid.replace(/[^a-zA-Z0-9]/g,'_')];
+    if (data && data.strokes) {
+      _drawStrokes[qid] = data.strokes;
+      data.strokes.forEach(function(stroke) {
+        if (stroke.length < 2) return;
+        ctx.beginPath();
+        ctx.moveTo(stroke[0].x, stroke[0].y);
+        for (var i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i].x, stroke[i].y);
+        ctx.stroke();
+      });
+    }
+  }
+  updateDrawBtns(qid);
+}
+
+function toggleDrawMode(qid, mode) {
+  var textEl = document.getElementById('strAnsText_'+qid);
+  var drawWrap = document.getElementById('drawWrap_'+qid);
+  var btnText = document.getElementById('drawBtn_'+qid);
+  var btnPen = document.getElementById('drawBtnPen_'+qid);
+  var clearBtn = document.getElementById('clearBtn_'+qid);
+  var undoBtn = document.getElementById('undoBtn_'+qid);
+  if (mode === 'text') {
+    if (textEl) {
+      structState.answers[qid] = textEl.value;
+      textEl.style.display = 'block';
+    }
+    if (drawWrap) drawWrap.style.display = 'none';
+    if (btnText) btnText.classList.add('active');
+    if (btnPen) btnPen.classList.remove('active');
+    if (clearBtn) clearBtn.style.display = 'none';
+    if (undoBtn) undoBtn.style.display = 'none';
+  } else {
+    if (textEl) textEl.style.display = 'none';
+    if (drawWrap) {
+      drawWrap.style.display = 'block';
+      setTimeout(function(){ initDrawPad(qid, false); }, 30);
+    }
+    if (btnText) btnText.classList.remove('active');
+    if (btnPen) btnPen.classList.add('active');
+    if (clearBtn) clearBtn.style.display = 'inline-flex';
+    if (undoBtn) undoBtn.style.display = 'inline-flex';
+  }
+}
+
+function saveDrawData(qid) {
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  if (!canvas || !structState) return;
+  if (!structState.drawData) structState.drawData = {};
+  structState.drawData[qid] = {
+    imageData: canvas.toDataURL(),
+    strokes: _drawStrokes[qid] || []
+  };
+}
+
+function clearDraw(qid) {
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  var ctx = canvas ? canvas.getContext('2d') : null;
+  if (ctx) {
+    var rect = canvas.getBoundingClientRect();
+    ctx.clearRect(0, 0, rect.width, rect.height);
+  }
+  _drawStrokes[qid] = [];
+  if (structState && structState.drawData) delete structState.drawData[qid];
+  updateDrawBtns(qid);
+}
+
+function undoDraw(qid) {
+  if (!_drawStrokes[qid] || !_drawStrokes[qid].length) return;
+  _drawStrokes[qid].pop();
+  var canvas = document.getElementById('drawCanvas_'+qid);
+  var ctx = canvas ? canvas.getContext('2d') : null;
+  if (!ctx) return;
+  var rect = canvas.getBoundingClientRect();
+  ctx.clearRect(0, 0, rect.width, rect.height);
+  ctx.strokeStyle = '#1e293b';
+  ctx.lineWidth = 2;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  var dpr = 2;
+  _drawStrokes[qid].forEach(function(stroke) {
+    if (stroke.length < 2) return;
+    ctx.beginPath();
+    ctx.moveTo(stroke[0].x, stroke[0].y);
+    for (var i = 1; i < stroke.length; i++) ctx.lineTo(stroke[i].x, stroke[i].y);
+    ctx.stroke();
+  });
+  saveDrawData(qid);
+  updateDrawBtns(qid);
+}
+
+function updateDrawBtns(qid) {
+  var clearBtn = document.getElementById('clearBtn_'+qid);
+  var undoBtn = document.getElementById('undoBtn_'+qid);
+  var hasStrokes = _drawStrokes[qid] && _drawStrokes[qid].length > 0;
+  if (clearBtn) clearBtn.style.display = hasStrokes ? 'inline-flex' : 'none';
+  if (undoBtn) undoBtn.style.display = hasStrokes ? 'inline-flex' : 'none';
+}
+
+/* Keyword Scoring */
+var STR_KEYWORDS = {
+  // P2 common keywords by question pattern
+};
+function calcSTRScore(q, ansText) {
+  if (!ansText && !(structState && structState.drawData && structState.drawData[q.id])) return null;
+  var kws = STR_KEYWORDS[q.id] || getDefaultKeywords(q, ansText);
+  if (!kws || !kws.length) return null;
+  var lower = ansText.toLowerCase();
+  var matched = kws.filter(function(k){ return lower.indexOf(k.toLowerCase()) >= 0; });
+  var pct = Math.round(matched.length / kws.length * 100);
+  return { total: kws.length, matched: matched, missed: kws.filter(function(k){ return matched.indexOf(k) < 0; }), pct: pct };
+}
+function getDefaultKeywords(q, ansText) {
+  // Extract potential keywords from the question text itself as fallback
+  // These are common chemistry keywords for CIE 9701
+  var commonKws = ['enthalpy','entropy','hess','lattice','bond','hydrogen','covalent','ionic','metallic',
+    'oxidation','reduction','electrolyte','electrode','equilibrium','le chatelier','acid','base','buffer',
+    'pH','Ka','Kb','Kc','Kp','Ksp','rate','order','activation','catalyst','enthalpy change','standard',
+    'electron','orbital','isotope','mole','Avogadro','concentration','titration','ester','hydrolysis',
+    'nucleophilic','electrophilic','substitution','addition','elimination','polymer','monomer','amino',
+    'carboxyl','carbonyl','aldehyde','ketone','spectroscopy','infrared','mass spectrometry','NMR',
+    'chromatography','Rf','Rf value','coordinate','complex','ligand','colour','transition metal'];
+  // Simple heuristic: pick keywords that appear in the question img name or source
+  var src = (q.source||'').toLowerCase();
+  return commonKws.filter(function(k){ return src.indexOf(k.toLowerCase().split(' ')[0]) >= 0; }).slice(0,5);
+}
+
+/* STR Save/Continue */
+function checkSavedSTR() {
+  var saved = localStorage.getItem('ch9701_str_saved');
+  if (!saved) return null;
+  try { return JSON.parse(saved); } catch(e) { return null; }
+}
+function continueSavedSTR() {
+  var saved = checkSavedSTR();
+  if (!saved) return;
+  structState = saved;
+  renderStructQuiz();
+}
+function clearSavedSTR() {
+  localStorage.removeItem('ch9701_str_saved');
+}
+function saveSTRAndExit() {
+  var done = Object.keys(structState.answers||{}).length;
+  var total = structState.questions ? structState.questions.length : 0;
+  localStorage.setItem('ch9701_str_saved', JSON.stringify(structState));
+  structState = null;
+  showPage('struct');
+  alert('Progress saved! ' + done + '/' + total + ' questions answered.');
+}
+
+/* DEFINITIONS */
+function renderDefsPage() {
+  var c = document.getElementById('pageContent');
+  if (defState && defState.results) { renderDefResults(); return; }
+  if (defState) { renderDefQuiz(); return; }
+  c.innerHTML = '<div class="card"><div class="card-title">📖 Definition Match</div>'+
+    '<p style="font-size:.82rem;color:#64748b;margin-bottom:16px">Match terms to their correct definitions.</p>'+
+    '<div class="selected-summary" id="defSelSummary">Select a chapter</div>'+
+    renderChapterSelectDefs()+
+    '<button class="start-quiz-btn" id="defStartBtn" onclick="startDefQuiz()" disabled>Select a chapter</button></div>';
+  window.defSelectedChapters = [];
+}
+
+function renderChapterSelectDefs() {
+  var h = '<div class="chapter-list">';
+  DB.chapters.forEach(function(ch) {
+    var defCount = DB.definitions[ch.id] ? DB.definitions[ch.id].length : 0;
+    h += '<div class="chapter-item" onclick="var cb=document.getElementById(\'defch_'+ch.id+'\');cb.checked=!cb.checked;updateDefSelection()">'+
+      '<input type="checkbox" id="defch_'+ch.id+'" onchange="updateDefSelection()"/>'+
+      '<span class="chapter-name">'+ch.num+' · '+ch.name+'</span>'+
+      '<span class="chapter-meta">'+defCount+' defs</span></div>';
+  });
+  return h + '</div>';
+}
+
+function updateDefSelection() {
+  var sel = [];
+  document.querySelectorAll('[id^=defch_]:checked').forEach(function(c){ sel.push(c.id.replace('defch_','')); });
+  window.defSelectedChapters = sel;
+  var count = sel.reduce(function(s,c){return s+(DB.definitions[c]?DB.definitions[c].length:0);},0);
+  var summary = document.getElementById('defSelSummary');
+  var btn = document.getElementById('defStartBtn');
+  if (!sel.length) { summary.textContent = 'Select a chapter'; btn.disabled=true; btn.textContent='Select a chapter'; }
+  else { summary.textContent = sel.length+' chapter(s) · '+count+' definitions'; btn.disabled=count===0; btn.textContent='Start ('+Math.min(count,30)+' pairs)'; }
+}
+
+function startDefQuiz() {
+  var chapters = window.defSelectedChapters;
+  if (!chapters || !chapters.length) return;
+  var allPairs = [];
+  chapters.forEach(function(ch){ (DB.definitions[ch]||[]).forEach(function(d){ allPairs.push({term:d.term,definition:d.definition}); }); });
+  if (!allPairs.length) { alert('No definitions.'); return; }
+  var count = Math.min(allPairs.length, 30);
+  var shuffled = shuffle(allPairs.slice()).slice(0, count);
+  var terms = shuffled.map(function(p){ return {id:p.term, text:p.term, correct:p.definition}; });
+  defState = {terms:shuffle(terms.slice()), matches:{}, selectedTerm:null, selectedDef:null, results:[], startTime:Date.now()};
+  renderDefQuiz();
+}
+
+function renderDefQuiz() {
+  var terms = defState.terms, matches = defState.matches;
+  var matched = Object.keys(matches).length;
+  var total = terms.length;
+  var elapsed = Math.floor((Date.now()-defState.startTime)/1000);
+  var mins = Math.floor(elapsed/60), secs = elapsed%60;
+  var unmatchedT = terms.filter(function(t){ return !matches[t.id]; });
+  var unmatchedD = terms.filter(function(t){ return !Object.values(matches).some(function(v){return v===t.id;}); });
+  var h = '<div class="card">'+
+    '<div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:#f8fafc;border-radius:8px;margin-bottom:16px;border:1px solid #e2e8f0">'+
+      '<span style="font-size:.82rem;color:#64748b">Matched: <strong>'+matched+'/'+total+'</strong></span>'+
+      '<span style="flex:1"></span><span style="font-size:.82rem;color:#64748b">⏱ '+mins+':'+String(secs).padStart(2,'0')+'</span></div>'+
+    '<div class="def-match">'+
+      '<div><div style="font-size:.68rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Terms</div>';
+  unmatchedT.forEach(function(t) {
+    var cls = defState.selectedTerm===t.id ? 'selected-term' : '';
+    h += '<div class="def-term-item '+cls+'" onclick="defState.selectedTerm=t.id;renderDefQuiz()">'+escHtml(t.text)+'</div>';
+  });
+  Object.keys(matches).forEach(function(tid) {
+    h += '<div class="def-term-item correct">✓ '+escHtml(tid)+'</div>';
+  });
+  h += '</div><div><div style="font-size:.68rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Definitions</div>';
+  unmatchedD.forEach(function(t) {
+    var cls = defState.selectedDef===t.id ? 'selected-def' : '';
+    h += '<div class="def-def-item '+cls+'" onclick="defState.selectedDef=t.id;renderDefQuiz()">'+escHtml(t.correct.length>80?t.correct.slice(0,80)+'…':t.correct)+'</div>';
+  });
+  h += '</div></div>';
+  if (defState.selectedTerm && defState.selectedDef) {
+    h += '<div style="display:flex;justify-content:center;gap:8px;margin-top:8px">'+
+      '<button class="btn btn-danger btn-sm" onclick="defState.selectedTerm=null;defState.selectedDef=null;renderDefQuiz()">Clear</button>'+
+      '<button class="btn btn-primary btn-sm" onclick="confirmDefMatch()">Confirm Match</button></div>';
+  }
+  if (matched === total) {
+    h += '<button class="btn btn-success" style="width:100%;margin-top:8px" onclick="defState.endTime=Date.now();renderDefResults()">See Results</button>';
+  }
+  h += '</div><button class="btn btn-secondary" onclick="defState=null;renderDefsPage()">← Back</button>';
+  document.getElementById('pageContent').innerHTML = h;
+}
+
+function confirmDefMatch() {
+  var st = defState.selectedTerm, sd = defState.selectedDef;
+  if (!st || !sd) return;
+  var tObj = defState.terms.find(function(t){ return t.id === st; });
+  defState.results.push({term:st, definition:tObj?tObj.correct:'', matchedDef:sd, isCorrect:st===sd});
+  defState.matches[st] = sd;
+  defState.selectedTerm = null; defState.selectedDef = null;
+  renderDefQuiz();
+}
+
+function renderDefResults() {
+  var results = defState.results, terms = defState.terms;
+  var total = terms.length;
+  var correct = results.filter(function(r){ return r.isCorrect; }).length;
+  var accuracy = Math.round(correct/total*100);
+  var elapsed = Math.floor((defState.endTime-defState.startTime)/1000);
+  var mins = Math.floor(elapsed/60), secs = elapsed%60;
+  saveHistory({mode:'defs',date:new Date().toISOString(),total,correct,wrong:total-correct,accuracy,elapsed});
+  var accColor = accuracy>=80?'#16a34a':accuracy>=60?'#d97706':'#dc2626';
+  var h = '<div class="card"><div class="card-title">📖 Definition Match Complete!</div><div class="results-grid">'+
+    '<div class="result-card"><div class="rc-score" style="color:'+accColor+'">'+accuracy+'%</div><div class="rc-label">Accuracy</div><div class="rc-sub">'+correct+'/'+total+'</div></div>'+
+    '<div class="result-card"><div class="rc-score" style="color:#dc2626">'+(total-correct)+'</div><div class="rc-label">Wrong</div></div>'+
+    '<div class="result-card"><div class="rc-score" style="color:#d97706">'+mins+':'+String(secs).padStart(2,'0')+'</div><div class="rc-label">Time</div></div></div>'+
+    '<div class="weak-section"><h3>Review</h3>';
+  results.forEach(function(r) {
+    h += '<div style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #f1f5f9;align-items:flex-start">'+
+      '<span style="font-size:1rem;flex-shrink:0">'+(r.isCorrect?'✅':'❌')+'</span>'+
+      '<div><div style="font-size:.82rem;font-weight:600;color:#1e293b">'+escHtml(r.term)+'</div>'+
+      '<div style="font-size:.78rem;color:#64748b;margin-top:2px"><strong>Correct:</strong> '+escHtml(r.definition)+'</div>'+
+      (!r.isCorrect ? '<div style="font-size:.78rem;color:#dc2626;margin-top:2px"><strong>You chose:</strong> '+escHtml(r.matchedDef)+'</div>' : '')+'</div></div>';
+  });
+  h += '</div></div><div style="display:flex;gap:10px">'+
+    '<button class="btn btn-secondary" onclick="defState=null;renderDefsPage()">← Practice Again</button>'+
+    '<button class="btn btn-primary" onclick="showPage(\'progress\')">📊 Progress</button></div>';
+  document.getElementById('pageContent').innerHTML = h;
+}
+
+/* VOCABULARY */
+function renderVocabPage() {
+  var c = document.getElementById('pageContent');
+  if (vocabState && vocabState.done) vocabState = null;
+  c.innerHTML = '<div class="card"><div class="card-title">🔤 Vocabulary Study</div>'+
+    '<p style="font-size:.82rem;color:#64748b;margin-bottom:16px">Flashcard review with Chinese translations. Know it or still learning?</p>'+
+    '<div class="selected-summary" id="vocabSelSummary">Select a chapter</div>'+
+    renderChapterSelectVocab()+
+    '<button class="start-quiz-btn" id="vocabStartBtn" onclick="startVocab()" disabled>Select a chapter</button></div>';
+  window.vocabSelectedChapters = [];
+}
+
+function renderChapterSelectVocab() {
+  var h = '<div class="chapter-list">';
+  DB.chapters.forEach(function(ch) {
+    var wordCount = 0;
+    Object.values(DB.vocabDB).forEach(function(chData) {
+      if (chData.words) wordCount += chData.words.length;
+    });
+    h += '<div class="chapter-item" onclick="var cb=document.getElementById(\'vcb_'+ch.id+'\');cb.checked=!cb.checked;updateVocabSelection()">'+
+      '<input type="checkbox" id="vcb_'+ch.id+'" onchange="updateVocabSelection()"/>'+
+      '<span class="chapter-name">'+ch.num+' · '+ch.name+'</span>'+
+      '<span class="chapter-meta">'+wordCount+' words</span></div>';
+  });
+  return h + '</div>';
+}
+
+function updateVocabSelection() {
+  var sel = [];
+  document.querySelectorAll('[id^=vcb_]:checked').forEach(function(c){ sel.push(c.id.replace('vcb_','')); });
+  window.vocabSelectedChapters = sel;
+  var allWords = [];
+  sel.forEach(function(chId) {
+    var chName = null;
+    DB.chapters.forEach(function(c){ if (c.id===chId) chName = c.name; });
+    Object.values(DB.vocabDB).forEach(function(chData) {
+      if (chData.name === chName && chData.words) chData.words.forEach(function(w){ allWords.push(w); });
+    });
+  });
+  var count = allWords.length;
+  var summary = document.getElementById('vocabSelSummary');
+  var btn = document.getElementById('vocabStartBtn');
+  if (!sel.length) { summary.textContent = 'Select a chapter'; btn.disabled=true; btn.textContent='Select a chapter'; }
+  else { summary.textContent = sel.length+' chapter(s) · '+count+' words'; btn.disabled=count===0; btn.textContent='Start ('+Math.min(count,40)+' words)'; }
+}
+
+function startVocab() {
+  var sel = window.vocabSelectedChapters || [];
+  var allWords = [];
+  sel.forEach(function(chId) {
+    var chName = null;
+    DB.chapters.forEach(function(c){ if (c.id===chId) chName = c.name; });
+    Object.values(DB.vocabDB).forEach(function(chData) {
+      if (chData.name === chName && chData.words) chData.words.forEach(function(w){ allWords.push(w); });
+    });
+  });
+  if (!allWords.length) { alert('No vocabulary found.'); return; }
+  vocabState = {words:shuffle(allWords.slice()).slice(0,40), currentIndex:0, flipped:false, known:0, unknown:0};
+  renderVocabCard();
+}
+
+function renderVocabCard() {
+  var c = document.getElementById('pageContent');
+  var words = vocabState.words, idx = vocabState.currentIndex;
+  var total = words.length;
+  if (idx >= total) {
+    vocabState.done = true;
+    var accuracy = Math.round(vocabState.known/total*100);
+    saveHistory({mode:'vocab',date:new Date().toISOString(),total,correct:vocabState.known,wrong:vocabState.unknown,accuracy});
+    c.innerHTML = '<div class="card" style="text-align:center;padding:40px">'+
+      '<div style="font-size:3rem;margin-bottom:16px">🎉</div>'+
+      '<div style="font-size:1.5rem;font-weight:800;color:#1e293b;margin-bottom:8px">Session Complete!</div>'+
+      '<div style="font-size:.9rem;color:#64748b;margin-bottom:20px">'+vocabState.known+' known · '+vocabState.unknown+' still learning</div>'+
+      '<div style="font-size:2rem;font-weight:800;color:#0d9488;margin-bottom:20px">'+accuracy+'%</div>'+
+      '<div style="display:flex;gap:10px;justify-content:center">'+
+        '<button class="btn btn-secondary" onclick="vocabState=null;renderVocabPage()">← More Practice</button>'+
+        '<button class="btn btn-primary" onclick="showPage(\'progress\')">📊 Progress</button></div></div>';
+    return;
+  }
+  var word = words[idx];
+  var progress = (idx/total*100).toFixed(0);
+  var flipped = vocabState.flipped;
+  c.innerHTML = '<div class="vocab-card" style="margin:20px auto">'+
+    '<div style="padding:12px 16px;background:#f8fafc;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:10px">'+
+      '<span style="font-size:.75rem;color:#94a3b8">'+(idx+1)+'/'+total+'</span>'+
+      '<div style="flex:1;height:4px;background:#e2e8f0;border-radius:2px"><div style="height:4px;width:'+progress+'%;background:#0d9488;border-radius:2px"></div></div>'+
+      '<span style="font-size:.72rem;color:#94a3b8">'+vocabState.known+' ✓ · '+vocabState.unknown+' ✗</span></div>'+
+    '<div class="vocab-inner">'+
+      '<div class="vocab-word">'+escHtml(word.word)+'</div>'+
+      '<div class="vocab-phonetic">'+(word.phonetic?' '+escHtml(word.phonetic):'')+'</div>'+
+      (flipped ? '<div class="vocab-zh">'+escHtml(word.zh||'—')+'</div><div class="vocab-def">'+escHtml(word.def||'')+'</div>' : '')+
+      '<div style="font-size:.78rem;color:#94a3b8;margin-bottom:16px">'+(flipped?'Tap hide':'Tap to reveal')+'</div>'+
+      '<div class="vocab-nav">'+
+        '<button class="btn btn-danger btn-lg" onclick="vocabState.unknown++;vocabState.currentIndex++;vocabState.flipped=false;renderVocabCard()">✗ Still Learning</button>'+
+        '<button class="btn btn-success btn-lg" onclick="vocabState.known++;vocabState.currentIndex++;vocabState.flipped=false;renderVocabCard()">✓ Know It</button>'+
+      '</div>'+
+      '<button class="btn btn-secondary btn-sm" style="margin-top:10px" onclick="vocabState.flipped=!vocabState.flipped;renderVocabCard()">'+(flipped?'Hide':'Reveal')+' Translation</button>'+
+    '</div></div>';
+}
+
+/* REVIEW QUIZ */
+function renderReviewPage() {
+  var history = JSON.parse(localStorage.getItem('ch9701_history')||'[]');
+  var weakTopics = {};
+  history.forEach(function(h){ if (h.weakTopics) h.weakTopics.forEach(function(t){ weakTopics[t]=(weakTopics[t]||0)+1; }); });
+  var sortedWeak = Object.entries(weakTopics).sort(function(a,b){return b[1]-a[1];}).slice(0,10);
+  var c = document.getElementById('pageContent');
+  c.innerHTML = '<div class="card"><div class="card-title">🔄 Review Quiz</div>'+
+    (!sortedWeak.length ? '<div class="empty-state"><div class="es-icon">📊</div><p>Complete MCQ quizzes first to see weak areas!</p></div>' :
+    '<div style="margin-bottom:16px"><div style="font-size:.8rem;font-weight:600;margin-bottom:8px">Priority weak areas:</div>'+
+    sortedWeak.map(function(e){return '<div class="weak-topic" style="margin-bottom:6px">'+(TOPICS_MAP[e[0]]||e[0])+' <span class="wq">x'+e[1]+'</span></div>';}).join('')+'</div>'+
+    '<button class="start-quiz-btn" onclick="startReviewQuiz([\''+sortedWeak.map(function(t){return t[0];}).join('\',\'')+'\'])">📝 Review ('+Math.min(sortedWeak.length*3,30)+' questions)</button>')+
+    '</div>';
+}
+
+function startReviewQuiz(topicIds) {
+  if (!topicIds || !topicIds.length) return;
+  var allQs = DB.questions.filter(function(q){ return q.topic_ids && q.topic_ids.some(function(t){ return topicIds.indexOf(t)>=0; }) && q.id.indexOf('_P1_') >= 0; });
+  if (!allQs.length) { alert('No questions.'); return; }
+  quizState = {mode:'review', questions:shuffle(allQs).slice(0,Math.min(allQs.length,30)), currentIndex:0, answers:{}, startTime:Date.now()};
+  renderQuiz();
+}
+
+/* PROGRESS & HISTORY */
+function renderProgressPage() {
+  var history = JSON.parse(localStorage.getItem('ch9701_history')||'[]');
+  var mcq = history.filter(function(h){return h.mode==='mcq';});
+  var defs = history.filter(function(h){return h.mode==='defs';});
+  var vocab = history.filter(function(h){return h.mode==='vocab';});
+  var totalMCQ = mcq.reduce(function(s,h){return s+h.total;},0);
+  var totalCorrect = mcq.reduce(function(s,h){return s+h.correct;},0);
+  var avgMCQ = mcq.length ? Math.round(totalCorrect/totalMCQ*100) : 0;
+  var c = document.getElementById('pageContent');
+  c.innerHTML = '<div class="stats-grid">'+
+    '<div class="stat-card"><div class="sc-num">'+mcq.length+'</div><div class="sc-label">MCQ Quizzes</div></div>'+
+    '<div class="stat-card"><div class="sc-num">'+totalMCQ+'</div><div class="sc-label">MCQ Done</div></div>'+
+    '<div class="stat-card"><div class="sc-num" style="color:'+(avgMCQ>=80?'#16a34a':avgMCQ>=60?'#d97706':'#dc2626')+'">'+avgMCQ+'%</div><div class="sc-label">MCQ Accuracy</div></div>'+
+    '<div class="stat-card"><div class="sc-num">'+defs.length+'</div><div class="sc-label">Def Quizzes</div></div>'+
+    '<div class="stat-card"><div class="sc-num">'+vocab.length+'</div><div class="sc-label">Vocab Sessions</div></div>'+
+    '<div class="stat-card"><div class="sc-num">'+history.length+'</div><div class="sc-label">Total Sessions</div></div></div>'+
+    (mcq.length>0 ? '<div class="card"><div class="card-title">📈 Accuracy Trend</div>'+
+    mcq.slice(-10).map(function(h){
+      var col = h.accuracy>=80?'#16a34a':h.accuracy>=60?'#d97706':'#dc2626';
+      return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">'+
+        '<span style="font-size:.72rem;color:#94a3b8;min-width:70px">'+new Date(h.date).toLocaleDateString()+'</span>'+
+        '<div style="flex:1;height:20px;background:#f1f5f9;border-radius:4px"><div style="width:'+h.accuracy+'%;height:100%;background:'+col+';border-radius:4px"></div></div>'+
+        '<span style="font-size:.78rem;font-weight:700;min-width:40px;text-align:right;color:'+col+'">'+h.accuracy+'%</span></div>';
+    }).join('')+'</div>' : '')+
+    '<button class="btn btn-danger btn-sm" onclick="if(confirm(\'Clear all history?\')){localStorage.removeItem(\'ch9701_history\');renderProgressPage();}">🗑 Clear All</button>';
+}
+
+function renderHistoryPage() {
+  var history = JSON.parse(localStorage.getItem('ch9701_history')||'[]');
+  var c = document.getElementById('pageContent');
+  c.innerHTML = '<div class="card"><div class="card-title">📜 History</div>'+
+    (!history.length ? '<p style="font-size:.82rem;color:#94a3b8">No history yet.</p>' :
+    history.slice().reverse().map(function(h){
+      var col = h.mode==='mcq'?'#1d4ed8':h.mode==='defs'?'#16a34a':'#92400e';
+      var bg = h.mode==='mcq'?'#dbeafe':h.mode==='defs'?'#dcfce7':'#fef3c7';
+      var accCol = h.accuracy>=80?'#16a34a':h.accuracy>=60?'#d97706':'#dc2626';
+      return '<div class="history-item">'+
+        '<span class="history-date">'+new Date(h.date).toLocaleDateString()+'</span>'+
+        '<span class="history-mode" style="background:'+bg+';color:'+col+'">'+h.mode.toUpperCase()+'</span>'+
+        '<span style="font-size:.78rem;color:#64748b">'+h.total+' Qs</span>'+
+        '<span class="history-score" style="color:'+accCol+'">'+h.accuracy+'%</span></div>';
+    }).join(''))+'</div>';
+}
+
+/* ADMIN */
+function renderAdminPage() {
+  if (!isAdmin) { showPage('mcq'); return; }
+  var students = window.STUDENTS_DB && window.STUDENTS_DB.students ? window.STUDENTS_DB.students : [];
+  var c = document.getElementById('pageContent');
+  c.innerHTML = '<div class="admin-section"><h3>👥 Students ('+students.length+')</h3>'+
+    (students.length ? students.map(function(s){
+      return '<div class="student-row"><div class="avatar" style="width:28px;height:28px;font-size:.72rem">'+s.name.charAt(0)+'</div>'+
+        '<span class="sname">'+s.name+'</span><span class="semail">'+s.username+'</span>'+
+        '<button class="btn btn-danger btn-sm" onclick="deleteStudent(\''+s.username+'\')">Delete</button></div>';
+    }).join('') : '<p style="font-size:.82rem;color:#94a3b8">No students yet.</p>')+'</div>'+
+    '<div class="admin-section"><h3>➕ Add Student</h3>'+
+      '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px">'+
+        '<input type="text" id="newName" placeholder="Full name"/><input type="text" id="newUser" placeholder="Username"/><input type="password" id="newPass" placeholder="Password"/></div>'+
+      '<button class="btn btn-primary" onclick="addSingleStudent()">Add Student</button></div>'+
+    '<div class="admin-section"><h3>📋 Batch Create (CSV)</h3>'+
+      '<p style="font-size:.75rem;color:#64748b;margin-bottom:10px">Format: <code>name,username,password</code> (one per line)</p>'+
+      '<textarea class="csv-input" id="csvInput" placeholder="Alice Chen,alice.chen,pass123\nBob Wang,bob.wang,pass456"></textarea>'+
+      '<div style="display:flex;gap:10px;margin-top:12px">'+
+        '<button class="btn btn-primary" onclick="batchAddStudents()">Add All</button>'+
+        '<button class="btn btn-secondary" onclick="downloadStudentsDB()">⬇ Download students_db.json</button></div>'+
+      '<div id="batchResult" style="margin-top:10px;font-size:.8rem"></div></div>'+
+    '<div class="admin-section" style="border-color:#d97706;background:#fffbeb"><h3>⚠️ Save Changes to GitHub</h3>'+
+      '<ol style="font-size:.78rem;color:#92400e;line-height:2;padding-left:20px">'+
+        '<li>Click "Download students_db.json" above</li>'+
+        '<li>Replace file in <code>chem9701istry/</code> folder</li>'+
+        '<li>Run: <code>git add students_db.json && git commit -m "Add students" && git push</code></li></ol></div>';
+}
+
+function addSingleStudent() {
+  var n = document.getElementById('newName').value.trim();
+  var u = document.getElementById('newUser').value.trim();
+  var p = document.getElementById('newPass').value;
+  if (!n || !u || !p) { alert('Fill all fields.'); return; }
+  var students = window.STUDENTS_DB && window.STUDENTS_DB.students ? window.STUDENTS_DB.students : [];
+  if (students.find(function(s){return s.username===u;})) { alert('Username exists.'); return; }
+  students.push({name:n, username:u, password:p});
+  window.STUDENTS_DB.students = students;
+  renderAdminPage();
+}
+
+function batchAddStudents() {
+  var csv = document.getElementById('csvInput').value.trim();
+  if (!csv) return;
+  var students = window.STUDENTS_DB && window.STUDENTS_DB.students ? window.STUDENTS_DB.students : [];
+  var added=0, skipped=0;
+  csv.split(/\r?\n/).filter(function(l){return l.trim();}).forEach(function(line) {
+    var p = line.split(',').map(function(x){return x.trim();});
+    if (p.length >= 3) {
+      if (students.find(function(s){return s.username===p[1];})) { skipped++; return; }
+      students.push({name:p[0], username:p[1], password:p[2]}); added++;
+    }
+  });
+  window.STUDENTS_DB.students = students;
+  document.getElementById('batchResult').innerHTML = '<span style="color:#16a34a">✅ Added '+added+'</span>'+(skipped?' <span style="color:#d97706">⏭ Skipped '+skipped+'</span>':'');
+  renderAdminPage();
+}
+
+function deleteStudent(u) {
+  if (!confirm('Delete \"'+u+'\"?')) return;
+  if (window.STUDENTS_DB && window.STUDENTS_DB.students) {
+    window.STUDENTS_DB.students = window.STUDENTS_DB.students.filter(function(s){return s.username!==u;});
+  }
+  renderAdminPage();
+}
+
+function downloadStudentsDB() {
+  var db = JSON.stringify(window.STUDENTS_DB, null, 2);
+  var blob = new Blob([db], {type:'application/json'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'students_db.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function getLearnProgress() {
+  try { return JSON.parse(localStorage.getItem('ch9701_learn_progress')||'{}'); } catch(e) { return {}; }
+}
+function saveLearnProgress(prog) {
+  localStorage.setItem('ch9701_learn_progress', JSON.stringify(prog));
+}
+function getLearnXP() {
+  var prog = getLearnProgress();
+  var total = 0;
+  Object.values(prog).forEach(function(ch) { total += (ch.xp||0); });
+  return total;
+}
+
+function renderLearnPage() {
+  var c = document.getElementById('pageContent');
+  if (!DB.learnDB) {
+    c.innerHTML = '<div class="card"><p style="color:#94a3b8;font-size:.85rem">Learn content not available.</p></div>';
+    return;
+  }
+  var prog = getLearnProgress();
+  var totalXP = getLearnXP();
+  var h = '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;background:#f5f3ff;border:1.5px solid #ddd6fe;border-radius:10px;padding:10px 14px">'+
+    '<span style="font-size:1.2rem">⭐</span>'+
+    '<span style="font-weight:700;color:#6d28d9;font-size:.88rem">'+totalXP+' XP</span>'+
+    '<span style="flex:1"></span>'+
+    '<span style="font-size:.72rem;color:#94a3b8">'+Object.keys(prog).length+' chapters started</span></div>';
+
+  Object.entries(DB.learnDB.chapters).forEach(function([chId, ch]) {
+    var chProg = prog[chId] || {};
+    var completed = chProg.completed_levels || [];
+    var xp = chProg.xp || 0;
+    var pct = Math.round((completed.length / ch.levels.length) * 100);
+    h += '<div class="learn-chapter-card" onclick="renderChapterLearnPage(\''+chId+'\')">'+
+      '<div class="learn-chapter-header">'+
+        '<span class="learn-chapter-emoji">'+ch.emoji+'</span>'+
+        '<div class="learn-chapter-info">'+
+          '<div class="learn-chapter-name">Chapter '+ch.chapter_num+' · '+ch.title+'</div>'+
+          '<div class="learn-chapter-sub">'+ch.levels.length+' levels · '+ch.total_xp+' XP total</div>'+
+        '</div>'+
+        (completed.length > 0 ? '<span class="learn-chapter-xp">⭐ '+xp+' XP</span>' : '')+
+      '</div>'+
+      '<div class="learn-progress-bar-wrap"><div class="learn-progress-bar" style="width:'+pct+'%"></div></div>'+
+      '<div class="learn-progress-text"><span>'+completed.length+'/'+ch.levels.length+' levels completed</span><span>'+pct+'%</span></div>'+
+    '</div>';
+  });
+
+  if (Object.keys(prog).length > 0) {
+    var allBadges = [];
+    Object.values(prog).forEach(function(ch) { (ch.badges||[]).forEach(function(b){ if(allBadges.indexOf(b)<0) allBadges.push(b); }); });
+    if (allBadges.length > 0) {
+      var badgeDefs = DB.learnDB.badges || [];
+      h += '<div style="margin-top:8px"><div style="font-size:.78rem;font-weight:700;color:#64748b;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">Your Badges</div><div class="learn-badge-grid">';
+      allBadges.forEach(function(bId) {
+        var bd = badgeDefs.find(function(b){return b.id===bId;});
+        if (bd) h += '<div class="learn-badge-item"><span>'+bd.emoji+'</span><span>'+bd.name+'</span></div>';
+      });
+      h += '</div></div>';
+    }
+  }
+  c.innerHTML = h;
+}
+
+function renderChapterLearnPage(chId) {
+  learnState.chapter = chId;
+  learnState.level = null;
+  var ch = DB.learnDB.chapters[chId];
+  if (!ch) return;
+  var prog = getLearnProgress();
+  var chProg = prog[chId] || {};
+  var completed = chProg.completed_levels || [];
+  var xp = chProg.xp || 0;
+  var c = document.getElementById('pageContent');
+  var h = '<button class="learn-back-btn" onclick="renderLearnPage()">← Back to Chapters</button>'+
+    '<div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">'+
+      '<span style="font-size:2.5rem">'+ch.emoji+'</span>'+
+      '<div><h2 style="font-size:1rem;color:#1e293b">Chapter '+ch.chapter_num+'</h2><p style="font-size:.82rem;color:#64748b">'+ch.title+'</p></div>'+
+      '<div style="margin-left:auto;text-align:right"><div style="font-weight:700;color:#7c3aed;font-size:.95rem">⭐ '+xp+' XP</div><div style="font-size:.7rem;color:#94a3b8">'+completed.length+'/'+ch.levels.length+' done</div></div>'+
+    '</div>';
+  h += '<div class="learn-level-grid">';
+  ch.levels.forEach(function(lv, idx) {
+    var isCompleted = completed.indexOf(lv.id) >= 0;
+    var isUnlocked = idx === 0 || completed.indexOf(ch.levels[idx-1].id) >= 0;
+    var status = isCompleted ? 'completed' : (isUnlocked ? 'current' : 'locked');
+    h += '<div class="learn-level-node '+status+'" onclick="'+(isUnlocked?'renderLevelPage(\''+chId+'\',\''+lv.id+'\')':'')+'">'+
+      (isCompleted ? '<span class="learn-level-star">⭐</span>' : '')+
+      (status==='locked' ? '<span class="learn-level-lock">🔒</span>' : '')+
+      '<span class="learn-level-emoji">'+lv.emoji+'</span>'+
+      '<span class="learn-level-num">Level '+lv.level_num+'</span>'+
+      '<span class="learn-level-title">'+lv.title+'</span>'+
+      '<span class="learn-level-xp">+'+lv.xp_learn+'+'+lv.xp_quiz_first+' XP</span>'+
+      (isCompleted ? '<button style="margin-top:4px;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.25);border-radius:5px;padding:2px 8px;font-size:.62rem;color:#6d28d9;font-weight:600;cursor:pointer" onclick="event.stopPropagation();goToGamified(\''+chId+'\',\''+lv.id+'\')">⚔️ 去闯关</button>' : '')+
+    '</div>';
+  });
+  h += '</div>';
+  c.innerHTML = h;
+}
+
+function renderLevelPage(chId, levelId) {
+  learnState.chapter = chId;
+  learnState.level = levelId;
+  learnState.quizAnswered = false;
+  learnState.quizCorrect = false;
+  learnState.attempts = 0;
+  var ch = DB.learnDB.chapters[chId];
+  var lv = ch.levels.find(function(l){return l.id===levelId;});
+  if (!lv) return;
+  renderLevelContent(chId, lv);
+}
+
+function renderLevelContent(chId, lv) {
+  var c = document.getElementById('pageContent');
+  var lvJson = JSON.stringify(lv).replace(/'/g,"&#39;");
+  var h = '<button class="learn-back-btn" onclick="renderChapterLearnPage(\''+chId+'\')">← Back to Chapter</button>'+
+    '<div class="learn-level-header">'+
+      '<span class="learn-level-emoji-lg">'+lv.emoji+'</span>'+
+      '<div class="learn-level-title-lg">'+
+        '<h2>Level '+lv.level_num+': '+lv.title+'</h2>'+
+        '<div class="learn-level-sub">+'+lv.xp_learn+' XP to learn · +'+lv.xp_quiz_first+' XP if correct first try</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="learn-content-card">'+
+      renderLearnContent(lv.content, lv.animation)+
+      '<button class="learn-btn-ready" onclick="renderLevelQuiz(\''+chId+'\',\''+lv.id+'\')">🧪 I\'m ready — quiz me!</button>'+
+    '</div>';
+  c.innerHTML = h;
+  c.scrollTop = 0;
+}
+
+function renderLearnContent(content, animation) {
+  var h = '';
+  if (content.summary) h += '<p style="font-size:.88rem;line-height:1.7;color:#374151;margin-bottom:14px">'+content.summary+'</p>';
+  if (animation) {
+    var animTitle = animation.title || 'Visualization';
+    h += '<div class="learn-animation-wrap"><div class="learn-animation-title">🎬 '+animTitle+'</div><div class="learn-animation-svg">'+renderAnimation(animation.type)+'</div></div>';
+  }
+  if (content.key_table) {
+    h += '<h3>📋 Key Data</h3><table class="learn-kp-table"><thead><tr>';
+    content.key_table.headers.forEach(function(th){ h += '<th>'+th+'</th>'; });
+    h += '</tr></thead><tbody>';
+    content.key_table.rows.forEach(function(row){ h += '<tr>'; row.forEach(function(td){ h += '<td>'+td+'</td>'; }); h += '</tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.formula) {
+    h += '<div class="learn-formula-box"><strong>Formula</strong>'+content.formula;
+    if (content.formula_example) h += '<div style="margin-top:8px;font-size:.8rem;color:#94a3b8">'+content.formula_example+'</div>';
+    h += '</div>';
+  }
+  if (content.steps) {
+    h += '<h3>📊 Step by Step</h3><div class="learn-step-list">';
+    content.steps.forEach(function(s){ h += '<div class="learn-step"><span class="learn-step-num">'+s.num+'</span><div><span class="learn-step-name">'+s.name+'</span><br><span class="learn-step-desc">'+s.desc+'</span></div></div>'; });
+    h += '</div>';
+  }
+  if (content.orbital_types) {
+    h += '<h3>🌀 Orbital Types</h3><table class="learn-kp-table"><thead><tr><th>Orbital</th><th>Shape</th><th>Capacity</th></tr></thead><tbody>';
+    content.orbital_types.forEach(function(o){ h += '<tr><td><strong>'+o.type+'</strong></td><td>'+o.shape+'</td><td>'+o.count+'</td></tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.trend_period || content.trend_group) {
+    h += '<h3>📈 Trends</h3>';
+    if (content.trend_period) h += '<div class="learn-tip-box"><strong>Across a Period →</strong> '+content.trend_period+'</div>';
+    if (content.trend_group) h += '<div class="learn-tip-box"><strong>Down a Group ↓</strong> '+content.trend_group+'</div>';
+  }
+  if (content.exceptions) {
+    h += '<div class="learn-tip-box" style="background:#fff7ed;border-color:#fed7aa"><strong style="color:#c2410c">⚠ Exceptions to Remember</strong>';
+    content.exceptions.forEach(function(e){ h += '<div style="margin-top:6px"><strong>'+e.group+':</strong> '+e.reason+'</div>'; });
+    h += '</div>';
+  }
+  if (content.series) {
+    h += '<h3>🌈 Emission Series</h3><table class="learn-kp-table"><thead><tr><th>Series</th><th>Falls to</th><th>Region</th></tr></thead><tbody>';
+    content.series.forEach(function(s){ h += '<tr><td><strong>'+s.name+'</strong></td><td>n='+s.to.replace('n=','')+'</td><td>'+s.region+'</td></tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.examples) {
+    h += '<h3>⚗️ Examples</h3><table class="learn-example-table"><thead><tr><th>Symbol</th><th>Name</th><th>Protons</th><th>Neutrons</th><th>Note</th></tr></thead><tbody>';
+    content.examples.forEach(function(ex){ h += '<tr><td><strong>'+ex.symbol+'</strong></td><td>'+ex.name+'</td><td>'+ex.p+'</td><td>'+ex.n+'</td><td style="text-align:left;font-size:.72rem">'+ex.note+'</td></tr>'; });
+    h += '</tbody></table>';
+  }
+  if (content.hunds_rule) h += '<div class="learn-memory-box"><strong>💡 Hund\'s Rule</strong>'+content.hunds_rule+'</div>';
+  if (content.fill_order) h += '<div class="learn-tip-box"><strong>📍 Filling Order</strong>'+content.fill_order+'<br><span style="font-size:.75rem">'+content.fill_note+'</span></div>';
+  if (content.equation) h += '<div class="learn-formula-box"><strong>Equation</strong>'+content.equation+'</div>';
+  if (content.why_line_spectrum) h += '<div class="learn-analogy-box"><strong>💡 Why Line Spectrum?</strong>'+content.why_line_spectrum+'</div>';
+  if (content.tip) h += '<div class="learn-tip-box"><strong>💡 Tip</strong>'+content.tip+'</div>';
+  if (content.memory) h += '<div class="learn-memory-box"><strong>🧠 Memory Trick</strong>'+content.memory+'</div>';
+  if (content.analogy) h += '<div class="learn-analogy-box"><strong>🔗 Analogy</strong>'+content.analogy+'</div>';
+  return h;
+}
+
+// ===== ANIMATION RENDERER =====
+function renderAnimation(type) {
+  switch (type) {
+    case 'atom_structure':
+      return '<svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="nucGrad" cx="50%" cy="50%"><stop offset="0%" stop-color="#c084fc"/><stop offset="100%" stop-color="#7c3aed"/></radialGradient><style>@keyframes orbit1{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@keyframes orbit2{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}@keyframes orbit3{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{r:32}50%{r:36}}@keyframes sparkle{0%,100%{opacity:1}50%{opacity:.3}}.el{transform-origin:250px 190px}.el2{transform-origin:250px 190px;animation:orbit2 6s linear infinite}.el3{transform-origin:250px 190px;animation:orbit3 4s linear infinite}</style></defs><rect width="500" height="380" fill="#0f172a" rx="12"/><g transform="translate(250,190)"><circle r="114" fill="none" stroke="rgba(99,102,241,.25)" stroke-width="1.5" stroke-dasharray="6,4"/><circle r="80" fill="none" stroke="rgba(99,102,241,.2)" stroke-width="1" stroke-dasharray="4,4"/><circle r="46" fill="none" stroke="rgba(99,102,241,.15)" stroke-width="1"/><circle r="32" fill="url(#nucGrad)" style="animation:pulse 2s ease-in-out infinite"/><text x="0" y="-5" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">6p⁺</text><text x="0" y="10" text-anchor="middle" fill="#c4b5fd" font-size="11">6n⁰</text></g><g class="el" style="animation:orbit1 4s linear infinite"><circle cx="296" cy="190" r="6" fill="#60a5fa"><animate attributeName="opacity" values="1;0.4;1" dur="0.6s" repeatCount="indefinite"/></circle></g><g class="el"><circle cx="204" cy="190" r="6" fill="#60a5fa"><animate attributeName="opacity" values="1;0.4;1" dur="0.6s" begin="0.3s" repeatCount="indefinite"/></circle></g><g class="el2"><circle cx="250" cy="144" r="6" fill="#60a5fa"/></g><g class="el2"><circle cx="250" cy="236" r="6" fill="#60a5fa"/></g><text x="250" y="320" text-anchor="middle" fill="#94a3b8" font-size="12">Carbon-12 Atom — 6 protons, 6 neutrons, 6 electrons</text></svg>';
+    case 'isotopes_comparison':
+      return '<svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="nGrad" cx="50%" cy="50%"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/></radialGradient><radialGradient id="eGrad" cx="50%" cy="50%"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#2563eb"/></radialGradient><style>@keyframes fadeIn{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}</style></defs><rect width="500" height="280" fill="#0f172a" rx="12"/><g transform="translate(95,100)" style="animation:fadeIn .6s ease-out"><circle r="42" fill="none" stroke="rgba(99,102,241,.2)" stroke-width="1" stroke-dasharray="3,3"/><circle r="22" fill="url(#nGrad)"/><text x="0" y="-4" text-anchor="middle" fill="#1e293b" font-size="10" font-weight="bold">1p⁺</text><text x="0" y="8" text-anchor="middle" fill="#1e293b" font-size="9">0n⁰</text><text x="0" y="75" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="bold">Protium</text><text x="0" y="93" text-anchor="middle" fill="#94a3b8" font-size="11">¹H · 99.98%</text></g><g transform="translate(250,100)" style="animation:fadeIn .6s ease-out .2s"><circle r="42" fill="none" stroke="rgba(99,102,241,.2)" stroke-width="1" stroke-dasharray="3,3"/><circle r="22" fill="url(#nGrad)"/><circle cx="0" cy="0" r="8" fill="#a78bfa" opacity=".6"/><text x="0" y="-4" text-anchor="middle" fill="#1e293b" font-size="10" font-weight="bold">1p⁺</text><text x="0" y="8" text-anchor="middle" fill="#1e293b" font-size="9">1n⁰</text><text x="0" y="75" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="bold">Deuterium</text><text x="0" y="93" text-anchor="middle" fill="#94a3b8" font-size="11">²H · 0.02%</text></g><g transform="translate(405,100)" style="animation:fadeIn .6s ease-out .4s"><circle r="42" fill="none" stroke="rgba(99,102,241,.2)" stroke-width="1" stroke-dasharray="3,3"/><circle r="22" fill="url(#nGrad)"/><circle cx="-6" cy="3" r="7" fill="#a78bfa" opacity=".6"/><circle cx="6" cy="-3" r="7" fill="#a78bfa" opacity=".6"/><text x="0" y="-4" text-anchor="middle" fill="#1e293b" font-size="10" font-weight="bold">1p⁺</text><text x="0" y="8" text-anchor="middle" fill="#1e293b" font-size="9">2n⁰</text><text x="0" y="75" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="bold">Tritium</text><text x="0" y="93" text-anchor="middle" fill="#94a3b8" font-size="11">³H · Radioactive</text></g><text x="250" y="255" text-anchor="middle" fill="#94a3b8" font-size="12">Same protons (Z=1) · Different neutrons → Different mass</text></svg>';
+    case 'mass_spec_flow':
+      return '<svg viewBox="0 0 500 210" xmlns="http://www.w3.org/2000/svg"><defs><marker id="arrM" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#818cf8"/></marker><style>@keyframes flowPulse{0%,100%{opacity:.7}50%{opacity:1}}</style></defs><rect width="500" height="210" fill="#0f172a" rx="12"/><g style="animation:flowPulse 2s ease-in-out infinite"><rect x="10" y="30" width="75" height="55" rx="8" fill="rgba(99,102,241,.15)" stroke="rgba(99,102,241,.4)" stroke-width="1.5"/><text x="47" y="53" text-anchor="middle" fill="#c4b5fd" font-size="9" font-weight="bold">VAPORISE</text><text x="47" y="69" text-anchor="middle" fill="#94a3b8" font-size="8">Turn to gas</text></g><line x1="88" y1="57" x2="118" y2="57" stroke="#818cf8" stroke-width="1.5" marker-end="url(#arrM)"/><g style="animation:flowPulse 2s ease-in-out infinite .2s"><rect x="122" y="30" width="75" height="55" rx="8" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.4)" stroke-width="1.5"/><text x="159" y="49" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="bold">IONISE</text><text x="159" y="69" text-anchor="middle" fill="#94a3b8" font-size="8">e⁻ knock off</text><text x="159" y="81" text-anchor="middle" fill="#f87171" font-size="8">→ M⁺</text></g><line x1="200" y1="57" x2="230" y2="57" stroke="#818cf8" stroke-width="1.5" marker-end="url(#arrM)"/><g style="animation:flowPulse 2s ease-in-out infinite .4s"><rect x="234" y="30" width="85" height="55" rx="8" fill="rgba(34,197,94,.1)" stroke="rgba(34,197,94,.4)" stroke-width="1.5"/><text x="276" y="49" text-anchor="middle" fill="#86efac" font-size="9" font-weight="bold">ACCELERATE</text><text x="276" y="69" text-anchor="middle" fill="#94a3b8" font-size="8">Electric field</text></g><line x1="322" y1="57" x2="352" y2="57" stroke="#818cf8" stroke-width="1.5" marker-end="url(#arrM)"/><g style="animation:flowPulse 2s ease-in-out infinite .6s"><rect x="346" y="20" width="75" height="75" rx="8" fill="rgba(251,191,36,.1)" stroke="rgba(251,191,36,.4)" stroke-width="1.5"/><text x="383" y="49" text-anchor="middle" fill="#fde68a" font-size="9" font-weight="bold">DEFLECT</text><text x="383" y="69" text-anchor="middle" fill="#94a3b8" font-size="8">Magnetic field</text></g><line x1="424" y1="57" x2="454" y2="57" stroke="#818cf8" stroke-width="1.5" marker-end="url(#arrM)"/><g style="animation:flowPulse 2s ease-in-out infinite .8s"><rect x="420" y="30" width="70" height="55" rx="8" fill="rgba(168,85,247,.15)" stroke="rgba(168,85,247,.4)" stroke-width="1.5"/><text x="455" y="49" text-anchor="middle" fill="#d8b4fe" font-size="9" font-weight="bold">DETECT</text><text x="455" y="69" text-anchor="middle" fill="#94a3b8" font-size="8">Peaks!</text></g><text x="250" y="185" text-anchor="middle" fill="#94a3b8" font-size="11">5 Steps of Mass Spectrometry — Lighter ions (low m/z) deflect MORE</text></svg>';
+    case 'orbital_filling':
+      return '<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg"><defs><style>@keyframes fillElectron{from{opacity:0;r:0}to{opacity:1;r:7}}@keyframes arrowPulse{0%,100%{opacity:.6}50%{opacity:1}}</style></defs><rect width="500" height="300" fill="#0f172a" rx="12"/><line x1="60" y1="30" x2="60" y2="270" stroke="rgba(148,163,184,.3)" stroke-width="1"/><text x="15" y="155" fill="#94a3b8" font-size="10" transform="rotate(-90,15,155)" text-anchor="middle">ENERGY ↑</text><g><rect x="72" y="40" width="50" height="28" rx="4" fill="rgba(239,68,68,.2)" stroke="rgba(239,68,68,.5)" stroke-width="1.5"/><text x="97" y="59" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="bold">1s</text><circle cx="140" cy="54" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out"/><circle cx="160" cy="54" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out .1s"/></g><g><rect x="72" y="78" width="50" height="28" rx="4" fill="rgba(239,68,68,.2)" stroke="rgba(239,68,68,.5)" stroke-width="1.5"/><text x="97" y="97" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="bold">2s</text><circle cx="140" cy="92" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out .2s"/><circle cx="160" cy="92" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out .3s"/></g><g><rect x="72" y="116" width="50" height="28" rx="4" fill="rgba(59,130,246,.2)" stroke="rgba(59,130,246,.5)" stroke-width="1.5"/><text x="97" y="135" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="bold">2p</text><circle cx="140" cy="130" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .4s"/><circle cx="160" cy="130" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .45s"/><circle cx="180" cy="130" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .5s"/><circle cx="200" cy="130" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .55s"/><circle cx="220" cy="130" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .6s"/><circle cx="240" cy="130" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .65s"/></g><g><rect x="72" y="154" width="50" height="28" rx="4" fill="rgba(239,68,68,.2)" stroke="rgba(239,68,68,.5)" stroke-width="1.5"/><text x="97" y="173" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="bold">3s</text><circle cx="140" cy="168" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out .7s"/><circle cx="160" cy="168" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out .75s"/></g><g><rect x="72" y="192" width="50" height="28" rx="4" fill="rgba(59,130,246,.2)" stroke="rgba(59,130,246,.5)" stroke-width="1.5"/><text x="97" y="211" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="bold">3p</text><circle cx="140" cy="206" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .8s"/><circle cx="160" cy="206" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .85s"/><circle cx="180" cy="206" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .9s"/><circle cx="200" cy="206" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out .95s"/><circle cx="220" cy="206" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out 1s"/><circle cx="240" cy="206" r="7" fill="#3b82f6" style="animation:fillElectron .4s ease-out 1.05s"/></g><g><rect x="72" y="230" width="50" height="28" rx="4" fill="rgba(239,68,68,.2)" stroke="rgba(239,68,68,.5)" stroke-width="1.5"/><text x="97" y="249" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="bold">4s</text><circle cx="140" cy="244" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out 1.1s"/><circle cx="160" cy="244" r="7" fill="#ef4444" style="animation:fillElectron .4s ease-out 1.15s"/></g><g><rect x="310" y="185" width="50" height="28" rx="4" fill="rgba(234,179,8,.2)" stroke="rgba(234,179,8,.5)" stroke-width="1.5"/><text x="335" y="204" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="bold">3d</text><circle cx="370" cy="199" r="7" fill="#eab308" style="animation:fillElectron .4s ease-out 1.2s"/><circle cx="392" cy="199" r="7" fill="#eab308" style="animation:fillElectron .4s ease-out 1.25s"/><circle cx="414" cy="199" r="7" fill="#eab308" style="animation:fillElectron .4s ease-out 1.3s"/><circle cx="436" cy="199" r="7" fill="#eab308" style="animation:fillElectron .4s ease-out 1.35s"/><circle cx="458" cy="199" r="7" fill="#eab308" style="animation:fillElectron .4s ease-out 1.4s"/></g><path d="M300,230 L300,260 L340,260" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrArrow)" style="animation:arrowPulse 2s ease-in-out infinite"/><text x="320" y="252" fill="#fbbf24" font-size="9">4s fills before 3d!</text><defs><marker id="arrArrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#fbbf24"/></marker></defs><text x="250" y="288" text-anchor="middle" fill="#94a3b8" font-size="11">Filling Order: 1s → 2s → 2p → 3s → 3p → 4s → 3d</text></svg>';
+    case 'ie_trend':
+      return '<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg"><defs><style>@keyframes drawLine{from{stroke-dashoffset:500}to{stroke-dashoffset:0}}@keyframes pointPop{from{opacity:0;r:0}to{opacity:1;r:5}}</style></defs><rect width="500" height="300" fill="#0f172a" rx="12"/><line x1="50" y1="250" x2="480" y2="250" stroke="rgba(148,163,184,.3)" stroke-width="1"/><line x1="50" y1="30" x2="50" y2="250" stroke="rgba(148,163,184,.3)" stroke-width="1"/><text x="250" y="280" text-anchor="middle" fill="#94a3b8" font-size="10">Atomic Number (Period 2 & 3)</text><text x="15" y="140" fill="#94a3b8" font-size="9" transform="rotate(-90,15,140)" text-anchor="middle">IE₁ (kJ mol⁻¹) →</text><polyline points="80,160 130,210 180,80 230,120 280,50 330,90 380,40 430,75" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="500" style="animation:drawLine 2s ease-out"/><circle cx="80" cy="160" r="5" fill="#818cf8" style="animation:pointPop .3s ease-out"/><circle cx="130" cy="210" r="5" fill="#818cf8" style="animation:pointPop .3s ease-out .1s"/><circle cx="180" cy="80" r="5" fill="#fbbf24" stroke="#fff" stroke-width="1" style="animation:pointPop .3s ease-out .2s"/><circle cx="230" cy="120" r="5" fill="#818cf8" style="animation:pointPop .3s ease-out .3s"/><circle cx="280" cy="50" r="5" fill="#818cf8" style="animation:pointPop .3s ease-out .4s"/><circle cx="330" cy="90" r="5" fill="#fbbf24" stroke="#fff" stroke-width="1" style="animation:pointPop .3s ease-out .5s"/><circle cx="380" cy="40" r="5" fill="#818cf8" style="animation:pointPop .3s ease-out .6s"/><circle cx="430" cy="75" r="5" fill="#818cf8" style="animation:pointPop .3s ease-out .7s"/><g transform="translate(180,72)"><rect x="-50" y="-16" width="100" height="14" rx="3" fill="rgba(251,191,36,.2)"/><text x="0" y="-6" text-anchor="middle" fill="#fbbf24" font-size="9">⚠ Group 3 dip</text></g><g transform="translate(330,82)"><rect x="-60" y="-16" width="120" height="14" rx="3" fill="rgba(251,191,36,.2)"/><text x="0" y="-6" text-anchor="middle" fill="#fbbf24" font-size="9">⚠ Group 6 dip</text></g><text x="80" y="155" text-anchor="middle" fill="#94a3b8" font-size="8">Li</text><text x="130" y="225" text-anchor="middle" fill="#94a3b8" font-size="8">Be</text><text x="180" y="95" text-anchor="middle" fill="#94a3b8" font-size="8">B</text><text x="230" y="135" text-anchor="middle" fill="#94a3b8" font-size="8">C</text><text x="280" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">N</text><text x="330" y="105" text-anchor="middle" fill="#94a3b8" font-size="8">O</text><text x="380" y="55" text-anchor="middle" fill="#94a3b8" font-size="8">F</text><text x="430" y="90" text-anchor="middle" fill="#94a3b8" font-size="8">Ne</text></svg>';
+    case 'emission_spectrum':
+      return '<svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg"><defs><style>@keyframes electronJump{0%{cx:140;cy:200;r:7}50%{cx:140;cy:80;r:4}100%{cx:140;cy:200;r:7}}@keyframes photonEmit{0%,40%{opacity:0}50%,80%{opacity:1}100%{opacity:0}}@keyframes seriesGlow{0%,100%{opacity:.4}50%{opacity:1}}</style></defs><rect width="500" height="280" fill="#0f172a" rx="12"/><line x1="80" y1="30" x2="80" y2="230" stroke="rgba(148,163,184,.3)" stroke-width="1.5"/><text x="25" y="140" fill="#94a3b8" font-size="9" transform="rotate(-90,25,140)" text-anchor="middle">Energy Level</text><line x1="75" y1="50" x2="130" y2="50" stroke="rgba(148,163,184,.15)" stroke-width="1"/><text x="68" y="54" fill="#94a3b8" font-size="9" text-anchor="end">n=4</text><line x1="75" y1="95" x2="130" y2="95" stroke="rgba(148,163,184,.15)" stroke-width="1"/><text x="68" y="99" fill="#94a3b8" font-size="9" text-anchor="end">n=3</text><line x1="75" y1="140" x2="130" y2="140" stroke="rgba(148,163,184,.15)" stroke-width="1"/><text x="68" y="144" fill="#94a3b8" font-size="9" text-anchor="end">n=2</text><line x1="75" y1="200" x2="130" y2="200" stroke="rgba(148,163,184,.15)" stroke-width="1"/><text x="68" y="204" fill="#94a3b8" font-size="9" text-anchor="end">n=1</text><circle cx="140" cy="200" r="7" fill="#60a5fa" style="animation:electronJump 3s ease-in-out infinite"/><line x1="140" y1="193" x2="140" y2="57" stroke="#c084fc" stroke-width="2" stroke-dasharray="5,3" style="animation:photonEmit 3s ease-in-out infinite"/><line x1="140" y1="193" x2="140" y2="147" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5,3" style="animation:photonEmit 3s ease-in-out infinite .8s"/><line x1="140" y1="193" x2="140" y2="102" stroke="#34d399" stroke-width="2" stroke-dasharray="5,3" style="animation:photonEmit 3s ease-in-out infinite 1.6s"/><text x="148" y="170" fill="#fbbf24" font-size="9" style="animation:seriesGlow 3s ease-in-out infinite .8s">Balmer (Visible)</text><text x="148" y="60" fill="#c084fc" font-size="9" style="animation:seriesGlow 3s ease-in-out infinite">Lyman (UV)</text><text x="148" y="105" fill="#34d399" font-size="9" style="animation:seriesGlow 3s ease-in-out infinite 1.6s">Paschen (IR)</text><rect x="280" y="40" width="200" height="160" rx="8" fill="rgba(0,0,0,.3)" stroke="rgba(148,163,184,.2)" stroke-width="1"/><text x="380" y="60" text-anchor="middle" fill="#94a3b8" font-size="10">Balmer Spectrum (Visible)</text><rect x="295" y="75" width="170" height="10" rx="2" fill="rgba(239,68,68,.5)"/><text x="295" y="72" fill="#ef4444" font-size="8">Hα</text><rect x="330" y="95" width="170" height="10" rx="2" fill="rgba(59,130,246,.5)"/><text x="330" y="92" fill="#3b82f6" font-size="8">Hβ</text><rect x="355" y="115" width="170" height="10" rx="2" fill="rgba(168,85,247,.5)"/><text x="355" y="112" fill="#a855f7" font-size="8">Hγ</text><rect x="415" y="135" width="170" height="10" rx="2" fill="rgba(236,72,153,.5)"/><text x="415" y="132" fill="#ec4899" font-size="8">Hδ</text><circle cx="295" cy="165" r="5" fill="#ef4444"/><circle cx="330" cy="165" r="5" fill="#3b82f6"/><circle cx="355" cy="165" r="5" fill="#a855f7"/><circle cx="415" cy="165" r="5" fill="#ec4899"/><text x="380" y="192" text-anchor="middle" fill="#94a3b8" font-size="9">Lines get closer = converging energy levels</text></svg>';
+    default:
+      return '<div style="padding:20px;text-align:center;color:#94a3b8;font-size:.85rem">Animation coming soon...</div>';
+  }
+}
+
+function renderLevelQuiz(chId, levelId) {
+  var ch = DB.learnDB.chapters[chId];
+  var lv = ch.levels.find(function(l){return l.id===levelId;});
+  var quiz = lv.quiz;
+  var c = document.getElementById('pageContent');
+  var lvJson = JSON.stringify(lv).replace(/'/g,"&#39;");
+  var options = quiz.options.map(function(opt, i) {
+    return '<div class="learn-quiz-opt" data-idx="'+i+'" onclick="learnCheckAnswer('+i+','+quiz.correct+',\''+chId+'\',\''+levelId+'\')">'+
+      '<span class="learn-quiz-opt-letter">'+String.fromCharCode(65+i)+'</span><span>'+opt+'</span></div>';
+  }).join('');
+  c.innerHTML = '<button class="learn-back-btn" onclick="renderLevelContent(\''+chId+'\','+lvJson+')">← Back to Lesson</button>'+
+    '<div class="learn-level-header">'+
+      '<span class="learn-level-emoji-lg">'+lv.emoji+'</span>'+
+      '<div class="learn-level-title-lg"><h2>🧪 Self-Check: '+lv.title+'</h2><div style="font-size:.75rem;color:#94a3b8">Answer correctly on first try for +'+lv.xp_quiz_first+' XP!</div></div>'+
+    '</div>'+
+    '<div class="learn-quiz-card">'+
+      '<div class="learn-quiz-q">'+quiz.question+'</div>'+
+      '<div class="learn-quiz-options" id="quizOptions">'+options+'</div>'+
+    '</div>';
+  c.scrollTop = 0;
+}
+
+function learnCheckAnswer(selected, correct, chId, levelId) {
+  if (learnState.quizAnswered) return;
+  learnState.quizAnswered = true;
+  learnState.attempts++;
+  var isCorrect = selected === correct;
+  learnState.quizCorrect = isCorrect;
+  var ch = DB.learnDB.chapters[chId];
+  var lv = ch.levels.find(function(l){return l.id===levelId;});
+  var quiz = lv.quiz;
+  var opts = document.querySelectorAll('.learn-quiz-opt');
+  opts.forEach(function(o, i) {
+    o.classList.add('disabled');
+    if (i === correct) o.classList.add('correct');
+    else if (i === selected && !isCorrect) o.classList.add('wrong');
+  });
+  var prog = getLearnProgress();
+  if (!prog[chId]) prog[chId] = { completed_levels: [], xp: 0, badges: [], level_records: {}, last_active: '', streak: 0 };
+  var chProg = prog[chId];
+  var xpEarned = 0;
+  if (isCorrect) {
+    xpEarned = (learnState.attempts === 1) ? lv.xp_quiz_first : lv.xp_quiz_retry;
+  }
+  chProg.xp = (chProg.xp||0) + xpEarned;
+  if (!isCorrect) {
+    var hintEl = document.createElement('div');
+    hintEl.className = 'learn-hint-box';
+    hintEl.innerHTML = '<strong>💡 Hint:</strong> '+quiz.hint;
+    document.getElementById('quizOptions').parentNode.insertBefore(hintEl, document.getElementById('quizOptions').nextSibling);
+  }
+  if (xpEarned > 0) showXPToast('+'+xpEarned+' XP!');
+  else showXPToast('Try again!');
+  var lvJson = JSON.stringify(lv).replace(/'/g,"&#39;");
+  var btnRow = document.createElement('div');
+  btnRow.className = 'learn-btn-row';
+  if (!isCorrect) {
+    btnRow.innerHTML = '<button class="learn-btn-retry" onclick="retryQuiz(\''+chId+'\',\''+levelId+'\')">🔄 Try Again</button>'+
+      '<button class="learn-btn-relearn" onclick="renderLevelContent(\''+chId+'\','+lvJson+')">📖 Review Lesson</button>';
+  } else {
+    var alreadyDone = chProg.completed_levels.indexOf(levelId) >= 0;
+    if (!alreadyDone) {
+      chProg.completed_levels.push(levelId);
+      chProg.xp = (chProg.xp||0) + lv.xp_learn;
+      showXPToast('+'+lv.xp_learn+' XP for completing the lesson!');
+      xpEarned += lv.xp_learn;
+    }
+    saveLearnProgress(prog);
+    var isChapterComplete = chProg.completed_levels.length >= ch.levels.length;
+    btnRow.innerHTML = '<button class="learn-btn-next" onclick="learnNextLevel(\''+chId+'\',\''+levelId+'\')">'+(isChapterComplete?'🏆 Finish Chapter':'Next Level →')+'</button>'+
+      '<button class="learn-btn-relearn" style="width:auto;flex:1;background:rgba(139,92,246,.1);border:1.5px solid rgba(139,92,246,.25);color:#6d28d9" '+
+      'onclick="goToGamified(\''+chId+'\',\''+levelId+'\')">⚔️ 去闯关挑战 →</button>';
+  }
+  document.getElementById('quizOptions').parentNode.appendChild(btnRow);
+}
+
+function goToGamified(chId, levelId){
+  // levelId 格式: 'ch01_L1', 从 L1 → topic id: ch01_t01
+  var topicNum = levelId.replace(/[^0-9]/g, ''); // '01' from 'ch01_L1'
+  var topicId = chId + '_t' + (parseInt(topicNum)).toString().padStart(2,'0');
+  window.location.href = 'ch01-gamified.html?level=' + topicId;
+}
+
+function learnNextLevel(chId, levelId) {
+  var ch = DB.learnDB.chapters[chId];
+  var idx = ch.levels.findIndex(function(l){return l.id===levelId;});
+  var isLast = idx === ch.levels.length - 1;
+  if (isLast) {
+    var prog = getLearnProgress();
+    var chProg = prog[chId];
+    var bonusXP = 100;
+    chProg.xp = (chProg.xp||0) + bonusXP;
+    var earnedBadges = checkNewBadges(prog, chId);
+    saveLearnProgress(prog);
+    showChapterCompleteModal(chId, bonusXP, earnedBadges);
+  } else {
+    renderLevelPage(chId, ch.levels[idx+1].id);
+  }
+}
+
+function checkNewBadges(prog, chId) {
+  var earned = [];
+  var chProg = prog[chId];
+  var ch = DB.learnDB.chapters[chId];
+  var completed = chProg.completed_levels || [];
+  chProg.badges = chProg.badges || [];
+  if (completed.indexOf(ch.levels[0].id) >= 0 && chProg.badges.indexOf('first_atom') < 0) { chProg.badges.push('first_atom'); earned.push('first_atom'); }
+  if (ch.levels[2] && completed.indexOf(ch.levels[2].id) >= 0 && chProg.badges.indexOf('nucleus_master') < 0) { chProg.badges.push('nucleus_master'); earned.push('nucleus_master'); }
+  if (ch.levels[3] && completed.indexOf(ch.levels[3].id) >= 0 && chProg.badges.indexOf('electron_wizard') < 0) { chProg.badges.push('electron_wizard'); earned.push('electron_wizard'); }
+  if (completed.length >= ch.levels.length && chProg.badges.indexOf('ch01_champion') < 0) { chProg.badges.push('ch01_champion'); earned.push('ch01_champion'); }
+  return earned;
+}
+
+function showChapterCompleteModal(chId, bonusXP, newBadges) {
+  var ch = DB.learnDB.chapters[chId];
+  var modal = document.createElement('div');
+  modal.className = 'learn-complete-modal';
+  var badgesHtml = '';
+  (newBadges||[]).forEach(function(bId) {
+    var bd = (DB.learnDB.badges||[]).find(function(b){return b.id===bId;});
+    if (bd) badgesHtml += '<div style="display:inline-flex;align-items:center;gap:6px;background:#f3e8ff;border:1.5px solid #ddd6fe;padding:6px 14px;border-radius:99px;font-size:.82rem;color:#6d28d9;font-weight:600;margin:4px"><span>'+bd.emoji+'</span><span>'+bd.name+'</span></div>';
+  });
+  modal.innerHTML = '<div class="learn-complete-card">'+
+    '<div class="learn-complete-emoji">🏆</div>'+
+    '<div class="learn-complete-title">Chapter Complete!</div>'+
+    '<div class="learn-complete-sub">You\'ve mastered '+ch.title+'</div>'+
+    '<div class="learn-complete-xp">+'+bonusXP+' XP <span>chapter bonus</span></div>'+
+    (badgesHtml ? '<div style="margin:10px 0">'+badgesHtml+'</div>' : '')+
+    '<button class="learn-btn-mcq" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none" onclick="this.closest(\'.learn-complete-modal\').remove();goToGamified(\''+chId+'\',\''+ch.levels[ch.levels.length-1].id+'\')">⚔️ 去闯关模式挑战！</button>'+
+    '<button class="learn-btn-mcq" style="margin-top:8px" onclick="this.closest(\'.learn-complete-modal\').remove();renderChapterLearnPage(\''+chId+'\')">📝 Practice MCQ for Chapter '+ch.chapter_num+'</button>'+
+    '<button class="btn btn-secondary" style="width:100%;margin-top:8px;height:38px" onclick="this.closest(\'.learn-complete-modal\').remove();renderLearnPage()">← Back to Chapters</button>'+
+  '</div>';
+  document.body.appendChild(modal);
+}
+
+function showXPToast(text) {
+  var t = document.createElement('div');
+  t.className = 'learn-xp-toast';
+  t.textContent = text;
+  document.body.appendChild(t);
+  setTimeout(function(){ t.remove(); }, 2000);
+}
+
+/* UTILS */
+function saveHistory(r) {
+  var h = JSON.parse(localStorage.getItem('ch9701_history')||'[]');
+  h.push(r);
+  if (h.length > 50) h.splice(0, h.length-50);
+  localStorage.setItem('ch9701_history', JSON.stringify(h));
+}
+
+function shuffle(arr) {
+  var a = arr.slice();
+  for (var i = a.length-1; i > 0; i--) {
+    var j = Math.floor(Math.random()*(i+1));
+    var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+  }
+  return a;
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function showLoading(show, text) {
+  document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
+  if (text && document.getElementById('loadingText')) {
+    document.getElementById('loadingText').textContent = text;
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' && document.getElementById('loginScreen').style.display !== 'none') {
+    handleLogin();
+  }
+});
+</script>
+</body>
+</html>

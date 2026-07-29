@@ -567,6 +567,12 @@
         "title": "Solubility trends of Group II sulfates and hydroxides",
         "content": "Sulfate solubility DECREASES down group: as M²⁺ radius increases, both lattice enthalpy and hydration enthalpy decrease, but change in lattice enthalpy is smaller (large SO₄²⁻ dominates) → ΔHsol becomes less exothermic/more endothermic. Hydroxide solubility INCREASES down group: small OH⁻ means ΔHhyd change dominates over ΔHlat change → ΔHsol more exothermic."
       }
+    ],
+    "pages": [
+      "ch19/ch19_p01.png",
+      "ch19/ch19_p02.png",
+      "ch19/ch19_p03.png",
+      "ch19/ch19_p04.png"
     ]
   },
   "ch20": {
@@ -620,6 +626,13 @@
         "title": "ΔG° = −nFE°cell relationship",
         "content": "ΔG° = −nFE°cell. For voltaic/galvanic cells: E°cell > 0 → ΔG° < 0 → spontaneous, electrical energy produced. For electrolytic cells: E°cell < 0 → ΔG° > 0 → non-spontaneous, electrical energy must be supplied to force reaction."
       }
+    ],
+    "pages": [
+      "ch20/ch20_p01.png",
+      "ch20/ch20_p02.png",
+      "ch20/ch20_p03.png",
+      "ch20/ch20_p04.png",
+      "ch20/ch20_p05.png"
     ]
   },
   "ch21": {
@@ -673,6 +686,13 @@
         "title": "Partition coefficient Kpc definition and calculations",
         "content": "Kpc = [X(solvent B)]/[X(solvent A)] at equilibrium at a particular temperature. 'Like dissolves like' — Kpc depends on relative solubilities and strength of intermolecular bonds. Example: Ammonia Kpc (water/CHCl₃) > 1 because NH₃ forms H-bonds with water but only dipole-dipole with CHCl₃. Iodine Kpc (organic/water) > 1 because I₂ and organic solvents are nonpolar."
       }
+    ],
+    "pages": [
+      "ch21/ch21_p01.png",
+      "ch21/ch21_p02.png",
+      "ch21/ch21_p03.png",
+      "ch21/ch21_p04.png",
+      "ch21/ch21_p05.png"
     ]
   },
   "ch22": {
@@ -722,6 +742,13 @@
         "title": "Three-way catalytic converter",
         "content": "Catalyst: Pt/Pd/Rh. Converts toxic exhaust: 2CO + 2NO → 2CO₂ + N₂; 4CO + 2NO₂ → 4CO₂ + N₂; 2CO + O₂ → 2CO₂. Transition metals are good catalysts because: variable oxidation states (transfer electrons), vacant d orbitals that are energetically accessible (form coordinate bonds to weaken bonds in reactants)."
       }
+    ],
+    "pages": [
+      "ch22/ch22_p01.png",
+      "ch22/ch22_p02.png",
+      "ch22/ch22_p03.png",
+      "ch22/ch22_p04.png",
+      "ch22/ch22_p05.png"
     ]
   },
   "ch23": {
@@ -763,6 +790,11 @@
         "title": "Calculating ΔG° from standard free energies of formation",
         "content": "ΔG° = ΣΔG°f(products) − ΣΔG°f(reactants). Example: combustion of ethanol C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(g). ΔG° = 2(−394.4) + 3(−228.6) − (−174.8) − 3(0) = −1299.6 kJ mol⁻¹."
       }
+    ],
+    "pages": [
+      "ch23/ch23_p01.png",
+      "ch23/ch23_p02.png",
+      "ch23/ch23_p03.png"
     ]
   },
   "ch24": {
@@ -828,6 +860,16 @@
         "title": "Stereoisomerism in transition metal complexes",
         "content": "Cis-trans isomerism: in square planar complexes (e.g. cis-platin vs trans-platin) and octahedral [MA₄B₂] (cis: B ligands at 90°; trans: B ligands at 180°). Optical isomerism: occurs with 2 or 3 bidentate ligands in octahedral complexes — non-superimposable mirror images. Three bidentate ligands (e.g. [Ni(en)₃]²⁺) always give optical isomers."
       }
+    ],
+    "pages": [
+      "ch24/ch24_p01.png",
+      "ch24/ch24_p02.png",
+      "ch24/ch24_p03.png",
+      "ch24/ch24_p04.png",
+      "ch24/ch24_p05.png",
+      "ch24/ch24_p06.png",
+      "ch24/ch24_p07.png",
+      "ch24/ch24_p08.png"
     ]
   },
   "ch25": {
@@ -881,6 +923,11 @@
         "title": "Relative ease of hydrolysis: acyl > alkyl > aryl chlorides",
         "content": "Acyl chlorides: hydrolysis at room temperature by addition-elimination. O and Cl both electron-withdrawing → C=O carbon carries more δ+ → more readily attacked. Alkyl chlorides: need heat under reflux, nucleophilic substitution. Alkyl group donates electrons → C–Cl bond stronger. Aryl chlorides: no reaction even boiled with NaOH. p-orbital of Cl overlaps with delocalised π-system → C–Cl has partial double bond character → strengthened."
       }
+    ],
+    "pages": [
+      "ch25_27/ch25_27_p01.png",
+      "ch25_30/ch25_30_p01.png",
+      "ch25_30/ch25_30_p02.png"
     ]
   },
   "ch26": {
@@ -906,6 +953,10 @@
         "title": "Hydrolysis of esters",
         "content": "Acid hydrolysis (H₂SO₄/H₂O, heat): reversible, gives carboxylic acid + alcohol. Alkaline hydrolysis / saponification (NaOH/H₂O, heat): irreversible, gives carboxylate salt + alcohol (used in soap making). Alkaline faster and complete."
       }
+    ],
+    "pages": [
+      "ch25_30/ch25_30_p03.png",
+      "ch25_30/ch25_30_p04.png"
     ]
   },
   "ch27": {
@@ -943,6 +994,10 @@
         "title": "Basicity comparison: amines, ammonia, phenylamine, amide",
         "content": "Basicity order: 3° amine > 2° amine > 1° amine > NH₃ > phenylamine > amide. Amines: alkyl groups donate electrons → lone pair on N more available. Phenylamine: lone pair delocalised into benzene ring → less available. Amide: lone pair delocalised by electron-withdrawing C=O → least available. Amines react with HCl → RNH₃⁺Cl⁻; amides do NOT react with HCl."
       }
+    ],
+    "pages": [
+      "ch25_30/ch25_30_p05.png",
+      "ch25_30/ch25_30_p06.png"
     ]
   },
   "ch28": {
@@ -980,6 +1035,10 @@
         "title": "Photodegradable and biodegradable polymers",
         "content": "Poly(alkenes) are chemically inert → difficult to biodegrade. Polyesters and polyamides contain C=O (carbonyl) groups that absorb UV light → bonds weaken and break down (photodegradable). Both are also biodegradable: acid or alkaline hydrolysis breaks ester/amide linkages back to monomers. This is why condensation polymers are more environmentally friendly than addition polymers."
       }
+    ],
+    "pages": [
+      "ch25_30/ch25_30_p07.png",
+      "ch25_30/ch25_30_p08.png"
     ]
   },
   "ch29": {
@@ -1009,6 +1068,9 @@
         "title": "Optical activity and racemic mixtures in synthesis",
         "content": "Optically active substance rotates plane-polarised light. Two enantiomers rotate by equal amounts in opposite directions. Racemic mixture (racemate): 50:50 mixture of both enantiomers → optically inactive (no net rotation). In drug design, using a pure single enantiomer: reduces dosage by half, better therapeutic activity, minimises risk of side effects from the unwanted enantiomer."
       }
+    ],
+    "pages": [
+      "ch25_30/ch25_30_p09.png"
     ]
   },
   "ch30": {
@@ -1046,7 +1108,9 @@
         "title": "NMR practical: TMS, solvents, and D₂O exchange",
         "content": "TMS (tetramethylsilane, Si(CH₃)₄): used as chemical shift reference standard, δ = 0 ppm. CDCl₃: polar deuterated solvent, produces no signal in ¹H NMR. CCl₄: nonpolar solvent alternative. D₂O shake: identifies exchangeable protons (–OH, –NH). Proton exchange: –OH + D₂O ⇌ –OD + HOD, causing –OH/NH signal to disappear from spectrum."
       }
+    ],
+    "pages": [
+      "ch25_30/ch25_30_p10.png"
     ]
   }
 }
-
