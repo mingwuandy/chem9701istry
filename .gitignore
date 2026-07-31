@@ -9,8 +9,11 @@
 
 # Backup files
 db_backup.json
+db_backup_pre_*.json
 index_backup.html
 knowledge_db_backup_*.json
+*_backup*.json
+*_backup*.html
 
 # Videos (too large for git, use external storage)
 videos/
