@@ -1,0 +1,320 @@
+{
+  "chapters": [
+    {"id":"ch01","num":"1~2","name":"Atomic Structure & Electrons in Atoms"},
+    {"id":"ch03","num":"3","name":"Atoms, Molecules and Stoichiometry"},
+    {"id":"ch04","num":"4","name":"Chemical Bonding"},
+    {"id":"ch05","num":"5","name":"States of Matter"},
+    {"id":"ch06","num":"6","name":"Enthalpy Changes"},
+    {"id":"ch07","num":"7","name":"Redox Reactions"},
+    {"id":"ch08","num":"8","name":"Equilibria"},
+    {"id":"ch09","num":"9","name":"Rates of Reaction"},
+    {"id":"ch10","num":"10","name":"Periodicity"},
+    {"id":"ch11","num":"11","name":"Group 2"},
+    {"id":"ch12","num":"12","name":"Group 17"},
+    {"id":"ch13","num":"13","name":"Nitrogen and Sulfur"},
+    {"id":"ch14","num":"14","name":"Introduction to Organic Chemistry"},
+    {"id":"ch15","num":"15","name":"Hydrocarbons"},
+    {"id":"ch16","num":"16","name":"Halogenoalkanes"},
+    {"id":"ch17","num":"17","name":"Alcohols, Esters and Carboxylic Acids"},
+    {"id":"ch18","num":"18","name":"Carbonyl Compounds"},
+    {"id":"ch19","num":"19","name":"Lattice Energy"},
+    {"id":"ch20","num":"20","name":"Electrochemistry"},
+    {"id":"ch21","num":"21","name":"Further Aspects of Equilibria"},
+    {"id":"ch22","num":"22","name":"Reaction Kinetics"},
+    {"id":"ch23","num":"23","name":"Entropy and Gibbs Free Energy"},
+    {"id":"ch24","num":"24","name":"Transition Elements"},
+    {"id":"ch25","num":"25","name":"Benzene and its Compounds"},
+    {"id":"ch26","num":"26","name":"Carboxylic Acids and their Derivatives"},
+    {"id":"ch27","num":"27","name":"Organic Nitrogen Compounds"},
+    {"id":"ch28","num":"28","name":"Polymerisation"},
+    {"id":"ch29","num":"29","name":"Organic Synthesis"},
+    {"id":"ch30","num":"30","name":"Analytical Chemistry"}
+  ],
+  "definitions": {
+    "ch01": [
+      {"term":"Atomic number (Z)","definition":"The number of protons in the nucleus of an atom."},
+      {"term":"Mass number (A)","definition":"The total number of protons and neutrons in the nucleus of an atom."},
+      {"term":"Isotopes","definition":"Atoms of the same element that have the same number of protons but different numbers of neutrons."},
+      {"term":"Relative atomic mass (Ar)","definition":"The weighted mean mass of an atom of an element relative to 1/12 the mass of a carbon-12 atom."},
+      {"term":"Relative isotopic mass","definition":"The mass of an isotope relative to 1/12 the mass of a carbon-12 atom."},
+      {"term":"First ionisation energy","definition":"The energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous 1+ ions: X(g) → X+(g) + e−"},
+      {"term":"Successive ionisation energies","definition":"The energies required to remove electrons one by one from a gaseous ion, each successive electron being removed from an increasingly positive ion."},
+      {"term":"Orbital","definition":"A region of space that can hold up to two electrons with opposite spins."},
+      {"term":"Electron configuration","definition":"The arrangement of electrons in an atom, showing the number of electrons in each sub-shell (e.g. 1s² 2s² 2p⁶)."},
+      {"term":"Emission spectrum","definition":"The spectrum produced when excited electrons fall to lower energy levels, emitting photons of specific frequencies."},
+      {"term":"Ground state","definition":"The lowest energy electron configuration of an atom."},
+      {"term":"Spin-pair repulsion","definition":"The repulsion between two electrons occupying the same orbital, causing a slight increase in energy."}
+    ],
+    "ch03": [
+      {"term":"Relative molecular mass (Mr)","definition":"The sum of the relative atomic masses of all atoms in a molecule."},
+      {"term":"Relative formula mass","definition":"The sum of the relative atomic masses of all atoms in the empirical formula of a compound (used for ionic compounds)."},
+      {"term":"Mole","definition":"The amount of substance containing as many particles as there are atoms in exactly 12 g of carbon-12 (6.02 × 10²³ particles)."},
+      {"term":"Avogadro constant (L)","definition":"The number of particles in one mole of substance: 6.022 × 10²³ mol⁻¹."},
+      {"term":"Molar mass","definition":"The mass per mole of a substance, numerically equal to its relative molecular mass, in g mol⁻¹."},
+      {"term":"Empirical formula","definition":"The simplest whole-number ratio of atoms of each element in a compound."},
+      {"term":"Molecular formula","definition":"The actual number of atoms of each element in one molecule of a compound."},
+      {"term":"Structural formula","definition":"A formula showing the arrangement of atoms and bonds in a molecule."},
+      {"term":"Molar volume","definition":"The volume occupied by one mole of a gas at a given temperature and pressure (24.0 dm³ at RTP)."},
+      {"term":"Stoichiometry","definition":"The quantitative relationship between reactants and products in a chemical reaction, as given by the balanced equation."},
+      {"term":"Limiting reagent","definition":"The reactant that is completely consumed in a reaction, limiting the amount of product formed."},
+      {"term":"Percentage yield","definition":"The ratio of actual yield to theoretical yield, expressed as a percentage."},
+      {"term":"Atom economy","definition":"A measure of the proportion of starting materials that end up as useful products: (Mr of desired product / Mr of all products) × 100%."}
+    ],
+    "ch04": [
+      {"term":"Ionic bond","definition":"The electrostatic attraction between oppositely charged ions formed by the transfer of electrons."},
+      {"term":"Covalent bond","definition":"A bond formed by the sharing of a pair of electrons between two atoms."},
+      {"term":"Dative (coordinate) bond","definition":"A covalent bond in which both electrons are donated by the same atom."},
+      {"term":"Metallic bond","definition":"The electrostatic attraction between a lattice of positive metal ions and a sea of delocalised electrons."},
+      {"term":"Bond length","definition":"The average distance between the nuclei of two bonded atoms."},
+      {"term":"Bond energy","definition":"The energy required to break one mole of a particular bond in gaseous molecules."},
+      {"term":"Electronegativity","definition":"A measure of the tendency of an atom to attract a bonding pair of electrons towards itself."},
+      {"term":"Polar bond","definition":"A covalent bond in which there is an unequal distribution of electron density due to a difference in electronegativity between the two atoms."},
+      {"term":"Dipole moment","definition":"A measure of the polarity of a bond or molecule, equal to the product of the charge and the distance between the charges."},
+      {"term":"VSEPR theory","definition":"Valence Shell Electron Pair Repulsion theory: electron pairs around a central atom arrange themselves to minimise repulsion."},
+      {"term":"Sigma (σ) bond","definition":"A bond formed by end-on overlap of atomic orbitals, with electron density concentrated along the internuclear axis."},
+      {"term":"Pi (π) bond","definition":"A bond formed by sideways overlap of p orbitals, with electron density above and below the internuclear axis."},
+      {"term":"Hybridisation","definition":"The mixing of atomic orbitals to form new hybrid orbitals of equal energy and shape."},
+      {"term":"Van der Waals forces","definition":"Weak intermolecular forces caused by temporary induced dipoles (also called London dispersion forces)."},
+      {"term":"Hydrogen bond","definition":"A strong dipole-dipole attraction between a hydrogen atom bonded to a highly electronegative atom (N, O, or F) and a lone pair on another electronegative atom."},
+      {"term":"Permanent dipole-dipole forces","definition":"Intermolecular forces between molecules with permanent dipoles, where the positive end of one molecule attracts the negative end of another."}
+    ],
+    "ch05": [
+      {"term":"Ideal gas","definition":"A gas that obeys the ideal gas equation (pV = nRT) under all conditions; its molecules have no volume and no intermolecular forces."},
+      {"term":"Ideal gas equation","definition":"pV = nRT, where p = pressure (Pa), V = volume (m³), n = moles, R = gas constant (8.314 J mol⁻¹ K⁻¹), T = temperature (K)."},
+      {"term":"Simple molecular lattice","definition":"A crystalline structure in which molecules are held together by weak van der Waals forces in a regular arrangement."},
+      {"term":"Giant covalent lattice","definition":"A structure in which a large number of atoms are covalently bonded in a continuous three-dimensional network."},
+      {"term":"Giant ionic lattice","definition":"A crystalline structure consisting of a regular arrangement of oppositely charged ions held together by electrostatic forces."},
+      {"term":"Giant metallic lattice","definition":"A structure consisting of a regular arrangement of positive metal ions surrounded by delocalised electrons."},
+      {"term":"Allotropy","definition":"The existence of two or more different physical forms (allotropes) of the same element."}
+    ],
+    "ch06": [
+      {"term":"Enthalpy change (ΔH)","definition":"The heat energy change at constant pressure during a chemical reaction."},
+      {"term":"Standard enthalpy change","definition":"The enthalpy change measured under standard conditions (298 K, 100 kPa) with all substances in their standard states."},
+      {"term":"Standard enthalpy of formation (ΔHf°)","definition":"The enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions."},
+      {"term":"Standard enthalpy of combustion (ΔHc°)","definition":"The enthalpy change when one mole of a substance is completely burned in excess oxygen under standard conditions."},
+      {"term":"Standard enthalpy of atomisation (ΔHat°)","definition":"The enthalpy change when one mole of gaseous atoms is formed from the element in its standard state."},
+      {"term":"Hess's Law","definition":"The total enthalpy change of a reaction is independent of the route taken, provided the initial and final conditions are the same."},
+      {"term":"Bond enthalpy","definition":"The energy required to break one mole of a covalent bond in gaseous molecules, averaged over a range of compounds."},
+      {"term":"Calorimetry","definition":"An experimental technique used to measure enthalpy changes by measuring temperature changes in a known mass of water."},
+      {"term":"Exothermic reaction","definition":"A reaction that releases energy to the surroundings, resulting in a negative ΔH value."},
+      {"term":"Endothermic reaction","definition":"A reaction that absorbs energy from the surroundings, resulting in a positive ΔH value."}
+    ],
+    "ch07": [
+      {"term":"Oxidation","definition":"The loss of electrons, or an increase in oxidation number."},
+      {"term":"Reduction","definition":"The gain of electrons, or a decrease in oxidation number."},
+      {"term":"Oxidising agent","definition":"A substance that oxidises another substance and is itself reduced (gains electrons)."},
+      {"term":"Reducing agent","definition":"A substance that reduces another substance and is itself oxidised (loses electrons)."},
+      {"term":"Oxidation number (oxidation state)","definition":"A number assigned to an atom to indicate the degree of oxidation; the charge the atom would have if the compound were fully ionic."},
+      {"term":"Redox reaction","definition":"A reaction in which both oxidation and reduction occur simultaneously."},
+      {"term":"Disproportionation","definition":"A redox reaction in which the same species is simultaneously oxidised and reduced."},
+      {"term":"Half-equation","definition":"An equation showing either the oxidation or the reduction process in a redox reaction, including electrons."}
+    ],
+    "ch08": [
+      {"term":"Dynamic equilibrium","definition":"A state in which the rate of the forward reaction equals the rate of the reverse reaction, and the concentrations of reactants and products remain constant."},
+      {"term":"Equilibrium constant Kc","definition":"For a reaction aA + bB ⇌ cC + dD, Kc = [C]^c[D]^d / ([A]^a[B]^b), where [ ] denotes equilibrium concentration in mol dm⁻³."},
+      {"term":"Equilibrium constant Kp","definition":"The equilibrium constant expressed in terms of partial pressures of gases."},
+      {"term":"Le Chatelier's Principle","definition":"When a system in dynamic equilibrium is subjected to a change, the equilibrium shifts to minimise the effect of that change."},
+      {"term":"Partial pressure","definition":"The pressure that a gas in a mixture would exert if it alone occupied the same volume at the same temperature."},
+      {"term":"Mole fraction","definition":"The ratio of the number of moles of one component to the total number of moles in a mixture."}
+    ],
+    "ch09": [
+      {"term":"Rate of reaction","definition":"The change in concentration of a reactant or product per unit time."},
+      {"term":"Rate equation","definition":"An experimentally determined equation showing how the rate of a reaction depends on the concentrations of reactants: rate = k[A]^m[B]^n."},
+      {"term":"Rate constant (k)","definition":"The proportionality constant in the rate equation; its value depends on temperature."},
+      {"term":"Order of reaction","definition":"The power to which the concentration of a reactant is raised in the rate equation."},
+      {"term":"Half-life (t½)","definition":"The time taken for the concentration of a reactant to fall to half its initial value."},
+      {"term":"Activation energy (Ea)","definition":"The minimum energy required by colliding particles to react."},
+      {"term":"Catalyst","definition":"A substance that increases the rate of a reaction by providing an alternative pathway with a lower activation energy, and is not consumed in the reaction."},
+      {"term":"Boltzmann distribution","definition":"A distribution showing the range of energies of particles in a sample at a given temperature."},
+      {"term":"Homogeneous catalysis","definition":"Catalysis in which the catalyst and reactants are in the same phase."},
+      {"term":"Heterogeneous catalysis","definition":"Catalysis in which the catalyst and reactants are in different phases."}
+    ],
+    "ch10": [
+      {"term":"Periodicity","definition":"The regular variation in properties of elements across a period and down a group of the Periodic Table."},
+      {"term":"Ionisation energy","definition":"The energy required to remove one mole of electrons from one mole of gaseous atoms or ions."},
+      {"term":"Atomic radius","definition":"Half the distance between the nuclei of two adjacent atoms of the same element."},
+      {"term":"Electronegativity (Pauling scale)","definition":"A measure of the tendency of an atom to attract a bonding electron pair; increases across a period and decreases down a group."},
+      {"term":"Melting point trend","definition":"Across Period 3: increases from Na to Al (metallic), peaks at Si (giant covalent), then drops sharply for P, S, Cl (simple molecular)."}
+    ],
+    "ch11": [
+      {"term":"Group 2 elements","definition":"The alkaline earth metals (Be, Mg, Ca, Sr, Ba) in Group 2 of the Periodic Table; they form 2+ ions."},
+      {"term":"Thermal decomposition of carbonates","definition":"Group 2 carbonates decompose on heating: MCO₃ → MO + CO₂. Stability increases down the group."},
+      {"term":"Reactions of Group 2 with water","definition":"Group 2 metals react with water to form hydroxides and hydrogen: M + 2H₂O → M(OH)₂ + H₂. Reactivity increases down the group."},
+      {"term":"Solubility of Group 2 hydroxides","definition":"Solubility increases down Group 2: Mg(OH)₂ is sparingly soluble; Ba(OH)₂ is soluble."},
+      {"term":"Solubility of Group 2 sulfates","definition":"Solubility decreases down Group 2: MgSO₄ is soluble; BaSO₄ is insoluble."}
+    ],
+    "ch12": [
+      {"term":"Group 17 (Halogens)","definition":"The elements F, Cl, Br, I in Group 17; they exist as diatomic molecules and form 1− ions."},
+      {"term":"Halogen reactivity","definition":"Reactivity decreases down Group 17 as atomic radius increases and electron affinity decreases."},
+      {"term":"Disproportionation of chlorine","definition":"Cl₂ + H₂O → HCl + HClO (in cold water); Cl₂ + 2NaOH → NaCl + NaClO + H₂O."},
+      {"term":"Halide ion reducing power","definition":"Reducing power increases down Group 17: I⁻ > Br⁻ > Cl⁻; F⁻ cannot act as a reducing agent."},
+      {"term":"Test for halide ions","definition":"Add dilute HNO₃ then AgNO₃ solution: AgCl (white), AgBr (cream), AgI (yellow) precipitates form."}
+    ],
+    "ch13": [
+      {"term":"Nitrogen cycle","definition":"The continuous recycling of nitrogen through the atmosphere, soil, and living organisms via processes such as fixation, nitrification, and denitrification."},
+      {"term":"Haber Process","definition":"Industrial synthesis of ammonia: N₂ + 3H₂ ⇌ 2NH₃; conditions: 450°C, 200 atm, Fe catalyst."},
+      {"term":"Contact Process","definition":"Industrial synthesis of sulfuric acid via SO₂ → SO₃ (V₂O₅ catalyst, 450°C), then SO₃ + H₂SO₄ → H₂S₂O₇, then H₂S₂O₇ + H₂O → H₂SO₄."},
+      {"term":"Acid rain","definition":"Rain with pH below 5.6 caused by dissolution of SO₂ and NOₓ gases from burning fossil fuels."},
+      {"term":"Catalytic converter","definition":"A device in car exhausts that converts CO, NOₓ, and unburnt hydrocarbons into CO₂, N₂, and H₂O using Pt/Rh/Pd catalysts."}
+    ],
+    "ch14": [
+      {"term":"Homologous series","definition":"A series of organic compounds with the same functional group and general formula, differing by a CH₂ unit."},
+      {"term":"Functional group","definition":"An atom or group of atoms responsible for the characteristic chemical reactions of a compound."},
+      {"term":"Structural isomers","definition":"Compounds with the same molecular formula but different structural arrangements of atoms."},
+      {"term":"Stereoisomers","definition":"Compounds with the same molecular formula and structural formula but different spatial arrangements of atoms."},
+      {"term":"Geometric (cis-trans) isomerism","definition":"A type of stereoisomerism arising from restricted rotation about a C=C double bond, requiring two different groups on each carbon."},
+      {"term":"Optical isomerism","definition":"A type of stereoisomerism arising from a chiral centre (an asymmetric carbon with four different groups), producing non-superimposable mirror images (enantiomers)."},
+      {"term":"Chiral centre","definition":"A carbon atom bonded to four different groups, giving rise to optical isomers."},
+      {"term":"Homolytic fission","definition":"Bond breaking in which each atom receives one electron from the shared pair, producing radicals."},
+      {"term":"Heterolytic fission","definition":"Bond breaking in which both electrons go to one atom, producing ions (carbocations or carbanions)."},
+      {"term":"Nucleophile","definition":"An electron-rich species that donates a pair of electrons to form a new bond; attacks electron-deficient centres."},
+      {"term":"Electrophile","definition":"An electron-deficient species that accepts a pair of electrons to form a new bond; attacks electron-rich centres."},
+      {"term":"Free radical","definition":"A species with one or more unpaired electrons, formed by homolytic fission."}
+    ],
+    "ch15": [
+      {"term":"Alkane","definition":"A saturated hydrocarbon with the general formula CnH₂n+₂; contains only C-C and C-H single bonds."},
+      {"term":"Alkene","definition":"An unsaturated hydrocarbon with the general formula CnH₂n; contains at least one C=C double bond."},
+      {"term":"Electrophilic addition","definition":"A reaction in which an electrophile adds across a double bond, proceeding through a carbocation intermediate."},
+      {"term":"Markovnikov's rule","definition":"In addition to an unsymmetrical alkene, the hydrogen adds to the carbon with more hydrogen atoms (the major product arises from the more stable carbocation)."},
+      {"term":"Free radical substitution","definition":"A chain reaction in alkanes with halogens in UV light, proceeding through initiation, propagation, and termination steps."},
+      {"term":"Combustion of hydrocarbons","definition":"Complete combustion: CₓHᵧ + O₂ → CO₂ + H₂O. Incomplete: produces CO and/or C (soot)."},
+      {"term":"Cracking","definition":"The breaking down of large hydrocarbon molecules into smaller, more useful ones by heat (thermal cracking) or catalysts (catalytic cracking)."}
+    ],
+    "ch16": [
+      {"term":"Halogenoalkane","definition":"An organic compound containing one or more halogen atoms bonded to a carbon chain."},
+      {"term":"Nucleophilic substitution (SN1)","definition":"A substitution reaction proceeding via a carbocation intermediate; rate depends only on the concentration of the halogenoalkane."},
+      {"term":"Nucleophilic substitution (SN2)","definition":"A substitution reaction proceeding via a concerted mechanism (backside attack); rate depends on concentrations of both the halogenoalkane and the nucleophile."},
+      {"term":"Elimination reaction","definition":"A reaction in which a small molecule (e.g. HBr) is removed from a halogenoalkane to form an alkene, using hot ethanolic KOH."},
+      {"term":"Hydrolysis rate of halogenoalkanes","definition":"Rate increases: C–F < C–Cl < C–Br < C–I, because bond enthalpy decreases down the group."},
+      {"term":"CFCs","definition":"Chlorofluorocarbons; stable compounds used as refrigerants that decompose in the stratosphere by UV light to produce Cl radicals, which catalytically destroy ozone."}
+    ],
+    "ch17": [
+      {"term":"Alcohol","definition":"An organic compound containing the –OH (hydroxyl) functional group."},
+      {"term":"Primary alcohol","definition":"An alcohol in which the carbon bearing the –OH group is bonded to one other carbon (–CH₂OH)."},
+      {"term":"Secondary alcohol","definition":"An alcohol in which the carbon bearing the –OH group is bonded to two other carbons."},
+      {"term":"Tertiary alcohol","definition":"An alcohol in which the carbon bearing the –OH group is bonded to three other carbons."},
+      {"term":"Oxidation of alcohols","definition":"Primary alcohols can be oxidised to aldehydes (then carboxylic acids); secondary to ketones; tertiary alcohols resist oxidation. Reagent: K₂Cr₂O₇ / H₂SO₄."},
+      {"term":"Esterification","definition":"A reversible reaction between a carboxylic acid and an alcohol (with acid catalyst) to form an ester and water."},
+      {"term":"Ester","definition":"A compound formed by condensation of a carboxylic acid and an alcohol, with the functional group –COO–."},
+      {"term":"Saponification","definition":"The alkaline hydrolysis of an ester to produce a carboxylate salt and an alcohol."},
+      {"term":"Carboxylic acid","definition":"An organic compound containing the –COOH (carboxyl) functional group."}
+    ],
+    "ch18": [
+      {"term":"Aldehyde","definition":"A carbonyl compound (–CHO) in which the carbonyl group is at the end of a carbon chain."},
+      {"term":"Ketone","definition":"A carbonyl compound (–CO–) in which the carbonyl group is between two carbon atoms."},
+      {"term":"Nucleophilic addition","definition":"A reaction in which a nucleophile attacks the electrophilic carbon of a carbonyl group, adding across the C=O bond."},
+      {"term":"Fehling's test","definition":"A test to distinguish aldehydes from ketones: aldehydes reduce Cu²⁺ (blue) to Cu₂O (brick-red precipitate); ketones do not react."},
+      {"term":"Tollens' reagent","definition":"Ammoniacal silver nitrate solution; aldehydes produce a silver mirror; ketones do not react."},
+      {"term":"Reduction of carbonyls","definition":"Aldehydes are reduced to primary alcohols; ketones to secondary alcohols. Reagent: NaBH₄ or LiAlH₄."},
+      {"term":"Cyanohydrin formation","definition":"Nucleophilic addition of HCN to an aldehyde or ketone to form a hydroxynitrile (cyanohydrin)."}
+    ],
+    "ch19": [
+      {"term":"Lattice energy (ΔHlat)","definition":"The enthalpy change when one mole of an ionic compound is formed from its constituent gaseous ions (always exothermic, negative value). Also defined as the reverse process (always positive)."},
+      {"term":"Born-Haber cycle","definition":"An energy cycle used to calculate lattice energy, using Hess's Law and enthalpy changes including atomisation, ionisation, electron affinity, and formation."},
+      {"term":"Electron affinity","definition":"The enthalpy change when one mole of gaseous atoms gains one mole of electrons to form one mole of gaseous 1− ions."},
+      {"term":"Enthalpy of hydration","definition":"The enthalpy change when one mole of gaseous ions is completely surrounded by water molecules."},
+      {"term":"Enthalpy of solution","definition":"The enthalpy change when one mole of an ionic compound dissolves in a large excess of water: ΔHsol = ΔHlat + ΔHhyd (ions)."},
+      {"term":"Polarisation of ions","definition":"Distortion of the electron cloud of an anion by a small, highly charged cation; increases covalent character of the bond."}
+    ],
+    "ch20": [
+      {"term":"Electrode potential","definition":"The potential difference between an electrode and a standard hydrogen electrode under standard conditions."},
+      {"term":"Standard electrode potential (E°)","definition":"The potential of an electrode measured relative to the standard hydrogen electrode (SHE) under standard conditions (298 K, 1 mol dm⁻³, 100 kPa)."},
+      {"term":"Standard hydrogen electrode (SHE)","definition":"The reference electrode (E° = 0.00 V): Pt | H₂(g, 1 atm) | H⁺(aq, 1 mol dm⁻³)."},
+      {"term":"Electrochemical cell (EMF)","definition":"E°cell = E°cathode − E°anode = E°(more positive) − E°(less positive)."},
+      {"term":"Electrolysis","definition":"The decomposition of a substance by passing an electric current through its molten or aqueous state."},
+      {"term":"Faraday's law","definition":"The amount of substance discharged at an electrode is proportional to the quantity of charge passed: Q = It = nzF."},
+      {"term":"Spontaneous reaction","definition":"A redox reaction is spontaneous if E°cell > 0 (the species with the more positive E° is reduced)."}
+    ],
+    "ch21": [
+      {"term":"Acid (Brønsted-Lowry)","definition":"A proton (H⁺) donor."},
+      {"term":"Base (Brønsted-Lowry)","definition":"A proton (H⁺) acceptor."},
+      {"term":"Conjugate acid-base pair","definition":"Two species that differ by a single proton (H⁺)."},
+      {"term":"pH","definition":"pH = −log₁₀[H⁺]; a measure of the acidity of a solution."},
+      {"term":"Ka (acid dissociation constant)","definition":"Ka = [H⁺][A⁻]/[HA]; a measure of the strength of a weak acid."},
+      {"term":"pKa","definition":"pKa = −log₁₀(Ka); the negative logarithm of Ka."},
+      {"term":"Kw (ionic product of water)","definition":"Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ mol² dm⁻⁶ at 298 K."},
+      {"term":"Buffer solution","definition":"A solution that resists changes in pH when small amounts of acid or base are added, typically consisting of a weak acid and its conjugate base."},
+      {"term":"Hydrolysis of salts","definition":"The reaction of an ion with water; a salt of a weak acid and strong base gives an alkaline solution; salt of strong acid and weak base gives an acidic solution."},
+      {"term":"Indicators","definition":"Weak acids (HIn) where the undissociated form (HIn) and the dissociate form (In⁻) have different colours; colour change occurs near pKa."}
+    ],
+    "ch22": [
+      {"term":"Rate-determining step","definition":"The slowest step in a reaction mechanism, which determines the overall rate of the reaction."},
+      {"term":"Molecularity","definition":"The number of species involved in the rate-determining step of a reaction."},
+      {"term":"Arrhenius equation","definition":"k = Ae^(−Ea/RT); describes the temperature dependence of the rate constant."},
+      {"term":"Arrhenius factor (A)","definition":"The pre-exponential factor in the Arrhenius equation; related to the frequency of collisions with correct orientation."},
+      {"term":"Integrated rate equations","definition":"For first order: [A] = [A]₀e^(−kt), t½ = ln2/k. For second order: 1/[A] = 1/[A]₀ + kt."},
+      {"term":"Initial rate method","definition":"A method to determine reaction order by comparing rates at different initial concentrations."}
+    ],
+    "ch23": [
+      {"term":"Entropy (S)","definition":"A measure of the disorder or randomness of a system; increases when disorder increases."},
+      {"term":"Standard entropy change (ΔS°)","definition":"ΔS° = ΣS°(products) − ΣS°(reactants); measured in J mol⁻¹ K⁻¹."},
+      {"term":"Gibbs free energy (ΔG)","definition":"ΔG = ΔH − TΔS; a thermodynamic quantity that determines whether a reaction is spontaneous."},
+      {"term":"Spontaneous reaction (ΔG)","definition":"A reaction is spontaneous when ΔG < 0 at constant temperature and pressure."},
+      {"term":"Standard Gibbs free energy (ΔG°)","definition":"ΔG° = −RT ln K; relates the standard free energy change to the equilibrium constant."},
+      {"term":"Temperature of feasibility","definition":"The temperature at which ΔG = 0: T = ΔH/ΔS. Above/below this temperature the reaction becomes spontaneous, depending on the signs of ΔH and ΔS."}
+    ],
+    "ch24": [
+      {"term":"Transition element","definition":"A d-block element that forms at least one stable ion with an incomplete d sub-shell."},
+      {"term":"Variable oxidation states","definition":"Transition elements exhibit multiple oxidation states because the 3d and 4s electrons have similar energies."},
+      {"term":"Complex ion","definition":"A metal ion surrounded by ligands (Lewis bases) that donate lone pairs to the metal."},
+      {"term":"Ligand","definition":"A molecule or ion that donates a lone pair of electrons to a metal ion to form a coordinate (dative) bond."},
+      {"term":"Coordination number","definition":"The number of coordinate bonds formed between ligands and the central metal ion."},
+      {"term":"d-d transition","definition":"The absorption of visible light causing an electron to move from a lower to a higher d orbital; responsible for the colour of transition metal complexes."},
+      {"term":"Magnetic properties","definition":"Transition metal ions with unpaired d electrons are paramagnetic (attracted to a magnetic field)."},
+      {"term":"Catalytic activity","definition":"Transition metals and their compounds act as catalysts by providing a surface for reactants and by changing oxidation state."},
+      {"term":"Ligand substitution","definition":"A reaction in which one or more ligands in a complex ion are replaced by other ligands."},
+      {"term":"Stability constant (Kstab)","definition":"The equilibrium constant for the formation of a complex ion from its constituent metal ion and ligands in aqueous solution."}
+    ],
+    "ch25": [
+      {"term":"Arene (aromatic compound)","definition":"A compound containing a benzene ring; benzene (C₆H₆) has a delocalized π electron system."},
+      {"term":"Delocalisation in benzene","definition":"The six π electrons in benzene are spread equally over all six carbon atoms, giving extra stability (delocalisation energy)."},
+      {"term":"Electrophilic substitution","definition":"A reaction of benzene in which an electrophile substitutes a hydrogen atom on the ring, preserving the aromatic system."},
+      {"term":"Friedel-Crafts reaction","definition":"Electrophilic substitution using an alkyl halide or acyl halide and an AlCl₃ catalyst to introduce alkyl or acyl groups to benzene."},
+      {"term":"Nitration of benzene","definition":"Benzene + HNO₃ (concentrated) + H₂SO₄ (concentrated) at 55°C → nitrobenzene + H₂O. Electrophile: NO₂⁺ (nitronium ion)."},
+      {"term":"Directing effects","definition":"Existing substituents on benzene direct incoming electrophiles: –OH, –NH₂ are 2,4-directors (activating); –NO₂, –COOH are 3-directors (deactivating)."}
+    ],
+    "ch26": [
+      {"term":"Acyl chloride","definition":"A compound with the functional group –COCl; highly reactive, undergoes nucleophilic addition-elimination."},
+      {"term":"Acid anhydride","definition":"A compound formed from two carboxylic acid molecules with loss of water (–CO–O–CO–); less reactive than acyl chlorides."},
+      {"term":"Nucleophilic addition-elimination","definition":"A reaction in which a nucleophile adds to a carbonyl group, followed by elimination of a leaving group, producing an acyl substitution product."},
+      {"term":"Esterification with acyl chlorides","definition":"Acyl chloride + alcohol → ester + HCl (rapid, room temperature, no catalyst needed)."},
+      {"term":"Amide formation","definition":"Acyl chloride + amine → amide + HCl; acid anhydride + amine → amide + carboxylic acid."}
+    ],
+    "ch27": [
+      {"term":"Amine","definition":"An organic compound derived from ammonia by replacing one or more hydrogen atoms with alkyl or aryl groups; contains –NH₂, –NHR, or –NR₂."},
+      {"term":"Basicity of amines","definition":"Amines are bases because the lone pair on nitrogen accepts H⁺. Alkyl amines are stronger bases than ammonia; aryl amines are weaker."},
+      {"term":"Amide","definition":"A compound containing the –CONH– group; formed from carboxylic acid derivatives and amines."},
+      {"term":"Amino acid","definition":"A compound with both an amino (–NH₂) and a carboxyl (–COOH) group; they exist as zwitterions at their isoelectric point."},
+      {"term":"Peptide bond","definition":"The amide bond (–CO–NH–) formed between the carboxyl group of one amino acid and the amino group of another, with loss of water."},
+      {"term":"Diazonium salt","definition":"A compound R–N⁺≡N, formed by diazotisation of a primary aryl amine with NaNO₂/HCl at 0–5°C."},
+      {"term":"Coupling reaction","definition":"A reaction between a diazonium salt and a phenol or aryl amine to form an azo compound (–N=N– group), used to make dyes."}
+    ],
+    "ch28": [
+      {"term":"Addition polymerisation","definition":"A reaction in which many alkene monomers join together to form a long chain polymer, with no other products."},
+      {"term":"Condensation polymerisation","definition":"A reaction in which monomers join together with the elimination of a small molecule (usually H₂O or HCl) to form a polymer."},
+      {"term":"Polyester","definition":"A condensation polymer formed from a diol and a dicarboxylic acid (or diester), linked by ester bonds (–COO–)."},
+      {"term":"Polyamide (nylon)","definition":"A condensation polymer formed from a diamine and a dicarboxylic acid (or diacyl chloride), linked by amide bonds (–CONH–)."},
+      {"term":"Biodegradability","definition":"The ability of a polymer to be broken down by microorganisms; condensation polymers (e.g. polyesters, polyamides) are generally biodegradable; addition polymers are not."},
+      {"term":"Repeat unit","definition":"The smallest repeating structural unit in a polymer chain."}
+    ],
+    "ch29": [
+      {"term":"Organic synthesis","definition":"The construction of complex organic molecules from simpler starting materials through a sequence of chemical reactions."},
+      {"term":"Functional group interconversion","definition":"Reactions used to transform one functional group into another in a synthesis route."},
+      {"term":"Protecting group","definition":"A temporary group added to a functional group to prevent it from reacting during subsequent steps of a synthesis."},
+      {"term":"Yield in multi-step synthesis","definition":"Overall yield = product of fractional yields of each step; short routes with high-yielding steps are preferred."},
+      {"term":"Retrosynthetic analysis","definition":"Working backwards from the target molecule to identify suitable starting materials and reagents."}
+    ],
+    "ch30": [
+      {"term":"Mass spectrometry","definition":"A technique that determines the mass-to-charge ratio (m/z) of ions; used to find relative molecular mass (molecular ion M⁺) and structural information from fragmentation patterns."},
+      {"term":"Molecular ion (M⁺)","definition":"The ion formed by removal of one electron from a molecule in a mass spectrometer; its m/z gives the relative molecular mass."},
+      {"term":"Infrared (IR) spectroscopy","definition":"A technique that identifies functional groups based on absorption of IR radiation at characteristic wavenumbers (e.g. O–H: 2500–3300 cm⁻¹; C=O: 1700–1750 cm⁻¹)."},
+      {"term":"NMR spectroscopy","definition":"Nuclear Magnetic Resonance spectroscopy identifies the environment of ¹H or ¹³C nuclei in a molecule; chemical shift (δ, in ppm) indicates the type of proton/carbon."},
+      {"term":"Chemical shift (δ)","definition":"The position of an NMR absorption relative to TMS (tetramethylsilane, δ = 0); different proton environments give different δ values."},
+      {"term":"Spin-spin coupling","definition":"The splitting of NMR peaks caused by neighbouring non-equivalent protons; (n+1) rule: n adjacent protons cause splitting into n+1 peaks."},
+      {"term":"Chromatography","definition":"A separation technique based on differential partitioning between a mobile phase and a stationary phase."},
+      {"term":"Rf value","definition":"In TLC/paper chromatography, Rf = distance travelled by spot / distance travelled by solvent front."},
+      {"term":"Flame photometry","definition":"Emission spectroscopy used to identify and quantify metal ions (especially Na, K, Li, Ca) based on characteristic flame colours."},
+      {"term":"Beer-Lambert Law","definition":"Absorbance (A) = εcl, where ε = molar absorptivity, c = concentration, l = path length; used in colorimetry/UV-visible spectroscopy."}
+    ]
+  }
+}
