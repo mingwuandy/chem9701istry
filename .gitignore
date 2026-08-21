@@ -14,6 +14,13 @@ index_backup.html
 knowledge_db_backup_*.json
 *_backup*.json
 *_backup*.html
+*.bak_*
+
+# Audit temp files
+topic_audit_report.json
+
+# Exported documents
+CIE_9701_*.docx
 
 # Videos (too large for git, use external storage)
 videos/

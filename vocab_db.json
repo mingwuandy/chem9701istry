@@ -185,56 +185,56 @@
       },
       {
         "word": "Subatomic particles",
-        "zh": "",
-        "def": "",
+        "zh": "亚原子粒子",
+        "def": "Particles smaller than an atom: protons, neutrons and electrons",
         "phonetic": ""
       },
       {
         "word": "Ionic compound",
-        "zh": "",
-        "def": "",
+        "zh": "离子化合物",
+        "def": "Compound formed by electrostatic attraction between oppositely charged ions",
         "phonetic": ""
       },
       {
         "word": "Peroxide effect",
-        "zh": "",
-        "def": "",
+        "zh": "过氧化物效应",
+        "def": "Radical mechanism causing HBr addition to alkenes to follow anti-Markovnikov orientation",
         "phonetic": ""
       },
       {
         "word": "Reagent",
-        "zh": "",
-        "def": "",
+        "zh": "试剂",
+        "def": "A substance added to bring about or detect a chemical reaction",
         "phonetic": ""
       },
       {
         "word": "Distinguish",
-        "zh": "",
-        "def": "",
+        "zh": "区分；鉴别",
+        "def": "To identify the difference between substances by observation or test",
         "phonetic": ""
       },
       {
         "word": "Conversion",
-        "zh": "",
-        "def": "",
+        "zh": "转化",
+        "def": "The process of changing one substance into another",
         "phonetic": ""
       },
       {
         "word": "Inert electrode",
-        "zh": "",
-        "def": "",
+        "zh": "惰性电极",
+        "def": "An electrode that does not take part in the cell reaction, e.g. platinum or graphite",
         "phonetic": ""
       },
       {
         "word": "Pressure",
-        "zh": "",
-        "def": "",
+        "zh": "压力",
+        "def": "Force per unit area exerted by gas particles on the container walls",
         "phonetic": ""
       },
       {
         "word": "Temperature",
-        "zh": "",
-        "def": "",
+        "zh": "温度",
+        "def": "Measure of the average kinetic energy of the particles",
         "phonetic": ""
       }
     ]
@@ -395,8 +395,8 @@
       },
       {
         "word": "Neutralize",
-        "zh": "",
-        "def": "",
+        "zh": "中和",
+        "def": "Reaction of an acid with a base to form a salt and water",
         "phonetic": ""
       }
     ]
@@ -587,14 +587,14 @@
       },
       {
         "word": "Dipole moment",
-        "zh": "",
-        "def": "",
+        "zh": "偶极矩",
+        "def": "Measure of bond or molecular polarity, given by charge multiplied by separation distance",
         "phonetic": ""
       },
       {
         "word": "Molecular lattice",
-        "zh": "",
-        "def": "",
+        "zh": "分子晶格",
+        "def": "Regular three-dimensional arrangement of molecules held together by weak intermolecular forces",
         "phonetic": ""
       }
     ]
@@ -1061,8 +1061,8 @@
       },
       {
         "word": "Equilibrium yield",
-        "zh": "",
-        "def": "",
+        "zh": "平衡产率",
+        "def": "Amount of product formed when a reversible reaction reaches equilibrium",
         "phonetic": ""
       }
     ]
@@ -1217,14 +1217,14 @@
       },
       {
         "word": "First-order reaction",
-        "zh": "",
-        "def": "",
+        "zh": "一级反应",
+        "def": "Reaction whose rate is proportional to the concentration of a single reactant",
         "phonetic": ""
       },
       {
         "word": "Reaction pathway",
-        "zh": "",
-        "def": "",
+        "zh": "反应路径",
+        "def": "The step-by-step route of a reaction, often shown on an energy profile diagram",
         "phonetic": ""
       }
     ]
@@ -1385,8 +1385,8 @@
       },
       {
         "word": "Reactivity",
-        "zh": "",
-        "def": "",
+        "zh": "反应活性",
+        "def": "The tendency of a substance to undergo chemical reactions",
         "phonetic": ""
       }
     ]
@@ -1919,14 +1919,14 @@
       },
       {
         "word": "Geometric isomerism",
-        "zh": "",
-        "def": "",
+        "zh": "几何异构",
+        "def": "Isomerism arising from restricted rotation about a C=C bond, giving E and Z forms",
         "phonetic": ""
       },
       {
         "word": "Optical isomerism",
-        "zh": "",
-        "def": "",
+        "zh": "光学异构",
+        "def": "Isomerism in which molecules are non-superimposable mirror images (chiral)",
         "phonetic": ""
       }
     ]
@@ -2327,8 +2327,8 @@
       },
       {
         "word": "Hydroxy compound",
-        "zh": "",
-        "def": "",
+        "zh": "羟基化合物",
+        "def": "Organic compound containing the –OH functional group, e.g. alcohols",
         "phonetic": ""
       }
     ]
@@ -2459,8 +2459,8 @@
       },
       {
         "word": "Carbonyl compound",
-        "zh": "",
-        "def": "",
+        "zh": "羰基化合物",
+        "def": "Organic compound containing the C=O functional group, e.g. aldehydes and ketones",
         "phonetic": ""
       }
     ]
