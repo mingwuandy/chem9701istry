@@ -331,6 +331,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .learn-done-btn{display:block;width:100%;margin-top:12px;padding:10px;background:linear-gradient(135deg,rgba(139,92,246,.3),rgba(45,212,191,.2));border:1px solid rgba(139,92,246,.4);border-radius:10px;color:#c4b5fd;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s}
 .learn-done-btn:hover{background:linear-gradient(135deg,rgba(139,92,246,.5),rgba(45,212,191,.3));color:#fff}
 
+/* Seven 解析卡片 */
+.seven-expl-card{margin-top:10px;border-radius:10px;overflow:hidden;border:1px solid rgba(139,92,246,.35);background:linear-gradient(135deg,rgba(139,92,246,.10),rgba(59,130,246,.06));text-align:left}
+.seven-expl-head{display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(139,92,246,.18);font-size:.78rem;font-weight:700;color:#c4b5fd}
+.seven-expl-head .seven-avatar{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#3b82f6);display:flex;align-items:center;justify-content:center;font-size:.7rem}
+.seven-expl-body{padding:10px 12px;font-size:.74rem;line-height:1.6;color:#e2e8f0}
+.seven-expl-body .expl-concept{color:#a78bfa;font-weight:600;margin-bottom:6px}
+.seven-expl-body .expl-section{margin-top:8px}
+.seven-expl-body .expl-label{display:inline-block;font-size:.62rem;font-weight:700;color:#8b5cf6;background:rgba(139,92,246,.15);padding:1px 7px;border-radius:5px;margin-right:6px;text-transform:uppercase;letter-spacing:.5px}
+.seven-expl-body .expl-reasoning{color:#cbd5e1}
+.seven-expl-body .expl-why-correct{color:#86efac}
+.seven-expl-body .expl-why-wrong{color:#fca5a5}
+.seven-expl-body .expl-ref{margin-top:8px;font-size:.66rem;color:#64748b;font-style:italic}
+.btn-next-q{margin-top:10px;width:100%;padding:10px;border:none;border-radius:10px;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-weight:700;font-size:.85rem;cursor:pointer;box-shadow:0 4px 14px rgba(139,92,246,.35)}
+.btn-next-q:hover{filter:brightness(1.1)}
+.btn-next-q:active{transform:scale(.98)}
+
 </style>
 </head>
 <body>
@@ -391,8 +407,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 <!-- Chapter Map -->
 <div id="chapterMap" class="chapter-map">
   <div class="chapter-header">
-    <h1>⚗️ Stoichiometry & Moles</h1>
-    <p>化学计量与摩尔 — ch03 · CIE 9701</p>
+    <h1>🔗 Chemical Bonding</h1>
+    <p>化学键 — ch03 · CIE 9701</p>
     <div class="ch03-badge">🎮 闯关模式</div>
     <p style="margin-top:6px"><a href="student.html" style="color:#a78bfa;font-size:.75rem;text-decoration:none">← 返回学习主页</a></p>
   </div>
@@ -534,7 +550,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 <script>
 /* ============ CONFIG ============ */
 const CHAPTER_ID = 'ch03';
-const CHAPTER_NAME = 'Stoichiometry & Moles';
+const CHAPTER_NAME = 'Chemical Bonding';
+// 解析文件映射：网站 ch03 页面加载的是大纲 ch04 (Chemical Bonding) 真题，Seven 解析文件名按大纲编号
+const EXPL_FILE = 'explanations_ch04.json';
 const STORAGE_KEY = 'chem9701_ch03_gamify';
 // 与 student.html Learn 模块共用同一个存储 key
 const LEARN_STORAGE_KEY = 'ch9701_learn_progress';
@@ -3213,6 +3231,48 @@ const INLINE_QUESTIONS = [
 ];
 
 let DB = {questions: INLINE_QUESTIONS};
+
+/* ---- Seven 解析数据 ---- */
+let SEVEN_EXPL = {};
+async function loadSevenExplanations(){
+  if(window.location.protocol === 'file:') return; // file:// 下 fetch 会挂起
+  try{
+    const res = await fetch(EXPL_FILE || ('explanations_' + CHAPTER_ID + '.json'));
+    if(!res.ok) return;
+    const arr = await res.json();
+    arr.forEach(e => { SEVEN_EXPL[e.id] = e; });
+    console.log('[Seven] loaded', arr.length, 'explanations for', CHAPTER_ID);
+  }catch(e){
+    console.warn('[Seven] explanations not available:', e.message);
+  }
+}
+
+/* 渲染 Seven 解析卡片 */
+function renderSevenCard(q){
+  const e = SEVEN_EXPL[q.id];
+  if(!e || !e.explanation) return '';
+  const x = e.explanation;
+  return `
+    <div class="seven-expl-card">
+      <div class="seven-expl-head">
+        <span class="seven-avatar">S</span>
+        <span>Seven 老师解析</span>
+        <span style="margin-left:auto;font-weight:400;font-size:.66rem;opacity:.7">${x.syllabus_ref ? '📖 ' + x.syllabus_ref : ''}</span>
+      </div>
+      <div class="seven-expl-body">
+        ${x.concept ? `<div class="expl-concept">🎯 ${x.concept}</div>` : ''}
+        ${x.reasoning ? `<div class="expl-section"><span class="expl-label">解题思路</span><span class="expl-reasoning">${x.reasoning}</span></div>` : ''}
+        ${x.why_correct ? `<div class="expl-section"><span class="expl-label">✅ 正确项</span><span class="expl-why-correct">${x.why_correct}</span></div>` : ''}
+        ${x.why_others_wrong ? `<div class="expl-section"><span class="expl-label">❌ 干扰项</span><span class="expl-why-wrong">${x.why_others_wrong}</span></div>` : ''}
+      </div>
+    </div>
+    <button class="btn-next-q" onclick="nextAfterExplain()">下一题 →</button>`;
+}
+
+function nextAfterExplain(){
+  BATTLE.current++;
+  renderQuestion();
+}
 let GAME = null;
 let BATTLE = null;
 let TIMER = null;
@@ -4039,16 +4099,25 @@ function submitAnswer(){
   const fb = document.getElementById('qFeedback');
   fb.className = 'q-feedback show ' + (isCorrect ? 'correct' : 'wrong');
   const timeLabel = timeSpent < EXPECTED_TIME_PER_Q ? `⚡ ${timeSpent}秒` : `${timeSpent}秒`;
+
+  const sevenCard = renderSevenCard(q);
+  const simpleExpl = (!sevenCard && q.explanation)
+    ? `<br><span style="display:block;margin-top:6px;padding:6px 8px;background:rgba(139,92,246,.08);border-radius:6px;font-size:.72rem;color:#c4b5fd">💡 ${q.explanation}</span>`
+    : '';
+
   fb.innerHTML = isCorrect
-    ? `✅ 正确！${correctAns} &nbsp;${timeLabel}<br><span style="opacity:.8">${getEncouragement(BATTLE.combo)}</span>`
-    : `❌ 错误，正确答案是 ${correctAns}<br><span style="opacity:.8">已加入间隔复习队列 🔄</span>`;
+    ? `✅ 正确！${correctAns} &nbsp;${timeLabel}<br><span style="opacity:.8">${getEncouragement(BATTLE.combo)}</span>${simpleExpl}${sevenCard}`
+    : `❌ 错误，正确答案是 ${correctAns}<br><span style="opacity:.8">已加入间隔复习队列 🔄</span>${simpleExpl}${sevenCard}`;
 
   BATTLE.answers.push({qid:q.id, correct:isCorrect, ans:userAns, time:timeSpent});
 
-  setTimeout(()=>{
-    BATTLE.current++;
-    renderQuestion();
-  }, isCorrect ? 1500 : 2000);
+  // 有 Seven 解析时不自动跳题，等学生点"下一题"；无解析时保持原自动跳转
+  if(!sevenCard){
+    setTimeout(()=>{
+      BATTLE.current++;
+      renderQuestion();
+    }, isCorrect ? 1500 : 2000);
+  }
 
   saveGame();
 }
@@ -4379,13 +4448,17 @@ function zoomImage(img){ window.open(img.src, '_blank'); }
 /* ============ DB LOADING ============ */
 async function loadDB(){
   // Data is already inlined — try to upgrade with full db.json if available
-  try{
-    const res = await fetch('db.json');
-    const data = await res.json();
-    const chapterQs = (data.questions||[]).filter(q=>q.chapter_id===CHAPTER_ID && q.paper_type==='P1');
-    if(chapterQs.length > 0) DB.questions = chapterQs;
-  }catch(e){
-    // Use inline data — no action needed
+  // Skip fetch on file:// protocol to avoid hanging (fetch never resolves/rejects on file://)
+  if(window.location.protocol !== 'file:'){
+    try{
+      const res = await fetch('db.json');
+      const data = await res.json();
+      const chapterQs = (data.questions||[]).filter(q=>q.chapter_id===CHAPTER_ID && q.paper_type==='P1');
+      if(chapterQs.length > 0) DB.questions = chapterQs;
+    }catch(e){
+      // Use inline data — no action needed
+    }
+    await loadSevenExplanations(); // Seven 解析数据（加载失败静默降级）
   }
   // Load learn_db for inline Study panel
   try { await loadLearnDB(); } catch(e) { console.warn('learn_db load failed:', e); }

@@ -395,6 +395,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .learn-done-btn{display:block;width:100%;margin-top:12px;padding:10px;background:linear-gradient(135deg,rgba(139,92,246,.3),rgba(45,212,191,.2));border:1px solid rgba(139,92,246,.4);border-radius:10px;color:#c4b5fd;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s}
 .learn-done-btn:hover{background:linear-gradient(135deg,rgba(139,92,246,.5),rgba(45,212,191,.3));color:#fff}
 
+/* Seven 解析卡片 */
+.seven-expl-card{margin-top:10px;border-radius:10px;overflow:hidden;border:1px solid rgba(139,92,246,.35);background:linear-gradient(135deg,rgba(139,92,246,.10),rgba(59,130,246,.06));text-align:left}
+.seven-expl-head{display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(139,92,246,.18);font-size:.78rem;font-weight:700;color:#c4b5fd}
+.seven-expl-head .seven-avatar{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#3b82f6);display:flex;align-items:center;justify-content:center;font-size:.7rem}
+.seven-expl-body{padding:10px 12px;font-size:.74rem;line-height:1.6;color:#e2e8f0}
+.seven-expl-body .expl-concept{color:#a78bfa;font-weight:600;margin-bottom:6px}
+.seven-expl-body .expl-section{margin-top:8px}
+.seven-expl-body .expl-label{display:inline-block;font-size:.62rem;font-weight:700;color:#8b5cf6;background:rgba(139,92,246,.15);padding:1px 7px;border-radius:5px;margin-right:6px;text-transform:uppercase;letter-spacing:.5px}
+.seven-expl-body .expl-reasoning{color:#cbd5e1}
+.seven-expl-body .expl-why-correct{color:#86efac}
+.seven-expl-body .expl-why-wrong{color:#fca5a5}
+.seven-expl-body .expl-ref{margin-top:8px;font-size:.66rem;color:#64748b;font-style:italic}
+.btn-next-q{margin-top:10px;width:100%;padding:10px;border:none;border-radius:10px;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-weight:700;font-size:.85rem;cursor:pointer;box-shadow:0 4px 14px rgba(139,92,246,.35)}
+.btn-next-q:hover{filter:brightness(1.1)}
+.btn-next-q:active{transform:scale(.98)}
+
 </style>
 </head>
 <body>
@@ -455,8 +471,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 <!-- Chapter Map -->
 <div id="chapterMap" class="chapter-map">
   <div class="chapter-header">
-    <h1>🔗 Chemical Bonding</h1>
-    <p>化学键 — ch04 · CIE 9701</p>
+    <h1>💧 States of Matter</h1>
+    <p>物质状态 — ch04 · CIE 9701</p>
     <div class="ch04-badge">🎮 闯关模式</div>
     <p style="margin-top:6px"><a href="student.html" style="color:#a78bfa;font-size:.75rem;text-decoration:none">← 返回学习主页</a></p>
   </div>
@@ -598,7 +614,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 <script>
 /* ============ CONFIG ============ */
 const CHAPTER_ID = 'ch04';
-const CHAPTER_NAME = 'Chemical Bonding';
+const CHAPTER_NAME = 'States of Matter';
 const STORAGE_KEY = 'chem9701_ch04_gamify';
 // 与 student.html Learn 模块共用同一个存储 key
 const LEARN_STORAGE_KEY = 'ch9701_learn_progress';
@@ -680,6 +696,48 @@ const BADGES = {
 /* ---- ch01 P1 questions (inline, no fetch needed) ---- */
 const INLINE_QUESTIONS = []; // No P1 questions yet for ch04
 let DB = {questions: INLINE_QUESTIONS};
+
+/* ---- Seven 解析数据 ---- */
+let SEVEN_EXPL = {};
+async function loadSevenExplanations(){
+  if(window.location.protocol === 'file:') return; // file:// 下 fetch 会挂起
+  try{
+    const res = await fetch(EXPL_FILE || ('explanations_' + CHAPTER_ID + '.json'));
+    if(!res.ok) return;
+    const arr = await res.json();
+    arr.forEach(e => { SEVEN_EXPL[e.id] = e; });
+    console.log('[Seven] loaded', arr.length, 'explanations for', CHAPTER_ID);
+  }catch(e){
+    console.warn('[Seven] explanations not available:', e.message);
+  }
+}
+
+/* 渲染 Seven 解析卡片 */
+function renderSevenCard(q){
+  const e = SEVEN_EXPL[q.id];
+  if(!e || !e.explanation) return '';
+  const x = e.explanation;
+  return `
+    <div class="seven-expl-card">
+      <div class="seven-expl-head">
+        <span class="seven-avatar">S</span>
+        <span>Seven 老师解析</span>
+        <span style="margin-left:auto;font-weight:400;font-size:.66rem;opacity:.7">${x.syllabus_ref ? '📖 ' + x.syllabus_ref : ''}</span>
+      </div>
+      <div class="seven-expl-body">
+        ${x.concept ? `<div class="expl-concept">🎯 ${x.concept}</div>` : ''}
+        ${x.reasoning ? `<div class="expl-section"><span class="expl-label">解题思路</span><span class="expl-reasoning">${x.reasoning}</span></div>` : ''}
+        ${x.why_correct ? `<div class="expl-section"><span class="expl-label">✅ 正确项</span><span class="expl-why-correct">${x.why_correct}</span></div>` : ''}
+        ${x.why_others_wrong ? `<div class="expl-section"><span class="expl-label">❌ 干扰项</span><span class="expl-why-wrong">${x.why_others_wrong}</span></div>` : ''}
+      </div>
+    </div>
+    <button class="btn-next-q" onclick="nextAfterExplain()">下一题 →</button>`;
+}
+
+function nextAfterExplain(){
+  BATTLE.current++;
+  renderQuestion();
+}
 /* ============ ADAPTIVE QUESTION GENERATION ============ */
 const ELEMENTS = [{"Z": 1, "sym": "H", "name": "Hydrogen", "mass": 1, "config": "1s¹"}, {"Z": 2, "sym": "He", "name": "Helium", "mass": 4, "config": "1s²"}, {"Z": 3, "sym": "Li", "name": "Lithium", "mass": 7, "config": "1s² 2s¹"}, {"Z": 4, "sym": "Be", "name": "Beryllium", "mass": 9, "config": "1s² 2s²"}, {"Z": 5, "sym": "B", "name": "Boron", "mass": 11, "config": "1s² 2s² 2p¹"}, {"Z": 6, "sym": "C", "name": "Carbon", "mass": 12, "config": "1s² 2s² 2p²"}, {"Z": 7, "sym": "N", "name": "Nitrogen", "mass": 14, "config": "1s² 2s² 2p³"}, {"Z": 8, "sym": "O", "name": "Oxygen", "mass": 16, "config": "1s² 2s² 2p⁴"}, {"Z": 9, "sym": "F", "name": "Fluorine", "mass": 19, "config": "1s² 2s² 2p⁵"}, {"Z": 10, "sym": "Ne", "name": "Neon", "mass": 20, "config": "1s² 2s² 2p⁶"}, {"Z": 11, "sym": "Na", "name": "Sodium", "mass": 23, "config": "1s² 2s² 2p⁶ 3s¹"}, {"Z": 12, "sym": "Mg", "name": "Magnesium", "mass": 24, "config": "1s² 2s² 2p⁶ 3s²"}, {"Z": 13, "sym": "Al", "name": "Aluminium", "mass": 27, "config": "1s² 2s² 2p⁶ 3s² 3p¹"}, {"Z": 14, "sym": "Si", "name": "Silicon", "mass": 28, "config": "1s² 2s² 2p⁶ 3s² 3p²"}, {"Z": 15, "sym": "P", "name": "Phosphorus", "mass": 31, "config": "1s² 2s² 2p⁶ 3s² 3p³"}, {"Z": 16, "sym": "S", "name": "Sulfur", "mass": 32, "config": "1s² 2s² 2p⁶ 3s² 3p⁴"}, {"Z": 17, "sym": "Cl", "name": "Chlorine", "mass": 35.5, "config": "1s² 2s² 2p⁶ 3s² 3p⁵"}, {"Z": 18, "sym": "Ar", "name": "Argon", "mass": 40, "config": "1s² 2s² 2p⁶ 3s² 3p⁶"}, {"Z": 19, "sym": "K", "name": "Potassium", "mass": 39, "config": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹"}, {"Z": 20, "sym": "Ca", "name": "Calcium", "mass": 40, "config": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²"}];
 const DIFF = {"beginner": {"level": 1, "label": "🌱 入门", "color": "#22c55e", "xpMul": 0.6}, "easy": {"level": 2, "label": "📗 基础", "color": "#3b82f6", "xpMul": 0.8}, "medium": {"level": 3, "label": "📙 进阶", "color": "#f59e0b", "xpMul": 1.0}, "hard": {"level": 4, "label": "📕 挑战", "color": "#ef4444", "xpMul": 1.2}};
@@ -2248,16 +2306,25 @@ function submitAnswer(){
   const fb = document.getElementById('qFeedback');
   fb.className = 'q-feedback show ' + (isCorrect ? 'correct' : 'wrong');
   const timeLabel = timeSpent < EXPECTED_TIME_PER_Q ? `⚡ ${timeSpent}秒` : `${timeSpent}秒`;
+
+  const sevenCard = renderSevenCard(q);
+  const simpleExpl = (!sevenCard && q.explanation)
+    ? `<br><span style="display:block;margin-top:6px;padding:6px 8px;background:rgba(139,92,246,.08);border-radius:6px;font-size:.72rem;color:#c4b5fd">💡 ${q.explanation}</span>`
+    : '';
+
   fb.innerHTML = isCorrect
-    ? `✅ 正确！${correctAns} &nbsp;${timeLabel}<br><span style="opacity:.8">${getEncouragement(BATTLE.combo)}</span>${q.explanation ? `<br><span style="display:block;margin-top:6px;padding:6px 8px;background:rgba(139,92,246,.08);border-radius:6px;font-size:.72rem;color:#c4b5fd">💡 ${q.explanation}</span>` : ''}`
-    : `❌ 错误，正确答案是 ${correctAns}<br><span style="opacity:.8">已加入间隔复习队列 🔄</span>${q.explanation ? `<br><span style="display:block;margin-top:6px;padding:6px 8px;background:rgba(139,92,246,.08);border-radius:6px;font-size:.72rem;color:#c4b5fd">💡 ${q.explanation}</span>` : ''}`;
+    ? `✅ 正确！${correctAns} &nbsp;${timeLabel}<br><span style="opacity:.8">${getEncouragement(BATTLE.combo)}</span>${simpleExpl}${sevenCard}`
+    : `❌ 错误，正确答案是 ${correctAns}<br><span style="opacity:.8">已加入间隔复习队列 🔄</span>${simpleExpl}${sevenCard}`;
 
   BATTLE.answers.push({qid:q.id, correct:isCorrect, ans:userAns, time:timeSpent});
 
-  setTimeout(()=>{
-    BATTLE.current++;
-    renderQuestion();
-  }, isCorrect ? 1500 : 2000);
+  // 有 Seven 解析时不自动跳题，等学生点"下一题"；无解析时保持原自动跳转
+  if(!sevenCard){
+    setTimeout(()=>{
+      BATTLE.current++;
+      renderQuestion();
+    }, isCorrect ? 1500 : 2000);
+  }
 
   saveGame();
 }
@@ -2598,6 +2665,7 @@ async function loadDB(){
     }catch(e){
       // Use inline data — no action needed
     }
+    await loadSevenExplanations(); // Seven 解析数据（加载失败静默降级）
   }
   // Load learn_db for inline Study panel (already inlined)
   try { await loadLearnDB(); } catch(e) { console.warn('learn_db load failed:', e); }

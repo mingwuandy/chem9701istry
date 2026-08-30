@@ -1,0 +1,977 @@
+[
+  {
+    "id": "ch04_P1_0112",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t02"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Metallic bonding and melting point",
+      "reasoning": "Copper is a metallic element. In metallic bonding, the lattice consists of positive metal ions (cations) surrounded by a 'sea' of delocalised electrons. The strong electrostatic attraction between the copper ions (Cu/Cu²⁺) and the delocalised electrons requires a large amount of energy to overcome, giving copper a high melting point (1085 °C).",
+      "why_correct": "Option B correctly identifies that the high melting point is due to strong attractive forces between copper ions and delocalised electrons, which is the definition of metallic bonding.",
+      "why_others_wrong": "A is wrong because metallic bonding involves ions, not neutral atoms. C is wrong because it ignores the role of delocalised electrons. D is wrong because it refers to copper atoms rather than copper ions; in metallic bonding the metal exists as cations, not neutral atoms.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Metallic bonding"
+    }
+  },
+  {
+    "id": "ch04_P1_0113",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t02"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Bond energy calculation using enthalpy change",
+      "reasoning": "Using ΔH = Σ(bond energies broken) − Σ(bond energies formed). Bonds broken: 1 × N≡N (945 kJ mol⁻¹) + 1 × O=O (496 kJ mol⁻¹) = 1441 kJ mol⁻¹. Bonds formed: 2 × E(N–O). So 180 = 1441 − 2E(N–O), giving 2E(N–O) = 1261, E(N–O) = 630.5 ≈ 630 kJ mol⁻¹.",
+      "why_correct": "The calculated N–O bond energy of 630 kJ mol⁻¹ matches option A exactly.",
+      "why_others_wrong": "B (810) would result from incorrect arithmetic. C (1260) is the total for 2 moles of NO bonds, not per mole. D (1620) would come from adding instead of subtracting the enthalpy change.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond energy calculations"
+    }
+  },
+  {
+    "id": "ch04_P1_0114",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t02"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Hybridisation and bonding in ethene",
+      "reasoning": "In ethene (C₂H₄), each carbon forms 3 sigma bonds (2 C–H and 1 C–C) and has no lone pairs, giving 3 electron domains → sp² hybridisation. The molecule has 4 C–H σ bonds + 1 C–C σ bond = 5 σ bonds total, plus 1 C=C π bond formed by sideways overlap of unhybridised p orbitals.",
+      "why_correct": "Option B correctly states sp² hybridisation with 5 σ bonds and 1 π bond, matching the structure of ethene.",
+      "why_others_wrong": "A is wrong because it states only 4 σ bonds (missing one C–H or the C–C σ bond). C and D are wrong because they state sp³ hybridisation, which would apply to ethane (C₂H₆) not ethene.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Orbital hybridisation"
+    }
+  },
+  {
+    "id": "ch04_P1_0115",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t02"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Orbital overlap in sigma bond formation",
+      "reasoning": "In ethene, each carbon is sp² hybridised. The C–C σ bond is formed by head-on (axial) overlap of one sp² hybrid orbital from each carbon. An sp² hybrid orbital has one large lobe and one small lobe; the head-on overlap of the large lobes creates the σ bond. The remaining unhybridised p orbitals overlap sideways to form the π bond.",
+      "why_correct": "Option C correctly shows the head-on overlap of two sp² hybrid orbitals (each with a larger lobe and smaller lobe), which is the orbital interaction that forms the C–C σ bond in ethene.",
+      "why_others_wrong": "A shows s–s orbital overlap (spherical), which is incorrect for sp² hybridised carbon. B shows overlap involving what appears to be an sp or p orbital with unequal lobes in a different arrangement. D shows sideways p–p overlap, which forms a π bond, not a σ bond.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Orbital overlap and bond formation"
+    }
+  },
+  {
+    "id": "ch04_P1_0116",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t02"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Neutralisation stoichiometry calculation",
+      "reasoning": "The neutralisation reaction is H⁺ + OH⁻ → H₂O, so n(NaOH) = n(H⁺). n(H) = volume × concentration = 11 000 dm³ × 1.26 × 10⁻³ mol dm⁻³ = 13.86 mol. Mass of NaOH = n × Mᵣ = 13.86 × 40.0 = 554.4 g ≈ 554 g.",
+      "why_correct": "The calculated mass of 554 g matches option D.",
+      "why_others_wrong": "A (0.0214 g) and B (0.0504 g) would result from using an incorrect volume (e.g., 1 dm³ instead of 11 000 dm³). C (236 g) might come from using Mᵣ = 17 (NH₃) instead of 40 (NaOH), or other arithmetic errors.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Ionic bonding and stoichiometry"
+    }
+  },
+  {
+    "id": "ch04_P1_0117",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Nature of the C–H bond in ethene",
+      "reasoning": "In ethene, carbon is sp² hybridised and hydrogen uses its 1s orbital. The C–H bond is formed by head-on overlap of the carbon sp² hybrid orbital with the hydrogen 1s orbital, creating a σ bond. π bonds only form between p orbitals in sideways overlap.",
+      "why_correct": "Option C correctly identifies the C–H bond as a σ bond between an s orbital (H) and an sp² orbital (C).",
+      "why_others_wrong": "A and B are wrong because the C–H bond is a σ bond, not a π bond. D is wrong because carbon in ethene is sp² hybridised, not sp³ (sp³ would apply to ethane).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Orbital hybridisation and bond types"
+    }
+  },
+  {
+    "id": "ch04_P1_0118",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Bonding in the Al₂Cl dimer",
+      "reasoning": "Al₂Cl₆ has a dimeric structure with two Al atoms bridged by two Cl atoms. Each Al forms 2 terminal Al–Cl covalent bonds and 2 bridging bonds. Of the 4 bonds per Al, 2 are normal covalent (Al–Cl terminal) and the 2 bridging bonds involve Cl donating a lone pair to the electron-deficient Al (dative covalent). Total: 4 terminal covalent + 2 bridging covalent = 6 covalent bonds, plus 2 dative covalent bonds (one from each bridging Cl to the opposite Al).",
+      "why_correct": "Option B correctly identifies 6 covalent bonds and 2 dative (co-ordinate) covalent bonds in Al₂Cl.",
+      "why_others_wrong": "A is wrong because there are 2 dative bonds, not 1. C is wrong because there are dative bonds present. D is wrong because there are 6 covalent bonds, not 7, and there are dative bonds.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate (dative covalent) bonding"
+    }
+  },
+  {
+    "id": "ch04_P1_0119",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Types of bonding in Al₂Cl₆",
+      "reasoning": "Al₂Cl₆ is a covalent dimer. The terminal Al–Cl bonds are normal covalent bonds (shared electron pairs). The bridging Cl→Al bonds are dative (co-ordinate) covalent bonds, where each bridging Cl donates a lone pair to the electron-deficient Al atom. There is no ionic bonding because Al₂Cl₆ is a molecular (covalent) compound.",
+      "why_correct": "Option A correctly identifies both covalent and co-ordinate (dative covalent) bonding in Al₂Cl₆.",
+      "why_others_wrong": "B is wrong because it ignores the dative covalent bonds in the bridging structure. C and D are wrong because Al₂Cl₆ is a covalent molecular compound, not ionic.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate (dative covalent) bonding"
+    }
+  },
+  {
+    "id": "ch04_P1_0120",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Orbital overlap in the C=C double bond of ethene",
+      "reasoning": "In ethene, each carbon is sp² hybridised. The C=C double bond consists of: (1) a σ bond formed by head-on overlap of sp² hybrid orbitals from each carbon (sp²–sp² overlap), and (2) a π bond formed by sideways overlap of the unhybridised p orbitals on each carbon (p–p overlap). The sp² hybridisation leaves one unhybridised p orbital on each carbon perpendicular to the molecular plane.",
+      "why_correct": "Option A correctly identifies sp²–sp² overlap for the σ bond and p–p overlap for the π bond.",
+      "why_others_wrong": "B is wrong because the π bond involves p orbitals, not sp² orbitals. C and D are wrong because they state sp³–sp³ overlap for the σ bond, which would apply to a C–C single bond in alkanes, not the double bond in ethene.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Orbital overlap in double bonds"
+    }
+  },
+  {
+    "id": "ch04_P1_0121",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Dative covalent bond formation between PH₃ and H⁺",
+      "reasoning": "PH₃ has a lone pair of electrons on the phosphorus atom. When it reacts with H⁺ (which has an empty 1s orbital), the lone pair on P is donated to form a bond with H⁺. This is a dative (co-ordinate) covalent bond, where both electrons in the bond come from one atom (P). The product is PH₄⁺ (phosphonium ion), analogous to NH₄⁺.",
+      "why_correct": "Option A correctly identifies the interaction as a dative covalent bond, where P donates its lone pair to H⁺.",
+      "why_others_wrong": "B is wrong because dipole-dipole forces are intermolecular forces, not the bond formed in a chemical reaction. C is wrong because hydrogen bonding requires H bonded to N, O, or F — here H is accepting a lone pair, not forming a hydrogen bond. D is wrong because an ionic bond involves electron transfer, not electron pair sharing.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate (dative covalent) bonding"
+    }
+  },
+  {
+    "id": "ch04_P1_0122",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Electron count and bond angle change in NH₄⁺ formation",
+      "reasoning": "NH₄⁺ has: N contributes 5 valence electrons, 4 H contribute 4 electrons, minus 1 for the positive charge = 10 electrons total. In NH₃, the H–N–H bond angle is 107° (compressed from 109.5° by the lone pair). In NH₄⁺, all 4 electron pairs are bonding pairs with no lone pair, giving a regular tetrahedral angle of 109.5°. The angle increases from 107° to 109.5°.",
+      "why_correct": "Option D correctly states 10 electrons and an increase in the H–N–H bond angle.",
+      "why_others_wrong": "A is wrong because NH₄⁺ has 10 electrons (not 8), and the angle increases not decreases. B is wrong because the electron count is 10, not 8. C is wrong because the angle increases (lone pair removed), not decreases.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0123",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Molecular shapes of PCl₃ and [PCl₄]⁺",
+      "reasoning": "PCl: P has 5 valence electrons, forms 3 bonds with Cl, leaving 1 lone pair. 4 electron domains → tetrahedral electron geometry, but with 1 lone pair the molecular shape is pyramidal (bond angle ~107°). [PCl₄]⁺: P has 5 valence electrons, forms 4 bonds, loses 1 electron (positive charge), leaving 0 lone pairs. 4 bonding pairs → regular tetrahedral shape (bond angle 109.5°).",
+      "why_correct": "Option B correctly identifies PCl₃ as pyramidal and [PCl₄]⁺ as tetrahedral.",
+      "why_others_wrong": "A is wrong because [PCl₄]⁺ is tetrahedral, not square planar (which requires 4 bonding pairs + 2 lone pairs, i.e., 6 electron domains). C is wrong because PCl₃ is pyramidal, not tetrahedral. D is wrong because PCl₃ is pyramidal, not trigonal planar.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0124",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Bond angle comparison in CHCH=NOH (an oxime)",
+      "reasoning": "In the structure CH₃–CH=N–OH: angle x is the H–C–H angle at the sp³ carbon (CH₃ group) ≈ 109.5°. Angle y is the H–C=N angle at the sp² carbon ≈ 120°. Angle z is the C=N–O angle at the nitrogen, which is sp² hybridised with a lone pair; the lone pair compresses this angle to approximately 105–108°. Therefore z < x < y.",
+      "why_correct": "Option A (z, x, y) correctly orders the angles from smallest to largest.",
+      "why_others_wrong": "B (y, z, x) has the largest angle first, which is the reverse order. C (x, z, y) incorrectly places x before z. D (z, y, x) incorrectly places y before x.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond angles and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0125",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Molecular shape from electron pair arrangement",
+      "reasoning": "Atom X has 4 electron pairs (tetrahedral electron geometry), including at least 1 bond pair and at least 1 lone pair. Possible arrangements: 3 bond pairs + 1 lone pair → pyramidal (non-linear); 2 bond pairs + 2 lone pairs → bent/non-linear (like H₂O); 1 bond pair + 3 lone pairs → diatomic (linear, but this is a trivial case). In all non-trivial cases with lone pairs, the molecular shape is non-linear because lone pairs repel bond pairs and distort the geometry.",
+      "why_correct": "Option B (non-linear) is correct because any arrangement with 4 electron pairs including lone pairs produces a non-linear molecular shape.",
+      "why_others_wrong": "A (linear) would require 2 electron domains (e.g., CO₂) or 5+ domains with specific arrangements. C (trigonal bipyramidal) requires 5 electron domains. D (trigonal planar) requires 3 electron domains with no lone pairs.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0126",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Bond angles in different molecular geometries",
+      "reasoning": "C₂H₆ (ethane): each carbon is sp³ hybridised with tetrahedral geometry. All H–C–H and H–C–C angles are approximately 109.5°, with no 90° or 180° angles. CO₂: linear molecule with O=C=O bond angle of 180°. PF₅: trigonal bipyramidal with equatorial F–P–F angles of 120° and axial F–P–F angles of 90°. SF₆: octahedral with all F–S–F angles of 90° (adjacent) and 180° (opposite).",
+      "why_correct": "Option A (C₂H) is correct because ethane only has ~109.5° bond angles, with no 90° or 180° angles.",
+      "why_others_wrong": "B (CO₂) has a 180° bond angle. C (PF₅) has 90° angles between axial and equatorial positions. D (SF₆) has both 90° and 180° angles.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and bond angles"
+    }
+  },
+  {
+    "id": "ch04_P1_0127",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Dot-and-cross diagram for N₅⁺ ion",
+      "reasoning": "N⁺ has 5 nitrogen atoms with a total of 5 × 5 − 1 = 24 valence electrons. Each nitrogen needs to satisfy the octet rule (8 electrons around it). The correct structure must show the appropriate distribution of bonding pairs and lone pairs across all 5 nitrogen atoms, with the overall +1 charge. In the correct diagram, each N atom has a complete octet through a combination of bonding pairs and lone pairs.",
+      "why_correct": "Option C correctly shows the electron arrangement where each nitrogen atom has a complete octet, with the appropriate number of bonding and non-bonding electrons summing to 24 valence electrons total.",
+      "why_others_wrong": "A, B, and D show incorrect distributions of electrons that either give some nitrogen atoms incomplete octets or have the wrong total electron count.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Dot-and-cross diagrams"
+    }
+  },
+  {
+    "id": "ch04_P1_0128",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Counting bonding electrons in molecules",
+      "reasoning": "Bonding electrons are those shared in covalent bonds. NCl₃: 3 N–Cl single bonds = 3 × 2 = 6 bonding electrons. H₂S: 2 S–H bonds = 4 bonding electrons. C₂H₄: 1 C=C double bond (4 e⁻) + 4 C–H bonds (8 e⁻) = 12 bonding electrons. SF₆: 6 S–F bonds = 12 bonding electrons.",
+      "why_correct": "Option A (NCl₃) is correct with exactly 6 bonding electrons (3 bonds × 2 electrons each).",
+      "why_others_wrong": "B (H₂S) has only 4 bonding electrons. C (C₂H₄) has 12 bonding electrons. D (SF₆) has 12 bonding electrons.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Covalent bonding and electron counting"
+    }
+  },
+  {
+    "id": "ch04_P1_0129",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Bonding and lone pairs in Al₂Cl₆ at 200 °C",
+      "reasoning": "At 200 °C, AlCl₃ exists as the dimer Al₂Cl₆ (Mᵣ = 2 × 27 + 6 × 35.5 = 267, confirming the dimeric formula). Structure: each Al has 2 terminal Cl atoms (normal covalent bonds) and 2 bridging Cl atoms. The 4 terminal Al–Cl bonds are covalent, plus 2 bridging Al–Cl bonds = 6 covalent bonds total. The 2 bridging Cl atoms each donate a lone pair to the opposite Al, forming 2 dative covalent bonds. Lone pairs: each terminal Cl has 3 lone pairs (6 Cl × 3 = 18), but the 2 bridging Cl each have 2 lone pairs (one used for dative bond), so 4 terminal Cl × 3 + 2 bridging Cl × 2 = 12 + 4 = 16 lone pairs.",
+      "why_correct": "Option B correctly identifies 6 covalent bonds, 2 dative covalent bonds, and 16 lone pairs.",
+      "why_others_wrong": "A is wrong because it states 0 lone pairs (each Cl must have lone pairs). C is wrong because it overcounts lone pairs (18 would be if all 6 Cl had 3 lone pairs each, ignoring the dative bonds). D is wrong because it describes AlCl₃ monomer (3 covalent bonds, 0 dative, 9 lone pairs), not the dimer Al₂Cl₆.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate bonding and electron counting"
+    }
+  },
+  {
+    "id": "ch04_P1_0130",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Comparing molecular shapes of covalent species",
+      "reasoning": "BeCl₂: Be has 2 bonding pairs, 0 lone pairs → linear. CO₂: C has 2 double bonds (2 electron domains) → linear. Same shape. CH₄: tetrahedral. NH₄⁺: tetrahedral. Same shape. NH₃: 3 bonding pairs + 1 lone pair → pyramidal. BF₃: 3 bonding pairs, 0 lone pairs → trigonal planar. Different shapes. SCl₂: 2 bonding pairs + 2 lone pairs → bent/non-linear. H₂O: 2 bonding pairs + 2 lone pairs → bent/non-linear. Same shape.",
+      "why_correct": "Option C (NH₃ and BF₃) is correct because NH₃ is pyramidal while BF₃ is trigonal planar — different shapes.",
+      "why_others_wrong": "A: BeCl₂ and CO₂ are both linear. B: CH₄ and NH₄⁺ are both tetrahedral. D: SCl₂ and H₂O are both bent/non-linear.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0131",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Lone pair identification in carbon species",
+      "reasoning": "CH₃ (methyl radical): C has 4 valence e⁻, 3 bonds to H use 3 e⁻, leaving 1 unpaired electron (not a lone pair). CH⁺ (methyl cation): C has 4 − 1 = 3 valence e⁻, all used in 3 bonds to H, 0 lone pairs. CH₃⁻ (methyl anion): C has 4 + 1 = 5 valence e⁻, 3 bonds to H use 3 e⁻, leaving 2 e⁻ = 1 lone pair. CH₄: C has 4 valence e⁻, all 4 used in bonds to H, 0 lone pairs.",
+      "why_correct": "Option C (CH₃⁻) is correct because the extra electron gives carbon a lone pair (3 bond pairs + 1 lone pair = 4 electron domains, pyramidal shape).",
+      "why_others_wrong": "A (CH₃) has an unpaired electron (radical), not a lone pair. B (CH₃⁺) has no lone pairs (electron-deficient, trigonal planar). D (CH₄) has no lone pairs (tetrahedral).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Electron pair counting"
+    }
+  },
+  {
+    "id": "ch04_P1_0132",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Smallest bond angle among molecules and ions",
+      "reasoning": "C₂H₄ (ethene): sp² carbons, H–C–H angle ≈ 117–120°. CH₃COCH₃ (propanone): sp³ carbons in CH₃ groups have H–C–H ≈ 109.5°; the sp² carbonyl carbon has bond angles ≈ 120°. NH₄⁺: regular tetrahedral, H–N–H = 109.5°. NH₃: pyramidal with 1 lone pair compressing the H–N–H angle to 107°.",
+      "why_correct": "Option D (NH₃) has the smallest bond angle at 107°, compressed by lone pair–bond pair repulsion.",
+      "why_others_wrong": "A (C₂H₄) has angles of ~120°. B (CH₃COCH₃) has angles of ~109.5° and ~120°. C (NH₄⁺) has angles of 109.5° (no lone pair compression).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond angles and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0133",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Thermal decomposition stoichiometry of calcium nitrate",
+      "reasoning": "The thermal decomposition equation is: 2Ca(NO₃)₂ → 2CaO + 4NO₂ + O₂. The solid residue is CaO. Mᵣ(Ca(NO₃)₂) = 40 + 2(14 + 48) = 164. Mᵣ(CaO) = 56. Moles of Ca(NO₃)₂ = 4.10/164 = 0.025 mol. From the equation, 2 mol Ca(NO₃)₂ produces 2 mol CaO, so 0.025 mol Ca(NO₃)₂ produces 0.025 mol CaO. Mass of CaO = 0.025 × 56 = 1.40 g.",
+      "why_correct": "Option C (1.40 g) is correct, calculated from the stoichiometric ratio of Ca(NO₃)₂ to CaO.",
+      "why_others_wrong": "A (0.70 g) would be half the correct answer (possibly using wrong stoichiometry). B (1.00 g) might come from incorrect Mᵣ calculation. D (2.25 g) could result from using wrong products or molar masses.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Ionic compounds and stoichiometry"
+    }
+  },
+  {
+    "id": "ch04_P1_0134",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Dative bond representation in NH₄⁺",
+      "reasoning": "In NH₄⁺, the N atom donates its lone pair to H⁺ to form a dative (co-ordinate) covalent bond. The arrow convention shows the arrow pointing from the donor atom (N) towards the acceptor atom (H⁺). The overall charge of the ammonium ion is +1. Therefore, the correct diagram shows an arrow pointing from N upwards to the top H, with a + charge on the ion.",
+      "why_correct": "Option C correctly shows the arrow pointing from N to H (upward) with a + charge, representing the dative bond where N donates its lone pair to H⁺.",
+      "why_others_wrong": "A shows the arrow pointing from H to N (downward), which reverses the direction of electron donation. B has the wrong charge (−). D has the wrong charge (−) even though the arrow direction is correct.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate (dative covalent) bonding representation"
+    }
+  },
+  {
+    "id": "ch04_P1_0135",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t06"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Planar molecular geometry",
+      "reasoning": "C₂H (ethene): all 6 atoms lie in one plane (sp² carbons, planar geometry). CO₂: linear molecule, all 3 atoms in one line (therefore in one plane). H₂O: bent molecule with only 3 atoms, which always lie in one plane. AlCl₃: trigonal planar ✓, but PH₃ is pyramidal ✗ and NH₃ is pyramidal ✗. BF₃: trigonal planar ✓, C₂H₄: planar ✓, but C₃H₆ (propene) has a tetrahedral CH₃ group .",
+      "why_correct": "Option D (C₂H, CO₂, H₂O) is correct because all three molecules have all their atoms in one plane.",
+      "why_others_wrong": "A: PH₃ is pyramidal (not planar). B: NH₃ is pyramidal (not planar). C: C₃H₆ (propene) has a CH₃ group with tetrahedral geometry, so not all atoms are in one plane.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and planarity"
+    }
+  },
+  {
+    "id": "ch04_P1_0136",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Linear arrangement of three atoms",
+      "reasoning": "In SF₆ (octahedral geometry), the six F atoms are arranged at the vertices of an octahedron around the central S atom. The F–S–F angle between opposite (axial) F atoms is exactly 180°, meaning three atoms (F–S–F) lie in a straight line. Poly(ethene): C–C–C angles are ~109.5° (tetrahedral). Propane: C–C–C angle is ~109.5°. SiCl₄: tetrahedral, Cl–Si–Cl angles are ~109.5°.",
+      "why_correct": "Option D (SF₆) is correct because the octahedral geometry has F–S–F angles of 180° along the axial positions.",
+      "why_others_wrong": "A: poly(ethene) has tetrahedral C atoms with ~109.5° bond angles. B: propane has tetrahedral C atoms with ~109.5° C–C–C angle. C: SiCl₄ is tetrahedral with ~109.5° bond angles.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and bond angles"
+    }
+  },
+  {
+    "id": "ch04_P1_0137",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Bond angles in ethane and its combustion products",
+      "reasoning": "Ethane (C₂H₆): each carbon is sp³ hybridised with tetrahedral geometry, so all bond angles (H–C–H and H–C–C) are approximately 109.5°. Combustion products: CO₂ is linear with O=C=O bond angle of 180°; H₂O is bent with H–O–H bond angle of 104.5° (compressed by 2 lone pairs on O).",
+      "why_correct": "Option C correctly states ethane has 109.5° angles and the combustion products have 104.5° (H₂O) and 180° (CO₂) angles.",
+      "why_others_wrong": "A and B incorrectly state ethane has 90° angles. D incorrectly states the combustion products have 109.5° angles (water is 104.5°, not 109.5°).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond angles in different molecules"
+    }
+  },
+  {
+    "id": "ch04_P1_0138",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Ordering molecules by increasing bond angle",
+      "reasoning": "NH₃: pyramidal, H–N–H = 107° (compressed by 1 lone pair). CH₄: tetrahedral, H–C–H = 109.5°. CO₂: linear, O=C=O = 180°. The order NH₃ (107°) → CH (109.5°) → CO₂ (180°) shows increasing bond angles.",
+      "why_correct": "Option C correctly orders the molecules from smallest to largest bond angle.",
+      "why_others_wrong": "A: CH₄ (109.5°) → BF₃ (120°) → NH (107°) — not increasing (NH₃ is smallest). B: H₂O (104.5°) → CO₂ (180°) → BF₃ (120°) — not increasing. D: NH₃ (107°) → CH₄ (109.5°) → H₂O (104.5°) — not increasing (H₂O is smallest).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond angle trends"
+    }
+  },
+  {
+    "id": "ch04_P1_0139",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Shapes and bonding in ammonia and ammonium ion",
+      "reasoning": "NH₃: N has 3 bond pairs + 1 lone pair → pyramidal shape. All N–H bonds are σ bonds (head-on overlap of sp³ orbital on N with 1s orbital on H). NH₄⁺: N has 4 bond pairs + 0 lone pairs → regular tetrahedral shape. All N–H bonds are σ bonds (one is a dative σ bond, but it is still a σ bond). Neither species contains π bonds.",
+      "why_correct": "Option A correctly states: NH₃ is pyramidal, NH₄ is regular tetrahedral, and both contain only σ bonds.",
+      "why_others_wrong": "B is wrong because NH₄⁺ contains σ bonds, not π bonds. C and D are wrong because they swap the shapes (NH₃ is pyramidal, not tetrahedral; NH₄⁺ is tetrahedral, not pyramidal).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and bond types"
+    }
+  },
+  {
+    "id": "ch04_P1_0140",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Lone pair counting in C₂O (dicarbon monoxide)",
+      "reasoning": "Structure: C=C=O. Terminal C: 4 valence e⁻, forms double bond to central C (uses 2 e⁻ from C), leaving 2 e⁻ = 1 lone pair. Central C: 4 valence e⁻, forms two double bonds (uses all 4 e), leaving 0 lone pairs. O: 6 valence e⁻, forms double bond to C (uses 2 e⁻ from O), leaving 4 e⁻ = 2 lone pairs. Total lone pairs = 1 + 0 + 2 = 3.",
+      "why_correct": "Option C (3 lone pairs) is correct: 1 on the terminal C and 2 on the O atom.",
+      "why_others_wrong": "A (1) undercounts by missing the lone pairs on oxygen. B (2) might count only the oxygen lone pairs. D (4) overcounts.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Lone pair counting in molecules"
+    }
+  },
+  {
+    "id": "ch04_P1_0141",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Non-planar molecular species",
+      "reasoning": "BF₃: B has 3 bond pairs, 0 lone pairs → trigonal planar (all atoms in one plane). CH₃⁺: C has 3 bond pairs, 0 lone pairs → trigonal planar. C₂H₄: sp² carbons, all 6 atoms in one plane. NH: N has 3 bond pairs + 1 lone pair → pyramidal shape, with N above the plane of the 3 H atoms. Not planar.",
+      "why_correct": "Option D (NH₃) is correct because the lone pair on nitrogen pushes the H atoms into a pyramidal arrangement, making it non-planar.",
+      "why_others_wrong": "A (BF₃) is trigonal planar. B (CH₃⁺) is trigonal planar. C (C₂H₄) is planar.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and planarity"
+    }
+  },
+  {
+    "id": "ch04_P1_0142",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Bond angle at nitrogen in methyl isocyanate (CH₃NCO)",
+      "reasoning": "In CH₃–N=C=O, the N atom is bonded to C(CH₃) by a single bond and to C(=O) by a double bond, and has one lone pair. This gives N three electron domains (1 single bond + 1 double bond + 1 lone pair) → sp² hybridisation → trigonal planar electron geometry. The C–N=C bond angle is approximately 120°, slightly compressed by the lone pair but still close to 120°.",
+      "why_correct": "Option C (120°) is correct, consistent with sp² hybridisation at the nitrogen atom.",
+      "why_others_wrong": "A (104°) would correspond to sp³ hybridisation with 2 lone pairs (like water). B (109°) would correspond to sp³ hybridisation. D (180°) would correspond to sp hybridisation (linear), which would require only 2 electron domains on N.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond angles and hybridisation"
+    }
+  },
+  {
+    "id": "ch04_P1_0143",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Smallest H–X–H bond angle in hydrides",
+      "reasoning": "BH₃: B has 3 bond pairs, 0 lone pairs → trigonal planar, H–B–H = 120°. CH₄: C has 4 bond pairs, 0 lone pairs → tetrahedral, H–C–H = 109.5°. C₂H₆: each C is sp³, H–C–H ≈ 109.5°. NH₃: N has 3 bond pairs + 1 lone pair → pyramidal, H–N–H = 107° (compressed by lone pair–bond pair repulsion).",
+      "why_correct": "Option D (NH₃) has the smallest H–X–H bond angle at 107° due to lone pair compression.",
+      "why_others_wrong": "A (BH₃) has the largest angle at 120°. B (CH₄) and C (C₂H₆) both have angles of ~109.5°.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond angles and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0144",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Comparing molecular shapes — different shapes pair",
+      "reasoning": "BeCl₂: linear (2 bond pairs, 0 lone pairs on Be). CO₂: linear (2 double bonds, 0 lone pairs on C). Same shape. CH: tetrahedral. NH₄⁺: tetrahedral. Same shape. NH₃: pyramidal (3 bond pairs + 1 lone pair). BF₃: trigonal planar (3 bond pairs, 0 lone pairs). Different shapes. SCl₂: bent/non-linear (2 bond pairs + 2 lone pairs). H₂O: bent/non-linear (2 bond pairs + 2 lone pairs). Same shape.",
+      "why_correct": "Option C (NH₃ and BF₃) is correct because NH₃ is pyramidal while BF₃ is trigonal planar.",
+      "why_others_wrong": "A: both linear. B: both tetrahedral. D: both bent/non-linear.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes comparison"
+    }
+  },
+  {
+    "id": "ch04_P1_0145",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t03"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Zero dipole moment — molecular symmetry",
+      "reasoning": "CCl₄ has a regular tetrahedral geometry with 4 identical C–Cl bonds. The individual C–Cl bond dipoles are equal in magnitude and symmetrically arranged, so they cancel completely, giving a net dipole moment of zero. CH₃Cl: tetrahedral but with different substituents (3 H, 1 Cl), dipoles don't cancel. CH₂Cl₂: tetrahedral with 2 H and 2 Cl, asymmetric, net dipole. CHCl₃: tetrahedral with 1 H and 3 Cl, asymmetric, net dipole.",
+      "why_correct": "Option D (CCl₄) is correct because its symmetric tetrahedral geometry causes all bond dipoles to cancel.",
+      "why_others_wrong": "A (CH₃Cl) has a net dipole due to the asymmetric substitution. B (CH₂Cl₂) has a net dipole. C (CHCl₃) has a net dipole.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular polarity and symmetry"
+    }
+  },
+  {
+    "id": "ch04_P1_0146",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Substances with only instantaneous dipole-induced dipole forces",
+      "reasoning": "Instantaneous dipole-induced dipole forces (London dispersion forces) are the only intermolecular forces in non-polar molecules. Hydrogen chloride (HCl): polar, has permanent dipole-dipole forces. Methanol (CH₃OH): has O–H bond, forms hydrogen bonds. Octane (C₈H₁): non-polar hydrocarbon, only ID-ID forces. Water (H₂O): has O–H bonds, forms strong hydrogen bonds.",
+      "why_correct": "Option C (octane) is correct because it is a non-polar hydrocarbon with only temporary dipole-induced dipole (London dispersion) forces.",
+      "why_others_wrong": "A (HCl) has permanent dipole-dipole forces. B (methanol) has hydrogen bonding. D (water) has hydrogen bonding.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Intermolecular forces"
+    }
+  },
+  {
+    "id": "ch04_P1_0147",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Matching bonding descriptions to compounds",
+      "reasoning": "Substance 1 (permanent dipole-dipole): needs a polar molecule without H-bonding. CH₂Cl₂ is polar (asymmetric tetrahedral) with permanent dipole-dipole forces. Substance 2 (weak forces = ID-ID only): needs a non-polar molecule. CH₄ is non-polar with only ID-ID forces. Substance 3 (hydrogen bonding): needs a molecule with O–H, N–H, or F–H bond. CH₃OH has an O–H bond and forms hydrogen bonds.",
+      "why_correct": "Option C correctly matches: substance 1 = CH₂Cl₂, substance 2 = CH₄, substance 3 = CH₃OH.",
+      "why_others_wrong": "A: CH₃OH has H-bonding (not just dipole-dipole) for substance 1. B: Al₂Cl₆ is not primarily characterised by permanent dipole-dipole forces. D: CH₄ has only ID-ID forces, not permanent dipole-dipole for substance 1.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Intermolecular forces identification"
+    }
+  },
+  {
+    "id": "ch04_P1_0148",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Interaction between water molecules and metal cations",
+      "reasoning": "Water is a polar molecule with a permanent dipole (δ⁻ on O, δ⁺ on H). Metal cations are positively charged ions. The interaction between a permanent ion charge and a molecular dipole is called an ion-dipole interaction. This is the force responsible for the hydration of metal ions in aqueous solution, where water molecules orient their δ⁻ oxygen atoms towards the positive metal cation.",
+      "why_correct": "Option C (ion-dipole interactions) correctly describes the force between water molecules (dipoles) and metal cations (ions).",
+      "why_others_wrong": "A (dipole-dipole) describes interactions between two polar molecules, not between an ion and a molecule. B (hydrogen bonds) are a specific type of dipole-dipole interaction between molecules with O–H, N–H, or F–H bonds. D (ionic bonds) involve electron transfer between atoms, not ion-molecule interactions.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Ion-dipole interactions"
+    }
+  },
+  {
+    "id": "ch04_P1_0149",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Largest overall molecular dipole",
+      "reasoning": "A: Cl₂C=CCl₂ (tetrachloroethene) — symmetric, bond dipoles cancel, zero net dipole. B: H₂C=O (formaldehyde) — the C=O bond dipole (Cδ⁺=Oδ⁻) is reinforced by the small C–H bond dipoles, giving a significant net dipole (~2.9 D). C: Cl₂C=O (phosgene) — the C=O dipole is partially cancelled by the two C–Cl dipoles pointing in the opposite direction, giving a smaller net dipole (~1.2 D). D: O=C=O (CO₂) — linear and symmetric, zero net dipole.",
+      "why_correct": "Option B (formaldehyde, H₂C=O) has the largest overall dipole because the C=O bond dipole is reinforced by the C–H bond dipoles.",
+      "why_others_wrong": "A has zero dipole (symmetric). C has a smaller dipole than B because the C–Cl dipoles partially oppose the C=O dipole. D has zero dipole (linear symmetric).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular polarity and dipole moments"
+    }
+  },
+  {
+    "id": "ch04_P1_0150",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Boiling points of hydrides and intermolecular forces",
+      "reasoning": "PH₃ (18 electrons) and HCl (18 electrons) have similar boiling points (185 K vs 188 K) because they have the same number of electrons and similar molecular sizes, resulting in similar strengths of instantaneous dipole-induced dipole (London dispersion) forces. Neither forms hydrogen bonds (P and Cl are not electronegative enough, and PH₃ has no H bonded to N/O/F).",
+      "why_correct": "Option D correctly explains that PH₃ and HCl have similar boiling points due to the same number of electrons and similar intermolecular forces.",
+      "why_others_wrong": "A is wrong because PH₃ does have instantaneous dipole-induced dipole forces. B is wrong because boiling point depends on intermolecular forces, not bond energy (H–F bond energy is irrelevant to boiling point). C is wrong because individual H-bonds in HF are actually stronger than in H₂O (F is more electronegative); H₂O has a higher bp because each molecule can form more H-bonds (2 donors + 2 acceptors vs 1 donor + 3 acceptors for HF).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Intermolecular forces and boiling points"
+    }
+  },
+  {
+    "id": "ch04_P1_0151",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Interaction between water molecules and metal cations",
+      "reasoning": "This is the same concept as ch04_P1_0148. Water molecules have a permanent dipole (O is δ⁻, H is δ). Metal cations carry a positive charge. The electrostatic attraction between the ion charge and the molecular dipole is an ion-dipole interaction, which is the primary force in the hydration of metal ions.",
+      "why_correct": "Option C (ion-dipole interactions) is correct for the same reasons as explained above.",
+      "why_others_wrong": "A (dipole-dipole) applies between two polar molecules. B (hydrogen bonds) are specific intermolecular forces between molecules. D (ionic bonds) involve electron transfer between atoms.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Ion-dipole interactions"
+    }
+  },
+  {
+    "id": "ch04_P1_0152",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Changes involving only ID-ID force disruption",
+      "reasoning": "C₂H₅OH(l) → C₂H₅OH(g): ethanol has H-bonding, so H-bonds and ID-ID forces are overcome. H₂O(s) → H₂O(l): water has H-bonding, so H-bonds are overcome. O₂(s) → O₂(l): O₂ is a non-polar diatomic molecule with only ID-ID forces; melting overcomes only these forces. C₄H₁₀(l) → C₄H₁₀(s): this is freezing (forces being formed, not overcome), and butane only has ID-ID forces anyway.",
+      "why_correct": "Option C (O₂(s) → O₂(l)) is correct because O₂ is non-polar and melting only overcomes ID-ID forces.",
+      "why_others_wrong": "A involves overcoming H-bonds. B involves overcoming H-bonds. D is a freezing process (forces being established, not overcome).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Intermolecular forces in phase changes"
+    }
+  },
+  {
+    "id": "ch04_P1_0153",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Substances with only temporary dipole forces in liquid state",
+      "reasoning": "Bromine (Br₂): non-polar diatomic molecule, only ID-ID (temporary dipole) forces between molecules. Ethanol (C₂H₅OH): has O–H bond, forms hydrogen bonds. Hydrogen chloride (HCl): polar molecule, has permanent dipole-dipole forces. Water (H₂O): has O–H bonds, forms strong hydrogen bonds.",
+      "why_correct": "Option A (bromine) is correct because Br₂ is non-polar and only has temporary dipole-induced dipole forces.",
+      "why_others_wrong": "B (ethanol) has hydrogen bonding. C (HCl) has permanent dipole-dipole forces. D (water) has hydrogen bonding.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Intermolecular forces classification"
+    }
+  },
+  {
+    "id": "ch04_P1_0154",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Molecule with no overall dipole — symmetry",
+      "reasoning": "This is the same concept as ch04_P1_0145. CCl₄ has a regular tetrahedral geometry with 4 identical C–Cl bonds symmetrically arranged. The individual bond dipoles cancel completely, giving zero net dipole moment. CH₃Cl, CH₂Cl₂, and CHCl₃ all have asymmetric tetrahedral geometries with net dipoles.",
+      "why_correct": "Option D (CCl₄) is correct due to its symmetric tetrahedral geometry.",
+      "why_others_wrong": "A (CHCl), B (CH₂Cl₂), and C (CHCl₃) all have net dipole moments due to asymmetric substitution.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular polarity and symmetry"
+    }
+  },
+  {
+    "id": "ch04_P1_0155",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t07"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Largest overall dipole among organic molecules",
+      "reasoning": "A: (CH₃)₂C=CH₂ (2-methylpropene) — nearly symmetric alkene, small dipole. B: (CH₃)₂C=O (propanone/acetone) — the C=O bond has a large dipole (~2.4 D), and the two electron-donating CH₃ groups reinforce this dipole, giving a net dipole of ~2.9 D. C: Cl₂C=O (phosgene) — the C=O dipole is partially cancelled by the opposing C–Cl dipoles, net dipole ~1.2 D. D: (CH₃)(Cl)C=C(Cl)(CH₃) — if trans, the dipoles largely cancel; small net dipole.",
+      "why_correct": "Option B (propanone/acetone) has the largest overall dipole due to the strong C=O bond dipole reinforced by the methyl groups.",
+      "why_others_wrong": "A has a small dipole. C has a moderate dipole (C–Cl dipoles oppose C=O). D has a small dipole due to partial cancellation.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular polarity and dipole moments"
+    }
+  },
+  {
+    "id": "ch04_P1_0156",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Highest boiling point organic compound",
+      "reasoning": "Boiling point depends on the strength of intermolecular forces. C(CH₃)₄ (neopentane): non-polar, only ID-ID forces, compact shape reduces surface area. CH₃CH₂CH₂CH₂CH₃ (pentane): non-polar, only ID-ID forces, larger surface area than neopentane. CH₃COCH₂CH₃ (butanone): polar, has permanent dipole-dipole forces + ID-ID. CH₃CH(OH)CH₂CH (butan-2-ol): has O–H bond, forms hydrogen bonds + dipole-dipole + ID-ID. Hydrogen bonding is the strongest intermolecular force among these options.",
+      "why_correct": "Option D (butan-2-ol) has the highest boiling point due to hydrogen bonding.",
+      "why_others_wrong": "A and B only have ID-ID forces (lower bp). C has dipole-dipole forces (intermediate bp). D has hydrogen bonding (highest bp).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Intermolecular forces and boiling points"
+    }
+  },
+  {
+    "id": "ch04_P1_0157",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Ionisation energy trends and covalent compound formation",
+      "reasoning": "The graph shows 4 elements with consecutive atomic numbers below 20. The pattern of high IE at A and B, sharp drop at C, slight rise at D indicates: B is a noble gas (highest IE), C is an alkali metal (lowest IE), A is the halogen before the noble gas, D is the alkaline earth metal after the alkali metal. So A = F (Z=9), B = Ne (Z=10), C = Na (Z=11), D = Mg (Z=12). For HX to be covalent, X must be a non-metal. HF is covalent (X = F = A). HNa and HMg would be ionic hydrides. HNe doesn't exist.",
+      "why_correct": "Option A is correct: element A (fluorine) forms the covalent compound HF.",
+      "why_others_wrong": "B (Ne) is a noble gas and doesn't form compounds. C (Na) forms ionic NaH. D (Mg) forms ionic MgH₂.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Ionisation energy and bonding type"
+    }
+  },
+  {
+    "id": "ch04_P1_0158",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Hydrogen bonding and physical states of hydrides",
+      "reasoning": "H₂O is a liquid at RTP (bp 100 °C) while H₂S is a gas (bp −60 °C). This large difference is due to hydrogen bonding in water. Oxygen is highly electronegative (3.44) and small, so O–H···O hydrogen bonds are strong. Sulfur is less electronegative (2.58) and larger, so S–H···S hydrogen bonds are negligible. The hydrogen bonding in water creates a network of strong intermolecular attractions, requiring much more energy to separate the molecules.",
+      "why_correct": "Option C correctly identifies hydrogen bonding in H₂O (but not in H₂S) as the reason for the difference in physical states.",
+      "why_others_wrong": "A is irrelevant (ionisation energies don't determine physical state). B is wrong because boiling point depends on intermolecular forces, not covalent bond strength. D is wrong because ID-ID forces in H₂S are actually stronger than in H₂O (more electrons), yet H₂S has a lower bp.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Hydrogen bonding and physical properties"
+    }
+  },
+  {
+    "id": "ch04_P1_0159",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Bond strength comparison: Si–Si vs C–C",
+      "reasoning": "Silicon is in Period 3, below carbon in Group 14. Si has a larger atomic radius than C (3 additional electron shells). The larger atomic radius means the Si–Si bond is longer than the C–C bond. Longer bonds have poorer orbital overlap and weaker bonding interactions, resulting in lower bond energy. The Si–Si bond energy (~226 kJ mol⁻¹) is significantly less than the C–C bond energy (~347 kJ mol⁻¹).",
+      "why_correct": "Option A correctly identifies that silicon's larger atomic radius leads to a longer, weaker Si–Si bond.",
+      "why_others_wrong": "B is wrong because greater nuclear charge would increase attraction, not decrease bond strength. C is wrong because first ionisation energy relates to removing an electron, not bond strength. D is wrong because metallic character doesn't directly explain covalent bond strength differences.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Bond strength and atomic size"
+    }
+  },
+  {
+    "id": "ch04_P1_0160",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Tendency to form covalent compounds",
+      "reasoning": "Boron (Group 13, Period 2) has a high charge density (small size, +3 charge) which strongly polarises anions (Fajans' rules). This polarisation leads to significant covalent character in boron compounds. Boron forms predominantly covalent compounds (e.g., BCl₃, BF₃, B₂H₆). Magnesium and potassium are metals that form ionic compounds. Neon is a noble gas that doesn't readily form compounds.",
+      "why_correct": "Option A (boron) is correct because its high charge density and small size favour covalent bonding.",
+      "why_others_wrong": "B (magnesium) forms mainly ionic compounds (Mg²⁺ has lower charge density). C (neon) is inert. D (potassium) forms ionic compounds (K⁺ has low charge density).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Factors affecting bond type (Fajans' rules)"
+    }
+  },
+  {
+    "id": "ch04_P1_0161",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Measuring hydrogen bond strength in liquid HX",
+      "reasoning": "Enthalpy of vaporisation (ΔH_vap) measures the energy required to separate molecules in the liquid phase into the gas phase, overcoming all intermolecular forces. For liquid hydrogen halides, this includes hydrogen bonding, dipole-dipole forces, and ID-ID forces. By comparing ΔH_vap values, we can assess the relative strengths of the intermolecular forces, including hydrogen bonds. Bond dissociation energy measures covalent bond strength (intramolecular), not intermolecular forces.",
+      "why_correct": "Option D (enthalpy of vaporisation) is correct because it directly measures the energy needed to overcome intermolecular forces, including hydrogen bonds.",
+      "why_others_wrong": "A (bond dissociation energies) measures intramolecular covalent bond strength. B (enthalpy of formation) relates to forming the compound from elements. C (enthalpy of solution) involves solvation, which introduces additional interactions.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Hydrogen bonding and enthalpy"
+    }
+  },
+  {
+    "id": "ch04_P1_0162",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Hydrogen bonding explanation of boiling point differences",
+      "reasoning": "Ethanol (C₂H₅OH) has an O–H bond and can form intermolecular hydrogen bonds. Propane (C₃H₈) is a non-polar hydrocarbon with only ID-ID forces. The hydrogen bonds in ethanol are much stronger than the ID-ID forces in propane, giving ethanol a much higher boiling point (78 °C vs −42 °C). This difference is directly explained by hydrogen bonding.",
+      "why_correct": "Option A is correct because the higher boiling point of ethanol compared to propane is directly due to hydrogen bonding in ethanol.",
+      "why_others_wrong": "B: HCl vs SiH₄ — the difference is due to permanent dipole-dipole vs ID-ID forces, not hydrogen bonding (HCl doesn't form H-bonds). C: HI forming acidic solution is about ionisation in water, not hydrogen bonding. D: Propanone vs propane — the difference is due to permanent dipole-dipole forces, not hydrogen bonding (propanone has C=O but no O–H bond).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Hydrogen bonding and physical properties"
+    }
+  },
+  {
+    "id": "ch04_P1_0163",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Boiling point difference between N₂ and CO",
+      "reasoning": "N₂ and CO both have M = 28 and the same number of electrons (14). However, CO is a polar molecule (Cδ⁺≡Oδ⁻) with a small permanent dipole moment, while N₂ is non-polar (symmetric). The permanent dipole in CO creates additional permanent dipole-dipole intermolecular forces, giving CO a slightly higher boiling point (82 K) than N₂ (77 K).",
+      "why_correct": "Option A correctly identifies that CO's permanent dipole (absent in N₂) causes the higher boiling point.",
+      "why_others_wrong": "B is wrong because both N₂ and CO have σ and π bonding (N≡N and C≡O both have 1 σ + 2 π bonds). C is wrong because bond strength (intramolecular) doesn't determine boiling point (intermolecular forces do). D is wrong because both molecules have the same number of electrons (14 each).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular polarity and boiling points"
+    }
+  },
+  {
+    "id": "ch04_P1_0164",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Bonding types found in elements",
+      "reasoning": "Ionic bonding requires the transfer of electrons from one atom to another, which necessitates two different elements with significantly different electronegativities (typically a metal and a non-metal). An element consists of only one type of atom, so ionic bonding cannot occur. Covalent bonding exists in elements like O₂, N₂, diamond. Metallic bonding exists in metal elements. Van der Waals' forces exist between molecules of elemental substances like I₂.",
+      "why_correct": "Option B (ionic) is correct because ionic bonding requires two different elements with different electronegativities.",
+      "why_others_wrong": "A (covalent) is found in elemental molecules (O₂, N₂, etc.). C (metallic) is found in metal elements. D (van der Waals' forces) exists between molecules of elemental substances.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Types of bonding in elements"
+    }
+  },
+  {
+    "id": "ch04_P1_0165",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Dot-and-cross diagram for Al₂Cl₆",
+      "reasoning": "Al₂Cl₆ is a dimer with two Al atoms bridged by two Cl atoms. Each Al is bonded to 2 terminal Cl atoms (normal covalent bonds, each sharing 1 electron from Al and 1 from Cl) and 2 bridging Cl atoms. Each bridging Cl forms a normal covalent bond with one Al and a dative covalent bond with the other Al (donating a lone pair). The correct diagram shows: terminal Cl atoms with 3 lone pairs each, bridging Cl atoms with 2 lone pairs each, and the appropriate electron sharing pattern with × for Al electrons and ○ for Cl electrons.",
+      "why_correct": "Option B correctly shows the Al₂Cl₆ dimer structure with the proper dot-and-cross electron arrangement, including the bridging Cl atoms with dative bonds.",
+      "why_others_wrong": "A shows an ionic structure ([Al]³⁺ and [Cl]⁻), which is incorrect for the covalent Al₂Cl₆. C and D show incorrect electron arrangements or bonding patterns for the dimer.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Dot-and-cross diagrams for covalent compounds"
+    }
+  },
+  {
+    "id": "ch04_P1_0166",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Bonding types never found in elements",
+      "reasoning": "This is the same concept as ch04_P1_0164. Ionic bonding requires electron transfer between atoms of different elements with different electronegativities. Since an element contains only one type of atom, ionic bonding cannot occur within a pure element.",
+      "why_correct": "Option B (ionic) is correct for the same reasons as explained above.",
+      "why_others_wrong": "A, C, and D are all found in various elemental substances.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Types of bonding in elements"
+    }
+  },
+  {
+    "id": "ch04_P1_0167",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Bonding in Al₂Cl₆",
+      "reasoning": "This is the same concept as ch04_P1_0119. Al₂Cl₆ contains both normal covalent bonds (terminal Al–Cl bonds where each atom contributes one electron) and co-ordinate (dative covalent) bonds (bridging Cl→Al bonds where Cl donates both electrons). There is no ionic bonding in this covalent molecular compound.",
+      "why_correct": "Option A correctly identifies covalent and co-ordinate (dative covalent) bonding in Al₂Cl₆.",
+      "why_others_wrong": "B is wrong because it ignores the dative covalent bonds. C and D are wrong because Al₂Cl is covalent, not ionic.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate bonding in Al₂Cl₆"
+    }
+  },
+  {
+    "id": "ch04_P1_0168",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Molecular shape of SO₂",
+      "reasoning": "SO₂: S has 6 valence electrons. In the structure O=S=O, S forms 2 double bonds (using 4 electrons) and has 1 lone pair (2 electrons). This gives 3 electron domains (2 bonding + 1 lone pair) → trigonal planar electron geometry. With 1 lone pair, the molecular shape is bent/non-linear with a bond angle of approximately 119° (slightly less than 120° due to lone pair compression).",
+      "why_correct": "Option B (non-linear) is correct because the lone pair on sulfur bends the molecule away from linear geometry.",
+      "why_others_wrong": "A (linear) would require 2 electron domains with no lone pairs (like CO₂). C (pyramidal) requires 4 electron domains with 1 lone pair (like NH₃). D (tetrahedral) requires 4 electron domains with no lone pairs (like CH₄).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Molecular shapes and VSEPR theory"
+    }
+  },
+  {
+    "id": "ch04_P1_0169",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t05"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Anomalous boiling point of water in Group 16 hydrides",
+      "reasoning": "The boiling points of Group 16 hydrides generally increase down the group (H₂S < H₂Se < H₂Te) due to increasing ID-ID forces with more electrons. However, H₂O has an anomalously high boiling point (100 °C) compared to the trend. This is because water molecules form strong intermolecular hydrogen bonds (O is highly electronegative and small), which require much more energy to overcome than the ID-ID forces in H₂S, H₂Se, and H₂Te.",
+      "why_correct": "Option B correctly identifies strong hydrogen bonds in water (absent in the other Group 16 hydrides) as the explanation.",
+      "why_others_wrong": "A is wrong because fewer electrons would give weaker ID-ID forces, not explain the higher bp. C is wrong because boiling point depends on intermolecular forces, not covalent bond strength. D is wrong because smaller molecules have weaker van der Waals' forces, not stronger.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Hydrogen bonding and periodic trends"
+    }
+  },
+  {
+    "id": "ch04_P1_0170",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Covalent bonding in compounds",
+      "reasoning": "Aluminium chloride (AlCl₃): due to the high charge density of Al³⁺ (small size, high charge), it strongly polarises Cl⁻ ions (Fajans' rules), giving AlCl₃ significant covalent character. In the gas phase, it exists as the covalent dimer Al₂Cl₆. Ammonia (NH₃): a classic covalent molecule with shared electron pairs between N and H. Calcium fluoride (CaF₂): Ca²⁺ has low charge density (large size, +2 charge) and F⁻ is small but the electronegativity difference is large, so CaF₂ is predominantly ionic.",
+      "why_correct": "Option B (1 and 2 only) is correct: both aluminium chloride and ammonia contain covalent bonds, while calcium fluoride is ionic.",
+      "why_others_wrong": "Compounds with only 1 (AlCl₃) or only 2 (NH₃) are incomplete. Including 3 (CaF₂) is wrong because it is ionic.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Covalent vs ionic character"
+    }
+  },
+  {
+    "id": "ch04_P1_0171",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Metallic bonding trends in Period 3",
+      "reasoning": "From Na to Al in Period 3, melting points increase due to stronger metallic bonding. Three factors contribute: (1) The charge on the metal ion increases (Na⁺ → Mg²⁺ → Al³), increasing electrostatic attraction. (2) More delocalised electrons per ion (1 → 2 → 3), strengthening the electron sea. (3) The ionic radius decreases (Na⁺ > Mg²⁺ > Al³) due to increasing nuclear charge, bringing ions closer to the electron sea. All three factors strengthen metallic bonding.",
+      "why_correct": "Option A (1, 2 and 3) is correct because all three statements contribute to the increasing melting point trend.",
+      "why_others_wrong": "Any option excluding one of the three factors would be incomplete, as all three are valid explanations.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Metallic bonding trends"
+    }
+  },
+  {
+    "id": "ch04_P1_0172",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Elements forming chlorides with covalent and dative bonding",
+      "reasoning": "Aluminium forms AlCl₃, which dimerises to Al₂Cl₆ in the gas phase. Al₂Cl contains both normal covalent bonds (terminal Al–Cl) and dative covalent bonds (bridging Cl→Al). Silicon forms SiCl₄, which is purely covalent with no dative bonds (Si has a complete octet with 4 normal covalent bonds). Magnesium forms MgCl₂, which is ionic (Mg²Cl₂⁻).",
+      "why_correct": "Option D (1 only) is correct: only aluminium forms a chloride with both covalent and dative covalent bonding.",
+      "why_others_wrong": "2 (Si) forms only covalent bonds in SiCl. 3 (Mg) forms ionic bonds in MgCl₂.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate bonding in chlorides"
+    }
+  },
+  {
+    "id": "ch04_P1_0173",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Elements forming chlorides with covalent and dative bonding",
+      "reasoning": "This is the same question as ch04_P1_0172 from a different paper. Only aluminium forms Al₂Cl₆ with both covalent and dative covalent bonds.",
+      "why_correct": "Option D (1 only) is correct for the same reasons as ch04_P1_0172.",
+      "why_others_wrong": "Same as above.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Co-ordinate bonding in chlorides"
+    }
+  },
+  {
+    "id": "ch04_P1_0174",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Ethoxide ion properties and comparison with hydroxide",
+      "reasoning": "When ethanol reacts with Na, the O–H bond breaks to form CH₃CH₂O⁻ (ethoxide). The ethyl group (CH₃CH₂–) is electron-donating through the inductive effect, which increases the electron density on the oxygen atom in CH₃CH₂O⁻ compared to OH⁻. This makes ethoxide a stronger base (more willing to accept H⁺) than hydroxide. Ethanol reacts more slowly with Na than water does (ethanol is less acidic). The negative charge on ethoxide oxygen is localised, not delocalised.",
+      "why_correct": "Option B is correct: CHCH₂O⁻ is a stronger base than OH⁻ due to the electron-donating inductive effect of the ethyl group.",
+      "why_others_wrong": "A is wrong because ethanol reacts more slowly with Na than water. C is wrong because there is no delocalisation in the ethoxide ion (no π system). D is wrong because ethanol is less acidic than water (pKₐ ~16 vs ~14).",
+      "syllabus_ref": "Topic 4: Chemical bonding – Inductive effects and base strength"
+    }
+  },
+  {
+    "id": "ch04_P1_0175",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Ethoxide ion properties and comparison with hydroxide",
+      "reasoning": "This is the same question as ch04_P1_0174 from a different paper variant. The ethyl group's electron-donating inductive effect makes ethoxide a stronger base than hydroxide.",
+      "why_correct": "Option B is correct for the same reasons as ch04_P1_0174.",
+      "why_others_wrong": "Same as above.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Inductive effects and base strength"
+    }
+  },
+  {
+    "id": "ch04_P1_0176",
+    "chapter_id": "ch04",
+    "topic_ids": [
+      "ch04_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Properties increased by hydrogen bonding in water",
+      "reasoning": "Hydrogen bonding in water creates strong intermolecular attractions that affect multiple physical properties: (1) Viscosity: H-bonds create resistance to flow, increasing viscosity. (2) Boiling point: H-bonds require significant energy to break, giving water an anomalously high bp. (3) Surface tension: H-bonds at the surface create a 'skin' effect, giving water high surface tension. All three properties are increased by hydrogen bonding.",
+      "why_correct": "Option A (1, 2 and 3) is correct because hydrogen bonding increases viscosity, boiling point, and surface tension.",
+      "why_others_wrong": "All three properties are directly affected by the strength of intermolecular hydrogen bonds in liquid water.",
+      "syllabus_ref": "Topic 4: Chemical bonding – Hydrogen bonding and physical properties"
+    }
+  }
+]

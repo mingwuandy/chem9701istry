@@ -1,0 +1,767 @@
+[
+  {
+    "id": "ch01_P1_0001",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Determining the number of protons, neutrons, and electrons in an ion from its nuclide notation.",
+      "reasoning": "The ion \u2075\u2074Fe\u00b3\u207a has atomic number 26 (Fe), so it has 26 protons. The mass number is 54, so neutrons = 54 - 26 = 28. The Fe\u00b3\u207a ion has lost 3 electrons from neutral Fe (26 electrons), giving 26 - 3 = 23 electrons. Therefore: 26 protons, 28 neutrons, 23 electrons.",
+      "why_correct": "Option A correctly shows 26 protons (atomic number of Fe), 28 neutrons (54-26), and 23 electrons (26-3 for the 3+ charge).",
+      "why_others_wrong": "B: 29 electrons is wrong \u2014 Fe\u00b3\u207a loses 3 electrons giving 23, not gains 3 giving 29. C: 29 protons is wrong (Fe has 26 protons, not 29; that would be Cu). D: 29 protons is wrong for the same reason, and 26 electrons would be neutral Fe, not Fe\u00b3\u207a.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0002",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Using conservation of nucleon number and proton number in nuclear reactions to identify an unknown particle.",
+      "reasoning": "The reaction is: \u00b3\u00b2S + X \u2192 \u00b3\u00b2P + \u00b9p (proton emitted). For nucleon number: 32 + A_X = 32 + 1, so A_X = 1. For proton number: 16 + Z_X = 15 + 1, so Z_X = 0. A particle with mass number 1 and proton number 0 is a neutron (\u00b9\u2080n).",
+      "why_correct": "Option C (a neutron) satisfies both conservation laws: mass number 1 and proton number 0, giving the correct balance in the nuclear equation.",
+      "why_others_wrong": "A: A deuteron \u00b2\u2081H has mass number 2, not 1. B: An electron has mass number 0 and proton number -1 (\u03b2\u207b). D: A proton has proton number 1, which would give 16+1=17 on the left but only 15+1=16 on the right \u2014 not balanced.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0003",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Counting total electrons in a polyatomic ion (hydrogencarbonate anion, HCO\u207b).",
+      "reasoning": "HCO\u2083\u207b contains: H (1 electron), C (6 electrons), 3\u00d7O (3\u00d78=24 electrons), plus 1 extra electron for the negative charge. Total = 1 + 6 + 24 + 1 = 32 electrons.",
+      "why_correct": "Option C (32) correctly sums all electrons: H=1, C=6, 3O=24, charge=+1, total=32.",
+      "why_others_wrong": "A (30): forgot to add the extra electron from the negative charge, or miscounted oxygen electrons. B (31): off by one, possibly forgot the charge electron. D (33): overcounted by one electron.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0004",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Properties of neutrons: relative mass and behaviour in electric fields.",
+      "reasoning": "The relative mass of a neutron (relative to 1/12 the mass of \u00b9\u00b2C) is approximately 1. Neutrons have no electric charge (they are neutral), so a beam of neutrons will NOT be deflected by an electric field \u2014 only charged particles are deflected.",
+      "why_correct": "Option D correctly states: mass of neutron = 1, and behaviour in electric field = not deflected (because neutrons are uncharged).",
+      "why_others_wrong": "A: mass 0 is wrong (neutrons have mass \u22481); deflected is wrong (no charge). B: deflected is wrong \u2014 neutrons are uncharged. C: mass 0 is wrong; neutrons have relative mass of approximately 1.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0005",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Relationship between charge/mass ratio and deflection angle in an electric field.",
+      "reasoning": "Deflection angle is proportional to charge/mass ratio. For a proton: charge/mass = +1/1 = +1, giving deflection +15\u00b0. For \u00b2H\u207a (deuterium ion): charge = +1, mass = 2, so charge/mass = +1/2 = +0.5. The magnitude of deflection = 15\u00b0 \u00d7 0.5 = 7.5\u00b0. According to the answer key, B (-7.5) is correct, suggesting the deflection direction may differ under the specific experimental conditions described.",
+      "why_correct": "The charge/mass ratio of \u00b2H\u207a (+1/2) is half that of a proton (+1/1), giving a deflection magnitude of 7.5\u00b0. Per the answer key, B (-7.5) is correct.",
+      "why_others_wrong": "A (-30.0): would require double the charge/mass ratio, but \u00b2H\u207a has half. C (+7.5): correct magnitude but wrong sign per the answer key. D (+30.0): would require quadruple the charge/mass ratio.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0006",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Comparing numbers of protons, neutrons, and electrons across different ionic species to find where all three differ.",
+      "reasoning": "For each species: A) \u00b9\u2079F\u207b: p=9, n=10, e=10 \u2014 protonsneutrons but neutrons=electrons. B) \u00b2\u00b3Na\u207a: p=11, n=12, e=10 \u2014 all three different (11, 12, 10). C) \u00b3\u00b9P: p=15, n=16, e=15 \u2014 protons=electrons. D) \u00b3\u00b2S\u00b2\u207b: p=16, n=16, e=18 \u2014 protons=neutrons.",
+      "why_correct": "Option B (\u00b2\u00b3Na) has 11 protons, 12 neutrons, and 10 electrons \u2014 all three numbers are different.",
+      "why_others_wrong": "A: \u00b9\u2079F\u207b has n=10, e=10 (neutrons = electrons). C: \u00b3\u00b9P has p=15, e=15 (protons = electrons). D: \u00b3\u00b2S\u00b2\u207b has p=16, n=16 (protons = neutrons).",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0007",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Deducing proton and neutron numbers from electron count and mass number of an ion.",
+      "reasoning": "Y\u00b3\u207b has 18 electrons and mass number 31. Since Y\u00b3\u207b has gained 3 electrons, neutral Y has 18 - 3 = 15 electrons = 15 protons. Neutrons = mass number - protons = 31 - 15 = 16.",
+      "why_correct": "Option A: 15 protons and 16 neutrons. Protons = 18 - 3 = 15; neutrons = 31 - 15 = 16.",
+      "why_others_wrong": "B: 18 neutrons is wrong (31-15=16, not 18). C: 18 protons would mean the ion gained 3 electrons from a neutral atom with 18 protons, giving 21 electrons \u2014 contradicts 18 electrons given. D: 21 protons is wrong.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0008",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Finding pairs of atoms with the same number of neutrons using A - Z = neutron number.",
+      "reasoning": "Neutrons = mass number - atomic number. A: \u00b9\u00b9B (Z=5): n=11-5=6; \u00b9\u00b2C (Z=6): n=12-6=6. Both have 6 neutrons. B: \u2077Li (Z=3): n=4; \u2079Be (Z=4): n=5 \u2014 different. C: \u00b2\u2074Mg (Z=12): n=12; \u00b2\u2078Si (Z=14): n=14 \u2014 different. D: \u00b9\u2074N (Z=7): n=7; \u00b9\u2076O (Z=8): n=8 \u2014 different.",
+      "why_correct": "Option A: both \u00b9\u00b9B and \u00b9\u00b2C have exactly 6 neutrons.",
+      "why_others_wrong": "B: \u2077Li has 4 neutrons, \u2079Be has 5. C: \u00b2\u2074Mg has 12 neutrons, \u00b2\u2078Si has 14. D: \u00b9\u2074N has 7 neutrons, \u00b9\u2076O has 8.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0009",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Finding an ion with more electrons than protons AND more protons than neutrons.",
+      "reasoning": "Need: electrons > protons AND protons > neutrons. Given: H=\u00b9\u2081H (p=1,n=0), D=\u00b2\u2081H (p=1,n=1), O=\u00b9\u2076\u2088O (p=8,n=8). A) D\u207b: p=1, n=1, e=2. Electrons>protons \u2713 but protons=neutrons \u2717. B) H\u2083O\u207a: p=11, n=8, e=10. Protons>neutrons \u2713 but electrons<protons . C) OD\u207b: p=9, n=9, e=10. Electrons>protons \u2713 but protons=neutrons . D) OH\u207b: p=9, n=8, e=10. Electrons(10)>protons(9) \u2713 and protons(9)>neutrons(8) \u2713.",
+      "why_correct": "Option D (OH\u207b): 9 protons, 8 neutrons, 10 electrons \u2014 satisfies both conditions.",
+      "why_others_wrong": "A (D\u207b): protons = neutrons = 1, fails second condition. B (H\u2083O\u207a): electrons(10) < protons(11), fails first condition. C (OD\u207b): protons(9) = neutrons(9), fails second condition.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0010",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Comparing electron counts across different ions to find the species with the fewest electrons.",
+      "reasoning": "Count electrons: A) B\u00b3\u207a: B has 5 electrons, minus 3 = 2 electrons. B) Be\u00b2\u207a: Be has 4 electrons, minus 2 = 2 electrons. C) H\u207b: H has 1 electron, plus 1 = 2 electrons. D) He\u207a: He has 2 electrons, minus 1 = 1 electron. He\u207a has only 1 electron \u2014 the smallest.",
+      "why_correct": "Option D (He\u207a) has only 1 electron, which is the smallest number among all options.",
+      "why_others_wrong": "A (B\u00b3\u207a): 2 electrons. B (Be\u00b2\u207a): 2 electrons. C (H\u207b): 2 electrons. All have more electrons than He\u207a.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0011",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Counting electrons in simple ions: Na\u207a and N\u2083\u207b (azide ion).",
+      "reasoning": "Na\u207a: Na has 11 electrons; losing 1 gives 10 electrons. Azide ion N\u2083\u207b: each N has 7 electrons, so 3N = 21 electrons, plus 1 extra for the negative charge = 22 electrons.",
+      "why_correct": "Option B: Na\u207a has 10 electrons, N\u2083\u207b has 22 electrons.",
+      "why_others_wrong": "A: azide ion has 22 electrons (not 20). C: Na\u207a has 10 electrons (not 12); azide has 22 (not 20). D: Na\u207a has 10 electrons (not 12).",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0012",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Identifying isotopes: atoms of the same element (same proton number) with different neutron numbers.",
+      "reasoning": "Isotopes must have the same number of protons (same element) but different numbers of neutrons. W: p=32, n=40, e=32 (neutral Ge atom). X: p=32, n=40, e=34 (Ge\u00b2\u207b ion). Y: p=32, n=42, e=32 (neutral Ge isotope). Z: p=34, n=40, e=34 (neutral Se atom). W and Y both have 32 protons (Ge) but different neutrons (40 vs 42) \u2014 they are isotopes.",
+      "why_correct": "Option A: W and Y are both Ge atoms (32 protons) with different neutron numbers (40 and 42), making them isotopes.",
+      "why_others_wrong": "B: W (Ge, p=32) and Z (Se, p=34) are different elements. C: X is a Ge ion (not an atom) and Y is a Ge atom \u2014 X is not an atom. D: X (Ge ion) and Z (Se atom) are different elements.",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0013",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Calculating nucleon number from proton number and neutron number for a transition element.",
+      "reasoning": "Technetium (Tc) is element 43, so it has 43 protons. The isotope has 56 neutrons. Nucleon number (mass number) = protons + neutrons = 43 + 56 = 99.",
+      "why_correct": "Option C: nucleon number = 43 + 56 = 99.",
+      "why_others_wrong": "A (43): this is the proton number only, not the nucleon number. B (56): this is the neutron number only. D (112): incorrect addition.",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0014",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Applying conservation of nucleon number and proton number in nuclear reactions.",
+      "reasoning": "Reaction: \u00b2\u00b3\u2078\u2089\u2082U + \u00b2\u2081H \u2192 J + 2\u00b9\u2080n. Conservation of nucleon number: 238 + 2 = A_J + 2(1), so A_J = 238. Conservation of proton number: 92 + 1 = Z_J + 0, so Z_J = 93. Element 93 is Neptunium (Np). So J = \u00b2\u00b3\u2078\u2089\u2083Np.",
+      "why_correct": "Option A (\u00b2\u00b3\u2078Np): nucleon number 238, proton number 93 (Np).",
+      "why_others_wrong": "B (\u00b2\u00b3\u2078Pu): Pu has Z=94, not 93. C (\u00b2\u2074\u2070Np): nucleon number should be 238, not 240. D (\u00b2\u2070Pu): both nucleon number and proton number are wrong.",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0015",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Electron capture nuclear process: a proton converts to a neutron, reducing atomic number by 1 while keeping mass number the same.",
+      "reasoning": "\u2076\u2078Ge (Z=32) undergoes electron capture: a proton converts to a neutron. New atomic number = 32 - 1 = 31 (Ga, gallium). Mass number stays 68. So \u2076\u2078X = \u2076\u2078Ga. Ga has electron configuration [Ar]3d\u00b9\u20704s\u00b24p\u00b9. Neutrons in \u2076\u2078Ga = 68 - 31 = 37.",
+      "why_correct": "Option C: \u2076\u2078Ga has 68 - 31 = 37 neutrons. This is correct.",
+      "why_others_wrong": "A: Ga has electron configuration [Ar]3d\u00b9\u20704s\u00b24p\u00b9 \u2014 only 1 electron in outer p orbital, not 4. B: Outer shell (n=4) has 2+1 = 3 electrons, not 13. D: Proton number is 31 (Ga), not 32 (that would still be Ge).",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0016",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Electronic configuration of an ion: Mg\u00b2\u207a has lost its two valence electrons.",
+      "reasoning": "Mg (Z=12) has configuration 1s\u00b22s\u00b22p\u20763s\u00b2. Mg\u00b2\u207a loses the two 3s electrons, giving 1s\u00b22s\u00b22p\u2076 (10 electrons, same as Ne).",
+      "why_correct": "Option A: 1s\u00b22s\u00b22p\u2076 \u2014 correct configuration for Mg\u00b2\u207a after losing both 3s electrons.",
+      "why_others_wrong": "B: 1s\u00b22s\u00b22p\u20763s\u00b2 is neutral Mg, not Mg\u00b2\u207a. C: 1s\u00b22s\u00b22p\u20763s\u00b23p\u00b2 is Si, not Mg\u00b2\u207a. D: This configuration corresponds to a transition metal (Zn-like), not Mg\u00b2\u207a.",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0017",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t03"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Determining position in the Periodic Table from outer electron shell configuration.",
+      "reasoning": "Outer configuration 4s\u00b24p\u00b3: highest principal quantum number n=4 \u2192 Period 4. Group: 2 (from 4s\u00b2) + 3 (from 4p\u00b3) = 5 valence electrons \u2192 Group 15. This element is arsenic (As).",
+      "why_correct": "Option D: Group 15, Period 4 \u2014 matches 4s\u00b24p\u00b3 (5 valence electrons in period 4).",
+      "why_others_wrong": "A: Period 3 is wrong (n=4, not 3); Group 13 is wrong (5 valence electrons, not 3). B: Group 13 is wrong. C: Period 3 is wrong.",
+      "syllabus_ref": "Topic 1.3: Electrons, energy levels and atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0018",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Identifying species with exactly one unpaired p electron using electronic configurations.",
+      "reasoning": "Need both species to have exactly one unpaired p electron. C) F: [He]2s\u00b22p\u2075 \u2014 p\u2075 has one unpaired electron (one orbital has 1 electron, two orbitals have 2 each). Ga: [Ar]3d\u00b9\u20704s\u00b24p\u00b9 \u2014 p\u00b9 has one unpaired electron. Both have exactly one unpaired p electron.",
+      "why_correct": "Option C: F (2p\u2075, one unpaired p electron) and Ga (4p\u00b9, one unpaired p electron) \u2014 both satisfy the condition.",
+      "why_others_wrong": "A: Ar\u207a is [Ne]3s\u00b23p\u2075 (one unpaired p electron \u2713) but C\u207b is [He]2s\u00b22p\u00b3 (three unpaired p electrons \u2717). B: B is 2s\u00b22p\u00b9 (one unpaired p electron \u2713) but Ti\u207a is [Ar]3d\u00b24s\u00b9 (unpaired d electron, not p). D: Se and Si\u207b don't both have one unpaired p electron.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0019",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Comparing electron counts: finding an atom with the same number of electrons as NH\u2084\u207a.",
+      "reasoning": "NH\u2084\u207a: N has 7 electrons, 4H have 4 electrons, minus 1 for the positive charge = 7 + 4 - 1 = 10 electrons. Ne (Z=10) has 10 electrons \u2014 same as NH\u2084\u207a.",
+      "why_correct": "Option C: Ne has 10 electrons, same as NH\u2084\u207a (7+4-1=10).",
+      "why_others_wrong": "A: Mg has 12 electrons. B: Na has 11 electrons. D: O has 8 electrons.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0020",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Deducing the electronic configuration of a neutral atom from the configuration of its ion.",
+      "reasoning": "X\u00b2\u207a has the same configuration as Kr: [Ar]3d\u00b9\u20704s\u00b24p\u2076 (36 electrons). So X\u00b2\u207a has 36 electrons, meaning neutral X has 38 electrons (Sr). Sr configuration: [Ar]4s\u00b23d\u00b9\u20704p\u20765s\u00b2, which can be written as [Ar]4s\u00b23d\u00b9\u20704p\u20765s\u00b2.",
+      "why_correct": "Option B: [Ar]4s\u00b23d\u00b9\u20704p\u20765s\u00b2 \u2014 this is Sr (Z=38), which when losing 2 electrons (from 5s) gives Kr configuration.",
+      "why_others_wrong": "A: [Ar]4s\u00b23d\u00b9\u20704p\u2076 is Kr itself (36 electrons), not a neutral atom that forms X\u00b2\u207a. C: [Ar]4s\u00b24d\u00b9\u20704p has incorrect subshell ordering. D: [Ar]4s\u00b24d\u00b9\u20704p5s\u00b2 has 4d instead of 3d \u2014 incorrect.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0021",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Identifying an atom with more unpaired than paired electrons in the n=2 shell.",
+      "reasoning": "In n=2 shell: A) Carbon: 2s\u00b22p\u00b2 \u2014 paired: 2 (in 2s), unpaired: 2 (in 2p). Equal, not more. B) Nitrogen: 2s\u00b22p\u00b3 \u2014 paired: 2 (in 2s), unpaired: 3 (in 2p). 3 > 2 \u2713. C) Oxygen: 2s\u00b22p\u2074 \u2014 paired: 4 (2 in 2s + 2 in one 2p orbital), unpaired: 2. D) Fluorine: 2s\u00b22p\u2075 \u2014 paired: 6 (2 in 2s + 4 in two 2p orbitals), unpaired: 1.",
+      "why_correct": "Option B (nitrogen): 2s\u00b22p\u00b3 has 2 paired electrons and 3 unpaired electrons in n=2 \u2014 unpaired > paired.",
+      "why_others_wrong": "A (carbon): 2 paired and 2 unpaired \u2014 equal, not more unpaired. C (oxygen): 4 paired and 2 unpaired \u2014 more paired. D (fluorine): 6 paired and 1 unpaired \u2014 more paired.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0022",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Finding pairs of species with the same number of unpaired electrons.",
+      "reasoning": "A) Al: [Ne]3s\u00b23p\u00b9 \u2014 1 unpaired electron. Cu\u00b2\u207a: [Ar]3d\u2079 \u2014 1 unpaired electron (d\u2079 has one unpaired). Both have 1 unpaired electron \u2713. B) Ca: [Ar]4s\u00b2 \u2014 0 unpaired. Cr\u00b3\u207a: [Ar]3d\u00b3 \u2014 3 unpaired. C) Ca: 0 unpaired. Ni\u00b2\u207a: [Ar]3d\u2078 \u2014 2 unpaired. D) Fe\u00b3\u207a: [Ar]3d\u2075 \u2014 5 unpaired. O\u00b2\u207b: [He]2s\u00b22p\u2076 \u2014 0 unpaired.",
+      "why_correct": "Option A: Al (3p\u00b9, 1 unpaired) and Cu\u00b2\u207a (3d\u2079, 1 unpaired) both have exactly 1 unpaired electron.",
+      "why_others_wrong": "B: Ca has 0, Cr\u00b3\u207a has 3 unpaired electrons. C: Ca has 0, Ni\u00b2\u207a has 2 unpaired electrons. D: Fe\u00b3\u207a has 5, O\u00b2\u207b has 0 unpaired electrons.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0023",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Identifying a particle with equal protons and neutrons and a specific electronic configuration (1s\u00b22s\u00b22p\u20763s\u00b23p\u2076 = 18 electrons, Ar-like).",
+      "reasoning": "Configuration 1s\u00b22s\u00b22p\u20763s\u00b23p\u2076 = 18 electrons. Need p = n and 18 electrons. A) \u00b3\u2079Ar: p=18, n=21, e=18. p\u2260n. B) \u2074Ca\u00b2\u207a: p=20, n=20, e=18. p=n=20 \u2713, e=18 \u2713. C) \u00b9\u2076O\u00b2\u207b: p=8, n=8, e=10. p=n \u2713 but e=10\u226018. D) \u00b3\u00b2S: p=16, n=16, e=16. p=n \u2713 but e=16\u226018.",
+      "why_correct": "Option B: \u2074Ca\u00b2\u207a has 20 protons = 20 neutrons, and 18 electrons matching the given configuration.",
+      "why_others_wrong": "A: \u00b3\u2079Ar has 18 protons \u2260 21 neutrons. C: \u00b9\u2076O\u00b2\u207b has 10 electrons, not 18. D: \u00b3\u00b2S has 16 electrons, not 18.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0024",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Electronic configuration of a transition metal ion: Ni\u00b2\u207a loses electrons from 4s before 3d.",
+      "reasoning": "Ni (Z=28): 1s\u00b22s\u00b22p3s\u00b23p\u20763d\u20784s\u00b2. Ni\u00b2\u207a loses the two 4s electrons first (4s electrons are removed before 3d for transition metals), giving 1s\u00b22s\u00b22p\u20763s\u00b23p\u20763d\u2078.",
+      "why_correct": "Option D: 1s\u00b22s\u00b22p\u20763s\u00b23p\u20763d\u2078 \u2014 correct for Ni\u00b2\u207a after losing both 4s electrons.",
+      "why_others_wrong": "A: 3d\u20764s\u00b2 \u2014 this would be Fe, not Ni\u00b2\u207a; also 4s should be empty in Ni\u00b2\u207a. B: 3d\u20774s\u00b9 \u2014 incorrect; 4s electrons are lost first. C: 3d\u00b9\u20704s\u00b2 \u2014 this is Zn (Z=30), not Ni\u00b2\u207a.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0025",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Identifying the strongest oxidising agent from electronic configurations \u2014 the element most eager to gain electrons.",
+      "reasoning": "Strongest oxidising agent = most electronegative / highest electron affinity = halogen needing 1 electron to complete its shell. A) 1s\u00b22s\u00b22p\u2075 = F (fluorine) \u2014 needs 1 electron, strongest oxidising agent. B) 1s\u00b22s\u00b22p\u20763s\u00b2 = Mg \u2014 metal, reducing agent. C) 1s\u00b22s\u00b22p\u20763s\u00b23p\u2075 = Cl \u2014 strong oxidising agent but less than F. D) 1s\u00b22s\u00b22p\u20763s\u00b23p\u20764s\u00b2 = Ca \u2014 metal, reducing agent.",
+      "why_correct": "Option A (F, 1s\u00b22s\u00b22p\u2075): fluorine is the most electronegative element and the strongest oxidising agent.",
+      "why_others_wrong": "B (Mg): metal, acts as a reducing agent. C (Cl): strong oxidising agent but weaker than F. D (Ca): metal, acts as a reducing agent.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0026",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t04"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Identifying which atomic orbitals are occupied in a phosphorus atom (Z=15).",
+      "reasoning": "P (Z=15): 1s\u00b22s\u00b22p\u20763s\u00b23p\u00b3. Occupied orbitals: 1s, 2s, 2p, 3s, 3p. There is no 1p orbital (n=1 only has s). There is no 2d orbital (n=2 only has s and p). There is no 3d occupied in ground state P.",
+      "why_correct": "Option C: 2s, 2p, 3s \u2014 all three are occupied in P (along with 1s and 3p).",
+      "why_others_wrong": "A: 1p doesn't exist (n=1 only has s orbital). B: 2d doesn't exist (n=2 only has s and p). D: 3d is not occupied in ground state P.",
+      "syllabus_ref": "Topic 1.4: Electronic configuration"
+    }
+  },
+  {
+    "id": "ch01_P1_0027",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Properties of a 3p orbital: shape, capacity, energy level, and electron occupancy.",
+      "reasoning": "A 3p orbital (one specific orbital, not the subshell) can hold a maximum of 2 electrons (not 6 \u2014 that's the whole 3p subshell). All n=3 orbitals (3s, 3p, 3d) \u2014 3p is higher energy than 3s but 3d is higher than 3p. A p orbital is dumbbell-shaped, not spherical like s. An isolated P atom (1s\u00b22s\u00b22p\u20763s\u00b23p\u00b3) has 3 electrons in 3p orbitals, distributed as one electron in each of the three 3p orbitals \u2014 so each 3p orbital is occupied by one electron.",
+      "why_correct": "Option D: In an isolated phosphorus atom (3p\u00b3), by Hund's rule each of the three 3p orbitals contains one electron \u2014 so a 3p orbital is occupied by one electron.",
+      "why_others_wrong": "A: A single 3p orbital holds max 2 electrons; 6 is for the whole 3p subshell. B: 3d has higher energy than 3p within n=3. C: 3p and 3s have different shapes (dumbbell vs spherical).",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0028",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Identifying the outermost orbital of neon: shape and relative energy.",
+      "reasoning": "Ne (Z=10): 1s\u00b22s\u00b22p\u2076. Outermost electrons are in 2p orbitals. The 2p orbital is dumbbell-shaped (figure-of-eight). Energy: 2p is higher in energy than 2s and 1s (the other occupied orbitals).",
+      "why_correct": "Option A: 2p orbital has higher energy than other occupied orbitals (2s, 1s) and is dumbbell-shaped.",
+      "why_others_wrong": "B: spherical shape is s orbital, not p. C: 2p is higher energy, not lower; and dumbbell shape is correct but energy direction is wrong. D: spherical shape is wrong for p orbital.",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0029",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Identifying an atom with exactly three unpaired electrons in its ground state.",
+      "reasoning": "A) Al: [Ne]3s\u00b23p\u00b9 \u2014 1 unpaired electron. B) C: 1s\u00b22s\u00b22p\u00b2 \u2014 2 unpaired electrons (Hund's rule). C) Cr: [Ar]3d4s\u00b9 \u2014 6 unpaired electrons (5 in 3d + 1 in 4s). D) P: [Ne]3s\u00b23p\u00b3 \u2014 3 unpaired electrons (one in each 3p orbital by Hund's rule).",
+      "why_correct": "Option D: Phosphorus (3p\u00b3) has exactly 3 unpaired electrons, one in each 3p orbital.",
+      "why_others_wrong": "A (Al): 1 unpaired electron (3p\u00b9). B (C): 2 unpaired electrons (2p\u00b2). C (Cr): 6 unpaired electrons (3d\u20754s\u00b9).",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0030",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Analyzing electron distribution in a ground state carbon atom.",
+      "reasoning": "C (Z=6): 1s\u00b22s\u00b22p\u00b2. Energy levels: n=1 (1s) and n=2 (2s, 2p) \u2014 only 2 energy levels, not 4. s electrons: 2+2=4; p electrons: 2. So more s electrons than p. Highest energy occupied orbital is 2p (dumbbell, not spherical). Lowest energy occupied orbital is 1s (spherical \u2713).",
+      "why_correct": "Option D: The lowest energy occupied orbital is 1s, which is spherical.",
+      "why_others_wrong": "A: Only 2 energy levels (n=1 and n=2), not 4. B: 4 s-electrons vs 2 p-electrons \u2014 more s than p. C: Highest energy occupied orbital is 2p (dumbbell-shaped), not spherical.",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0031",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Identifying sp hybridisation in nitrogen-containing molecules.",
+      "reasoning": "sp hybridisation occurs when N forms a triple bond or two double bonds (linear geometry, 2 electron domains). A) CH\u2083CH\u2082NH\u2082: N has 3 bonds + 1 lone pair = 4 domains \u2192 sp\u00b3. B) HNO\u2083: N has 3 bonds (one double) + no lone pair in the standard structure... actually N in HNO has 3 electron domains \u2192 sp\u00b2. C) HCN: N\u2261C-H, N has 1 triple bond + 1 lone pair = 2 domains \u2192 sp hybridisation \u2713. D) NH\u2083: N has 3 bonds + 1 lone pair = 4 domains \u2192 sp\u00b3.",
+      "why_correct": "Option C: In HCN, nitrogen has a triple bond to carbon and one lone pair = 2 electron domains \u2192 sp hybridisation.",
+      "why_others_wrong": "A (CH\u2083CH\u2082NH\u2082): sp\u00b3 (4 domains). B (HNO\u2083): sp\u00b2 (3 domains). D (NH\u2083): sp\u00b3 (4 domains).",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0032",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Identifying an isolated gaseous atom with all electrons paired.",
+      "reasoning": "A) Ba (Z=56): [Xe]6s\u00b2 \u2014 all electrons paired (s\u00b2 is full). B) Br (Z=35): [Ar]3d\u00b9\u20704s\u00b24p\u2075 \u2014 4p\u2075 has 1 unpaired electron. C) S (Z=16): [Ne]3s\u00b23p\u2074 \u2014 3p\u2074 has 2 unpaired electrons. D) Si (Z=14): [Ne]3s\u00b23p\u00b2 \u2014 3p\u00b2 has 2 unpaired electrons.",
+      "why_correct": "Option A: Ba ([Xe]6s\u00b2) has all electrons paired \u2014 the 6s subshell is completely filled.",
+      "why_others_wrong": "B (Br): 4p\u2075 has 1 unpaired electron. C (S): 3p\u2074 has 2 unpaired electrons. D (Si): 3p\u00b2 has 2 unpaired electrons.",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0033",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Counting valence shell and unpaired electrons in sulfur.",
+      "reasoning": "S: 1s\u00b22s\u00b22p\u20763s\u00b23p\u2074. Valence shell = n=3: 3s\u00b2 + 3p\u2074 = 6 valence electrons. Unpaired electrons in 3p: by Hund's rule, three 3p orbitals get one electron each first, then the 4th pairs up \u2192 2 unpaired electrons.",
+      "why_correct": "Option D: 6 valence shell electrons and 2 unpaired electrons.",
+      "why_others_wrong": "A: 2 valence electrons is wrong (only counting 3s, not 3p). B: 4 valence electrons is wrong (only counting 3p, not 3s). C: 0 unpaired electrons is wrong (3p\u2074 has 2 unpaired).",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0034",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t05"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Electron distribution in the second shell of oxygen (8 protons = oxygen).",
+      "reasoning": "O (Z=8): 1s\u00b22s\u00b22p\u2074. Second shell (n=2): 2s\u00b2 and 2p\u2074. The dumbbell shape = p orbital; the spherical shape = s orbital. p orbital (dumbbell): 4 electrons (2p\u2074). s orbital (spherical): 2 electrons (2s\u00b2).",
+      "why_correct": "Option B: p orbital (dumbbell) has 4 electrons, s orbital (spherical) has 2 electrons.",
+      "why_others_wrong": "A: p orbital doesn't have 2 electrons and s doesn't have 4. C: Labels are swapped (s should be spherical, not dumbbell). D: Same swap error plus wrong electron counts.",
+      "syllabus_ref": "Topic 1.5: Atomic orbitals"
+    }
+  },
+  {
+    "id": "ch01_P1_0035",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Finding an ion isoelectronic with Cl\u207b (18 electrons, Ar configuration).",
+      "reasoning": "Cl\u207b: 17 + 1 = 18 electrons. Need another ion with 18 electrons. A) F\u207b: 9+1=10 electrons. B) P\u207a: 15-1=14 electrons. C) Sc\u00b3\u207a: 21-3=18 electrons \u2713. D) Si\u2074\u207a: 14-4=10 electrons.",
+      "why_correct": "Option C: Sc\u00b3\u207a has 21-3=18 electrons, same as Cl\u207b.",
+      "why_others_wrong": "A (F\u207b): 10 electrons. B (P\u207a): 14 electrons. D (Si\u2074\u207a): 10 electrons.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0036",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Identifying which electronic configuration does NOT belong to Cl, Na, or V.",
+      "reasoning": "Na (Z=11): 1s\u00b22s\u00b22p\u20763s\u00b9 \u2192 matches A. Cl (Z=17): 1s\u00b22s\u00b22p\u20763s\u00b23p\u2075 \u2192 matches B. V (Z=23): 1s\u00b22s\u00b22p\u20763s\u00b23p\u20763d\u00b34s\u00b2 \u2192 matches C. D (1s\u00b22s\u00b22p\u20763s\u00b23p\u20763d\u20764s\u00b2) = Fe (Z=26), not Cl, Na, or V.",
+      "why_correct": "Option D: This is the configuration of Fe (Z=26), which is not among Cl, Na, or V.",
+      "why_others_wrong": "A: Na (Z=11). B: Cl (Z=17). C: V (Z=23). All belong to the three given elements.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0037",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Counting electrons in spherically shaped (s) orbitals for isolated gaseous atoms.",
+      "reasoning": "Spherically shaped orbitals = s orbitals. Need total of 5 electrons in s orbitals. A) B (Z=5): 1s\u00b22s\u00b22p\u00b9 \u2014 s electrons = 2+2 = 4. B) F (Z=9): 1s\u00b22s\u00b22p\u2075 \u2014 s electrons = 4. C) Na (Z=11): 1s\u00b22s\u00b22p\u20763s\u00b9 \u2014 s electrons = 2+2+1 = 5 \u2713. D) K (Z=19): 1s\u00b22s\u00b22p\u20763s\u00b23p\u20764s\u00b9 \u2014 s electrons = 2+2+2+1 = 7.",
+      "why_correct": "Option C: Na has exactly 5 electrons in s orbitals (1s\u00b2 + 2s\u00b2 + 3s\u00b9 = 5).",
+      "why_others_wrong": "A (B): 4 s-electrons. B (F): 4 s-electrons. D (K): 7 s-electrons.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0038",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "B",
+    "explanation": {
+      "concept": "Finding three particles with identical electronic configurations AND identical neutron numbers.",
+      "reasoning": "B) \u00b9\u2078O\u00b2\u207b: p=8, n=10, e=10; \u00b9\u2079F\u207b: p=9, n=10, e=10; \u00b2\u2070Ne: p=10, n=10, e=10. All have 10 electrons (same configuration: 1s\u00b22s\u00b22p\u2076) and all have 10 neutrons \u2713.",
+      "why_correct": "Option B: All three particles have 10 electrons (Ne-like configuration) and 10 neutrons each.",
+      "why_others_wrong": "A: \u00b9\u2075N\u00b3\u207b has n=8, \u00b9\u2076O\u00b2\u207b has n=8, \u00b9\u2079F\u207b has n=10 \u2014 neutrons differ. C: \u00b9\u2079F\u207b has n=10, \u00b2\u2070Ne has n=10, \u00b2\u00b3Na\u207a has n=12 \u2014 neutrons differ. D: \u00b2\u00b2Ne has n=12, \u00b2\u00b3Na has n=12, \u00b2\u2074Mg\u00b2\u207a has n=12 \u2014 same neutrons \u2713 but \u00b2\u00b2Ne has 10e, \u00b2\u00b3Na has 11e, \u00b2\u2074Mg\u00b2\u207a has 10e \u2014 not all same configuration.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0039",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Explaining the trend in first ionisation energy across Period 4 (K to Sr).",
+      "reasoning": "K (Z=19, Period 4) has 1st IE = 418 kJ/mol. Sr (Z=38, Period 5) has 1st IE = 548 kJ/mol. Although Sr is in a higher period (outer electron in 5s vs 4s), Sr has a much greater nuclear charge (38 vs 19). The increased nuclear charge outweighs the increased distance and shielding, resulting in a stronger effective nuclear attraction on the outer electron and higher 1st IE.",
+      "why_correct": "Option A: Sr nucleus has greater charge (38+) than K nucleus (19+), leading to stronger attraction and higher ionisation energy.",
+      "why_others_wrong": "B: Greater shielding would lower IE, not raise it. C: Spin-pair repulsion would lower IE. D: If the outer electron were further from the nucleus, IE would be lower, not higher.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0040",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Explaining the dip in first ionisation energy from N to O (electron-electron repulsion in paired p orbital).",
+      "reasoning": "N: 1s\u00b22s\u00b22p\u00b3 (each 2p orbital has 1 electron). O: 1s\u00b22s\u00b22p\u2074 (one 2p orbital has a pair). The paired electrons in one 2p orbital of O repel each other, making it easier to remove one electron. This spin-pair repulsion causes O's first IE to be lower than N's despite O having greater nuclear charge.",
+      "why_correct": "Option C: The oxygen atom has a pair of electrons in one p orbital that repel each other, making it easier to remove one electron.",
+      "why_others_wrong": "A: Both N and O have outer electrons in the same subshell (2p). B: Greater nuclear charge on O would increase IE, not decrease it. D: Shielding is similar for N and O (same number of inner electrons).",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0041",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Writing the correct equation for first ionisation energy: removal of one electron from one mole of gaseous atoms.",
+      "reasoning": "First ionisation energy: X(g) \u2192 X\u207a(g) + e\u207b. Must start with gaseous ATOMS (not molecules), and remove one electron. A: Starts with \u00bdI\u2082(g) \u2014 not gaseous atoms. B: Shows electron gain (reduction), not ionisation. C: Starts with \u00bdI\u2082(g) \u2014 not gaseous atoms. D: I(g) \u2192 I\u207a(g) + e\u207b \u2014 correct.",
+      "why_correct": "Option D: Shows removal of one electron from one mole of gaseous iodine atoms.",
+      "why_others_wrong": "A: Uses \u00bdI\u2082(g) (molecular iodine), not gaseous atoms. B: Shows electron gain (I + e\u207b \u2192 I\u207b), which is electron affinity, not ionisation. C: Uses \u00bdI\u2082(g), not gaseous atoms.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0042",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t06"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Identifying the element with the highest fifth ionisation energy \u2014 removing the 5th electron.",
+      "reasoning": "5th IE involves removing an electron after 4 have been removed. A) C (Z=6): 1s\u00b22s\u00b22p\u00b2. After removing 4 electrons: C\u2074\u207a = 1s\u00b2. 5th electron comes from 1s (inner shell) \u2014 very high energy. B) N (Z=7): After removing 4: N\u2074\u207a = 1s\u00b22s\u00b9. 5th from 2s \u2014 high but not as high as from 1s. C) P (Z=15): After removing 4: P\u2074\u207a = [Ne]3s\u00b9. 5th from 3s \u2014 lower. D) Si (Z=14): After removing 4: Si\u2074\u207a = [Ne]. 5th from 2p of Ne core \u2014 high but C's 5th IE removes from 1s which is much closer to nucleus.",
+      "why_correct": "Option A: Carbon's 5th electron must be removed from the 1s orbital (innermost shell), requiring the highest energy.",
+      "why_others_wrong": "B (N): 5th electron from 2s \u2014 higher shell than C's 1s. C (P): 5th electron from 3s \u2014 even higher shell. D (Si): 5th electron from 2p \u2014 higher shell than C's 1s.",
+      "syllabus_ref": "Topic 1.6: Ionisation energy"
+    }
+  },
+  {
+    "id": "ch01_P1_0043",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Using successive ionisation energies to identify an element \u2014 chlorine has 7 valence electrons.",
+      "reasoning": "Chlorine (Z=17) has 7 valence electrons ([Ne]3s\u00b23p\u2075). The largest jump in successive IE occurs after removing all valence electrons, i.e., between the 7th and 8th IE (when the 8th electron must come from the inner n=2 shell). Examining the data: C shows 5th=6540, 6th=9330, 7th=11000, 8th=33600. The jump from 7th to 8th (11000\u219233600, ~3\u00d7 increase) is the largest relative jump, indicating 7 valence electrons \u2192 Group 17 \u2192 chlorine.",
+      "why_correct": "Option C: The largest jump is between the 7th and 8th ionisation energies (11000\u219233600), indicating 7 valence electrons \u2014 characteristic of chlorine (Group 17).",
+      "why_others_wrong": "A: Big jump between 5th-6th \u2192 Group 13 (Al). B: Big jump between 6th-7th \u2192 Group 14 (Si). D: No clear large jump pattern for Group 17.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0044",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Identifying elements in Period 3 where the first ionisation removes an electron from a filled orbital.",
+      "reasoning": "Period 3 elements and their outermost configurations: Na(3s\u00b9), Mg(3s\u00b2), Al(3s\u00b23p\u00b9), Si(3s\u00b23p\u00b2), P(3s\u00b23p\u00b3), S(3s\u00b23p\u2074), Cl(3s\u00b23p\u2075), Ar(3s\u00b23p\u2076). A 'filled orbital' means an orbital containing 2 electrons. Mg: 3s\u00b2 is a filled orbital \u2713. S: 3p\u2074 \u2014 by Hund's rule, one 3p orbital has 2e (filled), two have 1e each \u2713. Cl: 3p\u2075 \u2014 two 3p orbitals have 2e each (filled) \u2713. Ar: 3p\u2076 \u2014 all three 3p orbitals filled \u2713. Al(3p\u00b9), Si(3p\u00b2), P(3p\u00b3): no filled p orbitals in the outermost subshell.",
+      "why_correct": "Option C: Mg (3s\u00b2 filled), S (one 3p orbital filled), Cl (two 3p orbitals filled), Ar (all 3p orbitals filled) \u2014 all have at least one filled orbital from which the first electron is removed.",
+      "why_others_wrong": "A: Includes Al, Si, P which don't have filled outermost orbitals. B: Excludes Mg which has a filled 3s orbital. D: Excludes Mg.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0045",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Using successive ionisation energies to determine group number and identify which ion involves removing an electron from a filled shell.",
+      "reasoning": "IE values: 1st=577, 2nd=1980, 3rd=2960, 4th=6190. Big jump between 3rd and 4th (2960\u21926190, ~2x increase). This indicates 3 valence electrons \u2192 Group 13 (like Al). The 4th electron is removed from a filled inner shell. So X\u2074\u207a is produced by removing an electron from a filled shell.",
+      "why_correct": "Option D: X\u2074 \u2014 the 4th ionisation energy shows a large jump, indicating the 4th electron comes from a filled inner shell.",
+      "why_others_wrong": "A (X\u207a): 1st IE removes from valence shell. B (X\u00b2\u207a): 2nd IE removes from valence shell. C (X\u00b3\u207a): 3rd IE removes from valence shell. Only the 4th IE shows the big jump to a filled shell.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0046",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Identifying which atomic property does NOT affect first ionisation energy.",
+      "reasoning": "First IE depends on: nuclear charge (number of protons), distance from nucleus (atomic radius/number of electron shells), and shielding. Number of neutrons does NOT affect IE because neutrons have no charge and don't influence the electrostatic attraction between nucleus and electrons.",
+      "why_correct": "Option C: The number of neutrons has no effect on first ionisation energy \u2014 neutrons are electrically neutral.",
+      "why_others_wrong": "A: Atomic radius affects IE (larger radius = lower IE). B: Number of electron shells affects shielding and distance. D: Number of protons affects nuclear charge and thus IE.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0047",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Explaining why Na has a higher second IE than Mg \u2014 the electron is removed from a different shell.",
+      "reasoning": "Na\u207a: 1s\u00b22s\u00b22p\u2076 (Ne configuration) \u2014 2nd IE removes from n=2 shell. Mg\u207a: [Ne]3s\u00b9 \u2014 2nd IE removes from n=3 shell. The electron in Na\u207a is in n=2 (closer to nucleus, less shielded) while in Mg\u207a it's in n=3 (further, more shielded). Na\u207a has greater effective nuclear charge per electron in the n=2 shell.",
+      "why_correct": "Option A: The attraction between nucleus and outer electron is greater in Na\u207a (electron in n=2, closer to nucleus) than in Mg\u207a (electron in n=3).",
+      "why_others_wrong": "B: Na\u207a has nuclear charge 11+, Mg\u207a has 12+ \u2014 Mg\u207a actually has greater nuclear charge. C: The outer electron in Na\u207a is LESS shielded (in n=2 with fewer inner electrons). D: Na's outer electron is in 3s, Mg's is also in 3s \u2014 but after first ionisation, Na\u207a's outer electron is in 2p while Mg\u207a's is in 3s.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0048",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "D",
+    "explanation": {
+      "concept": "Identifying the largest jump in successive ionisation energies for sulfur \u2014 occurs when removing from a new inner shell.",
+      "reasoning": "S (Z=16): [Ne]3s\u00b23p\u2074 \u2014 6 valence electrons. The biggest jump occurs after removing all 6 valence electrons, i.e., between the 6th and 7th IE, because the 7th electron must come from the n=2 shell (inner shell, much closer to nucleus).",
+      "why_correct": "Option D: The largest difference is between the 6th and 7th ionisation energies \u2014 after removing all 6 valence electrons, the 7th comes from the inner n=2 shell.",
+      "why_others_wrong": "A: 3rd-4th jump is within valence shell. B: 4th-5th jump is within valence shell. C: 5th-6th jump is within valence shell. All these are smaller than the shell-change jump at 6th-7th.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0049",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "A",
+    "explanation": {
+      "concept": "Using ionisation energy patterns to identify Group 15 elements and determine relative positions in the group.",
+      "reasoning": "Both X and Y show the largest jump between 5th and 6th IE: X: 5400\u219210400 (jump of 5000); Y: 6000\u219212300 (jump of 6300). This indicates both have 5 valence electrons \u2192 Group 15. Y has higher 1st IE (1000 > 800), so Y is higher in Group 15. In Group 15 (N, P, As, Sb, Bi): higher position = higher IE. So Y = As (higher IE), X = Sb (lower IE). This matches option A: X = antimony (Sb), Y = arsenic (As).",
+      "why_correct": "Option A: X = Sb (lower IE, lower in group), Y = As (higher IE, higher in group) \u2014 both Group 15 with 5 valence electrons.",
+      "why_others_wrong": "B: Reversed \u2014 As has higher IE than Sb, so Y cannot be Sb if Y has higher IE. C, D: Se and Te are Group 16 (6 valence electrons), not Group 15.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  },
+  {
+    "id": "ch01_P1_0050",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "This question appears to involve gas stoichiometry (combustion of methane and ethane) rather than atomic structure. The image shows a question about volumes of gases absorbed by alkali after combustion.",
+      "reasoning": "Note: The image for this question appears to show content from a stoichiometry topic (CH\u2083 stoichiometry with methane/ethane combustion). The answer C (30 cm\u00b3) corresponds to the volume of CO\u2082 produced: CH\u2084 + 2O\u2082 \u2192 CO\u2082 + 2H\u2082O (10 cm\u00b3 CH\u2084 \u2192 10 cm\u00b3 CO\u2082); C\u2082H + 3.5O\u2082 \u2192 2CO\u2082 + 3H\u2082O (10 cm\u00b3 C\u2082H\u2086 \u2192 20 cm\u00b3 CO\u2082). Total CO\u2082 = 10 + 20 = 30 cm\u00b3 absorbed by KOH.",
+      "why_correct": "Option C: 30 cm\u00b3 of CO\u2082 is produced and absorbed by the aqueous KOH.",
+      "why_others_wrong": "A (15 cm\u00b3): undercounted CO\u2082. B (20 cm\u00b3): only counted ethane's CO\u2082. D (40 cm\u00b3): overcounted.",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius (Note: question content appears to be from stoichiometry chapter)"
+    }
+  },
+  {
+    "id": "ch01_P1_0051",
+    "chapter_id": "ch01",
+    "topic_ids": [
+      "ch01_t01"
+    ],
+    "answer": "C",
+    "explanation": {
+      "concept": "Using ionisation energy jumps to identify elements and deduce a compound formula.",
+      "reasoning": "Element X: big jump between 5th and 6th IE \u2192 5 valence electrons \u2192 Group 15. 'Second largest 1st IE in its group' \u2192 P (N has the largest in Group 15). Element Y: big jump between 6th and 7th IE \u2192 6 valence electrons \u2192 Group 16. 'Largest 1st IE in its group' \u2192 O (top of Group 16). Compound Z = P\u2084O\u2081\u2080 (phosphorus oxide formed from P and O).",
+      "why_correct": "Option C: P\u2084O\u2081\u2080 \u2014 X is P (Group 15, second highest 1st IE after N) and Y is O (Group 16, highest 1st IE).",
+      "why_others_wrong": "A (NO\u2082): N is Group 15 but has the LARGEST 1st IE in Group 15, not second largest. B (PCl\u2085): Cl is Group 17, not Group 16. D (SF\u2086): S is Group 16 but doesn't have the largest 1st IE in Group 16 (O does).",
+      "syllabus_ref": "Topic 1.1: Particles in the atom and atomic radius"
+    }
+  }
+]

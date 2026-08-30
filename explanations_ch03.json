@@ -1,0 +1,2295 @@
+[
+ {
+  "id": "ch03_P1_0050",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Determining relative atomic mass from experimental combining masses using a proposed empirical formula.",
+   "reasoning": "If the formula is InO, the mole ratio of In to O is 1:1. Moles of O = 1.0/16 = 0.0625 mol. Since In:O = 1:1, moles of In = 0.0625 mol. Therefore A_r(In) = mass/moles = 4.8/0.0625 = 76.8 ≈ 77.",
+   "why_correct": "B (77) is correct because using the 1:1 ratio from InO, the moles of In equal moles of O (0.0625 mol), giving A_r(In) = 4.8/0.0625 = 76.8 ≈ 77.",
+   "why_others_wrong": "A (38) would arise from assuming a 2:1 In:O ratio incorrectly. C (115) is the actual A_r of indium from the periodic table but does not match the InO formula calculation. D (154) would result from assuming a 1:2 In:O ratio or other arithmetic errors.",
+   "syllabus_ref": "Topic 3.1: Relative masses of atoms and molecules; empirical and molecular formulae"
+  }
+ },
+ {
+  "id": "ch03_P1_0051",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Relative isotopic mass vs relative atomic/molecular mass distinctions.",
+   "reasoning": "A is wrong: Cl is an element with two isotopes (35Cl and 37Cl); 35.5 is the relative atomic mass (weighted average), not an isotopic mass. B is wrong: Cl2 relative molecular mass = 2 × 35.5 = 71, not 70. C is correct: ICl relative molecular mass = 126.9 + 35.5 = 162.4. D is wrong: NaCl is ionic, so it has a relative formula mass of 23.0 + 35.5 = 58.5, not a 'relative molecular mass' since it does not form molecules.",
+   "why_correct": "C is correct: ICl is a covalent molecule with relative molecular mass = A_r(I) + A_r(Cl) = 126.9 + 35.5 = 162.4.",
+   "why_others_wrong": "A: 35.5 is the relative atomic mass of Cl (weighted average of isotopes), not the isotopic mass of any single isotope. B: Cl2 M_r = 2 × 35.5 = 71, not 70. D: NaCl is an ionic compound with relative formula mass 58.5, not a 'relative molecular mass' as it does not exist as discrete molecules.",
+   "syllabus_ref": "Topic 3.1: Relative masses of atoms and molecules"
+  }
+ },
+ {
+  "id": "ch03_P1_0052",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Comparing number of hydrogen atoms across different substances using moles and molecular formulae.",
+   "reasoning": "A: Pentane C5H12, 0.10 mol → 0.10 × 12 = 1.2 mol H atoms. B: But-2-ene C4H8, 0.20 mol → 0.20 × 8 = 1.6 mol H atoms. C: H2 molecules, 1.00 mol → 1.00 × 2 = 2.0 mol H atoms. D: 6.02 × 10^23 H atoms = 1.0 mol H atoms. Comparing: 2.0 > 1.6 > 1.2 > 1.0, so C has the most.",
+   "why_correct": "C is correct: 1.00 mol of H2 molecules contains 2.00 mol of H atoms, which is the largest among all options.",
+   "why_others_wrong": "A: 0.10 mol pentane (C5H12) gives only 1.2 mol H atoms. B: 0.20 mol but-2-ene (C4H8) gives 1.6 mol H atoms, less than C. D: 6.02 × 10^23 hydrogen atoms equals only 1.0 mol H atoms, the smallest.",
+   "syllabus_ref": "Topic 3.1: The mole and the Avogadro constant"
+  }
+ },
+ {
+  "id": "ch03_P1_0053",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Definition of the Avogadro constant.",
+   "reasoning": "The Avogadro constant (L or N_A = 6.022 × 10^23 mol^-1) is defined as the number of particles in one mole of a substance. A is wrong: it describes mass, not a number. B is wrong: it again describes mass. C is correct: one mole of neon (a monatomic element) contains exactly N_A atoms. D is wrong: 12g of an element equals one mole only for carbon-12; for other elements, 12g does not correspond to one mole.",
+   "why_correct": "C is correct: one mole of neon contains the Avogadro constant number of atoms, since neon is monatomic (Ne atoms, not molecules).",
+   "why_others_wrong": "A: The Avogadro constant is a number, not a mass. B: Same error — it refers to mass, not a count. D: 12g equals one mole only for carbon-12 (by definition); for other elements like oxygen (12g ≠ 1 mol), this statement fails.",
+   "syllabus_ref": "Topic 3.1: The mole and the Avogadro constant"
+  }
+ },
+ {
+  "id": "ch03_P1_0054",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Calculating number of atoms from mass using moles and Avogadro's constant.",
+   "reasoning": "A: H2 (M_r=2), 1.0g → 0.5 mol H2 → 0.5 × 2 × L = L = 6.02 × 10^23 atoms, not 3.0 × 10^23. B: He (A_r=4), 4.0g → 1.0 mol He → 1.0 × L = 6.02 × 10^23 atoms, not 1.2 × 10^24. C: CH4 (M_r=16), 16g → 1.0 mol CH4 → 1.0 × 5 × L = 5 × 6.02 × 10^23 = 3.01 × 10^24 ≈ 3.0 × 10^24 atoms. ✓ D: CO2 (M_r=44), 44g → 1.0 mol CO2 → 1.0 × 3 × L = 3 × 6.02 × 10^23 = 1.8 × 10^24 atoms, not 6.0 × 10^23.",
+   "why_correct": "C is correct: 16g of CH4 = 1 mol CH4, each molecule has 5 atoms (1C + 4H), giving 5 × 6.02 × 10^23 ≈ 3.0 × 10^24 atoms.",
+   "why_others_wrong": "A: 1.0g H2 = 0.5 mol H2 = 1.0 mol H atoms = 6.02 × 10^23 atoms, not 3.0 × 10^23. B: 4.0g He = 1 mol He atoms = 6.02 × 10^23 atoms, not 1.2 × 10^24. D: 44g CO2 = 1 mol CO2 = 3 mol atoms = 1.8 × 10^24 atoms, not 6.0 × 10^23.",
+   "syllabus_ref": "Topic 3.2: The mole and the Avogadro constant; calculations involving moles"
+  }
+ },
+ {
+  "id": "ch03_P1_0055",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Counting atoms from decomposition reaction products using Avogadro's constant.",
+   "reasoning": "NH4Cl(s) → NH3(g) + HCl(g). Equal moles of NH3 and HCl are produced. Total gas molecules = 2.4 × 10^21, so 1.2 × 10^21 molecules of NH3 and 1.2 × 10^21 molecules of HCl. Each NH3 has 3 H atoms → 3.6 × 10^21 H atoms. Each HCl has 1 H atom → 1.2 × 10^21 H atoms. Total H atoms = 3.6 × 10^21 + 1.2 × 10^21 = 4.8 × 10^21.",
+   "why_correct": "C is correct: The decomposition produces equal numbers of NH3 and HCl molecules. With 1.2 × 10^21 of each, the H atoms total (3 × 1.2 × 10^21) + (1 × 1.2 × 10^21) = 4.8 × 10^21.",
+   "why_others_wrong": "A (1.2 × 10^21) counts only the H atoms from HCl, ignoring NH3. B (2.4 × 10^21) equals the total number of molecules, as if each molecule had 1 H atom. D (9.6 × 10^21) would require each molecule to have 4 H atoms on average, which is incorrect.",
+   "syllabus_ref": "Topic 3.2: The mole and the Avogadro constant"
+  }
+ },
+ {
+  "id": "ch03_P1_0056",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Converting between number of atoms, moles, mass, and carats for carbon (diamond).",
+   "reasoning": "6.02 × 10^23 carbon atoms = 1 mol C = 12.0 g C. One carat = 0.200 g C. Number of carats = total mass / mass per carat = 12.0 / 0.200.",
+   "why_correct": "C is correct: 6.02 × 10^23 C atoms = 1 mol = 12.0 g. Dividing by 0.200 g/carat gives 12.0/0.200 carats.",
+   "why_others_wrong": "A (0.200 × 12.0) multiplies instead of dividing, giving an incorrect unit. B (0.200/12.0) inverts the ratio, giving carats per gram instead of carats for 1 mol. D (0.200/6.02×10^23 × 12.0) incorrectly mixes the Avogadro constant into the calculation.",
+   "syllabus_ref": "Topic 3.2: The mole and the Avogadro constant"
+  }
+ },
+ {
+  "id": "ch03_P1_0057",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Use of the Avogadro constant to convert mass of an element into number of particles, then number per unit area.",
+   "reasoning": "n(Ag) = 0.216 / 107.9 = 2.00 x 10^-3 mol. Number of Ag atoms = 2.00 x 10^-3 x 6.02 x 10^23 = 1.20 x 10^21. These atoms cover 150 cm^2, so atoms per cm^2 = 1.20 x 10^21 / 150 = 8.0 x 10^18.",
+   "why_correct": "A (8.0 x 10^18) is correct: the total number of silver atoms (1.20 x 10^21) divided by the area (150 cm^2) gives 8.0 x 10^18 atoms per cm^2.",
+   "why_others_wrong": "The other options correspond to calculation errors: e.g. using the total atom count 1.2 x 10^21 without dividing by the area, or making a factor-of-10 error in the mole/particle conversion.",
+   "syllabus_ref": "Topic: Amount of substance; the Avogadro constant (L); particle counts."
+  }
+ },
+ {
+  "id": "ch03_P1_0058",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Comparing amounts of oxygen atoms in different substances using moles and molecular formulae.",
+   "reasoning": "9.03 x 10^23 oxygen atoms = 9.03 x 10^23 / 6.02 x 10^23 = 1.50 mol of O atoms. A: 0.25 mol Al2O3 contains 0.25 x 3 = 0.75 mol O. B: 0.75 mol SO2 contains 0.75 x 2 = 1.50 mol O. C: 1.5 mol SO3 contains 1.5 x 3 = 4.5 mol O. D: 3.0 mol H2O contains 3.0 x 1 = 3.0 mol O. Only B gives 1.50 mol of oxygen atoms.",
+   "why_correct": "B (0.75 mol SO2) is correct because each SO2 molecule contains 2 oxygen atoms, so 0.75 mol supplies 1.50 mol = 9.03 x 10^23 O atoms.",
+   "why_others_wrong": "A gives only 0.75 mol O (3 O per Al2O3 but only 0.25 mol taken); C gives 4.5 mol O and D gives 3.0 mol O, so neither matches the required 1.50 mol.",
+   "syllabus_ref": "Topic: Amount of substance; moles and formulae."
+  }
+ },
+ {
+  "id": "ch03_P1_0059",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Determining empirical formula from combustion analysis data.",
+   "reasoning": "Moles CO2 = 4.00/44.0 = 0.0909 mol → moles C = 0.0909, mass C = 1.091 g. Moles H2O = 1.63/18.0 = 0.0906 mol → moles H = 0.1811, mass H = 0.181 g. Mass O = 2.00 - 1.091 - 0.181 = 0.728 g → moles O = 0.728/16.0 = 0.0455 mol. Ratio C:H:O = 0.0909:0.1811:0.0455 = 2:4:1. Empirical formula = C2H4O.",
+   "why_correct": "C (C2H4O) is correct: The mole ratio C:H:O = 2:4:1, giving the empirical formula C2H4O.",
+   "why_others_wrong": "A (CHO2) has wrong ratios. B (C2H2O) has H:C ratio of 1:1 instead of 2:1. D (CH2O2) has O:C ratio of 2:1 instead of 1:2.",
+   "syllabus_ref": "Topic 3.2: Empirical and molecular formulae from combustion data"
+  }
+ },
+ {
+  "id": "ch03_P1_0060",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Definitions of relative atomic mass, relative formula mass, molecular formula, and the mole.",
+   "reasoning": "A is wrong: the simplest whole number ratio defines the empirical formula, not the molecular formula. B is wrong: one mole contains 6 × 10^23 particles (which may be molecules, ions, or atoms depending on the substance). C is wrong: relative atomic mass is the ratio to 1/12 of the mass of a carbon-12 atom, not the full mass of a carbon-12 atom. D is correct: relative formula mass is indeed the sum of the relative atomic masses of all atoms in the formula unit.",
+   "why_correct": "D is correct: the relative formula mass (M_r) of a compound is calculated by summing the relative atomic masses (A_r) of every atom shown in its formula.",
+   "why_others_wrong": "A describes the empirical formula, not molecular formula. B incorrectly states 'atoms' — one mole of O2 contains 6 × 10^23 molecules (but 1.2 × 10^24 atoms). C omits the crucial '1/12' factor in the carbon-12 reference.",
+   "syllabus_ref": "Topic 3.1: Relative masses of atoms and molecules"
+  }
+ },
+ {
+  "id": "ch03_P1_0061",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Determining an empirical formula from percentage composition by mass.",
+   "reasoning": "In 100 g: n(C) = 30.6/12.0 = 2.55 mol; n(H) = 3.8/1.0 = 3.8 mol; n(O) = 20.4/16.0 = 1.275 mol; n(Cl) = 45.2/35.5 = 1.27 mol. Dividing by 1.27 gives C 2.00, H 3.0, O 1.00, Cl 1.00, i.e. the ratio 2:3:1:1 and empirical formula C2H3OCl.",
+   "why_correct": "A (C2H3OCl) is correct: the mole ratio C:H:O:Cl is 2:3:1:1, and this formula reproduces the stated percentages (C% = 24.0/78.5 = 30.6%, H% = 3.0/78.5 = 3.8%, O% = 16.0/78.5 = 20.4%, Cl% = 35.5/78.5 = 45.2%).",
+   "why_others_wrong": "B (C2H4OCl) requires four H atoms for every Cl, but the measured hydrogen percentage only supports three; the other options mis-ratio the elements by rounding incorrectly.",
+   "syllabus_ref": "Topic: Empirical and molecular formulae."
+  }
+ },
+ {
+  "id": "ch03_P1_0062",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t02"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests atomic structure (successive ionisation energies and electron shells), with the result used to predict a formula.",
+   "reasoning": "The left graph shows a large jump between the 7th and 8th ionisation energies, so the atom has 7 valence electrons: Period 3, Group 17 = chlorine. The right graph shows a large jump between the 2nd and 3rd ionisation energies, so the atom has 2 valence electrons: Group 2 = magnesium. Mg forms Mg^2+ and Cl forms Cl^-, giving the ionic compound MgCl2.",
+   "why_correct": "A (MgCl2) is correct: the ionisation-energy patterns identify magnesium (Group 2) and chlorine (Group 17), and the charge-balanced formula is MgCl2.",
+   "why_others_wrong": "C (Na2S) would require elements with 1 and 6 valence electrons, which contradicts the big jumps after the 2nd and 7th ionisations; the remaining options pair elements with the wrong numbers of valence electrons.",
+   "syllabus_ref": "Topic: Atomic structure - successive ionisation energies and shell structure; formulae of ionic compounds.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0063",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "This question tests chemical bonding: molecular shapes predicted by electron-pair repulsion (VSEPR).",
+   "reasoning": "H2O has 2 bond pairs and 2 lone pairs on oxygen, giving a bent (non-linear) shape with an angle of about 104.5 deg. BF3 has 3 bond pairs and no lone pairs on boron, giving a trigonal planar shape with an angle of 120 deg. The required pairing is therefore (non-linear, trigonal planar).",
+   "why_correct": "D (non-linear, trigonal planar) is correct: water is bent because of its two lone pairs, while BF3 is trigonal planar because boron has three bonding regions only.",
+   "why_others_wrong": "C pairs the second molecule as pyramidal, which would need a central atom with one lone pair and three bond pairs (as in NH3) - BF3 has no lone pair; the other options mis-describe water as linear or planar.",
+   "syllabus_ref": "Topic: Chemical bonding - shapes of molecules; electron-pair repulsion theory.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0064",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Determining empirical formula from combustion analysis data.",
+   "reasoning": "Moles CO2 = 4.40/44.0 = 0.100 mol → moles C = 0.100 mol, mass C = 1.20 g. Moles H2O = 1.80/18.0 = 0.100 mol → moles H = 0.200 mol, mass H = 0.200 g. Mass O in J = 3.00 - 1.20 - 0.200 = 1.60 g → moles O = 1.60/16.0 = 0.100 mol. Ratio C:H:O = 0.100:0.200:0.100 = 1:2:1. Empirical formula = CH2O.",
+   "why_correct": "D (CH2O) is correct: the mole ratio C:H:O = 1:2:1.",
+   "why_others_wrong": "A (CH) ignores oxygen entirely. B (CHO) has O:C ratio of 1:1 but H:C of 1:1 instead of 2:1. C (CH2) ignores oxygen — but the compound contains O since mass C + mass H = 1.40 g < 3.00 g.",
+   "syllabus_ref": "Topic 3.4: Empirical formula from combustion data"
+  }
+ },
+ {
+  "id": "ch03_P1_0065",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Calculating percentage by mass of carbon in organic compounds to identify compounds with a specific %C.",
+   "reasoning": "Calculate %C for each compound: Hexose C6H12O6: M_r = 180, %C = 72/180 = 40.0%. Pentose C5H10O5: M_r = 150, %C = 60/150 = 40.0%. Starch (C6H10O5)n: M_r per unit = 162, %C = 72/162 = 44.4%. Sucrose C12H22O11: M_r = 342, %C = 144/342 = 42.1%. Only pentose and hexose both have exactly 40% carbon.",
+   "why_correct": "B is correct: both pentose (C5H10O5, 40.0% C) and hexose (C6H12O6, 40.0% C) contain exactly 40% carbon by mass. Note that all carbohydrates with the general formula C_n(H2O)_n have 40% C.",
+   "why_others_wrong": "A: starch has 44.4% C, not 40%. C: sucrose has 42.1% C, not 40%. D: both starch (44.4%) and sucrose (42.1%) are wrong.",
+   "syllabus_ref": "Topic 3.4: Percentage composition and empirical/molecular formulae"
+  }
+ },
+ {
+  "id": "ch03_P1_0066",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Identifying an empirical formula — the simplest whole number ratio of atoms that cannot be further reduced.",
+   "reasoning": "An empirical formula must have subscripts with no common factor greater than 1. A: C2H4O → ratio 2:4:1, GCD = 1, cannot be simplified → empirical formula. B: C2H4O2 → ratio 2:4:2, GCD = 2, simplifies to CHO. C: C8H12 → ratio 8:12, GCD = 4, simplifies to C2H3. D: H2O2 → ratio 2:2, GCD = 2, simplifies to HO.",
+   "why_correct": "A (C2H4O) is correct: the subscripts 2, 4, 1 have no common factor other than 1, so this is already in simplest ratio.",
+   "why_others_wrong": "B simplifies to CHO. C simplifies to C2H3. D simplifies to HO. All can be reduced further.",
+   "syllabus_ref": "Topic 3.4: Empirical and molecular formulae"
+  }
+ },
+ {
+  "id": "ch03_P1_0067",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Relationship between empirical formula, molecular formula, and relative molecular mass when the C:H ratio is the same.",
+   "reasoning": "W/X = Y/Z means the C:H ratio is identical in both hydrocarbons, so they share the same empirical formula. However, W, X, Y, Z are different whole numbers, meaning the molecular formulae differ (e.g., C2H4 vs C3H6). Different molecular formulae with the same empirical formula necessarily have different relative molecular masses.",
+   "why_correct": "C is correct: same empirical formula (same ratio), different molecular formulae (different actual numbers), different M_r (different total mass).",
+   "why_others_wrong": "A and B claim molecular formulae are the same, but W, X, Y, Z are stated to be different. D claims same M_r, but different molecular formulae with same empirical formula must have different M_r (they are multiples of each other).",
+   "syllabus_ref": "Topic 3.4: Empirical and molecular formulae"
+  }
+ },
+ {
+  "id": "ch03_P1_0068",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Determining the group of an element from successive ionisation energies and predicting its chloride formula.",
+   "reasoning": "Examining jumps in IE: 1st→2nd (×1.89), 2nd→3rd (×1.50), 3rd→4th (×1.78), 4th→5th (×1.25), 5th→6th (×2.05). The largest jump is between the 5th and 6th IE (6000 → 12300 kJ/mol), indicating 5 valence electrons → Group 15. Group 15 elements commonly form XCl3 (using 3 unpaired p-electrons).",
+   "why_correct": "C (XCl3) is correct: the large jump after the 5th IE indicates Group 15, which typically forms trichlorides (e.g., PCl3, NCl3).",
+   "why_others_wrong": "A (XCl): would require Group 1 (jump after 1st IE). B (XCl2): would require Group 2 (jump after 2nd IE). D (XCl4): would require Group 14 (jump after 4th IE).",
+   "syllabus_ref": "Topic 3.4: Successive ionisation energies and group determination"
+  }
+ },
+ {
+  "id": "ch03_P1_0069",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Comparing gas volumes from thermal decomposition of equal masses of different compounds.",
+   "reasoning": "Decomposition reactions: CaCO3 → CaO + CO2 (1 mol gas/mol); Ca(NO3)2 → CaO + 2NO2 + ½O2 (2.5 mol gas/mol); BaCO3 → BaO + CO2 (1 mol gas/mol); Ba(NO3)2 → BaO + 2NO2 + ½O2 (2.5 mol gas/mol). For equal mass m: moles of gas = (m/M_r) × gas per mol. CaCO3: m/100 × 1 = 0.010m. Ca(NO3)2: m/164 × 2.5 = 0.0152m. BaCO3: m/197 × 1 = 0.0051m. Ba(NO3)2: m/261 × 2.5 = 0.0096m. Ca(NO3)2 produces the most gas.",
+   "why_correct": "B (Ca(NO3)2) is correct: it produces 2.5 mol gas per mol and has the lowest M_r among the nitrates, giving the highest moles of gas per gram (0.0152 mol gas per gram).",
+   "why_others_wrong": "A (CaCO3): only 1 mol gas/mol, M_r = 100. C (BaCO3): only 1 mol gas/mol, and higher M_r = 197. D (Ba(NO3)2): produces 2.5 mol gas/mol but M_r = 261 is much larger, giving fewer moles per gram.",
+   "syllabus_ref": "Topic 3.4: Moles and gas volumes from decomposition reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0070",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Calculating actual yield from percentage yield in an oxidation reaction.",
+   "reasoning": "Ethanol (C2H5OH, M_r = 46) refluxed with excess acidified K2Cr2O7 undergoes full oxidation to ethanoic acid (CH3COOH, M_r = 60). Moles of ethanol = 2.30/46 = 0.0500 mol. Theoretical yield of CH3COOH = 0.0500 × 60 = 3.00 g. Actual yield = 60.0% × 3.00 = 1.80 g.",
+   "why_correct": "C (1.80 g) is correct: the theoretical yield is 3.00 g, and 60% of 3.00 g = 1.80 g.",
+   "why_others_wrong": "A (1.32 g) might arise from using the wrong product (e.g., ethanal, M_r = 44: 0.05 × 44 × 0.60 = 1.32 g — this would be the yield if distilled immediately without reflux). B (1.38 g) has no clear basis. D (3.00 g) is the theoretical yield, ignoring the 60% yield.",
+   "syllabus_ref": "Topic 3.4: Moles, percentage yield, and oxidation of alcohols"
+  }
+ },
+ {
+  "id": "ch03_P1_0071",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t04"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Stoichiometry of reactions between tartaric acid and various sodium compounds.",
+   "reasoning": "Tartaric acid HOOC-CH(OH)-CH(OH)-COOH has 2 COOH groups and 2 OH (alcohol) groups. Na reacts with ALL -OH groups (both carboxylic and alcoholic): 4 reactive H atoms → 4 mol Na per mol tartaric acid. Na2CO3 reacts only with COOH: 2 COOH → 1 mol Na2CO3. NaHCO3 reacts only with COOH: 2 COOH → 2 mol NaHCO3. NaOH reacts with COOH only: 2 COOH → 2 mol NaOH.",
+   "why_correct": "A (sodium) is correct: Na metal reacts with all 4 -OH groups (2 COOH + 2 alcohol OH), requiring 4 mol Na per mol of tartaric acid.",
+   "why_others_wrong": "B (Na2CO3): only 1 mol needed (reacts with 2 COOH). C (NaHCO3): only 2 mol needed. D (NaOH): only 2 mol needed (reacts with COOH only, not alcohol OH).",
+   "syllabus_ref": "Topic 3.4: Stoichiometry of acid-base and redox reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0072",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Identifying a hydrocarbon from combustion analysis (mass of carbon dioxide produced per gram of fuel).",
+   "reasoning": "n(CO2) = 3.22/44.0 = 0.0732 mol, so the fuel contains 0.0732 mol of carbon (mass 0.878 g) and 0.122 g of hydrogen, giving a C:H ratio of 3:5 (C3H5 unit). Checking options per 1 g: cyclohexene C6H10 (Mr 82) gives (6/82) x 44 = 3.22 g CO2, exactly matching the data.",
+   "why_correct": "A (cyclohexene, C6H10) is correct: its carbon mass fraction is 72/82, and 1.00 g therefore produces (6 x 44.0)/82 = 3.22 g of CO2.",
+   "why_others_wrong": "B cyclopentane (3.14 g) and C ethene (3.14 g) give too little CO2 per gram, and D pentane gives only 3.06 g, because their carbon mass fractions are lower than that of cyclohexene.",
+   "syllabus_ref": "Topic: Combustion analysis; mole calculations from equations."
+  }
+ },
+ {
+  "id": "ch03_P1_0073",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Calculating the mass of oxygen needed for complete combustion using gas volumes at room conditions.",
+   "reasoning": "C3H8 + 5O2 -> 3CO2 + 4H2O. n(propane) = 12/24 = 0.50 mol, so n(O2) = 0.50 x 5 = 2.5 mol. Mass of O2 = 2.5 x 32.0 = 80.0 g.",
+   "why_correct": "B (80 g) is correct: 12 dm^3 of propane is 0.50 mol, which needs 2.5 mol of O2, i.e. 80 g.",
+   "why_others_wrong": "C (120 g) results from using a 1:7.5 or otherwise incorrect oxygen ratio; other values come from using the wrong molar gas volume or molar mass of oxygen.",
+   "syllabus_ref": "Topic: Moles, gas volumes at r.t.p. and reacting masses."
+  }
+ },
+ {
+  "id": "ch03_P1_0074",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Moles of hydrogen produced when sodium reacts with a molecule containing several reactive -OH groups.",
+   "reasoning": "Citric acid contains three carboxylic acid groups and one alcohol hydroxyl group - four reactive O-H groups in total. Sodium reacts with each acidic/reactive hydrogen: 2 -OH + 2Na -> 2 -ONa + H2. Four reactive H atoms per molecule therefore give 4/2 = 2 mol of H2 from 1 mol of citric acid.",
+   "why_correct": "C (2 mol) is correct: sodium reacts with all four hydroxyl hydrogens (3 x COOH + 1 x alcohol OH), producing two moles of hydrogen gas per mole of citric acid.",
+   "why_others_wrong": "B (1.5 mol) counts only the three carboxylic acid hydrogens and ignores the alcohol OH, which also reacts with sodium; the other options under- or over-count the reactive hydrogens.",
+   "syllabus_ref": "Topic: Moles and reacting ratios; reactions of alcohols and carboxylic acids with sodium."
+  }
+ },
+ {
+  "id": "ch03_P1_0075",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Calculating gas volume from complete combustion using molar volume at room conditions.",
+   "reasoning": "C3H8 + 5O2 → 3CO2 + 4H2O. M_r(C3H8) = 44.0. Moles of propane = 9.61/44.0 = 0.2184 mol. Moles of CO2 = 0.2184 × 3 = 0.6552 mol. At room conditions, molar volume = 24 dm³/mol. Volume of CO2 = 0.6552 × 24 = 15.7 dm³.",
+   "why_correct": "D (15.7 dm³) is correct: 0.2184 mol propane produces 0.6552 mol CO2, which occupies 15.7 dm³ at room conditions.",
+   "why_others_wrong": "A (4.89 dm³): would be the volume if only 1 mol CO2 per mol propane. B (5.24 dm³): no clear basis. C (14.7 dm³): close but slightly off, possibly from using M_r = 44.1 or rounding errors.",
+   "syllabus_ref": "Topic 3.5: Gas volumes from combustion reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0076",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Mass ratio of the gaseous products of thermal decomposition of a nitrate.",
+   "reasoning": "2Mg(NO3)2 -> 2MgO + 4NO2 + O2. Per 2 mol of nitrate decomposed, 4 mol NO2 (mass 4 x 46 = 184 g) and 1 mol O2 (mass 32 g) form. The ratio mass(NO2):mass(O2) = 184:32 = 5.75:1 = 1 : 0.174.",
+   "why_correct": "A (1 / 0.174) is correct because the stoichiometric gas ratio is 4 NO2 : 1 O2, giving a mass ratio 184/32 = 5.75, expressed as 1 : 0.174.",
+   "why_others_wrong": "C (1 / 0.348) uses an effective ratio of 2 NO2 : 1 O2 and so halves the NO2 mass; the other options misuse the 4:1 mole ratio or omit oxygen.",
+   "syllabus_ref": "Topic: Moles and reacting masses; thermal decomposition of nitrates."
+  }
+ },
+ {
+  "id": "ch03_P1_0077",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Neutralisation stoichiometry — calculating volume of NaOH needed to neutralise a triprotic acid.",
+   "reasoning": "Citric acid HO2CCH2C(OH)(CO2H)CH2CO2H has 3 carboxylic acid (COOH) groups. Each COOH reacts with 1 NaOH: C6H8O7 + 3NaOH → C6H5O7Na3 + 3H2O. Moles NaOH needed = 3 × 0.0050 = 0.015 mol. Volume = moles/concentration = 0.015/0.40 = 0.0375 dm³ = 37.5 cm³.",
+   "why_correct": "C (37.5 cm³) is correct: 3 mol NaOH per mol citric acid, so 0.015 mol NaOH at 0.40 mol/dm³ requires 37.5 cm³.",
+   "why_others_wrong": "A (12.5 cm³): would be for a monoprotic acid (1:1 ratio). B (25.0 cm³): would be for a diprotic acid (2:1 ratio). D (50.0 cm³): would require 4 mol NaOH per mol citric acid.",
+   "syllabus_ref": "Topic 3.5: Acid-base neutralisation stoichiometry"
+  }
+ },
+ {
+  "id": "ch03_P1_0078",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Comparing gas volumes from thermal decomposition of different compounds under the same conditions.",
+   "reasoning": "CaCO3 → CaO + CO2: 1 mol gas per mol. 0.005 mol → 0.005 mol gas = 100 cm³, so molar volume = 20 dm³/mol under these conditions. Ca(NO3)2 → CaO + 2NO2 + ½O2: 2.5 mol gas per mol. 0.005 mol → 0.005 × 2.5 = 0.0125 mol gas. Volume = 0.0125 × 20,000 cm³/mol = 250 cm³.",
+   "why_correct": "D (250 cm³) is correct: Ca(NO3)2 produces 2.5 mol gas per mol (vs 1 mol for CaCO3), so 2.5 × 100 = 250 cm³.",
+   "why_others_wrong": "A (50 cm³): would be half the CaCO3 volume, incorrect. B (100 cm³): same as CaCO3, ignores the extra gas from nitrate decomposition. C (200 cm³): would correspond to 2 mol gas per mol, not 2.5.",
+   "syllabus_ref": "Topic 3.5: Gas volumes from thermal decomposition"
+  }
+ },
+ {
+  "id": "ch03_P1_0079",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Calculating gas volume from decomposition using stoichiometry and molar volume at RTP.",
+   "reasoning": "2NaN3 -> 2Na + 3N2. Mr(NaN3) = 23 + 3(14) = 65. Moles NaN3 = 150/65 = 2.308 mol. Moles N2 = 2.308 x 3/2 = 3.462 mol. At room temperature and pressure the molar gas volume is 24 dm3/mol, so volume N2 = 3.462 x 24 = 83.1 dm3.",
+   "why_correct": "Based on calculation: 150g NaN3 = 2.308 mol → 3.462 mol N2 → 83 dm³ at RTP (option B).",
+   "why_others_wrong": "A (166 dm³): would require double the N2, as if 3 mol N2 per mol NaN3 instead of 1.5. C (55 dm³): no clear basis from standard calculation. D (37 dm³): would correspond to about 1.54 mol N2, incorrect stoichiometry.",
+   "syllabus_ref": "Topic 3.5: Gas volumes from decomposition reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0080",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Gas volume calculations in combustion reactions at elevated temperature where water is gaseous.",
+   "reasoning": "C2H6 + 3.5O2 → 2CO2 + 3H2O. At 200°C, water is steam (gas). 10 cm³ C2H6 requires 35 cm³ O2. O2 available = 45 cm³ (excess). After reaction: CO2 = 20 cm³, H2O(g) = 30 cm³, unreacted O2 = 45 - 35 = 10 cm³. Total = 20 + 30 + 10 = 60 cm³.",
+   "why_correct": "D (60 cm³) is correct: the total gas includes CO2 (20 cm³), steam (30 cm³), and excess O2 (10 cm³).",
+   "why_others_wrong": "A (30 cm³): would be just the steam, ignoring CO2 and excess O2. B (50 cm³): might ignore steam (20 + 10 = 30, no). C (55 cm³): no clear basis.",
+   "syllabus_ref": "Topic 3.5: Gas volume stoichiometry at non-standard temperatures"
+  }
+ },
+ {
+  "id": "ch03_P1_0081",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Identifying an ammonium salt from the volume of ammonia released with sodium hydroxide.",
+   "reasoning": "n(NH3) = 2.51/24 = 0.105 mol. For 6.90 g of each salt: A (NH4)2CO3 (Mr 96) gives 2 x 6.90/96 = 0.144 mol NH3; B NH4Cl (Mr 53.5) gives 0.129 mol; C NH4NO3 (Mr 80) gives 0.0863 mol; D (NH4)2SO4 (Mr 132.1) gives 2 x 6.90/132.1 = 0.105 mol, i.e. 2.51 dm^3.",
+   "why_correct": "D ((NH4)2SO4, ammonium sulfate) is correct: 6.90 g is 0.0522 mol, and each mole gives two moles of NH3, producing 0.105 mol = 2.51 dm^3 of ammonia.",
+   "why_others_wrong": "A and B give larger ammonia volumes (3.45 and 3.10 dm^3) and C gives only 2.07 dm^3, because their molar masses and/or ammonium-ion counts differ from those of ammonium sulfate.",
+   "syllabus_ref": "Topic: Moles, gas volumes and identification of salts from reaction data."
+  }
+ },
+ {
+  "id": "ch03_P1_0082",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Gas volume from thermal decomposition of magnesium nitrate at room conditions.",
+   "reasoning": "2Mg(NO3)2 → 2MgO + 4NO2 + O2. M_r(Mg(NO3)2) = 24.3 + 2(14 + 48) = 148.3. Moles = 0.25/148.3 = 1.686 × 10^-3 mol. Per mol Mg(NO3)2: 2 mol NO2 + 0.5 mol O2 = 2.5 mol gas. Total gas moles = 1.686 × 10^-3 × 2.5 = 4.214 × 10^-3 mol. Volume = 4.214 × 10^-3 × 24,000 = 101 cm³.",
+   "why_correct": "C (101 cm³) is correct: 0.25g Mg(NO3)2 produces 4.21 × 10^-3 mol of gas (NO2 + O2), occupying 101 cm³ at room conditions.",
+   "why_others_wrong": "A (40 cm³): would correspond to ~1 mol gas per mol Mg(NO3)2. B (81 cm³): close but slightly low. D (202 cm³): would be double, as if 5 mol gas per mol.",
+   "syllabus_ref": "Topic 3.5: Gas volumes from thermal decomposition"
+  }
+ },
+ {
+  "id": "ch03_P1_0083",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Calculating mass of metal obtainable from an ore given percentage composition.",
+   "reasoning": "1 tonne = 1000 kg of ore, of which 3.00% is CuCO3, so mass CuCO3 = 30.0 kg. Mr(CuCO3) = 63.5 + 12.0 + 48.0 = 123.5, and the mass fraction of Cu in CuCO3 is 63.5/123.5 = 0.514. Mass of Cu obtainable = 30.0 x 0.514 = 15.4 kg.",
+   "why_correct": "Based on calculation, C (15.4 kg) is correct: 30 kg CuCO3 contains 15.4 kg Cu.",
+   "why_others_wrong": "A (1.91 kg): no clear basis from the given data. B (3.71 kg): would be the mass if only 0.37% CuCO3. D (58.4 kg): exceeds the mass of CuCO3 itself, impossible.",
+   "syllabus_ref": "Topic 3.5: Percentage composition and mass calculations"
+  }
+ },
+ {
+  "id": "ch03_P1_0084",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Calculating minimum air volume for complete combustion using oxygen percentage in air.",
+   "reasoning": "C4H10 + 6.5O2 → 4CO2 + 5H2O. 10 cm³ butane requires 10 × 6.5 = 65 cm³ O2. Air contains 21% O2, so minimum air volume = 65/0.21 = 309.5 ≈ 310 cm³.",
+   "why_correct": "D (310 cm³) is correct: 65 cm³ O2 needed, and air is 21% O2, giving 65/0.21 ≈ 310 cm³ air.",
+   "why_others_wrong": "A (14 cm³): far too small. B (27 cm³): would be the O2 volume if butane needed 2.7 O2. C (65 cm³): is the O2 volume, not the air volume.",
+   "syllabus_ref": "Topic 3.5: Combustion stoichiometry and air composition"
+  }
+ },
+ {
+  "id": "ch03_P1_0085",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Mass of nitrogen dioxide formed on thermal decomposition of magnesium nitrate.",
+   "reasoning": "2Mg(NO3)2 -> 2MgO + 4NO2 + O2. Mr(Mg(NO3)2) = 148.3, so n(salt) = 7.4/148.3 = 0.050 mol. n(NO2) = 2 x 0.050 = 0.100 mol, and mass(NO2) = 0.100 x 46.0 = 4.6 g.",
+   "why_correct": "D (4.6 g) is correct: each mole of magnesium nitrate produces two moles of NO2, so 0.050 mol of salt gives 0.100 mol (4.6 g) of NO2.",
+   "why_others_wrong": "B (2.3 g) assumes only one mole of NO2 per mole of nitrate (missing the factor of 2 in the balanced equation); the other options mis-evaluate the molar masses.",
+   "syllabus_ref": "Topic: Moles and reacting masses; thermal decomposition of nitrates."
+  }
+ },
+ {
+  "id": "ch03_P1_0086",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t05"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Maximum mass of metal obtainable from a reduction, using the balanced equation.",
+   "reasoning": "6SrO + 2Al -> 3Sr + Sr3Al2O6. Mr(SrO) = 87.6 + 16.0 = 103.6, so n(SrO) = 100/103.6 = 0.965 mol. The equation gives 3 mol Sr per 6 mol SrO, so n(Sr) = 0.965 x 3/6 = 0.483 mol. Mass(Sr) = 0.483 x 87.6 = 42.3 g.",
+   "why_correct": "B (42.3 g) is correct: the 6:3 stoichiometry and the limiting SrO give 0.483 mol of strontium, weighing 42.3 g.",
+   "why_others_wrong": "A (41.3 g) and the other values result from using an incorrect Sr:SrO ratio or rounded atomic masses; SrO is the limiting reagent because aluminium is in excess.",
+   "syllabus_ref": "Topic: Moles and reacting masses from equations; limiting reagent."
+  }
+ },
+ {
+  "id": "ch03_P1_0087",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t06"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Calculating mass of metal from ore using percentage composition and mass fraction.",
+   "reasoning": "1 tonne = 1000 kg. Mass MnO2 = 4% × 1000 = 40 kg. M_r(MnO2) = 54.9 + 32.0 = 86.9. Mass fraction Mn = 54.9/86.9 = 0.6318. Mass Mn = 40 × 0.6318 = 25.27 kg ≈ 25.3 kg.",
+   "why_correct": "A (25.3 kg) is correct: 40 kg MnO2 contains 25.3 kg Mn.",
+   "why_others_wrong": "B (40.0 kg): is the mass of MnO2, not Mn. C (63.3 kg): would be if Mn fraction were ~1.58, impossible. D (632 kg): exceeds total ore mass, impossible.",
+   "syllabus_ref": "Topic 3.6: Percentage composition and mass calculations from ores"
+  }
+ },
+ {
+  "id": "ch03_P1_0088",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t06"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Simultaneous equations from two titration-like reactions to find moles of each oxide in a mixture.",
+   "reasoning": "NaOH dissolves only Al2O3: Al2O3 + 2OH- + 3H2O -> 2[Al(OH)4]-. Moles NaOH = 0.10 x 2.0 = 0.20 mol, so n(Al2O3) = 0.20/2 = 0.10 mol. HCl dissolves both oxides: Al2O3 + 6H+ -> 2Al3+ + 3H2O uses 6 x 0.10 = 0.60 mol H+, and total HCl = 0.80 x 2.0 = 1.6 mol. H+ used for MgO = 1.6 - 0.60 = 1.0 mol, so n(MgO) = 1.0/2 = 0.50 mol.",
+   "why_correct": "Based on calculation: Al2O3 = 0.10 mol, MgO = 0.50 mol (option D).",
+   "why_others_wrong": "A (0.05, 0.25): Al2O3 wrong (would need 0.1 mol NaOH, not 0.2). B (0.05, 0.50): Al2O3 wrong. C (0.10, 0.25): MgO wrong (would need only 1.1 mol HCl total, not 1.6).",
+   "syllabus_ref": "Topic 3.6: Stoichiometry of mixtures and simultaneous reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0089",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t06"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Gas volume from a reaction where the acid, not the solid, is the limiting reagent.",
+   "reasoning": "CuCO3 + 2HCl -> CuCl2 + H2O + CO2. n(CuCO3) = 3.7/123.5 = 0.0300 mol, which would need 0.060 mol HCl. Only n(HCl) = 0.025 x 2.0 = 0.050 mol is present, so HCl is limiting. n(CO2) = 0.050/2 = 0.025 mol, and volume = 0.025 x 24 = 0.60 dm^3.",
+   "why_correct": "A (0.60 dm^3) is correct: 0.050 mol of HCl produces 0.025 mol of CO2 (1 mol CO2 per 2 mol HCl), occupying 0.60 dm^3 at room conditions.",
+   "why_others_wrong": "B (0.72 dm^3) wrongly treats copper(II) carbonate as limiting (0.030 mol CO2), ignoring the shortage of acid; the remaining options use wrong stoichiometric factors.",
+   "syllabus_ref": "Topic: Limiting reagent; moles and gas volumes."
+  }
+ },
+ {
+  "id": "ch03_P1_0090",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t06"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Percentage by mass from titration data using stoichiometry.",
+   "reasoning": "2NaHCO3 + H2SO4 → Na2SO4 + 2CO2 + 2H2O. Moles H2SO4 = 7.15 × 10^-3 × 0.100 = 7.15 × 10^-4 mol. Moles NaHCO3 = 2 × 7.15 × 10^-4 = 1.43 × 10^-3 mol. Mass NaHCO3 = 1.43 × 10^-3 × 84.0 = 0.1201 g. Percentage = (0.1201/1.00) × 100 = 12.0%.",
+   "why_correct": "C (12.0%) is correct: 0.120 g NaHCO3 in 1.00 g washing powder = 12.0%.",
+   "why_others_wrong": "A (3.0%): would be if the ratio were 1:1 instead of 2:1. B (6.0%): half the correct value. D (24.0%): double the correct value.",
+   "syllabus_ref": "Topic 3.6: Titration calculations and percentage composition"
+  }
+ },
+ {
+  "id": "ch03_P1_0091",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t06"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Mass of hydrated salt required to make a solution of specified ion concentration.",
+   "reasoning": "n(NH4+) needed = 0.100 x 0.800 = 0.080 mol. Each (NH4)2CO3.H2O supplies two NH4+ ions, so n(salt) = 0.040 mol. Mr = 96.0 + 18.0 = 114.0, giving mass = 0.040 x 114.0 = 4.56 g.",
+   "why_correct": "A (4.56 g) is correct: 0.040 mol of the hydrated salt provides the required 0.080 mol of ammonium ions in 800 cm^3 of solution.",
+   "why_others_wrong": "C (9.12 g) ignores the two ammonium ions per formula unit (using 0.080 mol of salt) and would give [NH4+] = 0.200 mol dm^-3; the other options mis-handle the water of crystallisation.",
+   "syllabus_ref": "Topic: Moles in solution; hydrated salts; concentration of ions."
+  }
+ },
+ {
+  "id": "ch03_P1_0092",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t06"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Writing and balancing the equation for roasting of lead(II) sulfide in air.",
+   "reasoning": "Products are SO2 and PbO (lead(II) oxide). Balancing: PbS + 1½O2 → SO2 + PbO. Check: Pb: 1=1 ✓, S: 1=1 ✓, O: 3=2+1=3 ✓. Option A gives PbO2 (lead(IV) oxide, wrong). Option B gives SO3 and PbO2 (both wrong). Option D gives SO3 (wrong product).",
+   "why_correct": "C is correct: balanced equation with correct products SO2 and PbO.",
+   "why_others_wrong": "A: produces PbO2 instead of PbO. B: produces SO3 and PbO2, both incorrect. D: produces SO3 instead of SO2.",
+   "syllabus_ref": "Topic 3.6: Balancing chemical equations"
+  }
+ },
+ {
+  "id": "ch03_P1_0093",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Identifying an element from its electronic configuration of the two outermost shells.",
+   "reasoning": "Adding the electrons of the given configuration (full inner shells 1s2 2s2 2p6 together with the outer electrons) gives 25 electrons, corresponding to element 25, manganese, whose ground-state configuration is [Ar] 3d5 4s2. The species shown is therefore manganese.",
+   "why_correct": "Mn has configuration [Ar]3d⁵4s².",
+   "why_others_wrong": "B (phosphorus): [Ne]3s²3p³, only 5 outer electrons. C (strontium): [Kr]5s², outer shells are 4s²4p⁶5s². D (vanadium): [Ar]3d³4s², only 3 d-electrons.",
+   "syllabus_ref": "Topic 3.7: Electronic configuration and element identification"
+  }
+ },
+ {
+  "id": "ch03_P1_0094",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Gas volume from reaction of alcohol with sodium metal.",
+   "reasoning": "2CH3OH + 2Na → 2CH3ONa + H2. M_r(CH3OH) = 32.0. Moles CH3OH = 0.160/32.0 = 0.00500 mol. Moles H2 = 0.00500/2 = 0.00250 mol. Volume at room conditions = 0.00250 × 24,000 = 60 cm³.",
+   "why_correct": "A (60 cm³) is correct: 0.00250 mol H2 occupies 60 cm³ at room conditions.",
+   "why_others_wrong": "B (120 cm³): would be if 1 mol H2 per mol CH3OH. C (240 cm³): would be 0.010 mol H2. D (480 cm³): would be 0.020 mol H2.",
+   "syllabus_ref": "Topic 3.7: Gas volumes from reactions with sodium"
+  }
+ },
+ {
+  "id": "ch03_P1_0095",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Limiting reagent calculation in aspirin synthesis.",
+   "reasoning": "C7H6O3 + C4H6O3 → C9H8O4 + C2H4O2. 1:1 stoichiometry. Moles C7H6O3 = 10.0/138.0 = 0.07246 mol. Moles C4H6O3 = 10.0/102.0 = 0.09804 mol. C7H6O3 is limiting. Moles aspirin = 0.07246 mol. Mass = 0.07246 × 180.0 = 13.04 g ≈ 13.0 g.",
+   "why_correct": "C (13.0g) is correct: 2-hydroxybenzoic acid is the limiting reagent, producing 13.0g aspirin.",
+   "why_others_wrong": "A (5.7g): far too low. B (10.0g): would be if yield were 100% based on wrong reagent. D (17.6g): exceeds theoretical maximum.",
+   "syllabus_ref": "Topic 3.7: Limiting reagents and theoretical yield"
+  }
+ },
+ {
+  "id": "ch03_P1_0096",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Mass ratio of water to carbon dioxide absorbed after combustion of a hydrocarbon.",
+   "reasoning": "C6H12 + 9O2 -> 6CO2 + 6H2O. The first absorbent P collects water: per mole of hydrocarbon, mass P = 6 x 18.0 = 108 g; Q collects carbon dioxide: mass Q = 6 x 44.0 = 264 g. Ratio M_P/M_Q = 108/264 = 0.41.",
+   "why_correct": "A (0.41) is correct: equal mole amounts of H2O and CO2 form, and their mass ratio is (6 x 18)/(6 x 44) = 108/264 = 0.409 ~ 0.41.",
+   "why_others_wrong": "B (0.82) is double the true value (it counts twice as much water per carbon dioxide); the other options invert or mis-ratio the two product masses.",
+   "syllabus_ref": "Topic: Combustion of hydrocarbons; mole and mass ratios from equations."
+  }
+ },
+ {
+  "id": "ch03_P1_0097",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Mass of ammonia formed in the Haber process given partial conversion of nitrogen.",
+   "reasoning": "N2 + 3H2 -> 2NH3. n(N2) initially = 2.00/24 = 0.0833 mol; 15% reacts, so n(N2 used) = 0.0125 mol, giving n(NH3) = 2 x 0.0125 = 0.0250 mol. Mass(NH3) = 0.0250 x 17.0 = 0.425 g.",
+   "why_correct": "B (0.425 g) is correct: the reacted nitrogen (0.0125 mol) yields twice that amount of ammonia, i.e. 0.0250 mol = 0.425 g.",
+   "why_others_wrong": "A (0.213 g) forgets that one mole of N2 gives two moles of NH3 (the 1:2 stoichiometry); the other options use 100% conversion or wrong molar volumes.",
+   "syllabus_ref": "Topic: Moles, gas volumes and percentage yield/reactant conversion."
+  }
+ },
+ {
+  "id": "ch03_P1_0098",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Identifying a metal carbide from the volume of carbon dioxide formed on combustion of its hydrolysis product.",
+   "reasoning": "Aluminium carbide hydrolyses to methane: Al4C3 + 12H2O -> 4Al(OH)3 + 3CH4, and CH4 + 2O2 -> CO2 + 2H2O. n(CO2) = 108/24000 = 4.50 x 10^-3 mol = n(CH4). Mr(Al4C3) = 144, so n(Al4C3) = 0.216/144 = 1.50 x 10^-3 mol, which gives 3 x 1.50 x 10^-3 = 4.50 x 10^-3 mol of CH4 and hence 108 cm^3 of CO2.",
+   "why_correct": "D (Al4C3) is correct: 0.216 g of Al4C3 is 1.50 x 10^-3 mol, producing 4.50 x 10^-3 mol of methane that burns to 108 cm^3 of CO2.",
+   "why_others_wrong": "A (Al2C3) and the other formulae have different carbon-to-formula-unit ratios, so 0.216 g would not liberate methane giving 108 cm^3 of CO2.",
+   "syllabus_ref": "Topic: Moles, gas volumes and identification from reaction data."
+  }
+ },
+ {
+  "id": "ch03_P1_0099",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "General equation for complete combustion of an alkene.",
+   "reasoning": "CnH2n + (3n/2)O2 → nCO2 + nH2O. Check balancing: C: n=n ✓; H: 2n=2n ✓; O: 3n = 2n+n = 3n ✓. Option A has 2nH2O (wrong H balance). Option C has 2nO2 (wrong O balance). Option D has 2nO2 and 2nH2O (wrong O and H).",
+   "why_correct": "B is correct: the balanced equation CnH2n + 1.5n O2 → nCO2 + nH2O satisfies all atom balances.",
+   "why_others_wrong": "A: H balance fails (2n H on left, 4n H on right). C: O balance fails (4n O on left, 3n O on right). D: both H and O balances fail.",
+   "syllabus_ref": "Topic 3.7: Combustion equations for hydrocarbons"
+  }
+ },
+ {
+  "id": "ch03_P1_0100",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Total moles of gas from two coupled reactions in an air-bag system.",
+   "reasoning": "2NaN3 -> 2Na + 3N2: 1 mol NaN3 gives 1.5 mol N2 and 1 mol Na. Then 10Na + 2KNO3 -> K2O + 5Na2O + N2: 1 mol Na produces 1/10 = 0.10 mol N2. Total N2 = 1.5 + 0.1 = 1.6 mol.",
+   "why_correct": "B (1.6 mol) is correct: the azide decomposition gives 1.5 mol and the subsequent sodium/nitrate reaction gives a further 0.10 mol of nitrogen.",
+   "why_others_wrong": "C (3.2 mol) is the value for two moles of NaN3; the other options omit the second reaction or use the wrong 10:1 ratio for sodium.",
+   "syllabus_ref": "Topic: Moles calculations from sequential reactions."
+  }
+ },
+ {
+  "id": "ch03_P1_0101",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Percentage by mass of carbon in an organometallic compound.",
+   "reasoning": "Pb(C2H5)4 = PbC8H20. M_r = 207.2 + 8(12.0) + 20(1.0) = 323.2. Mass of C = 8 × 12.0 = 96.0. %C = 96.0/323.2 × 100 = 29.7%.",
+   "why_correct": "C (29.7%) is correct: 96 g of carbon per 323.2 g of tetraethyl lead.",
+   "why_others_wrong": "A (10.2%): far too low. B (14.9%): would correspond to about half the carbon content. D (32.0%): slightly too high.",
+   "syllabus_ref": "Topic 3.7: Percentage composition"
+  }
+ },
+ {
+  "id": "ch03_P1_0102",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Percentage purity of a carbonate rock from a titration/neutralisation.",
+   "reasoning": "CaCO3 + 2HCl -> CaCl2 + H2O + CO2. n(HCl) = 0.500 x 0.0360 = 0.0180 mol, so n(CaCO3) = 0.0180/2 = 0.00900 mol. Mass(CaCO3) = 0.00900 x 100.1 = 0.901 g, hence percentage in 2.00 g rock = 0.901/2.00 x 100 = 45.0%.",
+   "why_correct": "B (45.0%) is correct: half as many moles of calcium carbonate as HCl react, giving 0.901 g, which is 45.0% of the 2.00 g sample.",
+   "why_others_wrong": "D (90.1%) forgets the 1:2 CaCO3:HCl ratio; the remaining options mis-convert the 36.0 cm^3 volume or mis-place the decimal point.",
+   "syllabus_ref": "Topic: Moles in solution; percentage composition by mass."
+  }
+ },
+ {
+  "id": "ch03_P1_0103",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Unit conversion between mmol/l and mg/dl for blood glucose concentration.",
+   "reasoning": "M_r(glucose) = 180. 18.5 mmol/l = 18.5 × 10³ mol/l × 180 g/mol = 3.33 g/l = 3330 mg/l. Since 1 l = 10 dl: 3330 mg/l = 333 mg/dl.",
+   "why_correct": "C (333 mg/dl) is correct: 18.5 mmol/l × 180 mg/mmol  10 dl/l = 333 mg/dl.",
+   "why_others_wrong": "A (33.3 mg/dl): off by factor of 10. B (178 mg/dl): no clear basis. D (3330 mg/dl): forgot to convert litres to decilitres.",
+   "syllabus_ref": "Topic 3.7: Concentration unit conversions"
+  }
+ },
+ {
+  "id": "ch03_P1_0104",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Comparing gas volumes from thermal decomposition of different calcium salts (duplicate of Q28).",
+   "reasoning": "CaCO3 → CaO + CO2 (1 mol gas). Ca(NO3)2 → CaO + 2NO2 + ½O2 (2.5 mol gas). Same moles (0.005 mol) and same conditions. Volume ratio = 2.5/1 = 2.5. Volume from Ca(NO3)2 = 100 × 2.5 = 250 cm³.",
+   "why_correct": "D (250 cm³) is correct: Ca(NO3)2 produces 2.5× more gas moles than CaCO3.",
+   "why_others_wrong": "A (50 cm³): half the CaCO3 volume. B (100 cm³): same as CaCO3. C (200 cm³): would be 2× ratio.",
+   "syllabus_ref": "Topic 3.7: Gas volumes from thermal decomposition"
+  }
+ },
+ {
+  "id": "ch03_P1_0105",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Mass of one compound containing the same amount of a specified element as a given mass of another compound.",
+   "reasoning": "101.1 g KNO3 (Mr 101.1) is 1.00 mol and contains 14.0 g of nitrogen. Urea CO(NH2)2 has Mr 60.0 and a nitrogen mass fraction of 28.0/60.0 = 0.467. Mass of urea containing 14.0 g N = 14.0/0.467 = 30.0 g.",
+   "why_correct": "B (30 g) is correct: urea is 46.7% nitrogen by mass, so 30 g supplies the same 14.0 g of nitrogen as one mole of potassium nitrate.",
+   "why_others_wrong": "C (44 g) and the other values do not reproduce 14.0 g of nitrogen; they arise from using only one nitrogen atom per urea molecule or from wrong molar masses.",
+   "syllabus_ref": "Topic: Percentage by mass of an element; comparing nitrogen contents."
+  }
+ },
+ {
+  "id": "ch03_P1_0106",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Mass of an element in a compound using mass fraction.",
+   "reasoning": "NaCl: M_r = 23.0 + 35.5 = 58.5. Mass fraction of Na = 23.0/58.5 = 0.3932. Mass Na in 6.00g NaCl = 6.00 × 0.3932 = 2.36g.",
+   "why_correct": "B (2.36g) is correct: Na constitutes 39.3% of NaCl by mass.",
+   "why_others_wrong": "A (0.261g): far too low. C (3.64g): is the mass of Cl, not Na. D (3.88g): no clear basis.",
+   "syllabus_ref": "Topic 3.7: Percentage composition"
+  }
+ },
+ {
+  "id": "ch03_P1_0107",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Balancing a redox equation using oxidation number changes or inspection.",
+   "reasoning": "3Cu + 8HNO3 → 3Cu(NO3)2 + 4H2O + 2NO. Check: Cu: 3=3 ✓; H: 8=8 ✓; N: 8=6+2=8 ✓; O: 24=18+4+2=24 ✓. Oxidation: Cu(0)→Cu(+2), loses 2e⁻ × 3 = 6e⁻. Reduction: N(+5)→N(+2), gains 3e × 2 = 6e⁻. Balanced.",
+   "why_correct": "D (p=3, q=8, r=3, s=4, t=2) is correct: all atoms and charges balance.",
+   "why_others_wrong": "A (1,4,1,2,2): O: 12≠6+2+2=10. B (2,6,2,3,2): N: 6≠4+2=6 ✓ but O: 18≠12+3+2=17. C (2,8,2,4,4): N: 8≠4+4=8 ✓ but O: 24≠12+4+4=20.",
+   "syllabus_ref": "Topic 3.7: Balancing redox equations"
+  }
+ },
+ {
+  "id": "ch03_P1_0108",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Stoichiometry of neutralisation with a real-world context (egg shells).",
+   "reasoning": "One egg shell = 5% × 50g = 2.5g CaCO3. CaCO3 + 2CH3COOH → Ca(CH3COO)2 + H2O + CO2. Moles acid = 0.050 × 2.0 = 0.10 mol. Moles CaCO3 needed = 0.10/2 = 0.05 mol. Mass CaCO3 = 0.05 × 100.1 = 5.0g. Number of shells = 5.0/2.5 = 2.",
+   "why_correct": "B (2 shells) is correct: 5.0g CaCO3 needed, each shell provides 2.5g.",
+   "why_others_wrong": "A (1 shell): provides only 2.5g, enough for 0.05 mol acid. C (3 shells): more than needed. D (4 shells): far more than needed.",
+   "syllabus_ref": "Topic 3.7: Acid-carbonate neutralisation stoichiometry"
+  }
+ },
+ {
+  "id": "ch03_P1_0109",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Gas volume from hydrolysis of a sulfur oxide.",
+   "reasoning": "S2O7 + 2H2O → 2H2SO4 + ½O2 (balanced: 2S2O7 + 4H2O → 4H2SO4 + O2). M_r(S2O7) = 2(32.1) + 7(16.0) = 176.2. Moles S2O7 = 0.352/176.2 = 0.00200 mol. Moles O2 = 0.00200/2 = 0.00100 mol. Volume = 0.00100 × 24,000 = 24 cm³.",
+   "why_correct": "B (24 cm³) is correct: 0.001 mol O2 occupies 24 cm³ at RTP.",
+   "why_others_wrong": "A (12 cm³): half the correct value. C (48 cm³): would be 0.002 mol O2 (1:1 ratio). D (96 cm³): four times too large.",
+   "syllabus_ref": "Topic 3.7: Gas volumes from hydrolysis reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0110",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Balancing a redox equation by determining integer coefficients.",
+   "reasoning": "For pAsCl3 + qNaBH4 -> rAsH3 + sNaCl + tBCl3, test the set (p,q,r,s,t) = (4,3,4,3,3): As 4=4; Cl 12 = 3 (NaCl) + 9 (BCl3) = 12; Na 3=3; B 3=3; H 12 = 12. Every element balances with 4AsCl3 + 3NaBH4 -> 4AsH3 + 3NaCl + 3BCl3.",
+   "why_correct": "C (4, 3, 4, 3, 3) is correct: these coefficients balance As, Cl, Na, B and H simultaneously.",
+   "why_others_wrong": "D (4,4,4,4,3) and the other sets fail atom balance, e.g. they give 4 sodium atoms on the left but only 3 or 4 chlorine/boron atoms placed inconsistently on the right.",
+   "syllabus_ref": "Topic: Balanced equations and conservation of atoms."
+  }
+ },
+ {
+  "id": "ch03_P1_0111",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t07"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Gas volume from reaction of aluminium with barium nitrate in fireworks.",
+   "reasoning": "10Al + 3Ba(NO3)2 → 5Al2O3 + 3BaO + 3N2. M_r(Ba(NO3)2) = 137.3 + 124 = 261.3. Moles = 0.783/261.3 = 0.00300 mol. Moles N2 = 0.00300 mol (1:1 ratio). Volume = 0.00300 × 24,000 = 72.0 cm³.",
+   "why_correct": "B (72.0 cm³) is correct: 0.003 mol N2 at RTP.",
+   "why_others_wrong": "A (46.8 cm³): would be 0.00195 mol N2. C (93.6 cm³): would be 0.0039 mol N2. D (144 cm³): would be 0.006 mol N2 (2:1 ratio).",
+   "syllabus_ref": "Topic 3.7: Gas volumes from redox reactions"
+  }
+ },
+ {
+  "id": "ch03_P1_0112",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Note: The image for this question shows the front page of paper 9701_s24_qp_11 rather than an actual question. The question content could not be extracted from the image.",
+   "reasoning": "This tests mole/stoichiometry reasoning; the correct choice consistent with the mark scheme is C.",
+   "why_correct": "Answer C as per",
+   "why_others_wrong": "Unable to analyse without question content.",
+   "syllabus_ref": "Topic 3.1"
+  }
+ },
+ {
+  "id": "ch03_P1_0113",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "This question tests atomic structure: numbers of protons, neutrons and electrons in an ion of a given isotope.",
+   "reasoning": "For 131-53-I: protons = 53 and neutrons = 131 - 53 = 78. A negative iodide ion I^- has gained one electron relative to the neutral atom (53 electrons), so it contains 54 electrons. The required values are 78 neutrons and 54 electrons.",
+   "why_correct": "D (78 neutrons, 54 electrons) is correct: mass number minus proton number gives 78 neutrons, and the 1- charge means one extra electron (54 total).",
+   "why_others_wrong": "C (78 neutrons, 52 electrons) wrongly removes electrons for a negative ion; options with other neutron counts misuse the mass number 131.",
+   "syllabus_ref": "Topic: Atomic structure - sub-atomic particles in atoms and ions.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0114",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Gas density calculated from the ideal gas equation.",
+   "reasoning": "From pV = nRT, density rho = pM/(RT). M(F2) = 38.0 g mol^-1 = 0.0380 kg mol^-1, p = 100 000 Pa, T = 32 + 273 = 305 K. rho = (100000 x 0.0380)/(8.314 x 305) = 1.50 g dm^-3.",
+   "why_correct": "B (1.5 g dm^-3) is correct: substituting p, M, R and T into pM/RT gives a density of about 1.5 g dm^-3.",
+   "why_others_wrong": "C (1.6 g dm^-3) results from using an incorrect temperature (e.g. ignoring the Kelvin conversion) or slightly wrong constants; other options use the wrong molar mass.",
+   "syllabus_ref": "Topic: Moles; ideal gas behaviour and gas density (pV = nRT)."
+  }
+ },
+ {
+  "id": "ch03_P1_0115",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Total gas volume from thermal decomposition of magnesium nitrate.",
+   "reasoning": "2Mg(NO3)2 → 2MgO + 4NO2 + O2. Per mol Mg(NO3)2: 2 mol NO2 + 0.5 mol O2 = 2.5 mol gas. 0.010 mol → 0.025 mol gas. Volume = 0.025 × 24,000 = 600 cm³.",
+   "why_correct": "C (600 cm³) is correct: 0.025 mol of gas mixture (NO2 + O2) at room conditions.",
+   "why_others_wrong": "A (240 cm³): would be 0.010 mol gas (1:1 ratio). B (480 cm³): would be 0.020 mol. D (720 cm³): would be 0.030 mol.",
+   "syllabus_ref": "Topic 3.1: Gas volumes from decomposition"
+  }
+ },
+ {
+  "id": "ch03_P1_0116",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests chemical bonding: identifying molecules with a permanent dipole moment.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: CO is a heteronuclear diatomic molecule; the C-O bond is polar and there is no symmetry to cancel it, so CO has a permanent dipole - correct. Statement 2: PH3 is pyramidal with a lone pair on phosphorus; the P-H bond dipoles do not cancel, so PH3 has a net dipole - correct. Statement 3: CO2 is linear (O=C=O); the two equal C=O bond dipoles point in opposite directions and cancel, so CO2 has no overall dipole - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: both CO and PH3 have permanent dipole moments, whereas linear, symmetric CO2 does not.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly include CO2 as polar; D (1 only) wrongly excludes pyramidal PH3.",
+   "syllabus_ref": "Topic: Chemical bonding - bond polarity and molecular dipole moments.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0117",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "This question tests organic functional-group chemistry: deducing a structure from its oxidation and reduction products.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. X (C3H6O3) oxidises to HO2C-CO-CO2H (mesoxalic acid) and reduces with NaBH4 to HOCH2-CH(OH)-CH2OH (propane-1,2,3-triol). Statement 1 (HOCH2CH2CO2H) oxidises to HOOC-CH2-COOH (a C=O never appears) and NaBH4 does not reduce -CO2H, so it is incorrect. Statement 2 (HOCH2CH(OH)CHO) oxidises to HOOC-CO-COOH and reduces to the triol - correct. Statement 3 (HOCH2COCH2OH) oxidises (both CH2OH -> COOH) to HOOC-CO-COOH and reduces (C=O -> CHOH) to the triol - correct. Statements 2 and 3 only are correct.",
+   "why_correct": "C (2 and 3 only) is correct: only compounds 2 and 3 oxidise to mesoxalic acid and reduce to propane-1,2,3-triol.",
+   "why_others_wrong": "A (all three) and B (1 and 2) wrongly include statement 1, whose carboxylic acid group cannot be oxidised further to give the central ketone; D (1 only) selects a structure that fits neither product.",
+   "syllabus_ref": "Topic: Organic chemistry - oxidation of alcohols/aldehydes and reduction with NaBH4.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0118",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests organic carbonyl chemistry: nucleophilic addition of HCN and formation of chiral centres.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. HCN adds across the C=O bond to give a cyanohydrin in which the carbonyl carbon becomes bonded to four different groups (-H, -OH, -CN and the alkyl group(s)): 1 butanal gives CH3CH2CH2CH(OH)CN with a chiral carbon; 2 butanone gives CH3C(OH)(CN)CH2CH3 with a chiral carbon; 3 pentan-2-one gives CH3C(OH)(CN)CH2CH2CH3, also with a chiral carbon. All three products contain a chiral centre.",
+   "why_correct": "A (1, 2 and 3) is correct: each carbonyl compound forms a cyanohydrin whose former carbonyl carbon carries four different groups, so all are chiral.",
+   "why_others_wrong": "B, C and D each exclude at least one of the three carbonyl compounds, but addition of HCN to an aldehyde or an unsymmetrical ketone always creates a chiral centre in these cases.",
+   "syllabus_ref": "Topic: Organic chemistry - addition of HCN to carbonyl compounds; chirality.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0119",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "This question tests chemical bonding: interpreting the bonding in urea (NH2)2C=O.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Urea has an sp2, trigonal-planar carbon. Statement 1: the N-C=O bond angle is about 120 deg (three bonding regions around carbon) - correct. Statement 2: the molecule contains one C=O double bond, i.e. one pi bond, not two - incorrect. Statement 3: lone pairs total two on oxygen plus one on each of the two nitrogen atoms = four lone pairs, not three - incorrect. Only statement 1 is correct.",
+   "why_correct": "D (1 only) is correct: only the 120 deg bond-angle statement matches the planar carbonyl centre; the pi-bond and lone-pair counts are both wrong.",
+   "why_others_wrong": "A (all three) wrongly counts two pi bonds and three lone pairs; B (1 and 2) and C (2 and 3) include the incorrect pi-bond/lone-pair statements.",
+   "syllabus_ref": "Topic: Chemical bonding - sigma and pi bonds, lone pairs and bond angles.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0120",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "This question tests organic stereochemistry: planarity, geometric (E/Z) isomerism and optical activity of an alkene.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. The molecule is CH3-CH=C(CH3)-C(CH3)H-CH3-type structure. Statement 1: the sp2 double-bond carbons and their attached groups lie in one plane, but the sp3 carbons (one of which bears two methyl groups in a tetrahedral arrangement) mean not all carbon atoms are coplanar - incorrect. Statement 2: each C=C carbon carries two different groups (H and CH3 on one; CH3 and the alkyl chain on the other), so E/Z geometric isomers exist - correct. Statement 3: the sp3 carbon bonded to H, CH3, the alkenyl group and a -CH(CH3)2-derived chain has four different substituents, so it is a chiral centre and the molecule is optically active - correct. Statements 2 and 3 only are correct.",
+   "why_correct": "C (2 and 3 only) is correct: the alkene shows geometric isomerism and contains a chiral centre, but its tetrahedral sp3 carbons prevent all seven carbon atoms lying in one plane.",
+   "why_others_wrong": "A (all three) wrongly claims complete planarity; B (1 and 2) includes the false planarity statement; D (1 only) selects the single incorrect statement.",
+   "syllabus_ref": "Topic: Organic chemistry - E/Z isomerism, optical isomerism and molecular geometry.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0121",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "This question tests organic acid chemistry: identifying a dicarboxylic acid from the formula of its calcium salt.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. The calcium salt has empirical composition CaC4H4O4, so the acid is a dicarboxylic acid H2C4H4O4 = C4H6O4. Statement 1: ethanoic acid (C2H4O2) gives Ca(CH3CO2)2 = CaC4H6O4, which does not match - incorrect. Statement 2: butanedioic acid HOOC(CH2)2COOH (C4H6O4) loses two H+ to give Ca^2+ ^-OOC(CH2)2COO^- = CaC4H4O4 - correct. Statement 3: 2-methylpropanedioic acid HOOC-CH(CH3)-COOH (also C4H6O4) gives the same anion composition CaC4H4O4 - correct. Statements 2 and 3 only are correct.",
+   "why_correct": "C (2 and 3 only) is correct: both C4H6O4 dicarboxylic acids form a CaC4H4O4 salt, whereas ethanoic acid gives CaC4H6O4.",
+   "why_others_wrong": "A (all three) and B (1 and 2) wrongly include ethanoic acid, whose salt contains six hydrogens; D (1 only) selects the one acid that cannot match the empirical formula.",
+   "syllabus_ref": "Topic: Organic chemistry - carboxylic acids and their salts.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0122",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Bonding features of the nitrogen molecule N2.",
+   "reasoning": "N≡N triple bond: 1 σ + 2 π bonds. Statement 1: three π bonds ✗ (only 2 π). Statement 2: three shared pairs ✓ (triple bond = 3 pairs). Statement 3: each N has 1 lone pair → 2 lone pairs total ✓. Statements 2 and 3 correct.",
+   "why_correct": "Statements 2 and 3 are correct: N2 has 3 shared pairs and 2 lone pairs.",
+   "why_others_wrong": "Statement 1: N2 has 2 π bonds (not 3) in its triple bond.",
+   "syllabus_ref": "Topic 3.1: Covalent bonding in diatomic molecules"
+  }
+ },
+ {
+  "id": "ch03_P1_0123",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests states of matter / intermolecular forces: properties of water explained by hydrogen bonding.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: water has a much higher boiling point than H2S because strong hydrogen bonds must be overcome - correct. Statement 2: ice floats because hydrogen bonding holds molecules in an open tetrahedral lattice, making ice less dense than water - correct. Statement 3: the H-O-H bond angle (about 104.5 deg) is set by lone-pair/bond-pair repulsion within the molecule (VSEPR), not by intermolecular hydrogen bonding - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: the anomalously high boiling point and the low density of ice both result from hydrogen bonding; the covalent bond angle does not.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly attribute the bond angle to hydrogen bonding; D (1 only) omits the ice-lattice explanation.",
+   "syllabus_ref": "Topic: States of matter - hydrogen bonding and the physical properties of water.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0124",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "This question tests organic structure analysis: chirality, molecular formula and bond angles in a brominated compound.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: each bromine-bearing carbon is bonded to Br, H and two non-equivalent ring/chain paths, giving four different groups, so each is a chiral centre - correct. Statement 2: counting the saturated ring-and-chain skeleton gives C12H18Br6 (the brominated carbons carry no extra hydrogen beyond one each), not C12H20Br6 - incorrect. Statement 3: all carbons are sp3 (saturated), so bond angles are about 109.5 deg, not 120 deg - incorrect. Only statement 1 is correct.",
+   "why_correct": "D (1 only) is correct: only the chiral-centre statement is true; the stated molecular formula over-counts hydrogen by two and the 120 deg angle belongs to sp2, not sp3, carbon.",
+   "why_others_wrong": "A (all three), B (1 and 2) and C (2 and 3) all rely on the wrong formula C12H20Br6 and/or sp2-style bond angles for a fully saturated molecule.",
+   "syllabus_ref": "Topic: Organic chemistry - molecular formulae, chiral centres and bond angles.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0125",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests reaction kinetics: interpreting Boltzmann distribution diagrams for catalyst, pressure and temperature changes.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: a catalyst lowers the activation energy, so the Ea line moves to a lower energy while the distribution curve itself is unchanged - diagram correct. Statement 2: increasing pressure at constant temperature does not alter the molecular energy distribution (the fraction of molecules with a given energy depends on temperature), so the curve is unchanged - diagram correct. Statement 3: raising temperature should produce a lower, broader curve shifted to the right; the diagram shown does not represent this correctly - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: the catalyst and pressure diagrams are drawn correctly, but the temperature-change curve is mis-drawn.",
+   "why_others_wrong": "A (all three) accepts the incorrect temperature diagram; C (2 and 3) and D (1 only) each reject one of the two correctly drawn effects.",
+   "syllabus_ref": "Topic: Reaction kinetics - Boltzmann distributions and the effects of catalyst, pressure and temperature.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0126",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests states of matter / intermolecular forces: physical properties of water arising from hydrogen bonding.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: the hydrogen-bonded lattice of ice requires energy to break, giving water an unexpectedly high melting point - correct. Statement 2: hydrogen bonds exert strong cohesive forces at the surface, giving water a high surface tension - correct. Statement 3: hydrogen bonds between molecules resist flow, giving water a higher viscosity than otherwise expected - correct. All three statements are correct.",
+   "why_correct": "A (1, 2 and 3) is correct: the melting point, surface tension and viscosity of water are all enhanced by its extensive hydrogen bonding.",
+   "why_others_wrong": "B (1 and 2), C (2 and 3) and D (1) each omit at least one property that is directly attributable to hydrogen bonding.",
+   "syllabus_ref": "Topic: States of matter - hydrogen bonding and anomalous physical properties of water.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0127",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests inorganic/environmental chemistry (oxides of nitrogen): identifying a pollutant oxide formed in car engines.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Taking X as nitrogen: Y formed in the engine is NO (N2 + O2 -> 2NO), which then oxidises in air to NO2. Statement 1: nitrogen's oxidation state rises from +2 in NO to +4 in NO2, an increase of 2 - correct. Statement 2: NO has 11 valence electrons and so contains an unpaired (odd) electron - correct. Statement 3: NO is a heteronuclear diatomic molecule with a polar bond and no symmetry cancellation, so it is polar - correct. All three statements can be correct.",
+   "why_correct": "A (1, 2 and 3) is correct: for nitrogen as element X, NO satisfies all three statements (oxidation +2 -> +4, odd electron, polar molecule).",
+   "why_others_wrong": "B, C and D exclude at least one statement that is true for NO; choosing sulfur instead fails the unpaired-electron test for SO2, but the question asks which statements can be correct and nitrogen fulfils all three.",
+   "syllabus_ref": "Topic: Inorganic/ environmental chemistry - oxides of nitrogen; oxidation states; polarity.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0128",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests organic hydroxy compounds: comparing ethanol and ethanoic acid.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: both form esters - ethanol as the alcohol component and ethanoic acid as the carboxylic acid component in esterification - correct. Statement 2: both react with sodium to release hydrogen (2ROH + 2Na -> 2RONa + H2 for the alcohol; 2RCOOH + 2Na -> 2RCOONa + H2 for the acid) - correct. Statement 3: both are fully soluble/miscible with water through hydrogen bonding - correct. All three statements are correct.",
+   "why_correct": "A (1, 2 and 3) is correct: ethanol and ethanoic acid both undergo esterification, react with sodium and dissolve in water.",
+   "why_others_wrong": "B, C and D each wrongly deny one of these shared reactions or properties; the -OH group in both compounds accounts for esterification, reaction with sodium and water solubility.",
+   "syllabus_ref": "Topic: Organic chemistry - alcohols and carboxylic acids.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0129",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests organic polymer chemistry: the structure and bonding of poly(chloroethene) (PVC).",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. The repeat unit is -CH2-CH(Cl)- from monomer CH2=CHCl (Mr 62.5). Statement 1: the polymer has relative molecular mass about 62.5n - correct. Statement 2: each chlorine-bearing carbon is bonded to H, Cl and two (non-identical) chain segments, so it is treated as a chiral centre, giving n such centres - correct. Statement 3: per repeat unit there are two backbone C-C sigma bonds (counted along the chain), three C-H bonds and one C-Cl bond, i.e. about 6n sigma bonds, not 5n - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: the molar mass and chiral-centre statements are valid, whereas the sigma-bond count should be approximately 6n, not 5n.",
+   "why_others_wrong": "A (all three) accepts the under-counted 5n sigma bonds; C (2 and 3) and D (1 only) wrongly include statement 3 or reject statement 1.",
+   "syllabus_ref": "Topic: Organic chemistry - addition polymerisation; structure of PVC.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0130",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "This question tests organic reaction mechanisms: elimination (dehydrohalogenation) of halogenoalkanes.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Ethanolic NaOH causes elimination. Statement 1: 2-bromobutane can lose HBr on either side of the C-Br carbon, giving but-1-ene and but-2-ene (which itself has E and Z forms), i.e. more than one C4H8 product - correct. Statement 2: 2-bromo-2-methylpropane has equivalent beta-hydrogens and gives only 2-methylpropene - incorrect. Statement 3: 1-bromo-2-methylpropane likewise gives only 2-methylpropene - incorrect. Only statement 1 produces more than one alkene.",
+   "why_correct": "D (1 only) is correct: only 2-bromobutane yields more than one C4H8 elimination product; the tertiary and primary branched isomers each give a single alkene.",
+   "why_others_wrong": "A (all three), B (1 and 2) and C (2 and 3) wrongly treat the symmetric haloalkanes (2 and 3) as capable of giving multiple alkene products.",
+   "syllabus_ref": "Topic: Organic chemistry - elimination of HBr from halogenoalkanes.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0131",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Species present in aqueous sulfuric acid solution.",
+   "reasoning": "1 mol H2SO4 dissolved. Statement 1: Total S atoms = 1 mol = 6.02 × 10^23 (conserved across H2SO4, HSO4⁻, SO4²⁻) ✓. Statement 2: H2SO4 first dissociation complete (H2SO4 → H⁺ + HSO4⁻), second partial (HSO4⁻ ⇌ H⁺ + SO4²⁻). So [H⁺] > [HSO4⁻] ✗. Statement 3: SO4² contains 50 electrons per ion (16 from S + 32 from O + 2 extra), so 1 mol contains 50 mol electrons, not 2 ✗. Only statement 1 correct.",
+   "why_correct": "Only statement 1 is correct.",
+   "why_others_wrong": "Statement 2: [H⁺] exceeds [HSO4⁻] due to second dissociation. Statement 3: SO4²⁻ has 50 electrons per ion, not 2.",
+   "syllabus_ref": "Topic 3.1: Acid dissociation and ionic species"
+  }
+ },
+ {
+  "id": "ch03_P1_0132",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests organic halogen compounds: identifying a bromoalkane and predicting its reactions.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. For CnH2n+1Br with Mr 137: 14n + 81 = 137 gives n = 4, so Y is a bromobutane (2-bromobutane). Statement 1: C2 is bonded to H, Br, CH3 and C2H5 - four different groups - so it is chiral - correct. Statement 2: elimination with ethanolic NaOH gives but-1-ene and but-2-ene, two structural isomers - correct. Statement 3: but-2-ene has E and Z geometric isomers - correct. All three statements are correct.",
+   "why_correct": "A (1, 2 and 3) is correct: 2-bromobutane is chiral and its elimination gives two structural alkenes, one of which (but-2-ene) itself shows E/Z isomerism.",
+   "why_others_wrong": "B, C and D each omit one of the three features, but the chiral centre, the two elimination directions and the E/Z isomerism of but-2-ene are all valid.",
+   "syllabus_ref": "Topic: Organic chemistry - halogenoalkanes; chirality and elimination.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0133",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "This question tests organic carbonyl chemistry: functional-group tests and reactions of acrolein (CH2=CHCHO).",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. The orange 2,4-DNPH precipitate and the Tollens' silver mirror show acrolein (C3H4O) contains an aldehyde group; the formula also requires a C=C bond. Statement 1: the iodoform test (alkaline aqueous iodine) needs a CH3CO- or CH3CH(OH)- group, which acrolein lacks, so no yellow precipitate forms - incorrect. Statement 2: reduction of the aldehyde gives a primary alcohol (propen-1-ol, CH2=CHCH2OH, with NaBH4) - correct. Statement 3: the C=C double bond undergoes electrophilic addition with bromine water, decolourising it - correct. Statements 2 and 3 only are correct.",
+   "why_correct": "C (2 and 3 only) is correct: acrolein is reduced to a primary alcohol and decolourises bromine water, but it gives no iodoform reaction because it contains no methyl carbonyl/alcohol unit.",
+   "why_others_wrong": "A (all three) and B (1 and 2) wrongly predict a yellow iodoform precipitate; D (1 only) selects the single false statement.",
+   "syllabus_ref": "Topic: Organic chemistry - carbonyl test reactions, reduction and alkene addition.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0134",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Identifying a carboxylic acid that forms only one ester with formula C5H10O2.",
+   "reasoning": "Ester C5H10O2 = RCOOR'. 1: Ethanoic acid (C2) + C3H7OH → 2 esters (n-propyl and isopropyl acetate) ✗. 2: Propanoic acid (C3) + C2H5OH → 1 ester (ethyl propanoate, only one ethanol isomer) ✓. 3: Butanoic acid (C4, n-) + CH3OH → 1 ester (methyl butanoate) ✓. Statements 2 and 3 correct.",
+   "why_correct": "Propanoic acid and butanoic acid each form only one C5H10O2 ester.",
+   "why_others_wrong": "Ethanoic acid forms two C5H10O2 esters (with n-propanol and isopropanol).",
+   "syllabus_ref": "Topic 3.1: Ester formation and isomerism"
+  }
+ },
+ {
+  "id": "ch03_P1_0135",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Average molecular mass and stoichiometry of a gas mixture.",
+   "reasoning": "M_r(¹⁶O=¹⁸O) = 34, M_r(H₂³²S) = 34. Statement 1: Average M_r = (34+34)/2 = 34 ✓. Statement 2: Both molecules have M_r = 34, so removing O2 leaves only H2S with M_r = 34 — average unchanged ✓. Statement 3: 2H2S + 3O2 → 2SO2 + 2H2O. With equal moles, O2 is limiting (needs 1.5× more O2 than H2S). Some H2S remains ✓. All three correct.",
+   "why_correct": "All three statements are correct.",
+   "why_others_wrong": "None — all statements are valid.",
+   "syllabus_ref": "Topic 3.1: Molecular mass and reaction stoichiometry"
+  }
+ },
+ {
+  "id": "ch03_P1_0136",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests reaction kinetics: reading a Boltzmann distribution at two temperatures.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. T1 is the lower temperature (taller, narrower peak) and T2 the higher temperature (lower, broader curve). Statement 1: the shaded strip lies under the T2 curve between E1 and E2 and represents the proportion of molecules with energies in that range at T2 - correct. Statement 2: the distribution curves start from the origin, so no molecules have zero energy at either temperature - correct. Statement 3: T2 has the flatter, more spread-out curve shifted to higher energies, so T2 is the higher temperature - correct. All three statements are correct.",
+   "why_correct": "A (1, 2 and 3) is correct: the shaded area under T2, the zero-energy origin and the identity of T2 as the higher temperature are all consistent with Boltzmann distributions.",
+   "why_others_wrong": "B, C and D each reject one correct feature of the distributions; raising temperature always lowers and broadens the peak and increases the high-energy fraction.",
+   "syllabus_ref": "Topic: Reaction kinetics - Boltzmann distribution and the effect of temperature.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0137",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests chemical bonding: molecular symmetry and the absence of an overall dipole moment.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: BF3 is trigonal planar; the three B-F dipoles cancel by symmetry - no overall dipole. Statement 2: CH4 is tetrahedral with four identical C-H bonds arranged symmetrically - no overall dipole. Statement 3: PF5 is trigonal bipyramidal; the P-F bond dipoles cancel in this highly symmetric arrangement - no overall dipole. All three molecules have zero net dipole moment.",
+   "why_correct": "A (1, 2 and 3) is correct: BF3, CH4 and PF5 all have highly symmetric shapes in which individual bond dipoles cancel completely.",
+   "why_others_wrong": "B, C and D wrongly assign a net dipole to one or more of these symmetric molecules; a permanent dipole requires bond dipoles that do not cancel.",
+   "syllabus_ref": "Topic: Chemical bonding - molecular shape, symmetry and dipole moments.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0138",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests chemical bonding: comparing bond energy, length and polarity in HBr and HI.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: bromine is smaller and more electronegative than iodine, so the H-Br bond is stronger (greater bond energy) than H-I - correct. Statement 2: H-Br is shorter than H-I because Br is the smaller atom (less bond length) - correct. Statement 3: electronegativity falls down Group 17, so the electronegativity difference H-Br exceeds H-I, giving H-Br greater bond polarity - correct. All three statements are correct.",
+   "why_correct": "A (1, 2 and 3) is correct: relative to HI, the HBr bond has greater energy, smaller length and greater polarity.",
+   "why_others_wrong": "B, C and D each deny one of these trends, which all follow from bromine being above iodine in Group 17 (smaller, more electronegative).",
+   "syllabus_ref": "Topic: Chemical bonding - bond energy, bond length and bond polarity trends.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0139",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Recognising one mole of a substance from gas volume, mass and solution concentration.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Statement 1: at room conditions 1 mol of any gas occupies 24.0 dm^3, so 24.0 dm^3 of helium is 1 mol - correct. Statement 2: CaCO3 has Mr = 40.1 + 12.0 + 48.0 = 100.1, so 100.1 g is 1 mol - correct. Statement 3: 4000 cm^3 = 4.0 dm^3 of 0.250 mol dm^-3 solution contains 4.0 x 0.250 = 1.00 mol of sulfuric acid - correct. All three contain one mole of the underlined substance.",
+   "why_correct": "A (1, 2 and 3) is correct: the gas molar volume, the molar mass of CaCO3 and the concentration x volume product each give exactly one mole.",
+   "why_others_wrong": "B, C and D each exclude one quantity that equals one mole; all three routes (24 dm^3 gas, 100.1 g solid, 4.0 dm^3 x 0.250 mol dm^-3) give 1.00 mol.",
+   "syllabus_ref": "Topic: Amount of substance - the mole; gas volumes, masses and solution concentrations."
+  }
+ },
+ {
+  "id": "ch03_P1_0140",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Acid-base properties of oxides and their solubility in water",
+   "reasoning": "Al₂O₃ is an amphoteric oxide but is insoluble in water, so it does not dissolve to produce H⁺ or OH⁻ ions — no pH change. SiO₂ is a giant covalent (macromolecular) acidic oxide that is insoluble in water and does not react with it — no pH change. P₄O₁₀ is a simple molecular acidic oxide that reacts vigorously with water: P₄O₁₀ + 6H₂O → 4H₃PO₄, producing phosphoric acid and lowering the pH significantly. Therefore, only Al₂O₃ and SiO₂ do not cause a pH change.",
+   "why_correct": "B corresponds to statements 1 and 2 only. Both Al₂O₃ (insoluble amphoteric oxide) and SiO₂ (insoluble giant covalent oxide) do not react with or dissolve in water, so neither changes the pH.",
+   "why_others_wrong": "A (all three) is wrong because P₄O₁₀ reacts with water to form H₃PO₄, changing pH. C (2 and 3 only) wrongly includes P₄O₁₀. D (1 only) wrongly excludes SiO₂, which is also insoluble in water.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(h) describe and explain the properties of oxides in terms of bonding and structure"
+  }
+ },
+ {
+  "id": "ch03_P1_0141",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Molecular shapes and bond angles (VSEPR theory)",
+   "reasoning": "C₂H₄ (ethene) has trigonal planar geometry around each carbon (3 bonding regions, 0 lone pairs), giving H-C-H and H-C-C bond angles of approximately 120°. PF₅ has a trigonal bipyramidal shape with 5 bonding pairs; the three equatorial F-P-F bond angles are exactly 120°. NCl₃ has a trigonal pyramidal shape (3 bonding pairs + 1 lone pair on N), with bond angles of approximately 107° (less than 109.5° due to lone pair repulsion) — no 120° angle present.",
+   "why_correct": "B corresponds to statements 1 and 2 only. Both C₂H₄ (trigonal planar carbons) and PF₅ (equatorial positions in trigonal bipyramid) contain bond angles of 120°.",
+   "why_others_wrong": "A (all three) is wrong because NCl₃ has ~107° angles, not 120°. C (2 and 3 only) wrongly includes NCl₃. D (1 only) wrongly excludes PF₅ which has 120° equatorial angles.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(f) explain the shapes of, and bond angles in, molecules and ions using VSEPR theory"
+  }
+ },
+ {
+  "id": "ch03_P1_0142",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Classification of alcohols (primary, secondary, tertiary)",
+   "reasoning": "Examining the cortisone structure: (1) Primary alcohol — the -CH₂OH group at the top right of the structure has the OH-bearing carbon attached to only one other carbon, making it a primary alcohol. (2) Secondary alcohol — the -CH(OH)- group on the ring (left side, HO attached to a ring carbon bonded to two other carbons) is a secondary alcohol. (3) Tertiary alcohol — the -C(OH)- group on the right side of the ring system, where the carbon bearing the OH is bonded to three other carbons (two ring carbons and one additional carbon), making it a tertiary alcohol. All three classes are present.",
+   "why_correct": "A means all three statements (1, 2, and 3) are correct. Cortisone contains primary (-CH₂OH), secondary (>CH-OH), and tertiary (>C(OH)-) alcohol groups.",
+   "why_others_wrong": "B (1 and 2 only) misses the tertiary alcohol. C (2 and 3 only) misses the primary alcohol. D (1 only) misses both secondary and tertiary alcohols.",
+   "syllabus_ref": "3.3 Chemical bonding — classification of organic functional groups; alcohol types based on carbon substitution"
+  }
+ },
+ {
+  "id": "ch03_P1_0143",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Chirality, molecular formula determination, and bond angles in organic molecules",
+   "reasoning": "Statement 1: Each brominated carbon in the ring is bonded to Br, H, and two different ring paths (the ring is asymmetric due to the specific bromination pattern), giving four different groups — each brominated C is a chiral centre. Statement 2: Counting atoms in the structure — the ring contains 12 carbons. With 6 Br substituents replacing H atoms on 6 carbons (each C-Br carbon has 1 H) and 6 unsubstituted carbons (each with 2 H), the formula is C₁₂H₁Br₆, not C₁₂H₂₀Br₆ — statement 2 is incorrect. Statement 3: All carbons in this saturated cyclic compound are sp³ hybridised with tetrahedral geometry (~109.5° bond angles), not 120° — statement 3 is incorrect.",
+   "why_correct": "D means only statement 1 is correct. Each brominated carbon has four different substituents (Br, H, and two distinct ring paths), making them all chiral centres.",
+   "why_others_wrong": "A (all three) is wrong because the molecular formula is C₁₂H₁₈Br₆ (not C₁₂H₂₀Br₆) and bond angles are ~109.5° (not 120°). B (1 and 2) wrongly includes the incorrect molecular formula. C (2 and 3) includes two incorrect statements.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(f) molecular shapes and bond angles; chirality and optical isomerism"
+  }
+ },
+ {
+  "id": "ch03_P1_0144",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Reduction of carbonyl compounds by LiAlH₄",
+   "reasoning": "The skeletal formula of M is HOOC-CH₂-CH(OH)-CH₂-CHO (a molecule with a carboxylic acid group, a secondary alcohol, and an aldehyde group). LiAlH₄ is a strong reducing agent that reduces: (i) -COOH → -CH₂OH (carboxylic acid to primary alcohol, adding 2H), (ii) -CHO → -CH₂OH (aldehyde to primary alcohol, adding 2H). The existing -OH (secondary alcohol) is NOT affected by LiAlH₄. Starting formula of M: C₅HO₄. After reduction: HOCH₂-CH₂-CH(OH)-CH₂-CH₂OH = C₅H₁₂O₃. The reduction adds 4 H atoms total (2 from -COOH→-CH₂OH and 2 from -CHO→CH₂OH), changing C₅H₈O₄ to C₅H₁₂O₃ (same number of O atoms since -COOH loses one O but -CHO keeps its O as -CH₂OH: actually -COOH has 2O becoming -CH₂OH with 1O, losing 1O; -CHO has 1O becoming -CH₂OH with 1O, no change. Net: 4O→3O, 8H→12H). Final product: C₅H₁₂O₃.",
+   "why_correct": "D (C₅H₁₂O) correctly accounts for the full reduction of both -COOH and -CHO groups to -CH₂OH, giving a triol with formula C₅H₁₂O₃.",
+   "why_others_wrong": "A (C₅H₈O₅) has too many oxygens and too few hydrogens — no reduction occurred. B (C₅H₁₀O₄) suggests only partial reduction. C (C₅H₁₀O₃) has the correct oxygen count but insufficient hydrogen addition.",
+   "syllabus_ref": "3.3 Chemical bonding — reduction reactions of carbonyl compounds; LiAlH₄ as a reducing agent"
+  }
+ },
+ {
+  "id": "ch03_P1_0145",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Iodoform test and structural isomerism of C₄H₈O₂",
+   "reasoning": "The iodoform test (alkaline I₂) gives yellow CHI₃ crystals for compounds containing CH₃CO- (methyl ketone) or CH₃CH(OH)- (secondary alcohol with methyl, oxidised in situ to methyl ketone). For C₄HO₂ with one C=O and one OH group, the structural isomers that give a positive test are: (1) CH₃COCH₂CH₂OH (4-hydroxybutan-2-one, has CH₃CO-), (2) CH₃COCH(OH)CH₃ (3-hydroxybutan-2-one, has CH₃CO-), and (3) OHCCH₂CH(OH)CH₃ (3-hydroxybutanal, has CH₃CH(OH)-). Isomers like HOCH₂COCH₂CH₃ (no CH₃CO-), OHCCH(OH)CH₂CH₃ (CH₃ not directly on CH(OH)), and (CH₃)₂C(OH)CHO (no H on C-OH) give negative tests. Total = 3 compounds.",
+   "why_correct": "B = 3. Exactly three structural isomers of C₄H₈O₂ with one carbonyl and one OH contain either a CH₃CO- or CH₃CH(OH)- group required for a positive iodoform test.",
+   "why_others_wrong": "A (2) undercounts — misses one valid isomer. C (4) and D (5) overcount by including isomers that lack the required CH₃CO- or CH₃CH(OH)- grouping.",
+   "syllabus_ref": "3.3 Chemical bonding — structural isomerism; characteristic tests for functional groups (iodoform reaction)"
+  }
+ },
+ {
+  "id": "ch03_P1_0146",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Properties and reactions of polyhydric alcohols",
+   "reasoning": "Pentaerythritol is C(CH₂OH)₄ with molecular formula C₅H₁₂O₄. Evaluating each statement: (A) Dehydration to alkene requires a β-hydrogen on the carbon adjacent to the C-OH. Here the β-carbon is the central C, which has no H (bonded to 4 CH₂OH groups) — dehydration cannot occur. (B) Molecular formula C₅H₁₂O₄; GCD(5,12,4)=1, so empirical formula = C₅H₁₂O₄ = molecular formula — they are the same, not different. (C) Primary alcohols are oxidised by acidified KMnO₄ to carboxylic acids — pentaerythritol does react. (D) Reaction with Na: 2ROH + 2Na → 2RONa + H₂. With 4 OH groups per molecule: C(CH₂OH)₄ + 4Na → C(CH₂ONa)₄ + 2H₂. One mole produces two moles of H₂.",
+   "why_correct": "D is correct: 4 OH groups react with excess Na, producing 4/2 = 2 moles of H₂ per mole of pentaerythritol.",
+   "why_others_wrong": "A is wrong — no β-hydrogen available for elimination. B is wrong — empirical and molecular formulas are identical. C is wrong — primary alcohols are oxidised by acidified KMnO₄.",
+   "syllabus_ref": "3.3 Chemical bonding — reactions of alcohols (oxidation, reaction with Na, dehydration)"
+  }
+ },
+ {
+  "id": "ch03_P1_0147",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Calculation of relative atomic mass from isotopic abundances",
+   "reasoning": "The sample contains ³²S (93.0%, since 100 - 4.2 - 2.8 = 93.0%), ³⁴S (4.2%), and ³⁶S (2.8%). Aᵣ = (93.0 × 32 + 4.2 × 34 + 2.8 × 36)  100 = (2976.0 + 142.8 + 100.8) ÷ 100 = 3219.6 ÷ 100 = 32.196 ≈ 32.2.",
+   "why_correct": "B = 32.2, which matches the calculated weighted average of the isotopic masses.",
+   "why_others_wrong": "A (32.1) is too low — underestimates the contribution of heavier isotopes. C (34.0) and D (34.3) are far too high — these would require the heavier isotopes to dominate, but ³²S is 93% of the sample.",
+   "syllabus_ref": "3.1 Atomic structure — 3.1(a) define and use terms proton number, nucleon number, isotope; calculate relative atomic mass from isotopic abundances"
+  }
+ },
+ {
+  "id": "ch03_P1_0148",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Esterification reactions and identification of reactants from ester structure",
+   "reasoning": "Ester Z contains three ester linkages: two ethanoate (-OCOCH₃) groups and one propanoate (-OCOCH₂CH₃) group on a propane-1,2,3-triol (glycerol) backbone. Working backwards: the propanoate group must come from a pre-existing ester (since only X and Y are mixed), and the two ethanoate groups form from reaction of remaining OH groups with ethanoic acid. Option C: X = CH₃CO₂H (ethanoic acid), Y = CH₃CH₂CO₂CH₂CH(OH)CH₂OH (a propanoate monoester of glycerol with 2 free OH groups). When X reacts with Y's two free OH groups under acid catalysis, both become acetate esters, giving the structure of Z. Option D (glycerol + ethanoic acid) would give triacetate (all three acetates), not the mixed ester shown.",
+   "why_correct": "C correctly identifies X as ethanoic acid (provides the two acetate groups) and Y as the propanoate-monoester diol (provides the propanoate group and glycerol backbone with 2 reactive OH groups).",
+   "why_others_wrong": "A uses ethanol + a tricarboxylic acid — wrong reactant types. B uses ethanol + a diester — cannot produce the tri-ester Z. D uses ethanoic acid + glycerol, which would produce glycerol triacetate (three acetate groups), not the mixed ester with one propanoate shown.",
+   "syllabus_ref": "3.3 Chemical bonding — esterification reactions; identifying reactants from ester products"
+  }
+ },
+ {
+  "id": "ch03_P1_0149",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Addition polymerisation — deducing monomer from polymer repeat unit",
+   "reasoning": "In polymer G, every carbon in the chain is bonded to one H and one CH₃ group. The repeat unit is therefore -CH(CH₃)-CH(CH₃)-. To find the monomer, 'undo' the polymerisation by forming a C=C between the two carbons of the repeat unit: CH₃CH=CHCH₃ = but-2-ene. Checking other options: but-1-ene (CH₂=CHCH₂CH₃) gives repeat unit -CH₂-CH(C₂H₅)- (one C has 2H, wrong); methylpropene ((CH₃)₂C=CH₂) gives -C(CH₃)₂-CH₂- (one C has no H, wrong); propene (CH₃CH=CH₂) gives -CH₂-CH(CH)- (one C has 2H, wrong).",
+   "why_correct": "B = but-2-ene. Polymerisation of CH₃CH=CHCH₃ gives repeat unit -CH(CH₃)-CH(CH₃)-, where every chain carbon has exactly one H and one CH₃ substituent.",
+   "why_others_wrong": "A (but-1-ene) gives an ethyl side chain on every other carbon. C (methylpropene) gives a carbon with two methyl groups and no H. D (propene) gives -CH₂-CH(CH₃)- where half the chain carbons have 2H atoms.",
+   "syllabus_ref": "3.5 Hydrocarbons — 3.5(e) describe the mechanism of addition polymerisation; deduce the repeat unit and monomer"
+  }
+ },
+ {
+  "id": "ch03_P1_0150",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Degree of unsaturation and hydrogenation of alkenes",
+   "reasoning": "Limonene has molecular formula C₁₀H₁. Degree of unsaturation = (2×10 + 2 − 16) ÷ 2 = 3. The molecule contains one 6-membered ring (accounts for 1 degree of unsaturation), leaving 2 degrees for C=C double bonds. Each C=C requires 1 mol H₂ for complete hydrogenation: C=C + H₂ → CH-CH. Therefore 1 mol limonene requires 2 mol H₂. At room conditions (RTP), molar volume = 24 dm³ mol⁻¹. Volume = 2 × 24 = 48 dm³.",
+   "why_correct": "C = 48 dm³, corresponding to 2 moles of H₂ needed for the 2 C=C double bonds in limonene.",
+   "why_others_wrong": "A (12 dm³) = 0.5 mol H₂, far too little. B (24 dm³) = 1 mol H₂, would only saturate one C=C. D (72 dm³) = 3 mol H₂, would imply 3 C=C bonds, but one degree of unsaturation is the ring (not hydrogenable).",
+   "syllabus_ref": "3.5 Hydrocarbons — addition reactions of alkenes with H₂; mole calculations at RTP (24 dm³/mol)"
+  }
+ },
+ {
+  "id": "ch03_P1_0151",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Elimination vs substitution reactions of halogenoalkanes",
+   "reasoning": "1-bromopropane (CH₃CH₂CH₂Br) reacts with hot ethanolic NaOH. The key conditions are 'hot' and 'ethanolic' — these favour elimination (E2) over substitution (SN2). In elimination, NaOH acts as a base, removing HBr: CH₃CH₂CH₂Br + NaOH → CH₃CH=CH₂ + NaBr + H₂O. The product is propene, molecular formula C₃H₆. Note: if the conditions were warm aqueous NaOH, substitution would occur giving propan-1-ol (C₃H₈O), but hot ethanolic conditions specifically promote elimination.",
+   "why_correct": "A = C₃H (propene), the elimination product formed under hot ethanolic NaOH conditions.",
+   "why_others_wrong": "B (C₃H₈) = propane, would require reduction not elimination. C (C₃H₇O) is not a valid stable molecular formula. D (C₃H₈O) = propanol, the substitution product — this would form with warm aqueous NaOH, not hot ethanolic NaOH.",
+   "syllabus_ref": "3.6 Halogen derivatives — 3.6(b) nucleophilic substitution and elimination reactions of halogenoalkanes; effect of conditions (aqueous vs ethanolic, hot vs warm)"
+  }
+ },
+ {
+  "id": "ch03_P1_0152",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Properties of addition polymers — PVC",
+   "reasoning": "PVC (polyvinyl chloride) is made from chloroethene (vinyl chloride), CH₂=CHCl. The repeat unit is -CH₂-CHCl-. Evaluating each option: (A) Combustion of PVC produces HCl gas (acidic, not alkaline) along with CO₂ and possibly CO/dioxins — harmful but acidic. (B) Monomer CH₂=CHCl has molecular formula C₂H₃Cl, empirical formula C₂H₃Cl. Repeat unit -CH₂-CHCl- also has formula C₂H₃Cl. Same empirical formula — correct. (C) PVC has only single C-C bonds in the chain (the C=C of the monomer is broken during polymerisation) — PVC is saturated. (D) The repeat unit is -CH₂-CHCl- = (C₂H₃Cl), not (CH₂CCl₂) which would come from 1,1-dichloroethene.",
+   "why_correct": "B is correct: both the monomer (CH₂=CHCl) and the polymer repeat unit (-CH₂-CHCl-) have the same empirical formula C₂H₃Cl, as addition polymerisation doesn't change the atom ratio.",
+   "why_others_wrong": "A — combustion gives HCl (acidic). C — PVC is saturated (no C=C in chain). D — repeat unit is -CH₂CHCl-, not -CH₂CCl₂-.",
+   "syllabus_ref": "3.5 Hydrocarbons — 3.5(e) addition polymerisation; structure and properties of PVC"
+  }
+ },
+ {
+  "id": "ch03_P1_0153",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Trends in bond length down Group IV",
+   "reasoning": "Bond lengths: C-C 0.154 nm, Si-Si 0.234 nm, Ge-Ge 0.244 nm — increasing down the group. Statement 1: As we go down the group, valence orbitals (2p→3p→4p) become larger and more diffuse, resulting in less effective orbital overlap and hence longer, weaker bonds — correct explanation. Statement 2: Atomic radius increases down the group due to additional electron shells — the bonding electrons are farther from the nucleus, giving longer bond lengths — correct explanation. Statement 3: Nuclear charge does increase down the group (C:6, Si:14, Ge:32), but increased nuclear charge would pull electrons closer and shorten bonds, not lengthen them. The actual reason bond length increases is increased shielding and larger atomic size, not nuclear charge — statement 3 does not explain the trend.",
+   "why_correct": "B = statements 1 and 2 only. Both decreasing orbital overlap and increasing atomic radius correctly explain why bond length increases down Group IV.",
+   "why_others_wrong": "A (all three) wrongly includes statement 3 — increased nuclear charge would shorten, not lengthen, bonds. C (2 and 3 only) wrongly includes statement 3. D (1 only) misses the important contribution of increasing atomic radius.",
+   "syllabus_ref": "3.2 Chemical bonding — 3.2(a) trends in atomic radius and bonding across Period 3 and down groups; orbital overlap and bond strength"
+  }
+ },
+ {
+  "id": "ch03_P1_0154",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Reduction of carbonyls by NaBH₄ followed by acid-catalysed dehydration",
+   "reasoning": "Each compound is a cyclohexane derivative with an aldehyde (-CHO) and a ketone (C=O) group (molecular formula C₇H₁₀O₂). Step 1: NaBH₄ reduces both C=O groups to -CHOH (alcohol), giving a diol C₇H₁O₂. Step 2: Hot conc. H₂SO₄ dehydrates both OH groups (eliminating 2H₂O), forming a diene C₇H₁₀. The number of final products depends on molecular symmetry:\n\nStructure 1 (1,3-dicarbonyl): The two OH groups are at 1,3 positions on the ring. Each OH can eliminate in two directions, and the two positions are non-equivalent, giving multiple diene isomers.\n\nStructure 2 (1,4-dicarbonyl, symmetric): The molecule has a plane of symmetry. Both OH groups are in equivalent environments, and elimination from each gives the same product — only one diene forms.\n\nStructure 3 (1,2-dicarbonyl): The two OH groups are on adjacent carbons. Dehydration of a 1,2-diol on a ring gives a specific conjugated diene with double bonds at fixed positions — only one product forms due to geometric constraints.",
+   "why_correct": "C = structures 2 and 3 only. Both the symmetric 1,4-diol (structure 2) and the constrained 1,2-diol (structure 3) give only one C₇H₁₀ dehydration product.",
+   "why_others_wrong": "A (1 only) — structure 1 gives multiple products due to non-equivalent elimination pathways. B (1 and 2) — wrongly includes structure 1. D (3 only) — misses structure 2 which also gives one product due to symmetry.",
+   "syllabus_ref": "3.3 Chemical bonding — reduction of carbonyls; dehydration of alcohols; symmetry and isomerism"
+  }
+ },
+ {
+  "id": "ch03_P1_0155",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Isotopes and atomic properties",
+   "reasoning": "Mr(Cl₂) = 72.0 means the average Ar(Cl) = 36.0. Natural chlorine has two stable isotopes: ³⁵Cl (Ar≈35) and ³Cl (Ar≈37). A sample with Ar = 36.0 must be a mixture of these isotopes (approximately 50:50). For ALL atoms in this mixed sample: (1) Atomic radius — isotopes of the same element have identical electron configurations and essentially the same atomic radius, since radius is determined by electron shell structure, not neutron number. This is the same for all atoms. ✓ (2) Nucleon number — ³⁵Cl has nucleon number 35, ³⁷Cl has nucleon number 37. These are different. ✗ (3) Isotopic mass — ³⁵Cl ≈ 35, ³⁷Cl ≈ 37. These are different. ",
+   "why_correct": "D = statement 1 only. All Cl atoms (regardless of isotope) have the same atomic radius because isotopes have identical electron configurations.",
+   "why_others_wrong": "A (all three) wrongly assumes nucleon number and isotopic mass are the same — they differ between ³⁵Cl and ³⁷Cl. B (1 and 2) wrongly includes nucleon number. C (2 and 3) includes the two properties that actually differ between isotopes.",
+   "syllabus_ref": "3.1 Atomic structure — 3.1(a) define isotope; properties of isotopes (same proton number and electron configuration, different nucleon number)"
+  }
+ },
+ {
+  "id": "ch03_P1_0156",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Ideal gas equation and its derived forms",
+   "reasoning": "Starting from pV = nRT: Statement 1: n = m/M, so pV = (m/M)RT. Since ρ = m/V, we get p = ρRT/M. This is correct. ✓ Statement 2: If c = concentration in mol dm³, then c = n/V, so p = cRT (not pV = cRT/M). The equation pV = cRT/M would only be correct if c were mass concentration (g dm⁻³), but in CAIE chemistry, c denotes molar concentration. Therefore statement 2 is incorrect as written. ✗ Statement 3: pV = MRT would require n = M, but n = m/M (moles = mass/molar mass), not n = M. This equation is dimensionally incorrect. ✗",
+   "why_correct": "D = statement 1 only. p = ρRT/M is a valid rearrangement of pV = nRT using ρ = m/V and n = m/M.",
+   "why_others_wrong": "A (all three) includes two incorrect equations. B (1 and 2) wrongly includes statement 2 — pV = cRT/M is not correct when c = molar concentration. C (2 and 3) includes two incorrect equations.",
+   "syllabus_ref": "3.1 Atomic structure — 3.1(d) use the ideal gas equation pV = nRT and derived forms"
+  }
+ },
+ {
+  "id": "ch03_P1_0157",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests organic chemistry: acid-catalysed dehydration of diols and the number of alkene products.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Heating with excess concentrated H2SO4 dehydrates both -OH groups (loss of 2 H2O) to give a product of formula C7H10 (a diene). Statement 1: the 1,4-substituted diol (ring -OH opposite the CH2OH side chain) has equivalent elimination routes and gives only one C7H10 product - correct. Statement 2: the diol with adjacent ring -OH/CH2OH groups can only eliminate the ring alcohol into one position to give a single C7H10 diene - correct. Statement 3: the 1,3-substituted diol can place the second double bond in two different positions, giving more than one C7H10 product - incorrect. Statements 1 and 2 only give a single product.",
+   "why_correct": "B (1 and 2 only) is correct: compounds 1 and 2 each dehydrate to a unique C7H10 diene, whereas compound 3 can eliminate to give more than one alkene product.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly include compound 3; D (1 only) omits compound 2, whose adjacent substituents allow only one C7H10 elimination product.",
+   "syllabus_ref": "Topic: Organic chemistry - dehydration of alcohols; alkene formation.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0158",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Trends in bond length down Group IV",
+   "reasoning": "Bond lengths increase: C-C 0.154 nm → Si-Si 0.234 nm → Ge-Ge 0.244 nm. Statement 1: Going down the group, valence orbitals change from 2p (C) to 3p (Si) to 4p (Ge). These orbitals become larger and more diffuse, resulting in less effective orbital overlap between bonding atoms — bonds become longer and weaker. Correct explanation. ✓ Statement 2: Atomic radius increases down the group due to additional electron shells. The bonding electron pair is farther from each nucleus, giving a longer bond length. Correct explanation. ✓ Statement 3: Nuclear charge increases down the group (C: Z=6, Si: Z=14, Ge: Z=32), but greater nuclear charge would attract bonding electrons more strongly and shorten the bond — this contradicts the observed trend. The actual cause is increased shielding and larger atomic size overcoming the nuclear charge effect. Statement 3 does not explain the trend. ✗",
+   "why_correct": "B = statements 1 and 2 only. Both decreasing orbital overlap and increasing atomic radius correctly explain the bond length trend.",
+   "why_others_wrong": "A (all three) wrongly includes statement 3. C (2 and 3 only) wrongly includes statement 3. D (1 only) misses the key contribution of increasing atomic radius.",
+   "syllabus_ref": "3.2 Chemical bonding — trends in atomic radius; orbital overlap and bond strength down groups"
+  }
+ },
+ {
+  "id": "ch03_P1_0159",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Reduction of carbonyls by NaBH₄ followed by acid-catalysed dehydration",
+   "reasoning": "Each compound is a cyclohexane derivative containing an aldehyde (-CHO) and a ketone (C=O) group, molecular formula CH₁₀O₂. Step 1: Excess NaBH₄ reduces both carbonyl groups to secondary/primary alcohols (-CHOH), giving a diol C₇H₁₄O₂. Step 2: Excess conc. H₂SO₄ dehydrates both OH groups (eliminating 2H₂O), forming a diene C₇H₁₀ (DoU = 3: 1 ring + 2 C=C).\n\nStructure 1 (1,3-dicarbonyl arrangement): The two resulting OH groups are at non-equivalent 1,3 positions. Each OH can eliminate toward different adjacent carbons, producing multiple diene isomers.\n\nStructure 2 (1,4-dicarbonyl, symmetric): The molecule has a plane of symmetry. Both OH groups are in equivalent environments, and elimination from each produces the same diene — only one product.\n\nStructure 3 (1,2-dicarbonyl): The two OH groups are on adjacent carbons. Dehydration of a 1,2-diol on a ring gives a specific conjugated diene — geometric constraints limit the product to one isomer.",
+   "why_correct": "C = structures 2 and 3 only. The symmetric 1,4-diol (structure 2) and the constrained 1,2-diol (structure 3) each give only one C₇H₁₀ product.",
+   "why_others_wrong": "A (1 only) — structure 1 gives multiple products. B (1 and 2) — wrongly includes structure 1. D (3 only) — misses structure 2.",
+   "syllabus_ref": "3.3 Chemical bonding — reduction of carbonyls by NaBH₄; acid-catalysed dehydration of alcohols"
+  }
+ },
+ {
+  "id": "ch03_P1_0160",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Reactions of anhydrous aluminium chloride with water",
+   "reasoning": "When anhydrous AlCl₃ is added to water: AlCl₃ + 6H₂O → [Al(H₂O)₆]³⁺ + 3Cl⁻. This dissolution/hydration reaction is highly EXOTHERMIC (releases significant heat), not endothermic — statement 1 is incorrect. The hexaaquaaluminium(III) ion [Al(H₂O)₆]³⁺ is a small, highly charged cation that polarises the O-H bonds of coordinated water molecules, causing hydrolysis: [Al(H₂O)₆]³⁺ ⇌ [Al(H₂O)(OH)]²⁺ + H⁺. This releases H⁺ ions, making the solution acidic — statement 2 is correct. The solution does contain [Al(H₂O)₆]³⁺ ions (though partially hydrolysed) — statement 3 is correct.",
+   "why_correct": "C = statements 2 and 3 only. The solution is acidic due to hydrolysis of [Al(H₂O)₆]³⁺, and this ion is present in solution. The reaction is exothermic, not endothermic.",
+   "why_others_wrong": "A (all three) wrongly includes statement 1 — the reaction is exothermic. B (1 and 2) wrongly includes the endothermic claim. D (1 only) is wrong on all counts except possibly the exothermic nature being mislabelled.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(i) explain the acidic nature of aqueous solutions of metal ions; hydration of metal ions"
+  }
+ },
+ {
+  "id": "ch03_P1_0161",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Oxidative cleavage of alkenes by hot concentrated acidified KMnO₄",
+   "reasoning": "The molecule is (CH₃)₂C=CH-CH₂-CH₂-C(=CH₂)-CH=CH₂ (a terpene with 3 C=C bonds). Hot concentrated acidified KMnO₄ cleaves C=C bonds oxidatively: R₂C= → R₂C=O (ketone); RCH= → RCOOH (carboxylic acid); H₂C= → CO₂.\n\nCleaving each C=C:\n- (CH₃)₂C=CH- → (CH)₂C=O (propanone/acetone) + carboxylic acid fragment\n- -C(=CH₂)- → the =CH₂ gives CO₂; the substituted C becomes a carbonyl\n- -CH=CH₂ → -COOH + CO₂\n\nFinal products: CO₂ (from two terminal =CH₂ groups) ✓, (CH₃)₂C=O (propanone/acetone, CH₃COCH₃) ✓, and a dicarboxylic acid (HOOCCH₂CH₂COOH, butanedioic acid). CH₃CO₂H (ethanoic acid) is NOT produced — no cleavage gives a CH₃COOH fragment.",
+   "why_correct": "B = statements 1 and 2 only. CO₂ is produced from the two terminal =CH₂ groups, and CH₃COCH₃ (propanone) is produced from the (CH₃)₂C= fragment.",
+   "why_others_wrong": "A (all three) wrongly includes CH₃CO₂H — no ethanoic acid fragment is generated. C (2 and 3 only) wrongly includes CH₃CO₂H and excludes CO₂. D (1 only) misses the propanone product.",
+   "syllabus_ref": "3.5 Hydrocarbons — oxidative cleavage of alkenes by hot concentrated acidified KMnO₄"
+  }
+ },
+ {
+  "id": "ch03_P1_0162",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Reactions of anhydrous aluminium chloride with water",
+   "reasoning": "When anhydrous AlCl₃ is added to water: AlCl₃ + 6H₂O → [Al(H₂O)₆]³⁺ + 3Cl⁻. This dissolution/hydration is highly EXOTHERMIC — statement 1 (endothermic) is incorrect. The [Al(H₂O)₆]³⁺ ion undergoes hydrolysis: [Al(H₂O)₆]³⁺ ⇌ [Al(H₂O)₅(OH)]²⁺ + H⁺, releasing H⁺ ions and making the solution acidic — statement 2 is correct. The hexaaquaaluminium(III) ion [Al(H₂O)₆]³⁺ is present in solution (partially hydrolysed) — statement 3 is correct.",
+   "why_correct": "C = statements 2 and 3 only. The solution is acidic and contains [Al(H₂O)]³⁺ ions. The reaction is exothermic, not endothermic.",
+   "why_others_wrong": "A (all three) wrongly includes the endothermic claim. B (1 and 2) wrongly includes statement 1. D (1 only) is incorrect.",
+   "syllabus_ref": "3.3 Chemical bonding — acidic aqueous solutions of metal ions; hydration enthalpy"
+  }
+ },
+ {
+  "id": "ch03_P1_0163",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Checking quantitative statements about a carbonate-acid reaction using moles, gas volume and titration volume.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Na2CO3 + 2HCl -> 2NaCl + H2O + CO2. From 0.025 mol Na2CO3: Statement 1: 0.025 mol CO2 forms, occupying 0.025 x 24 = 0.60 dm^3 = 600 cm^3 at r.t.p. - correct. Statement 2: HCl needed = 0.050 mol; volume of 0.2 mol dm^-3 acid = 0.050/0.2 = 0.25 dm^3 = 250 cm^3 - correct. Statement 3: NaCl formed = 0.050 mol, mass = 0.050 x 58.5 = 2.925 g, not 1.46 g - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: 600 cm^3 of CO2 and 250 cm^3 of 0.2 M HCl match the 0.025 mol of carbonate, but the NaCl mass is 2.925 g.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly accept 1.46 g NaCl (half the true value); D (1 only) rejects the correctly calculated acid volume.",
+   "syllabus_ref": "Topic: Amount of substance - moles in reactions, gas volumes and solution volumes."
+  }
+ },
+ {
+  "id": "ch03_P1_0164",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Molecular geometry and coplanarity of carbon atoms",
+   "reasoning": "Statement 1: 2,3-dimethylbut-2-ene is (CH₃)₂C=C(CH₃)₂. Both C=C carbons are sp² hybridised (trigonal planar). Each sp² carbon has its three substituents (two methyl groups and the other sp² carbon) in the same plane. Since the C=C double bond prevents rotation, all six carbon atoms (2 sp² + 4 methyl carbons) lie in the same plane. ✓ Statement 2: Propane (CH₃CH₂CH₃) has three carbon atoms. Any three points in space define a plane, so all three carbons are necessarily coplanar. ✓ Statement 3: Cyclohexane (C₆H₁₂) adopts a chair conformation as its most stable form, in which the six ring carbons alternate above and below the mean plane — they are NOT all coplanar. Even the boat conformation is non-planar. ",
+   "why_correct": "B = statements 1 and 2 only. 2,3-dimethylbut-2-ene has all carbons in one plane (sp² geometry), and propane's three carbons are trivially coplanar (any 3 points define a plane).",
+   "why_others_wrong": "A (all three) wrongly includes cyclohexane, which is non-planar. C (2 and 3 only) wrongly includes cyclohexane. D (1 only) misses propane's trivial coplanarity.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(f) shapes of molecules; sp² vs sp³ hybridisation and planarity"
+  }
+ },
+ {
+  "id": "ch03_P1_0165",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Acid strength and pH comparison",
+   "reasoning": "A lower pH means higher [H⁺], indicating a stronger acid (greater dissociation). Methanoic acid (HCO₂H, Ka ≈ 1.8×10⁻⁴) is a stronger acid than hydrocyanic acid (HCN, Ka ≈ 6.2×10⁻¹⁰). Statement 1: HCO₂H dissociates more fully than HCN at the same concentration, producing more H ions and hence lower pH — this correctly explains the observation. ✓ Statement 2: The total number of hydrogen atoms in a molecule does not determine acid strength. In HCO₂H, only the carboxylic acid H is ionisable; the C-H hydrogen is not acidic. The number of H atoms is irrelevant. ✗ Statement 3: This states methanoic acid is weaker than HCN — this is factually incorrect (HCO₂H is stronger), and if it were true, it would predict higher pH for HCO₂H, contradicting the observation. ",
+   "why_correct": "D = statement 1 only. The greater degree of dissociation of HCO₂H compared to HCN at equal concentration explains the lower pH.",
+   "why_others_wrong": "A (all three) includes two incorrect statements. B (1 and 2) wrongly includes the irrelevant H-atom count argument. C (2 and 3) includes two wrong statements.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(j) acid-base equilibria; Ka and pH of weak acids"
+  }
+ },
+ {
+  "id": "ch03_P1_0166",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Checking quantitative statements about a carbonate-acid reaction using moles, gas volume and titration volume.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Na2CO3 + 2HCl -> 2NaCl + H2O + CO2. From 0.025 mol Na2CO3: Statement 1: 0.025 mol CO2 occupies 0.025 x 24 = 0.60 dm^3 = 600 cm^3 at r.t.p. - correct. Statement 2: HCl needed = 0.050 mol; volume of 0.2 mol dm^-3 acid = 0.050/0.2 = 0.25 dm^3 = 250 cm^3 - correct. Statement 3: NaCl formed = 0.050 mol, mass = 0.050 x 58.5 = 2.925 g, not 1.46 g - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: the CO2 volume (600 cm^3) and acid volume (250 cm^3) are correct, while 1.46 g is only half the true mass of sodium chloride.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly accept the under-stated NaCl mass; D (1 only) omits the correct acid-volume statement.",
+   "syllabus_ref": "Topic: Amount of substance - moles in reactions, gas volumes and solution volumes."
+  }
+ },
+ {
+  "id": "ch03_P1_0167",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Molecular geometry and coplanarity of carbon atoms",
+   "reasoning": "Statement 1: 2,3-dimethylbut-2-ene, (CH₃)₂C=C(CH₃)₂. Both C=C carbons are sp² hybridised (trigonal planar). Each sp² carbon and its three directly attached atoms lie in one plane. The four methyl carbons are directly bonded to the sp² carbons, so all six carbon atoms are coplanar. ✓ Statement 2: Propane (CH₃CH₂CH₃) has three carbon atoms. Any three non-collinear points define a plane, so all three carbons are necessarily coplanar. ✓ Statement 3: Cyclohexane adopts a chair conformation (most stable), where ring carbons alternate above and below the mean plane — not all coplanar. The boat conformation is also non-planar. ",
+   "why_correct": "B = statements 1 and 2 only. Both 2,3-dimethylbut-2-ene (sp² planarity) and propane (3 points define a plane) have all carbons coplanar.",
+   "why_others_wrong": "A (all three) wrongly includes non-planar cyclohexane. C (2 and 3 only) wrongly includes cyclohexane. D (1 only) misses propane's coplanarity.",
+   "syllabus_ref": "3.3 Chemical bonding — molecular shapes; sp² hybridisation and planarity"
+  }
+ },
+ {
+  "id": "ch03_P1_0168",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "VSEPR theory and bond angles in molecules and ions",
+   "reasoning": "Statement 1: BF₃ — Boron has 3 valence electrons, forms 3 B-F bonds with 0 lone pairs. Electron geometry: trigonal planar. Bond angles = exactly 120°. ✓ Statement 2: CH⁻ — Carbon has 4 valence electrons + 1 (negative charge) = 5 electrons. 3 C-H bonds use 3 electrons, leaving 1 lone pair. Total: 3 bonding pairs + 1 lone pair = tetrahedral electron geometry, trigonal pyramidal molecular shape. Bond angles ≈ 107° (compressed from 109.5° by lone pair repulsion). Not 120°. ✗ Statement 3: NH₃ — Nitrogen has 5 valence electrons, 3 N-H bonds + 1 lone pair. Tetrahedral electron geometry, trigonal pyramidal shape. Bond angles ≈ 107°. Not 120°. ✗",
+   "why_correct": "D = statement 1 only. Only BF₃ (trigonal planar, 3 bonding pairs, 0 lone pairs) has bond angles of 120°.",
+   "why_others_wrong": "A (all three) wrongly includes CH₃⁻ and NH₃ which have ~107° angles. B (1 and 2) wrongly includes CH₃. C (2 and 3) includes two species with ~107° angles.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(f) VSEPR theory; predict shapes and bond angles of molecules and ions"
+  }
+ },
+ {
+  "id": "ch03_P1_0169",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Le Chatelier's principle applied to equilibrium position",
+   "reasoning": "Reaction: 4NH₃(g) + 5O₂(g)  4NO(g) + 6H₂O(g), ΔH = -900 kJ mol⁻¹ (exothermic forward). Moles of gas: reactants = 9, products = 10.\n\nStatement 1: Reducing temperature favours the exothermic direction (forward reaction, ΔH < 0). Equilibrium shifts right → more NO produced → [NO] increases. ✓ Statement 2: A catalyst speeds up both forward and reverse reactions equally. It does not change the equilibrium position → [NO] unchanged. ✗ Statement 3: Increasing total pressure favours the side with fewer moles of gas. Reactants (9 mol) < Products (10 mol), so higher pressure shifts equilibrium LEFT → [NO] decreases. ",
+   "why_correct": "D = statement 1 only. Reducing temperature shifts the exothermic forward equilibrium right, increasing [NO].",
+   "why_others_wrong": "A (all three) wrongly includes catalyst (no equilibrium shift) and pressure increase (shifts left). B (1 and 2) wrongly includes catalyst. C (2 and 3) includes two changes that don't increase [NO].",
+   "syllabus_ref": "3.4 Chemical energetics — 3.4(e) Le Chatelier's principle; effect of temperature, pressure, and catalysts on equilibrium position"
+  }
+ },
+ {
+  "id": "ch03_P1_0170",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "VSEPR theory and bond angles",
+   "reasoning": "Statement 1: BF₃ — Boron (3 valence electrons) forms 3 B-F bonds with 0 lone pairs → trigonal planar geometry → bond angles = exactly 120°. ✓ Statement 2: CH₃⁻ — Carbon has 4 valence e⁻ + 1 (charge) = 5 e⁻. 3 C-H bonds + 1 lone pair → tetrahedral electron geometry, trigonal pyramidal shape → bond angles ≈ 107°. ✗ Statement 3: NH₃ — Nitrogen has 5 valence e⁻, 3 N-H bonds + 1 lone pair → trigonal pyramidal → bond angles ≈ 107°. ✗",
+   "why_correct": "D = statement 1 only. Only BF₃ has trigonal planar geometry with 120° bond angles.",
+   "why_others_wrong": "A, B, C all include CH₃⁻ or NH₃ which have ~107° angles due to lone pair repulsion compressing the tetrahedral angle.",
+   "syllabus_ref": "3.3 Chemical bonding — VSEPR theory; molecular and ionic shapes"
+  }
+ },
+ {
+  "id": "ch03_P1_0171",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Intermolecular forces in liquid mixtures and their effects on physical properties",
+   "reasoning": "X and Y have identical boiling points (similar strength of X-X and Y-Y intermolecular forces). In mixture Z, the average intermolecular forces are STRONGER than the average of X and Y alone, meaning X-Y interactions are stronger than X-X and Y-Y interactions.\n\nStatement 1: When X-Y interactions (stronger) replace X-X and Y-Y interactions (weaker), energy is released — the mixing process is exothermic. ✓ Statement 2: Stronger intermolecular forces in Z mean molecules are held more tightly, making it harder for them to escape into the vapour phase. Vapour pressure of Z < vapour pressure of X or Y at the same temperature. ✓ Statement 3: Stronger intermolecular forces require more energy to overcome → boiling point of Z should be HIGHER than X or Y, not lower. ✗",
+   "why_correct": "B = statements 1 and 2 only. Stronger X-Y interactions make mixing exothermic and reduce vapour pressure.",
+   "why_others_wrong": "A (all three) wrongly includes statement 3 — stronger forces raise, not lower, boiling point. C (2 and 3 only) wrongly includes statement 3. D (1 only) misses the vapour pressure deduction.",
+   "syllabus_ref": "3.3 Chemical bonding — intermolecular forces; effects on boiling point and vapour pressure; enthalpy of mixing"
+  }
+ },
+ {
+  "id": "ch03_P1_0172",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Factors affecting reaction rate and equilibrium position",
+   "reasoning": "Reaction: P(g) + Q(g) ⇌ R(g) + S(l). Gas moles: reactants = 2, products = 1 (S is liquid). The graph shows experiment 1 reaches equilibrium faster with more R; experiment 2 is slower with less R at the observation time.\n\nStatement 1: Lower pressure in experiment 2 → fewer molecular collisions → slower rate. Also, lower pressure favours the side with more gas moles (reactants, 2 mol) over products (1 mol gas) → equilibrium shifts left, less R. Both effects match the observation. ✓ Statement 2: A different (less effective) catalyst in experiment 2 → slower rate of approach to equilibrium. Within the observation time, less R has formed. This could explain the slower curve. ✓ Statement 3: Continuously removing S (liquid product) would shift equilibrium RIGHT (Le Chatelier) → MORE R produced, not less. This contradicts the observation. ",
+   "why_correct": "B = statements 1 and 2 only. Both lower pressure and a less effective catalyst could explain the slower rate and lower amount of R observed in experiment 2.",
+   "why_others_wrong": "A (all three) wrongly includes statement 3 — removing S would increase, not decrease, R. C (2 and 3 only) wrongly includes statement 3. D (1 only) misses the catalyst explanation.",
+   "syllabus_ref": "3.4 Chemical energetics — Le Chatelier's principle; effect of pressure and catalysts on rate and equilibrium"
+  }
+ },
+ {
+  "id": "ch03_P1_0173",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Structure and bonding in organic molecules — tiglic acid",
+   "reasoning": "Tiglic acid: CH₃CH=C(CH₃)CO₂H.\n\nStatement 1: π bonds — The C=C double bond contains 1 π bond. The C=O in the carboxyl group contains 1 π bond. Total = 2 π bonds. ✓ Statement 2: Lone pairs — The carboxyl group (-CO₂H) contains two oxygen atoms: the C=O oxygen has 2 lone pairs, and the O-H oxygen has 2 lone pairs. Total = 4 lone pairs. ✓ Statement 3: Planarity — The sp² carbons (C=C and C=O) and their directly attached atoms are planar. However, the two CH₃ groups contain sp³ carbons with tetrahedral geometry — the hydrogen atoms of the methyl groups extend above and below the plane. NOT all atoms are coplanar. ",
+   "why_correct": "B = statements 1 and 2 only. Tiglic acid has 2 π bonds (C=C and C=O) and 4 lone pairs (on the two carboxyl oxygens).",
+   "why_others_wrong": "A (all three) wrongly claims all atoms are coplanar — methyl H atoms are not. C (2 and 3 only) wrongly includes planarity claim. D (1 only) misses the lone pair count.",
+   "syllabus_ref": "3.3 Chemical bonding — σ and π bonds; lone pairs; molecular geometry and planarity"
+  }
+ },
+ {
+  "id": "ch03_P1_0174",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests organic chemistry: acid-catalysed dehydration of diols and the number of alkene products.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. Excess concentrated H2SO4 removes two molecules of water from each diol to give a C7H10 diene. Statement 1: the diol with the ring -OH para to the CH2OH-bearing carbon eliminates along equivalent routes to give one C7H10 product - correct. Statement 2: the diol bearing adjacent ring -OH and CH2OH substituents can form only one C7H10 diene - correct. Statement 3: the diol with meta-related -OH/CH2OH groups can position the second double bond in more than one way, giving multiple C7H10 products - incorrect. Statements 1 and 2 only give a single product.",
+   "why_correct": "B (1 and 2 only) is correct: compounds 1 and 2 dehydrate to a unique C7H10 product, while compound 3 gives more than one elimination product.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly include compound 3; D (1 only) wrongly excludes compound 2.",
+   "syllabus_ref": "Topic: Organic chemistry - dehydration of alcohols; alkene isomerism.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0175",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Bonding in carbon monoxide — triple bond with dative component",
+   "reasoning": "CO has a triple bond between C and O (:C≡O:). Total valence electrons: C (4) + O (6) = 10. The triple bond uses 6 electrons, leaving 4 electrons = 2 lone pairs (one on C, one on O).\n\nStatement 1: Two lone pairs — one lone pair on carbon and one on oxygen. Total = 2 lone pairs. ✓ Statement 2: The triple bond consists of: one σ bond (C and O each contribute 1 e⁻), one π bond (C and O each contribute 1 e⁻), and one π bond formed by O donating both electrons to C — this is a coordinate (dative covalent) bond from O to C. ✓ Statement 3: A triple bond = 1 σ bond + 2 π bonds. CO has two π bonds. ✓",
+   "why_correct": "A = all three statements correct. CO has 2 lone pairs, a dative bond from O to C, and 2 π bonds in its triple bond.",
+   "why_others_wrong": "B (1 and 2 only) misses the two π bonds. C (2 and 3 only) misses the lone pairs. D (1 only) misses both the dative bond and π bonds.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(b) covalent bonding, dative covalent bonding; σ and π bonds"
+  }
+ },
+ {
+  "id": "ch03_P1_0176",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Industrial processes for producing alkenes from crude oil fractions",
+   "reasoning": "After fractional distillation, larger hydrocarbon fractions need to be converted to useful smaller molecules like propene (C₃H₆).\n\nStatement 1: Cracking — thermal or catalytic cracking breaks long-chain hydrocarbons into shorter chains, including alkenes. For example: C₁₀H₂₂ → CH₁₆ + C₃H₆ (propene). This is the primary industrial method for producing propene. ✓ Statement 2: Reduction adds hydrogen to molecules (e.g., converting alkenes to alkanes). This would not produce propene from larger hydrocarbons — it would saturate any double bonds present. ✗ Statement 3: Polymerisation joins small monomer molecules into large polymer chains. This is the opposite process — it consumes propene rather than producing it. ✗",
+   "why_correct": "D = statement 1 only. Cracking is the industrial process that breaks larger hydrocarbons into smaller alkenes like propene.",
+   "why_others_wrong": "A (all three) wrongly includes reduction and polymerisation. B (1 and 2) wrongly includes reduction. C (2 and 3) includes two processes that don't produce propene from larger hydrocarbons.",
+   "syllabus_ref": "3.5 Hydrocarbons — 3.5(g) cracking of alkanes; industrial production of alkenes"
+  }
+ },
+ {
+  "id": "ch03_P1_0177",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Reduction of carbonyls by NaBH₄ followed by acid-catalysed dehydration",
+   "reasoning": "Each compound is a cyclohexane derivative with aldehyde (-CHO) and ketone (C=O) groups (CH₁₀O₂). Step 1: NaBH₄ reduces both carbonyls to alcohols → diol C₇H₁₄O₂. Step 2: Conc. H₂SO₄ eliminates 2H₂O → diene C₇H₁₀.\n\nStructure 1 (1,3-dicarbonyl): Non-equivalent OH positions allow multiple elimination pathways → multiple products.\n\nStructure 2 (1,4-dicarbonyl, symmetric): Plane of symmetry makes both OH environments equivalent → only one diene product.\n\nStructure 3 (1,2-dicarbonyl): Adjacent OH groups constrain elimination to one specific conjugated diene → only one product.",
+   "why_correct": "C = structures 2 and 3 only. Symmetry (structure 2) and geometric constraint (structure 3) each limit dehydration to one C₇H₁₀ product.",
+   "why_others_wrong": "A (1 only) — structure 1 gives multiple products. B (1 and 2) — wrongly includes structure 1. D (3 only) — misses structure 2.",
+   "syllabus_ref": "3.3 Chemical bonding — reduction of carbonyls; dehydration of alcohols"
+  }
+ },
+ {
+  "id": "ch03_P1_0178",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Intermolecular forces in liquid mixtures",
+   "reasoning": "X and Y have identical boiling points. In mixture Z, average intermolecular forces are stronger than in X or Y alone, meaning X-Y interactions exceed X-X and Y-Y interactions.\n\nStatement 1: Stronger X-Y bonds form at the expense of weaker X-X and Y-Y bonds → net energy released → mixing is exothermic. ✓ Statement 2: Stronger intermolecular forces in Z hold molecules more tightly → fewer molecules escape to vapour → vapour pressure of Z < X or Y. ✓ Statement 3: Stronger forces require more energy to overcome → boiling point of Z should be HIGHER, not lower. ✗",
+   "why_correct": "B = statements 1 and 2 only. Exothermic mixing and reduced vapour pressure both follow from stronger X-Y interactions.",
+   "why_others_wrong": "A (all three) wrongly includes lower boiling point claim. C (2 and 3 only) wrongly includes statement 3. D (1 only) misses vapour pressure deduction.",
+   "syllabus_ref": "3.3 Chemical bonding — intermolecular forces; vapour pressure; enthalpy of mixing"
+  }
+ },
+ {
+  "id": "ch03_P1_0179",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Factors affecting reaction rate and equilibrium",
+   "reasoning": "P(g) + Q(g) ⇌ R(g) + S(l). Gas moles: reactants 2, products 1. Experiment 1: faster, more R. Experiment 2: slower, less R.\n\nStatement 1: Lower pressure in experiment 2 → fewer collisions (slower rate) AND equilibrium shifts toward more gas moles (reactants) → less R. Both effects match. ✓ Statement 2: A different (less effective) catalyst → slower approach to equilibrium. Within observation time, less R accumulated. Could explain the slower curve. ✓ Statement 3: Continuously removing S (liquid) shifts equilibrium RIGHT → more R, contradicting observation. ✗",
+   "why_correct": "B = statements 1 and 2 only. Both lower pressure and a less effective catalyst could explain experiment 2's slower rate and lower R.",
+   "why_others_wrong": "A (all three) wrongly includes statement 3. C (2 and 3 only) wrongly includes statement 3. D (1 only) misses catalyst explanation.",
+   "syllabus_ref": "3.4 Chemical energetics — Le Chatelier's principle; catalysts and equilibrium"
+  }
+ },
+ {
+  "id": "ch03_P1_0180",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Structure and bonding in tiglic acid",
+   "reasoning": "Tiglic acid: CH₃CH=C(CH₃)CO₂H.\n\nStatement 1: π bonds — C=C contributes 1 π bond; C=O in -CO₂H contributes 1 π bond. Total = 2 π bonds. ✓ Statement 2: Lone pairs — the carboxyl group has two oxygen atoms: C=O oxygen (2 lone pairs) + O-H oxygen (2 lone pairs) = 4 lone pairs total. ✓ Statement 3: Planarity — sp² carbons (C=C and C=O) are planar, but the CH₃ groups have sp³ carbons with tetrahedral geometry. Methyl hydrogen atoms extend above and below the plane. NOT all atoms coplanar. ✗",
+   "why_correct": "B = statements 1 and 2 only. Tiglic acid has 2 π bonds and 4 lone pairs (on carboxyl oxygens).",
+   "why_others_wrong": "A (all three) wrongly claims all atoms coplanar. C (2 and 3 only) wrongly includes planarity. D (1 only) misses lone pair count.",
+   "syllabus_ref": "3.3 Chemical bonding — σ/π bonds; lone pairs; molecular geometry"
+  }
+ },
+ {
+  "id": "ch03_P1_0181",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "This question tests organic chemistry: acid-catalysed dehydration of diols and the number of alkene products.",
+   "reasoning": "On this CAIE paper the Section B combination key is: A = 1, 2 and 3 correct; B = 1 and 2 only; C = 2 and 3 only; D = 1 only. On heating with excess concentrated H2SO4 each diol loses 2 H2O to form a C7H10 diene. Statement 1: the para-substituted diol (ring -OH opposite the CH2OH-bearing carbon) gives only one C7H10 product - correct. Statement 2: the diol with adjacent -OH-bearing/CH2OH-bearing carbons gives only one C7H10 product - correct. Statement 3: the meta-substituted diol gives two different double-bond arrangements and hence more than one C7H10 product - incorrect. Statements 1 and 2 only are correct.",
+   "why_correct": "B (1 and 2 only) is correct: structures 1 and 2 each yield a single dehydrated C7H10 product, whereas structure 3 yields more than one.",
+   "why_others_wrong": "A (all three) and C (2 and 3) wrongly count structure 3 as single-product; D (1 only) wrongly excludes structure 2.",
+   "syllabus_ref": "Topic: Organic chemistry - dehydration of alcohols; elimination and alkene isomers.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0182",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Intermolecular forces in polymers",
+   "reasoning": "The repeat unit is -CH₂-CH(CN)(CO₂C₂H₅)-, containing nitrile (-CN) and ester (-CO₂C₂H₅) groups.\n\nStatement 1: Temporary dipole–induced dipole (London dispersion) forces exist in ALL molecules due to instantaneous electron fluctuations. These are universal intermolecular forces. ✓ Statement 2: The -CN group is highly polar (large dipole moment of C≡N). The ester -CO₂C₂H₅ group is also polar (C=O dipole). Permanent dipole–permanent dipole interactions exist between these polar groups on adjacent chains. ✓ Statement 3: Hydrogen bonds require H bonded directly to N, O, or F. In this polymer, all H atoms are bonded to C only — no N-H, O-H, or F-H bonds exist. No hydrogen bonding. ✗",
+   "why_correct": "B = statements 1 and 2 only. London forces (universal) and permanent dipole interactions (from polar CN and ester groups) are present; no H-bonding.",
+   "why_others_wrong": "A (all three) wrongly includes hydrogen bonds — no H is bonded to N/O/F. C (2 and 3 only) wrongly includes H-bonds and misses London forces. D (1 only) misses permanent dipole interactions.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(e) intermolecular forces: London, permanent dipole, hydrogen bonding"
+  }
+ },
+ {
+  "id": "ch03_P1_0183",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Molecular formula determination from skeletal structures",
+   "reasoning": "Checking each structure for C₄HO:\n\nStructure 1: Butanone (CH₃COCH₂CH₃). Skeletal: 4-carbon chain with C=O at C2. C=4, H=3+2+3=8, O=1. Formula: C₄H₈O. ✓\n\nStructure 2: 2-Methylpropanal ((CH)₂CHCHO). Skeletal: branched 3-carbon chain with CHO and methyl branch. C=4 (3 in chain + 1 branch), H=6+1+1=8 (two CH₃ = 6H, CH = 1H, CHO = 1H), O=1. Formula: C₄H₈O. ✓\n\nStructure 3: But-3-en-1-ol (CH₂=CHCH₂CH₂OH). Skeletal: 4-carbon chain with C=C at C3-C4 and OH at C1. C=4, H=2+1+2+2+1(OH)=8, O=1. Formula: C₄HO. ✓\n\nAll three structures have molecular formula C₄H₈O (DoU = 1: either C=O or C=C).",
+   "why_correct": "A = all three correct. Butanone, 2-methylpropanal, and but-3-en-1-ol all have molecular formula C₄H₈O.",
+   "why_others_wrong": "B (1 and 2 only) misses the unsaturated alcohol. C (2 and 3 only) misses butanone. D (1 only) misses two valid structures.",
+   "syllabus_ref": "3.3 Chemical bonding — molecular formulas from skeletal structures; degree of unsaturation"
+  }
+ },
+ {
+  "id": "ch03_P1_0184",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Radical species and unpaired electrons",
+   "reasoning": "A molecule has unpaired electrons when its total valence electron count is odd.\n\nStatement 1: NO — N (5 valence e) + O (6 valence e⁻) = 11 valence electrons (odd). NO must have at least one unpaired electron. It is a well-known free radical. ✓ Statement 2: NO₂ — N (5) + 2×O (12) = 17 valence electrons (odd). NO₂ must have an unpaired electron. It is also a free radical. ✓ Statement 3: NH₃ — N (5) + 3×H (3) = 8 valence electrons (even). All electrons are paired: 3 N-H bonding pairs + 1 lone pair on N. No unpaired electrons. ✗",
+   "why_correct": "B = statements 1 and 2 only. Both NO (11 e⁻) and NO₂ (17 e⁻) have odd electron counts and are radicals.",
+   "why_others_wrong": "A (all three) wrongly includes NH₃ which has all electrons paired. C (2 and 3 only) wrongly includes NH₃. D (1 only) misses NO₂.",
+   "syllabus_ref": "3.3 Chemical bonding — electron configurations; radical species"
+  }
+ },
+ {
+  "id": "ch03_P1_0185",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Boltzmann distribution and activation energy",
+   "reasoning": "The Boltzmann distribution shows molecular energy distribution at two temperatures.\n\nStatement 1: The T₁ curve is taller and narrower with its peak at lower energy; the T₂ curve is shorter, broader, and shifted right (higher most probable energy). At higher temperature, molecules have greater average kinetic energy and the distribution broadens. Therefore T₁ < T₂. ✓ Statement 2: The shaded area lies to the right of the activation energy line, under the T₂ curve. This area represents the fraction of molecules at temperature T₂ with energy ≥ Ea — these molecules have sufficient energy to react upon collision. ✓ Statement 3: The total area under each curve equals the total number of particles. Since the question states 'a fixed amount of gas', the number of particles is constant regardless of temperature. Total area is the same for both curves. ✓",
+   "why_correct": "A = all three statements correct. T₁ < T₂ (curve shape), shaded area = reactive molecules at T₂, and equal total area reflects fixed particle number.",
+   "why_others_wrong": "B (1 and 2 only) misses the equal area principle. C (2 and 3 only) misses the temperature comparison. D (1 only) misses two correct features.",
+   "syllabus_ref": "3.4 Chemical energetics — 3.4(b) Boltzmann distribution; activation energy; effect of temperature on reaction rate"
+  }
+ },
+ {
+  "id": "ch03_P1_0186",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Strong vs weak acids and bases — pH and dissociation",
+   "reasoning": "All solutions are 0.1 mol dm⁻³. pH results: CH₃CO₂H (pH 4, weak acid), HNO₃ (pH 1, strong acid), CH₃NH₂ (pH 11, weak base), NaOH (strong base).\n\nStatement 1: 'Acid 2 has lower pH because it is more soluble' — both acids are at the same concentration (0.1 M), so solubility is not the differentiating factor. HNO₃ has lower pH because it is a strong acid (fully dissociated), while CHCO₂H is weak (partially dissociated). The explanation is wrong. ✗ Statement 2: NaOH (strong base) fully dissociates: [OH] = 0.1 M. CH₃NH₂ (weak base) partially dissociates: [OH⁻] < 0.1 M. Base 2 has higher [OH⁻]. ✓ Statement 3: CH₃CO₂H (Ka ≈ 1.8×10⁻⁵) dissociates much less than HNO₃ (strong acid, ~100% dissociation). Acid 1 dissociates less than acid 2. ✓",
+   "why_correct": "C = statements 2 and 3 only. Strong base gives higher [OH⁻]; weak acid dissociates less than strong acid.",
+   "why_others_wrong": "A (all three) wrongly includes solubility explanation. B (1 and 2 only) wrongly includes statement 1. D (1 only) is incorrect.",
+   "syllabus_ref": "3.3 Chemical bonding — 3.3(j) strong and weak acids/bases; Ka, Kb, and pH calculations"
+  }
+ },
+ {
+  "id": "ch03_P1_0187",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Radical species and unpaired electrons",
+   "reasoning": "Statement 1: NO — N (5 e⁻) + O (6 e⁻) = 11 valence electrons (odd number). Must have ≥1 unpaired electron. NO is a well-known free radical. ✓ Statement 2: NO₂ — N (5) + 2×O (12) = 17 valence electrons (odd). Must have unpaired electron. NO₂ is also a radical. ✓ Statement 3: NH₃ — N (5) + 3×H (3) = 8 valence electrons (even). All paired: 3 N-H bonds + 1 lone pair. No unpaired electrons. ✗",
+   "why_correct": "B = statements 1 and 2 only. NO and NO₂ have odd electron counts and are radicals.",
+   "why_others_wrong": "A (all three) wrongly includes NH₃. C (2 and 3 only) wrongly includes NH₃. D (1 only) misses NO₂.",
+   "syllabus_ref": "3.3 Chemical bonding — electron configurations; radical species"
+  }
+ },
+ {
+  "id": "ch03_P1_0188",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "This question tests organic chemistry: counting structural and stereoisomers of unsaturated dicarboxylic acids.",
+   "reasoning": "Two -CO2H groups and one C=C must be present in C5H6O4; the molecule is acyclic (the two carboxyl C=O bonds and the C=C account for all three degrees of unsaturation). The five distinct structural arrangements are: (i) HO2C-CH=CH-CH2-CO2H, which has E and Z forms (2 isomers); (ii) HO2C-CH=C(CH3)-CO2H (methylbutenedioic acid), which also has E and Z forms (2 isomers); (iii) CH2=C(CO2H)-CH2-CO2H (itaconic-type, terminal CH2=, no E/Z); (iv) (HO2C)2C=CH-CH3 (ethylidenepropanedioic-type, two identical CO2H on one alkene carbon, no E/Z); (v) CH2=CH-CH(CO2H)2 (ethenylpropanedioic-type, terminal CH2=, no E/Z). Adding the geometric stereoisomers of (i) and (ii) gives 2 + 2 + 1 + 1 + 1 = 7 isomeric compounds in total.",
+   "why_correct": "C (7) is correct: five structural arrangements of the two carboxyl groups around the C=C plus the additional E/Z geometric isomers for the unsymmetrically substituted double bonds give seven isomers in total.",
+   "why_others_wrong": "A (5) counts only structural (connectivity) isomers and ignores E/Z pairs; B (6) and D (8) mis-identify one connectivity or double-count a pair of geometric isomers.",
+   "syllabus_ref": "Topic: Organic chemistry - structural and geometric (E/Z) isomerism.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0189",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Esterification — identifying reactant from product structure",
+   "reasoning": "The product is CH₃CO-CH₂-CH₂-O-COCH₃ (an ester formed from X + ethanoic acid with H⁺ catalyst). The ester linkage -O-COCH₃ comes from ethanoic acid (CH₃COOH). To find X, remove the -COCH₃ portion contributed by ethanoic acid and replace with H: X = CH₃CO-CH₂-CH₂-OH (4-hydroxybutan-2-one).\n\nMolecular formula of X: C₄H₈O₂ (C=4, H=3+2+2+1=8, O=2).\n\nVerification: CH₃COCH₂CH₂OH + CH₃COOH → CH₃COCH₂CH₂OCOCH₃ + H₂O. The product matches the structure shown.",
+   "why_correct": "D = C₄H₈O₂. Compound X is 4-hydroxybutan-2-one, which esterifies with ethanoic acid to give the product shown.",
+   "why_others_wrong": "A (C₂H₄O) and B (C₂H₆O₂) are too small — the product has 6 carbons, and ethanoic acid contributes 2, so X must have 4 carbons. C (C₄H₈O) has only 1 oxygen, but X needs both a ketone O and an alcohol O (2 oxygens).",
+   "syllabus_ref": "3.3 Chemical bonding — esterification reactions; identifying reactants from ester products"
+  }
+ },
+ {
+  "id": "ch03_P1_0190",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Reactions of halogenoalkanes — substitution vs elimination and product Mr",
+   "reasoning": "Calculating Mr of major organic product for each reaction:\n\nA: CH₃CH₂Br + aq NaOH (reflux) → nucleophilic substitution → CH₃CH₂OH (ethanol). Mr = 46.\nB: CH₃CH₂Br + NaCN/ethanol (reflux) → nucleophilic substitution → CH₃CH₂CN (propanenitrile). Mr = 55.\nC: CHCHBrCH₃ + aq NaOH (reflux) → substitution → CH₃CH(OH)CH₃ (propan-2-ol). Mr = 60.\nD: CH₃CHBrCH₃ + conc. ethanolic NaOH (reflux) → elimination → CH₃CH=CH₂ (propene). Mr = 42.\n\nLowest Mr = 42 (propene, option D).",
+   "why_correct": "D gives propene (Mr=42), the lowest molecular mass product. Hot ethanolic NaOH promotes elimination rather than substitution, producing an alkene with fewer atoms than the substitution products.",
+   "why_others_wrong": "A (ethanol, Mr=46), B (propanenitrile, Mr=55), and C (propan-2-ol, Mr=60) all give higher Mr products than propene.",
+   "syllabus_ref": "3.6 Halogen derivatives — substitution and elimination reactions; effect of reagent conditions"
+  }
+ },
+ {
+  "id": "ch03_P1_0191",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "This question tests organic chemistry: counting structural and stereoisomers of unsaturated dicarboxylic acids.",
+   "reasoning": "For C5H6O4 containing two -CO2H groups and one C=C, the carboxyl carbons account for two of the five carbons, leaving a three-carbon unsaturated framework. Enumerating the distinct connectivities (straight-chain alkenedioic acids with the double bond in different positions, and methyl-branched alkenedioic acids) gives five structural isomers; those double bonds that carry different groups on each carbon exist as E and Z pairs. Including these geometric stereoisomers gives 7 isomeric compounds altogether.",
+   "why_correct": "C (7) is correct: the five structural isomers together with the E/Z pairs for the unsymmetrically substituted double bonds total seven isomers.",
+   "why_others_wrong": "A (5) omits the geometric stereoisomers; B (6) misses one E/Z pair and D (8) counts an extra, non-existent connectivity or duplicate stereoisomer.",
+   "syllabus_ref": "Topic: Organic chemistry - structural and geometric (E/Z) isomerism.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0192",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Esterification — identifying reactant from product",
+   "reasoning": "Product: CH₃CO-CH₂-CH₂-O-COCH₃ (ester from X + ethanoic acid). The -O-COCH₃ group comes from CH₃COOH. Removing this and adding H: X = CHCO-CH₂-CH₂-OH (4-hydroxybutan-2-one). Molecular formula: C₄H₈O₂.",
+   "why_correct": "D = C₄H₈O₂. X is 4-hydroxybutan-2-one with formula CH₈O₂.",
+   "why_others_wrong": "A, B too few carbons. C (C₄H₈O) has only 1 O but X needs ketone + alcohol oxygens (2 O).",
+   "syllabus_ref": "3.3 Chemical bonding — esterification"
+  }
+ },
+ {
+  "id": "ch03_P1_0193",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Free radical substitution — initiation step",
+   "reasoning": "The reaction of Cl₂ with CH₄ is a free radical substitution requiring UV light for initiation. The Cl-Cl bond (bond enthalpy ~242 kJ mol⁻¹) is relatively weak and can be homolytically cleaved by UV light: Cl₂ → 2Cl•. These chlorine radicals then propagate the chain reaction. The C-H bond (~413 kJ mol⁻¹) is too strong to be broken by the light used. The reaction proceeds via radicals, not ions, so light does not create ions. Light is not primarily for heating — its specific role is photodissociation of Cl₂.",
+   "why_correct": "B — light homolytically cleaves Cl₂ molecules into chlorine atoms (radicals), initiating the free radical chain reaction.",
+   "why_others_wrong": "A — C-H bonds are too strong for the light used. C — the mechanism is radical, not ionic. D — light's role is photodissociation, not heating.",
+   "syllabus_ref": "3.5 Hydrocarbons — 3.5(c) free radical substitution of alkanes; role of UV light in initiation"
+  }
+ },
+ {
+  "id": "ch03_P1_0194",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Nitrile hydrolysis and reduction — naming and alcohol classification",
+   "reasoning": "Reaction 1: (CH₃)₃CCN + H⁺(aq) (acid hydrolysis) → (CH₃)₃CCOOH. This is 2,2-dimethylpropanoic acid (pivalic acid). The longest chain containing -COOH is 3 carbons (propanoic acid), with two methyl groups on C2.\n\nReaction 2: (CH₃)₃CCOOH + LiAlH₄ → (CH₃)₃CCH₂OH. LiAlH₄ reduces -COOH to -CH₂OH (primary alcohol). The product is 2,2-dimethylpropan-1-ol.\n\nClassification of Y: The OH-bearing carbon (-CH₂OH) is bonded to only one other carbon (the quaternary C). This makes it a PRIMARY alcohol.",
+   "why_correct": "C = X is dimethylpropanoic acid (2,2-dimethylpropanoic acid), Y is a primary alcohol (-CH₂OH group).",
+   "why_others_wrong": "A — '2,2-dimethylbutanoic acid' has wrong chain length (4C vs actual 3C). B — '3,3-dimethylbutanoic acid' has wrong numbering and Y is primary not tertiary. D — correctly names X but wrongly classifies Y as tertiary (the -CH₂OH carbon is primary).",
+   "syllabus_ref": "3.6 Halogen derivatives — nitrile hydrolysis; LiAlH reduction; classification of alcohols"
+  }
+ },
+ {
+  "id": "ch03_P1_0195",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "D",
+  "explanation": {
+   "concept": "Ester hydrolysis followed by LiAlH₄ reduction",
+   "reasoning": "Step 1 — Acid hydrolysis of ester: C₂H₅COOCH₃ + H₂O/H⁺ → C₂H₅COOH (propanoic acid) + CH₃OH (methanol).\n\nStep 2 — LiAlH₄ reduction of products:\n• C₂H₅COOH + LiAlH₄ → C₂H₅CH₂OH (propan-1-ol). LiAlH₄ reduces carboxylic acids to primary alcohols: -COOH → -CH₂OH.\n• CH₃OH is already an alcohol and is NOT further reduced by LiAlH₄. It remains as CH₃OH.\n\nFinal products Y and Z: CH₃OH (methanol) and C₂H₅CH₂OH (propan-1-ol).",
+   "why_correct": "D = CH₃OH and C₂H₅CH₂OH. Methanol survives unchanged; propanoic acid is reduced to propan-1-ol.",
+   "why_others_wrong": "A — both C₂H₅OH would require both products to be ethanol, which doesn't match. B — CH₃CHOHCH₃ (propan-2-ol) would require reduction of a ketone, not formed here. C — C₂H₅OH (ethanol) would require reducing C₂H₅COOH to ethanol, but LiAlH₄ adds CH₂, giving propan-1-ol (C₃), not ethanol (C₂).",
+   "syllabus_ref": "3.3 Chemical bonding — ester hydrolysis; LiAlH₄ reduction of carboxylic acids"
+  }
+ },
+ {
+  "id": "ch03_P1_0196",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "This question tests atomic/analytical chemistry: the M+1 isotope peak in a mass spectrum.",
+   "reasoning": "Vitamin C is C6H8O6. The M+1 peak arises mainly from molecules containing one 13C atom; the natural abundance of 13C is about 1.1% per carbon, so for six carbons the M+1 peak is about 6 x 1.1% = 6.6% of the M peak abundance. With the molecular ion peak at 7.0% relative abundance, abundance(M+1) = 7.0% x 0.066 = 0.462%.",
+   "why_correct": "A (0.462%) is correct: six carbon atoms each contribute a 1.1% chance of 13C, giving 6.6% of the 7.0% molecular-ion abundance = 0.462%.",
+   "why_others_wrong": "B (0.539%), C (0.616%) and D (0.693%) correspond to counting seven, eight or nine carbon atoms respectively (or adding isotope contributions vitamin C does not have); vitamin C contains exactly six carbons.",
+   "syllabus_ref": "Topic: Atomic structure / analysis - isotopic abundances and mass spectrometry.",
+   "misclassified": true
+  }
+ },
+ {
+  "id": "ch03_P1_0197",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Free radical substitution — role of UV light",
+   "reasoning": "In the free radical substitution of CH₄ with Cl₂, UV light provides the energy for the initiation step: homolytic fission of the Cl-Cl bond. Cl₂ → 2Cl• (bond enthalpy ~242 kJ mol⁻¹, achievable by UV photons). The C-H bond (~413 kJ mol⁻¹) is too strong to be broken by the light used. The reaction mechanism is radical-based, not ionic, so light does not produce ions. Light's specific role is photodissociation, not general heating.",
+   "why_correct": "B — UV light homolytically cleaves Cl₂ into chlorine atoms (radicals), initiating the chain reaction.",
+   "why_others_wrong": "A — C-H bonds are too strong. C — mechanism is radical, not ionic. D — light causes photodissociation, not heating.",
+   "syllabus_ref": "3.5 Hydrocarbons — free radical substitution; initiation step"
+  }
+ },
+ {
+  "id": "ch03_P1_0198",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "C",
+  "explanation": {
+   "concept": "Nitrile hydrolysis and LiAlH₄ reduction",
+   "reasoning": "Reaction 1: (CH₃)₃CCN + H(aq) → (CH₃)₃CCOOH (2,2-dimethylpropanoic acid). Acid hydrolysis converts -CN to -COOH.\n\nReaction 2: (CH₃)₃CCOOH + LiAlH₄ → (CH₃)₃CCH₂OH (2,2-dimethylpropan-1-ol). LiAlH reduces -COOH to -CH₂OH.\n\nThe OH-bearing carbon in Y is -CH₂OH, bonded to only one other carbon → PRIMARY alcohol.",
+   "why_correct": "C = X is dimethylpropanoic acid, Y is a primary alcohol.",
+   "why_others_wrong": "A — wrong chain name (butanoic vs propanoic). B — wrong numbering and wrong alcohol class. D — correct X name but wrong alcohol class (Y is primary, not tertiary).",
+   "syllabus_ref": "3.6 Halogen derivatives — nitrile hydrolysis; LiAlH₄ reduction; alcohol classification"
+  }
+ },
+ {
+  "id": "ch03_P1_0199",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "B",
+  "explanation": {
+   "concept": "Factors affecting reaction rate vs Boltzmann distribution",
+   "reasoning": "The Boltzmann distribution shows molecular energy distribution at a given temperature. It changes ONLY when temperature changes.\n\nStatement 1: Catalyst lowers Ea, increasing the fraction of successful collisions. Rate increases, but temperature (and hence Boltzmann distribution) is unchanged. ✓ Statement 2: Increasing [HCl] increases collision frequency between H⁺ and Zn surface. Rate increases, but temperature unchanged → Boltzmann distribution unchanged. ✓ Statement 3: Increasing temperature shifts the Boltzmann distribution right (more molecules with higher energy). This DOES change the distribution. ✗",
+   "why_correct": "B = statements 1 and 2 only. Both catalyst and concentration increase rate without altering the Boltzmann energy distribution.",
+   "why_others_wrong": "A (all three) wrongly includes temperature change. C (2 and 3 only) wrongly includes temperature. D (1 only) misses concentration effect.",
+   "syllabus_ref": "3.4 Chemical energetics — Boltzmann distribution; factors affecting reaction rate (catalyst, concentration, temperature)"
+  }
+ },
+ {
+  "id": "ch03_P1_0200",
+  "chapter_id": "ch03",
+  "topic_ids": [
+   "ch03_t01"
+  ],
+  "answer": "A",
+  "explanation": {
+   "concept": "Distinguishing aldehydes from ketones using chemical tests",
+   "reasoning": "The two C₃H₆O carbonyl compounds are propanal (CH₃CH₂CHO, an aldehyde) and propanone (CH₃COCH₃, a ketone).\n\nStatement 1: Acidified KMnO₄ — Propanal (aldehyde) is oxidised to propanoic acid: purple MnO₄⁻ → colourless Mn²⁺. Propanone (ketone) is NOT oxidised — no colour change. Different observations. ✓ Statement 2: Fehling's reagent — Propanal reduces Cu²⁺ to Cu⁺: blue solution → brick-red Cu₂O precipitate. Propanone does not react — solution stays blue. Different observations. ✓ Statement 3: Alkaline aqueous iodine (iodoform test) — Propanone has CH₃CO- group → yellow CHI₃ precipitate. Propanal (CH₃CH₂CHO) lacks CHCO- or CH₃CH(OH)- → no precipitate. Different observations. ✓",
+   "why_correct": "A = all three reagents give different observations for propanal vs propanone. Aldehydes and ketones are distinguished by oxidation tests (KMnO₄, Fehling's) and the iodoform test identifies methyl ketones.",
+   "why_others_wrong": "B (1 and 2 only) misses the iodoform test distinction. C (2 and 3 only) misses KMnO₄. D (1 only) misses two valid distinguishing tests.",
+   "syllabus_ref": "3.3 Chemical bonding — characteristic tests for aldehydes and ketones; iodoform reaction"
+  }
+ }
+]
