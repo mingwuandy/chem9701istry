@@ -348,11 +348,18 @@ select:focus,input:focus{border-color:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,2
 <script>
 function loadDocxFromCDN() {
   console.warn('docx.js not found locally, loading from CDN...');
-  var s = document.createElement('script');
-  s.src = 'https://unpkg.com/docx@8.5.0/build/index.umd.js';
-  s.onload = function() { console.log('docx.js loaded from CDN'); };
-  s.onerror = function() { console.error('Failed to load docx.js from CDN too'); };
-  document.head.appendChild(s);
+  var cdns = [
+    'https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js',
+    'https://unpkg.com/docx@8.5.0/build/index.umd.js'
+  ];
+  (function tryLoad(i) {
+    if (i >= cdns.length) { console.error('Failed to load docx.js from all CDNs'); return; }
+    var s = document.createElement('script');
+    s.src = cdns[i];
+    s.onload = function() { console.log('docx.js loaded from CDN #' + i); };
+    s.onerror = function() { tryLoad(i + 1); };
+    document.head.appendChild(s);
+  })(0);
 }
 </script>
 </head>
