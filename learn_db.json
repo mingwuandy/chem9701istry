@@ -2,7 +2,7 @@
   "chapters": {
     "ch01": {
       "id": "ch01",
-      "title": "Atomic Structure & Electrons in Atoms",
+      "title": "Atomic Structure",
       "chapter_num": "1~2",
       "emoji": "⚛️",
       "color": "#7c3aed",
@@ -436,19 +436,19 @@
         }
       ]
     },
-    "ch03": {
-      "id": "ch03",
-      "title": "Atoms, Molecules & Stoichiometry",
-      "chapter_num": "3",
+    "ch02": {
+      "id": "ch02",
+      "title": "Atoms, Molecules and Stoichiometry",
+      "chapter_num": "2",
       "emoji": "⚗️",
       "color": "#0891b2",
       "total_xp": 510,
-      "badge_id": "ch03_champion",
+      "badge_id": "ch02_champion",
       "levels": [
         {
-          "id": "ch03_L1",
+          "id": "ch02_L1",
           "level_num": 1,
-          "topic_id": "ch03_t01",
+          "topic_id": "ch02_t01",
           "title": "Relative Masses (Ar, Mr)",
           "emoji": "⚖️",
           "xp_learn": 10,
@@ -480,9 +480,9 @@
           }
         },
         {
-          "id": "ch03_L2",
+          "id": "ch02_L2",
           "level_num": 2,
-          "topic_id": "ch03_t02",
+          "topic_id": "ch02_t02",
           "title": "The Mole & Avogadro",
           "emoji": "🧮",
           "xp_learn": 10,
@@ -514,9 +514,9 @@
           }
         },
         {
-          "id": "ch03_L3",
+          "id": "ch02_L3",
           "level_num": 3,
-          "topic_id": "ch03_t03",
+          "topic_id": "ch02_t03",
           "title": "Empirical & Molecular Formulae",
           "emoji": "🧩",
           "xp_learn": 10,
@@ -549,9 +549,9 @@
           }
         },
         {
-          "id": "ch03_L4",
+          "id": "ch02_L4",
           "level_num": 4,
-          "topic_id": "ch03_t04",
+          "topic_id": "ch02_t04",
           "title": "Molar Gas Volumes",
           "emoji": "💨",
           "xp_learn": 10,
@@ -583,9 +583,9 @@
           }
         },
         {
-          "id": "ch03_L5",
+          "id": "ch02_L5",
           "level_num": 5,
-          "topic_id": "ch03_t05",
+          "topic_id": "ch02_t05",
           "title": "Solutions & Concentrations",
           "emoji": "🧪",
           "xp_learn": 10,
@@ -617,9 +617,9 @@
           }
         },
         {
-          "id": "ch03_L6",
+          "id": "ch02_L6",
           "level_num": 6,
-          "topic_id": "ch03_t06",
+          "topic_id": "ch02_t06",
           "title": "Stoichiometric Calculations",
           "emoji": "⚖️",
           "xp_learn": 10,
@@ -650,9 +650,9 @@
           }
         },
         {
-          "id": "ch03_L7",
+          "id": "ch02_L7",
           "level_num": 7,
-          "topic_id": "ch03_t07",
+          "topic_id": "ch02_t07",
           "title": "Limiting Reagent & Yield",
           "emoji": "🎯",
           "xp_learn": 10,
@@ -687,19 +687,19 @@
         }
       ]
     },
-    "ch04": {
-      "id": "ch04",
+    "ch03": {
+      "id": "ch03",
       "title": "Chemical Bonding",
-      "chapter_num": "4",
+      "chapter_num": "3",
       "emoji": "🔗",
       "color": "#f59e0b",
       "total_xp": 400,
-      "badge_id": "ch04_champion",
+      "badge_id": "ch03_champion",
       "levels": [
         {
-          "id": "ch04_L1",
+          "id": "ch03_L1",
           "level_num": 1,
-          "topic_id": "ch04_t01",
+          "topic_id": "ch03_t01",
           "title": "VSEPR shapes",
           "emoji": "🔷",
           "xp_learn": 10,
@@ -710,9 +710,9 @@
           }
         },
         {
-          "id": "ch04_L2",
+          "id": "ch03_L2",
           "level_num": 2,
-          "topic_id": "ch04_t02",
+          "topic_id": "ch03_t02",
           "title": "Effect of lone pairs on bond angles",
           "emoji": "🌀",
           "xp_learn": 10,
@@ -724,9 +724,9 @@
           }
         },
         {
-          "id": "ch04_L3",
+          "id": "ch03_L3",
           "level_num": 3,
-          "topic_id": "ch04_t03",
+          "topic_id": "ch03_t03",
           "title": "Hybridisation summary",
           "emoji": "🧬",
           "xp_learn": 10,
@@ -738,9 +738,9 @@
           }
         },
         {
-          "id": "ch04_L4",
+          "id": "ch03_L4",
           "level_num": 4,
-          "topic_id": "ch04_t04",
+          "topic_id": "ch03_t04",
           "title": "Electronegativity and bond polarity",
           "emoji": "⚡",
           "xp_learn": 10,
@@ -753,9 +753,9 @@
           }
         },
         {
-          "id": "ch04_L5",
+          "id": "ch03_L5",
           "level_num": 5,
-          "topic_id": "ch04_t05",
+          "topic_id": "ch03_t05",
           "title": "Intermolecular forces comparison",
           "emoji": "💧",
           "xp_learn": 10,
@@ -767,9 +767,9 @@
           }
         },
         {
-          "id": "ch04_L6",
+          "id": "ch03_L6",
           "level_num": 6,
-          "topic_id": "ch04_t06",
+          "topic_id": "ch03_t06",
           "title": "Conditions for hydrogen bonding",
           "emoji": "🔗",
           "xp_learn": 10,
@@ -781,9 +781,9 @@
           }
         },
         {
-          "id": "ch04_L7",
+          "id": "ch03_L7",
           "level_num": 7,
-          "topic_id": "ch04_t07",
+          "topic_id": "ch03_t07",
           "title": "Properties of ionic compounds",
           "emoji": "🧱",
           "xp_learn": 10,
@@ -795,9 +795,9 @@
           }
         },
         {
-          "id": "ch04_L8",
+          "id": "ch03_L8",
           "level_num": 8,
-          "topic_id": "ch04_t08",
+          "topic_id": "ch03_t08",
           "title": "Giant covalent structures",
           "emoji": "💎",
           "xp_learn": 10,
@@ -810,9 +810,9 @@
           }
         },
         {
-          "id": "ch04_L9",
+          "id": "ch03_L9",
           "level_num": 9,
-          "topic_id": "ch04_t09",
+          "topic_id": "ch03_t09",
           "title": "Sigma and pi bonds",
           "emoji": "π",
           "xp_learn": 10,
@@ -824,9 +824,9 @@
           }
         },
         {
-          "id": "ch04_L10",
+          "id": "ch03_L10",
           "level_num": 10,
-          "topic_id": "ch04_t10",
+          "topic_id": "ch03_t10",
           "title": "Metallic bonding and properties",
           "emoji": "🔩",
           "xp_learn": 10,
@@ -839,19 +839,19 @@
         }
       ]
     },
-    "ch05": {
-      "id": "ch05",
+    "ch04": {
+      "id": "ch04",
       "title": "States of Matter",
-      "chapter_num": "5",
+      "chapter_num": "4",
       "emoji": "🧊",
       "color": "#06b6d4",
       "total_xp": 200,
-      "badge_id": "ch05_champion",
+      "badge_id": "ch04_champion",
       "levels": [
         {
-          "id": "ch05_L1",
+          "id": "ch04_L1",
           "level_num": 1,
-          "topic_id": "ch05_t01",
+          "topic_id": "ch04_t01",
           "title": "Kinetic theory assumptions",
           "emoji": "🎯",
           "xp_learn": 10,
@@ -863,9 +863,9 @@
           }
         },
         {
-          "id": "ch05_L2",
+          "id": "ch04_L2",
           "level_num": 2,
-          "topic_id": "ch05_t02",
+          "topic_id": "ch04_t02",
           "title": "Real vs ideal gas deviations",
           "emoji": "📊",
           "xp_learn": 10,
@@ -877,9 +877,9 @@
           }
         },
         {
-          "id": "ch05_L3",
+          "id": "ch04_L3",
           "level_num": 3,
-          "topic_id": "ch05_t03",
+          "topic_id": "ch04_t03",
           "title": "Types of crystal structures",
           "emoji": "💎",
           "xp_learn": 10,
@@ -891,9 +891,9 @@
           }
         },
         {
-          "id": "ch05_L4",
+          "id": "ch04_L4",
           "level_num": 4,
-          "topic_id": "ch05_t04",
+          "topic_id": "ch04_t04",
           "title": "Allotropes of carbon",
           "emoji": "🪨",
           "xp_learn": 10,
@@ -905,9 +905,9 @@
           }
         },
         {
-          "id": "ch05_L5",
+          "id": "ch04_L5",
           "level_num": 5,
-          "topic_id": "ch05_t05",
+          "topic_id": "ch04_t05",
           "title": "Effect of structure on melting point",
           "emoji": "🌡️",
           "xp_learn": 10,
@@ -920,19 +920,19 @@
         }
       ]
     },
-    "ch06": {
-      "id": "ch06",
-      "title": "Enthalpy Changes",
-      "chapter_num": "6",
+    "ch05": {
+      "id": "ch05",
+      "title": "Chemical Energetics",
+      "chapter_num": "5",
       "emoji": "🔥",
       "color": "#ef4444",
       "total_xp": 240,
-      "badge_id": "ch06_champion",
+      "badge_id": "ch05_champion",
       "levels": [
         {
-          "id": "ch06_L1",
+          "id": "ch05_L1",
           "level_num": 1,
-          "topic_id": "ch06_t01",
+          "topic_id": "ch05_t01",
           "title": "Standard conditions",
           "emoji": "📐",
           "xp_learn": 10,
@@ -945,9 +945,9 @@
           }
         },
         {
-          "id": "ch06_L2",
+          "id": "ch05_L2",
           "level_num": 2,
-          "topic_id": "ch06_t02",
+          "topic_id": "ch05_t02",
           "title": "Hess's Law application",
           "emoji": "🧮",
           "xp_learn": 10,
@@ -960,9 +960,9 @@
           }
         },
         {
-          "id": "ch06_L3",
+          "id": "ch05_L3",
           "level_num": 3,
-          "topic_id": "ch06_t03",
+          "topic_id": "ch05_t03",
           "title": "Bond enthalpy calculations",
           "emoji": "💥",
           "xp_learn": 10,
@@ -975,9 +975,9 @@
           }
         },
         {
-          "id": "ch06_L4",
+          "id": "ch05_L4",
           "level_num": 4,
-          "topic_id": "ch06_t04",
+          "topic_id": "ch05_t04",
           "title": "Calorimetry calculation",
           "emoji": "🌡️",
           "xp_learn": 10,
@@ -990,9 +990,9 @@
           }
         },
         {
-          "id": "ch06_L5",
+          "id": "ch05_L5",
           "level_num": 5,
-          "topic_id": "ch06_t05",
+          "topic_id": "ch05_t05",
           "title": "Enthalpy profile diagrams",
           "emoji": "📈",
           "xp_learn": 10,
@@ -1004,9 +1004,9 @@
           }
         },
         {
-          "id": "ch06_L6",
+          "id": "ch05_L6",
           "level_num": 6,
-          "topic_id": "ch06_t06",
+          "topic_id": "ch05_t06",
           "title": "Definitions of standard enthalpies",
           "emoji": "📋",
           "xp_learn": 10,
@@ -1019,19 +1019,19 @@
         }
       ]
     },
-    "ch07": {
-      "id": "ch07",
-      "title": "Redox Reactions",
-      "chapter_num": "7",
+    "ch06": {
+      "id": "ch06",
+      "title": "Electrochemistry (AS)",
+      "chapter_num": "6",
       "emoji": "⚡",
       "color": "#8b5cf6",
       "total_xp": 240,
-      "badge_id": "ch07_champion",
+      "badge_id": "ch06_champion",
       "levels": [
         {
-          "id": "ch07_L1",
+          "id": "ch06_L1",
           "level_num": 1,
-          "topic_id": "ch07_t01",
+          "topic_id": "ch06_t01",
           "title": "Oxidation number rules",
           "emoji": "🔢",
           "xp_learn": 10,
@@ -1044,9 +1044,9 @@
           }
         },
         {
-          "id": "ch07_L2",
+          "id": "ch06_L2",
           "level_num": 2,
-          "topic_id": "ch07_t02",
+          "topic_id": "ch06_t02",
           "title": "Balancing half-equations",
           "emoji": "⚖️",
           "xp_learn": 10,
@@ -1058,9 +1058,9 @@
           }
         },
         {
-          "id": "ch07_L3",
+          "id": "ch06_L3",
           "level_num": 3,
-          "topic_id": "ch07_t03",
+          "topic_id": "ch06_t03",
           "title": "Oxidising/reducing agent identification",
           "emoji": "🎭",
           "xp_learn": 10,
@@ -1072,9 +1072,9 @@
           }
         },
         {
-          "id": "ch07_L4",
+          "id": "ch06_L4",
           "level_num": 4,
-          "topic_id": "ch07_t04",
+          "topic_id": "ch06_t04",
           "title": "Common oxidising agents",
           "emoji": "🧪",
           "xp_learn": 10,
@@ -1086,9 +1086,9 @@
           }
         },
         {
-          "id": "ch07_L5",
+          "id": "ch06_L5",
           "level_num": 5,
-          "topic_id": "ch07_t05",
+          "topic_id": "ch06_t05",
           "title": "Common reducing agents",
           "emoji": "🔬",
           "xp_learn": 10,
@@ -1100,9 +1100,9 @@
           }
         },
         {
-          "id": "ch07_L6",
+          "id": "ch06_L6",
           "level_num": 6,
-          "topic_id": "ch07_t06",
+          "topic_id": "ch06_t06",
           "title": "Disproportionation examples",
           "emoji": "🔄",
           "xp_learn": 10,
@@ -1115,19 +1115,19 @@
         }
       ]
     },
-    "ch08": {
-      "id": "ch08",
+    "ch07": {
+      "id": "ch07",
       "title": "Equilibria",
-      "chapter_num": "8",
+      "chapter_num": "7",
       "emoji": "⚖️",
       "color": "#10b981",
       "total_xp": 240,
-      "badge_id": "ch08_champion",
+      "badge_id": "ch07_champion",
       "levels": [
         {
-          "id": "ch08_L1",
+          "id": "ch07_L1",
           "level_num": 1,
-          "topic_id": "ch08_t01",
+          "topic_id": "ch07_t01",
           "title": "Writing Kc expressions",
           "emoji": "📝",
           "xp_learn": 10,
@@ -1140,9 +1140,9 @@
           }
         },
         {
-          "id": "ch08_L2",
+          "id": "ch07_L2",
           "level_num": 2,
-          "topic_id": "ch08_t02",
+          "topic_id": "ch07_t02",
           "title": "Kp expressions and calculations",
           "emoji": "🎯",
           "xp_learn": 10,
@@ -1155,9 +1155,9 @@
           }
         },
         {
-          "id": "ch08_L3",
+          "id": "ch07_L3",
           "level_num": 3,
-          "topic_id": "ch08_t03",
+          "topic_id": "ch07_t03",
           "title": "Effect of changes on equilibrium (Le Chatelier)",
           "emoji": "🔄",
           "xp_learn": 10,
@@ -1169,9 +1169,9 @@
           }
         },
         {
-          "id": "ch08_L4",
+          "id": "ch07_L4",
           "level_num": 4,
-          "topic_id": "ch08_t04",
+          "topic_id": "ch07_t04",
           "title": "Kc and temperature",
           "emoji": "📊",
           "xp_learn": 10,
@@ -1184,9 +1184,9 @@
           }
         },
         {
-          "id": "ch08_L5",
+          "id": "ch07_L5",
           "level_num": 5,
-          "topic_id": "ch08_t05",
+          "topic_id": "ch07_t05",
           "title": "Haber process optimisation",
           "emoji": "🏭",
           "xp_learn": 10,
@@ -1199,9 +1199,9 @@
           }
         },
         {
-          "id": "ch08_L6",
+          "id": "ch07_L6",
           "level_num": 6,
-          "topic_id": "ch08_t06",
+          "topic_id": "ch07_t06",
           "title": "Industrial equilibria trade-offs",
           "emoji": "💡",
           "xp_learn": 10,
@@ -1253,39 +1253,39 @@
       "condition": "All quiz questions answered correctly on first try"
     },
     {
-      "id": "ch03_first_mole",
+      "id": "ch02_first_mole",
       "name": "First Mole",
       "emoji": "🧮",
       "condition": "Complete Level 1 (Relative Masses)",
-      "chapter": "ch03"
+      "chapter": "ch02"
     },
     {
-      "id": "ch03_stoich_master",
+      "id": "ch02_stoich_master",
       "name": "Stoich Master",
       "emoji": "⚖️",
       "condition": "Complete Levels 1-3",
-      "chapter": "ch03"
+      "chapter": "ch02"
     },
     {
-      "id": "ch03_solution_skill",
+      "id": "ch02_solution_skill",
       "name": "Solution Skill",
       "emoji": "🧪",
       "condition": "Complete Level 5 (Solutions)",
-      "chapter": "ch03"
+      "chapter": "ch02"
     },
     {
-      "id": "ch03_champion",
+      "id": "ch02_champion",
       "name": "Ch03 Champion",
       "emoji": "🏆",
       "condition": "Complete all 7 levels",
-      "chapter": "ch03"
+      "chapter": "ch02"
     },
     {
-      "id": "ch03_yield_expert",
+      "id": "ch02_yield_expert",
       "name": "Yield Expert",
       "emoji": "🎯",
       "condition": "Complete Level 7 (Limiting Reagent & Yield)",
-      "chapter": "ch03"
+      "chapter": "ch02"
     }
   ],
   "xp_rules": {
