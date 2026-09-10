@@ -541,6 +541,7 @@ function loadDocxFromCDN() {
   <div class="content" id="mainContent">
     <div class="q-grid" id="qGrid"></div>
     <div id="paperView" style="display:none"></div>
+    <div id="printRoot"></div>
     <div id="exportView" style="display:none"></div>
     <div id="vocabView" style="display:none"></div>
     <div id="papersView" style="display:none"></div>
@@ -1764,7 +1765,7 @@ function renderExport() {
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         Export as Word (.docx)
       </button>
-      <button class="btn btn-secondary" onclick="window.print()">
+      <button class="btn btn-secondary" onclick="printWithPageNumbers()">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
         Print / Save PDF
       </button>
@@ -1797,7 +1798,7 @@ async function exportWord() {
     const {
       Document, Packer, Paragraph, TextRun, ImageRun,
       BorderStyle, PageBreak, WidthType,
-      AlignmentType
+      AlignmentType, Footer, PageNumber
     } = docx;
 
     // Helper: load image from server as ArrayBuffer (works on both localhost and GitHub Pages)
@@ -2102,6 +2103,19 @@ async function exportWord() {
     }
 
     // ── Build & download
+    // 页脚：右下角页码 "Page N / M"
+    const pageFooter = new Footer({
+      children: [new Paragraph({
+        alignment: AlignmentType.RIGHT,
+        children: [
+          txt('Page ', { size: 16, color: '9CA3AF' }),
+          new TextRun({ children: [PageNumber.CURRENT], size: 16, color: '9CA3AF' }),
+          txt(' / ', { size: 16, color: '9CA3AF' }),
+          new TextRun({ children: [PageNumber.TOTAL_PAGES], size: 16, color: '9CA3AF' })
+        ]
+      })]
+    });
+
     const doc = new Document({
       styles: { default: { document: { run: { font: 'Arial', size: 22 } } } },
       sections: [{
@@ -2111,6 +2125,7 @@ async function exportWord() {
             margin: { top: 1080, right: 1080, bottom: 1080, left: 1080 }
           }
         },
+        footers: { default: pageFooter },
         children
       }]
     });
@@ -2722,7 +2737,8 @@ async function downloadVocabDocx(chId) {
   try {
     const {
       Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
-      BorderStyle, WidthType, ShadingType, AlignmentType, PageBreak
+      BorderStyle, WidthType, ShadingType, AlignmentType, PageBreak,
+      Footer, PageNumber
     } = docx;
 
     function txt(text, opts = {}) {
@@ -2803,6 +2819,19 @@ async function downloadVocabDocx(chId) {
       }));
     }
 
+    // 页脚：右下角页码 "Page N / M"
+    const vocabFooter = new Footer({
+      children: [new Paragraph({
+        alignment: AlignmentType.RIGHT,
+        children: [
+          txt('Page ', { size: 16, color: '9CA3AF' }),
+          new TextRun({ children: [PageNumber.CURRENT], size: 16, color: '9CA3AF' }),
+          txt(' / ', { size: 16, color: '9CA3AF' }),
+          new TextRun({ children: [PageNumber.TOTAL_PAGES], size: 16, color: '9CA3AF' })
+        ]
+      })]
+    });
+
     const doc = new Document({
       styles: { default: { document: { run: { font: 'Arial', size: 20 } } } },
       sections: [{
@@ -2812,6 +2841,7 @@ async function downloadVocabDocx(chId) {
             margin: { top: 720, right: 720, bottom: 720, left: 720 }
           }
         },
+        footers: { default: vocabFooter },
         children: docChildren
       }]
     });
@@ -4227,6 +4257,79 @@ function printPeriodicTable() {
   window.print();
 }
 
+/* ── 打印 / 导出 PDF：手动分页 + 右下角页码 ── */
+function printWithPageNumbers() {
+  const src  = document.getElementById('paperView');
+  const root = document.getElementById('printRoot');
+  if (!src || !root || !src.children.length) { window.print(); return; }
+
+  // 1) 克隆到离屏容器（宽度与打印内容区一致，保证高度测量准确）
+  root.innerHTML = src.innerHTML;
+  root.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+  root.querySelectorAll('[onclick]').forEach(el => el.removeAttribute('onclick'));
+  root.classList.add('print-root-measure');
+
+  // 2) 按 A4 可用高度装箱（A4 = 794×1123px @96dpi；上下 padding 53 + 61）
+  const PAGE_H = 1123, PAD_TOP = 53, PAD_BOTTOM = 61;
+  const USABLE = PAGE_H - PAD_TOP - PAD_BOTTOM;
+
+  const items  = Array.from(root.children);
+  const groups = [];
+  let cur = [], h = 0;
+
+  items.forEach(el => {
+    const cs = getComputedStyle(el);
+    const eh = el.getBoundingClientRect().height + (parseFloat(cs.marginBottom) || 0);
+
+    if (eh > USABLE) {                       // 单个超高块：独占一页，允许自然延伸
+      if (cur.length) { groups.push({ items: cur, tall: false }); cur = []; h = 0; }
+      groups.push({ items: [el], tall: true });
+      return;
+    }
+    if (h + eh > USABLE && cur.length) {
+      groups.push({ items: cur, tall: false }); cur = []; h = 0;
+    }
+    cur.push(el); h += eh;
+  });
+  if (cur.length) groups.push({ items: cur, tall: false });
+
+  // 3) 重建为分页结构，每页右下角注入页码
+  root.innerHTML = '';
+  groups.forEach((g, i) => {
+    const page = document.createElement('div');
+    page.className = 'print-page' + (g.tall ? ' tall' : '');
+    const body = document.createElement('div');
+    body.className = 'print-page-body';
+    g.items.forEach(el => body.appendChild(el));
+    const num = document.createElement('div');
+    num.className = 'print-page-num';
+    num.textContent = (i + 1) + ' / ' + groups.length;
+    page.appendChild(body);
+    page.appendChild(num);
+    root.appendChild(page);
+  });
+
+  // 4) 打印并在结束后还原
+  root.classList.remove('print-root-measure');
+  document.body.classList.add('printing-pn');
+
+  const cleanup = () => {
+    document.body.classList.remove('printing-pn');
+    root.innerHTML = '';
+    window.removeEventListener('afterprint', cleanup);
+    if (window._printMql) { window._printMql.removeEventListener('change', mqlHandler); window._printMql = null; }
+  };
+  const mqlHandler = (e) => { if (!e.matches) cleanup(); };
+
+  window.addEventListener('afterprint', cleanup);
+  try {
+    window._printMql = window.matchMedia('print');
+    window._printMql.addEventListener('change', mqlHandler);
+  } catch (_) {}
+
+  setTimeout(() => window.print(), 60);
+}
+
 function generateSimplePeriodicTable() {
   showToast('🔄 Generating simple periodic table...');
 }
@@ -4248,6 +4351,54 @@ function generateBlankPeriodicTable() {
   #paperView{display:block!important}
   .paper-section{break-inside:avoid;box-shadow:none;border:1px solid #e5e7eb;margin-bottom:16px}
   .paper-q-item{break-inside:avoid}
+}
+
+/* ── 打印分页 + 右下角页码 ── */
+#printRoot{display:none}
+#printRoot.print-root-measure{
+  display:block;position:absolute;left:-10000px;top:0;
+  width:794px;box-sizing:border-box;padding:14mm 12mm 16mm;background:#fff;
+}
+@media print{
+  @page{size:A4;margin:0}
+  /* 非分页打印场景：保留页边距 */
+  body:not(.printing-pn){padding:12mm!important;box-sizing:border-box}
+
+  body.printing-pn .sidebar,
+  body.printing-pn .toolbar,
+  body.printing-pn .stats-bar,
+  body.printing-pn .mode-tabs,
+  body.printing-pn .paper-q-remove{display:none!important}
+  body.printing-pn #paperView,
+  body.printing-pn #qGrid,
+  body.printing-pn #exportView,
+  body.printing-pn #vocabView,
+  body.printing-pn #papersView{display:none!important}
+  body.printing-pn .app,
+  body.printing-pn .main,
+  body.printing-pn .content{
+    display:block!important;overflow:visible!important;height:auto!important;
+    padding:0!important;margin:0!important;max-width:none!important;
+  }
+  body.printing-pn #printRoot{display:block!important}
+
+  .print-page{
+    position:relative;box-sizing:border-box;
+    width:210mm;height:297mm;
+    padding:14mm 12mm 16mm;
+    background:#fff;
+    page-break-after:always;break-after:page;
+    overflow:hidden;
+  }
+  .print-page:last-child{page-break-after:auto;break-after:auto}
+  .print-page.tall{height:auto;min-height:297mm;overflow:visible}
+  .print-page-num{
+    position:absolute;right:12mm;bottom:8mm;
+    font-size:9pt;color:#6b7280;font-family:'Segoe UI',Arial,sans-serif;
+  }
+  .print-page .paper-section{
+    break-inside:avoid;box-shadow:none;border:1px solid #e5e7eb;margin-bottom:12px;
+  }
 }
 </style>
 
