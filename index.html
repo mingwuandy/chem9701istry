@@ -198,7 +198,7 @@ select:focus,input:focus{border-color:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,2
 .preview-meta{font-size:.85rem;color:#64748b;margin-top:2px}
 .preview-close{background:none;border:none;cursor:pointer;font-size:1.8rem;color:#94a3b8;padding:0;width:36px;height:36px;display:flex;align-items:center;justify-content:center;transition:all .15s;line-height:1}
 .preview-close:hover{color:#1e293b;background:#e2e8f0;border-radius:6px}
-.preview-body{flex:1;overflow-y:auto;padding:24px;display:flex;align-items:flex-start;justify-content:center;min-height:0}
+.preview-body{flex:1;overflow-y:auto;padding:24px;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;min-height:0}
 .preview-img{max-width:100%;height:auto;display:block;object-fit:contain;transition:transform .15s ease-out;transform-origin:top center;cursor:zoom-in}
 .preview-footer{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#f8fafc;border-top:1px solid #e2e8f0;flex-shrink:0;flex-wrap:wrap;gap:12px}
 .preview-zoom-controls{display:flex;align-items:center;gap:8px}
@@ -2916,6 +2916,9 @@ function openPreview(qId) {
     badge.innerHTML = `<span style="display:inline-flex;align-items:center;gap:6px;background:#dcfce7;color:#166534;border-radius:8px;padding:4px 12px;font-size:.8rem;font-weight:800">✔ Answer: ${q.answer}</span>`;
   } else { badge.style.display = 'none'; badge.innerHTML = ''; }
 
+  const optDiv0 = document.getElementById('previewOptions');
+  if (optDiv0) { optDiv0.style.display = 'none'; optDiv0.innerHTML = ''; }
+
   if (q.question_text) {
     // 文本题：隐藏图片，显示文本
     img.style.display = 'none';
@@ -2955,6 +2958,24 @@ function openPreview(qId) {
     img.style.maxWidth = '100%';
     previewZoom = 100;
     updateZoomDisplay();
+    // 图片题带选项文字时(如 Section B 组合题共用答案键)，在图片下方渲染 A–D
+    if (q.options) {
+      let optDiv = document.getElementById('previewOptions');
+      if (!optDiv) {
+        optDiv = document.createElement('div');
+        optDiv.id = 'previewOptions';
+        optDiv.style.cssText = 'flex:0 0 100%;max-width:680px;padding:0;';
+        document.querySelector('.preview-body').appendChild(optDiv);
+      }
+      optDiv.style.display = 'block';
+      optDiv.innerHTML = `
+        <div style="margin-top:12px;display:grid;gap:8px;">
+          <div style="padding:8px 12px;background:#f0f4f8;border-radius:6px;"><strong>A.</strong> ${q.options.A}</div>
+          <div style="padding:8px 12px;background:#f0f4f8;border-radius:6px;"><strong>B.</strong> ${q.options.B}</div>
+          <div style="padding:8px 12px;background:#f0f4f8;border-radius:6px;"><strong>C.</strong> ${q.options.C}</div>
+          <div style="padding:8px 12px;background:#f0f4f8;border-radius:6px;"><strong>D.</strong> ${q.options.D}</div>
+        </div>`;
+    }
   }
 
   // === Mark Scheme setup ===

@@ -42419,7 +42419,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0283",
@@ -42455,7 +42461,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0821",
@@ -42473,7 +42485,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0822",
@@ -42491,7 +42509,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0001",
@@ -42527,7 +42551,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0611",
@@ -42545,7 +42575,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0612",
@@ -42563,7 +42599,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0117",
@@ -42599,7 +42641,13 @@
       "answer": "D",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0414",
@@ -42617,7 +42665,13 @@
       "answer": "D",
       "topic_ids": [
         "ch08_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0824",
@@ -42635,7 +42689,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0825",
@@ -42653,7 +42713,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0826",
@@ -42671,7 +42737,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0827",
@@ -42689,7 +42761,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0828",
@@ -42743,7 +42821,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0003",
@@ -42761,7 +42845,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0830",
@@ -42779,7 +42869,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0831",
@@ -42797,7 +42893,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0832",
@@ -42815,7 +42917,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch21_P1_0001",
@@ -42869,7 +42977,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch28_P1_1188",
@@ -42923,7 +43037,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0836",
@@ -42977,7 +43097,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0839",
@@ -43013,7 +43139,13 @@
       "answer": "B",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0840",
@@ -43031,7 +43163,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0841",
@@ -43049,7 +43187,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0842",
@@ -43067,7 +43211,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0614",
@@ -43085,7 +43235,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0118",
@@ -43103,7 +43259,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch17_P1_1022",
@@ -43121,7 +43283,13 @@
       "answer": "C",
       "topic_ids": [
         "ch17_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0843",
@@ -43139,7 +43307,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0119",
@@ -43157,7 +43331,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch20_P1_0001",
@@ -43193,7 +43373,13 @@
       "answer": "D",
       "topic_ids": [
         "ch09_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch13_P1_0742",
@@ -43211,7 +43397,13 @@
       "answer": "B",
       "topic_ids": [
         "ch13_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0844",
@@ -43229,7 +43421,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0120",
@@ -43247,7 +43445,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0121",
@@ -43265,7 +43469,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0845",
@@ -43301,7 +43511,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0847",
@@ -43337,7 +43553,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0849",
@@ -43355,7 +43577,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0338",
@@ -43391,7 +43619,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0615",
@@ -43409,7 +43643,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0851",
@@ -43445,7 +43685,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0853",
@@ -43481,7 +43727,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0855",
@@ -43499,7 +43751,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0122",
@@ -43517,7 +43775,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0856",
@@ -43535,7 +43799,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0123",
@@ -43553,7 +43823,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0857",
@@ -43571,7 +43847,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0005",
@@ -43589,7 +43871,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0124",
@@ -43625,7 +43913,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0339",
@@ -43643,7 +43937,13 @@
       "answer": "A",
       "topic_ids": [
         "ch07_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0859",
@@ -43679,7 +43979,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0861",
@@ -43751,7 +44057,13 @@
       "answer": "D",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0863",
@@ -43769,7 +44081,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0125",
@@ -43823,7 +44141,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0866",
@@ -43841,7 +44165,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0867",
@@ -43859,7 +44189,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0868",
@@ -43895,7 +44231,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0284",
@@ -43913,7 +44255,13 @@
       "answer": "B",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0870",
@@ -43949,7 +44297,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0872",
@@ -44003,7 +44357,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0875",
@@ -44039,7 +44399,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0126",
@@ -44057,7 +44423,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0877",
@@ -44075,7 +44447,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0415",
@@ -44111,7 +44489,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0416",
@@ -44129,7 +44513,13 @@
       "answer": "B",
       "topic_ids": [
         "ch08_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0617",
@@ -44147,7 +44537,13 @@
       "answer": "C",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0879",
@@ -44165,7 +44561,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0880",
@@ -44201,7 +44603,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0882",
@@ -44237,7 +44645,13 @@
       "answer": "D",
       "topic_ids": [
         "ch05_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0883",
@@ -44273,7 +44687,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch10_P1_0541",
@@ -44291,7 +44711,13 @@
       "answer": "D",
       "topic_ids": [
         "ch10_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0127",
@@ -44309,7 +44735,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0885",
@@ -44327,7 +44759,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0880",
@@ -44345,7 +44783,13 @@
       "answer": "D",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0886",
@@ -44363,7 +44807,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0128",
@@ -44381,7 +44831,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0887",
@@ -44399,7 +44855,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0888",
@@ -44417,7 +44879,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0889",
@@ -44471,7 +44939,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0006",
@@ -44489,7 +44963,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch18_P1_1087",
@@ -44525,7 +45005,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0892",
@@ -44543,7 +45029,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0893",
@@ -44597,7 +45089,13 @@
       "answer": "B",
       "topic_ids": [
         "ch04_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0895",
@@ -44615,7 +45113,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0896",
@@ -44633,7 +45137,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0897",
@@ -44669,7 +45179,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0899",
@@ -44687,7 +45203,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0130",
@@ -44723,7 +45245,13 @@
       "answer": "C",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0900",
@@ -44741,7 +45269,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0131",
@@ -44759,7 +45293,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0901",
@@ -44777,7 +45317,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0285",
@@ -44795,7 +45341,13 @@
       "answer": "D",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0902",
@@ -44813,7 +45365,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0341",
@@ -44831,7 +45389,13 @@
       "answer": "D",
       "topic_ids": [
         "ch07_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0007",
@@ -44849,7 +45413,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch28_P1_1189",
@@ -44867,7 +45437,13 @@
       "answer": "C",
       "topic_ids": [
         "ch28_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch12_P1_0693",
@@ -44885,7 +45461,13 @@
       "answer": "C",
       "topic_ids": [
         "ch12_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0881",
@@ -44921,7 +45503,13 @@
       "answer": "A",
       "topic_ids": [
         "ch18_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0903",
@@ -44939,7 +45527,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0904",
@@ -44975,7 +45569,13 @@
       "answer": "D",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0905",
@@ -44993,7 +45593,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0619",
@@ -45029,7 +45635,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0907",
@@ -45047,7 +45659,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0620",
@@ -45065,7 +45683,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0908",
@@ -45083,7 +45707,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0909",
@@ -45137,7 +45767,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0621",
@@ -45155,7 +45791,13 @@
       "answer": "C",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0912",
@@ -45173,7 +45815,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch04_P1_0171",
@@ -45191,7 +45839,13 @@
       "answer": "A",
       "topic_ids": [
         "ch04_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0913",
@@ -45209,7 +45863,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0914",
@@ -45245,7 +45905,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0915",
@@ -45263,7 +45929,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0133",
@@ -45281,7 +45953,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0916",
@@ -45299,7 +45977,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0917",
@@ -45317,7 +46001,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0287",
@@ -45335,7 +46025,13 @@
       "answer": "A",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch12_P1_0694",
@@ -45353,7 +46049,13 @@
       "answer": "C",
       "topic_ids": [
         "ch12_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0918",
@@ -45371,7 +46073,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0919",
@@ -45389,7 +46097,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0882",
@@ -45407,7 +46121,13 @@
       "answer": "A",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0622",
@@ -45443,7 +46163,13 @@
       "answer": "C",
       "topic_ids": [
         "ch26_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0134",
@@ -45461,7 +46187,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0135",
@@ -45479,7 +46211,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0920",
@@ -45497,7 +46235,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0921",
@@ -45533,7 +46277,13 @@
       "answer": "A",
       "topic_ids": [
         "ch08_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0922",
@@ -45551,7 +46301,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0623",
@@ -45569,7 +46325,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0923",
@@ -45605,7 +46367,13 @@
       "answer": "B",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0924",
@@ -45641,7 +46409,13 @@
       "answer": "C",
       "topic_ids": [
         "ch07_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0925",
@@ -45659,7 +46433,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0624",
@@ -45677,7 +46457,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0288",
@@ -45695,7 +46481,13 @@
       "answer": "B",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0136",
@@ -45713,7 +46505,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0926",
@@ -45731,7 +46529,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0927",
@@ -45749,7 +46553,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch18_P1_1089",
@@ -45803,7 +46613,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0928",
@@ -45821,7 +46637,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0929",
@@ -45839,7 +46661,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0137",
@@ -45857,7 +46685,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch05_P1_0229",
@@ -45875,7 +46709,13 @@
       "answer": "D",
       "topic_ids": [
         "ch05_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0930",
@@ -45893,7 +46733,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0931",
@@ -45911,7 +46757,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0627",
@@ -45965,7 +46817,13 @@
       "answer": "B",
       "topic_ids": [
         "ch12_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0883",
@@ -45983,7 +46841,13 @@
       "answer": "D",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0933",
@@ -46019,7 +46883,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0935",
@@ -46037,7 +46907,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0936",
@@ -46055,7 +46931,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0937",
@@ -46073,7 +46955,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0938",
@@ -46091,7 +46979,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0138",
@@ -46109,7 +47003,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0939",
@@ -46145,7 +47045,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0884",
@@ -46181,7 +47087,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0139",
@@ -46199,7 +47111,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0942",
@@ -46235,7 +47153,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0944",
@@ -46289,7 +47213,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0946",
@@ -46325,7 +47255,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0948",
@@ -46379,7 +47315,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0951",
@@ -46397,7 +47339,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0952",
@@ -46433,7 +47381,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch10_P1_0542",
@@ -46451,7 +47405,13 @@
       "answer": "D",
       "topic_ids": [
         "ch10_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0953",
@@ -46469,7 +47429,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0954",
@@ -46505,7 +47471,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0955",
@@ -46523,7 +47495,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0956",
@@ -46541,7 +47519,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0957",
@@ -46577,7 +47561,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0959",
@@ -46595,7 +47585,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0008",
@@ -46613,7 +47609,13 @@
       "answer": "B",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0960",
@@ -46631,7 +47633,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0961",
@@ -46649,7 +47657,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0142",
@@ -46685,7 +47699,13 @@
       "answer": "A",
       "topic_ids": [
         "ch28_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0629",
@@ -46739,7 +47759,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0963",
@@ -46757,7 +47783,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0964",
@@ -46775,7 +47807,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0965",
@@ -46793,7 +47831,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0966",
@@ -46811,7 +47855,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0009",
@@ -46829,7 +47879,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0143",
@@ -46847,7 +47903,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0937",
@@ -46865,7 +47927,13 @@
       "answer": "C",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0967",
@@ -46901,7 +47969,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_0969",
@@ -48359,7 +49433,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0153",
@@ -48377,7 +49457,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0013",
@@ -48395,7 +49481,13 @@
       "answer": "B",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1004",
@@ -48413,7 +49505,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1005",
@@ -48431,7 +49529,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1006",
@@ -48449,7 +49553,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0344",
@@ -48467,7 +49577,13 @@
       "answer": "C",
       "topic_ids": [
         "ch07_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0154",
@@ -48539,7 +49655,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1009",
@@ -48593,7 +49715,13 @@
       "answer": "C",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1010",
@@ -48611,7 +49739,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1011",
@@ -48629,7 +49763,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1012",
@@ -48647,7 +49787,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1013",
@@ -48719,7 +49865,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0158",
@@ -48737,7 +49889,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0014",
@@ -48755,7 +49913,13 @@
       "answer": "B",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1016",
@@ -48773,7 +49937,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1017",
@@ -48791,7 +49961,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1018",
@@ -48809,7 +49985,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0345",
@@ -48827,7 +50009,13 @@
       "answer": "C",
       "topic_ids": [
         "ch07_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0159",
@@ -48917,7 +50105,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0289",
@@ -48935,7 +50129,13 @@
       "answer": "B",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch13_P1_0743",
@@ -48953,7 +50153,13 @@
       "answer": "D",
       "topic_ids": [
         "ch13_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0160",
@@ -48971,7 +50177,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1023",
@@ -48989,7 +50201,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch18_P1_1099",
@@ -49025,7 +50243,13 @@
       "answer": "C",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1024",
@@ -49097,7 +50321,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1028",
@@ -49115,7 +50345,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0015",
@@ -49133,7 +50369,13 @@
       "answer": "D",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1029",
@@ -49151,7 +50393,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1030",
@@ -49169,7 +50417,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0161",
@@ -49187,7 +50441,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1031",
@@ -49205,7 +50465,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1032",
@@ -49223,7 +50489,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1033",
@@ -49277,7 +50549,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch06_P1_0290",
@@ -49295,7 +50573,13 @@
       "answer": "B",
       "topic_ids": [
         "ch06_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch13_P1_0744",
@@ -49313,7 +50597,13 @@
       "answer": "D",
       "topic_ids": [
         "ch13_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0162",
@@ -49331,7 +50621,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1036",
@@ -49349,7 +50645,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch18_P1_1100",
@@ -49385,7 +50687,13 @@
       "answer": "C",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1037",
@@ -49439,7 +50747,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0163",
@@ -49475,7 +50789,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch21_P1_0005",
@@ -49493,7 +50813,13 @@
       "answer": "D",
       "topic_ids": [
         "ch21_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1040",
@@ -49511,7 +50837,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1041",
@@ -49529,7 +50861,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0164",
@@ -49565,7 +50903,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0633",
@@ -49601,7 +50945,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1044",
@@ -49619,7 +50969,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0634",
@@ -49655,7 +51011,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0165",
@@ -49673,7 +51035,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0635",
@@ -49691,7 +51059,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1046",
@@ -49709,7 +51083,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0945",
@@ -49727,7 +51107,13 @@
       "answer": "A",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0946",
@@ -49781,7 +51167,13 @@
       "answer": "B",
       "topic_ids": [
         "ch26_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1048",
@@ -49799,7 +51191,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0166",
@@ -49835,7 +51233,13 @@
       "answer": "A",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch21_P1_0006",
@@ -49853,7 +51257,13 @@
       "answer": "D",
       "topic_ids": [
         "ch21_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1049",
@@ -49871,7 +51281,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1050",
@@ -49889,7 +51305,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0167",
@@ -49925,7 +51347,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0636",
@@ -49961,7 +51389,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1053",
@@ -49997,7 +51431,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1054",
@@ -50015,7 +51455,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch09_P1_0454",
@@ -50033,7 +51479,13 @@
       "answer": "C",
       "topic_ids": [
         "ch09_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1055",
@@ -50051,7 +51503,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1056",
@@ -50069,7 +51527,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0637",
@@ -50087,7 +51551,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0947",
@@ -50123,7 +51593,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0419",
@@ -50159,7 +51635,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0638",
@@ -50177,7 +51659,13 @@
       "answer": "D",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0346",
@@ -50195,7 +51683,13 @@
       "answer": "B",
       "topic_ids": [
         "ch07_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0169",
@@ -50213,7 +51707,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch21_P1_0007",
@@ -50231,7 +51731,13 @@
       "answer": "D",
       "topic_ids": [
         "ch21_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1059",
@@ -50249,7 +51755,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0639",
@@ -50267,7 +51779,13 @@
       "answer": "D",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0948",
@@ -50285,7 +51803,13 @@
       "answer": "D",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1060",
@@ -50303,7 +51827,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1061",
@@ -50321,7 +51851,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1062",
@@ -50357,7 +51893,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1063",
@@ -50375,7 +51917,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch09_P1_0455",
@@ -50393,7 +51941,13 @@
       "answer": "C",
       "topic_ids": [
         "ch09_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1064",
@@ -50411,7 +51965,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1065",
@@ -50429,7 +51989,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0640",
@@ -50447,7 +52013,13 @@
       "answer": "B",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0949",
@@ -50483,7 +52055,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0420",
@@ -50519,7 +52097,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1068",
@@ -50555,7 +52139,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0172",
@@ -50573,7 +52163,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1069",
@@ -50591,7 +52187,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0641",
@@ -50609,7 +52211,13 @@
       "answer": "D",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0173",
@@ -50627,7 +52235,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0174",
@@ -50663,7 +52277,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1071",
@@ -50699,7 +52319,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0175",
@@ -50735,7 +52361,13 @@
       "answer": "D",
       "topic_ids": [
         "ch05_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1073",
@@ -50753,7 +52385,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1074",
@@ -50789,7 +52427,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0176",
@@ -50807,7 +52451,13 @@
       "answer": "D",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0950",
@@ -50825,7 +52475,13 @@
       "answer": "B",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1076",
@@ -50843,7 +52499,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0177",
@@ -50879,7 +52541,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1078",
@@ -50915,7 +52583,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0179",
@@ -50933,7 +52607,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1079",
@@ -50951,7 +52631,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0642",
@@ -50969,7 +52655,13 @@
       "answer": "D",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0180",
@@ -50987,7 +52679,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0181",
@@ -51023,7 +52721,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1081",
@@ -51059,7 +52763,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1083",
@@ -51113,7 +52823,13 @@
       "answer": "D",
       "topic_ids": [
         "ch08_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch10_P1_0543",
@@ -51131,7 +52847,13 @@
       "answer": "B",
       "topic_ids": [
         "ch10_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1084",
@@ -51167,7 +52889,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1086",
@@ -51185,7 +52913,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch17_P1_1026",
@@ -51203,7 +52937,13 @@
       "answer": "A",
       "topic_ids": [
         "ch17_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch28_P1_1195",
@@ -51221,7 +52961,13 @@
       "answer": "B",
       "topic_ids": [
         "ch28_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch24_P1_0018",
@@ -51239,7 +52985,13 @@
       "answer": "B",
       "topic_ids": [
         "ch24_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0182",
@@ -51257,7 +53009,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1087",
@@ -51275,7 +53033,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0423",
@@ -51311,7 +53075,13 @@
       "answer": "A",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1088",
@@ -51329,7 +53099,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1089",
@@ -51347,7 +53123,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0644",
@@ -51401,7 +53183,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1091",
@@ -51419,7 +53207,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1092",
@@ -51437,7 +53231,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0424",
@@ -51473,7 +53273,13 @@
       "answer": "D",
       "topic_ids": [
         "ch08_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch10_P1_0544",
@@ -51491,7 +53297,13 @@
       "answer": "B",
       "topic_ids": [
         "ch10_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1093",
@@ -51509,7 +53321,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1094",
@@ -51527,7 +53345,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1095",
@@ -51563,7 +53387,13 @@
       "answer": "A",
       "topic_ids": [
         "ch17_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch28_P1_1196",
@@ -51581,7 +53411,13 @@
       "answer": "B",
       "topic_ids": [
         "ch28_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1096",
@@ -51599,7 +53435,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch12_P1_0699",
@@ -51617,7 +53459,13 @@
       "answer": "D",
       "topic_ids": [
         "ch12_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1097",
@@ -51635,7 +53483,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0184",
@@ -51653,7 +53507,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch04_P1_0172",
@@ -51671,7 +53531,13 @@
       "answer": "D",
       "topic_ids": [
         "ch04_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1098",
@@ -51689,7 +53555,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1099",
@@ -51725,7 +53597,13 @@
       "answer": "D",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0888",
@@ -51743,7 +53621,13 @@
       "answer": "C",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1100",
@@ -51761,7 +53645,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0185",
@@ -51797,7 +53687,13 @@
       "answer": "C",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0347",
@@ -51833,7 +53729,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1102",
@@ -51869,7 +53771,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch18_P1_1101",
@@ -51887,7 +53795,13 @@
       "answer": "A",
       "topic_ids": [
         "ch18_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch28_P1_1197",
@@ -51905,7 +53819,13 @@
       "answer": "A",
       "topic_ids": [
         "ch28_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch18_P1_1102",
@@ -51941,7 +53861,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1105",
@@ -51959,7 +53885,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch12_P1_0700",
@@ -51977,7 +53909,13 @@
       "answer": "D",
       "topic_ids": [
         "ch12_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1106",
@@ -51995,7 +53933,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0187",
@@ -52013,7 +53957,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch04_P1_0173",
@@ -52031,7 +53981,13 @@
       "answer": "D",
       "topic_ids": [
         "ch04_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1107",
@@ -52049,7 +54005,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1108",
@@ -52085,7 +54047,13 @@
       "answer": "D",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch15_P1_0890",
@@ -52103,7 +54071,13 @@
       "answer": "C",
       "topic_ids": [
         "ch15_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1109",
@@ -52121,7 +54095,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1110",
@@ -53759,7 +55739,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch04_P1_0176",
@@ -53777,7 +55763,13 @@
       "answer": "A",
       "topic_ids": [
         "ch04_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1146",
@@ -53795,7 +55787,13 @@
       "answer": "D",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch03_P1_0199",
@@ -53813,7 +55811,13 @@
       "answer": "B",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0648",
@@ -53831,7 +55835,13 @@
       "answer": "D",
       "topic_ids": [
         "ch11_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1147",
@@ -53849,7 +55859,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1148",
@@ -53867,7 +55883,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch11_P1_0649",
@@ -53903,7 +55925,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1150",
@@ -53921,7 +55949,13 @@
       "answer": "A",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch08_P1_0430",
@@ -53939,7 +55973,13 @@
       "answer": "B",
       "topic_ids": [
         "ch08_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1151",
@@ -53957,7 +55997,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1152",
@@ -53975,7 +56021,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1153",
@@ -54011,7 +56063,13 @@
       "answer": "D",
       "topic_ids": [
         "ch21_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1154",
@@ -54029,7 +56087,13 @@
       "answer": "C",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch16_P1_0956",
@@ -54047,7 +56111,13 @@
       "answer": "B",
       "topic_ids": [
         "ch16_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1155",
@@ -54083,7 +56153,13 @@
       "answer": "A",
       "topic_ids": [
         "ch03_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch14_P1_1156",
@@ -54101,7 +56177,13 @@
       "answer": "B",
       "topic_ids": [
         "ch14_t01"
-      ]
+      ],
+      "options": {
+        "A": "1, 2 and 3 are correct",
+        "B": "1 and 2 only are correct",
+        "C": "2 and 3 only are correct",
+        "D": "1 only is correct"
+      }
     },
     {
       "id": "ch07_P1_0348",
